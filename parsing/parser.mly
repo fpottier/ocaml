@@ -3580,7 +3580,7 @@ val_longident:
 label_longident:
     mk_longident(mod_longident, LIDENT) { $1 }
 ;
-type_longident:
+%inline type_longident:
     mk_longident(mod_ext_longident, LIDENT)  { $1 }
 ;
 mod_longident:
@@ -3596,7 +3596,7 @@ mod_ext_longident:
 mty_longident:
     mk_longident(mod_ext_longident,ident) { $1 }
 ;
-clty_longident:
+%inline clty_longident:
     mk_longident(mod_ext_longident,LIDENT) { $1 }
 ;
 class_longident:
