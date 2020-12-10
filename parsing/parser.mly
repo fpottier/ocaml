@@ -809,6 +809,175 @@ The precedences must be listed from low to high.
           NEW PREFIXOP STRING TRUE UIDENT
           LBRACKETPERCENT QUOTED_STRING_EXPR
 
+/* The following declarations cause the parser to continue performing
+   reductions (if possible) after a syntax error has been detected and
+   before attempting to report this syntax error. */
+
+/* It usually makes sense to perform as many reductions as possible before
+   attempting to explain a syntax error. This usually corresponds to giving up
+   on a number of optional continuations (for instance, the continuation of a
+   list) and returning to a point where we have a mandatory continuation (for
+   instance, a closing delimiter that must follow the list). */
+
+/* There are some states in the automaton where several reductions on error
+   are possible. (These are usually places where the grammar is borderline
+   ambiguous.) One can manually inspect these states and choose the reduction
+   that seems the make the most sense (or make an arbitrary choice). In some
+   cases the choice is guided by the fact that one of the candidate reductions
+   has the [error] token in its lookahead set. This production should then be
+   preferred, so as to go to the state where a custom syntax error message has
+   been prepared. */
+
+/* Choices between multiple reductions are encoded by the ordering of the
+   [%on_error_reduce] declarations below. As usual, later declarations
+   represent higher priority levels. */
+
+%on_error_reduce
+  alias_type
+  and_let_binding
+  attr_id
+  attribute
+  class_expr
+  class_field
+  class_fun_binding
+  class_fun_def
+  class_longident
+  class_self_pattern
+  class_self_type
+  class_sig_field
+  class_simple_expr
+  class_type
+  class_type_declarations
+  constant
+  constr_extra_nonprefix_ident
+  constr_longident
+  constrain_field
+  constructor_declarations
+  core_type
+  expr
+  ext
+  extension
+  extension_constructor_rebind(BAR)
+  extension_constructor_rebind(epsilon)
+  floating_attribute
+  fun_binding
+  fun_def
+  function_type
+  generic_constructor_declaration(BAR)
+  generic_constructor_declaration(epsilon)
+  generic_type_declaration(no_nonrec_flag,type_subst_kind)
+  generic_type_declaration(nonrec_flag,type_kind)
+  item_extension
+  label_longident
+  labeled_simple_expr
+  let_binding_body_no_punning
+  let_bindings(ext)
+  list(and_class_declaration)
+  list(and_class_description)
+  list(and_class_type_declaration)
+  list(and_module_binding)
+  list(and_module_declaration)
+  list(attribute)
+  list(generic_and_type_declaration(type_kind))
+  list(generic_and_type_declaration(type_subst_kind))
+  list(post_item_attribute)
+  list(signature_element)
+  list(structure_element)
+  list(text_csig(class_sig_field))
+  list(text_cstr(class_field))
+  listx(SEMI,record_pat_field,UNDERSCORE)
+  match_case
+  method_
+  mk_longident(mod_ext_longident,ident)
+  mk_longident(mod_longident,UIDENT)
+  mk_longident(mod_longident,val_ident)
+  mod_ext_longident
+  mod_longident
+  module_binding_body
+  module_declaration_body
+  module_expr
+  module_subst
+  module_type
+  module_type_declaration
+  mty_longident
+  name_tag
+  nonempty_list(raw_string)
+  nonempty_type_kind
+  open_declaration
+  open_description
+  operator
+  option(SEMI)
+  option(preceded(AS,mkrhs(LIDENT)))
+  option(preceded(COLON,core_type))
+  option(preceded(EQUAL,expr))
+  option(preceded(EQUAL,module_type))
+  option(preceded(EQUAL,pattern))
+  option(type_constraint)
+  paren_module_expr
+  pattern
+  pattern_comma_list(pattern)
+  pattern_gen
+  possibly_poly(core_type)
+  post_item_attribute
+  primitive_declaration
+  record_expr_content
+  reversed_bar_llist(constructor_declaration)
+  reversed_bar_llist(extension_constructor)
+  reversed_bar_llist(extension_constructor_declaration)
+  reversed_llist(preceded(CONSTRAINT,constrain))
+  reversed_nonempty_llist(labeled_simple_expr)
+  reversed_preceded_or_separated_nonempty_llist(BAR,match_case)
+  reversed_separated_nonempty_llist(AND,with_constraint)
+  reversed_separated_nontrivial_llist(COMMA,expr)
+  reversed_separated_nontrivial_llist(STAR,atomic_type)
+  separated_or_terminated_nonempty_list(SEMI,expr)
+  separated_or_terminated_nonempty_list(SEMI,object_expr_field)
+  separated_or_terminated_nonempty_list(SEMI,pattern)
+  separated_or_terminated_nonempty_list(SEMI,record_expr_field)
+  seq_expr
+  sig_exception_declaration
+  signature
+  signature_item
+  signed_constant
+  simple_delimited_pattern
+  simple_expr
+  simple_pattern_not_ident
+  single_attr_id
+  str_exception_declaration
+  strict_binding
+  structure
+  structure_item
+  tuple_type
+  type_constraint
+  val_extra_ident
+  val_longident
+  value
+  value_description
+  with_constraint
+
+/* This group encodes one priority constraint. */
+%on_error_reduce val_ident
+%on_error_reduce mk_longident(mod_longident,LIDENT)
+
+/* This group encodes two priority constraints. */
+%on_error_reduce mk_longident(mod_ext_longident,UIDENT)
+%on_error_reduce ident constr_ident
+
+/* This group encodes one priority constraint. */
+%on_error_reduce mk_longident(mod_ext_longident,LIDENT)
+%on_error_reduce type_kind
+
+/* This group encodes one priority constraint. */
+%on_error_reduce simple_pattern
+%on_error_reduce let_binding_body
+
+/* This group encodes two priority constraints. */
+%on_error_reduce constructor_arguments
+%on_error_reduce generalized_constructor_arguments
+
+/* This group encodes one priority constraint. */
+%on_error_reduce atomic_type
+%on_error_reduce class_signature
 
 /* Entry points */
 
