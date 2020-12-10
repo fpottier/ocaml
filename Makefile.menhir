@@ -294,3 +294,20 @@ classify-parse-errors:
 	echo "$$(grep -h -e "^Error: Syntax error" $(GPE_REF) | grep -w expected | wc -l) syntax errors with an indication of what was expected." && \
 	echo "$$(grep -h -e "might be unmatched" $(GPE_REF) | wc -l) syntax errors with an indication of an unmatched delimiter." && \
 	true)
+
+## error-predecessors
+
+# This rule computes and prints the set of all (non-%inline) non-terminal
+# symbols whose FOLLOW set contains the token [error].
+
+.PHONY: error-predecessors
+error-predecessors:
+	@ \
+	$(MENHIR) $(MENHIRBASICFLAGS) parsing/parser.mly \
+	  -lg 3 2>&1 \
+	  | grep -w follow | grep error \
+	  | sed -e "s/\\(.*\\) = error.*$$/\\1/" \
+	  | grep -v -e "follow([A-Z]" \
+	  | grep -v -e "follow(error)" \
+	  | sed -e "s/follow(\\(.*\\))$$/\\1/" \
+	  | tail -r \
