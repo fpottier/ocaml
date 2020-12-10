@@ -311,3 +311,18 @@ error-predecessors:
 	  | grep -v -e "follow(error)" \
 	  | sed -e "s/follow(\\(.*\\))$$/\\1/" \
 	  | tail -r \
+
+## nullable
+
+# This rule computes and prints the set of all (non-%inline) nullable
+# non-terminal symbols.
+
+.PHONY: nullable
+nullable:
+	@ \
+	$(MENHIR) $(MENHIRBASICFLAGS) parsing/parser.mly \
+	  -lg 2 2>&1 \
+	  | grep -w nullable | grep "= true" \
+	  | sed -e "s/\\(.*\\) = true.*$$/\\1/" \
+	  | sed -e "s/nullable(\\(.*\\))$$/\\1/" \
+	  | tail -r \
