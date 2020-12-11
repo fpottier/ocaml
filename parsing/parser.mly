@@ -813,6 +813,12 @@ The precedences must be listed from low to high.
    reductions (if possible) after a syntax error has been detected and
    before attempting to report this syntax error. */
 
+/* It makes sense for every nullable symbol to carry an [%on_error_reduce]
+   declaration. This means that, when a syntax error is detected, the parser
+   decides that this symbol is absent, before attempting to explain the
+   error. The list of all nullable symbols can be obtained via the command
+   [make nullable]. */
+
 /* It usually makes sense to perform as many reductions as possible before
    attempting to explain a syntax error. This usually corresponds to giving up
    on a number of optional continuations (for instance, the continuation of a
@@ -860,6 +866,7 @@ The precedences must be listed from low to high.
   extension_constructor_rebind(BAR)
   extension_constructor_rebind(epsilon)
   floating_attribute
+  formal_class_parameters
   fun_binding
   fun_def
   function_type
@@ -867,6 +874,7 @@ The precedences must be listed from low to high.
   generic_constructor_declaration(epsilon)
   generic_type_declaration(no_nonrec_flag,type_subst_kind)
   generic_type_declaration(nonrec_flag,type_kind)
+  index_mod
   item_extension
   label_longident
   labeled_simple_expr
@@ -885,6 +893,8 @@ The precedences must be listed from low to high.
   list(structure_element)
   list(text_csig(class_sig_field))
   list(text_cstr(class_field))
+  list(text_str(structure_item))
+  list(use_file_element)
   listx(SEMI,record_pat_field,UNDERSCORE)
   match_case
   method_
@@ -900,26 +910,35 @@ The precedences must be listed from low to high.
   module_type
   module_type_declaration
   mty_longident
+  mutable_flag
+  mutable_virtual_flags
   name_tag
   nonempty_list(raw_string)
   nonempty_type_kind
   open_declaration
   open_description
   operator
+  opt_ampersand
+  option(BAR)
   option(SEMI)
   option(preceded(AS,mkrhs(LIDENT)))
   option(preceded(COLON,core_type))
   option(preceded(EQUAL,expr))
   option(preceded(EQUAL,module_type))
   option(preceded(EQUAL,pattern))
+  option(preceded(EQUAL,seq_expr))
   option(type_constraint)
   paren_module_expr
   pattern
   pattern_comma_list(pattern)
   pattern_gen
+  payload
   possibly_poly(core_type)
   post_item_attribute
   primitive_declaration
+  private_flag
+  private_virtual_flags
+  rec_flag
   record_expr_content
   reversed_bar_llist(constructor_declaration)
   reversed_bar_llist(extension_constructor)
@@ -949,10 +968,13 @@ The precedences must be listed from low to high.
   structure_item
   tuple_type
   type_constraint
+  type_parameters
+  type_variance
   val_extra_ident
   val_longident
   value
   value_description
+  virtual_flag
   with_constraint
 
 /* This group encodes one priority constraint. */
