@@ -876,10 +876,13 @@ The precedences must be listed from low to high.
   generic_type_declaration(nonrec_flag,type_kind)
   index_mod
   item_extension
+  label_declaration
+  label_let_pattern
   label_longident
   labeled_simple_expr
   let_binding_body_no_punning
   let_bindings(ext)
+  let_pattern
   list(and_class_declaration)
   list(and_class_description)
   list(and_class_type_declaration)
@@ -897,6 +900,7 @@ The precedences must be listed from low to high.
   list(use_file_element)
   listx(SEMI,record_pat_field,UNDERSCORE)
   match_case
+  meth_list
   method_
   mk_longident(mod_ext_longident,ident)
   mk_longident(mod_longident,UIDENT)
@@ -906,6 +910,7 @@ The precedences must be listed from low to high.
   module_binding_body
   module_declaration_body
   module_expr
+  module_name
   module_subst
   module_type
   module_type_declaration
@@ -913,6 +918,7 @@ The precedences must be listed from low to high.
   mutable_flag
   mutable_virtual_flags
   name_tag
+  nonempty_list(mkrhs(LIDENT))
   nonempty_list(raw_string)
   nonempty_type_kind
   open_declaration
@@ -931,9 +937,12 @@ The precedences must be listed from low to high.
   paren_module_expr
   pattern
   pattern_comma_list(pattern)
+  pattern_comma_list(pattern_no_exn)
+  pattern_no_exn
   pattern_gen
   payload
   possibly_poly(core_type)
+  possibly_poly(core_type_no_attr)
   post_item_attribute
   primitive_declaration
   private_flag
@@ -946,7 +955,9 @@ The precedences must be listed from low to high.
   reversed_llist(preceded(CONSTRAINT,constrain))
   reversed_nonempty_llist(labeled_simple_expr)
   reversed_preceded_or_separated_nonempty_llist(BAR,match_case)
+  reversed_separated_nonempty_llist(AMPERSAND,core_type_no_attr)
   reversed_separated_nonempty_llist(AND,with_constraint)
+  reversed_separated_nontrivial_llist(COMMA,core_type)
   reversed_separated_nontrivial_llist(COMMA,expr)
   reversed_separated_nontrivial_llist(STAR,atomic_type)
   separated_or_terminated_nonempty_list(SEMI,expr)
@@ -966,6 +977,7 @@ The precedences must be listed from low to high.
   strict_binding
   structure
   structure_item
+  toplevel_directive
   tuple_type
   type_constraint
   type_parameters
@@ -975,7 +987,14 @@ The precedences must be listed from low to high.
   value
   value_description
   virtual_flag
+  virtual_with_private_flag
+  virtual_with_mutable_flag
   with_constraint
+  with_type_binder
+
+/* This group encodes one priority constraint. */
+%on_error_reduce row_field
+%on_error_reduce reversed_separated_nonempty_llist(COMMA,core_type)
 
 /* This group encodes one priority constraint. */
 %on_error_reduce val_ident
