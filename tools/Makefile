@@ -86,7 +86,7 @@ OCAMLPROF=config.cmo build_path_prefix_map.cmo misc.cmo identifiable.cmo \
   numbers.cmo arg_helper.cmo clflags.cmo terminfo.cmo \
   warnings.cmo location.cmo longident.cmo docstrings.cmo \
   syntaxerr.cmo ast_helper.cmo \
-  camlinternalMenhirLib.cmo parser.cmo \
+  parser.cmo \
   pprintast.cmo \
   lexer.cmo parse.cmo ocamlprof.cmo
 

@@ -876,30 +876,16 @@ clean::
 # modification of parser.mly.
 include Makefile.menhir
 
-# To avoid module-name conflicts with compiler-lib users that link
-# with their code with their own MenhirLib module (possibly with
-# a different Menhir version), we rename MenhirLib into
-# CamlinternalMenhirlib -- and replace the module occurrences in the
-# generated parser.ml.
-
-parsing/camlinternalMenhirLib.ml: boot/menhir/menhirLib.ml
-	cp $< $@
-parsing/camlinternalMenhirLib.mli: boot/menhir/menhirLib.mli
-	echo '[@@@ocaml.warning "-67"]' > $@
-	cat $< >> $@
-
 # Copy parsing/parser.ml from boot/
 
 parsing/parser.ml: boot/menhir/parser.ml parsing/parser.mly \
   tools/check-parser-uptodate-or-warn.sh
 	@-tools/check-parser-uptodate-or-warn.sh
-	sed "s/MenhirLib/CamlinternalMenhirLib/g" $< > $@
+	cp -f $< $@
 parsing/parser.mli: boot/menhir/parser.mli
-	sed "s/MenhirLib/CamlinternalMenhirLib/g" $< > $@
+	cp -f $< $@
 
-beforedepend:: parsing/camlinternalMenhirLib.ml \
-  parsing/camlinternalMenhirLib.mli \
-  parsing/parser.ml parsing/parser.mli
+beforedepend:: parsing/parser.ml parsing/parser.mli
 
 partialclean:: partialclean-menhir
 

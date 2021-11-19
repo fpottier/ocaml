@@ -48,7 +48,7 @@
    lazy_backtrack diffing
 
    ;; PARSING
-   location longident docstrings syntaxerr ast_helper camlinternalMenhirLib
+   location longident docstrings syntaxerr ast_helper
    parser lexer parse printast pprintast ast_mapper ast_iterator attr_helper
    builtin_attributes ast_invariants depend
    ; manual update: mli only files

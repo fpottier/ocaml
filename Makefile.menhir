@@ -78,14 +78,12 @@ MENHIRFLAGS := \
   --infer \
   --ocamlc "$(CAMLC) $(COMPFLAGS)" \
   --fixed-exception \
-  --table \
   --strategy simplified \
 
 ## promote-menhir
 
 .PHONY: promote-menhir
 promote-menhir: parsing/parser.mly
-	@ $(MAKE) import-menhirLib
 	$(MENHIR) $(MENHIRFLAGS) parsing/parser.mly
 	@ for f in $(addprefix parser.,ml mli) ; do \
 	  cp -f \
@@ -94,23 +92,9 @@ promote-menhir: parsing/parser.mly
 	  rm parsing/$$f; \
 	done
 
-# The import-menhirLib invocation in promote-menhir ensures that each
-# update of the boot/ parser is paired with an update of the imported
-# menhirLib; otherwise it would be easy to generate a parser and keep
-# an incompatible version of menhirLib, which would fail at
-# compile-time.
-
-.PHONY: import-menhirLib
-import-menhirLib:
-	@ mkdir -p boot/menhir
-	@ cp \
-           $(addprefix `$(MENHIR) --suggest-menhirLib`/menhirLib.,ml mli) \
-           boot/menhir
-
-
 ## demote-menhir
 
-DEMOTE:=menhirLib.ml menhirLib.mli parser.ml parser.mli
+DEMOTE:=parser.ml parser.mli
 
 .PHONY: demote-menhir
 demote-menhir:
@@ -126,26 +110,17 @@ demote-menhir:
 # parser.mly into account ('core' uses the parser from boot/).
 
 # The test-menhir target does not read or write the boot directory,
-# it directly builds the parser in parsing/. In particular, it must
-# duplicate the MenhirLib->CamlinternalMenhirlib renaming usually
-# performed by the parsing/parser.ml import rule in the main
-# Makefile.
+# it directly builds the parser in parsing/.
 .PHONY: test-menhir
 test-menhir: parsing/parser.mly
 	$(MENHIR) $(MENHIRFLAGS) parsing/parser.mly
-	for f in $(addprefix parsing/parser.,ml mli) ; do \
-	  cat $$f | sed "s/MenhirLib/CamlinternalMenhirLib/g" > $$f.tmp && \
-	  mv $$f.tmp $$f ; \
-	done
 	$(MAKE) parsing/parser.cmo
-
 
 ## clean-menhir
 
 partialclean-menhir::
 	rm -f \
 	  $(addprefix parsing/parser.,ml mli) \
-	  $(addprefix parsing/camlinternalMenhirLib.,ml mli) \
 	  $(addprefix parsing/parser.,automaton conflicts) \
 	  $(addprefix parsing/parser.,auto.messages) \
 

@@ -181,8 +181,6 @@ _build
 /parsing/parser.automaton
 /parsing/parser.conflicts
 /parsing/parser.auto.messages
-/parsing/camlinternalMenhirLib.ml
-/parsing/camlinternalMenhirLib.mli
 
 /runtime/caml/jumptbl.h
 /runtime/caml/m.h
