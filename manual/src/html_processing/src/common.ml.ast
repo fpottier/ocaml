@@ -1,0 +1,1381 @@
+[
+  structure_item (manual/src/html_processing/src/common.ml[10,197+0]..[10,197+9])
+    Pstr_open Fresh
+    module_expr (manual/src/html_processing/src/common.ml[10,197+5]..[10,197+9])
+      Pmod_ident "Soup" (manual/src/html_processing/src/common.ml[10,197+5]..[10,197+9])
+  structure_item (manual/src/html_processing/src/common.ml[11,207+0]..[11,207+11])
+    Pstr_open Fresh
+    module_expr (manual/src/html_processing/src/common.ml[11,207+5]..[11,207+11])
+      Pmod_ident "Printf" (manual/src/html_processing/src/common.ml[11,207+5]..[11,207+11])
+  structure_item (manual/src/html_processing/src/common.ml[13,220+0]..[13,220+44])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[13,220+4]..[13,220+9])
+          Ppat_var "debug" (manual/src/html_processing/src/common.ml[13,220+4]..[13,220+9])
+        expression (manual/src/html_processing/src/common.ml[13,220+12]..[13,220+44])
+          Pexp_apply
+          expression (manual/src/html_processing/src/common.ml[13,220+12]..[13,220+15])
+            Pexp_ident "not" (manual/src/html_processing/src/common.ml[13,220+12]..[13,220+15])
+          [
+            <arg>
+            Nolabel
+              expression (manual/src/html_processing/src/common.ml[13,220+16]..[13,220+44])
+                Pexp_apply
+                expression (manual/src/html_processing/src/common.ml[13,220+17]..[13,220+26])
+                  Pexp_ident "Array.mem" (manual/src/html_processing/src/common.ml[13,220+17]..[13,220+26])
+                [
+                  <arg>
+                  Nolabel
+                    expression (manual/src/html_processing/src/common.ml[13,220+27]..[13,220+34])
+                      Pexp_constant PConst_string("quiet",(manual/src/html_processing/src/common.ml[13,220+28]..[13,220+33]),None)
+                  <arg>
+                  Nolabel
+                    expression (manual/src/html_processing/src/common.ml[13,220+35]..[13,220+43])
+                      Pexp_ident "Sys.argv" (manual/src/html_processing/src/common.ml[13,220+35]..[13,220+43])
+                ]
+          ]
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[15,266+0]..[23,446+36])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[15,266+4]..[15,266+7])
+          Ppat_var "dbg" (manual/src/html_processing/src/common.ml[15,266+4]..[15,266+7])
+        expression (manual/src/html_processing/src/common.ml[16,276+2]..[23,446+36])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (manual/src/html_processing/src/common.ml[16,276+6]..[16,276+12])
+                Ppat_var "printf" (manual/src/html_processing/src/common.ml[16,276+6]..[16,276+12])
+              expression (manual/src/html_processing/src/common.ml[16,276+15]..[16,276+61])
+                Pexp_open Fresh
+                module_expr (manual/src/html_processing/src/common.ml[16,276+15]..[16,276+21])
+                  Pmod_ident "Printf" (manual/src/html_processing/src/common.ml[16,276+15]..[16,276+21])
+                expression (manual/src/html_processing/src/common.ml[16,276+23]..[16,276+60])
+                  Pexp_ifthenelse
+                  expression (manual/src/html_processing/src/common.ml[16,276+26]..[16,276+31])
+                    Pexp_ident "debug" (manual/src/html_processing/src/common.ml[16,276+26]..[16,276+31])
+                  expression (manual/src/html_processing/src/common.ml[16,276+37]..[16,276+45])
+                    Pexp_ident "kfprintf" (manual/src/html_processing/src/common.ml[16,276+37]..[16,276+45])
+                  Some
+                    expression (manual/src/html_processing/src/common.ml[16,276+51]..[16,276+60])
+                      Pexp_ident "ikfprintf" (manual/src/html_processing/src/common.ml[16,276+51]..[16,276+60])
+          ]
+          expression (manual/src/html_processing/src/common.ml[17,341+2]..[23,446+36])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (manual/src/html_processing/src/common.ml[17,341+6]..[17,341+11])
+                  Ppat_var "flush" (manual/src/html_processing/src/common.ml[17,341+6]..[17,341+11])
+                expression (manual/src/html_processing/src/common.ml[18,355+4]..[21,428+12])
+                  Pexp_ifthenelse
+                  expression (manual/src/html_processing/src/common.ml[18,355+7]..[18,355+12])
+                    Pexp_ident "debug" (manual/src/html_processing/src/common.ml[18,355+7]..[18,355+12])
+                  expression (manual/src/html_processing/src/common.ml[19,373+6]..[19,373+45])
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (manual/src/html_processing/src/common.ml[19,373+10]..[19,373+12])
+                      Ppat_var "ch" (manual/src/html_processing/src/common.ml[19,373+10]..[19,373+12])
+                    expression (manual/src/html_processing/src/common.ml[19,373+16]..[19,373+45])
+                      Pexp_sequence
+                      expression (manual/src/html_processing/src/common.ml[19,373+16]..[19,373+35])
+                        Pexp_apply
+                        expression (manual/src/html_processing/src/common.ml[19,373+16]..[19,373+27])
+                          Pexp_ident "output_char" (manual/src/html_processing/src/common.ml[19,373+16]..[19,373+27])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (manual/src/html_processing/src/common.ml[19,373+28]..[19,373+30])
+                              Pexp_ident "ch" (manual/src/html_processing/src/common.ml[19,373+28]..[19,373+30])
+                          <arg>
+                          Nolabel
+                            expression (manual/src/html_processing/src/common.ml[19,373+31]..[19,373+35])
+                              Pexp_constant PConst_char 0a
+                        ]
+                      expression (manual/src/html_processing/src/common.ml[19,373+37]..[19,373+45])
+                        Pexp_apply
+                        expression (manual/src/html_processing/src/common.ml[19,373+37]..[19,373+42])
+                          Pexp_ident "flush" (manual/src/html_processing/src/common.ml[19,373+37]..[19,373+42])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (manual/src/html_processing/src/common.ml[19,373+43]..[19,373+45])
+                              Pexp_ident "ch" (manual/src/html_processing/src/common.ml[19,373+43]..[19,373+45])
+                        ]
+                  Some
+                    expression (manual/src/html_processing/src/common.ml[21,428+6]..[21,428+12])
+                      Pexp_ident "ignore" (manual/src/html_processing/src/common.ml[21,428+6]..[21,428+12])
+            ]
+            expression (manual/src/html_processing/src/common.ml[23,446+2]..[23,446+36])
+              Pexp_fun
+              Nolabel
+              None
+              pattern (manual/src/html_processing/src/common.ml[23,446+6]..[23,446+9])
+                Ppat_var "fmt" (manual/src/html_processing/src/common.ml[23,446+6]..[23,446+9])
+              expression (manual/src/html_processing/src/common.ml[23,446+13]..[23,446+36])
+                Pexp_apply
+                expression (manual/src/html_processing/src/common.ml[23,446+13]..[23,446+19])
+                  Pexp_ident "printf" (manual/src/html_processing/src/common.ml[23,446+13]..[23,446+19])
+                [
+                  <arg>
+                  Nolabel
+                    expression (manual/src/html_processing/src/common.ml[23,446+20]..[23,446+25])
+                      Pexp_ident "flush" (manual/src/html_processing/src/common.ml[23,446+20]..[23,446+25])
+                  <arg>
+                  Nolabel
+                    expression (manual/src/html_processing/src/common.ml[23,446+26]..[23,446+32])
+                      Pexp_ident "stdout" (manual/src/html_processing/src/common.ml[23,446+26]..[23,446+32])
+                  <arg>
+                  Nolabel
+                    expression (manual/src/html_processing/src/common.ml[23,446+33]..[23,446+36])
+                      Pexp_ident "fmt" (manual/src/html_processing/src/common.ml[23,446+33]..[23,446+36])
+                ]
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[25,484+0]..[25,484+28])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[25,484+4]..[25,484+10])
+          Ppat_var "//" (manual/src/html_processing/src/common.ml[25,484+4]..[25,484+10])
+        expression (manual/src/html_processing/src/common.ml[25,484+13]..[25,484+28])
+          Pexp_ident "Filename.concat" (manual/src/html_processing/src/common.ml[25,484+13]..[25,484+28])
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[27,514+0]..[27,514+43])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[27,514+4]..[27,514+15])
+          Ppat_var "process_dir" (manual/src/html_processing/src/common.ml[27,514+4]..[27,514+15])
+        expression (manual/src/html_processing/src/common.ml[27,514+18]..[27,514+43])
+          Pexp_ident "Filename.current_dir_name" (manual/src/html_processing/src/common.ml[27,514+18]..[27,514+43])
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[30,582+0]..[30,582+50])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[30,582+4]..[30,582+11])
+          Ppat_var "web_dir" (manual/src/html_processing/src/common.ml[30,582+4]..[30,582+11])
+        expression (manual/src/html_processing/src/common.ml[30,582+14]..[30,582+50])
+          Pexp_apply
+          expression (manual/src/html_processing/src/common.ml[30,582+39]..[30,582+41])
+            Pexp_ident "//" (manual/src/html_processing/src/common.ml[30,582+39]..[30,582+41])
+          [
+            <arg>
+            Nolabel
+              expression (manual/src/html_processing/src/common.ml[30,582+14]..[30,582+38])
+                Pexp_ident "Filename.parent_dir_name" (manual/src/html_processing/src/common.ml[30,582+14]..[30,582+38])
+            <arg>
+            Nolabel
+              expression (manual/src/html_processing/src/common.ml[30,582+42]..[30,582+50])
+                Pexp_constant PConst_string("webman",(manual/src/html_processing/src/common.ml[30,582+43]..[30,582+49]),None)
+          ]
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[33,658+0]..[33,658+38])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[33,658+4]..[33,658+16])
+          Ppat_var "docs_maindir" (manual/src/html_processing/src/common.ml[33,658+4]..[33,658+16])
+        expression (manual/src/html_processing/src/common.ml[33,658+19]..[33,658+38])
+          Pexp_apply
+          expression (manual/src/html_processing/src/common.ml[33,658+27]..[33,658+29])
+            Pexp_ident "//" (manual/src/html_processing/src/common.ml[33,658+27]..[33,658+29])
+          [
+            <arg>
+            Nolabel
+              expression (manual/src/html_processing/src/common.ml[33,658+19]..[33,658+26])
+                Pexp_ident "web_dir" (manual/src/html_processing/src/common.ml[33,658+19]..[33,658+26])
+            <arg>
+            Nolabel
+              expression (manual/src/html_processing/src/common.ml[33,658+30]..[33,658+38])
+                Pexp_constant PConst_string("manual",(manual/src/html_processing/src/common.ml[33,658+31]..[33,658+37]),None)
+          ]
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[34,697+0]..[34,697+35])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[34,697+4]..[34,697+13])
+          Ppat_var "docs_file" (manual/src/html_processing/src/common.ml[34,697+4]..[34,697+13])
+        expression (manual/src/html_processing/src/common.ml[34,697+16]..[34,697+35])
+          Pexp_apply
+          expression (manual/src/html_processing/src/common.ml[34,697+16]..[34,697+22])
+            Pexp_ident "//" (manual/src/html_processing/src/common.ml[34,697+16]..[34,697+22])
+          [
+            <arg>
+            Nolabel
+              expression (manual/src/html_processing/src/common.ml[34,697+23]..[34,697+35])
+                Pexp_ident "docs_maindir" (manual/src/html_processing/src/common.ml[34,697+23]..[34,697+35])
+          ]
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[37,754+0]..[37,754+30])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[37,754+4]..[37,754+11])
+          Ppat_var "api_dir" (manual/src/html_processing/src/common.ml[37,754+4]..[37,754+11])
+        expression (manual/src/html_processing/src/common.ml[37,754+14]..[37,754+30])
+          Pexp_apply
+          expression (manual/src/html_processing/src/common.ml[37,754+22]..[37,754+24])
+            Pexp_ident "//" (manual/src/html_processing/src/common.ml[37,754+22]..[37,754+24])
+          [
+            <arg>
+            Nolabel
+              expression (manual/src/html_processing/src/common.ml[37,754+14]..[37,754+21])
+                Pexp_ident "web_dir" (manual/src/html_processing/src/common.ml[37,754+14]..[37,754+21])
+            <arg>
+            Nolabel
+              expression (manual/src/html_processing/src/common.ml[37,754+25]..[37,754+30])
+                Pexp_constant PConst_string("api",(manual/src/html_processing/src/common.ml[37,754+26]..[37,754+29]),None)
+          ]
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[40,821+0]..[40,821+27])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[40,821+4]..[40,821+16])
+          Ppat_var "api_page_url" (manual/src/html_processing/src/common.ml[40,821+4]..[40,821+16])
+        expression (manual/src/html_processing/src/common.ml[40,821+19]..[40,821+27])
+          Pexp_constant PConst_string("../api",(manual/src/html_processing/src/common.ml[40,821+20]..[40,821+26]),None)
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[43,885+1]..[43,885+34])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[43,885+5]..[43,885+20])
+          Ppat_var "manual_page_url" (manual/src/html_processing/src/common.ml[43,885+5]..[43,885+20])
+        expression (manual/src/html_processing/src/common.ml[43,885+23]..[43,885+34])
+          Pexp_constant PConst_string("../manual",(manual/src/html_processing/src/common.ml[43,885+24]..[43,885+33]),None)
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[46,1001+0]..[46,1001+31])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[46,1001+4]..[46,1001+16])
+          Ppat_var "html_maindir" (manual/src/html_processing/src/common.ml[46,1001+4]..[46,1001+16])
+        expression (manual/src/html_processing/src/common.ml[46,1001+19]..[46,1001+31])
+          Pexp_constant PConst_string("../htmlman",(manual/src/html_processing/src/common.ml[46,1001+20]..[46,1001+30]),None)
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[49,1077+0]..[49,1077+35])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[49,1077+4]..[49,1077+13])
+          Ppat_var "html_file" (manual/src/html_processing/src/common.ml[49,1077+4]..[49,1077+13])
+        expression (manual/src/html_processing/src/common.ml[49,1077+16]..[49,1077+35])
+          Pexp_apply
+          expression (manual/src/html_processing/src/common.ml[49,1077+16]..[49,1077+22])
+            Pexp_ident "//" (manual/src/html_processing/src/common.ml[49,1077+16]..[49,1077+22])
+          [
+            <arg>
+            Nolabel
+              expression (manual/src/html_processing/src/common.ml[49,1077+23]..[49,1077+35])
+                Pexp_ident "html_maindir" (manual/src/html_processing/src/common.ml[49,1077+23]..[49,1077+35])
+          ]
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[51,1114+0]..[51,1114+48])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[51,1114+4]..[51,1114+16])
+          Ppat_var "releases_url" (manual/src/html_processing/src/common.ml[51,1114+4]..[51,1114+16])
+        expression (manual/src/html_processing/src/common.ml[51,1114+19]..[51,1114+48])
+          Pexp_constant PConst_string("https://ocaml.org/releases/",(manual/src/html_processing/src/common.ml[51,1114+20]..[51,1114+47]),None)
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[53,1164+0]..[53,1164+27])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[53,1164+4]..[53,1164+11])
+          Ppat_var "favicon" (manual/src/html_processing/src/common.ml[53,1164+4]..[53,1164+11])
+        expression (manual/src/html_processing/src/common.ml[53,1164+14]..[53,1164+27])
+          Pexp_constant PConst_string("favicon.ico",(manual/src/html_processing/src/common.ml[53,1164+15]..[53,1164+26]),None)
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[57,1216+0]..[57,1216+37])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[57,1216+4]..[57,1216+15])
+          Ppat_var "flat_option" (manual/src/html_processing/src/common.ml[57,1216+4]..[57,1216+15])
+        expression (manual/src/html_processing/src/common.ml[57,1216+16]..[57,1216+37]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (manual/src/html_processing/src/common.ml[57,1216+16]..[57,1216+17])
+            Ppat_var "f" (manual/src/html_processing/src/common.ml[57,1216+16]..[57,1216+17])
+          expression (manual/src/html_processing/src/common.ml[57,1216+18]..[57,1216+37]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (manual/src/html_processing/src/common.ml[57,1216+18]..[57,1216+19])
+              Ppat_var "o" (manual/src/html_processing/src/common.ml[57,1216+18]..[57,1216+19])
+            expression (manual/src/html_processing/src/common.ml[57,1216+22]..[57,1216+37])
+              Pexp_apply
+              expression (manual/src/html_processing/src/common.ml[57,1216+22]..[57,1216+33])
+                Pexp_ident "Option.bind" (manual/src/html_processing/src/common.ml[57,1216+22]..[57,1216+33])
+              [
+                <arg>
+                Nolabel
+                  expression (manual/src/html_processing/src/common.ml[57,1216+34]..[57,1216+35])
+                    Pexp_ident "o" (manual/src/html_processing/src/common.ml[57,1216+34]..[57,1216+35])
+                <arg>
+                Nolabel
+                  expression (manual/src/html_processing/src/common.ml[57,1216+36]..[57,1216+37])
+                    Pexp_ident "f" (manual/src/html_processing/src/common.ml[57,1216+36]..[57,1216+37])
+              ]
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[59,1255+0]..[59,1255+24])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[59,1255+4]..[59,1255+8])
+          Ppat_var "<<" (manual/src/html_processing/src/common.ml[59,1255+4]..[59,1255+8])
+        expression (manual/src/html_processing/src/common.ml[59,1255+9]..[59,1255+24]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (manual/src/html_processing/src/common.ml[59,1255+9]..[59,1255+10])
+            Ppat_var "f" (manual/src/html_processing/src/common.ml[59,1255+9]..[59,1255+10])
+          expression (manual/src/html_processing/src/common.ml[59,1255+11]..[59,1255+24]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (manual/src/html_processing/src/common.ml[59,1255+11]..[59,1255+12])
+              Ppat_var "g" (manual/src/html_processing/src/common.ml[59,1255+11]..[59,1255+12])
+            expression (manual/src/html_processing/src/common.ml[59,1255+13]..[59,1255+24]) ghost
+              Pexp_fun
+              Nolabel
+              None
+              pattern (manual/src/html_processing/src/common.ml[59,1255+13]..[59,1255+14])
+                Ppat_var "x" (manual/src/html_processing/src/common.ml[59,1255+13]..[59,1255+14])
+              expression (manual/src/html_processing/src/common.ml[59,1255+17]..[59,1255+24])
+                Pexp_apply
+                expression (manual/src/html_processing/src/common.ml[59,1255+17]..[59,1255+18])
+                  Pexp_ident "f" (manual/src/html_processing/src/common.ml[59,1255+17]..[59,1255+18])
+                [
+                  <arg>
+                  Nolabel
+                    expression (manual/src/html_processing/src/common.ml[59,1255+19]..[59,1255+24])
+                      Pexp_apply
+                      expression (manual/src/html_processing/src/common.ml[59,1255+20]..[59,1255+21])
+                        Pexp_ident "g" (manual/src/html_processing/src/common.ml[59,1255+20]..[59,1255+21])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[59,1255+22]..[59,1255+23])
+                            Pexp_ident "x" (manual/src/html_processing/src/common.ml[59,1255+22]..[59,1255+23])
+                      ]
+                ]
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[61,1281+0]..[61,1281+44])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[61,1281+4]..[61,1281+17])
+          Ppat_var "string_of_opt" (manual/src/html_processing/src/common.ml[61,1281+4]..[61,1281+17])
+        expression (manual/src/html_processing/src/common.ml[61,1281+20]..[61,1281+44])
+          Pexp_apply
+          expression (manual/src/html_processing/src/common.ml[61,1281+20]..[61,1281+32])
+            Pexp_ident "Option.value" (manual/src/html_processing/src/common.ml[61,1281+20]..[61,1281+32])
+          [
+            <arg>
+            Labelled "default"
+              expression (manual/src/html_processing/src/common.ml[61,1281+42]..[61,1281+44])
+                Pexp_constant PConst_string("",(manual/src/html_processing/src/common.ml[61,1281+43]..[61,1281+43]),None)
+          ]
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[63,1327+0]..[66,1420+30])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[63,1327+4]..[63,1327+15])
+          Ppat_var "starts_with" (manual/src/html_processing/src/common.ml[63,1327+4]..[63,1327+15])
+        expression (manual/src/html_processing/src/common.ml[63,1327+16]..[66,1420+30]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (manual/src/html_processing/src/common.ml[63,1327+16]..[63,1327+25])
+            Ppat_var "substring" (manual/src/html_processing/src/common.ml[63,1327+16]..[63,1327+25])
+          expression (manual/src/html_processing/src/common.ml[63,1327+26]..[66,1420+30]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (manual/src/html_processing/src/common.ml[63,1327+26]..[63,1327+27])
+              Ppat_var "s" (manual/src/html_processing/src/common.ml[63,1327+26]..[63,1327+27])
+            expression (manual/src/html_processing/src/common.ml[64,1357+2]..[66,1420+30])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (manual/src/html_processing/src/common.ml[64,1357+6]..[64,1357+7])
+                    Ppat_var "l" (manual/src/html_processing/src/common.ml[64,1357+6]..[64,1357+7])
+                  expression (manual/src/html_processing/src/common.ml[64,1357+10]..[64,1357+33])
+                    Pexp_apply
+                    expression (manual/src/html_processing/src/common.ml[64,1357+10]..[64,1357+23])
+                      Pexp_ident "String.length" (manual/src/html_processing/src/common.ml[64,1357+10]..[64,1357+23])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (manual/src/html_processing/src/common.ml[64,1357+24]..[64,1357+33])
+                          Pexp_ident "substring" (manual/src/html_processing/src/common.ml[64,1357+24]..[64,1357+33])
+                    ]
+              ]
+              expression (manual/src/html_processing/src/common.ml[65,1394+2]..[66,1420+30])
+                Pexp_apply
+                expression (manual/src/html_processing/src/common.ml[65,1394+23]..[65,1394+25])
+                  Pexp_ident "&&" (manual/src/html_processing/src/common.ml[65,1394+23]..[65,1394+25])
+                [
+                  <arg>
+                  Nolabel
+                    expression (manual/src/html_processing/src/common.ml[65,1394+2]..[65,1394+22])
+                      Pexp_apply
+                      expression (manual/src/html_processing/src/common.ml[65,1394+4]..[65,1394+6])
+                        Pexp_ident "<=" (manual/src/html_processing/src/common.ml[65,1394+4]..[65,1394+6])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[65,1394+2]..[65,1394+3])
+                            Pexp_ident "l" (manual/src/html_processing/src/common.ml[65,1394+2]..[65,1394+3])
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[65,1394+7]..[65,1394+22])
+                            Pexp_apply
+                            expression (manual/src/html_processing/src/common.ml[65,1394+7]..[65,1394+20])
+                              Pexp_ident "String.length" (manual/src/html_processing/src/common.ml[65,1394+7]..[65,1394+20])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (manual/src/html_processing/src/common.ml[65,1394+21]..[65,1394+22])
+                                  Pexp_ident "s" (manual/src/html_processing/src/common.ml[65,1394+21]..[65,1394+22])
+                            ]
+                      ]
+                  <arg>
+                  Nolabel
+                    expression (manual/src/html_processing/src/common.ml[66,1420+2]..[66,1420+30])
+                      Pexp_apply
+                      expression (manual/src/html_processing/src/common.ml[66,1420+19]..[66,1420+20])
+                        Pexp_ident "=" (manual/src/html_processing/src/common.ml[66,1420+19]..[66,1420+20])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[66,1420+2]..[66,1420+18])
+                            Pexp_apply
+                            expression (manual/src/html_processing/src/common.ml[66,1420+2]..[66,1420+12])
+                              Pexp_ident "String.sub" (manual/src/html_processing/src/common.ml[66,1420+2]..[66,1420+12])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (manual/src/html_processing/src/common.ml[66,1420+13]..[66,1420+14])
+                                  Pexp_ident "s" (manual/src/html_processing/src/common.ml[66,1420+13]..[66,1420+14])
+                              <arg>
+                              Nolabel
+                                expression (manual/src/html_processing/src/common.ml[66,1420+15]..[66,1420+16])
+                                  Pexp_constant PConst_int (0,None)
+                              <arg>
+                              Nolabel
+                                expression (manual/src/html_processing/src/common.ml[66,1420+17]..[66,1420+18])
+                                  Pexp_ident "l" (manual/src/html_processing/src/common.ml[66,1420+17]..[66,1420+18])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[66,1420+21]..[66,1420+30])
+                            Pexp_ident "substring" (manual/src/html_processing/src/common.ml[66,1420+21]..[66,1420+30])
+                      ]
+                ]
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[71,1513+0]..[76,1638+29])
+    Pstr_value Rec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[71,1513+8]..[71,1513+12])
+          Ppat_var "next" (manual/src/html_processing/src/common.ml[71,1513+8]..[71,1513+12])
+        expression (manual/src/html_processing/src/common.ml[71,1513+13]..[76,1638+29]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (manual/src/html_processing/src/common.ml[71,1513+13]..[71,1513+17])
+            Ppat_var "node" (manual/src/html_processing/src/common.ml[71,1513+13]..[71,1513+17])
+          expression (manual/src/html_processing/src/common.ml[72,1533+2]..[76,1638+29])
+            Pexp_match
+            expression (manual/src/html_processing/src/common.ml[72,1533+8]..[72,1533+25])
+              Pexp_apply
+              expression (manual/src/html_processing/src/common.ml[72,1533+8]..[72,1533+20])
+                Pexp_ident "next_element" (manual/src/html_processing/src/common.ml[72,1533+8]..[72,1533+20])
+              [
+                <arg>
+                Nolabel
+                  expression (manual/src/html_processing/src/common.ml[72,1533+21]..[72,1533+25])
+                    Pexp_ident "node" (manual/src/html_processing/src/common.ml[72,1533+21]..[72,1533+25])
+              ]
+            [
+              <case>
+                pattern (manual/src/html_processing/src/common.ml[73,1564+4]..[73,1564+10])
+                  Ppat_construct "Some" (manual/src/html_processing/src/common.ml[73,1564+4]..[73,1564+8])
+                  Some
+                    []
+                    pattern (manual/src/html_processing/src/common.ml[73,1564+9]..[73,1564+10])
+                      Ppat_var "n" (manual/src/html_processing/src/common.ml[73,1564+9]..[73,1564+10])
+                expression (manual/src/html_processing/src/common.ml[73,1564+14]..[73,1564+15])
+                  Pexp_ident "n" (manual/src/html_processing/src/common.ml[73,1564+14]..[73,1564+15])
+              <case>
+                pattern (manual/src/html_processing/src/common.ml[74,1580+4]..[74,1580+8])
+                  Ppat_construct "None" (manual/src/html_processing/src/common.ml[74,1580+4]..[74,1580+8])
+                  None
+                expression (manual/src/html_processing/src/common.ml[74,1580+12]..[76,1638+29])
+                  Pexp_match
+                  expression (manual/src/html_processing/src/common.ml[74,1580+18]..[74,1580+29])
+                    Pexp_apply
+                    expression (manual/src/html_processing/src/common.ml[74,1580+18]..[74,1580+24])
+                      Pexp_ident "parent" (manual/src/html_processing/src/common.ml[74,1580+18]..[74,1580+24])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (manual/src/html_processing/src/common.ml[74,1580+25]..[74,1580+29])
+                          Pexp_ident "node" (manual/src/html_processing/src/common.ml[74,1580+25]..[74,1580+29])
+                    ]
+                  [
+                    <case>
+                      pattern (manual/src/html_processing/src/common.ml[75,1615+6]..[75,1615+12])
+                        Ppat_construct "Some" (manual/src/html_processing/src/common.ml[75,1615+6]..[75,1615+10])
+                        Some
+                          []
+                          pattern (manual/src/html_processing/src/common.ml[75,1615+11]..[75,1615+12])
+                            Ppat_var "p" (manual/src/html_processing/src/common.ml[75,1615+11]..[75,1615+12])
+                      expression (manual/src/html_processing/src/common.ml[75,1615+16]..[75,1615+22])
+                        Pexp_apply
+                        expression (manual/src/html_processing/src/common.ml[75,1615+16]..[75,1615+20])
+                          Pexp_ident "next" (manual/src/html_processing/src/common.ml[75,1615+16]..[75,1615+20])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (manual/src/html_processing/src/common.ml[75,1615+21]..[75,1615+22])
+                              Pexp_ident "p" (manual/src/html_processing/src/common.ml[75,1615+21]..[75,1615+22])
+                        ]
+                    <case>
+                      pattern (manual/src/html_processing/src/common.ml[76,1638+6]..[76,1638+10])
+                        Ppat_construct "None" (manual/src/html_processing/src/common.ml[76,1638+6]..[76,1638+10])
+                        None
+                      expression (manual/src/html_processing/src/common.ml[76,1638+14]..[76,1638+29])
+                        Pexp_apply
+                        expression (manual/src/html_processing/src/common.ml[76,1638+14]..[76,1638+19])
+                          Pexp_ident "raise" (manual/src/html_processing/src/common.ml[76,1638+14]..[76,1638+19])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (manual/src/html_processing/src/common.ml[76,1638+20]..[76,1638+29])
+                              Pexp_construct "Not_found" (manual/src/html_processing/src/common.ml[76,1638+20]..[76,1638+29])
+                              None
+                        ]
+                  ]
+            ]
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[78,1669+0]..[81,1831+10])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[78,1669+4]..[78,1669+13])
+          Ppat_var "logo_html" (manual/src/html_processing/src/common.ml[78,1669+4]..[78,1669+13])
+        expression (manual/src/html_processing/src/common.ml[78,1669+14]..[81,1831+10]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (manual/src/html_processing/src/common.ml[78,1669+14]..[78,1669+17])
+            Ppat_var "url" (manual/src/html_processing/src/common.ml[78,1669+14]..[78,1669+17])
+          expression (manual/src/html_processing/src/common.ml[79,1689+2]..[81,1831+10])
+            Pexp_apply
+            expression (manual/src/html_processing/src/common.ml[81,1831+2]..[81,1831+4])
+              Pexp_ident "|>" (manual/src/html_processing/src/common.ml[81,1831+2]..[81,1831+4])
+            [
+              <arg>
+              Nolabel
+                expression (manual/src/html_processing/src/common.ml[79,1689+2]..[80,1753+77])
+                  Pexp_apply
+                  expression (manual/src/html_processing/src/common.ml[79,1689+56]..[79,1689+57])
+                    Pexp_ident "^" (manual/src/html_processing/src/common.ml[79,1689+56]..[79,1689+57])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (manual/src/html_processing/src/common.ml[79,1689+2]..[79,1689+55])
+                        Pexp_constant PConst_string("<nav class=\"toc brand\"><a class=\"brand\" href=\"",(manual/src/html_processing/src/common.ml[79,1689+3]..[79,1689+54]),None)
+                    <arg>
+                    Nolabel
+                      expression (manual/src/html_processing/src/common.ml[79,1689+58]..[80,1753+77])
+                        Pexp_apply
+                        expression (manual/src/html_processing/src/common.ml[79,1689+62]..[79,1689+63])
+                          Pexp_ident "^" (manual/src/html_processing/src/common.ml[79,1689+62]..[79,1689+63])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (manual/src/html_processing/src/common.ml[79,1689+58]..[79,1689+61])
+                              Pexp_ident "url" (manual/src/html_processing/src/common.ml[79,1689+58]..[79,1689+61])
+                          <arg>
+                          Nolabel
+                            expression (manual/src/html_processing/src/common.ml[80,1753+2]..[80,1753+77])
+                              Pexp_constant PConst_string("\" ><img src=\"colour-logo.svg\" class=\"svg\" alt=\"OCaml\" /></a></nav>",(manual/src/html_processing/src/common.ml[80,1753+3]..[80,1753+76]),None)
+                        ]
+                  ]
+              <arg>
+              Nolabel
+                expression (manual/src/html_processing/src/common.ml[81,1831+5]..[81,1831+10])
+                  Pexp_ident "parse" (manual/src/html_processing/src/common.ml[81,1831+5]..[81,1831+10])
+            ]
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[83,1843+0]..[88,2012+6])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[83,1843+4]..[83,1843+13])
+          Ppat_var "wrap_body" (manual/src/html_processing/src/common.ml[83,1843+4]..[83,1843+13])
+        expression (manual/src/html_processing/src/common.ml[83,1843+14]..[88,2012+6]) ghost
+          Pexp_fun
+          Labelled "classes"
+          None
+          pattern (manual/src/html_processing/src/common.ml[83,1843+15]..[83,1843+22])
+            Ppat_var "classes" (manual/src/html_processing/src/common.ml[83,1843+15]..[83,1843+22])
+          expression (manual/src/html_processing/src/common.ml[83,1843+23]..[88,2012+6]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (manual/src/html_processing/src/common.ml[83,1843+23]..[83,1843+27])
+              Ppat_var "soup" (manual/src/html_processing/src/common.ml[83,1843+23]..[83,1843+27])
+            expression (manual/src/html_processing/src/common.ml[84,1873+2]..[88,2012+6])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (manual/src/html_processing/src/common.ml[84,1873+6]..[84,1873+10])
+                    Ppat_var "body" (manual/src/html_processing/src/common.ml[84,1873+6]..[84,1873+10])
+                  expression (manual/src/html_processing/src/common.ml[84,1873+13]..[84,1873+26])
+                    Pexp_apply
+                    expression (manual/src/html_processing/src/common.ml[84,1873+18]..[84,1873+19])
+                      Pexp_ident "$" (manual/src/html_processing/src/common.ml[84,1873+18]..[84,1873+19])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (manual/src/html_processing/src/common.ml[84,1873+13]..[84,1873+17])
+                          Pexp_ident "soup" (manual/src/html_processing/src/common.ml[84,1873+13]..[84,1873+17])
+                      <arg>
+                      Nolabel
+                        expression (manual/src/html_processing/src/common.ml[84,1873+20]..[84,1873+26])
+                          Pexp_constant PConst_string("body",(manual/src/html_processing/src/common.ml[84,1873+21]..[84,1873+25]),None)
+                    ]
+              ]
+              expression (manual/src/html_processing/src/common.ml[85,1903+2]..[88,2012+6])
+                Pexp_sequence
+                expression (manual/src/html_processing/src/common.ml[85,1903+2]..[85,1903+21])
+                  Pexp_apply
+                  expression (manual/src/html_processing/src/common.ml[85,1903+2]..[85,1903+10])
+                    Pexp_ident "set_name" (manual/src/html_processing/src/common.ml[85,1903+2]..[85,1903+10])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (manual/src/html_processing/src/common.ml[85,1903+11]..[85,1903+16])
+                        Pexp_constant PConst_string("div",(manual/src/html_processing/src/common.ml[85,1903+12]..[85,1903+15]),None)
+                    <arg>
+                    Nolabel
+                      expression (manual/src/html_processing/src/common.ml[85,1903+17]..[85,1903+21])
+                        Pexp_ident "body" (manual/src/html_processing/src/common.ml[85,1903+17]..[85,1903+21])
+                  ]
+                expression (manual/src/html_processing/src/common.ml[86,1926+2]..[88,2012+6])
+                  Pexp_sequence
+                  expression (manual/src/html_processing/src/common.ml[86,1926+2]..[86,1926+47])
+                    Pexp_apply
+                    expression (manual/src/html_processing/src/common.ml[86,1926+2]..[86,1926+11])
+                      Pexp_ident "List.iter" (manual/src/html_processing/src/common.ml[86,1926+2]..[86,1926+11])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (manual/src/html_processing/src/common.ml[86,1926+12]..[86,1926+39])
+                          Pexp_fun
+                          Nolabel
+                          None
+                          pattern (manual/src/html_processing/src/common.ml[86,1926+17]..[86,1926+18])
+                            Ppat_var "c" (manual/src/html_processing/src/common.ml[86,1926+17]..[86,1926+18])
+                          expression (manual/src/html_processing/src/common.ml[86,1926+22]..[86,1926+38])
+                            Pexp_apply
+                            expression (manual/src/html_processing/src/common.ml[86,1926+22]..[86,1926+31])
+                              Pexp_ident "add_class" (manual/src/html_processing/src/common.ml[86,1926+22]..[86,1926+31])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (manual/src/html_processing/src/common.ml[86,1926+32]..[86,1926+33])
+                                  Pexp_ident "c" (manual/src/html_processing/src/common.ml[86,1926+32]..[86,1926+33])
+                              <arg>
+                              Nolabel
+                                expression (manual/src/html_processing/src/common.ml[86,1926+34]..[86,1926+38])
+                                  Pexp_ident "body" (manual/src/html_processing/src/common.ml[86,1926+34]..[86,1926+38])
+                            ]
+                      <arg>
+                      Nolabel
+                        expression (manual/src/html_processing/src/common.ml[86,1926+40]..[86,1926+47])
+                          Pexp_ident "classes" (manual/src/html_processing/src/common.ml[86,1926+40]..[86,1926+47])
+                    ]
+                  expression (manual/src/html_processing/src/common.ml[87,1975+2]..[88,2012+6])
+                    Pexp_sequence
+                    expression (manual/src/html_processing/src/common.ml[87,1975+2]..[87,1975+35])
+                      Pexp_apply
+                      expression (manual/src/html_processing/src/common.ml[87,1975+2]..[87,1975+6])
+                        Pexp_ident "wrap" (manual/src/html_processing/src/common.ml[87,1975+2]..[87,1975+6])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[87,1975+7]..[87,1975+11])
+                            Pexp_ident "body" (manual/src/html_processing/src/common.ml[87,1975+7]..[87,1975+11])
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[87,1975+12]..[87,1975+35])
+                            Pexp_apply
+                            expression (manual/src/html_processing/src/common.ml[87,1975+13]..[87,1975+27])
+                              Pexp_ident "create_element" (manual/src/html_processing/src/common.ml[87,1975+13]..[87,1975+27])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (manual/src/html_processing/src/common.ml[87,1975+28]..[87,1975+34])
+                                  Pexp_constant PConst_string("body",(manual/src/html_processing/src/common.ml[87,1975+29]..[87,1975+33]),None)
+                            ]
+                      ]
+                    expression (manual/src/html_processing/src/common.ml[88,2012+2]..[88,2012+6])
+                      Pexp_ident "body" (manual/src/html_processing/src/common.ml[88,2012+2]..[88,2012+6])
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[91,2038+0]..[94,2156+22])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[91,2038+4]..[91,2038+15])
+          Ppat_var "add_favicon" (manual/src/html_processing/src/common.ml[91,2038+4]..[91,2038+15])
+        expression (manual/src/html_processing/src/common.ml[91,2038+16]..[94,2156+22]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (manual/src/html_processing/src/common.ml[91,2038+16]..[91,2038+20])
+            Ppat_var "head" (manual/src/html_processing/src/common.ml[91,2038+16]..[91,2038+20])
+          expression (manual/src/html_processing/src/common.ml[92,2061+2]..[94,2156+22])
+            Pexp_apply
+            expression (manual/src/html_processing/src/common.ml[94,2156+2]..[94,2156+4])
+              Pexp_ident "|>" (manual/src/html_processing/src/common.ml[94,2156+2]..[94,2156+4])
+            [
+              <arg>
+              Nolabel
+                expression (manual/src/html_processing/src/common.ml[92,2061+2]..[93,2129+26])
+                  Pexp_apply
+                  expression (manual/src/html_processing/src/common.ml[92,2061+2]..[92,2061+7])
+                    Pexp_ident "parse" (manual/src/html_processing/src/common.ml[92,2061+2]..[92,2061+7])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (manual/src/html_processing/src/common.ml[92,2061+8]..[93,2129+26])
+                        Pexp_apply
+                        expression (manual/src/html_processing/src/common.ml[92,2061+66]..[92,2061+67])
+                          Pexp_ident "^" (manual/src/html_processing/src/common.ml[92,2061+66]..[92,2061+67])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (manual/src/html_processing/src/common.ml[92,2061+9]..[92,2061+65])
+                              Pexp_constant PConst_string ("<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"",(manual/src/html_processing/src/common.ml[92,2061+11]..[92,2061+63]),Some "")
+                          <arg>
+                          Nolabel
+                            expression (manual/src/html_processing/src/common.ml[93,2129+9]..[93,2129+25])
+                              Pexp_apply
+                              expression (manual/src/html_processing/src/common.ml[93,2129+17]..[93,2129+18])
+                                Pexp_ident "^" (manual/src/html_processing/src/common.ml[93,2129+17]..[93,2129+18])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (manual/src/html_processing/src/common.ml[93,2129+9]..[93,2129+16])
+                                    Pexp_ident "favicon" (manual/src/html_processing/src/common.ml[93,2129+9]..[93,2129+16])
+                                <arg>
+                                Nolabel
+                                  expression (manual/src/html_processing/src/common.ml[93,2129+19]..[93,2129+25])
+                                    Pexp_constant PConst_string ("\">",(manual/src/html_processing/src/common.ml[93,2129+21]..[93,2129+23]),Some "")
+                              ]
+                        ]
+                  ]
+              <arg>
+              Nolabel
+                expression (manual/src/html_processing/src/common.ml[94,2156+5]..[94,2156+22])
+                  Pexp_apply
+                  expression (manual/src/html_processing/src/common.ml[94,2156+5]..[94,2156+17])
+                    Pexp_ident "append_child" (manual/src/html_processing/src/common.ml[94,2156+5]..[94,2156+17])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (manual/src/html_processing/src/common.ml[94,2156+18]..[94,2156+22])
+                        Pexp_ident "head" (manual/src/html_processing/src/common.ml[94,2156+18]..[94,2156+22])
+                  ]
+            ]
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[97,2241+0]..[107,2595+18])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[97,2241+4]..[97,2241+15])
+          Ppat_var "update_head" (manual/src/html_processing/src/common.ml[97,2241+4]..[97,2241+15])
+        expression (manual/src/html_processing/src/common.ml[97,2241+16]..[107,2595+18]) ghost
+          Pexp_fun
+          Optional "search"
+          Some
+            expression (manual/src/html_processing/src/common.ml[97,2241+27]..[97,2241+32])
+              Pexp_construct "false" (manual/src/html_processing/src/common.ml[97,2241+27]..[97,2241+32])
+              None
+          pattern (manual/src/html_processing/src/common.ml[97,2241+18]..[97,2241+24])
+            Ppat_var "search" (manual/src/html_processing/src/common.ml[97,2241+18]..[97,2241+24])
+          expression (manual/src/html_processing/src/common.ml[97,2241+34]..[107,2595+18]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (manual/src/html_processing/src/common.ml[97,2241+34]..[97,2241+38])
+              Ppat_var "soup" (manual/src/html_processing/src/common.ml[97,2241+34]..[97,2241+38])
+            expression (manual/src/html_processing/src/common.ml[98,2282+2]..[107,2595+18])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (manual/src/html_processing/src/common.ml[98,2282+6]..[98,2282+10])
+                    Ppat_var "head" (manual/src/html_processing/src/common.ml[98,2282+6]..[98,2282+10])
+                  expression (manual/src/html_processing/src/common.ml[98,2282+13]..[98,2282+26])
+                    Pexp_apply
+                    expression (manual/src/html_processing/src/common.ml[98,2282+18]..[98,2282+19])
+                      Pexp_ident "$" (manual/src/html_processing/src/common.ml[98,2282+18]..[98,2282+19])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (manual/src/html_processing/src/common.ml[98,2282+13]..[98,2282+17])
+                          Pexp_ident "soup" (manual/src/html_processing/src/common.ml[98,2282+13]..[98,2282+17])
+                      <arg>
+                      Nolabel
+                        expression (manual/src/html_processing/src/common.ml[98,2282+20]..[98,2282+26])
+                          Pexp_constant PConst_string("head",(manual/src/html_processing/src/common.ml[98,2282+21]..[98,2282+25]),None)
+                    ]
+              ]
+              expression (manual/src/html_processing/src/common.ml[99,2312+2]..[107,2595+18])
+                Pexp_sequence
+                expression (manual/src/html_processing/src/common.ml[99,2312+2]..[102,2420+5])
+                  Pexp_ifthenelse
+                  expression (manual/src/html_processing/src/common.ml[99,2312+5]..[99,2312+11])
+                    Pexp_ident "search" (manual/src/html_processing/src/common.ml[99,2312+5]..[99,2312+11])
+                  expression (manual/src/html_processing/src/common.ml[99,2312+17]..[102,2420+5])
+                    Pexp_apply
+                    expression (manual/src/html_processing/src/common.ml[101,2395+4]..[101,2395+6])
+                      Pexp_ident "|>" (manual/src/html_processing/src/common.ml[101,2395+4]..[101,2395+6])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (manual/src/html_processing/src/common.ml[100,2335+4]..[100,2335+59])
+                          Pexp_apply
+                          expression (manual/src/html_processing/src/common.ml[100,2335+4]..[100,2335+18])
+                            Pexp_ident "create_element" (manual/src/html_processing/src/common.ml[100,2335+4]..[100,2335+18])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (manual/src/html_processing/src/common.ml[100,2335+19]..[100,2335+27])
+                                Pexp_constant PConst_string("script",(manual/src/html_processing/src/common.ml[100,2335+20]..[100,2335+26]),None)
+                            <arg>
+                            Labelled "attributes"
+                              expression (manual/src/html_processing/src/common.ml[100,2335+40]..[100,2335+59])
+                                Pexp_construct "::" (manual/src/html_processing/src/common.ml[100,2335+41]..[100,2335+59]) ghost
+                                Some
+                                  expression (manual/src/html_processing/src/common.ml[100,2335+41]..[100,2335+59]) ghost
+                                    Pexp_tuple
+                                    [
+                                      expression (manual/src/html_processing/src/common.ml[100,2335+41]..[100,2335+58])
+                                        Pexp_tuple
+                                        [
+                                          expression (manual/src/html_processing/src/common.ml[100,2335+41]..[100,2335+46])
+                                            Pexp_constant PConst_string("src",(manual/src/html_processing/src/common.ml[100,2335+42]..[100,2335+45]),None)
+                                          expression (manual/src/html_processing/src/common.ml[100,2335+47]..[100,2335+58])
+                                            Pexp_constant PConst_string("search.js",(manual/src/html_processing/src/common.ml[100,2335+48]..[100,2335+57]),None)
+                                        ]
+                                      expression (manual/src/html_processing/src/common.ml[100,2335+58]..[100,2335+59]) ghost
+                                        Pexp_construct "[]" (manual/src/html_processing/src/common.ml[100,2335+58]..[100,2335+59]) ghost
+                                        None
+                                    ]
+                          ]
+                      <arg>
+                      Nolabel
+                        expression (manual/src/html_processing/src/common.ml[101,2395+7]..[101,2395+24])
+                          Pexp_apply
+                          expression (manual/src/html_processing/src/common.ml[101,2395+7]..[101,2395+19])
+                            Pexp_ident "append_child" (manual/src/html_processing/src/common.ml[101,2395+7]..[101,2395+19])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (manual/src/html_processing/src/common.ml[101,2395+20]..[101,2395+24])
+                                Pexp_ident "head" (manual/src/html_processing/src/common.ml[101,2395+20]..[101,2395+24])
+                          ]
+                    ]
+                  None
+                expression (manual/src/html_processing/src/common.ml[103,2427+2]..[107,2595+18])
+                  Pexp_sequence
+                  expression (manual/src/html_processing/src/common.ml[103,2427+2]..[104,2485+22])
+                    Pexp_apply
+                    expression (manual/src/html_processing/src/common.ml[104,2485+2]..[104,2485+4])
+                      Pexp_ident "|>" (manual/src/html_processing/src/common.ml[104,2485+2]..[104,2485+4])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (manual/src/html_processing/src/common.ml[103,2427+2]..[103,2427+57])
+                          Pexp_apply
+                          expression (manual/src/html_processing/src/common.ml[103,2427+2]..[103,2427+16])
+                            Pexp_ident "create_element" (manual/src/html_processing/src/common.ml[103,2427+2]..[103,2427+16])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (manual/src/html_processing/src/common.ml[103,2427+17]..[103,2427+25])
+                                Pexp_constant PConst_string("script",(manual/src/html_processing/src/common.ml[103,2427+18]..[103,2427+24]),None)
+                            <arg>
+                            Labelled "attributes"
+                              expression (manual/src/html_processing/src/common.ml[103,2427+38]..[103,2427+57])
+                                Pexp_construct "::" (manual/src/html_processing/src/common.ml[103,2427+39]..[103,2427+57]) ghost
+                                Some
+                                  expression (manual/src/html_processing/src/common.ml[103,2427+39]..[103,2427+57]) ghost
+                                    Pexp_tuple
+                                    [
+                                      expression (manual/src/html_processing/src/common.ml[103,2427+39]..[103,2427+56])
+                                        Pexp_tuple
+                                        [
+                                          expression (manual/src/html_processing/src/common.ml[103,2427+39]..[103,2427+44])
+                                            Pexp_constant PConst_string("src",(manual/src/html_processing/src/common.ml[103,2427+40]..[103,2427+43]),None)
+                                          expression (manual/src/html_processing/src/common.ml[103,2427+45]..[103,2427+56])
+                                            Pexp_constant PConst_string("scroll.js",(manual/src/html_processing/src/common.ml[103,2427+46]..[103,2427+55]),None)
+                                        ]
+                                      expression (manual/src/html_processing/src/common.ml[103,2427+56]..[103,2427+57]) ghost
+                                        Pexp_construct "[]" (manual/src/html_processing/src/common.ml[103,2427+56]..[103,2427+57]) ghost
+                                        None
+                                    ]
+                          ]
+                      <arg>
+                      Nolabel
+                        expression (manual/src/html_processing/src/common.ml[104,2485+5]..[104,2485+22])
+                          Pexp_apply
+                          expression (manual/src/html_processing/src/common.ml[104,2485+5]..[104,2485+17])
+                            Pexp_ident "append_child" (manual/src/html_processing/src/common.ml[104,2485+5]..[104,2485+17])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (manual/src/html_processing/src/common.ml[104,2485+18]..[104,2485+22])
+                                Pexp_ident "head" (manual/src/html_processing/src/common.ml[104,2485+18]..[104,2485+22])
+                          ]
+                    ]
+                  expression (manual/src/html_processing/src/common.ml[105,2509+2]..[107,2595+18])
+                    Pexp_sequence
+                    expression (manual/src/html_processing/src/common.ml[105,2509+2]..[106,2571+22])
+                      Pexp_apply
+                      expression (manual/src/html_processing/src/common.ml[106,2571+2]..[106,2571+4])
+                        Pexp_ident "|>" (manual/src/html_processing/src/common.ml[106,2571+2]..[106,2571+4])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[105,2509+2]..[105,2509+61])
+                            Pexp_apply
+                            expression (manual/src/html_processing/src/common.ml[105,2509+2]..[105,2509+16])
+                              Pexp_ident "create_element" (manual/src/html_processing/src/common.ml[105,2509+2]..[105,2509+16])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (manual/src/html_processing/src/common.ml[105,2509+17]..[105,2509+25])
+                                  Pexp_constant PConst_string("script",(manual/src/html_processing/src/common.ml[105,2509+18]..[105,2509+24]),None)
+                              <arg>
+                              Labelled "attributes"
+                                expression (manual/src/html_processing/src/common.ml[105,2509+38]..[105,2509+61])
+                                  Pexp_construct "::" (manual/src/html_processing/src/common.ml[105,2509+39]..[105,2509+61]) ghost
+                                  Some
+                                    expression (manual/src/html_processing/src/common.ml[105,2509+39]..[105,2509+61]) ghost
+                                      Pexp_tuple
+                                      [
+                                        expression (manual/src/html_processing/src/common.ml[105,2509+39]..[105,2509+60])
+                                          Pexp_tuple
+                                          [
+                                            expression (manual/src/html_processing/src/common.ml[105,2509+39]..[105,2509+44])
+                                              Pexp_constant PConst_string("src",(manual/src/html_processing/src/common.ml[105,2509+40]..[105,2509+43]),None)
+                                            expression (manual/src/html_processing/src/common.ml[105,2509+45]..[105,2509+60])
+                                              Pexp_constant PConst_string("navigation.js",(manual/src/html_processing/src/common.ml[105,2509+46]..[105,2509+59]),None)
+                                          ]
+                                        expression (manual/src/html_processing/src/common.ml[105,2509+60]..[105,2509+61]) ghost
+                                          Pexp_construct "[]" (manual/src/html_processing/src/common.ml[105,2509+60]..[105,2509+61]) ghost
+                                          None
+                                      ]
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[106,2571+5]..[106,2571+22])
+                            Pexp_apply
+                            expression (manual/src/html_processing/src/common.ml[106,2571+5]..[106,2571+17])
+                              Pexp_ident "append_child" (manual/src/html_processing/src/common.ml[106,2571+5]..[106,2571+17])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (manual/src/html_processing/src/common.ml[106,2571+18]..[106,2571+22])
+                                  Pexp_ident "head" (manual/src/html_processing/src/common.ml[106,2571+18]..[106,2571+22])
+                            ]
+                      ]
+                    expression (manual/src/html_processing/src/common.ml[107,2595+2]..[107,2595+18])
+                      Pexp_apply
+                      expression (manual/src/html_processing/src/common.ml[107,2595+2]..[107,2595+13])
+                        Pexp_ident "add_favicon" (manual/src/html_processing/src/common.ml[107,2595+2]..[107,2595+13])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[107,2595+14]..[107,2595+18])
+                            Pexp_ident "head" (manual/src/html_processing/src/common.ml[107,2595+14]..[107,2595+18])
+                      ]
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[110,2640+0]..[115,2863+24])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[110,2640+4]..[110,2640+20])
+          Ppat_var "add_version_link" (manual/src/html_processing/src/common.ml[110,2640+4]..[110,2640+20])
+        expression (manual/src/html_processing/src/common.ml[110,2640+21]..[115,2863+24]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (manual/src/html_processing/src/common.ml[110,2640+21]..[110,2640+24])
+            Ppat_var "nav" (manual/src/html_processing/src/common.ml[110,2640+21]..[110,2640+24])
+          expression (manual/src/html_processing/src/common.ml[110,2640+25]..[115,2863+24]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (manual/src/html_processing/src/common.ml[110,2640+25]..[110,2640+29])
+              Ppat_var "text" (manual/src/html_processing/src/common.ml[110,2640+25]..[110,2640+29])
+            expression (manual/src/html_processing/src/common.ml[110,2640+30]..[115,2863+24]) ghost
+              Pexp_fun
+              Nolabel
+              None
+              pattern (manual/src/html_processing/src/common.ml[110,2640+30]..[110,2640+33])
+                Ppat_var "url" (manual/src/html_processing/src/common.ml[110,2640+30]..[110,2640+33])
+              expression (manual/src/html_processing/src/common.ml[111,2676+2]..[115,2863+24])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (manual/src/html_processing/src/common.ml[111,2676+6]..[111,2676+10])
+                      Ppat_var "vnum" (manual/src/html_processing/src/common.ml[111,2676+6]..[111,2676+10])
+                    expression (manual/src/html_processing/src/common.ml[111,2676+13]..[111,2676+55])
+                      Pexp_apply
+                      expression (manual/src/html_processing/src/common.ml[111,2676+13]..[111,2676+27])
+                        Pexp_ident "create_element" (manual/src/html_processing/src/common.ml[111,2676+13]..[111,2676+27])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[111,2676+28]..[111,2676+33])
+                            Pexp_constant PConst_string("div",(manual/src/html_processing/src/common.ml[111,2676+29]..[111,2676+32]),None)
+                        <arg>
+                        Labelled "class_"
+                          expression (manual/src/html_processing/src/common.ml[111,2676+42]..[111,2676+55])
+                            Pexp_constant PConst_string("toc_version",(manual/src/html_processing/src/common.ml[111,2676+43]..[111,2676+54]),None)
+                      ]
+                ]
+                expression (manual/src/html_processing/src/common.ml[112,2735+2]..[115,2863+24])
+                  Pexp_let Nonrec
+                  [
+                    <def>
+                      pattern (manual/src/html_processing/src/common.ml[112,2735+6]..[112,2735+7])
+                        Ppat_var "a" (manual/src/html_processing/src/common.ml[112,2735+6]..[112,2735+7])
+                      expression (manual/src/html_processing/src/common.ml[112,2735+10]..[113,2781+55])
+                        Pexp_apply
+                        expression (manual/src/html_processing/src/common.ml[112,2735+10]..[112,2735+24])
+                          Pexp_ident "create_element" (manual/src/html_processing/src/common.ml[112,2735+10]..[112,2735+24])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (manual/src/html_processing/src/common.ml[112,2735+25]..[112,2735+28])
+                              Pexp_constant PConst_string("a",(manual/src/html_processing/src/common.ml[112,2735+26]..[112,2735+27]),None)
+                          <arg>
+                          Labelled "inner_text"
+                            expression (manual/src/html_processing/src/common.ml[112,2735+41]..[112,2735+45])
+                              Pexp_ident "text" (manual/src/html_processing/src/common.ml[112,2735+41]..[112,2735+45])
+                          <arg>
+                          Labelled "attributes"
+                            expression (manual/src/html_processing/src/common.ml[113,2781+18]..[113,2781+55])
+                              Pexp_construct "::" (manual/src/html_processing/src/common.ml[113,2781+19]..[113,2781+55]) ghost
+                              Some
+                                expression (manual/src/html_processing/src/common.ml[113,2781+19]..[113,2781+55]) ghost
+                                  Pexp_tuple
+                                  [
+                                    expression (manual/src/html_processing/src/common.ml[113,2781+19]..[113,2781+30])
+                                      Pexp_tuple
+                                      [
+                                        expression (manual/src/html_processing/src/common.ml[113,2781+19]..[113,2781+25])
+                                          Pexp_constant PConst_string("href",(manual/src/html_processing/src/common.ml[113,2781+20]..[113,2781+24]),None)
+                                        expression (manual/src/html_processing/src/common.ml[113,2781+27]..[113,2781+30])
+                                          Pexp_ident "url" (manual/src/html_processing/src/common.ml[113,2781+27]..[113,2781+30])
+                                      ]
+                                    expression (manual/src/html_processing/src/common.ml[113,2781+32]..[113,2781+55]) ghost
+                                      Pexp_construct "::" (manual/src/html_processing/src/common.ml[113,2781+32]..[113,2781+55]) ghost
+                                      Some
+                                        expression (manual/src/html_processing/src/common.ml[113,2781+32]..[113,2781+55]) ghost
+                                          Pexp_tuple
+                                          [
+                                            expression (manual/src/html_processing/src/common.ml[113,2781+32]..[113,2781+54])
+                                              Pexp_tuple
+                                              [
+                                                expression (manual/src/html_processing/src/common.ml[113,2781+32]..[113,2781+36])
+                                                  Pexp_constant PConst_string("id",(manual/src/html_processing/src/common.ml[113,2781+33]..[113,2781+35]),None)
+                                                expression (manual/src/html_processing/src/common.ml[113,2781+38]..[113,2781+54])
+                                                  Pexp_constant PConst_string("version-select",(manual/src/html_processing/src/common.ml[113,2781+39]..[113,2781+53]),None)
+                                              ]
+                                            expression (manual/src/html_processing/src/common.ml[113,2781+54]..[113,2781+55]) ghost
+                                              Pexp_construct "[]" (manual/src/html_processing/src/common.ml[113,2781+54]..[113,2781+55]) ghost
+                                              None
+                                          ]
+                                  ]
+                        ]
+                  ]
+                  expression (manual/src/html_processing/src/common.ml[114,2840+2]..[115,2863+24])
+                    Pexp_sequence
+                    expression (manual/src/html_processing/src/common.ml[114,2840+2]..[114,2840+21])
+                      Pexp_apply
+                      expression (manual/src/html_processing/src/common.ml[114,2840+2]..[114,2840+14])
+                        Pexp_ident "append_child" (manual/src/html_processing/src/common.ml[114,2840+2]..[114,2840+14])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[114,2840+15]..[114,2840+19])
+                            Pexp_ident "vnum" (manual/src/html_processing/src/common.ml[114,2840+15]..[114,2840+19])
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[114,2840+20]..[114,2840+21])
+                            Pexp_ident "a" (manual/src/html_processing/src/common.ml[114,2840+20]..[114,2840+21])
+                      ]
+                    expression (manual/src/html_processing/src/common.ml[115,2863+2]..[115,2863+24])
+                      Pexp_apply
+                      expression (manual/src/html_processing/src/common.ml[115,2863+2]..[115,2863+15])
+                        Pexp_ident "prepend_child" (manual/src/html_processing/src/common.ml[115,2863+2]..[115,2863+15])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[115,2863+16]..[115,2863+19])
+                            Pexp_ident "nav" (manual/src/html_processing/src/common.ml[115,2863+16]..[115,2863+19])
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[115,2863+20]..[115,2863+24])
+                            Pexp_ident "vnum" (manual/src/html_processing/src/common.ml[115,2863+20]..[115,2863+24])
+                      ]
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[117,2889+0]..[121,3042+24])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[117,2889+4]..[117,2889+22])
+          Ppat_var "add_sidebar_button" (manual/src/html_processing/src/common.ml[117,2889+4]..[117,2889+22])
+        expression (manual/src/html_processing/src/common.ml[117,2889+23]..[121,3042+24]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (manual/src/html_processing/src/common.ml[117,2889+23]..[117,2889+27])
+            Ppat_var "body" (manual/src/html_processing/src/common.ml[117,2889+23]..[117,2889+27])
+          expression (manual/src/html_processing/src/common.ml[118,2919+2]..[121,3042+24])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (manual/src/html_processing/src/common.ml[118,2919+6]..[118,2919+9])
+                  Ppat_var "btn" (manual/src/html_processing/src/common.ml[118,2919+6]..[118,2919+9])
+                expression (manual/src/html_processing/src/common.ml[118,2919+12]..[118,2919+53])
+                  Pexp_apply
+                  expression (manual/src/html_processing/src/common.ml[118,2919+12]..[118,2919+26])
+                    Pexp_ident "create_element" (manual/src/html_processing/src/common.ml[118,2919+12]..[118,2919+26])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (manual/src/html_processing/src/common.ml[118,2919+27]..[118,2919+32])
+                        Pexp_constant PConst_string("div",(manual/src/html_processing/src/common.ml[118,2919+28]..[118,2919+31]),None)
+                    <arg>
+                    Labelled "id"
+                      expression (manual/src/html_processing/src/common.ml[118,2919+37]..[118,2919+53])
+                        Pexp_constant PConst_string("sidebar-button",(manual/src/html_processing/src/common.ml[118,2919+38]..[118,2919+52]),None)
+                  ]
+            ]
+            expression (manual/src/html_processing/src/common.ml[119,2976+2]..[121,3042+24])
+              Pexp_sequence
+              expression (manual/src/html_processing/src/common.ml[119,2976+2]..[120,3018+22])
+                Pexp_apply
+                expression (manual/src/html_processing/src/common.ml[120,3018+2]..[120,3018+4])
+                  Pexp_ident "|>" (manual/src/html_processing/src/common.ml[120,3018+2]..[120,3018+4])
+                [
+                  <arg>
+                  Nolabel
+                    expression (manual/src/html_processing/src/common.ml[119,2976+2]..[119,2976+41])
+                      Pexp_apply
+                      expression (manual/src/html_processing/src/common.ml[119,2976+2]..[119,2976+16])
+                        Pexp_ident "create_element" (manual/src/html_processing/src/common.ml[119,2976+2]..[119,2976+16])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[119,2976+17]..[119,2976+23])
+                            Pexp_constant PConst_string("span",(manual/src/html_processing/src/common.ml[119,2976+18]..[119,2976+22]),None)
+                        <arg>
+                        Labelled "inner_text"
+                          expression (manual/src/html_processing/src/common.ml[119,2976+36]..[119,2976+41])
+                            Pexp_constant PConst_string("\226\152\176",(manual/src/html_processing/src/common.ml[119,2976+37]..[119,2976+40]),None)
+                      ]
+                  <arg>
+                  Nolabel
+                    expression (manual/src/html_processing/src/common.ml[120,3018+5]..[120,3018+22])
+                      Pexp_apply
+                      expression (manual/src/html_processing/src/common.ml[120,3018+5]..[120,3018+18])
+                        Pexp_ident "prepend_child" (manual/src/html_processing/src/common.ml[120,3018+5]..[120,3018+18])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[120,3018+19]..[120,3018+22])
+                            Pexp_ident "btn" (manual/src/html_processing/src/common.ml[120,3018+19]..[120,3018+22])
+                      ]
+                ]
+              expression (manual/src/html_processing/src/common.ml[121,3042+2]..[121,3042+24])
+                Pexp_apply
+                expression (manual/src/html_processing/src/common.ml[121,3042+2]..[121,3042+15])
+                  Pexp_ident "prepend_child" (manual/src/html_processing/src/common.ml[121,3042+2]..[121,3042+15])
+                [
+                  <arg>
+                  Nolabel
+                    expression (manual/src/html_processing/src/common.ml[121,3042+16]..[121,3042+20])
+                      Pexp_ident "body" (manual/src/html_processing/src/common.ml[121,3042+16]..[121,3042+20])
+                  <arg>
+                  Nolabel
+                    expression (manual/src/html_processing/src/common.ml[121,3042+21]..[121,3042+24])
+                      Pexp_ident "btn" (manual/src/html_processing/src/common.ml[121,3042+21]..[121,3042+24])
+                ]
+    ]
+  structure_item (manual/src/html_processing/src/common.ml[124,3113+0]..[128,3328+29])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/src/html_processing/src/common.ml[124,3113+4]..[124,3113+16])
+          Ppat_var "find_version" (manual/src/html_processing/src/common.ml[124,3113+4]..[124,3113+16])
+        expression (manual/src/html_processing/src/common.ml[124,3113+17]..[128,3328+29]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (manual/src/html_processing/src/common.ml[124,3113+17]..[124,3113+19])
+            Ppat_construct "()" (manual/src/html_processing/src/common.ml[124,3113+17]..[124,3113+19])
+            None
+          expression (manual/src/html_processing/src/common.ml[125,3135+2]..[128,3328+29])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (manual/src/html_processing/src/common.ml[125,3135+6]..[125,3135+8])
+                  Ppat_var "pp" (manual/src/html_processing/src/common.ml[125,3135+6]..[125,3135+8])
+                expression (manual/src/html_processing/src/common.ml[125,3135+11]..[125,3135+35])
+                  Pexp_ident "Filename.parent_dir_name" (manual/src/html_processing/src/common.ml[125,3135+11]..[125,3135+35])
+            ]
+            expression (manual/src/html_processing/src/common.ml[126,3174+2]..[128,3328+29])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (manual/src/html_processing/src/common.ml[126,3174+6]..[126,3174+18])
+                    Ppat_var "version_file" (manual/src/html_processing/src/common.ml[126,3174+6]..[126,3174+18])
+                  expression (manual/src/html_processing/src/common.ml[126,3174+21]..[126,3174+48])
+                    Pexp_apply
+                    expression (manual/src/html_processing/src/common.ml[126,3174+36]..[126,3174+38])
+                      Pexp_ident "//" (manual/src/html_processing/src/common.ml[126,3174+36]..[126,3174+38])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (manual/src/html_processing/src/common.ml[126,3174+21]..[126,3174+35])
+                          Pexp_apply
+                          expression (manual/src/html_processing/src/common.ml[126,3174+30]..[126,3174+32])
+                            Pexp_ident "//" (manual/src/html_processing/src/common.ml[126,3174+30]..[126,3174+32])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (manual/src/html_processing/src/common.ml[126,3174+21]..[126,3174+29])
+                                Pexp_apply
+                                expression (manual/src/html_processing/src/common.ml[126,3174+24]..[126,3174+26])
+                                  Pexp_ident "//" (manual/src/html_processing/src/common.ml[126,3174+24]..[126,3174+26])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (manual/src/html_processing/src/common.ml[126,3174+21]..[126,3174+23])
+                                      Pexp_ident "pp" (manual/src/html_processing/src/common.ml[126,3174+21]..[126,3174+23])
+                                  <arg>
+                                  Nolabel
+                                    expression (manual/src/html_processing/src/common.ml[126,3174+27]..[126,3174+29])
+                                      Pexp_ident "pp" (manual/src/html_processing/src/common.ml[126,3174+27]..[126,3174+29])
+                                ]
+                            <arg>
+                            Nolabel
+                              expression (manual/src/html_processing/src/common.ml[126,3174+33]..[126,3174+35])
+                                Pexp_ident "pp" (manual/src/html_processing/src/common.ml[126,3174+33]..[126,3174+35])
+                          ]
+                      <arg>
+                      Nolabel
+                        expression (manual/src/html_processing/src/common.ml[126,3174+39]..[126,3174+48])
+                          Pexp_constant PConst_string("VERSION",(manual/src/html_processing/src/common.ml[126,3174+40]..[126,3174+47]),None)
+                    ]
+              ]
+              expression (manual/src/html_processing/src/common.ml[127,3226+2]..[128,3328+29])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (manual/src/html_processing/src/common.ml[127,3226+6]..[127,3226+18])
+                      Ppat_tuple
+                      [
+                        pattern (manual/src/html_processing/src/common.ml[127,3226+6]..[127,3226+11])
+                          Ppat_var "major" (manual/src/html_processing/src/common.ml[127,3226+6]..[127,3226+11])
+                        pattern (manual/src/html_processing/src/common.ml[127,3226+13]..[127,3226+18])
+                          Ppat_var "minor" (manual/src/html_processing/src/common.ml[127,3226+13]..[127,3226+18])
+                      ]
+                    expression (manual/src/html_processing/src/common.ml[127,3226+21]..[127,3226+98])
+                      Pexp_apply
+                      expression (manual/src/html_processing/src/common.ml[127,3226+21]..[127,3226+33])
+                        Pexp_ident "Scanf.bscanf" (manual/src/html_processing/src/common.ml[127,3226+21]..[127,3226+33])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[127,3226+34]..[127,3226+73])
+                            Pexp_apply
+                            expression (manual/src/html_processing/src/common.ml[127,3226+35]..[127,3226+59])
+                              Pexp_ident "Scanf.Scanning.from_file" (manual/src/html_processing/src/common.ml[127,3226+35]..[127,3226+59])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (manual/src/html_processing/src/common.ml[127,3226+60]..[127,3226+72])
+                                  Pexp_ident "version_file" (manual/src/html_processing/src/common.ml[127,3226+60]..[127,3226+72])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[127,3226+74]..[127,3226+81])
+                            Pexp_constant PConst_string("%u.%u",(manual/src/html_processing/src/common.ml[127,3226+75]..[127,3226+80]),None)
+                        <arg>
+                        Nolabel
+                          expression (manual/src/html_processing/src/common.ml[127,3226+82]..[127,3226+98])
+                            Pexp_fun
+                            Nolabel
+                            None
+                            pattern (manual/src/html_processing/src/common.ml[127,3226+87]..[127,3226+88])
+                              Ppat_var "x" (manual/src/html_processing/src/common.ml[127,3226+87]..[127,3226+88])
+                            expression (manual/src/html_processing/src/common.ml[127,3226+89]..[127,3226+97]) ghost
+                              Pexp_fun
+                              Nolabel
+                              None
+                              pattern (manual/src/html_processing/src/common.ml[127,3226+89]..[127,3226+90])
+                                Ppat_var "y" (manual/src/html_processing/src/common.ml[127,3226+89]..[127,3226+90])
+                              expression (manual/src/html_processing/src/common.ml[127,3226+94]..[127,3226+97])
+                                Pexp_tuple
+                                [
+                                  expression (manual/src/html_processing/src/common.ml[127,3226+94]..[127,3226+95])
+                                    Pexp_ident "x" (manual/src/html_processing/src/common.ml[127,3226+94]..[127,3226+95])
+                                  expression (manual/src/html_processing/src/common.ml[127,3226+96]..[127,3226+97])
+                                    Pexp_ident "y" (manual/src/html_processing/src/common.ml[127,3226+96]..[127,3226+97])
+                                ]
+                      ]
+                ]
+                expression (manual/src/html_processing/src/common.ml[128,3328+2]..[128,3328+29])
+                  Pexp_apply
+                  expression (manual/src/html_processing/src/common.ml[128,3328+2]..[128,3328+9])
+                    Pexp_ident "sprintf" (manual/src/html_processing/src/common.ml[128,3328+2]..[128,3328+9])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (manual/src/html_processing/src/common.ml[128,3328+10]..[128,3328+17])
+                        Pexp_constant PConst_string("%u.%u",(manual/src/html_processing/src/common.ml[128,3328+11]..[128,3328+16]),None)
+                    <arg>
+                    Nolabel
+                      expression (manual/src/html_processing/src/common.ml[128,3328+18]..[128,3328+23])
+                        Pexp_ident "major" (manual/src/html_processing/src/common.ml[128,3328+18]..[128,3328+23])
+                    <arg>
+                    Nolabel
+                      expression (manual/src/html_processing/src/common.ml[128,3328+24]..[128,3328+29])
+                        Pexp_ident "minor" (manual/src/html_processing/src/common.ml[128,3328+24]..[128,3328+29])
+                  ]
+    ]
+]
+

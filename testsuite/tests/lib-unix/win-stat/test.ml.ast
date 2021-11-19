@@ -1,0 +1,395 @@
+[
+  structure_item (testsuite/tests/lib-unix/win-stat/test.ml[9,86+0]..[9,86+9])
+    Pstr_open Fresh
+    module_expr (testsuite/tests/lib-unix/win-stat/test.ml[9,86+5]..[9,86+9])
+      Pmod_ident "Unix" (testsuite/tests/lib-unix/win-stat/test.ml[9,86+5]..[9,86+9])
+  structure_item (testsuite/tests/lib-unix/win-stat/test.ml[11,97+0]..[11,97+58])
+    Pstr_primitive
+    value_description "set_fake_clock" (testsuite/tests/lib-unix/win-stat/test.ml[11,97+9]..[11,97+23]) (testsuite/tests/lib-unix/win-stat/test.ml[11,97+0]..[11,97+58])
+      core_type (testsuite/tests/lib-unix/win-stat/test.ml[11,97+26]..[11,97+39])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/lib-unix/win-stat/test.ml[11,97+26]..[11,97+31])
+          Ptyp_constr "int64" (testsuite/tests/lib-unix/win-stat/test.ml[11,97+26]..[11,97+31])
+          []
+        core_type (testsuite/tests/lib-unix/win-stat/test.ml[11,97+35]..[11,97+39])
+          Ptyp_constr "unit" (testsuite/tests/lib-unix/win-stat/test.ml[11,97+35]..[11,97+39])
+          []
+      [
+        "set_fake_clock"
+      ]
+  structure_item (testsuite/tests/lib-unix/win-stat/test.ml[13,157+0]..[13,157+80])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/win-stat/test.ml[13,157+4]..[13,157+13])
+          Ppat_var "real_time" (testsuite/tests/lib-unix/win-stat/test.ml[13,157+4]..[13,157+13])
+        expression (testsuite/tests/lib-unix/win-stat/test.ml[13,157+14]..[13,157+80]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-unix/win-stat/test.ml[13,157+14]..[13,157+16])
+            Ppat_var "tm" (testsuite/tests/lib-unix/win-stat/test.ml[13,157+14]..[13,157+16])
+          expression (testsuite/tests/lib-unix/win-stat/test.ml[13,157+19]..[13,157+80])
+            Pexp_record
+            [
+              "tm_year" (testsuite/tests/lib-unix/win-stat/test.ml[13,157+28]..[13,157+35])
+                expression (testsuite/tests/lib-unix/win-stat/test.ml[13,157+38]..[13,157+55])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[13,157+49]..[13,157+50])
+                    Pexp_ident "+" (testsuite/tests/lib-unix/win-stat/test.ml[13,157+49]..[13,157+50])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-stat/test.ml[13,157+38]..[13,157+48])
+                        Pexp_field
+                        expression (testsuite/tests/lib-unix/win-stat/test.ml[13,157+38]..[13,157+40])
+                          Pexp_ident "tm" (testsuite/tests/lib-unix/win-stat/test.ml[13,157+38]..[13,157+40])
+                        "tm_year" (testsuite/tests/lib-unix/win-stat/test.ml[13,157+41]..[13,157+48])
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-stat/test.ml[13,157+51]..[13,157+55])
+                        Pexp_constant PConst_int (1900,None)
+                  ]
+              "tm_mon" (testsuite/tests/lib-unix/win-stat/test.ml[13,157+57]..[13,157+63])
+                expression (testsuite/tests/lib-unix/win-stat/test.ml[13,157+66]..[13,157+79])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[13,157+76]..[13,157+77])
+                    Pexp_ident "+" (testsuite/tests/lib-unix/win-stat/test.ml[13,157+76]..[13,157+77])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-stat/test.ml[13,157+66]..[13,157+75])
+                        Pexp_field
+                        expression (testsuite/tests/lib-unix/win-stat/test.ml[13,157+66]..[13,157+68])
+                          Pexp_ident "tm" (testsuite/tests/lib-unix/win-stat/test.ml[13,157+66]..[13,157+68])
+                        "tm_mon" (testsuite/tests/lib-unix/win-stat/test.ml[13,157+69]..[13,157+75])
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-stat/test.ml[13,157+78]..[13,157+79])
+                        Pexp_constant PConst_int (1,None)
+                  ]
+            ]
+            Some
+              expression (testsuite/tests/lib-unix/win-stat/test.ml[13,157+20]..[13,157+22])
+                Pexp_ident "tm" (testsuite/tests/lib-unix/win-stat/test.ml[13,157+20]..[13,157+22])
+    ]
+  structure_item (testsuite/tests/lib-unix/win-stat/test.ml[15,239+0]..[21,603+70])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/win-stat/test.ml[15,239+4]..[15,239+14])
+          Ppat_var "print_time" (testsuite/tests/lib-unix/win-stat/test.ml[15,239+4]..[15,239+14])
+        expression (testsuite/tests/lib-unix/win-stat/test.ml[15,239+15]..[21,603+70]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-unix/win-stat/test.ml[15,239+15]..[15,239+17])
+            Ppat_construct "()" (testsuite/tests/lib-unix/win-stat/test.ml[15,239+15]..[15,239+17])
+            None
+          expression (testsuite/tests/lib-unix/win-stat/test.ml[16,259+2]..[21,603+70])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (testsuite/tests/lib-unix/win-stat/test.ml[16,259+6]..[16,259+10])
+                  Ppat_var "time" (testsuite/tests/lib-unix/win-stat/test.ml[16,259+6]..[16,259+10])
+                expression (testsuite/tests/lib-unix/win-stat/test.ml[16,259+13]..[16,259+53])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[16,259+41]..[16,259+43])
+                    Pexp_ident "|>" (testsuite/tests/lib-unix/win-stat/test.ml[16,259+41]..[16,259+43])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-stat/test.ml[16,259+13]..[16,259+40])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/win-stat/test.ml[16,259+26]..[16,259+28])
+                          Pexp_ident "|>" (testsuite/tests/lib-unix/win-stat/test.ml[16,259+26]..[16,259+28])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/win-stat/test.ml[16,259+13]..[16,259+25])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-unix/win-stat/test.ml[16,259+13]..[16,259+22])
+                                Pexp_ident "Unix.time" (testsuite/tests/lib-unix/win-stat/test.ml[16,259+13]..[16,259+22])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-unix/win-stat/test.ml[16,259+23]..[16,259+25])
+                                    Pexp_construct "()" (testsuite/tests/lib-unix/win-stat/test.ml[16,259+23]..[16,259+25])
+                                    None
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/win-stat/test.ml[16,259+29]..[16,259+40])
+                              Pexp_ident "Unix.gmtime" (testsuite/tests/lib-unix/win-stat/test.ml[16,259+29]..[16,259+40])
+                        ]
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-stat/test.ml[16,259+44]..[16,259+53])
+                        Pexp_ident "real_time" (testsuite/tests/lib-unix/win-stat/test.ml[16,259+44]..[16,259+53])
+                  ]
+            ]
+            expression (testsuite/tests/lib-unix/win-stat/test.ml[17,316+2]..[21,603+70])
+              Pexp_apply
+              expression (testsuite/tests/lib-unix/win-stat/test.ml[17,316+2]..[17,316+15])
+                Pexp_ident "Printf.printf" (testsuite/tests/lib-unix/win-stat/test.ml[17,316+2]..[17,316+15])
+              [
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[17,316+16]..[17,316+58])
+                    Pexp_constant PConst_string("System clock: %04d/%02d/%02d %02d:%02d\n",(testsuite/tests/lib-unix/win-stat/test.ml[17,316+17]..[17,316+57]),None)
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[17,316+59]..[17,316+71])
+                    Pexp_field
+                    expression (testsuite/tests/lib-unix/win-stat/test.ml[17,316+59]..[17,316+63])
+                      Pexp_ident "time" (testsuite/tests/lib-unix/win-stat/test.ml[17,316+59]..[17,316+63])
+                    "tm_year" (testsuite/tests/lib-unix/win-stat/test.ml[17,316+64]..[17,316+71])
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[18,388+59]..[18,388+70])
+                    Pexp_field
+                    expression (testsuite/tests/lib-unix/win-stat/test.ml[18,388+59]..[18,388+63])
+                      Pexp_ident "time" (testsuite/tests/lib-unix/win-stat/test.ml[18,388+59]..[18,388+63])
+                    "tm_mon" (testsuite/tests/lib-unix/win-stat/test.ml[18,388+64]..[18,388+70])
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[19,459+59]..[19,459+71])
+                    Pexp_field
+                    expression (testsuite/tests/lib-unix/win-stat/test.ml[19,459+59]..[19,459+63])
+                      Pexp_ident "time" (testsuite/tests/lib-unix/win-stat/test.ml[19,459+59]..[19,459+63])
+                    "tm_mday" (testsuite/tests/lib-unix/win-stat/test.ml[19,459+64]..[19,459+71])
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[20,531+59]..[20,531+71])
+                    Pexp_field
+                    expression (testsuite/tests/lib-unix/win-stat/test.ml[20,531+59]..[20,531+63])
+                      Pexp_ident "time" (testsuite/tests/lib-unix/win-stat/test.ml[20,531+59]..[20,531+63])
+                    "tm_hour" (testsuite/tests/lib-unix/win-stat/test.ml[20,531+64]..[20,531+71])
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[21,603+59]..[21,603+70])
+                    Pexp_field
+                    expression (testsuite/tests/lib-unix/win-stat/test.ml[21,603+59]..[21,603+63])
+                      Pexp_ident "time" (testsuite/tests/lib-unix/win-stat/test.ml[21,603+59]..[21,603+63])
+                    "tm_min" (testsuite/tests/lib-unix/win-stat/test.ml[21,603+64]..[21,603+70])
+              ]
+    ]
+  structure_item (testsuite/tests/lib-unix/win-stat/test.ml[23,675+0]..[27,846+78])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/win-stat/test.ml[23,675+4]..[23,675+14])
+          Ppat_var "test_mtime" (testsuite/tests/lib-unix/win-stat/test.ml[23,675+4]..[23,675+14])
+        expression (testsuite/tests/lib-unix/win-stat/test.ml[23,675+15]..[27,846+78]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-unix/win-stat/test.ml[23,675+15]..[23,675+19])
+            Ppat_var "file" (testsuite/tests/lib-unix/win-stat/test.ml[23,675+15]..[23,675+19])
+          expression (testsuite/tests/lib-unix/win-stat/test.ml[24,697+2]..[27,846+78])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (testsuite/tests/lib-unix/win-stat/test.ml[24,697+6]..[24,697+10])
+                  Ppat_var "time" (testsuite/tests/lib-unix/win-stat/test.ml[24,697+6]..[24,697+10])
+                expression (testsuite/tests/lib-unix/win-stat/test.ml[24,697+13]..[24,697+66])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[24,697+54]..[24,697+56])
+                    Pexp_ident "|>" (testsuite/tests/lib-unix/win-stat/test.ml[24,697+54]..[24,697+56])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-stat/test.ml[24,697+13]..[24,697+53])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/win-stat/test.ml[24,697+39]..[24,697+41])
+                          Pexp_ident "|>" (testsuite/tests/lib-unix/win-stat/test.ml[24,697+39]..[24,697+41])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/win-stat/test.ml[24,697+13]..[24,697+38])
+                              Pexp_field
+                              expression (testsuite/tests/lib-unix/win-stat/test.ml[24,697+13]..[24,697+29])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-unix/win-stat/test.ml[24,697+14]..[24,697+23])
+                                  Pexp_ident "Unix.stat" (testsuite/tests/lib-unix/win-stat/test.ml[24,697+14]..[24,697+23])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-unix/win-stat/test.ml[24,697+24]..[24,697+28])
+                                      Pexp_ident "file" (testsuite/tests/lib-unix/win-stat/test.ml[24,697+24]..[24,697+28])
+                                ]
+                              "st_mtime" (testsuite/tests/lib-unix/win-stat/test.ml[24,697+30]..[24,697+38])
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/win-stat/test.ml[24,697+42]..[24,697+53])
+                              Pexp_ident "Unix.gmtime" (testsuite/tests/lib-unix/win-stat/test.ml[24,697+42]..[24,697+53])
+                        ]
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-stat/test.ml[24,697+57]..[24,697+66])
+                        Pexp_ident "real_time" (testsuite/tests/lib-unix/win-stat/test.ml[24,697+57]..[24,697+66])
+                  ]
+            ]
+            expression (testsuite/tests/lib-unix/win-stat/test.ml[25,767+2]..[27,846+78])
+              Pexp_apply
+              expression (testsuite/tests/lib-unix/win-stat/test.ml[25,767+2]..[25,767+15])
+                Pexp_ident "Printf.printf" (testsuite/tests/lib-unix/win-stat/test.ml[25,767+2]..[25,767+15])
+              [
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[25,767+16]..[25,767+69])
+                    Pexp_constant PConst_string("Read mtime for %s = %04d/%02d/%02d %02d:%02d:%02d\n",(testsuite/tests/lib-unix/win-stat/test.ml[25,767+17]..[25,767+68]),None)
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[26,837+4]..[26,837+8])
+                    Pexp_ident "file" (testsuite/tests/lib-unix/win-stat/test.ml[26,837+4]..[26,837+8])
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[27,846+4]..[27,846+16])
+                    Pexp_field
+                    expression (testsuite/tests/lib-unix/win-stat/test.ml[27,846+4]..[27,846+8])
+                      Pexp_ident "time" (testsuite/tests/lib-unix/win-stat/test.ml[27,846+4]..[27,846+8])
+                    "tm_year" (testsuite/tests/lib-unix/win-stat/test.ml[27,846+9]..[27,846+16])
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[27,846+17]..[27,846+28])
+                    Pexp_field
+                    expression (testsuite/tests/lib-unix/win-stat/test.ml[27,846+17]..[27,846+21])
+                      Pexp_ident "time" (testsuite/tests/lib-unix/win-stat/test.ml[27,846+17]..[27,846+21])
+                    "tm_mon" (testsuite/tests/lib-unix/win-stat/test.ml[27,846+22]..[27,846+28])
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[27,846+29]..[27,846+41])
+                    Pexp_field
+                    expression (testsuite/tests/lib-unix/win-stat/test.ml[27,846+29]..[27,846+33])
+                      Pexp_ident "time" (testsuite/tests/lib-unix/win-stat/test.ml[27,846+29]..[27,846+33])
+                    "tm_mday" (testsuite/tests/lib-unix/win-stat/test.ml[27,846+34]..[27,846+41])
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[27,846+42]..[27,846+54])
+                    Pexp_field
+                    expression (testsuite/tests/lib-unix/win-stat/test.ml[27,846+42]..[27,846+46])
+                      Pexp_ident "time" (testsuite/tests/lib-unix/win-stat/test.ml[27,846+42]..[27,846+46])
+                    "tm_hour" (testsuite/tests/lib-unix/win-stat/test.ml[27,846+47]..[27,846+54])
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[27,846+55]..[27,846+66])
+                    Pexp_field
+                    expression (testsuite/tests/lib-unix/win-stat/test.ml[27,846+55]..[27,846+59])
+                      Pexp_ident "time" (testsuite/tests/lib-unix/win-stat/test.ml[27,846+55]..[27,846+59])
+                    "tm_min" (testsuite/tests/lib-unix/win-stat/test.ml[27,846+60]..[27,846+66])
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[27,846+67]..[27,846+78])
+                    Pexp_field
+                    expression (testsuite/tests/lib-unix/win-stat/test.ml[27,846+67]..[27,846+71])
+                      Pexp_ident "time" (testsuite/tests/lib-unix/win-stat/test.ml[27,846+67]..[27,846+71])
+                    "tm_sec" (testsuite/tests/lib-unix/win-stat/test.ml[27,846+72]..[27,846+78])
+              ]
+    ]
+  structure_item (testsuite/tests/lib-unix/win-stat/test.ml[29,926+0]..[39,1193+27])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/win-stat/test.ml[29,926+4]..[29,926+5])
+          Ppat_any
+        expression (testsuite/tests/lib-unix/win-stat/test.ml[31,970+2]..[39,1193+27])
+          Pexp_sequence
+          expression (testsuite/tests/lib-unix/win-stat/test.ml[31,970+2]..[31,970+35])
+            Pexp_apply
+            expression (testsuite/tests/lib-unix/win-stat/test.ml[31,970+2]..[31,970+16])
+              Pexp_ident "set_fake_clock" (testsuite/tests/lib-unix/win-stat/test.ml[31,970+2]..[31,970+16])
+            [
+              <arg>
+              Nolabel
+                expression (testsuite/tests/lib-unix/win-stat/test.ml[31,970+17]..[31,970+35])
+                  Pexp_constant PConst_int (0x1D2DB1648916FA0,Some L)
+            ]
+          expression (testsuite/tests/lib-unix/win-stat/test.ml[32,1007+2]..[39,1193+27])
+            Pexp_sequence
+            expression (testsuite/tests/lib-unix/win-stat/test.ml[32,1007+2]..[32,1007+15])
+              Pexp_apply
+              expression (testsuite/tests/lib-unix/win-stat/test.ml[32,1007+2]..[32,1007+12])
+                Pexp_ident "print_time" (testsuite/tests/lib-unix/win-stat/test.ml[32,1007+2]..[32,1007+12])
+              [
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[32,1007+13]..[32,1007+15])
+                    Pexp_construct "()" (testsuite/tests/lib-unix/win-stat/test.ml[32,1007+13]..[32,1007+15])
+                    None
+              ]
+            expression (testsuite/tests/lib-unix/win-stat/test.ml[33,1024+2]..[39,1193+27])
+              Pexp_sequence
+              expression (testsuite/tests/lib-unix/win-stat/test.ml[33,1024+2]..[33,1024+23])
+                Pexp_apply
+                expression (testsuite/tests/lib-unix/win-stat/test.ml[33,1024+2]..[33,1024+12])
+                  Pexp_ident "test_mtime" (testsuite/tests/lib-unix/win-stat/test.ml[33,1024+2]..[33,1024+12])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-unix/win-stat/test.ml[33,1024+13]..[33,1024+23])
+                      Pexp_constant PConst_string("dst-file",(testsuite/tests/lib-unix/win-stat/test.ml[33,1024+14]..[33,1024+22]),None)
+                ]
+              expression (testsuite/tests/lib-unix/win-stat/test.ml[34,1049+2]..[39,1193+27])
+                Pexp_sequence
+                expression (testsuite/tests/lib-unix/win-stat/test.ml[34,1049+2]..[34,1049+27])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[34,1049+2]..[34,1049+12])
+                    Pexp_ident "test_mtime" (testsuite/tests/lib-unix/win-stat/test.ml[34,1049+2]..[34,1049+12])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-stat/test.ml[34,1049+13]..[34,1049+27])
+                        Pexp_constant PConst_string("non-dst-file",(testsuite/tests/lib-unix/win-stat/test.ml[34,1049+14]..[34,1049+26]),None)
+                  ]
+                expression (testsuite/tests/lib-unix/win-stat/test.ml[36,1114+2]..[39,1193+27])
+                  Pexp_sequence
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[36,1114+2]..[36,1114+35])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-unix/win-stat/test.ml[36,1114+2]..[36,1114+16])
+                      Pexp_ident "set_fake_clock" (testsuite/tests/lib-unix/win-stat/test.ml[36,1114+2]..[36,1114+16])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/win-stat/test.ml[36,1114+17]..[36,1114+35])
+                          Pexp_constant PConst_int (0x1D27CCA66FF6FA0,Some L)
+                    ]
+                  expression (testsuite/tests/lib-unix/win-stat/test.ml[37,1151+2]..[39,1193+27])
+                    Pexp_sequence
+                    expression (testsuite/tests/lib-unix/win-stat/test.ml[37,1151+2]..[37,1151+15])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/win-stat/test.ml[37,1151+2]..[37,1151+12])
+                        Pexp_ident "print_time" (testsuite/tests/lib-unix/win-stat/test.ml[37,1151+2]..[37,1151+12])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/win-stat/test.ml[37,1151+13]..[37,1151+15])
+                            Pexp_construct "()" (testsuite/tests/lib-unix/win-stat/test.ml[37,1151+13]..[37,1151+15])
+                            None
+                      ]
+                    expression (testsuite/tests/lib-unix/win-stat/test.ml[38,1168+2]..[39,1193+27])
+                      Pexp_sequence
+                      expression (testsuite/tests/lib-unix/win-stat/test.ml[38,1168+2]..[38,1168+23])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/win-stat/test.ml[38,1168+2]..[38,1168+12])
+                          Pexp_ident "test_mtime" (testsuite/tests/lib-unix/win-stat/test.ml[38,1168+2]..[38,1168+12])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/win-stat/test.ml[38,1168+13]..[38,1168+23])
+                              Pexp_constant PConst_string("dst-file",(testsuite/tests/lib-unix/win-stat/test.ml[38,1168+14]..[38,1168+22]),None)
+                        ]
+                      expression (testsuite/tests/lib-unix/win-stat/test.ml[39,1193+2]..[39,1193+27])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/win-stat/test.ml[39,1193+2]..[39,1193+12])
+                          Pexp_ident "test_mtime" (testsuite/tests/lib-unix/win-stat/test.ml[39,1193+2]..[39,1193+12])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/win-stat/test.ml[39,1193+13]..[39,1193+27])
+                              Pexp_constant PConst_string("non-dst-file",(testsuite/tests/lib-unix/win-stat/test.ml[39,1193+14]..[39,1193+26]),None)
+                        ]
+    ]
+]
+

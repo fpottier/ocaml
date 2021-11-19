@@ -1,0 +1,931 @@
+[
+  structure_item (testsuite/tests/parsetree/locations_test.ml[10,215+0]..[10,215+39])
+    Pstr_modtype "S" (testsuite/tests/parsetree/locations_test.ml[10,215+12]..[10,215+13])
+      module_type (testsuite/tests/parsetree/locations_test.ml[10,215+16]..[10,215+23])
+        attribute "attr"
+          [
+            structure_item (testsuite/tests/parsetree/locations_test.ml[10,215+31]..[10,215+38])
+              Pstr_eval
+              expression (testsuite/tests/parsetree/locations_test.ml[10,215+31]..[10,215+38])
+                Pexp_ident "payload" (testsuite/tests/parsetree/locations_test.ml[10,215+31]..[10,215+38])
+          ]
+        Pmty_signature
+        []
+  structure_item (testsuite/tests/parsetree/locations_test.ml[13,259+0]..[13,259+37])
+    Pstr_module
+    "M" (testsuite/tests/parsetree/locations_test.ml[13,259+7]..[13,259+8])
+      module_expr (testsuite/tests/parsetree/locations_test.ml[13,259+11]..[13,259+21])
+        attribute "attr"
+          [
+            structure_item (testsuite/tests/parsetree/locations_test.ml[13,259+29]..[13,259+36])
+              Pstr_eval
+              expression (testsuite/tests/parsetree/locations_test.ml[13,259+29]..[13,259+36])
+                Pexp_ident "payload" (testsuite/tests/parsetree/locations_test.ml[13,259+29]..[13,259+36])
+          ]
+        Pmod_structure
+        []
+  structure_item (testsuite/tests/parsetree/locations_test.ml[15,300+0]..[15,300+28])
+    Pstr_type Rec
+    [
+      type_declaration "t" (testsuite/tests/parsetree/locations_test.ml[15,300+5]..[15,300+6]) (testsuite/tests/parsetree/locations_test.ml[15,300+0]..[15,300+28])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (testsuite/tests/parsetree/locations_test.ml[15,300+9]..[15,300+12])
+              attribute "attr"
+                [
+                  structure_item (testsuite/tests/parsetree/locations_test.ml[15,300+20]..[15,300+27])
+                    Pstr_eval
+                    expression (testsuite/tests/parsetree/locations_test.ml[15,300+20]..[15,300+27])
+                      Pexp_ident "payload" (testsuite/tests/parsetree/locations_test.ml[15,300+20]..[15,300+27])
+                ]
+              Ptyp_constr "int" (testsuite/tests/parsetree/locations_test.ml[15,300+9]..[15,300+12])
+              []
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[17,332+0]..[17,332+1])
+    Pstr_eval
+    expression (testsuite/tests/parsetree/locations_test.ml[17,332+0]..[17,332+1])
+      attribute "attr"
+        [
+          structure_item (testsuite/tests/parsetree/locations_test.ml[17,332+9]..[17,332+16])
+            Pstr_eval
+            expression (testsuite/tests/parsetree/locations_test.ml[17,332+9]..[17,332+16])
+              Pexp_ident "payload" (testsuite/tests/parsetree/locations_test.ml[17,332+9]..[17,332+16])
+        ]
+      Pexp_constant PConst_int (3,None)
+  structure_item (testsuite/tests/parsetree/locations_test.ml[19,353+0]..[19,353+30])
+    Pstr_exception
+    type_exception
+      attribute "attr"
+        [
+          structure_item (testsuite/tests/parsetree/locations_test.ml[19,353+22]..[19,353+29])
+            Pstr_eval
+            expression (testsuite/tests/parsetree/locations_test.ml[19,353+22]..[19,353+29])
+              Pexp_ident "payload" (testsuite/tests/parsetree/locations_test.ml[19,353+22]..[19,353+29])
+        ]
+      ptyext_constructor =
+        extension_constructor (testsuite/tests/parsetree/locations_test.ml[19,353+0]..[19,353+13])
+          pext_name = "Exn"
+          pext_kind =
+            Pext_decl
+              []
+              None
+  structure_item (testsuite/tests/parsetree/locations_test.ml[23,403+0]..[23,403+50])
+    Pstr_modtype "F" (testsuite/tests/parsetree/locations_test.ml[23,403+12]..[23,403+13])
+      module_type (testsuite/tests/parsetree/locations_test.ml[23,403+24]..[23,403+50])
+        Pmty_functor "A" (testsuite/tests/parsetree/locations_test.ml[23,403+25]..[23,403+26])
+        module_type (testsuite/tests/parsetree/locations_test.ml[23,403+29]..[23,403+30])
+          Pmty_ident "S" (testsuite/tests/parsetree/locations_test.ml[23,403+29]..[23,403+30])
+        module_type (testsuite/tests/parsetree/locations_test.ml[23,403+32]..[23,403+50])
+          Pmty_functor "B" (testsuite/tests/parsetree/locations_test.ml[23,403+33]..[23,403+34])
+          module_type (testsuite/tests/parsetree/locations_test.ml[23,403+37]..[23,403+38])
+            Pmty_ident "S" (testsuite/tests/parsetree/locations_test.ml[23,403+37]..[23,403+38])
+          module_type (testsuite/tests/parsetree/locations_test.ml[23,403+43]..[23,403+50])
+            Pmty_signature
+            []
+  structure_item (testsuite/tests/parsetree/locations_test.ml[25,457+0]..[25,457+48])
+    Pstr_module
+    "F" (testsuite/tests/parsetree/locations_test.ml[25,457+7]..[25,457+8])
+      module_expr (testsuite/tests/parsetree/locations_test.ml[25,457+19]..[25,457+48])
+        Pmod_functor "A" (testsuite/tests/parsetree/locations_test.ml[25,457+20]..[25,457+21])
+        module_type (testsuite/tests/parsetree/locations_test.ml[25,457+24]..[25,457+25])
+          Pmty_ident "S" (testsuite/tests/parsetree/locations_test.ml[25,457+24]..[25,457+25])
+        module_expr (testsuite/tests/parsetree/locations_test.ml[25,457+27]..[25,457+48])
+          Pmod_functor "B" (testsuite/tests/parsetree/locations_test.ml[25,457+28]..[25,457+29])
+          module_type (testsuite/tests/parsetree/locations_test.ml[25,457+32]..[25,457+33])
+            Pmty_ident "S" (testsuite/tests/parsetree/locations_test.ml[25,457+32]..[25,457+33])
+          module_expr (testsuite/tests/parsetree/locations_test.ml[25,457+38]..[25,457+48])
+            Pmod_structure
+            []
+  structure_item (testsuite/tests/parsetree/locations_test.ml[29,526+0]..[29,526+31])
+    Pstr_modtype "S1" (testsuite/tests/parsetree/locations_test.ml[29,526+12]..[29,526+14])
+      module_type (testsuite/tests/parsetree/locations_test.ml[29,526+17]..[29,526+31])
+        Pmty_signature
+        [
+          signature_item (testsuite/tests/parsetree/locations_test.ml[29,526+21]..[29,526+27])
+            Psig_type Rec
+            [
+              type_declaration "t" (testsuite/tests/parsetree/locations_test.ml[29,526+26]..[29,526+27]) (testsuite/tests/parsetree/locations_test.ml[29,526+21]..[29,526+27])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+        ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[31,561+0]..[31,561+37])
+    Pstr_modtype "T1" (testsuite/tests/parsetree/locations_test.ml[31,561+12]..[31,561+14])
+      module_type (testsuite/tests/parsetree/locations_test.ml[31,561+17]..[31,561+37])
+        Pmty_with
+        module_type (testsuite/tests/parsetree/locations_test.ml[31,561+17]..[31,561+19])
+          Pmty_ident "S1" (testsuite/tests/parsetree/locations_test.ml[31,561+17]..[31,561+19])
+        [
+          Pwith_type "t" (testsuite/tests/parsetree/locations_test.ml[31,561+30]..[31,561+31])
+            type_declaration "t" (testsuite/tests/parsetree/locations_test.ml[31,561+30]..[31,561+31]) (testsuite/tests/parsetree/locations_test.ml[31,561+25]..[31,561+37])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/parsetree/locations_test.ml[31,561+34]..[31,561+37])
+                    Ptyp_constr "int" (testsuite/tests/parsetree/locations_test.ml[31,561+34]..[31,561+37])
+                    []
+        ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[33,602+0]..[33,602+38])
+    Pstr_modtype "T1" (testsuite/tests/parsetree/locations_test.ml[33,602+12]..[33,602+14])
+      module_type (testsuite/tests/parsetree/locations_test.ml[33,602+17]..[33,602+38])
+        Pmty_with
+        module_type (testsuite/tests/parsetree/locations_test.ml[33,602+17]..[33,602+19])
+          Pmty_ident "S1" (testsuite/tests/parsetree/locations_test.ml[33,602+17]..[33,602+19])
+        [
+          Pwith_typesubst "t" (testsuite/tests/parsetree/locations_test.ml[33,602+30]..[33,602+31])
+            type_declaration "t" (testsuite/tests/parsetree/locations_test.ml[33,602+30]..[33,602+31]) (testsuite/tests/parsetree/locations_test.ml[33,602+25]..[33,602+38])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/parsetree/locations_test.ml[33,602+35]..[33,602+38])
+                    Ptyp_constr "int" (testsuite/tests/parsetree/locations_test.ml[33,602+35]..[33,602+38])
+                    []
+        ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[37,672+0]..[37,672+15])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[37,672+4]..[37,672+11]) ghost
+          Ppat_constraint
+          pattern (testsuite/tests/parsetree/locations_test.ml[37,672+4]..[37,672+5])
+            Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[37,672+4]..[37,672+5])
+          core_type (testsuite/tests/parsetree/locations_test.ml[37,672+8]..[37,672+11]) ghost
+            Ptyp_poly
+            core_type (testsuite/tests/parsetree/locations_test.ml[37,672+8]..[37,672+11])
+              Ptyp_constr "int" (testsuite/tests/parsetree/locations_test.ml[37,672+8]..[37,672+11])
+              []
+        expression (testsuite/tests/parsetree/locations_test.ml[37,672+4]..[37,672+15]) ghost
+          Pexp_constraint
+          expression (testsuite/tests/parsetree/locations_test.ml[37,672+14]..[37,672+15])
+            Pexp_constant PConst_int (3,None)
+          core_type (testsuite/tests/parsetree/locations_test.ml[37,672+8]..[37,672+11])
+            Ptyp_constr "int" (testsuite/tests/parsetree/locations_test.ml[37,672+8]..[37,672+11])
+            []
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[39,691+0]..[39,691+35])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[39,691+4]..[39,691+22]) ghost
+          Ppat_constraint
+          pattern (testsuite/tests/parsetree/locations_test.ml[39,691+4]..[39,691+5])
+            Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[39,691+4]..[39,691+5])
+          core_type (testsuite/tests/parsetree/locations_test.ml[39,691+4]..[39,691+35]) ghost
+            Ptyp_poly 'a
+            core_type (testsuite/tests/parsetree/locations_test.ml[39,691+16]..[39,691+22])
+              Ptyp_arrow
+              Nolabel
+              core_type (testsuite/tests/parsetree/locations_test.ml[39,691+16]..[39,691+17])
+                Ptyp_var a
+              core_type (testsuite/tests/parsetree/locations_test.ml[39,691+21]..[39,691+22])
+                Ptyp_var a
+        expression (testsuite/tests/parsetree/locations_test.ml[39,691+4]..[39,691+35])
+          Pexp_newtype "a"
+          expression (testsuite/tests/parsetree/locations_test.ml[39,691+4]..[39,691+35])
+            Pexp_constraint
+            expression (testsuite/tests/parsetree/locations_test.ml[39,691+25]..[39,691+35])
+              Pexp_fun
+              Nolabel
+              None
+              pattern (testsuite/tests/parsetree/locations_test.ml[39,691+29]..[39,691+30])
+                Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[39,691+29]..[39,691+30])
+              expression (testsuite/tests/parsetree/locations_test.ml[39,691+34]..[39,691+35])
+                Pexp_ident "x" (testsuite/tests/parsetree/locations_test.ml[39,691+34]..[39,691+35])
+            core_type (testsuite/tests/parsetree/locations_test.ml[39,691+16]..[39,691+22])
+              Ptyp_arrow
+              Nolabel
+              core_type (testsuite/tests/parsetree/locations_test.ml[39,691+16]..[39,691+17])
+                Ptyp_constr "a" (testsuite/tests/parsetree/locations_test.ml[39,691+16]..[39,691+17])
+                []
+              core_type (testsuite/tests/parsetree/locations_test.ml[39,691+21]..[39,691+22])
+                Ptyp_constr "a" (testsuite/tests/parsetree/locations_test.ml[39,691+21]..[39,691+22])
+                []
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[41,730+0]..[44,790+3])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[41,730+4]..[41,730+5])
+          Ppat_any
+        expression (testsuite/tests/parsetree/locations_test.ml[41,730+8]..[44,790+3])
+          Pexp_object
+          class_structure
+            pattern (testsuite/tests/parsetree/locations_test.ml[41,730+14]..[41,730+14]) ghost
+              Ppat_any
+            [
+              class_field (testsuite/tests/parsetree/locations_test.ml[42,745+2]..[43,775+14])
+                Pcf_method Public
+                  "x" (testsuite/tests/parsetree/locations_test.ml[42,745+9]..[42,745+10])
+                  Concrete Fresh
+                  expression (testsuite/tests/parsetree/locations_test.ml[42,745+18]..[43,775+14]) ghost
+                    Pexp_poly
+                    expression (testsuite/tests/parsetree/locations_test.ml[42,745+9]..[43,775+14])
+                      Pexp_newtype "a"
+                      expression (testsuite/tests/parsetree/locations_test.ml[42,745+9]..[43,775+14])
+                        Pexp_constraint
+                        expression (testsuite/tests/parsetree/locations_test.ml[43,775+4]..[43,775+14])
+                          Pexp_fun
+                          Nolabel
+                          None
+                          pattern (testsuite/tests/parsetree/locations_test.ml[43,775+8]..[43,775+9])
+                            Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[43,775+8]..[43,775+9])
+                          expression (testsuite/tests/parsetree/locations_test.ml[43,775+13]..[43,775+14])
+                            Pexp_ident "x" (testsuite/tests/parsetree/locations_test.ml[43,775+13]..[43,775+14])
+                        core_type (testsuite/tests/parsetree/locations_test.ml[42,745+21]..[42,745+27])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (testsuite/tests/parsetree/locations_test.ml[42,745+21]..[42,745+22])
+                            Ptyp_constr "a" (testsuite/tests/parsetree/locations_test.ml[42,745+21]..[42,745+22])
+                            []
+                          core_type (testsuite/tests/parsetree/locations_test.ml[42,745+26]..[42,745+27])
+                            Ptyp_constr "a" (testsuite/tests/parsetree/locations_test.ml[42,745+26]..[42,745+27])
+                            []
+                    Some
+                      core_type (testsuite/tests/parsetree/locations_test.ml[42,745+9]..[43,775+14]) ghost
+                        Ptyp_poly 'a
+                        core_type (testsuite/tests/parsetree/locations_test.ml[42,745+21]..[42,745+27])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (testsuite/tests/parsetree/locations_test.ml[42,745+21]..[42,745+22])
+                            Ptyp_var a
+                          core_type (testsuite/tests/parsetree/locations_test.ml[42,745+26]..[42,745+27])
+                            Ptyp_var a
+            ]
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[48,813+0]..[48,813+29])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[48,813+4]..[48,813+5])
+          Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[48,813+4]..[48,813+5])
+        expression (testsuite/tests/parsetree/locations_test.ml[48,813+6]..[48,813+29]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/parsetree/locations_test.ml[48,813+6]..[48,813+14])
+            Ppat_var "contents" (testsuite/tests/parsetree/locations_test.ml[48,813+6]..[48,813+14])
+          expression (testsuite/tests/parsetree/locations_test.ml[48,813+17]..[48,813+29])
+            Pexp_record
+            [
+              "contents" (testsuite/tests/parsetree/locations_test.ml[48,813+19]..[48,813+27])
+                expression (testsuite/tests/parsetree/locations_test.ml[48,813+19]..[48,813+27]) ghost
+                  Pexp_ident "contents" (testsuite/tests/parsetree/locations_test.ml[48,813+19]..[48,813+27]) ghost
+            ]
+            None
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[50,846+0]..[50,846+30])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[50,846+4]..[50,846+5])
+          Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[50,846+4]..[50,846+5])
+        expression (testsuite/tests/parsetree/locations_test.ml[50,846+8]..[50,846+30])
+          Pexp_record
+          [
+            "contents" (testsuite/tests/parsetree/locations_test.ml[50,846+10]..[50,846+18])
+              expression (testsuite/tests/parsetree/locations_test.ml[50,846+10]..[50,846+28]) ghost
+                Pexp_constraint
+                expression (testsuite/tests/parsetree/locations_test.ml[50,846+27]..[50,846+28])
+                  Pexp_constant PConst_int (3,None)
+                core_type (testsuite/tests/parsetree/locations_test.ml[50,846+21]..[50,846+24])
+                  Ptyp_constr "int" (testsuite/tests/parsetree/locations_test.ml[50,846+21]..[50,846+24])
+                  []
+          ]
+          None
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[52,880+0]..[52,880+35])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[52,880+4]..[52,880+5])
+          Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[52,880+4]..[52,880+5])
+        expression (testsuite/tests/parsetree/locations_test.ml[52,880+6]..[52,880+35]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/parsetree/locations_test.ml[52,880+6]..[52,880+14])
+            Ppat_var "contents" (testsuite/tests/parsetree/locations_test.ml[52,880+6]..[52,880+14])
+          expression (testsuite/tests/parsetree/locations_test.ml[52,880+17]..[52,880+35])
+            Pexp_record
+            [
+              "contents" (testsuite/tests/parsetree/locations_test.ml[52,880+19]..[52,880+27])
+                expression (testsuite/tests/parsetree/locations_test.ml[52,880+19]..[52,880+33]) ghost
+                  Pexp_constraint
+                  expression (testsuite/tests/parsetree/locations_test.ml[52,880+19]..[52,880+33]) ghost
+                    Pexp_ident "contents" (testsuite/tests/parsetree/locations_test.ml[52,880+19]..[52,880+27]) ghost
+                  core_type (testsuite/tests/parsetree/locations_test.ml[52,880+30]..[52,880+33])
+                    Ptyp_constr "int" (testsuite/tests/parsetree/locations_test.ml[52,880+30]..[52,880+33])
+                    []
+            ]
+            None
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[54,919+0]..[54,919+41])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[54,919+4]..[54,919+5])
+          Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[54,919+4]..[54,919+5])
+        expression (testsuite/tests/parsetree/locations_test.ml[54,919+8]..[54,919+41])
+          Pexp_function
+          [
+            <case>
+              pattern (testsuite/tests/parsetree/locations_test.ml[54,919+17]..[54,919+29])
+                Ppat_record Closed
+                [
+                  "contents" (testsuite/tests/parsetree/locations_test.ml[54,919+19]..[54,919+27]) ghost
+                    pattern (testsuite/tests/parsetree/locations_test.ml[54,919+19]..[54,919+27])
+                      Ppat_var "contents" (testsuite/tests/parsetree/locations_test.ml[54,919+19]..[54,919+27])
+                ]
+              expression (testsuite/tests/parsetree/locations_test.ml[54,919+33]..[54,919+41])
+                Pexp_ident "contents" (testsuite/tests/parsetree/locations_test.ml[54,919+33]..[54,919+41])
+          ]
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[56,964+0]..[56,964+47])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[56,964+4]..[56,964+5])
+          Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[56,964+4]..[56,964+5])
+        expression (testsuite/tests/parsetree/locations_test.ml[56,964+8]..[56,964+47])
+          Pexp_function
+          [
+            <case>
+              pattern (testsuite/tests/parsetree/locations_test.ml[56,964+17]..[56,964+35])
+                Ppat_record Closed
+                [
+                  "contents" (testsuite/tests/parsetree/locations_test.ml[56,964+19]..[56,964+27]) ghost
+                    pattern (testsuite/tests/parsetree/locations_test.ml[56,964+19]..[56,964+33]) ghost
+                      Ppat_constraint
+                      pattern (testsuite/tests/parsetree/locations_test.ml[56,964+19]..[56,964+27])
+                        Ppat_var "contents" (testsuite/tests/parsetree/locations_test.ml[56,964+19]..[56,964+27])
+                      core_type (testsuite/tests/parsetree/locations_test.ml[56,964+30]..[56,964+33])
+                        Ptyp_constr "int" (testsuite/tests/parsetree/locations_test.ml[56,964+30]..[56,964+33])
+                        []
+                ]
+              expression (testsuite/tests/parsetree/locations_test.ml[56,964+39]..[56,964+47])
+                Pexp_ident "contents" (testsuite/tests/parsetree/locations_test.ml[56,964+39]..[56,964+47])
+          ]
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[58,1015+0]..[58,1015+44])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[58,1015+4]..[58,1015+5])
+          Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[58,1015+4]..[58,1015+5])
+        expression (testsuite/tests/parsetree/locations_test.ml[58,1015+8]..[58,1015+44])
+          Pexp_function
+          [
+            <case>
+              pattern (testsuite/tests/parsetree/locations_test.ml[58,1015+17]..[58,1015+39])
+                Ppat_record Closed
+                [
+                  "contents" (testsuite/tests/parsetree/locations_test.ml[58,1015+19]..[58,1015+27])
+                    pattern (testsuite/tests/parsetree/locations_test.ml[58,1015+19]..[58,1015+37]) ghost
+                      Ppat_constraint
+                      pattern (testsuite/tests/parsetree/locations_test.ml[58,1015+36]..[58,1015+37])
+                        Ppat_var "i" (testsuite/tests/parsetree/locations_test.ml[58,1015+36]..[58,1015+37])
+                      core_type (testsuite/tests/parsetree/locations_test.ml[58,1015+30]..[58,1015+33])
+                        Ptyp_constr "int" (testsuite/tests/parsetree/locations_test.ml[58,1015+30]..[58,1015+33])
+                        []
+                ]
+              expression (testsuite/tests/parsetree/locations_test.ml[58,1015+43]..[58,1015+44])
+                Pexp_ident "i" (testsuite/tests/parsetree/locations_test.ml[58,1015+43]..[58,1015+44])
+          ]
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[62,1081+0]..[62,1081+26])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[62,1081+4]..[62,1081+5])
+          Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[62,1081+4]..[62,1081+5])
+        expression (testsuite/tests/parsetree/locations_test.ml[62,1081+8]..[62,1081+26])
+          Pexp_open Fresh
+          module_expr (testsuite/tests/parsetree/locations_test.ml[62,1081+8]..[62,1081+9])
+            Pmod_ident "M" (testsuite/tests/parsetree/locations_test.ml[62,1081+8]..[62,1081+9])
+          expression (testsuite/tests/parsetree/locations_test.ml[62,1081+10]..[62,1081+26])
+            Pexp_record
+            [
+              "contents" (testsuite/tests/parsetree/locations_test.ml[62,1081+12]..[62,1081+20])
+                expression (testsuite/tests/parsetree/locations_test.ml[62,1081+23]..[62,1081+24])
+                  Pexp_constant PConst_int (3,None)
+            ]
+            None
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[64,1111+0]..[64,1111+18])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[64,1111+4]..[64,1111+5])
+          Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[64,1111+4]..[64,1111+5])
+        expression (testsuite/tests/parsetree/locations_test.ml[64,1111+8]..[64,1111+18])
+          Pexp_open Fresh
+          module_expr (testsuite/tests/parsetree/locations_test.ml[64,1111+8]..[64,1111+9])
+            Pmod_ident "M" (testsuite/tests/parsetree/locations_test.ml[64,1111+8]..[64,1111+9])
+          expression (testsuite/tests/parsetree/locations_test.ml[64,1111+10]..[64,1111+18])
+            Pexp_construct "::" (testsuite/tests/parsetree/locations_test.ml[64,1111+12]..[64,1111+18]) ghost
+            Some
+              expression (testsuite/tests/parsetree/locations_test.ml[64,1111+12]..[64,1111+18]) ghost
+                Pexp_tuple
+                [
+                  expression (testsuite/tests/parsetree/locations_test.ml[64,1111+12]..[64,1111+13])
+                    Pexp_constant PConst_int (3,None)
+                  expression (testsuite/tests/parsetree/locations_test.ml[64,1111+15]..[64,1111+18]) ghost
+                    Pexp_construct "::" (testsuite/tests/parsetree/locations_test.ml[64,1111+15]..[64,1111+18]) ghost
+                    Some
+                      expression (testsuite/tests/parsetree/locations_test.ml[64,1111+15]..[64,1111+18]) ghost
+                        Pexp_tuple
+                        [
+                          expression (testsuite/tests/parsetree/locations_test.ml[64,1111+15]..[64,1111+16])
+                            Pexp_constant PConst_int (4,None)
+                          expression (testsuite/tests/parsetree/locations_test.ml[64,1111+17]..[64,1111+18]) ghost
+                            Pexp_construct "[]" (testsuite/tests/parsetree/locations_test.ml[64,1111+17]..[64,1111+18]) ghost
+                            None
+                        ]
+                ]
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[66,1133+0]..[66,1133+18])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[66,1133+4]..[66,1133+5])
+          Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[66,1133+4]..[66,1133+5])
+        expression (testsuite/tests/parsetree/locations_test.ml[66,1133+8]..[66,1133+18])
+          Pexp_open Fresh
+          module_expr (testsuite/tests/parsetree/locations_test.ml[66,1133+8]..[66,1133+9])
+            Pmod_ident "M" (testsuite/tests/parsetree/locations_test.ml[66,1133+8]..[66,1133+9])
+          expression (testsuite/tests/parsetree/locations_test.ml[66,1133+12]..[66,1133+16])
+            Pexp_sequence
+            expression (testsuite/tests/parsetree/locations_test.ml[66,1133+12]..[66,1133+13])
+              Pexp_constant PConst_int (3,None)
+            expression (testsuite/tests/parsetree/locations_test.ml[66,1133+15]..[66,1133+16])
+              Pexp_constant PConst_int (4,None)
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[72,1210+0]..[72,1210+24])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[72,1210+4]..[72,1210+12])
+          Ppat_var ".@()" (testsuite/tests/parsetree/locations_test.ml[72,1210+4]..[72,1210+12])
+        expression (testsuite/tests/parsetree/locations_test.ml[72,1210+13]..[72,1210+24]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/parsetree/locations_test.ml[72,1210+13]..[72,1210+14])
+            Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[72,1210+13]..[72,1210+14])
+          expression (testsuite/tests/parsetree/locations_test.ml[72,1210+15]..[72,1210+24]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/parsetree/locations_test.ml[72,1210+15]..[72,1210+16])
+              Ppat_var "y" (testsuite/tests/parsetree/locations_test.ml[72,1210+15]..[72,1210+16])
+            expression (testsuite/tests/parsetree/locations_test.ml[72,1210+19]..[72,1210+24])
+              Pexp_apply
+              expression (testsuite/tests/parsetree/locations_test.ml[72,1210+21]..[72,1210+22])
+                Pexp_ident "+" (testsuite/tests/parsetree/locations_test.ml[72,1210+21]..[72,1210+22])
+              [
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/parsetree/locations_test.ml[72,1210+19]..[72,1210+20])
+                    Pexp_ident "x" (testsuite/tests/parsetree/locations_test.ml[72,1210+19]..[72,1210+20])
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/parsetree/locations_test.ml[72,1210+23]..[72,1210+24])
+                    Pexp_ident "y" (testsuite/tests/parsetree/locations_test.ml[72,1210+23]..[72,1210+24])
+              ]
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[73,1235+0]..[73,1235+32])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[73,1235+4]..[73,1235+14])
+          Ppat_var ".@()<-" (testsuite/tests/parsetree/locations_test.ml[73,1235+4]..[73,1235+14])
+        expression (testsuite/tests/parsetree/locations_test.ml[73,1235+15]..[73,1235+32]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/parsetree/locations_test.ml[73,1235+15]..[73,1235+16])
+            Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[73,1235+15]..[73,1235+16])
+          expression (testsuite/tests/parsetree/locations_test.ml[73,1235+17]..[73,1235+32]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/parsetree/locations_test.ml[73,1235+17]..[73,1235+18])
+              Ppat_var "y" (testsuite/tests/parsetree/locations_test.ml[73,1235+17]..[73,1235+18])
+            expression (testsuite/tests/parsetree/locations_test.ml[73,1235+19]..[73,1235+32]) ghost
+              Pexp_fun
+              Nolabel
+              None
+              pattern (testsuite/tests/parsetree/locations_test.ml[73,1235+19]..[73,1235+20])
+                Ppat_var "z" (testsuite/tests/parsetree/locations_test.ml[73,1235+19]..[73,1235+20])
+              expression (testsuite/tests/parsetree/locations_test.ml[73,1235+23]..[73,1235+32])
+                Pexp_apply
+                expression (testsuite/tests/parsetree/locations_test.ml[73,1235+29]..[73,1235+30])
+                  Pexp_ident "+" (testsuite/tests/parsetree/locations_test.ml[73,1235+29]..[73,1235+30])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/parsetree/locations_test.ml[73,1235+23]..[73,1235+28])
+                      Pexp_apply
+                      expression (testsuite/tests/parsetree/locations_test.ml[73,1235+25]..[73,1235+26])
+                        Pexp_ident "+" (testsuite/tests/parsetree/locations_test.ml[73,1235+25]..[73,1235+26])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/parsetree/locations_test.ml[73,1235+23]..[73,1235+24])
+                            Pexp_ident "x" (testsuite/tests/parsetree/locations_test.ml[73,1235+23]..[73,1235+24])
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/parsetree/locations_test.ml[73,1235+27]..[73,1235+28])
+                            Pexp_ident "y" (testsuite/tests/parsetree/locations_test.ml[73,1235+27]..[73,1235+28])
+                      ]
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/parsetree/locations_test.ml[73,1235+31]..[73,1235+32])
+                      Pexp_ident "z" (testsuite/tests/parsetree/locations_test.ml[73,1235+31]..[73,1235+32])
+                ]
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[74,1268+0]..[74,1268+25])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[74,1268+4]..[74,1268+13])
+          Ppat_var ".%.{}" (testsuite/tests/parsetree/locations_test.ml[74,1268+4]..[74,1268+13])
+        expression (testsuite/tests/parsetree/locations_test.ml[74,1268+14]..[74,1268+25]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/parsetree/locations_test.ml[74,1268+14]..[74,1268+15])
+            Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[74,1268+14]..[74,1268+15])
+          expression (testsuite/tests/parsetree/locations_test.ml[74,1268+16]..[74,1268+25]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/parsetree/locations_test.ml[74,1268+16]..[74,1268+17])
+              Ppat_var "y" (testsuite/tests/parsetree/locations_test.ml[74,1268+16]..[74,1268+17])
+            expression (testsuite/tests/parsetree/locations_test.ml[74,1268+20]..[74,1268+25])
+              Pexp_apply
+              expression (testsuite/tests/parsetree/locations_test.ml[74,1268+22]..[74,1268+23])
+                Pexp_ident "+" (testsuite/tests/parsetree/locations_test.ml[74,1268+22]..[74,1268+23])
+              [
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/parsetree/locations_test.ml[74,1268+20]..[74,1268+21])
+                    Pexp_ident "x" (testsuite/tests/parsetree/locations_test.ml[74,1268+20]..[74,1268+21])
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/parsetree/locations_test.ml[74,1268+24]..[74,1268+25])
+                    Pexp_ident "y" (testsuite/tests/parsetree/locations_test.ml[74,1268+24]..[74,1268+25])
+              ]
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[75,1294+0]..[75,1294+33])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[75,1294+4]..[75,1294+15])
+          Ppat_var ".%.{}<-" (testsuite/tests/parsetree/locations_test.ml[75,1294+4]..[75,1294+15])
+        expression (testsuite/tests/parsetree/locations_test.ml[75,1294+16]..[75,1294+33]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/parsetree/locations_test.ml[75,1294+16]..[75,1294+17])
+            Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[75,1294+16]..[75,1294+17])
+          expression (testsuite/tests/parsetree/locations_test.ml[75,1294+18]..[75,1294+33]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/parsetree/locations_test.ml[75,1294+18]..[75,1294+19])
+              Ppat_var "y" (testsuite/tests/parsetree/locations_test.ml[75,1294+18]..[75,1294+19])
+            expression (testsuite/tests/parsetree/locations_test.ml[75,1294+20]..[75,1294+33]) ghost
+              Pexp_fun
+              Nolabel
+              None
+              pattern (testsuite/tests/parsetree/locations_test.ml[75,1294+20]..[75,1294+21])
+                Ppat_var "z" (testsuite/tests/parsetree/locations_test.ml[75,1294+20]..[75,1294+21])
+              expression (testsuite/tests/parsetree/locations_test.ml[75,1294+24]..[75,1294+33])
+                Pexp_apply
+                expression (testsuite/tests/parsetree/locations_test.ml[75,1294+30]..[75,1294+31])
+                  Pexp_ident "+" (testsuite/tests/parsetree/locations_test.ml[75,1294+30]..[75,1294+31])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/parsetree/locations_test.ml[75,1294+24]..[75,1294+29])
+                      Pexp_apply
+                      expression (testsuite/tests/parsetree/locations_test.ml[75,1294+26]..[75,1294+27])
+                        Pexp_ident "+" (testsuite/tests/parsetree/locations_test.ml[75,1294+26]..[75,1294+27])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/parsetree/locations_test.ml[75,1294+24]..[75,1294+25])
+                            Pexp_ident "x" (testsuite/tests/parsetree/locations_test.ml[75,1294+24]..[75,1294+25])
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/parsetree/locations_test.ml[75,1294+28]..[75,1294+29])
+                            Pexp_ident "y" (testsuite/tests/parsetree/locations_test.ml[75,1294+28]..[75,1294+29])
+                      ]
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/parsetree/locations_test.ml[75,1294+32]..[75,1294+33])
+                      Pexp_ident "z" (testsuite/tests/parsetree/locations_test.ml[75,1294+32]..[75,1294+33])
+                ]
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[76,1328+0]..[76,1328+25])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[76,1328+4]..[76,1328+13])
+          Ppat_var ".%.[]" (testsuite/tests/parsetree/locations_test.ml[76,1328+4]..[76,1328+13])
+        expression (testsuite/tests/parsetree/locations_test.ml[76,1328+14]..[76,1328+25]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/parsetree/locations_test.ml[76,1328+14]..[76,1328+15])
+            Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[76,1328+14]..[76,1328+15])
+          expression (testsuite/tests/parsetree/locations_test.ml[76,1328+16]..[76,1328+25]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/parsetree/locations_test.ml[76,1328+16]..[76,1328+17])
+              Ppat_var "y" (testsuite/tests/parsetree/locations_test.ml[76,1328+16]..[76,1328+17])
+            expression (testsuite/tests/parsetree/locations_test.ml[76,1328+20]..[76,1328+25])
+              Pexp_apply
+              expression (testsuite/tests/parsetree/locations_test.ml[76,1328+22]..[76,1328+23])
+                Pexp_ident "+" (testsuite/tests/parsetree/locations_test.ml[76,1328+22]..[76,1328+23])
+              [
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/parsetree/locations_test.ml[76,1328+20]..[76,1328+21])
+                    Pexp_ident "x" (testsuite/tests/parsetree/locations_test.ml[76,1328+20]..[76,1328+21])
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/parsetree/locations_test.ml[76,1328+24]..[76,1328+25])
+                    Pexp_ident "y" (testsuite/tests/parsetree/locations_test.ml[76,1328+24]..[76,1328+25])
+              ]
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[77,1354+0]..[77,1354+33])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[77,1354+4]..[77,1354+15])
+          Ppat_var ".%.[]<-" (testsuite/tests/parsetree/locations_test.ml[77,1354+4]..[77,1354+15])
+        expression (testsuite/tests/parsetree/locations_test.ml[77,1354+16]..[77,1354+33]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/parsetree/locations_test.ml[77,1354+16]..[77,1354+17])
+            Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[77,1354+16]..[77,1354+17])
+          expression (testsuite/tests/parsetree/locations_test.ml[77,1354+18]..[77,1354+33]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/parsetree/locations_test.ml[77,1354+18]..[77,1354+19])
+              Ppat_var "y" (testsuite/tests/parsetree/locations_test.ml[77,1354+18]..[77,1354+19])
+            expression (testsuite/tests/parsetree/locations_test.ml[77,1354+20]..[77,1354+33]) ghost
+              Pexp_fun
+              Nolabel
+              None
+              pattern (testsuite/tests/parsetree/locations_test.ml[77,1354+20]..[77,1354+21])
+                Ppat_var "z" (testsuite/tests/parsetree/locations_test.ml[77,1354+20]..[77,1354+21])
+              expression (testsuite/tests/parsetree/locations_test.ml[77,1354+24]..[77,1354+33])
+                Pexp_apply
+                expression (testsuite/tests/parsetree/locations_test.ml[77,1354+30]..[77,1354+31])
+                  Pexp_ident "+" (testsuite/tests/parsetree/locations_test.ml[77,1354+30]..[77,1354+31])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/parsetree/locations_test.ml[77,1354+24]..[77,1354+29])
+                      Pexp_apply
+                      expression (testsuite/tests/parsetree/locations_test.ml[77,1354+26]..[77,1354+27])
+                        Pexp_ident "+" (testsuite/tests/parsetree/locations_test.ml[77,1354+26]..[77,1354+27])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/parsetree/locations_test.ml[77,1354+24]..[77,1354+25])
+                            Pexp_ident "x" (testsuite/tests/parsetree/locations_test.ml[77,1354+24]..[77,1354+25])
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/parsetree/locations_test.ml[77,1354+28]..[77,1354+29])
+                            Pexp_ident "y" (testsuite/tests/parsetree/locations_test.ml[77,1354+28]..[77,1354+29])
+                      ]
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/parsetree/locations_test.ml[77,1354+32]..[77,1354+33])
+                      Pexp_ident "z" (testsuite/tests/parsetree/locations_test.ml[77,1354+32]..[77,1354+33])
+                ]
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[81,1417+0]..[81,1417+6])
+    Pstr_eval
+    expression (testsuite/tests/parsetree/locations_test.ml[81,1417+0]..[81,1417+6])
+      Pexp_apply
+      expression (testsuite/tests/parsetree/locations_test.ml[81,1417+0]..[81,1417+6]) ghost
+        Pexp_ident ".@()" (testsuite/tests/parsetree/locations_test.ml[81,1417+0]..[81,1417+6]) ghost
+      [
+        <arg>
+        Nolabel
+          expression (testsuite/tests/parsetree/locations_test.ml[81,1417+0]..[81,1417+1])
+            Pexp_ident "x" (testsuite/tests/parsetree/locations_test.ml[81,1417+0]..[81,1417+1])
+        <arg>
+        Nolabel
+          expression (testsuite/tests/parsetree/locations_test.ml[81,1417+4]..[81,1417+5])
+            Pexp_constant PConst_int (4,None)
+      ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[82,1426+0]..[82,1426+11])
+    Pstr_eval
+    expression (testsuite/tests/parsetree/locations_test.ml[82,1426+0]..[82,1426+11])
+      Pexp_apply
+      expression (testsuite/tests/parsetree/locations_test.ml[82,1426+0]..[82,1426+11]) ghost
+        Pexp_ident ".@()<-" (testsuite/tests/parsetree/locations_test.ml[82,1426+0]..[82,1426+11]) ghost
+      [
+        <arg>
+        Nolabel
+          expression (testsuite/tests/parsetree/locations_test.ml[82,1426+0]..[82,1426+1])
+            Pexp_ident "x" (testsuite/tests/parsetree/locations_test.ml[82,1426+0]..[82,1426+1])
+        <arg>
+        Nolabel
+          expression (testsuite/tests/parsetree/locations_test.ml[82,1426+4]..[82,1426+5])
+            Pexp_constant PConst_int (4,None)
+        <arg>
+        Nolabel
+          expression (testsuite/tests/parsetree/locations_test.ml[82,1426+10]..[82,1426+11])
+            Pexp_constant PConst_int (4,None)
+      ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[84,1441+0]..[84,1441+7])
+    Pstr_eval
+    expression (testsuite/tests/parsetree/locations_test.ml[84,1441+0]..[84,1441+7])
+      Pexp_apply
+      expression (testsuite/tests/parsetree/locations_test.ml[84,1441+0]..[84,1441+7]) ghost
+        Pexp_ident ".%.{}" (testsuite/tests/parsetree/locations_test.ml[84,1441+0]..[84,1441+7]) ghost
+      [
+        <arg>
+        Nolabel
+          expression (testsuite/tests/parsetree/locations_test.ml[84,1441+0]..[84,1441+1])
+            Pexp_ident "x" (testsuite/tests/parsetree/locations_test.ml[84,1441+0]..[84,1441+1])
+        <arg>
+        Nolabel
+          expression (testsuite/tests/parsetree/locations_test.ml[84,1441+5]..[84,1441+6])
+            Pexp_constant PConst_int (4,None)
+      ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[85,1451+0]..[85,1451+12])
+    Pstr_eval
+    expression (testsuite/tests/parsetree/locations_test.ml[85,1451+0]..[85,1451+12])
+      Pexp_apply
+      expression (testsuite/tests/parsetree/locations_test.ml[85,1451+0]..[85,1451+12]) ghost
+        Pexp_ident ".%.{}<-" (testsuite/tests/parsetree/locations_test.ml[85,1451+0]..[85,1451+12]) ghost
+      [
+        <arg>
+        Nolabel
+          expression (testsuite/tests/parsetree/locations_test.ml[85,1451+0]..[85,1451+1])
+            Pexp_ident "x" (testsuite/tests/parsetree/locations_test.ml[85,1451+0]..[85,1451+1])
+        <arg>
+        Nolabel
+          expression (testsuite/tests/parsetree/locations_test.ml[85,1451+5]..[85,1451+6])
+            Pexp_constant PConst_int (4,None)
+        <arg>
+        Nolabel
+          expression (testsuite/tests/parsetree/locations_test.ml[85,1451+11]..[85,1451+12])
+            Pexp_constant PConst_int (4,None)
+      ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[87,1467+0]..[87,1467+7])
+    Pstr_eval
+    expression (testsuite/tests/parsetree/locations_test.ml[87,1467+0]..[87,1467+7])
+      Pexp_apply
+      expression (testsuite/tests/parsetree/locations_test.ml[87,1467+0]..[87,1467+7]) ghost
+        Pexp_ident ".%.[]" (testsuite/tests/parsetree/locations_test.ml[87,1467+0]..[87,1467+7]) ghost
+      [
+        <arg>
+        Nolabel
+          expression (testsuite/tests/parsetree/locations_test.ml[87,1467+0]..[87,1467+1])
+            Pexp_ident "x" (testsuite/tests/parsetree/locations_test.ml[87,1467+0]..[87,1467+1])
+        <arg>
+        Nolabel
+          expression (testsuite/tests/parsetree/locations_test.ml[87,1467+5]..[87,1467+6])
+            Pexp_constant PConst_int (4,None)
+      ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[88,1477+0]..[88,1477+12])
+    Pstr_eval
+    expression (testsuite/tests/parsetree/locations_test.ml[88,1477+0]..[88,1477+12])
+      Pexp_apply
+      expression (testsuite/tests/parsetree/locations_test.ml[88,1477+0]..[88,1477+12]) ghost
+        Pexp_ident ".%.[]<-" (testsuite/tests/parsetree/locations_test.ml[88,1477+0]..[88,1477+12]) ghost
+      [
+        <arg>
+        Nolabel
+          expression (testsuite/tests/parsetree/locations_test.ml[88,1477+0]..[88,1477+1])
+            Pexp_ident "x" (testsuite/tests/parsetree/locations_test.ml[88,1477+0]..[88,1477+1])
+        <arg>
+        Nolabel
+          expression (testsuite/tests/parsetree/locations_test.ml[88,1477+5]..[88,1477+6])
+            Pexp_constant PConst_int (4,None)
+        <arg>
+        Nolabel
+          expression (testsuite/tests/parsetree/locations_test.ml[88,1477+11]..[88,1477+12])
+            Pexp_constant PConst_int (4,None)
+      ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[92,1520+0]..[92,1520+37])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/parsetree/locations_test.ml[92,1520+4]..[92,1520+5])
+          Ppat_var "f" (testsuite/tests/parsetree/locations_test.ml[92,1520+4]..[92,1520+5])
+        expression (testsuite/tests/parsetree/locations_test.ml[92,1520+8]..[92,1520+37])
+          Pexp_function
+          [
+            <case>
+              pattern (testsuite/tests/parsetree/locations_test.ml[92,1520+17]..[92,1520+31])
+                Ppat_constraint
+                pattern (testsuite/tests/parsetree/locations_test.ml[92,1520+25]..[92,1520+26])
+                  Ppat_unpack "M" (testsuite/tests/parsetree/locations_test.ml[92,1520+25]..[92,1520+26])
+                core_type (testsuite/tests/parsetree/locations_test.ml[92,1520+29]..[92,1520+30])
+                  Ptyp_package "S" (testsuite/tests/parsetree/locations_test.ml[92,1520+29]..[92,1520+30])
+                  []
+              expression (testsuite/tests/parsetree/locations_test.ml[92,1520+35]..[92,1520+37])
+                Pexp_construct "()" (testsuite/tests/parsetree/locations_test.ml[92,1520+35]..[92,1520+37])
+                None
+          ]
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[96,1605+0]..[98,1631+12])
+    Pstr_class
+    [
+      class_declaration (testsuite/tests/parsetree/locations_test.ml[96,1605+0]..[98,1631+12])
+        pci_virt = Concrete
+        pci_params =
+          []
+        pci_name = "c" (testsuite/tests/parsetree/locations_test.ml[96,1605+6]..[96,1605+7])
+        pci_expr =
+          class_expr (testsuite/tests/parsetree/locations_test.ml[97,1615+2]..[98,1631+12])
+            Pcl_open Fresh "M" (testsuite/tests/parsetree/locations_test.ml[97,1615+11]..[97,1615+12])
+            class_expr (testsuite/tests/parsetree/locations_test.ml[98,1631+2]..[98,1631+12])
+              Pcl_structure
+              class_structure
+                pattern (testsuite/tests/parsetree/locations_test.ml[98,1631+8]..[98,1631+8]) ghost
+                  Ppat_any
+                []
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[101,1648+0]..[103,1680+12])
+    Pstr_class_type
+    [
+      class_type_declaration (testsuite/tests/parsetree/locations_test.ml[101,1648+0]..[103,1680+12])
+        pci_virt = Concrete
+        pci_params =
+          []
+        pci_name = "ct" (testsuite/tests/parsetree/locations_test.ml[101,1648+11]..[101,1648+13])
+        pci_expr =
+          class_type (testsuite/tests/parsetree/locations_test.ml[102,1664+2]..[103,1680+12])
+            Pcty_open Fresh "M" (testsuite/tests/parsetree/locations_test.ml[102,1664+11]..[102,1664+12])
+            class_type (testsuite/tests/parsetree/locations_test.ml[103,1680+2]..[103,1680+12])
+              Pcty_signature
+              class_signature
+                core_type (testsuite/tests/parsetree/locations_test.ml[103,1680+8]..[103,1680+8])
+                  Ptyp_any
+                []
+    ]
+  structure_item (testsuite/tests/parsetree/locations_test.ml[109,1752+0]..[110,1760+4])
+    Pstr_value Nonrec
+    [
+      <def>
+          attribute "ocaml.doc"
+            [
+              structure_item (testsuite/tests/parsetree/locations_test.ml[108,1715+0]..[108,1715+36])
+                Pstr_eval
+                expression (testsuite/tests/parsetree/locations_test.ml[108,1715+0]..[108,1715+36])
+                  Pexp_constant PConst_string(" Some docstring attached to x. ",(testsuite/tests/parsetree/locations_test.ml[108,1715+0]..[108,1715+36]),None)
+            ]
+          attribute "ocaml.doc"
+            [
+              structure_item (testsuite/tests/parsetree/locations_test.ml[111,1765+0]..[111,1765+39])
+                Pstr_eval
+                expression (testsuite/tests/parsetree/locations_test.ml[111,1765+0]..[111,1765+39])
+                  Pexp_constant PConst_string(" Another docstring attached to x. ",(testsuite/tests/parsetree/locations_test.ml[111,1765+0]..[111,1765+39]),None)
+            ]
+        pattern (testsuite/tests/parsetree/locations_test.ml[109,1752+4]..[109,1752+5])
+          Ppat_var "x" (testsuite/tests/parsetree/locations_test.ml[109,1752+4]..[109,1752+5])
+        expression (testsuite/tests/parsetree/locations_test.ml[110,1760+2]..[110,1760+4])
+          Pexp_constant PConst_int (42,None)
+    ]
+]
+

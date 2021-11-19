@@ -1,0 +1,759 @@
+[
+  signature_item (typing/typedecl.mli[18,1139+0]..[18,1139+10])
+    Psig_open Fresh "Types" (typing/typedecl.mli[18,1139+5]..[18,1139+10])
+  signature_item (typing/typedecl.mli[19,1150+0]..[19,1150+11])
+    Psig_open Fresh "Format" (typing/typedecl.mli[19,1150+5]..[19,1150+11])
+  signature_item (typing/typedecl.mli[21,1163+0]..[23,1254+43])
+    Psig_value
+    value_description "transl_type_decl" (typing/typedecl.mli[21,1163+4]..[21,1163+20]) (typing/typedecl.mli[21,1163+0]..[23,1254+43])
+      core_type (typing/typedecl.mli[22,1185+4]..[23,1254+43])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/typedecl.mli[22,1185+4]..[22,1185+9])
+          Ptyp_constr "Env.t" (typing/typedecl.mli[22,1185+4]..[22,1185+9])
+          []
+        core_type (typing/typedecl.mli[22,1185+13]..[23,1254+43])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/typedecl.mli[22,1185+13]..[22,1185+30])
+            Ptyp_constr "Asttypes.rec_flag" (typing/typedecl.mli[22,1185+13]..[22,1185+30])
+            []
+          core_type (typing/typedecl.mli[22,1185+34]..[23,1254+43])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/typedecl.mli[22,1185+34]..[22,1185+65])
+              Ptyp_constr "list" (typing/typedecl.mli[22,1185+61]..[22,1185+65])
+              [
+                core_type (typing/typedecl.mli[22,1185+34]..[22,1185+60])
+                  Ptyp_constr "Parsetree.type_declaration" (typing/typedecl.mli[22,1185+34]..[22,1185+60])
+                  []
+              ]
+            core_type (typing/typedecl.mli[23,1254+4]..[23,1254+43])
+              Ptyp_tuple
+              [
+                core_type (typing/typedecl.mli[23,1254+4]..[23,1254+35])
+                  Ptyp_constr "list" (typing/typedecl.mli[23,1254+31]..[23,1254+35])
+                  [
+                    core_type (typing/typedecl.mli[23,1254+4]..[23,1254+30])
+                      Ptyp_constr "Typedtree.type_declaration" (typing/typedecl.mli[23,1254+4]..[23,1254+30])
+                      []
+                  ]
+                core_type (typing/typedecl.mli[23,1254+38]..[23,1254+43])
+                  Ptyp_constr "Env.t" (typing/typedecl.mli[23,1254+38]..[23,1254+43])
+                  []
+              ]
+      []
+  signature_item (typing/typedecl.mli[25,1299+0]..[27,1369+43])
+    Psig_value
+    value_description "transl_exception" (typing/typedecl.mli[25,1299+4]..[25,1299+20]) (typing/typedecl.mli[25,1299+0]..[27,1369+43])
+      core_type (typing/typedecl.mli[26,1321+4]..[27,1369+43])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/typedecl.mli[26,1321+4]..[26,1321+9])
+          Ptyp_constr "Env.t" (typing/typedecl.mli[26,1321+4]..[26,1321+9])
+          []
+        core_type (typing/typedecl.mli[26,1321+13]..[27,1369+43])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/typedecl.mli[26,1321+13]..[26,1321+44])
+            Ptyp_constr "Parsetree.extension_constructor" (typing/typedecl.mli[26,1321+13]..[26,1321+44])
+            []
+          core_type (typing/typedecl.mli[27,1369+4]..[27,1369+43])
+            Ptyp_tuple
+            [
+              core_type (typing/typedecl.mli[27,1369+4]..[27,1369+35])
+                Ptyp_constr "Typedtree.extension_constructor" (typing/typedecl.mli[27,1369+4]..[27,1369+35])
+                []
+              core_type (typing/typedecl.mli[27,1369+38]..[27,1369+43])
+                Ptyp_constr "Env.t" (typing/typedecl.mli[27,1369+38]..[27,1369+43])
+                []
+            ]
+      []
+  signature_item (typing/typedecl.mli[29,1414+0]..[31,1454+64])
+    Psig_value
+    value_description "transl_type_exception" (typing/typedecl.mli[29,1414+4]..[29,1414+25]) (typing/typedecl.mli[29,1414+0]..[31,1454+64])
+      core_type (typing/typedecl.mli[30,1441+4]..[31,1454+64])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/typedecl.mli[30,1441+4]..[30,1441+9])
+          Ptyp_constr "Env.t" (typing/typedecl.mli[30,1441+4]..[30,1441+9])
+          []
+        core_type (typing/typedecl.mli[31,1454+4]..[31,1454+64])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/typedecl.mli[31,1454+4]..[31,1454+28])
+            Ptyp_constr "Parsetree.type_exception" (typing/typedecl.mli[31,1454+4]..[31,1454+28])
+            []
+          core_type (typing/typedecl.mli[31,1454+32]..[31,1454+64])
+            Ptyp_tuple
+            [
+              core_type (typing/typedecl.mli[31,1454+32]..[31,1454+56])
+                Ptyp_constr "Typedtree.type_exception" (typing/typedecl.mli[31,1454+32]..[31,1454+56])
+                []
+              core_type (typing/typedecl.mli[31,1454+59]..[31,1454+64])
+                Ptyp_constr "Env.t" (typing/typedecl.mli[31,1454+59]..[31,1454+64])
+                []
+            ]
+      []
+  signature_item (typing/typedecl.mli[33,1520+0]..[35,1610+36])
+    Psig_value
+    value_description "transl_type_extension" (typing/typedecl.mli[33,1520+4]..[33,1520+25]) (typing/typedecl.mli[33,1520+0]..[35,1610+36])
+      core_type (typing/typedecl.mli[34,1547+4]..[35,1610+36])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/typedecl.mli[34,1547+4]..[34,1547+8])
+          Ptyp_constr "bool" (typing/typedecl.mli[34,1547+4]..[34,1547+8])
+          []
+        core_type (typing/typedecl.mli[34,1547+12]..[35,1610+36])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/typedecl.mli[34,1547+12]..[34,1547+17])
+            Ptyp_constr "Env.t" (typing/typedecl.mli[34,1547+12]..[34,1547+17])
+            []
+          core_type (typing/typedecl.mli[34,1547+21]..[35,1610+36])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/typedecl.mli[34,1547+21]..[34,1547+31])
+              Ptyp_constr "Location.t" (typing/typedecl.mli[34,1547+21]..[34,1547+31])
+              []
+            core_type (typing/typedecl.mli[34,1547+35]..[35,1610+36])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/typedecl.mli[34,1547+35]..[34,1547+59])
+                Ptyp_constr "Parsetree.type_extension" (typing/typedecl.mli[34,1547+35]..[34,1547+59])
+                []
+              core_type (typing/typedecl.mli[35,1610+4]..[35,1610+36])
+                Ptyp_tuple
+                [
+                  core_type (typing/typedecl.mli[35,1610+4]..[35,1610+28])
+                    Ptyp_constr "Typedtree.type_extension" (typing/typedecl.mli[35,1610+4]..[35,1610+28])
+                    []
+                  core_type (typing/typedecl.mli[35,1610+31]..[35,1610+36])
+                    Ptyp_constr "Env.t" (typing/typedecl.mli[35,1610+31]..[35,1610+36])
+                    []
+                ]
+      []
+  signature_item (typing/typedecl.mli[37,1648+0]..[39,1698+70])
+    Psig_value
+    value_description "transl_value_decl" (typing/typedecl.mli[37,1648+4]..[37,1648+21]) (typing/typedecl.mli[37,1648+0]..[39,1698+70])
+      core_type (typing/typedecl.mli[38,1671+4]..[39,1698+70])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/typedecl.mli[38,1671+4]..[38,1671+9])
+          Ptyp_constr "Env.t" (typing/typedecl.mli[38,1671+4]..[38,1671+9])
+          []
+        core_type (typing/typedecl.mli[38,1671+13]..[39,1698+70])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/typedecl.mli[38,1671+13]..[38,1671+23])
+            Ptyp_constr "Location.t" (typing/typedecl.mli[38,1671+13]..[38,1671+23])
+            []
+          core_type (typing/typedecl.mli[39,1698+4]..[39,1698+70])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/typedecl.mli[39,1698+4]..[39,1698+31])
+              Ptyp_constr "Parsetree.value_description" (typing/typedecl.mli[39,1698+4]..[39,1698+31])
+              []
+            core_type (typing/typedecl.mli[39,1698+35]..[39,1698+70])
+              Ptyp_tuple
+              [
+                core_type (typing/typedecl.mli[39,1698+35]..[39,1698+62])
+                  Ptyp_constr "Typedtree.value_description" (typing/typedecl.mli[39,1698+35]..[39,1698+62])
+                  []
+                core_type (typing/typedecl.mli[39,1698+65]..[39,1698+70])
+                  Ptyp_constr "Env.t" (typing/typedecl.mli[39,1698+65]..[39,1698+70])
+                  []
+              ]
+      []
+  signature_item (typing/typedecl.mli[43,1907+0]..[47,2085+30])
+    Psig_value
+    value_description "transl_with_constraint" (typing/typedecl.mli[43,1907+4]..[43,1907+26]) (typing/typedecl.mli[43,1907+0]..[47,2085+30])
+      core_type (typing/typedecl.mli[44,1935+4]..[47,2085+30])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/typedecl.mli[44,1935+4]..[44,1935+11])
+          Ptyp_constr "Ident.t" (typing/typedecl.mli[44,1935+4]..[44,1935+11])
+          []
+        core_type (typing/typedecl.mli[44,1935+15]..[47,2085+30])
+          Ptyp_arrow
+          Optional "fixed_row_path"
+          core_type (typing/typedecl.mli[44,1935+31]..[44,1935+37])
+            Ptyp_constr "Path.t" (typing/typedecl.mli[44,1935+31]..[44,1935+37])
+            []
+          core_type (typing/typedecl.mli[45,1976+4]..[47,2085+30])
+            Ptyp_arrow
+            Labelled "sig_env"
+            core_type (typing/typedecl.mli[45,1976+12]..[45,1976+17])
+              Ptyp_constr "Env.t" (typing/typedecl.mli[45,1976+12]..[45,1976+17])
+              []
+            core_type (typing/typedecl.mli[45,1976+21]..[47,2085+30])
+              Ptyp_arrow
+              Labelled "sig_decl"
+              core_type (typing/typedecl.mli[45,1976+30]..[45,1976+52])
+                Ptyp_constr "Types.type_declaration" (typing/typedecl.mli[45,1976+30]..[45,1976+52])
+                []
+              core_type (typing/typedecl.mli[46,2032+4]..[47,2085+30])
+                Ptyp_arrow
+                Labelled "outer_env"
+                core_type (typing/typedecl.mli[46,2032+14]..[46,2032+19])
+                  Ptyp_constr "Env.t" (typing/typedecl.mli[46,2032+14]..[46,2032+19])
+                  []
+                core_type (typing/typedecl.mli[46,2032+23]..[47,2085+30])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/typedecl.mli[46,2032+23]..[46,2032+49])
+                    Ptyp_constr "Parsetree.type_declaration" (typing/typedecl.mli[46,2032+23]..[46,2032+49])
+                    []
+                  core_type (typing/typedecl.mli[47,2085+4]..[47,2085+30])
+                    Ptyp_constr "Typedtree.type_declaration" (typing/typedecl.mli[47,2085+4]..[47,2085+30])
+                    []
+      []
+  signature_item (typing/typedecl.mli[49,2117+0]..[49,2117+65])
+    Psig_value
+    value_description "abstract_type_decl" (typing/typedecl.mli[49,2117+4]..[49,2117+22]) (typing/typedecl.mli[49,2117+0]..[49,2117+65])
+      core_type (typing/typedecl.mli[49,2117+24]..[49,2117+65])
+        Ptyp_arrow
+        Labelled "injective"
+        core_type (typing/typedecl.mli[49,2117+34]..[49,2117+38])
+          Ptyp_constr "bool" (typing/typedecl.mli[49,2117+34]..[49,2117+38])
+          []
+        core_type (typing/typedecl.mli[49,2117+42]..[49,2117+65])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/typedecl.mli[49,2117+42]..[49,2117+45])
+            Ptyp_constr "int" (typing/typedecl.mli[49,2117+42]..[49,2117+45])
+            []
+          core_type (typing/typedecl.mli[49,2117+49]..[49,2117+65])
+            Ptyp_constr "type_declaration" (typing/typedecl.mli[49,2117+49]..[49,2117+65])
+            []
+      []
+  signature_item (typing/typedecl.mli[50,2183+0]..[52,2244+67])
+    Psig_value
+    value_description "approx_type_decl" (typing/typedecl.mli[50,2183+4]..[50,2183+20]) (typing/typedecl.mli[50,2183+0]..[52,2244+67])
+      core_type (typing/typedecl.mli[51,2205+4]..[52,2244+67])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/typedecl.mli[51,2205+4]..[51,2205+35])
+          Ptyp_constr "list" (typing/typedecl.mli[51,2205+31]..[51,2205+35])
+          [
+            core_type (typing/typedecl.mli[51,2205+4]..[51,2205+30])
+              Ptyp_constr "Parsetree.type_declaration" (typing/typedecl.mli[51,2205+4]..[51,2205+30])
+              []
+          ]
+        core_type (typing/typedecl.mli[52,2244+34]..[52,2244+67])
+          Ptyp_constr "list" (typing/typedecl.mli[52,2244+63]..[52,2244+67])
+          [
+            core_type (typing/typedecl.mli[52,2244+35]..[52,2244+61])
+              Ptyp_tuple
+              [
+                core_type (typing/typedecl.mli[52,2244+35]..[52,2244+42])
+                  Ptyp_constr "Ident.t" (typing/typedecl.mli[52,2244+35]..[52,2244+42])
+                  []
+                core_type (typing/typedecl.mli[52,2244+45]..[52,2244+61])
+                  Ptyp_constr "type_declaration" (typing/typedecl.mli[52,2244+45]..[52,2244+61])
+                  []
+              ]
+          ]
+      []
+  signature_item (typing/typedecl.mli[53,2312+0]..[54,2339+77])
+    Psig_value
+    value_description "check_recmod_typedecl" (typing/typedecl.mli[53,2312+4]..[53,2312+25]) (typing/typedecl.mli[53,2312+0]..[54,2339+77])
+      core_type (typing/typedecl.mli[54,2339+4]..[54,2339+77])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/typedecl.mli[54,2339+4]..[54,2339+9])
+          Ptyp_constr "Env.t" (typing/typedecl.mli[54,2339+4]..[54,2339+9])
+          []
+        core_type (typing/typedecl.mli[54,2339+13]..[54,2339+77])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/typedecl.mli[54,2339+13]..[54,2339+23])
+            Ptyp_constr "Location.t" (typing/typedecl.mli[54,2339+13]..[54,2339+23])
+            []
+          core_type (typing/typedecl.mli[54,2339+27]..[54,2339+77])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/typedecl.mli[54,2339+27]..[54,2339+39])
+              Ptyp_constr "list" (typing/typedecl.mli[54,2339+35]..[54,2339+39])
+              [
+                core_type (typing/typedecl.mli[54,2339+27]..[54,2339+34])
+                  Ptyp_constr "Ident.t" (typing/typedecl.mli[54,2339+27]..[54,2339+34])
+                  []
+              ]
+            core_type (typing/typedecl.mli[54,2339+43]..[54,2339+77])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/typedecl.mli[54,2339+43]..[54,2339+49])
+                Ptyp_constr "Path.t" (typing/typedecl.mli[54,2339+43]..[54,2339+49])
+                []
+              core_type (typing/typedecl.mli[54,2339+53]..[54,2339+77])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/typedecl.mli[54,2339+53]..[54,2339+69])
+                  Ptyp_constr "type_declaration" (typing/typedecl.mli[54,2339+53]..[54,2339+69])
+                  []
+                core_type (typing/typedecl.mli[54,2339+73]..[54,2339+77])
+                  Ptyp_constr "unit" (typing/typedecl.mli[54,2339+73]..[54,2339+77])
+                  []
+      []
+  signature_item (typing/typedecl.mli[55,2417+0]..[56,2438+61])
+    Psig_value
+    value_description "check_coherence" (typing/typedecl.mli[55,2417+4]..[55,2417+19]) (typing/typedecl.mli[55,2417+0]..[56,2438+61])
+      core_type (typing/typedecl.mli[56,2438+4]..[56,2438+61])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/typedecl.mli[56,2438+4]..[56,2438+9])
+          Ptyp_constr "Env.t" (typing/typedecl.mli[56,2438+4]..[56,2438+9])
+          []
+        core_type (typing/typedecl.mli[56,2438+13]..[56,2438+61])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/typedecl.mli[56,2438+13]..[56,2438+23])
+            Ptyp_constr "Location.t" (typing/typedecl.mli[56,2438+13]..[56,2438+23])
+            []
+          core_type (typing/typedecl.mli[56,2438+27]..[56,2438+61])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/typedecl.mli[56,2438+27]..[56,2438+33])
+              Ptyp_constr "Path.t" (typing/typedecl.mli[56,2438+27]..[56,2438+33])
+              []
+            core_type (typing/typedecl.mli[56,2438+37]..[56,2438+61])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/typedecl.mli[56,2438+37]..[56,2438+53])
+                Ptyp_constr "type_declaration" (typing/typedecl.mli[56,2438+37]..[56,2438+53])
+                []
+              core_type (typing/typedecl.mli[56,2438+57]..[56,2438+61])
+                Ptyp_constr "unit" (typing/typedecl.mli[56,2438+57]..[56,2438+61])
+                []
+      []
+  signature_item (typing/typedecl.mli[59,2523+0]..[59,2523+54])
+    Psig_value
+    value_description "is_fixed_type" (typing/typedecl.mli[59,2523+4]..[59,2523+17]) (typing/typedecl.mli[59,2523+0]..[59,2523+54])
+      core_type (typing/typedecl.mli[59,2523+20]..[59,2523+54])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/typedecl.mli[59,2523+20]..[59,2523+46])
+          Ptyp_constr "Parsetree.type_declaration" (typing/typedecl.mli[59,2523+20]..[59,2523+46])
+          []
+        core_type (typing/typedecl.mli[59,2523+50]..[59,2523+54])
+          Ptyp_constr "bool" (typing/typedecl.mli[59,2523+50]..[59,2523+54])
+          []
+      []
+  signature_item (typing/typedecl.mli[62,2600+0]..[62,2600+75])
+    Psig_value
+    value_description "get_unboxed_type_representation" (typing/typedecl.mli[62,2600+4]..[62,2600+35]) (typing/typedecl.mli[62,2600+0]..[62,2600+75])
+      core_type (typing/typedecl.mli[62,2600+37]..[62,2600+75])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/typedecl.mli[62,2600+37]..[62,2600+42])
+          Ptyp_constr "Env.t" (typing/typedecl.mli[62,2600+37]..[62,2600+42])
+          []
+        core_type (typing/typedecl.mli[62,2600+46]..[62,2600+75])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/typedecl.mli[62,2600+46]..[62,2600+55])
+            Ptyp_constr "type_expr" (typing/typedecl.mli[62,2600+46]..[62,2600+55])
+            []
+          core_type (typing/typedecl.mli[62,2600+59]..[62,2600+75])
+            Ptyp_constr "option" (typing/typedecl.mli[62,2600+69]..[62,2600+75])
+            [
+              core_type (typing/typedecl.mli[62,2600+59]..[62,2600+68])
+                Ptyp_constr "type_expr" (typing/typedecl.mli[62,2600+59]..[62,2600+68])
+                []
+            ]
+      []
+  signature_item (typing/typedecl.mli[64,2677+0]..[64,2677+42])
+    Psig_type Rec
+    [
+      type_declaration "native_repr_kind" (typing/typedecl.mli[64,2677+5]..[64,2677+21]) (typing/typedecl.mli[64,2677+0]..[64,2677+42])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/typedecl.mli[64,2677+24]..[64,2677+31])
+                "Unboxed" (typing/typedecl.mli[64,2677+24]..[64,2677+31])
+                []
+                None
+              (typing/typedecl.mli[64,2677+32]..[64,2677+42])
+                "Untagged" (typing/typedecl.mli[64,2677+34]..[64,2677+42])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/typedecl.mli[66,2721+0]..[105,4241+48])
+    Psig_type Rec
+    [
+      type_declaration "error" (typing/typedecl.mli[66,2721+5]..[66,2721+10]) (typing/typedecl.mli[66,2721+0]..[105,4241+48])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/typedecl.mli[67,2734+4]..[67,2734+22])
+                "Repeated_parameter" (typing/typedecl.mli[67,2734+4]..[67,2734+22])
+                []
+                None
+              (typing/typedecl.mli[68,2757+2]..[68,2757+35])
+                "Duplicate_constructor" (typing/typedecl.mli[68,2757+4]..[68,2757+25])
+                [
+                  core_type (typing/typedecl.mli[68,2757+29]..[68,2757+35])
+                    Ptyp_constr "string" (typing/typedecl.mli[68,2757+29]..[68,2757+35])
+                    []
+                ]
+                None
+              (typing/typedecl.mli[69,2793+2]..[69,2793+25])
+                "Too_many_constructors" (typing/typedecl.mli[69,2793+4]..[69,2793+25])
+                []
+                None
+              (typing/typedecl.mli[70,2819+2]..[70,2819+29])
+                "Duplicate_label" (typing/typedecl.mli[70,2819+4]..[70,2819+19])
+                [
+                  core_type (typing/typedecl.mli[70,2819+23]..[70,2819+29])
+                    Ptyp_constr "string" (typing/typedecl.mli[70,2819+23]..[70,2819+29])
+                    []
+                ]
+                None
+              (typing/typedecl.mli[71,2849+2]..[71,2849+30])
+                "Recursive_abbrev" (typing/typedecl.mli[71,2849+4]..[71,2849+20])
+                [
+                  core_type (typing/typedecl.mli[71,2849+24]..[71,2849+30])
+                    Ptyp_constr "string" (typing/typedecl.mli[71,2849+24]..[71,2849+30])
+                    []
+                ]
+                None
+              (typing/typedecl.mli[72,2880+2]..[72,2880+38])
+                "Cycle_in_def" (typing/typedecl.mli[72,2880+4]..[72,2880+16])
+                [
+                  core_type (typing/typedecl.mli[72,2880+20]..[72,2880+26])
+                    Ptyp_constr "string" (typing/typedecl.mli[72,2880+20]..[72,2880+26])
+                    []
+                  core_type (typing/typedecl.mli[72,2880+29]..[72,2880+38])
+                    Ptyp_constr "type_expr" (typing/typedecl.mli[72,2880+29]..[72,2880+38])
+                    []
+                ]
+                None
+              (typing/typedecl.mli[73,2919+2]..[73,2919+71])
+                "Definition_mismatch" (typing/typedecl.mli[73,2919+4]..[73,2919+23])
+                [
+                  core_type (typing/typedecl.mli[73,2919+27]..[73,2919+36])
+                    Ptyp_constr "type_expr" (typing/typedecl.mli[73,2919+27]..[73,2919+36])
+                    []
+                  core_type (typing/typedecl.mli[73,2919+39]..[73,2919+71])
+                    Ptyp_constr "option" (typing/typedecl.mli[73,2919+65]..[73,2919+71])
+                    [
+                      core_type (typing/typedecl.mli[73,2919+39]..[73,2919+64])
+                        Ptyp_constr "Includecore.type_mismatch" (typing/typedecl.mli[73,2919+39]..[73,2919+64])
+                        []
+                    ]
+                ]
+                None
+              (typing/typedecl.mli[74,2991+2]..[74,2991+68])
+                "Constraint_failed" (typing/typedecl.mli[74,2991+4]..[74,2991+21])
+                [
+                  core_type (typing/typedecl.mli[74,2991+25]..[74,2991+30])
+                    Ptyp_constr "Env.t" (typing/typedecl.mli[74,2991+25]..[74,2991+30])
+                    []
+                  core_type (typing/typedecl.mli[74,2991+33]..[74,2991+68])
+                    Ptyp_constr "Errortrace.t" (typing/typedecl.mli[74,2991+56]..[74,2991+68])
+                    [
+                      core_type (typing/typedecl.mli[74,2991+33]..[74,2991+55])
+                        Ptyp_constr "Errortrace.unification" (typing/typedecl.mli[74,2991+33]..[74,2991+55])
+                        []
+                    ]
+                ]
+                None
+              (typing/typedecl.mli[75,3060+2]..[75,3060+74])
+                "Inconsistent_constraint" (typing/typedecl.mli[75,3060+4]..[75,3060+27])
+                [
+                  core_type (typing/typedecl.mli[75,3060+31]..[75,3060+36])
+                    Ptyp_constr "Env.t" (typing/typedecl.mli[75,3060+31]..[75,3060+36])
+                    []
+                  core_type (typing/typedecl.mli[75,3060+39]..[75,3060+74])
+                    Ptyp_constr "Errortrace.t" (typing/typedecl.mli[75,3060+62]..[75,3060+74])
+                    [
+                      core_type (typing/typedecl.mli[75,3060+39]..[75,3060+61])
+                        Ptyp_constr "Errortrace.unification" (typing/typedecl.mli[75,3060+39]..[75,3060+61])
+                        []
+                    ]
+                ]
+                None
+              (typing/typedecl.mli[76,3135+2]..[76,3135+61])
+                "Type_clash" (typing/typedecl.mli[76,3135+4]..[76,3135+14])
+                [
+                  core_type (typing/typedecl.mli[76,3135+18]..[76,3135+23])
+                    Ptyp_constr "Env.t" (typing/typedecl.mli[76,3135+18]..[76,3135+23])
+                    []
+                  core_type (typing/typedecl.mli[76,3135+26]..[76,3135+61])
+                    Ptyp_constr "Errortrace.t" (typing/typedecl.mli[76,3135+49]..[76,3135+61])
+                    [
+                      core_type (typing/typedecl.mli[76,3135+26]..[76,3135+48])
+                        Ptyp_constr "Errortrace.unification" (typing/typedecl.mli[76,3135+26]..[76,3135+48])
+                        []
+                    ]
+                ]
+                None
+              (typing/typedecl.mli[77,3197+2]..[82,3347+5])
+                "Non_regular" (typing/typedecl.mli[77,3197+4]..[77,3197+15])
+                [
+                  (typing/typedecl.mli[78,3218+6]..[78,3218+25])
+                    Immutable
+                    "definition" (typing/typedecl.mli[78,3218+6]..[78,3218+16])                    core_type (typing/typedecl.mli[78,3218+18]..[78,3218+24])
+                      Ptyp_constr "Path.t" (typing/typedecl.mli[78,3218+18]..[78,3218+24])
+                      []
+                  (typing/typedecl.mli[79,3244+6]..[79,3244+25])
+                    Immutable
+                    "used_as" (typing/typedecl.mli[79,3244+6]..[79,3244+13])                    core_type (typing/typedecl.mli[79,3244+15]..[79,3244+24])
+                      Ptyp_constr "type_expr" (typing/typedecl.mli[79,3244+15]..[79,3244+24])
+                      []
+                  (typing/typedecl.mli[80,3270+6]..[80,3270+28])
+                    Immutable
+                    "defined_as" (typing/typedecl.mli[80,3270+6]..[80,3270+16])                    core_type (typing/typedecl.mli[80,3270+18]..[80,3270+27])
+                      Ptyp_constr "type_expr" (typing/typedecl.mli[80,3270+18]..[80,3270+27])
+                      []
+                  (typing/typedecl.mli[81,3299+6]..[81,3299+47])
+                    Immutable
+                    "expansions" (typing/typedecl.mli[81,3299+6]..[81,3299+16])                    core_type (typing/typedecl.mli[81,3299+18]..[81,3299+46])
+                      Ptyp_constr "list" (typing/typedecl.mli[81,3299+42]..[81,3299+46])
+                      [
+                        core_type (typing/typedecl.mli[81,3299+19]..[81,3299+40])
+                          Ptyp_tuple
+                          [
+                            core_type (typing/typedecl.mli[81,3299+19]..[81,3299+28])
+                              Ptyp_constr "type_expr" (typing/typedecl.mli[81,3299+19]..[81,3299+28])
+                              []
+                            core_type (typing/typedecl.mli[81,3299+31]..[81,3299+40])
+                              Ptyp_constr "type_expr" (typing/typedecl.mli[81,3299+31]..[81,3299+40])
+                              []
+                          ]
+                      ]
+                ]
+                None
+              (typing/typedecl.mli[83,3353+2]..[83,3353+23])
+                "Null_arity_external" (typing/typedecl.mli[83,3353+4]..[83,3353+23])
+                []
+                None
+              (typing/typedecl.mli[84,3377+2]..[84,3377+27])
+                "Missing_native_external" (typing/typedecl.mli[84,3377+4]..[84,3377+27])
+                []
+                None
+              (typing/typedecl.mli[85,3405+2]..[85,3405+52])
+                "Unbound_type_var" (typing/typedecl.mli[85,3405+4]..[85,3405+20])
+                [
+                  core_type (typing/typedecl.mli[85,3405+24]..[85,3405+33])
+                    Ptyp_constr "type_expr" (typing/typedecl.mli[85,3405+24]..[85,3405+33])
+                    []
+                  core_type (typing/typedecl.mli[85,3405+36]..[85,3405+52])
+                    Ptyp_constr "type_declaration" (typing/typedecl.mli[85,3405+36]..[85,3405+52])
+                    []
+                ]
+                None
+              (typing/typedecl.mli[86,3458+2]..[86,3458+40])
+                "Cannot_extend_private_type" (typing/typedecl.mli[86,3458+4]..[86,3458+30])
+                [
+                  core_type (typing/typedecl.mli[86,3458+34]..[86,3458+40])
+                    Ptyp_constr "Path.t" (typing/typedecl.mli[86,3458+34]..[86,3458+40])
+                    []
+                ]
+                None
+              (typing/typedecl.mli[87,3499+2]..[87,3499+33])
+                "Not_extensible_type" (typing/typedecl.mli[87,3499+4]..[87,3499+23])
+                [
+                  core_type (typing/typedecl.mli[87,3499+27]..[87,3499+33])
+                    Ptyp_constr "Path.t" (typing/typedecl.mli[87,3499+27]..[87,3499+33])
+                    []
+                ]
+                None
+              (typing/typedecl.mli[88,3533+2]..[88,3533+60])
+                "Extension_mismatch" (typing/typedecl.mli[88,3533+4]..[88,3533+22])
+                [
+                  core_type (typing/typedecl.mli[88,3533+26]..[88,3533+32])
+                    Ptyp_constr "Path.t" (typing/typedecl.mli[88,3533+26]..[88,3533+32])
+                    []
+                  core_type (typing/typedecl.mli[88,3533+35]..[88,3533+60])
+                    Ptyp_constr "Includecore.type_mismatch" (typing/typedecl.mli[88,3533+35]..[88,3533+60])
+                    []
+                ]
+                None
+              (typing/typedecl.mli[89,3594+2]..[90,3619+63])
+                "Rebind_wrong_type" (typing/typedecl.mli[89,3594+4]..[89,3594+21])
+                [
+                  core_type (typing/typedecl.mli[90,3619+6]..[90,3619+17])
+                    Ptyp_constr "Longident.t" (typing/typedecl.mli[90,3619+6]..[90,3619+17])
+                    []
+                  core_type (typing/typedecl.mli[90,3619+20]..[90,3619+25])
+                    Ptyp_constr "Env.t" (typing/typedecl.mli[90,3619+20]..[90,3619+25])
+                    []
+                  core_type (typing/typedecl.mli[90,3619+28]..[90,3619+63])
+                    Ptyp_constr "Errortrace.t" (typing/typedecl.mli[90,3619+51]..[90,3619+63])
+                    [
+                      core_type (typing/typedecl.mli[90,3619+28]..[90,3619+50])
+                        Ptyp_constr "Errortrace.unification" (typing/typedecl.mli[90,3619+28]..[90,3619+50])
+                        []
+                    ]
+                ]
+                None
+              (typing/typedecl.mli[91,3683+2]..[91,3683+52])
+                "Rebind_mismatch" (typing/typedecl.mli[91,3683+4]..[91,3683+19])
+                [
+                  core_type (typing/typedecl.mli[91,3683+23]..[91,3683+34])
+                    Ptyp_constr "Longident.t" (typing/typedecl.mli[91,3683+23]..[91,3683+34])
+                    []
+                  core_type (typing/typedecl.mli[91,3683+37]..[91,3683+43])
+                    Ptyp_constr "Path.t" (typing/typedecl.mli[91,3683+37]..[91,3683+43])
+                    []
+                  core_type (typing/typedecl.mli[91,3683+46]..[91,3683+52])
+                    Ptyp_constr "Path.t" (typing/typedecl.mli[91,3683+46]..[91,3683+52])
+                    []
+                ]
+                None
+              (typing/typedecl.mli[92,3736+2]..[92,3736+33])
+                "Rebind_private" (typing/typedecl.mli[92,3736+4]..[92,3736+18])
+                [
+                  core_type (typing/typedecl.mli[92,3736+22]..[92,3736+33])
+                    Ptyp_constr "Longident.t" (typing/typedecl.mli[92,3736+22]..[92,3736+33])
+                    []
+                ]
+                None
+              (typing/typedecl.mli[93,3770+2]..[93,3770+39])
+                "Variance" (typing/typedecl.mli[93,3770+4]..[93,3770+12])
+                [
+                  core_type (typing/typedecl.mli[93,3770+16]..[93,3770+39])
+                    Ptyp_constr "Typedecl_variance.error" (typing/typedecl.mli[93,3770+16]..[93,3770+39])
+                    []
+                ]
+                None
+              (typing/typedecl.mli[94,3810+2]..[94,3810+42])
+                "Unavailable_type_constructor" (typing/typedecl.mli[94,3810+4]..[94,3810+32])
+                [
+                  core_type (typing/typedecl.mli[94,3810+36]..[94,3810+42])
+                    Ptyp_constr "Path.t" (typing/typedecl.mli[94,3810+36]..[94,3810+42])
+                    []
+                ]
+                None
+              (typing/typedecl.mli[95,3853+2]..[95,3853+61])
+                "Unbound_type_var_ext" (typing/typedecl.mli[95,3853+4]..[95,3853+24])
+                [
+                  core_type (typing/typedecl.mli[95,3853+28]..[95,3853+37])
+                    Ptyp_constr "type_expr" (typing/typedecl.mli[95,3853+28]..[95,3853+37])
+                    []
+                  core_type (typing/typedecl.mli[95,3853+40]..[95,3853+61])
+                    Ptyp_constr "extension_constructor" (typing/typedecl.mli[95,3853+40]..[95,3853+61])
+                    []
+                ]
+                None
+              (typing/typedecl.mli[96,3915+2]..[96,3915+20])
+                "Val_in_structure" (typing/typedecl.mli[96,3915+4]..[96,3915+20])
+                []
+                None
+              (typing/typedecl.mli[97,3936+2]..[97,3936+35])
+                "Multiple_native_repr_attributes" (typing/typedecl.mli[97,3936+4]..[97,3936+35])
+                []
+                None
+              (typing/typedecl.mli[98,3972+2]..[98,3972+50])
+                "Cannot_unbox_or_untag_type" (typing/typedecl.mli[98,3972+4]..[98,3972+30])
+                [
+                  core_type (typing/typedecl.mli[98,3972+34]..[98,3972+50])
+                    Ptyp_constr "native_repr_kind" (typing/typedecl.mli[98,3972+34]..[98,3972+50])
+                    []
+                ]
+                None
+              (typing/typedecl.mli[99,4023+2]..[99,4023+53])
+                "Deep_unbox_or_untag_attribute" (typing/typedecl.mli[99,4023+4]..[99,4023+33])
+                [
+                  core_type (typing/typedecl.mli[99,4023+37]..[99,4023+53])
+                    Ptyp_constr "native_repr_kind" (typing/typedecl.mli[99,4023+37]..[99,4023+53])
+                    []
+                ]
+                None
+              (typing/typedecl.mli[100,4077+2]..[100,4077+41])
+                "Immediacy" (typing/typedecl.mli[100,4077+4]..[100,4077+13])
+                [
+                  core_type (typing/typedecl.mli[100,4077+17]..[100,4077+41])
+                    Ptyp_constr "Typedecl_immediacy.error" (typing/typedecl.mli[100,4077+17]..[100,4077+41])
+                    []
+                ]
+                None
+              (typing/typedecl.mli[101,4119+2]..[101,4119+47])
+                "Separability" (typing/typedecl.mli[101,4119+4]..[101,4119+16])
+                [
+                  core_type (typing/typedecl.mli[101,4119+20]..[101,4119+47])
+                    Ptyp_constr "Typedecl_separability.error" (typing/typedecl.mli[101,4119+20]..[101,4119+47])
+                    []
+                ]
+                None
+              (typing/typedecl.mli[102,4167+2]..[102,4167+35])
+                "Bad_unboxed_attribute" (typing/typedecl.mli[102,4167+4]..[102,4167+25])
+                [
+                  core_type (typing/typedecl.mli[102,4167+29]..[102,4167+35])
+                    Ptyp_constr "string" (typing/typedecl.mli[102,4167+29]..[102,4167+35])
+                    []
+                ]
+                None
+              (typing/typedecl.mli[103,4203+2]..[103,4203+21])
+                "Boxed_and_unboxed" (typing/typedecl.mli[103,4203+4]..[103,4203+21])
+                []
+                None
+              (typing/typedecl.mli[104,4225+2]..[104,4225+15])
+                "Nonrec_gadt" (typing/typedecl.mli[104,4225+4]..[104,4225+15])
+                []
+                None
+              (typing/typedecl.mli[105,4241+2]..[105,4241+48])
+                "Invalid_private_row_declaration" (typing/typedecl.mli[105,4241+4]..[105,4241+35])
+                [
+                  core_type (typing/typedecl.mli[105,4241+39]..[105,4241+48])
+                    Ptyp_constr "type_expr" (typing/typedecl.mli[105,4241+39]..[105,4241+48])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/typedecl.mli[107,4291+0]..[107,4291+37])
+    Psig_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (typing/typedecl.mli[107,4291+0]..[107,4291+37])
+          pext_name = "Error"
+          pext_kind =
+            Pext_decl
+              [
+                core_type (typing/typedecl.mli[107,4291+19]..[107,4291+29])
+                  Ptyp_constr "Location.t" (typing/typedecl.mli[107,4291+19]..[107,4291+29])
+                  []
+                core_type (typing/typedecl.mli[107,4291+32]..[107,4291+37])
+                  Ptyp_constr "error" (typing/typedecl.mli[107,4291+32]..[107,4291+37])
+                  []
+              ]
+              None
+  signature_item (typing/typedecl.mli[109,4330+0]..[109,4330+44])
+    Psig_value
+    value_description "report_error" (typing/typedecl.mli[109,4330+4]..[109,4330+16]) (typing/typedecl.mli[109,4330+0]..[109,4330+44])
+      core_type (typing/typedecl.mli[109,4330+18]..[109,4330+44])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/typedecl.mli[109,4330+18]..[109,4330+27])
+          Ptyp_constr "formatter" (typing/typedecl.mli[109,4330+18]..[109,4330+27])
+          []
+        core_type (typing/typedecl.mli[109,4330+31]..[109,4330+44])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/typedecl.mli[109,4330+31]..[109,4330+36])
+            Ptyp_constr "error" (typing/typedecl.mli[109,4330+31]..[109,4330+36])
+            []
+          core_type (typing/typedecl.mli[109,4330+40]..[109,4330+44])
+            Ptyp_constr "unit" (typing/typedecl.mli[109,4330+40]..[109,4330+44])
+            []
+      []
+]
+

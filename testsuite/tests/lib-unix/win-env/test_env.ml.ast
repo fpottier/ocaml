@@ -1,0 +1,438 @@
+[
+  structure_item (testsuite/tests/lib-unix/win-env/test_env.ml[10,147+0]..[11,207+33])
+    Pstr_primitive
+    value_description "set_environment_variable" (testsuite/tests/lib-unix/win-env/test_env.ml[10,147+9]..[10,147+33]) (testsuite/tests/lib-unix/win-env/test_env.ml[10,147+0]..[11,207+33])
+      core_type (testsuite/tests/lib-unix/win-env/test_env.ml[10,147+35]..[10,147+59])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/lib-unix/win-env/test_env.ml[10,147+35]..[10,147+41])
+          Ptyp_constr "string" (testsuite/tests/lib-unix/win-env/test_env.ml[10,147+35]..[10,147+41])
+          []
+        core_type (testsuite/tests/lib-unix/win-env/test_env.ml[10,147+45]..[10,147+59])
+          Ptyp_arrow
+          Nolabel
+          core_type (testsuite/tests/lib-unix/win-env/test_env.ml[10,147+45]..[10,147+51])
+            Ptyp_constr "string" (testsuite/tests/lib-unix/win-env/test_env.ml[10,147+45]..[10,147+51])
+            []
+          core_type (testsuite/tests/lib-unix/win-env/test_env.ml[10,147+55]..[10,147+59])
+            Ptyp_constr "unit" (testsuite/tests/lib-unix/win-env/test_env.ml[10,147+55]..[10,147+59])
+            []
+      [
+        "stub_SetEnvironmentVariable"
+      ]
+  structure_item (testsuite/tests/lib-unix/win-env/test_env.ml[13,242+0]..[27,580+8])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/win-env/test_env.ml[13,242+4]..[13,242+12])
+          Ppat_var "find_env" (testsuite/tests/lib-unix/win-env/test_env.ml[13,242+4]..[13,242+12])
+        expression (testsuite/tests/lib-unix/win-env/test_env.ml[13,242+13]..[27,580+8]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-unix/win-env/test_env.ml[13,242+13]..[13,242+14])
+            Ppat_var "s" (testsuite/tests/lib-unix/win-env/test_env.ml[13,242+13]..[13,242+14])
+          expression (testsuite/tests/lib-unix/win-env/test_env.ml[14,259+2]..[27,580+8])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (testsuite/tests/lib-unix/win-env/test_env.ml[14,259+6]..[14,259+9])
+                  Ppat_var "env" (testsuite/tests/lib-unix/win-env/test_env.ml[14,259+6]..[14,259+9])
+                expression (testsuite/tests/lib-unix/win-env/test_env.ml[14,259+12]..[14,259+31])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/win-env/test_env.ml[14,259+12]..[14,259+28])
+                    Pexp_ident "Unix.environment" (testsuite/tests/lib-unix/win-env/test_env.ml[14,259+12]..[14,259+28])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-env/test_env.ml[14,259+29]..[14,259+31])
+                        Pexp_construct "()" (testsuite/tests/lib-unix/win-env/test_env.ml[14,259+29]..[14,259+31])
+                        None
+                  ]
+            ]
+            expression (testsuite/tests/lib-unix/win-env/test_env.ml[15,294+2]..[27,580+8])
+              Pexp_let Rec
+              [
+                <def>
+                  pattern (testsuite/tests/lib-unix/win-env/test_env.ml[15,294+10]..[15,294+14])
+                    Ppat_var "loop" (testsuite/tests/lib-unix/win-env/test_env.ml[15,294+10]..[15,294+14])
+                  expression (testsuite/tests/lib-unix/win-env/test_env.ml[15,294+15]..[25,567+7]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (testsuite/tests/lib-unix/win-env/test_env.ml[15,294+15]..[15,294+16])
+                      Ppat_var "i" (testsuite/tests/lib-unix/win-env/test_env.ml[15,294+15]..[15,294+16])
+                    expression (testsuite/tests/lib-unix/win-env/test_env.ml[16,313+4]..[25,567+7])
+                      Pexp_ifthenelse
+                      expression (testsuite/tests/lib-unix/win-env/test_env.ml[16,313+7]..[16,313+28])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/win-env/test_env.ml[16,313+9]..[16,313+11])
+                          Pexp_ident ">=" (testsuite/tests/lib-unix/win-env/test_env.ml[16,313+9]..[16,313+11])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/win-env/test_env.ml[16,313+7]..[16,313+8])
+                              Pexp_ident "i" (testsuite/tests/lib-unix/win-env/test_env.ml[16,313+7]..[16,313+8])
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/win-env/test_env.ml[16,313+12]..[16,313+28])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-unix/win-env/test_env.ml[16,313+12]..[16,313+24])
+                                Pexp_ident "Array.length" (testsuite/tests/lib-unix/win-env/test_env.ml[16,313+12]..[16,313+24])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-unix/win-env/test_env.ml[16,313+25]..[16,313+28])
+                                    Pexp_ident "env" (testsuite/tests/lib-unix/win-env/test_env.ml[16,313+25]..[16,313+28])
+                              ]
+                        ]
+                      expression (testsuite/tests/lib-unix/win-env/test_env.ml[17,347+6]..[17,347+10])
+                        Pexp_construct "None" (testsuite/tests/lib-unix/win-env/test_env.ml[17,347+6]..[17,347+10])
+                        None
+                      Some
+                        expression (testsuite/tests/lib-unix/win-env/test_env.ml[18,358+9]..[25,567+7])
+                          Pexp_let Nonrec
+                          [
+                            <def>
+                              pattern (testsuite/tests/lib-unix/win-env/test_env.ml[19,373+10]..[19,373+11])
+                                Ppat_var "e" (testsuite/tests/lib-unix/win-env/test_env.ml[19,373+10]..[19,373+11])
+                              expression (testsuite/tests/lib-unix/win-env/test_env.ml[19,373+14]..[19,373+21])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-unix/win-env/test_env.ml[19,373+14]..[19,373+21]) ghost
+                                  Pexp_ident "Array.get" (testsuite/tests/lib-unix/win-env/test_env.ml[19,373+14]..[19,373+21]) ghost
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-unix/win-env/test_env.ml[19,373+14]..[19,373+17])
+                                      Pexp_ident "env" (testsuite/tests/lib-unix/win-env/test_env.ml[19,373+14]..[19,373+17])
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-unix/win-env/test_env.ml[19,373+19]..[19,373+20])
+                                      Pexp_ident "i" (testsuite/tests/lib-unix/win-env/test_env.ml[19,373+19]..[19,373+20])
+                                ]
+                          ]
+                          expression (testsuite/tests/lib-unix/win-env/test_env.ml[20,398+6]..[24,548+18])
+                            Pexp_let Nonrec
+                            [
+                              <def>
+                                pattern (testsuite/tests/lib-unix/win-env/test_env.ml[20,398+10]..[20,398+13])
+                                  Ppat_var "pos" (testsuite/tests/lib-unix/win-env/test_env.ml[20,398+10]..[20,398+13])
+                                expression (testsuite/tests/lib-unix/win-env/test_env.ml[20,398+16]..[20,398+34])
+                                  Pexp_apply
+                                  expression (testsuite/tests/lib-unix/win-env/test_env.ml[20,398+16]..[20,398+28])
+                                    Pexp_ident "String.index" (testsuite/tests/lib-unix/win-env/test_env.ml[20,398+16]..[20,398+28])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-unix/win-env/test_env.ml[20,398+29]..[20,398+30])
+                                        Pexp_ident "e" (testsuite/tests/lib-unix/win-env/test_env.ml[20,398+29]..[20,398+30])
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-unix/win-env/test_env.ml[20,398+31]..[20,398+34])
+                                        Pexp_constant PConst_char 3d
+                                  ]
+                            ]
+                            expression (testsuite/tests/lib-unix/win-env/test_env.ml[21,436+6]..[24,548+18])
+                              Pexp_ifthenelse
+                              expression (testsuite/tests/lib-unix/win-env/test_env.ml[21,436+9]..[21,436+31])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-unix/win-env/test_env.ml[21,436+28]..[21,436+29])
+                                  Pexp_ident "=" (testsuite/tests/lib-unix/win-env/test_env.ml[21,436+28]..[21,436+29])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-unix/win-env/test_env.ml[21,436+9]..[21,436+27])
+                                      Pexp_apply
+                                      expression (testsuite/tests/lib-unix/win-env/test_env.ml[21,436+9]..[21,436+19])
+                                        Pexp_ident "String.sub" (testsuite/tests/lib-unix/win-env/test_env.ml[21,436+9]..[21,436+19])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-unix/win-env/test_env.ml[21,436+20]..[21,436+21])
+                                            Pexp_ident "e" (testsuite/tests/lib-unix/win-env/test_env.ml[21,436+20]..[21,436+21])
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-unix/win-env/test_env.ml[21,436+22]..[21,436+23])
+                                            Pexp_constant PConst_int (0,None)
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-unix/win-env/test_env.ml[21,436+24]..[21,436+27])
+                                            Pexp_ident "pos" (testsuite/tests/lib-unix/win-env/test_env.ml[21,436+24]..[21,436+27])
+                                      ]
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-unix/win-env/test_env.ml[21,436+30]..[21,436+31])
+                                      Pexp_ident "s" (testsuite/tests/lib-unix/win-env/test_env.ml[21,436+30]..[21,436+31])
+                                ]
+                              expression (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+8]..[22,473+63])
+                                Pexp_construct "Some" (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+8]..[22,473+12])
+                                Some
+                                  expression (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+13]..[22,473+63])
+                                    Pexp_apply
+                                    expression (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+14]..[22,473+24])
+                                      Pexp_ident "String.sub" (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+14]..[22,473+24])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+25]..[22,473+26])
+                                          Pexp_ident "e" (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+25]..[22,473+26])
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+27]..[22,473+34])
+                                          Pexp_apply
+                                          expression (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+31]..[22,473+32])
+                                            Pexp_ident "+" (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+31]..[22,473+32])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+28]..[22,473+31])
+                                                Pexp_ident "pos" (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+28]..[22,473+31])
+                                            <arg>
+                                            Nolabel
+                                              expression (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+32]..[22,473+33])
+                                                Pexp_constant PConst_int (1,None)
+                                          ]
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+35]..[22,473+62])
+                                          Pexp_apply
+                                          expression (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+58]..[22,473+59])
+                                            Pexp_ident "-" (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+58]..[22,473+59])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+36]..[22,473+57])
+                                                Pexp_apply
+                                                expression (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+52]..[22,473+53])
+                                                  Pexp_ident "-" (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+52]..[22,473+53])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+36]..[22,473+51])
+                                                      Pexp_apply
+                                                      expression (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+36]..[22,473+49])
+                                                        Pexp_ident "String.length" (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+36]..[22,473+49])
+                                                      [
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+50]..[22,473+51])
+                                                            Pexp_ident "e" (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+50]..[22,473+51])
+                                                      ]
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+54]..[22,473+57])
+                                                      Pexp_ident "pos" (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+54]..[22,473+57])
+                                                ]
+                                            <arg>
+                                            Nolabel
+                                              expression (testsuite/tests/lib-unix/win-env/test_env.ml[22,473+60]..[22,473+61])
+                                                Pexp_constant PConst_int (1,None)
+                                          ]
+                                    ]
+                              Some
+                                expression (testsuite/tests/lib-unix/win-env/test_env.ml[24,548+8]..[24,548+18])
+                                  Pexp_apply
+                                  expression (testsuite/tests/lib-unix/win-env/test_env.ml[24,548+8]..[24,548+12])
+                                    Pexp_ident "loop" (testsuite/tests/lib-unix/win-env/test_env.ml[24,548+8]..[24,548+12])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-unix/win-env/test_env.ml[24,548+13]..[24,548+18])
+                                        Pexp_apply
+                                        expression (testsuite/tests/lib-unix/win-env/test_env.ml[24,548+15]..[24,548+16])
+                                          Pexp_ident "+" (testsuite/tests/lib-unix/win-env/test_env.ml[24,548+15]..[24,548+16])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/lib-unix/win-env/test_env.ml[24,548+14]..[24,548+15])
+                                              Pexp_ident "i" (testsuite/tests/lib-unix/win-env/test_env.ml[24,548+14]..[24,548+15])
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/lib-unix/win-env/test_env.ml[24,548+16]..[24,548+17])
+                                              Pexp_constant PConst_int (1,None)
+                                        ]
+                                  ]
+              ]
+              expression (testsuite/tests/lib-unix/win-env/test_env.ml[27,580+2]..[27,580+8])
+                Pexp_apply
+                expression (testsuite/tests/lib-unix/win-env/test_env.ml[27,580+2]..[27,580+6])
+                  Pexp_ident "loop" (testsuite/tests/lib-unix/win-env/test_env.ml[27,580+2]..[27,580+6])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-unix/win-env/test_env.ml[27,580+7]..[27,580+8])
+                      Pexp_constant PConst_int (0,None)
+                ]
+    ]
+  structure_item (testsuite/tests/lib-unix/win-env/test_env.ml[29,590+0]..[33,686+47])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/win-env/test_env.ml[29,590+4]..[29,590+9])
+          Ppat_var "print" (testsuite/tests/lib-unix/win-env/test_env.ml[29,590+4]..[29,590+9])
+        expression (testsuite/tests/lib-unix/win-env/test_env.ml[29,590+10]..[33,686+47]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-unix/win-env/test_env.ml[29,590+10]..[29,590+15])
+            Ppat_var "title" (testsuite/tests/lib-unix/win-env/test_env.ml[29,590+10]..[29,590+15])
+          expression (testsuite/tests/lib-unix/win-env/test_env.ml[29,590+18]..[33,686+47])
+            Pexp_function
+            [
+              <case>
+                pattern (testsuite/tests/lib-unix/win-env/test_env.ml[30,617+4]..[30,617+8])
+                  Ppat_construct "None" (testsuite/tests/lib-unix/win-env/test_env.ml[30,617+4]..[30,617+8])
+                  None
+                expression (testsuite/tests/lib-unix/win-env/test_env.ml[31,629+6]..[31,629+42])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/win-env/test_env.ml[31,629+6]..[31,629+19])
+                    Pexp_ident "Printf.printf" (testsuite/tests/lib-unix/win-env/test_env.ml[31,629+6]..[31,629+19])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-env/test_env.ml[31,629+20]..[31,629+36])
+                        Pexp_constant PConst_string("%s -> None\n%!",(testsuite/tests/lib-unix/win-env/test_env.ml[31,629+21]..[31,629+35]),None)
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-env/test_env.ml[31,629+37]..[31,629+42])
+                        Pexp_ident "title" (testsuite/tests/lib-unix/win-env/test_env.ml[31,629+37]..[31,629+42])
+                  ]
+              <case>
+                pattern (testsuite/tests/lib-unix/win-env/test_env.ml[32,672+4]..[32,672+10])
+                  Ppat_construct "Some" (testsuite/tests/lib-unix/win-env/test_env.ml[32,672+4]..[32,672+8])
+                  Some
+                    []
+                    pattern (testsuite/tests/lib-unix/win-env/test_env.ml[32,672+9]..[32,672+10])
+                      Ppat_var "s" (testsuite/tests/lib-unix/win-env/test_env.ml[32,672+9]..[32,672+10])
+                expression (testsuite/tests/lib-unix/win-env/test_env.ml[33,686+6]..[33,686+47])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/win-env/test_env.ml[33,686+6]..[33,686+19])
+                    Pexp_ident "Printf.printf" (testsuite/tests/lib-unix/win-env/test_env.ml[33,686+6]..[33,686+19])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-env/test_env.ml[33,686+20]..[33,686+39])
+                        Pexp_constant PConst_string("%s -> Some %S\n%!",(testsuite/tests/lib-unix/win-env/test_env.ml[33,686+21]..[33,686+38]),None)
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-env/test_env.ml[33,686+40]..[33,686+45])
+                        Pexp_ident "title" (testsuite/tests/lib-unix/win-env/test_env.ml[33,686+40]..[33,686+45])
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-env/test_env.ml[33,686+46]..[33,686+47])
+                        Pexp_ident "s" (testsuite/tests/lib-unix/win-env/test_env.ml[33,686+46]..[33,686+47])
+                  ]
+            ]
+    ]
+  structure_item (testsuite/tests/lib-unix/win-env/test_env.ml[35,735+0]..[40,911+49])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/win-env/test_env.ml[35,735+4]..[35,735+6])
+          Ppat_construct "()" (testsuite/tests/lib-unix/win-env/test_env.ml[35,735+4]..[35,735+6])
+          None
+        expression (testsuite/tests/lib-unix/win-env/test_env.ml[36,744+2]..[40,911+49])
+          Pexp_sequence
+          expression (testsuite/tests/lib-unix/win-env/test_env.ml[36,744+2]..[36,744+38])
+            Pexp_apply
+            expression (testsuite/tests/lib-unix/win-env/test_env.ml[36,744+2]..[36,744+26])
+              Pexp_ident "set_environment_variable" (testsuite/tests/lib-unix/win-env/test_env.ml[36,744+2]..[36,744+26])
+            [
+              <arg>
+              Nolabel
+                expression (testsuite/tests/lib-unix/win-env/test_env.ml[36,744+27]..[36,744+32])
+                  Pexp_constant PConst_string("FOO",(testsuite/tests/lib-unix/win-env/test_env.ml[36,744+28]..[36,744+31]),None)
+              <arg>
+              Nolabel
+                expression (testsuite/tests/lib-unix/win-env/test_env.ml[36,744+33]..[36,744+38])
+                  Pexp_constant PConst_string("BAR",(testsuite/tests/lib-unix/win-env/test_env.ml[36,744+34]..[36,744+37]),None)
+            ]
+          expression (testsuite/tests/lib-unix/win-env/test_env.ml[37,784+2]..[40,911+49])
+            Pexp_sequence
+            expression (testsuite/tests/lib-unix/win-env/test_env.ml[37,784+2]..[37,784+27])
+              Pexp_apply
+              expression (testsuite/tests/lib-unix/win-env/test_env.ml[37,784+2]..[37,784+13])
+                Pexp_ident "Unix.putenv" (testsuite/tests/lib-unix/win-env/test_env.ml[37,784+2]..[37,784+13])
+              [
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/win-env/test_env.ml[37,784+14]..[37,784+20])
+                    Pexp_constant PConst_string("FOO2",(testsuite/tests/lib-unix/win-env/test_env.ml[37,784+15]..[37,784+19]),None)
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/win-env/test_env.ml[37,784+21]..[37,784+27])
+                    Pexp_constant PConst_string("BAR2",(testsuite/tests/lib-unix/win-env/test_env.ml[37,784+22]..[37,784+26]),None)
+              ]
+            expression (testsuite/tests/lib-unix/win-env/test_env.ml[38,813+2]..[40,911+49])
+              Pexp_sequence
+              expression (testsuite/tests/lib-unix/win-env/test_env.ml[38,813+2]..[38,813+47])
+                Pexp_apply
+                expression (testsuite/tests/lib-unix/win-env/test_env.ml[38,813+2]..[38,813+7])
+                  Pexp_ident "print" (testsuite/tests/lib-unix/win-env/test_env.ml[38,813+2]..[38,813+7])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-unix/win-env/test_env.ml[38,813+8]..[38,813+24])
+                      Pexp_constant PConst_string("Sys.getenv FOO",(testsuite/tests/lib-unix/win-env/test_env.ml[38,813+9]..[38,813+23]),None)
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-unix/win-env/test_env.ml[38,813+25]..[38,813+47])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/win-env/test_env.ml[38,813+26]..[38,813+40])
+                        Pexp_ident "Sys.getenv_opt" (testsuite/tests/lib-unix/win-env/test_env.ml[38,813+26]..[38,813+40])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/win-env/test_env.ml[38,813+41]..[38,813+46])
+                            Pexp_constant PConst_string("FOO",(testsuite/tests/lib-unix/win-env/test_env.ml[38,813+42]..[38,813+45]),None)
+                      ]
+                ]
+              expression (testsuite/tests/lib-unix/win-env/test_env.ml[39,862+2]..[40,911+49])
+                Pexp_sequence
+                expression (testsuite/tests/lib-unix/win-env/test_env.ml[39,862+2]..[39,862+47])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/win-env/test_env.ml[39,862+2]..[39,862+7])
+                    Pexp_ident "print" (testsuite/tests/lib-unix/win-env/test_env.ml[39,862+2]..[39,862+7])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-env/test_env.ml[39,862+8]..[39,862+30])
+                        Pexp_constant PConst_string("Unix.environment FOO",(testsuite/tests/lib-unix/win-env/test_env.ml[39,862+9]..[39,862+29]),None)
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-env/test_env.ml[39,862+31]..[39,862+47])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/win-env/test_env.ml[39,862+32]..[39,862+40])
+                          Pexp_ident "find_env" (testsuite/tests/lib-unix/win-env/test_env.ml[39,862+32]..[39,862+40])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/win-env/test_env.ml[39,862+41]..[39,862+46])
+                              Pexp_constant PConst_string("FOO",(testsuite/tests/lib-unix/win-env/test_env.ml[39,862+42]..[39,862+45]),None)
+                        ]
+                  ]
+                expression (testsuite/tests/lib-unix/win-env/test_env.ml[40,911+2]..[40,911+49])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/win-env/test_env.ml[40,911+2]..[40,911+7])
+                    Pexp_ident "print" (testsuite/tests/lib-unix/win-env/test_env.ml[40,911+2]..[40,911+7])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-env/test_env.ml[40,911+8]..[40,911+25])
+                        Pexp_constant PConst_string("Sys.getenv FOO2",(testsuite/tests/lib-unix/win-env/test_env.ml[40,911+9]..[40,911+24]),None)
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/win-env/test_env.ml[40,911+26]..[40,911+49])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/win-env/test_env.ml[40,911+27]..[40,911+41])
+                          Pexp_ident "Sys.getenv_opt" (testsuite/tests/lib-unix/win-env/test_env.ml[40,911+27]..[40,911+41])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/win-env/test_env.ml[40,911+42]..[40,911+48])
+                              Pexp_constant PConst_string("FOO2",(testsuite/tests/lib-unix/win-env/test_env.ml[40,911+43]..[40,911+47]),None)
+                        ]
+                  ]
+    ]
+]
+

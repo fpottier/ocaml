@@ -1,0 +1,736 @@
+[
+  signature_item (lambda/switch.mli[32,1602+0]..[32,1602+44])
+    Psig_type Rec
+    [
+      type_declaration "shared" (lambda/switch.mli[32,1602+8]..[32,1602+14]) (lambda/switch.mli[32,1602+0]..[32,1602+44])
+        ptype_params =
+          [
+            core_type (lambda/switch.mli[32,1602+5]..[32,1602+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (lambda/switch.mli[32,1602+17]..[32,1602+29])
+                "Shared" (lambda/switch.mli[32,1602+17]..[32,1602+23])
+                [
+                  core_type (lambda/switch.mli[32,1602+27]..[32,1602+29])
+                    Ptyp_var a
+                ]
+                None
+              (lambda/switch.mli[32,1602+30]..[32,1602+44])
+                "Single" (lambda/switch.mli[32,1602+32]..[32,1602+38])
+                [
+                  core_type (lambda/switch.mli[32,1602+42]..[32,1602+44])
+                    Ptyp_var a
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (lambda/switch.mli[34,1648+0]..[38,1793+45])
+    Psig_type Rec
+    [
+      type_declaration "t_store" (lambda/switch.mli[34,1648+16]..[34,1648+23]) (lambda/switch.mli[34,1648+0]..[38,1793+45])
+        ptype_params =
+          [
+            core_type (lambda/switch.mli[34,1648+6]..[34,1648+8])
+              Ptyp_var a
+            core_type (lambda/switch.mli[34,1648+10]..[34,1648+14])
+              Ptyp_var ctx
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (lambda/switch.mli[35,1674+5]..[35,1674+33])
+                Immutable
+                "act_get" (lambda/switch.mli[35,1674+5]..[35,1674+12])                core_type (lambda/switch.mli[35,1674+15]..[35,1674+31])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (lambda/switch.mli[35,1674+15]..[35,1674+19])
+                    Ptyp_constr "unit" (lambda/switch.mli[35,1674+15]..[35,1674+19])
+                    []
+                  core_type (lambda/switch.mli[35,1674+23]..[35,1674+31])
+                    Ptyp_constr "array" (lambda/switch.mli[35,1674+26]..[35,1674+31])
+                    [
+                      core_type (lambda/switch.mli[35,1674+23]..[35,1674+25])
+                        Ptyp_var a
+                    ]
+              (lambda/switch.mli[36,1708+5]..[36,1708+47])
+                Immutable
+                "act_get_shared" (lambda/switch.mli[36,1708+5]..[36,1708+19])                core_type (lambda/switch.mli[36,1708+22]..[36,1708+45])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (lambda/switch.mli[36,1708+22]..[36,1708+26])
+                    Ptyp_constr "unit" (lambda/switch.mli[36,1708+22]..[36,1708+26])
+                    []
+                  core_type (lambda/switch.mli[36,1708+30]..[36,1708+45])
+                    Ptyp_constr "array" (lambda/switch.mli[36,1708+40]..[36,1708+45])
+                    [
+                      core_type (lambda/switch.mli[36,1708+30]..[36,1708+39])
+                        Ptyp_constr "shared" (lambda/switch.mli[36,1708+33]..[36,1708+39])
+                        [
+                          core_type (lambda/switch.mli[36,1708+30]..[36,1708+32])
+                            Ptyp_var a
+                        ]
+                    ]
+              (lambda/switch.mli[37,1756+5]..[37,1756+36])
+                Immutable
+                "act_store" (lambda/switch.mli[37,1756+5]..[37,1756+14])                core_type (lambda/switch.mli[37,1756+17]..[37,1756+34])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (lambda/switch.mli[37,1756+17]..[37,1756+21])
+                    Ptyp_var ctx
+                  core_type (lambda/switch.mli[37,1756+25]..[37,1756+34])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (lambda/switch.mli[37,1756+25]..[37,1756+27])
+                      Ptyp_var a
+                    core_type (lambda/switch.mli[37,1756+31]..[37,1756+34])
+                      Ptyp_constr "int" (lambda/switch.mli[37,1756+31]..[37,1756+34])
+                      []
+              (lambda/switch.mli[38,1793+5]..[38,1793+43])
+                Immutable
+                "act_store_shared" (lambda/switch.mli[38,1793+5]..[38,1793+21])                core_type (lambda/switch.mli[38,1793+24]..[38,1793+41])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (lambda/switch.mli[38,1793+24]..[38,1793+28])
+                    Ptyp_var ctx
+                  core_type (lambda/switch.mli[38,1793+32]..[38,1793+41])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (lambda/switch.mli[38,1793+32]..[38,1793+34])
+                      Ptyp_var a
+                    core_type (lambda/switch.mli[38,1793+38]..[38,1793+41])
+                      Ptyp_constr "int" (lambda/switch.mli[38,1793+38]..[38,1793+41])
+                      []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (lambda/switch.mli[40,1840+0]..[40,1840+20])
+    Psig_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (lambda/switch.mli[40,1840+0]..[40,1840+20])
+          pext_name = "Not_simple"
+          pext_kind =
+            Pext_decl
+              []
+              None
+  signature_item (lambda/switch.mli[42,1862+0]..[47,1978+3])
+    Psig_modtype "Stored" (lambda/switch.mli[42,1862+12]..[42,1862+18])
+      module_type (lambda/switch.mli[42,1862+21]..[47,1978+3])
+        Pmty_signature
+        [
+          signature_item (lambda/switch.mli[43,1887+2]..[43,1887+8])
+            Psig_type Rec
+            [
+              type_declaration "t" (lambda/switch.mli[43,1887+7]..[43,1887+8]) (lambda/switch.mli[43,1887+2]..[43,1887+8])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (lambda/switch.mli[44,1896+2]..[44,1896+10])
+            Psig_type Rec
+            [
+              type_declaration "key" (lambda/switch.mli[44,1896+7]..[44,1896+10]) (lambda/switch.mli[44,1896+2]..[44,1896+10])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (lambda/switch.mli[45,1907+2]..[45,1907+37])
+            Psig_value
+            value_description "compare_key" (lambda/switch.mli[45,1907+6]..[45,1907+17]) (lambda/switch.mli[45,1907+2]..[45,1907+37])
+              core_type (lambda/switch.mli[45,1907+20]..[45,1907+37])
+                Ptyp_arrow
+                Nolabel
+                core_type (lambda/switch.mli[45,1907+20]..[45,1907+23])
+                  Ptyp_constr "key" (lambda/switch.mli[45,1907+20]..[45,1907+23])
+                  []
+                core_type (lambda/switch.mli[45,1907+27]..[45,1907+37])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (lambda/switch.mli[45,1907+27]..[45,1907+30])
+                    Ptyp_constr "key" (lambda/switch.mli[45,1907+27]..[45,1907+30])
+                    []
+                  core_type (lambda/switch.mli[45,1907+34]..[45,1907+37])
+                    Ptyp_constr "int" (lambda/switch.mli[45,1907+34]..[45,1907+37])
+                    []
+              []
+          signature_item (lambda/switch.mli[46,1945+2]..[46,1945+32])
+            Psig_value
+            value_description "make_key" (lambda/switch.mli[46,1945+6]..[46,1945+14]) (lambda/switch.mli[46,1945+2]..[46,1945+32])
+              core_type (lambda/switch.mli[46,1945+17]..[46,1945+32])
+                Ptyp_arrow
+                Nolabel
+                core_type (lambda/switch.mli[46,1945+17]..[46,1945+18])
+                  Ptyp_constr "t" (lambda/switch.mli[46,1945+17]..[46,1945+18])
+                  []
+                core_type (lambda/switch.mli[46,1945+22]..[46,1945+32])
+                  Ptyp_constr "option" (lambda/switch.mli[46,1945+26]..[46,1945+32])
+                  [
+                    core_type (lambda/switch.mli[46,1945+22]..[46,1945+25])
+                      Ptyp_constr "key" (lambda/switch.mli[46,1945+22]..[46,1945+25])
+                      []
+                  ]
+              []
+        ]
+  signature_item (lambda/switch.mli[49,1983+0]..[53,2087+3])
+    Psig_modtype "CtxStored" (lambda/switch.mli[49,1983+12]..[49,1983+21])
+      module_type (lambda/switch.mli[49,1983+24]..[53,2087+3])
+        Pmty_signature
+        [
+          signature_item (lambda/switch.mli[50,2011+2]..[50,2011+16])
+            Psig_include
+            module_type (lambda/switch.mli[50,2011+10]..[50,2011+16])
+              Pmty_ident "Stored" (lambda/switch.mli[50,2011+10]..[50,2011+16])
+          signature_item (lambda/switch.mli[51,2028+2]..[51,2028+14])
+            Psig_type Rec
+            [
+              type_declaration "context" (lambda/switch.mli[51,2028+7]..[51,2028+14]) (lambda/switch.mli[51,2028+2]..[51,2028+14])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (lambda/switch.mli[52,2043+2]..[52,2043+43])
+            Psig_value
+            value_description "make_key" (lambda/switch.mli[52,2043+6]..[52,2043+14]) (lambda/switch.mli[52,2043+2]..[52,2043+43])
+              core_type (lambda/switch.mli[52,2043+17]..[52,2043+43])
+                Ptyp_arrow
+                Nolabel
+                core_type (lambda/switch.mli[52,2043+17]..[52,2043+24])
+                  Ptyp_constr "context" (lambda/switch.mli[52,2043+17]..[52,2043+24])
+                  []
+                core_type (lambda/switch.mli[52,2043+28]..[52,2043+43])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (lambda/switch.mli[52,2043+28]..[52,2043+29])
+                    Ptyp_constr "t" (lambda/switch.mli[52,2043+28]..[52,2043+29])
+                    []
+                  core_type (lambda/switch.mli[52,2043+33]..[52,2043+43])
+                    Ptyp_constr "option" (lambda/switch.mli[52,2043+37]..[52,2043+43])
+                    [
+                      core_type (lambda/switch.mli[52,2043+33]..[52,2043+36])
+                        Ptyp_constr "key" (lambda/switch.mli[52,2043+33]..[52,2043+36])
+                        []
+                    ]
+              []
+        ]
+  signature_item (lambda/switch.mli[55,2092+0]..[58,2185+7])
+    Psig_module "CtxStore" (lambda/switch.mli[55,2092+7]..[55,2092+15])
+    module_type (lambda/switch.mli[55,2092+15]..[58,2185+7])
+      Pmty_functor "A" (lambda/switch.mli[55,2092+16]..[55,2092+17])
+      module_type (lambda/switch.mli[55,2092+18]..[55,2092+27])
+        Pmty_ident "CtxStored" (lambda/switch.mli[55,2092+18]..[55,2092+27])
+      module_type (lambda/switch.mli[56,2123+4]..[58,2185+7])
+        Pmty_signature
+        [
+          signature_item (lambda/switch.mli[57,2131+6]..[57,2131+53])
+            Psig_value
+            value_description "mk_store" (lambda/switch.mli[57,2131+10]..[57,2131+18]) (lambda/switch.mli[57,2131+6]..[57,2131+53])
+              core_type (lambda/switch.mli[57,2131+21]..[57,2131+53])
+                Ptyp_arrow
+                Nolabel
+                core_type (lambda/switch.mli[57,2131+21]..[57,2131+25])
+                  Ptyp_constr "unit" (lambda/switch.mli[57,2131+21]..[57,2131+25])
+                  []
+                core_type (lambda/switch.mli[57,2131+29]..[57,2131+53])
+                  Ptyp_constr "t_store" (lambda/switch.mli[57,2131+46]..[57,2131+53])
+                  [
+                    core_type (lambda/switch.mli[57,2131+30]..[57,2131+33])
+                      Ptyp_constr "A.t" (lambda/switch.mli[57,2131+30]..[57,2131+33])
+                      []
+                    core_type (lambda/switch.mli[57,2131+35]..[57,2131+44])
+                      Ptyp_constr "A.context" (lambda/switch.mli[57,2131+35]..[57,2131+44])
+                      []
+                  ]
+              []
+        ]
+  signature_item (lambda/switch.mli[60,2194+0]..[63,2276+7])
+    Psig_module "Store" (lambda/switch.mli[60,2194+7]..[60,2194+12])
+    module_type (lambda/switch.mli[60,2194+12]..[63,2276+7])
+      Pmty_functor "A" (lambda/switch.mli[60,2194+13]..[60,2194+14])
+      module_type (lambda/switch.mli[60,2194+15]..[60,2194+21])
+        Pmty_ident "Stored" (lambda/switch.mli[60,2194+15]..[60,2194+21])
+      module_type (lambda/switch.mli[61,2219+4]..[63,2276+7])
+        Pmty_signature
+        [
+          signature_item (lambda/switch.mli[62,2227+6]..[62,2227+48])
+            Psig_value
+            value_description "mk_store" (lambda/switch.mli[62,2227+10]..[62,2227+18]) (lambda/switch.mli[62,2227+6]..[62,2227+48])
+              core_type (lambda/switch.mli[62,2227+21]..[62,2227+48])
+                Ptyp_arrow
+                Nolabel
+                core_type (lambda/switch.mli[62,2227+21]..[62,2227+25])
+                  Ptyp_constr "unit" (lambda/switch.mli[62,2227+21]..[62,2227+25])
+                  []
+                core_type (lambda/switch.mli[62,2227+29]..[62,2227+48])
+                  Ptyp_constr "t_store" (lambda/switch.mli[62,2227+41]..[62,2227+48])
+                  [
+                    core_type (lambda/switch.mli[62,2227+30]..[62,2227+33])
+                      Ptyp_constr "A.t" (lambda/switch.mli[62,2227+30]..[62,2227+33])
+                      []
+                    core_type (lambda/switch.mli[62,2227+35]..[62,2227+39])
+                      Ptyp_constr "unit" (lambda/switch.mli[62,2227+35]..[62,2227+39])
+                      []
+                  ]
+              []
+        ]
+  signature_item (lambda/switch.mli[66,2321+0]..[99,3341+5])
+    Psig_modtype "S" (lambda/switch.mli[66,2321+12]..[66,2321+13])
+      module_type (lambda/switch.mli[67,2337+2]..[99,3341+5])
+        Pmty_signature
+        [
+          signature_item (lambda/switch.mli[69,2373+4]..[69,2373+18])
+            Psig_type Rec
+            [
+              type_declaration "primitive" (lambda/switch.mli[69,2373+9]..[69,2373+18]) (lambda/switch.mli[69,2373+4]..[69,2373+18])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (lambda/switch.mli[71,2425+4]..[71,2425+25])
+            Psig_value
+            value_description "eqint" (lambda/switch.mli[71,2425+8]..[71,2425+13]) (lambda/switch.mli[71,2425+4]..[71,2425+25])
+              core_type (lambda/switch.mli[71,2425+16]..[71,2425+25])
+                Ptyp_constr "primitive" (lambda/switch.mli[71,2425+16]..[71,2425+25])
+                []
+              []
+          signature_item (lambda/switch.mli[72,2451+4]..[72,2451+25])
+            Psig_value
+            value_description "neint" (lambda/switch.mli[72,2451+8]..[72,2451+13]) (lambda/switch.mli[72,2451+4]..[72,2451+25])
+              core_type (lambda/switch.mli[72,2451+16]..[72,2451+25])
+                Ptyp_constr "primitive" (lambda/switch.mli[72,2451+16]..[72,2451+25])
+                []
+              []
+          signature_item (lambda/switch.mli[73,2477+4]..[73,2477+25])
+            Psig_value
+            value_description "leint" (lambda/switch.mli[73,2477+8]..[73,2477+13]) (lambda/switch.mli[73,2477+4]..[73,2477+25])
+              core_type (lambda/switch.mli[73,2477+16]..[73,2477+25])
+                Ptyp_constr "primitive" (lambda/switch.mli[73,2477+16]..[73,2477+25])
+                []
+              []
+          signature_item (lambda/switch.mli[74,2503+4]..[74,2503+25])
+            Psig_value
+            value_description "ltint" (lambda/switch.mli[74,2503+8]..[74,2503+13]) (lambda/switch.mli[74,2503+4]..[74,2503+25])
+              core_type (lambda/switch.mli[74,2503+16]..[74,2503+25])
+                Ptyp_constr "primitive" (lambda/switch.mli[74,2503+16]..[74,2503+25])
+                []
+              []
+          signature_item (lambda/switch.mli[75,2529+4]..[75,2529+25])
+            Psig_value
+            value_description "geint" (lambda/switch.mli[75,2529+8]..[75,2529+13]) (lambda/switch.mli[75,2529+4]..[75,2529+25])
+              core_type (lambda/switch.mli[75,2529+16]..[75,2529+25])
+                Ptyp_constr "primitive" (lambda/switch.mli[75,2529+16]..[75,2529+25])
+                []
+              []
+          signature_item (lambda/switch.mli[76,2555+4]..[76,2555+25])
+            Psig_value
+            value_description "gtint" (lambda/switch.mli[76,2555+8]..[76,2555+13]) (lambda/switch.mli[76,2555+4]..[76,2555+25])
+              core_type (lambda/switch.mli[76,2555+16]..[76,2555+25])
+                Ptyp_constr "primitive" (lambda/switch.mli[76,2555+16]..[76,2555+25])
+                []
+              []
+          signature_item (lambda/switch.mli[78,2607+4]..[78,2607+12])
+            Psig_type Rec
+            [
+              type_declaration "act" (lambda/switch.mli[78,2607+9]..[78,2607+12]) (lambda/switch.mli[78,2607+4]..[78,2607+12])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (lambda/switch.mli[80,2655+4]..[80,2655+12])
+            Psig_type Rec
+            [
+              type_declaration "loc" (lambda/switch.mli[80,2655+9]..[80,2655+12]) (lambda/switch.mli[80,2655+4]..[80,2655+12])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (lambda/switch.mli[84,2755+4]..[84,2755+41])
+            Psig_value
+            value_description "bind" (lambda/switch.mli[84,2755+8]..[84,2755+12]) (lambda/switch.mli[84,2755+4]..[84,2755+41])
+              core_type (lambda/switch.mli[84,2755+15]..[84,2755+41])
+                Ptyp_arrow
+                Nolabel
+                core_type (lambda/switch.mli[84,2755+15]..[84,2755+18])
+                  Ptyp_constr "act" (lambda/switch.mli[84,2755+15]..[84,2755+18])
+                  []
+                core_type (lambda/switch.mli[84,2755+22]..[84,2755+41])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (lambda/switch.mli[84,2755+23]..[84,2755+33])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (lambda/switch.mli[84,2755+23]..[84,2755+26])
+                      Ptyp_constr "act" (lambda/switch.mli[84,2755+23]..[84,2755+26])
+                      []
+                    core_type (lambda/switch.mli[84,2755+30]..[84,2755+33])
+                      Ptyp_constr "act" (lambda/switch.mli[84,2755+30]..[84,2755+33])
+                      []
+                  core_type (lambda/switch.mli[84,2755+38]..[84,2755+41])
+                    Ptyp_constr "act" (lambda/switch.mli[84,2755+38]..[84,2755+41])
+                    []
+              []
+          signature_item (lambda/switch.mli[85,2797+4]..[85,2797+31])
+            Psig_value
+            value_description "make_const" (lambda/switch.mli[85,2797+8]..[85,2797+18]) (lambda/switch.mli[85,2797+4]..[85,2797+31])
+              core_type (lambda/switch.mli[85,2797+21]..[85,2797+31])
+                Ptyp_arrow
+                Nolabel
+                core_type (lambda/switch.mli[85,2797+21]..[85,2797+24])
+                  Ptyp_constr "int" (lambda/switch.mli[85,2797+21]..[85,2797+24])
+                  []
+                core_type (lambda/switch.mli[85,2797+28]..[85,2797+31])
+                  Ptyp_constr "act" (lambda/switch.mli[85,2797+28]..[85,2797+31])
+                  []
+              []
+          signature_item (lambda/switch.mli[86,2829+4]..[86,2829+39])
+            Psig_value
+            value_description "make_offset" (lambda/switch.mli[86,2829+8]..[86,2829+19]) (lambda/switch.mli[86,2829+4]..[86,2829+39])
+              core_type (lambda/switch.mli[86,2829+22]..[86,2829+39])
+                Ptyp_arrow
+                Nolabel
+                core_type (lambda/switch.mli[86,2829+22]..[86,2829+25])
+                  Ptyp_constr "act" (lambda/switch.mli[86,2829+22]..[86,2829+25])
+                  []
+                core_type (lambda/switch.mli[86,2829+29]..[86,2829+39])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (lambda/switch.mli[86,2829+29]..[86,2829+32])
+                    Ptyp_constr "int" (lambda/switch.mli[86,2829+29]..[86,2829+32])
+                    []
+                  core_type (lambda/switch.mli[86,2829+36]..[86,2829+39])
+                    Ptyp_constr "act" (lambda/switch.mli[86,2829+36]..[86,2829+39])
+                    []
+              []
+          signature_item (lambda/switch.mli[87,2869+4]..[87,2869+48])
+            Psig_value
+            value_description "make_prim" (lambda/switch.mli[87,2869+8]..[87,2869+17]) (lambda/switch.mli[87,2869+4]..[87,2869+48])
+              core_type (lambda/switch.mli[87,2869+20]..[87,2869+48])
+                Ptyp_arrow
+                Nolabel
+                core_type (lambda/switch.mli[87,2869+20]..[87,2869+29])
+                  Ptyp_constr "primitive" (lambda/switch.mli[87,2869+20]..[87,2869+29])
+                  []
+                core_type (lambda/switch.mli[87,2869+33]..[87,2869+48])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (lambda/switch.mli[87,2869+33]..[87,2869+41])
+                    Ptyp_constr "list" (lambda/switch.mli[87,2869+37]..[87,2869+41])
+                    [
+                      core_type (lambda/switch.mli[87,2869+33]..[87,2869+36])
+                        Ptyp_constr "act" (lambda/switch.mli[87,2869+33]..[87,2869+36])
+                        []
+                    ]
+                  core_type (lambda/switch.mli[87,2869+45]..[87,2869+48])
+                    Ptyp_constr "act" (lambda/switch.mli[87,2869+45]..[87,2869+48])
+                    []
+              []
+          signature_item (lambda/switch.mli[88,2918+4]..[88,2918+38])
+            Psig_value
+            value_description "make_isout" (lambda/switch.mli[88,2918+8]..[88,2918+18]) (lambda/switch.mli[88,2918+4]..[88,2918+38])
+              core_type (lambda/switch.mli[88,2918+21]..[88,2918+38])
+                Ptyp_arrow
+                Nolabel
+                core_type (lambda/switch.mli[88,2918+21]..[88,2918+24])
+                  Ptyp_constr "act" (lambda/switch.mli[88,2918+21]..[88,2918+24])
+                  []
+                core_type (lambda/switch.mli[88,2918+28]..[88,2918+38])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (lambda/switch.mli[88,2918+28]..[88,2918+31])
+                    Ptyp_constr "act" (lambda/switch.mli[88,2918+28]..[88,2918+31])
+                    []
+                  core_type (lambda/switch.mli[88,2918+35]..[88,2918+38])
+                    Ptyp_constr "act" (lambda/switch.mli[88,2918+35]..[88,2918+38])
+                    []
+              []
+          signature_item (lambda/switch.mli[89,2957+4]..[89,2957+37])
+            Psig_value
+            value_description "make_isin" (lambda/switch.mli[89,2957+8]..[89,2957+17]) (lambda/switch.mli[89,2957+4]..[89,2957+37])
+              core_type (lambda/switch.mli[89,2957+20]..[89,2957+37])
+                Ptyp_arrow
+                Nolabel
+                core_type (lambda/switch.mli[89,2957+20]..[89,2957+23])
+                  Ptyp_constr "act" (lambda/switch.mli[89,2957+20]..[89,2957+23])
+                  []
+                core_type (lambda/switch.mli[89,2957+27]..[89,2957+37])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (lambda/switch.mli[89,2957+27]..[89,2957+30])
+                    Ptyp_constr "act" (lambda/switch.mli[89,2957+27]..[89,2957+30])
+                    []
+                  core_type (lambda/switch.mli[89,2957+34]..[89,2957+37])
+                    Ptyp_constr "act" (lambda/switch.mli[89,2957+34]..[89,2957+37])
+                    []
+              []
+          signature_item (lambda/switch.mli[90,2995+4]..[90,2995+42])
+            Psig_value
+            value_description "make_if" (lambda/switch.mli[90,2995+8]..[90,2995+15]) (lambda/switch.mli[90,2995+4]..[90,2995+42])
+              core_type (lambda/switch.mli[90,2995+18]..[90,2995+42])
+                Ptyp_arrow
+                Nolabel
+                core_type (lambda/switch.mli[90,2995+18]..[90,2995+21])
+                  Ptyp_constr "act" (lambda/switch.mli[90,2995+18]..[90,2995+21])
+                  []
+                core_type (lambda/switch.mli[90,2995+25]..[90,2995+42])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (lambda/switch.mli[90,2995+25]..[90,2995+28])
+                    Ptyp_constr "act" (lambda/switch.mli[90,2995+25]..[90,2995+28])
+                    []
+                  core_type (lambda/switch.mli[90,2995+32]..[90,2995+42])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (lambda/switch.mli[90,2995+32]..[90,2995+35])
+                      Ptyp_constr "act" (lambda/switch.mli[90,2995+32]..[90,2995+35])
+                      []
+                    core_type (lambda/switch.mli[90,2995+39]..[90,2995+42])
+                      Ptyp_constr "act" (lambda/switch.mli[90,2995+39]..[90,2995+42])
+                      []
+              []
+          signature_item (lambda/switch.mli[94,3147+4]..[94,3147+65])
+            Psig_value
+            value_description "make_switch" (lambda/switch.mli[94,3147+8]..[94,3147+19]) (lambda/switch.mli[94,3147+4]..[94,3147+65])
+              core_type (lambda/switch.mli[94,3147+22]..[94,3147+65])
+                Ptyp_arrow
+                Nolabel
+                core_type (lambda/switch.mli[94,3147+22]..[94,3147+25])
+                  Ptyp_constr "loc" (lambda/switch.mli[94,3147+22]..[94,3147+25])
+                  []
+                core_type (lambda/switch.mli[94,3147+29]..[94,3147+65])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (lambda/switch.mli[94,3147+29]..[94,3147+32])
+                    Ptyp_constr "act" (lambda/switch.mli[94,3147+29]..[94,3147+32])
+                    []
+                  core_type (lambda/switch.mli[94,3147+36]..[94,3147+65])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (lambda/switch.mli[94,3147+36]..[94,3147+45])
+                      Ptyp_constr "array" (lambda/switch.mli[94,3147+40]..[94,3147+45])
+                      [
+                        core_type (lambda/switch.mli[94,3147+36]..[94,3147+39])
+                          Ptyp_constr "int" (lambda/switch.mli[94,3147+36]..[94,3147+39])
+                          []
+                      ]
+                    core_type (lambda/switch.mli[94,3147+49]..[94,3147+65])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (lambda/switch.mli[94,3147+49]..[94,3147+58])
+                        Ptyp_constr "array" (lambda/switch.mli[94,3147+53]..[94,3147+58])
+                        [
+                          core_type (lambda/switch.mli[94,3147+49]..[94,3147+52])
+                            Ptyp_constr "act" (lambda/switch.mli[94,3147+49]..[94,3147+52])
+                            []
+                        ]
+                      core_type (lambda/switch.mli[94,3147+62]..[94,3147+65])
+                        Ptyp_constr "act" (lambda/switch.mli[94,3147+62]..[94,3147+65])
+                        []
+              []
+          signature_item (lambda/switch.mli[96,3264+3]..[96,3264+45])
+            Psig_value
+            value_description "make_catch" (lambda/switch.mli[96,3264+7]..[96,3264+17]) (lambda/switch.mli[96,3264+3]..[96,3264+45])
+              core_type (lambda/switch.mli[96,3264+20]..[96,3264+45])
+                Ptyp_arrow
+                Nolabel
+                core_type (lambda/switch.mli[96,3264+20]..[96,3264+23])
+                  Ptyp_constr "act" (lambda/switch.mli[96,3264+20]..[96,3264+23])
+                  []
+                core_type (lambda/switch.mli[96,3264+27]..[96,3264+45])
+                  Ptyp_tuple
+                  [
+                    core_type (lambda/switch.mli[96,3264+27]..[96,3264+30])
+                      Ptyp_constr "int" (lambda/switch.mli[96,3264+27]..[96,3264+30])
+                      []
+                    core_type (lambda/switch.mli[96,3264+34]..[96,3264+44])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (lambda/switch.mli[96,3264+34]..[96,3264+37])
+                        Ptyp_constr "act" (lambda/switch.mli[96,3264+34]..[96,3264+37])
+                        []
+                      core_type (lambda/switch.mli[96,3264+41]..[96,3264+44])
+                        Ptyp_constr "act" (lambda/switch.mli[96,3264+41]..[96,3264+44])
+                        []
+                  ]
+              []
+          signature_item (lambda/switch.mli[97,3310+3]..[97,3310+29])
+            Psig_value
+            value_description "make_exit" (lambda/switch.mli[97,3310+7]..[97,3310+16]) (lambda/switch.mli[97,3310+3]..[97,3310+29])
+              core_type (lambda/switch.mli[97,3310+19]..[97,3310+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (lambda/switch.mli[97,3310+19]..[97,3310+22])
+                  Ptyp_constr "int" (lambda/switch.mli[97,3310+19]..[97,3310+22])
+                  []
+                core_type (lambda/switch.mli[97,3310+26]..[97,3310+29])
+                  Ptyp_constr "act" (lambda/switch.mli[97,3310+26]..[97,3310+29])
+                  []
+              []
+        ]
+  signature_item (lambda/switch.mli[112,3682+0]..[130,4135+7])
+    Psig_module "Make" (lambda/switch.mli[112,3682+7]..[112,3682+11])
+    module_type (lambda/switch.mli[113,3696+10]..[130,4135+7])
+      Pmty_functor "Arg" (lambda/switch.mli[113,3696+11]..[113,3696+14])
+      module_type (lambda/switch.mli[113,3696+17]..[113,3696+18])
+        Pmty_ident "S" (lambda/switch.mli[113,3696+17]..[113,3696+18])
+      module_type (lambda/switch.mli[114,3719+4]..[130,4135+7])
+        Pmty_signature
+        [
+          signature_item (lambda/switch.mli[116,3774+6]..[122,3932+18])
+            Psig_value
+            value_description "zyva" (lambda/switch.mli[116,3774+10]..[116,3774+14]) (lambda/switch.mli[116,3774+6]..[122,3932+18])
+              core_type (lambda/switch.mli[117,3791+10]..[122,3932+18])
+                Ptyp_arrow
+                Nolabel
+                core_type (lambda/switch.mli[117,3791+10]..[117,3791+17])
+                  Ptyp_constr "Arg.loc" (lambda/switch.mli[117,3791+10]..[117,3791+17])
+                  []
+                core_type (lambda/switch.mli[118,3812+10]..[122,3932+18])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (lambda/switch.mli[118,3812+11]..[118,3812+20])
+                    Ptyp_tuple
+                    [
+                      core_type (lambda/switch.mli[118,3812+11]..[118,3812+14])
+                        Ptyp_constr "int" (lambda/switch.mli[118,3812+11]..[118,3812+14])
+                        []
+                      core_type (lambda/switch.mli[118,3812+17]..[118,3812+20])
+                        Ptyp_constr "int" (lambda/switch.mli[118,3812+17]..[118,3812+20])
+                        []
+                    ]
+                  core_type (lambda/switch.mli[119,3837+11]..[122,3932+18])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (lambda/switch.mli[119,3837+11]..[119,3837+18])
+                      Ptyp_constr "Arg.act" (lambda/switch.mli[119,3837+11]..[119,3837+18])
+                      []
+                    core_type (lambda/switch.mli[120,3859+11]..[122,3932+18])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (lambda/switch.mli[120,3859+11]..[120,3859+34])
+                        Ptyp_constr "array" (lambda/switch.mli[120,3859+29]..[120,3859+34])
+                        [
+                          core_type (lambda/switch.mli[120,3859+12]..[120,3859+27])
+                            Ptyp_tuple
+                            [
+                              core_type (lambda/switch.mli[120,3859+12]..[120,3859+15])
+                                Ptyp_constr "int" (lambda/switch.mli[120,3859+12]..[120,3859+15])
+                                []
+                              core_type (lambda/switch.mli[120,3859+18]..[120,3859+21])
+                                Ptyp_constr "int" (lambda/switch.mli[120,3859+18]..[120,3859+21])
+                                []
+                              core_type (lambda/switch.mli[120,3859+24]..[120,3859+27])
+                                Ptyp_constr "int" (lambda/switch.mli[120,3859+24]..[120,3859+27])
+                                []
+                            ]
+                        ]
+                      core_type (lambda/switch.mli[121,3897+11]..[122,3932+18])
+                        Ptyp_arrow
+                        Nolabel
+                        core_type (lambda/switch.mli[121,3897+11]..[121,3897+31])
+                          Ptyp_constr "t_store" (lambda/switch.mli[121,3897+24]..[121,3897+31])
+                          [
+                            core_type (lambda/switch.mli[121,3897+12]..[121,3897+19])
+                              Ptyp_constr "Arg.act" (lambda/switch.mli[121,3897+12]..[121,3897+19])
+                              []
+                            core_type (lambda/switch.mli[121,3897+21]..[121,3897+22])
+                              Ptyp_any
+                          ]
+                        core_type (lambda/switch.mli[122,3932+11]..[122,3932+18])
+                          Ptyp_constr "Arg.act" (lambda/switch.mli[122,3932+11]..[122,3932+18])
+                          []
+              []
+          signature_item (lambda/switch.mli[125,3996+5]..[129,4116+18])
+            Psig_value
+            value_description "test_sequence" (lambda/switch.mli[125,3996+9]..[125,3996+22]) (lambda/switch.mli[125,3996+5]..[129,4116+18])
+              core_type (lambda/switch.mli[126,4021+11]..[129,4116+18])
+                Ptyp_arrow
+                Nolabel
+                core_type (lambda/switch.mli[126,4021+11]..[126,4021+18])
+                  Ptyp_constr "Arg.act" (lambda/switch.mli[126,4021+11]..[126,4021+18])
+                  []
+                core_type (lambda/switch.mli[127,4043+11]..[129,4116+18])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (lambda/switch.mli[127,4043+11]..[127,4043+34])
+                    Ptyp_constr "array" (lambda/switch.mli[127,4043+29]..[127,4043+34])
+                    [
+                      core_type (lambda/switch.mli[127,4043+12]..[127,4043+27])
+                        Ptyp_tuple
+                        [
+                          core_type (lambda/switch.mli[127,4043+12]..[127,4043+15])
+                            Ptyp_constr "int" (lambda/switch.mli[127,4043+12]..[127,4043+15])
+                            []
+                          core_type (lambda/switch.mli[127,4043+18]..[127,4043+21])
+                            Ptyp_constr "int" (lambda/switch.mli[127,4043+18]..[127,4043+21])
+                            []
+                          core_type (lambda/switch.mli[127,4043+24]..[127,4043+27])
+                            Ptyp_constr "int" (lambda/switch.mli[127,4043+24]..[127,4043+27])
+                            []
+                        ]
+                    ]
+                  core_type (lambda/switch.mli[128,4081+11]..[129,4116+18])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (lambda/switch.mli[128,4081+11]..[128,4081+31])
+                      Ptyp_constr "t_store" (lambda/switch.mli[128,4081+24]..[128,4081+31])
+                      [
+                        core_type (lambda/switch.mli[128,4081+12]..[128,4081+19])
+                          Ptyp_constr "Arg.act" (lambda/switch.mli[128,4081+12]..[128,4081+19])
+                          []
+                        core_type (lambda/switch.mli[128,4081+21]..[128,4081+22])
+                          Ptyp_any
+                      ]
+                    core_type (lambda/switch.mli[129,4116+11]..[129,4116+18])
+                      Ptyp_constr "Arg.act" (lambda/switch.mli[129,4116+11]..[129,4116+18])
+                      []
+              []
+        ]
+]
+

@@ -1,0 +1,50 @@
+[
+  structure_item (testsuite/tests/typing-objects/errors.ml[5,24+0]..[5,24+75])
+    Pstr_class_type
+    [
+      class_type_declaration (testsuite/tests/typing-objects/errors.ml[5,24+0]..[5,24+75])
+        pci_virt = Virtual
+        pci_params =
+          [
+            core_type (testsuite/tests/typing-objects/errors.ml[5,24+20]..[5,24+22])
+              Ptyp_var a
+          ]
+        pci_name = "c" (testsuite/tests/typing-objects/errors.ml[5,24+24]..[5,24+25])
+        pci_expr =
+          class_type (testsuite/tests/typing-objects/errors.ml[5,24+28]..[5,24+75])
+            Pcty_signature
+            class_signature
+              core_type (testsuite/tests/typing-objects/errors.ml[5,24+34]..[5,24+34])
+                Ptyp_any
+              [
+                class_type_field (testsuite/tests/typing-objects/errors.ml[5,24+35]..[5,24+71])
+                  Pctf_constraint
+                    core_type (testsuite/tests/typing-objects/errors.ml[5,24+46]..[5,24+48])
+                      Ptyp_var a
+                    core_type (testsuite/tests/typing-objects/errors.ml[5,24+51]..[5,24+71])
+                      Ptyp_variant closed=Closed
+                      [
+                        Rtag "A" false
+                          [
+                            core_type (testsuite/tests/typing-objects/errors.ml[5,24+59]..[5,24+62])
+                              Ptyp_constr "int" (testsuite/tests/typing-objects/errors.ml[5,24+59]..[5,24+62])
+                              []
+                            core_type (testsuite/tests/typing-objects/errors.ml[5,24+65]..[5,24+70])
+                              Ptyp_constr "float" (testsuite/tests/typing-objects/errors.ml[5,24+65]..[5,24+70])
+                              []
+                          ]
+                      ]
+                      Some
+                        []
+              ]
+    ]
+  structure_item (testsuite/tests/typing-objects/errors.ml[6,100+0]..[15,536+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-objects/errors.ml[6,100+10]..[15,536+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-objects/errors.ml[6,100+10]..[15,536+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 0-75:\n1 | class type virtual ['a] c = object constraint 'a = [<`A of int & float] end\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError: The type of this class,\n       class virtual ['a] c :\n         object constraint 'a = _[< `A of int & float ] end,\n       contains non-collapsible conjunctive types in constraints.\n       Type int is not compatible with type float\n",(testsuite/tests/typing-objects/errors.ml[6,100+12]..[15,536+0]),Some "")
+    ]
+]
+

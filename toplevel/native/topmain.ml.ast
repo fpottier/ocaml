@@ -1,0 +1,1194 @@
+[
+  structure_item (toplevel/native/topmain.ml[16,1079+0]..[16,1079+28])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/native/topmain.ml[16,1079+4]..[16,1079+19])
+          Ppat_var "preload_objects" (toplevel/native/topmain.ml[16,1079+4]..[16,1079+19])
+        expression (toplevel/native/topmain.ml[16,1079+22]..[16,1079+28])
+          Pexp_apply
+          expression (toplevel/native/topmain.ml[16,1079+22]..[16,1079+25])
+            Pexp_ident "ref" (toplevel/native/topmain.ml[16,1079+22]..[16,1079+25])
+          [
+            <arg>
+            Nolabel
+              expression (toplevel/native/topmain.ml[16,1079+26]..[16,1079+28])
+                Pexp_construct "[]" (toplevel/native/topmain.ml[16,1079+26]..[16,1079+28])
+                None
+          ]
+    ]
+  structure_item (toplevel/native/topmain.ml[19,1159+0]..[19,1159+33])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/native/topmain.ml[19,1159+4]..[19,1159+25])
+          Ppat_var "first_nonexpanded_pos" (toplevel/native/topmain.ml[19,1159+4]..[19,1159+25])
+        expression (toplevel/native/topmain.ml[19,1159+28]..[19,1159+33])
+          Pexp_apply
+          expression (toplevel/native/topmain.ml[19,1159+28]..[19,1159+31])
+            Pexp_ident "ref" (toplevel/native/topmain.ml[19,1159+28]..[19,1159+31])
+          [
+            <arg>
+            Nolabel
+              expression (toplevel/native/topmain.ml[19,1159+32]..[19,1159+33])
+                Pexp_constant PConst_int (0,None)
+          ]
+    ]
+  structure_item (toplevel/native/topmain.ml[21,1194+0]..[21,1194+32])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/native/topmain.ml[21,1194+4]..[21,1194+11])
+          Ppat_var "current" (toplevel/native/topmain.ml[21,1194+4]..[21,1194+11])
+        expression (toplevel/native/topmain.ml[21,1194+14]..[21,1194+32])
+          Pexp_apply
+          expression (toplevel/native/topmain.ml[21,1194+14]..[21,1194+17])
+            Pexp_ident "ref" (toplevel/native/topmain.ml[21,1194+14]..[21,1194+17])
+          [
+            <arg>
+            Nolabel
+              expression (toplevel/native/topmain.ml[21,1194+18]..[21,1194+32])
+                Pexp_apply
+                expression (toplevel/native/topmain.ml[21,1194+19]..[21,1194+20])
+                  Pexp_ident "!" (toplevel/native/topmain.ml[21,1194+19]..[21,1194+20])
+                [
+                  <arg>
+                  Nolabel
+                    expression (toplevel/native/topmain.ml[21,1194+20]..[21,1194+31])
+                      Pexp_ident "Arg.current" (toplevel/native/topmain.ml[21,1194+20]..[21,1194+31])
+                ]
+          ]
+    ]
+  structure_item (toplevel/native/topmain.ml[23,1228+0]..[23,1228+23])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/native/topmain.ml[23,1228+4]..[23,1228+8])
+          Ppat_var "argv" (toplevel/native/topmain.ml[23,1228+4]..[23,1228+8])
+        expression (toplevel/native/topmain.ml[23,1228+11]..[23,1228+23])
+          Pexp_apply
+          expression (toplevel/native/topmain.ml[23,1228+11]..[23,1228+14])
+            Pexp_ident "ref" (toplevel/native/topmain.ml[23,1228+11]..[23,1228+14])
+          [
+            <arg>
+            Nolabel
+              expression (toplevel/native/topmain.ml[23,1228+15]..[23,1228+23])
+                Pexp_ident "Sys.argv" (toplevel/native/topmain.ml[23,1228+15]..[23,1228+23])
+          ]
+    ]
+  structure_item (toplevel/native/topmain.ml[26,1309+0]..[26,1309+50])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/native/topmain.ml[26,1309+4]..[26,1309+15])
+          Ppat_var "is_expanded" (toplevel/native/topmain.ml[26,1309+4]..[26,1309+15])
+        expression (toplevel/native/topmain.ml[26,1309+16]..[26,1309+50]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (toplevel/native/topmain.ml[26,1309+16]..[26,1309+19])
+            Ppat_var "pos" (toplevel/native/topmain.ml[26,1309+16]..[26,1309+19])
+          expression (toplevel/native/topmain.ml[26,1309+22]..[26,1309+50])
+            Pexp_apply
+            expression (toplevel/native/topmain.ml[26,1309+26]..[26,1309+27])
+              Pexp_ident "<" (toplevel/native/topmain.ml[26,1309+26]..[26,1309+27])
+            [
+              <arg>
+              Nolabel
+                expression (toplevel/native/topmain.ml[26,1309+22]..[26,1309+25])
+                  Pexp_ident "pos" (toplevel/native/topmain.ml[26,1309+22]..[26,1309+25])
+              <arg>
+              Nolabel
+                expression (toplevel/native/topmain.ml[26,1309+28]..[26,1309+50])
+                  Pexp_apply
+                  expression (toplevel/native/topmain.ml[26,1309+28]..[26,1309+29])
+                    Pexp_ident "!" (toplevel/native/topmain.ml[26,1309+28]..[26,1309+29])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (toplevel/native/topmain.ml[26,1309+29]..[26,1309+50])
+                        Pexp_ident "first_nonexpanded_pos" (toplevel/native/topmain.ml[26,1309+29]..[26,1309+50])
+                  ]
+            ]
+    ]
+  structure_item (toplevel/native/topmain.ml[28,1361+0]..[34,1552+42])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/native/topmain.ml[28,1361+4]..[28,1361+19])
+          Ppat_var "expand_position" (toplevel/native/topmain.ml[28,1361+4]..[28,1361+19])
+        expression (toplevel/native/topmain.ml[28,1361+20]..[34,1552+42]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (toplevel/native/topmain.ml[28,1361+20]..[28,1361+23])
+            Ppat_var "pos" (toplevel/native/topmain.ml[28,1361+20]..[28,1361+23])
+          expression (toplevel/native/topmain.ml[28,1361+24]..[34,1552+42]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (toplevel/native/topmain.ml[28,1361+24]..[28,1361+27])
+              Ppat_var "len" (toplevel/native/topmain.ml[28,1361+24]..[28,1361+27])
+            expression (toplevel/native/topmain.ml[29,1391+2]..[34,1552+42])
+              Pexp_ifthenelse
+              expression (toplevel/native/topmain.ml[29,1391+5]..[29,1391+33])
+                Pexp_apply
+                expression (toplevel/native/topmain.ml[29,1391+9]..[29,1391+10])
+                  Pexp_ident "<" (toplevel/native/topmain.ml[29,1391+9]..[29,1391+10])
+                [
+                  <arg>
+                  Nolabel
+                    expression (toplevel/native/topmain.ml[29,1391+5]..[29,1391+8])
+                      Pexp_ident "pos" (toplevel/native/topmain.ml[29,1391+5]..[29,1391+8])
+                  <arg>
+                  Nolabel
+                    expression (toplevel/native/topmain.ml[29,1391+11]..[29,1391+33])
+                      Pexp_apply
+                      expression (toplevel/native/topmain.ml[29,1391+11]..[29,1391+12])
+                        Pexp_ident "!" (toplevel/native/topmain.ml[29,1391+11]..[29,1391+12])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/native/topmain.ml[29,1391+12]..[29,1391+33])
+                            Pexp_ident "first_nonexpanded_pos" (toplevel/native/topmain.ml[29,1391+12]..[29,1391+33])
+                      ]
+                ]
+              expression (toplevel/native/topmain.ml[31,1459+4]..[31,1459+57])
+                Pexp_apply
+                expression (toplevel/native/topmain.ml[31,1459+26]..[31,1459+28])
+                  Pexp_ident ":=" (toplevel/native/topmain.ml[31,1459+26]..[31,1459+28])
+                [
+                  <arg>
+                  Nolabel
+                    expression (toplevel/native/topmain.ml[31,1459+4]..[31,1459+25])
+                      Pexp_ident "first_nonexpanded_pos" (toplevel/native/topmain.ml[31,1459+4]..[31,1459+25])
+                  <arg>
+                  Nolabel
+                    expression (toplevel/native/topmain.ml[31,1459+29]..[31,1459+57])
+                      Pexp_apply
+                      expression (toplevel/native/topmain.ml[31,1459+52]..[31,1459+53])
+                        Pexp_ident "+" (toplevel/native/topmain.ml[31,1459+52]..[31,1459+53])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/native/topmain.ml[31,1459+29]..[31,1459+51])
+                            Pexp_apply
+                            expression (toplevel/native/topmain.ml[31,1459+29]..[31,1459+30])
+                              Pexp_ident "!" (toplevel/native/topmain.ml[31,1459+29]..[31,1459+30])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (toplevel/native/topmain.ml[31,1459+30]..[31,1459+51])
+                                  Pexp_ident "first_nonexpanded_pos" (toplevel/native/topmain.ml[31,1459+30]..[31,1459+51])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (toplevel/native/topmain.ml[31,1459+54]..[31,1459+57])
+                            Pexp_ident "len" (toplevel/native/topmain.ml[31,1459+54]..[31,1459+57])
+                      ]
+                ]
+              Some
+                expression (toplevel/native/topmain.ml[34,1552+4]..[34,1552+42])
+                  Pexp_apply
+                  expression (toplevel/native/topmain.ml[34,1552+26]..[34,1552+28])
+                    Pexp_ident ":=" (toplevel/native/topmain.ml[34,1552+26]..[34,1552+28])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (toplevel/native/topmain.ml[34,1552+4]..[34,1552+25])
+                        Pexp_ident "first_nonexpanded_pos" (toplevel/native/topmain.ml[34,1552+4]..[34,1552+25])
+                    <arg>
+                    Nolabel
+                      expression (toplevel/native/topmain.ml[34,1552+29]..[34,1552+42])
+                        Pexp_apply
+                        expression (toplevel/native/topmain.ml[34,1552+39]..[34,1552+40])
+                          Pexp_ident "+" (toplevel/native/topmain.ml[34,1552+39]..[34,1552+40])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (toplevel/native/topmain.ml[34,1552+29]..[34,1552+38])
+                              Pexp_apply
+                              expression (toplevel/native/topmain.ml[34,1552+33]..[34,1552+34])
+                                Pexp_ident "+" (toplevel/native/topmain.ml[34,1552+33]..[34,1552+34])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/native/topmain.ml[34,1552+29]..[34,1552+32])
+                                    Pexp_ident "pos" (toplevel/native/topmain.ml[34,1552+29]..[34,1552+32])
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/native/topmain.ml[34,1552+35]..[34,1552+38])
+                                    Pexp_ident "len" (toplevel/native/topmain.ml[34,1552+35]..[34,1552+38])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (toplevel/native/topmain.ml[34,1552+41]..[34,1552+42])
+                              Pexp_constant PConst_int (2,None)
+                        ]
+                  ]
+    ]
+  structure_item (toplevel/native/topmain.ml[37,1597+0]..[49,1945+11])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/native/topmain.ml[37,1597+4]..[37,1597+11])
+          Ppat_var "prepare" (toplevel/native/topmain.ml[37,1597+4]..[37,1597+11])
+        expression (toplevel/native/topmain.ml[37,1597+12]..[49,1945+11]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (toplevel/native/topmain.ml[37,1597+12]..[37,1597+15])
+            Ppat_var "ppf" (toplevel/native/topmain.ml[37,1597+12]..[37,1597+15])
+          expression (toplevel/native/topmain.ml[38,1615+2]..[49,1945+11])
+            Pexp_sequence
+            expression (toplevel/native/topmain.ml[38,1615+2]..[38,1615+24])
+              Pexp_apply
+              expression (toplevel/native/topmain.ml[38,1615+2]..[38,1615+21])
+                Pexp_ident "Topcommon.set_paths" (toplevel/native/topmain.ml[38,1615+2]..[38,1615+21])
+              [
+                <arg>
+                Nolabel
+                  expression (toplevel/native/topmain.ml[38,1615+22]..[38,1615+24])
+                    Pexp_construct "()" (toplevel/native/topmain.ml[38,1615+22]..[38,1615+24])
+                    None
+              ]
+            expression (toplevel/native/topmain.ml[39,1641+2]..[49,1945+11])
+              Pexp_try
+              expression (toplevel/native/topmain.ml[40,1647+4]..[44,1788+7])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (toplevel/native/topmain.ml[40,1647+8]..[40,1647+11])
+                      Ppat_var "res" (toplevel/native/topmain.ml[40,1647+8]..[40,1647+11])
+                    expression (toplevel/native/topmain.ml[41,1661+6]..[41,1661+76])
+                      Pexp_apply
+                      expression (toplevel/native/topmain.ml[41,1661+6]..[41,1661+18])
+                        Pexp_ident "List.for_all" (toplevel/native/topmain.ml[41,1661+6]..[41,1661+18])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/native/topmain.ml[41,1661+19]..[41,1661+48])
+                            Pexp_apply
+                            expression (toplevel/native/topmain.ml[41,1661+20]..[41,1661+37])
+                              Pexp_ident "Topeval.load_file" (toplevel/native/topmain.ml[41,1661+20]..[41,1661+37])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (toplevel/native/topmain.ml[41,1661+38]..[41,1661+43])
+                                  Pexp_construct "false" (toplevel/native/topmain.ml[41,1661+38]..[41,1661+43])
+                                  None
+                              <arg>
+                              Nolabel
+                                expression (toplevel/native/topmain.ml[41,1661+44]..[41,1661+47])
+                                  Pexp_ident "ppf" (toplevel/native/topmain.ml[41,1661+44]..[41,1661+47])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (toplevel/native/topmain.ml[41,1661+49]..[41,1661+76])
+                            Pexp_apply
+                            expression (toplevel/native/topmain.ml[41,1661+50]..[41,1661+58])
+                              Pexp_ident "List.rev" (toplevel/native/topmain.ml[41,1661+50]..[41,1661+58])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (toplevel/native/topmain.ml[41,1661+59]..[41,1661+75])
+                                  Pexp_apply
+                                  expression (toplevel/native/topmain.ml[41,1661+59]..[41,1661+60])
+                                    Pexp_ident "!" (toplevel/native/topmain.ml[41,1661+59]..[41,1661+60])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/native/topmain.ml[41,1661+60]..[41,1661+75])
+                                        Pexp_ident "preload_objects" (toplevel/native/topmain.ml[41,1661+60]..[41,1661+75])
+                                  ]
+                            ]
+                      ]
+                ]
+                expression (toplevel/native/topmain.ml[43,1745+4]..[44,1788+7])
+                  Pexp_sequence
+                  expression (toplevel/native/topmain.ml[43,1745+4]..[43,1745+41])
+                    Pexp_apply
+                    expression (toplevel/native/topmain.ml[43,1745+4]..[43,1745+23])
+                      Pexp_ident "Topcommon.run_hooks" (toplevel/native/topmain.ml[43,1745+4]..[43,1745+23])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/native/topmain.ml[43,1745+24]..[43,1745+41])
+                          Pexp_construct "Topcommon.Startup" (toplevel/native/topmain.ml[43,1745+24]..[43,1745+41])
+                          None
+                    ]
+                  expression (toplevel/native/topmain.ml[44,1788+4]..[44,1788+7])
+                    Pexp_ident "res" (toplevel/native/topmain.ml[44,1788+4]..[44,1788+7])
+              [
+                <case>
+                  pattern (toplevel/native/topmain.ml[45,1796+7]..[45,1796+8])
+                    Ppat_var "x" (toplevel/native/topmain.ml[45,1796+7]..[45,1796+8])
+                  expression (toplevel/native/topmain.ml[46,1808+4]..[49,1945+11])
+                    Pexp_try
+                    expression (toplevel/native/topmain.ml[46,1808+8]..[46,1808+46])
+                      Pexp_sequence
+                      expression (toplevel/native/topmain.ml[46,1808+8]..[46,1808+39])
+                        Pexp_apply
+                        expression (toplevel/native/topmain.ml[46,1808+8]..[46,1808+33])
+                          Pexp_ident "Location.report_exception" (toplevel/native/topmain.ml[46,1808+8]..[46,1808+33])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (toplevel/native/topmain.ml[46,1808+34]..[46,1808+37])
+                              Pexp_ident "ppf" (toplevel/native/topmain.ml[46,1808+34]..[46,1808+37])
+                          <arg>
+                          Nolabel
+                            expression (toplevel/native/topmain.ml[46,1808+38]..[46,1808+39])
+                              Pexp_ident "x" (toplevel/native/topmain.ml[46,1808+38]..[46,1808+39])
+                        ]
+                      expression (toplevel/native/topmain.ml[46,1808+41]..[46,1808+46])
+                        Pexp_construct "false" (toplevel/native/topmain.ml[46,1808+41]..[46,1808+46])
+                        None
+                    [
+                      <case>
+                        pattern (toplevel/native/topmain.ml[47,1855+9]..[47,1855+10])
+                          Ppat_var "x" (toplevel/native/topmain.ml[47,1855+9]..[47,1855+10])
+                        expression (toplevel/native/topmain.ml[48,1869+6]..[49,1945+11])
+                          Pexp_sequence
+                          expression (toplevel/native/topmain.ml[48,1869+6]..[48,1869+74])
+                            Pexp_apply
+                            expression (toplevel/native/topmain.ml[48,1869+6]..[48,1869+20])
+                              Pexp_ident "Format.fprintf" (toplevel/native/topmain.ml[48,1869+6]..[48,1869+20])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (toplevel/native/topmain.ml[48,1869+21]..[48,1869+24])
+                                  Pexp_ident "ppf" (toplevel/native/topmain.ml[48,1869+21]..[48,1869+24])
+                              <arg>
+                              Nolabel
+                                expression (toplevel/native/topmain.ml[48,1869+25]..[48,1869+51])
+                                  Pexp_constant PConst_string("Uncaught exception: %s\n",(toplevel/native/topmain.ml[48,1869+26]..[48,1869+50]),None)
+                              <arg>
+                              Nolabel
+                                expression (toplevel/native/topmain.ml[48,1869+52]..[48,1869+74])
+                                  Pexp_apply
+                                  expression (toplevel/native/topmain.ml[48,1869+53]..[48,1869+71])
+                                    Pexp_ident "Printexc.to_string" (toplevel/native/topmain.ml[48,1869+53]..[48,1869+71])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/native/topmain.ml[48,1869+72]..[48,1869+73])
+                                        Pexp_ident "x" (toplevel/native/topmain.ml[48,1869+72]..[48,1869+73])
+                                  ]
+                            ]
+                          expression (toplevel/native/topmain.ml[49,1945+6]..[49,1945+11])
+                            Pexp_construct "false" (toplevel/native/topmain.ml[49,1945+6]..[49,1945+11])
+                            None
+                    ]
+              ]
+    ]
+  structure_item (toplevel/native/topmain.ml[51,1958+0]..[74,3004+7])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/native/topmain.ml[51,1958+4]..[51,1958+17])
+          Ppat_var "file_argument" (toplevel/native/topmain.ml[51,1958+4]..[51,1958+17])
+        expression (toplevel/native/topmain.ml[51,1958+18]..[74,3004+7]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (toplevel/native/topmain.ml[51,1958+18]..[51,1958+22])
+            Ppat_var "name" (toplevel/native/topmain.ml[51,1958+18]..[51,1958+22])
+          expression (toplevel/native/topmain.ml[52,1983+2]..[74,3004+7])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (toplevel/native/topmain.ml[52,1983+6]..[52,1983+9])
+                  Ppat_var "ppf" (toplevel/native/topmain.ml[52,1983+6]..[52,1983+9])
+                expression (toplevel/native/topmain.ml[52,1983+12]..[52,1983+32])
+                  Pexp_ident "Format.err_formatter" (toplevel/native/topmain.ml[52,1983+12]..[52,1983+32])
+            ]
+            expression (toplevel/native/topmain.ml[53,2019+2]..[74,3004+7])
+              Pexp_ifthenelse
+              expression (toplevel/native/topmain.ml[53,2019+5]..[55,2100+41])
+                Pexp_apply
+                expression (toplevel/native/topmain.ml[54,2059+4]..[54,2059+6])
+                  Pexp_ident "||" (toplevel/native/topmain.ml[54,2059+4]..[54,2059+6])
+                [
+                  <arg>
+                  Nolabel
+                    expression (toplevel/native/topmain.ml[53,2019+5]..[53,2019+39])
+                      Pexp_apply
+                      expression (toplevel/native/topmain.ml[53,2019+5]..[53,2019+26])
+                        Pexp_ident "Filename.check_suffix" (toplevel/native/topmain.ml[53,2019+5]..[53,2019+26])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/native/topmain.ml[53,2019+27]..[53,2019+31])
+                            Pexp_ident "name" (toplevel/native/topmain.ml[53,2019+27]..[53,2019+31])
+                        <arg>
+                        Nolabel
+                          expression (toplevel/native/topmain.ml[53,2019+32]..[53,2019+39])
+                            Pexp_constant PConst_string(".cmxs",(toplevel/native/topmain.ml[53,2019+33]..[53,2019+38]),None)
+                      ]
+                  <arg>
+                  Nolabel
+                    expression (toplevel/native/topmain.ml[54,2059+7]..[55,2100+41])
+                      Pexp_apply
+                      expression (toplevel/native/topmain.ml[55,2100+4]..[55,2100+6])
+                        Pexp_ident "||" (toplevel/native/topmain.ml[55,2100+4]..[55,2100+6])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/native/topmain.ml[54,2059+7]..[54,2059+40])
+                            Pexp_apply
+                            expression (toplevel/native/topmain.ml[54,2059+7]..[54,2059+28])
+                              Pexp_ident "Filename.check_suffix" (toplevel/native/topmain.ml[54,2059+7]..[54,2059+28])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (toplevel/native/topmain.ml[54,2059+29]..[54,2059+33])
+                                  Pexp_ident "name" (toplevel/native/topmain.ml[54,2059+29]..[54,2059+33])
+                              <arg>
+                              Nolabel
+                                expression (toplevel/native/topmain.ml[54,2059+34]..[54,2059+40])
+                                  Pexp_constant PConst_string(".cmx",(toplevel/native/topmain.ml[54,2059+35]..[54,2059+39]),None)
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (toplevel/native/topmain.ml[55,2100+7]..[55,2100+41])
+                            Pexp_apply
+                            expression (toplevel/native/topmain.ml[55,2100+7]..[55,2100+28])
+                              Pexp_ident "Filename.check_suffix" (toplevel/native/topmain.ml[55,2100+7]..[55,2100+28])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (toplevel/native/topmain.ml[55,2100+29]..[55,2100+33])
+                                  Pexp_ident "name" (toplevel/native/topmain.ml[55,2100+29]..[55,2100+33])
+                              <arg>
+                              Nolabel
+                                expression (toplevel/native/topmain.ml[55,2100+34]..[55,2100+41])
+                                  Pexp_constant PConst_string(".cmxa",(toplevel/native/topmain.ml[55,2100+35]..[55,2100+40]),None)
+                            ]
+                      ]
+                ]
+              expression (toplevel/native/topmain.ml[56,2142+7]..[56,2142+50])
+                Pexp_apply
+                expression (toplevel/native/topmain.ml[56,2142+23]..[56,2142+25])
+                  Pexp_ident ":=" (toplevel/native/topmain.ml[56,2142+23]..[56,2142+25])
+                [
+                  <arg>
+                  Nolabel
+                    expression (toplevel/native/topmain.ml[56,2142+7]..[56,2142+22])
+                      Pexp_ident "preload_objects" (toplevel/native/topmain.ml[56,2142+7]..[56,2142+22])
+                  <arg>
+                  Nolabel
+                    expression (toplevel/native/topmain.ml[56,2142+26]..[56,2142+50])
+                      Pexp_construct "::" (toplevel/native/topmain.ml[56,2142+31]..[56,2142+33])
+                      Some
+                        expression (toplevel/native/topmain.ml[56,2142+26]..[56,2142+50]) ghost
+                          Pexp_tuple
+                          [
+                            expression (toplevel/native/topmain.ml[56,2142+26]..[56,2142+30])
+                              Pexp_ident "name" (toplevel/native/topmain.ml[56,2142+26]..[56,2142+30])
+                            expression (toplevel/native/topmain.ml[56,2142+34]..[56,2142+50])
+                              Pexp_apply
+                              expression (toplevel/native/topmain.ml[56,2142+34]..[56,2142+35])
+                                Pexp_ident "!" (toplevel/native/topmain.ml[56,2142+34]..[56,2142+35])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/native/topmain.ml[56,2142+35]..[56,2142+50])
+                                    Pexp_ident "preload_objects" (toplevel/native/topmain.ml[56,2142+35]..[56,2142+50])
+                              ]
+                          ]
+                ]
+              Some
+                expression (toplevel/native/topmain.ml[57,2193+7]..[74,3004+7])
+                  Pexp_ifthenelse
+                  expression (toplevel/native/topmain.ml[57,2193+10]..[57,2193+30])
+                    Pexp_apply
+                    expression (toplevel/native/topmain.ml[57,2193+10]..[57,2193+21])
+                      Pexp_ident "is_expanded" (toplevel/native/topmain.ml[57,2193+10]..[57,2193+21])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/native/topmain.ml[57,2193+22]..[57,2193+30])
+                          Pexp_apply
+                          expression (toplevel/native/topmain.ml[57,2193+22]..[57,2193+23])
+                            Pexp_ident "!" (toplevel/native/topmain.ml[57,2193+22]..[57,2193+23])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (toplevel/native/topmain.ml[57,2193+23]..[57,2193+30])
+                                Pexp_ident "current" (toplevel/native/topmain.ml[57,2193+23]..[57,2193+30])
+                          ]
+                    ]
+                  expression (toplevel/native/topmain.ml[57,2193+36]..[66,2672+5])
+                    Pexp_sequence
+                    expression (toplevel/native/topmain.ml[62,2426+4]..[64,2583+48])
+                      Pexp_apply
+                      expression (toplevel/native/topmain.ml[62,2426+4]..[62,2426+18])
+                        Pexp_ident "Printf.eprintf" (toplevel/native/topmain.ml[62,2426+4]..[62,2426+18])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/native/topmain.ml[62,2426+19]..[64,2583+43])
+                            Pexp_constant PConst_string("For implementation reasons, the toplevel does not support having script files (here %S) inside expanded arguments passed through the -args{,0} command-line option.\n",(toplevel/native/topmain.ml[62,2426+20]..[64,2583+42]),None)
+                        <arg>
+                        Nolabel
+                          expression (toplevel/native/topmain.ml[64,2583+44]..[64,2583+48])
+                            Pexp_ident "name" (toplevel/native/topmain.ml[64,2583+44]..[64,2583+48])
+                      ]
+                    expression (toplevel/native/topmain.ml[65,2633+4]..[65,2633+38])
+                      Pexp_apply
+                      expression (toplevel/native/topmain.ml[65,2633+4]..[65,2633+9])
+                        Pexp_ident "raise" (toplevel/native/topmain.ml[65,2633+4]..[65,2633+9])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/native/topmain.ml[65,2633+10]..[65,2633+38])
+                            Pexp_construct "Compenv.Exit_with_status" (toplevel/native/topmain.ml[65,2633+11]..[65,2633+35])
+                            Some
+                              expression (toplevel/native/topmain.ml[65,2633+36]..[65,2633+37])
+                                Pexp_constant PConst_int (2,None)
+                      ]
+                  Some
+                    expression (toplevel/native/topmain.ml[66,2672+11]..[74,3004+7])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (toplevel/native/topmain.ml[67,2689+8]..[67,2689+15])
+                            Ppat_var "newargs" (toplevel/native/topmain.ml[67,2689+8]..[67,2689+15])
+                          expression (toplevel/native/topmain.ml[67,2689+18]..[68,2736+65])
+                            Pexp_apply
+                            expression (toplevel/native/topmain.ml[67,2689+18]..[67,2689+27])
+                              Pexp_ident "Array.sub" (toplevel/native/topmain.ml[67,2689+18]..[67,2689+27])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (toplevel/native/topmain.ml[67,2689+28]..[67,2689+33])
+                                  Pexp_apply
+                                  expression (toplevel/native/topmain.ml[67,2689+28]..[67,2689+29])
+                                    Pexp_ident "!" (toplevel/native/topmain.ml[67,2689+28]..[67,2689+29])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/native/topmain.ml[67,2689+29]..[67,2689+33])
+                                        Pexp_ident "argv" (toplevel/native/topmain.ml[67,2689+29]..[67,2689+33])
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (toplevel/native/topmain.ml[67,2689+34]..[67,2689+46])
+                                  Pexp_apply
+                                  expression (toplevel/native/topmain.ml[67,2689+34]..[67,2689+35])
+                                    Pexp_ident "!" (toplevel/native/topmain.ml[67,2689+34]..[67,2689+35])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/native/topmain.ml[67,2689+35]..[67,2689+46])
+                                        Pexp_ident "Arg.current" (toplevel/native/topmain.ml[67,2689+35]..[67,2689+46])
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (toplevel/native/topmain.ml[68,2736+30]..[68,2736+65])
+                                  Pexp_apply
+                                  expression (toplevel/native/topmain.ml[68,2736+50]..[68,2736+51])
+                                    Pexp_ident "-" (toplevel/native/topmain.ml[68,2736+50]..[68,2736+51])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/native/topmain.ml[68,2736+31]..[68,2736+49])
+                                        Pexp_apply
+                                        expression (toplevel/native/topmain.ml[68,2736+31]..[68,2736+43])
+                                          Pexp_ident "Array.length" (toplevel/native/topmain.ml[68,2736+31]..[68,2736+43])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (toplevel/native/topmain.ml[68,2736+44]..[68,2736+49])
+                                              Pexp_apply
+                                              expression (toplevel/native/topmain.ml[68,2736+44]..[68,2736+45])
+                                                Pexp_ident "!" (toplevel/native/topmain.ml[68,2736+44]..[68,2736+45])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (toplevel/native/topmain.ml[68,2736+45]..[68,2736+49])
+                                                    Pexp_ident "argv" (toplevel/native/topmain.ml[68,2736+45]..[68,2736+49])
+                                              ]
+                                        ]
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/native/topmain.ml[68,2736+52]..[68,2736+64])
+                                        Pexp_apply
+                                        expression (toplevel/native/topmain.ml[68,2736+52]..[68,2736+53])
+                                          Pexp_ident "!" (toplevel/native/topmain.ml[68,2736+52]..[68,2736+53])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (toplevel/native/topmain.ml[68,2736+53]..[68,2736+64])
+                                              Pexp_ident "Arg.current" (toplevel/native/topmain.ml[68,2736+53]..[68,2736+64])
+                                        ]
+                                  ]
+                            ]
+                      ]
+                      expression (toplevel/native/topmain.ml[70,2811+6]..[73,2958+45])
+                        Pexp_sequence
+                        expression (toplevel/native/topmain.ml[70,2811+6]..[70,2811+39])
+                          Pexp_apply
+                          expression (toplevel/native/topmain.ml[70,2811+6]..[70,2811+36])
+                            Pexp_ident "Compmisc.read_clflags_from_env" (toplevel/native/topmain.ml[70,2811+6]..[70,2811+36])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (toplevel/native/topmain.ml[70,2811+37]..[70,2811+39])
+                                Pexp_construct "()" (toplevel/native/topmain.ml[70,2811+37]..[70,2811+39])
+                                None
+                          ]
+                        expression (toplevel/native/topmain.ml[71,2852+6]..[73,2958+45])
+                          Pexp_ifthenelse
+                          expression (toplevel/native/topmain.ml[71,2852+9]..[71,2852+59])
+                            Pexp_apply
+                            expression (toplevel/native/topmain.ml[71,2852+21]..[71,2852+23])
+                              Pexp_ident "&&" (toplevel/native/topmain.ml[71,2852+21]..[71,2852+23])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (toplevel/native/topmain.ml[71,2852+9]..[71,2852+20])
+                                  Pexp_apply
+                                  expression (toplevel/native/topmain.ml[71,2852+9]..[71,2852+16])
+                                    Pexp_ident "prepare" (toplevel/native/topmain.ml[71,2852+9]..[71,2852+16])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/native/topmain.ml[71,2852+17]..[71,2852+20])
+                                        Pexp_ident "ppf" (toplevel/native/topmain.ml[71,2852+17]..[71,2852+20])
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (toplevel/native/topmain.ml[71,2852+24]..[71,2852+59])
+                                  Pexp_apply
+                                  expression (toplevel/native/topmain.ml[71,2852+24]..[71,2852+42])
+                                    Pexp_ident "Toploop.run_script" (toplevel/native/topmain.ml[71,2852+24]..[71,2852+42])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/native/topmain.ml[71,2852+43]..[71,2852+46])
+                                        Pexp_ident "ppf" (toplevel/native/topmain.ml[71,2852+43]..[71,2852+46])
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/native/topmain.ml[71,2852+47]..[71,2852+51])
+                                        Pexp_ident "name" (toplevel/native/topmain.ml[71,2852+47]..[71,2852+51])
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/native/topmain.ml[71,2852+52]..[71,2852+59])
+                                        Pexp_ident "newargs" (toplevel/native/topmain.ml[71,2852+52]..[71,2852+59])
+                                  ]
+                            ]
+                          expression (toplevel/native/topmain.ml[72,2912+11]..[72,2912+45])
+                            Pexp_apply
+                            expression (toplevel/native/topmain.ml[72,2912+11]..[72,2912+16])
+                              Pexp_ident "raise" (toplevel/native/topmain.ml[72,2912+11]..[72,2912+16])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (toplevel/native/topmain.ml[72,2912+17]..[72,2912+45])
+                                  Pexp_construct "Compenv.Exit_with_status" (toplevel/native/topmain.ml[72,2912+18]..[72,2912+42])
+                                  Some
+                                    expression (toplevel/native/topmain.ml[72,2912+43]..[72,2912+44])
+                                      Pexp_constant PConst_int (0,None)
+                            ]
+                          Some
+                            expression (toplevel/native/topmain.ml[73,2958+11]..[73,2958+45])
+                              Pexp_apply
+                              expression (toplevel/native/topmain.ml[73,2958+11]..[73,2958+16])
+                                Pexp_ident "raise" (toplevel/native/topmain.ml[73,2958+11]..[73,2958+16])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/native/topmain.ml[73,2958+17]..[73,2958+45])
+                                    Pexp_construct "Compenv.Exit_with_status" (toplevel/native/topmain.ml[73,2958+18]..[73,2958+42])
+                                    Some
+                                      expression (toplevel/native/topmain.ml[73,2958+43]..[73,2958+44])
+                                        Pexp_constant PConst_int (2,None)
+                              ]
+    ]
+  structure_item (toplevel/native/topmain.ml[76,3013+0]..[80,3124+5])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/native/topmain.ml[76,3013+4]..[76,3013+15])
+          Ppat_var "wrap_expand" (toplevel/native/topmain.ml[76,3013+4]..[76,3013+15])
+        expression (toplevel/native/topmain.ml[76,3013+16]..[80,3124+5]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (toplevel/native/topmain.ml[76,3013+16]..[76,3013+17])
+            Ppat_var "f" (toplevel/native/topmain.ml[76,3013+16]..[76,3013+17])
+          expression (toplevel/native/topmain.ml[76,3013+18]..[80,3124+5]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (toplevel/native/topmain.ml[76,3013+18]..[76,3013+19])
+              Ppat_var "s" (toplevel/native/topmain.ml[76,3013+18]..[76,3013+19])
+            expression (toplevel/native/topmain.ml[77,3035+2]..[80,3124+5])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (toplevel/native/topmain.ml[77,3035+6]..[77,3035+11])
+                    Ppat_var "start" (toplevel/native/topmain.ml[77,3035+6]..[77,3035+11])
+                  expression (toplevel/native/topmain.ml[77,3035+14]..[77,3035+22])
+                    Pexp_apply
+                    expression (toplevel/native/topmain.ml[77,3035+14]..[77,3035+15])
+                      Pexp_ident "!" (toplevel/native/topmain.ml[77,3035+14]..[77,3035+15])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/native/topmain.ml[77,3035+15]..[77,3035+22])
+                          Pexp_ident "current" (toplevel/native/topmain.ml[77,3035+15]..[77,3035+22])
+                    ]
+              ]
+              expression (toplevel/native/topmain.ml[78,3061+2]..[80,3124+5])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (toplevel/native/topmain.ml[78,3061+6]..[78,3061+9])
+                      Ppat_var "arr" (toplevel/native/topmain.ml[78,3061+6]..[78,3061+9])
+                    expression (toplevel/native/topmain.ml[78,3061+12]..[78,3061+15])
+                      Pexp_apply
+                      expression (toplevel/native/topmain.ml[78,3061+12]..[78,3061+13])
+                        Pexp_ident "f" (toplevel/native/topmain.ml[78,3061+12]..[78,3061+13])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/native/topmain.ml[78,3061+14]..[78,3061+15])
+                            Pexp_ident "s" (toplevel/native/topmain.ml[78,3061+14]..[78,3061+15])
+                      ]
+                ]
+                expression (toplevel/native/topmain.ml[79,3080+2]..[80,3124+5])
+                  Pexp_sequence
+                  expression (toplevel/native/topmain.ml[79,3080+2]..[79,3080+42])
+                    Pexp_apply
+                    expression (toplevel/native/topmain.ml[79,3080+2]..[79,3080+17])
+                      Pexp_ident "expand_position" (toplevel/native/topmain.ml[79,3080+2]..[79,3080+17])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/native/topmain.ml[79,3080+18]..[79,3080+23])
+                          Pexp_ident "start" (toplevel/native/topmain.ml[79,3080+18]..[79,3080+23])
+                      <arg>
+                      Nolabel
+                        expression (toplevel/native/topmain.ml[79,3080+24]..[79,3080+42])
+                          Pexp_apply
+                          expression (toplevel/native/topmain.ml[79,3080+25]..[79,3080+37])
+                            Pexp_ident "Array.length" (toplevel/native/topmain.ml[79,3080+25]..[79,3080+37])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (toplevel/native/topmain.ml[79,3080+38]..[79,3080+41])
+                                Pexp_ident "arr" (toplevel/native/topmain.ml[79,3080+38]..[79,3080+41])
+                          ]
+                    ]
+                  expression (toplevel/native/topmain.ml[80,3124+2]..[80,3124+5])
+                    Pexp_ident "arr" (toplevel/native/topmain.ml[80,3124+2]..[80,3124+5])
+    ]
+  structure_item (toplevel/native/topmain.ml[82,3131+0]..[88,3386+4])
+    Pstr_module
+    "Options" (toplevel/native/topmain.ml[82,3131+7]..[82,3131+14])
+      module_expr (toplevel/native/topmain.ml[82,3131+17]..[88,3386+4])
+        Pmod_apply
+        module_expr (toplevel/native/topmain.ml[82,3131+17]..[82,3131+46])
+          Pmod_ident "Main_args.Make_opttop_options" (toplevel/native/topmain.ml[82,3131+17]..[82,3131+46])
+        module_expr (toplevel/native/topmain.ml[82,3131+48]..[88,3386+3])
+          Pmod_structure
+          [
+            structure_item (toplevel/native/topmain.ml[83,3186+4]..[83,3186+40])
+              Pstr_include              module_expr (toplevel/native/topmain.ml[83,3186+12]..[83,3186+40])
+                Pmod_ident "Main_args.Default.Opttopmain" (toplevel/native/topmain.ml[83,3186+12]..[83,3186+40])
+            structure_item (toplevel/native/topmain.ml[84,3227+4]..[84,3227+36])
+              Pstr_value Nonrec
+              [
+                <def>
+                  pattern (toplevel/native/topmain.ml[84,3227+8]..[84,3227+14])
+                    Ppat_var "_stdin" (toplevel/native/topmain.ml[84,3227+8]..[84,3227+14])
+                  expression (toplevel/native/topmain.ml[84,3227+15]..[84,3227+36]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (toplevel/native/topmain.ml[84,3227+15]..[84,3227+17])
+                      Ppat_construct "()" (toplevel/native/topmain.ml[84,3227+15]..[84,3227+17])
+                      None
+                    expression (toplevel/native/topmain.ml[84,3227+20]..[84,3227+36])
+                      Pexp_apply
+                      expression (toplevel/native/topmain.ml[84,3227+20]..[84,3227+33])
+                        Pexp_ident "file_argument" (toplevel/native/topmain.ml[84,3227+20]..[84,3227+33])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/native/topmain.ml[84,3227+34]..[84,3227+36])
+                            Pexp_constant PConst_string("",(toplevel/native/topmain.ml[84,3227+35]..[84,3227+35]),None)
+                      ]
+              ]
+            structure_item (toplevel/native/topmain.ml[85,3264+4]..[85,3264+40])
+              Pstr_value Nonrec
+              [
+                <def>
+                  pattern (toplevel/native/topmain.ml[85,3264+8]..[85,3264+13])
+                    Ppat_var "_args" (toplevel/native/topmain.ml[85,3264+8]..[85,3264+13])
+                  expression (toplevel/native/topmain.ml[85,3264+16]..[85,3264+40])
+                    Pexp_apply
+                    expression (toplevel/native/topmain.ml[85,3264+16]..[85,3264+27])
+                      Pexp_ident "wrap_expand" (toplevel/native/topmain.ml[85,3264+16]..[85,3264+27])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/native/topmain.ml[85,3264+28]..[85,3264+40])
+                          Pexp_ident "Arg.read_arg" (toplevel/native/topmain.ml[85,3264+28]..[85,3264+40])
+                    ]
+              ]
+            structure_item (toplevel/native/topmain.ml[86,3305+4]..[86,3305+42])
+              Pstr_value Nonrec
+              [
+                <def>
+                  pattern (toplevel/native/topmain.ml[86,3305+8]..[86,3305+14])
+                    Ppat_var "_args0" (toplevel/native/topmain.ml[86,3305+8]..[86,3305+14])
+                  expression (toplevel/native/topmain.ml[86,3305+17]..[86,3305+42])
+                    Pexp_apply
+                    expression (toplevel/native/topmain.ml[86,3305+17]..[86,3305+28])
+                      Pexp_ident "wrap_expand" (toplevel/native/topmain.ml[86,3305+17]..[86,3305+28])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/native/topmain.ml[86,3305+29]..[86,3305+42])
+                          Pexp_ident "Arg.read_arg0" (toplevel/native/topmain.ml[86,3305+29]..[86,3305+42])
+                    ]
+              ]
+            structure_item (toplevel/native/topmain.ml[87,3348+4]..[87,3348+37])
+              Pstr_value Nonrec
+              [
+                <def>
+                  pattern (toplevel/native/topmain.ml[87,3348+8]..[87,3348+17])
+                    Ppat_var "anonymous" (toplevel/native/topmain.ml[87,3348+8]..[87,3348+17])
+                  expression (toplevel/native/topmain.ml[87,3348+18]..[87,3348+37]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (toplevel/native/topmain.ml[87,3348+18]..[87,3348+19])
+                      Ppat_var "s" (toplevel/native/topmain.ml[87,3348+18]..[87,3348+19])
+                    expression (toplevel/native/topmain.ml[87,3348+22]..[87,3348+37])
+                      Pexp_apply
+                      expression (toplevel/native/topmain.ml[87,3348+22]..[87,3348+35])
+                        Pexp_ident "file_argument" (toplevel/native/topmain.ml[87,3348+22]..[87,3348+35])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/native/topmain.ml[87,3348+36]..[87,3348+37])
+                            Pexp_ident "s" (toplevel/native/topmain.ml[87,3348+36]..[87,3348+37])
+                      ]
+              ]
+          ]
+  structure_item (toplevel/native/topmain.ml[90,3394+0]..[96,3548+75])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/native/topmain.ml[90,3394+4]..[90,3394+6])
+          Ppat_construct "()" (toplevel/native/topmain.ml[90,3394+4]..[90,3394+6])
+          None
+        expression (toplevel/native/topmain.ml[91,3403+2]..[96,3548+75])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (toplevel/native/topmain.ml[91,3403+6]..[91,3403+17])
+                Ppat_var "extra_paths" (toplevel/native/topmain.ml[91,3403+6]..[91,3403+17])
+              expression (toplevel/native/topmain.ml[92,3423+4]..[94,3505+37])
+                Pexp_match
+                expression (toplevel/native/topmain.ml[92,3423+10]..[92,3423+44])
+                  Pexp_apply
+                  expression (toplevel/native/topmain.ml[92,3423+10]..[92,3423+20])
+                    Pexp_ident "Sys.getenv" (toplevel/native/topmain.ml[92,3423+10]..[92,3423+20])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (toplevel/native/topmain.ml[92,3423+21]..[92,3423+44])
+                        Pexp_constant PConst_string("OCAMLTOP_INCLUDE_PATH",(toplevel/native/topmain.ml[92,3423+22]..[92,3423+43]),None)
+                  ]
+                [
+                  <case>
+                    pattern (toplevel/native/topmain.ml[93,3473+6]..[93,3473+25])
+                      Ppat_exception
+                      pattern (toplevel/native/topmain.ml[93,3473+16]..[93,3473+25])
+                        Ppat_construct "Not_found" (toplevel/native/topmain.ml[93,3473+16]..[93,3473+25])
+                        None
+                    expression (toplevel/native/topmain.ml[93,3473+29]..[93,3473+31])
+                      Pexp_construct "[]" (toplevel/native/topmain.ml[93,3473+29]..[93,3473+31])
+                      None
+                  <case>
+                    pattern (toplevel/native/topmain.ml[94,3505+6]..[94,3505+7])
+                      Ppat_var "s" (toplevel/native/topmain.ml[94,3505+6]..[94,3505+7])
+                    expression (toplevel/native/topmain.ml[94,3505+11]..[94,3505+37])
+                      Pexp_apply
+                      expression (toplevel/native/topmain.ml[94,3505+11]..[94,3505+35])
+                        Pexp_ident "Misc.split_path_contents" (toplevel/native/topmain.ml[94,3505+11]..[94,3505+35])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/native/topmain.ml[94,3505+36]..[94,3505+37])
+                            Pexp_ident "s" (toplevel/native/topmain.ml[94,3505+36]..[94,3505+37])
+                      ]
+                ]
+          ]
+          expression (toplevel/native/topmain.ml[96,3548+2]..[96,3548+75])
+            Pexp_apply
+            expression (toplevel/native/topmain.ml[96,3548+23]..[96,3548+25])
+              Pexp_ident ":=" (toplevel/native/topmain.ml[96,3548+23]..[96,3548+25])
+            [
+              <arg>
+              Nolabel
+                expression (toplevel/native/topmain.ml[96,3548+2]..[96,3548+22])
+                  Pexp_ident "Clflags.include_dirs" (toplevel/native/topmain.ml[96,3548+2]..[96,3548+22])
+              <arg>
+              Nolabel
+                expression (toplevel/native/topmain.ml[96,3548+26]..[96,3548+75])
+                  Pexp_apply
+                  expression (toplevel/native/topmain.ml[96,3548+26]..[96,3548+41])
+                    Pexp_ident "List.rev_append" (toplevel/native/topmain.ml[96,3548+26]..[96,3548+41])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (toplevel/native/topmain.ml[96,3548+42]..[96,3548+53])
+                        Pexp_ident "extra_paths" (toplevel/native/topmain.ml[96,3548+42]..[96,3548+53])
+                    <arg>
+                    Nolabel
+                      expression (toplevel/native/topmain.ml[96,3548+54]..[96,3548+75])
+                        Pexp_apply
+                        expression (toplevel/native/topmain.ml[96,3548+54]..[96,3548+55])
+                          Pexp_ident "!" (toplevel/native/topmain.ml[96,3548+54]..[96,3548+55])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (toplevel/native/topmain.ml[96,3548+55]..[96,3548+75])
+                              Pexp_ident "Clflags.include_dirs" (toplevel/native/topmain.ml[96,3548+55]..[96,3548+75])
+                        ]
+                  ]
+            ]
+    ]
+  structure_item (toplevel/native/topmain.ml[98,3625+0]..[108,4023+35])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/native/topmain.ml[98,3625+4]..[98,3625+8])
+          Ppat_var "main" (toplevel/native/topmain.ml[98,3625+4]..[98,3625+8])
+        expression (toplevel/native/topmain.ml[98,3625+9]..[108,4023+35]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (toplevel/native/topmain.ml[98,3625+9]..[98,3625+11])
+            Ppat_construct "()" (toplevel/native/topmain.ml[98,3625+9]..[98,3625+11])
+            None
+          expression (toplevel/native/topmain.ml[99,3639+2]..[108,4023+35])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (toplevel/native/topmain.ml[99,3639+6]..[99,3639+9])
+                  Ppat_var "ppf" (toplevel/native/topmain.ml[99,3639+6]..[99,3639+9])
+                expression (toplevel/native/topmain.ml[99,3639+12]..[99,3639+32])
+                  Pexp_ident "Format.err_formatter" (toplevel/native/topmain.ml[99,3639+12]..[99,3639+32])
+            ]
+            expression (toplevel/native/topmain.ml[100,3675+2]..[108,4023+35])
+              Pexp_sequence
+              expression (toplevel/native/topmain.ml[100,3675+2]..[100,3675+29])
+                Pexp_apply
+                expression (toplevel/native/topmain.ml[100,3675+22]..[100,3675+24])
+                  Pexp_ident ":=" (toplevel/native/topmain.ml[100,3675+22]..[100,3675+24])
+                [
+                  <arg>
+                  Nolabel
+                    expression (toplevel/native/topmain.ml[100,3675+2]..[100,3675+21])
+                      Pexp_ident "Clflags.native_code" (toplevel/native/topmain.ml[100,3675+2]..[100,3675+21])
+                  <arg>
+                  Nolabel
+                    expression (toplevel/native/topmain.ml[100,3675+25]..[100,3675+29])
+                      Pexp_construct "true" (toplevel/native/topmain.ml[100,3675+25]..[100,3675+29])
+                      None
+                ]
+              expression (toplevel/native/topmain.ml[101,3706+2]..[108,4023+35])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (toplevel/native/topmain.ml[101,3706+6]..[101,3706+13])
+                      Ppat_var "program" (toplevel/native/topmain.ml[101,3706+6]..[101,3706+13])
+                    expression (toplevel/native/topmain.ml[101,3706+16]..[101,3706+26])
+                      Pexp_constant PConst_string("ocamlnat",(toplevel/native/topmain.ml[101,3706+17]..[101,3706+25]),None)
+                ]
+                expression (toplevel/native/topmain.ml[102,3736+2]..[108,4023+35])
+                  Pexp_sequence
+                  expression (toplevel/native/topmain.ml[102,3736+2]..[102,3736+33])
+                    Pexp_apply
+                    expression (toplevel/native/topmain.ml[102,3736+2]..[102,3736+17])
+                      Pexp_ident "Compenv.readenv" (toplevel/native/topmain.ml[102,3736+2]..[102,3736+17])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/native/topmain.ml[102,3736+18]..[102,3736+21])
+                          Pexp_ident "ppf" (toplevel/native/topmain.ml[102,3736+18]..[102,3736+21])
+                      <arg>
+                      Nolabel
+                        expression (toplevel/native/topmain.ml[102,3736+22]..[102,3736+33])
+                          Pexp_construct "Before_args" (toplevel/native/topmain.ml[102,3736+22]..[102,3736+33])
+                          None
+                    ]
+                  expression (toplevel/native/topmain.ml[103,3771+2]..[108,4023+35])
+                    Pexp_sequence
+                    expression (toplevel/native/topmain.ml[103,3771+2]..[103,3771+44])
+                      Pexp_apply
+                      expression (toplevel/native/topmain.ml[103,3771+2]..[103,3771+23])
+                        Pexp_ident "Clflags.add_arguments" (toplevel/native/topmain.ml[103,3771+2]..[103,3771+23])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/native/topmain.ml[103,3771+24]..[103,3771+31])
+                            Pexp_ident "__LOC__" (toplevel/native/topmain.ml[103,3771+24]..[103,3771+31])
+                        <arg>
+                        Nolabel
+                          expression (toplevel/native/topmain.ml[103,3771+32]..[103,3771+44])
+                            Pexp_ident "Options.list" (toplevel/native/topmain.ml[103,3771+32]..[103,3771+44])
+                      ]
+                    expression (toplevel/native/topmain.ml[104,3817+2]..[108,4023+35])
+                      Pexp_sequence
+                      expression (toplevel/native/topmain.ml[104,3817+2]..[104,3817+61])
+                        Pexp_apply
+                        expression (toplevel/native/topmain.ml[104,3817+2]..[104,3817+25])
+                          Pexp_ident "Compenv.parse_arguments" (toplevel/native/topmain.ml[104,3817+2]..[104,3817+25])
+                        [
+                          <arg>
+                          Labelled "current"
+                            expression (toplevel/native/topmain.ml[104,3817+27]..[104,3817+34])
+                              Pexp_ident "current" (toplevel/native/topmain.ml[104,3817+27]..[104,3817+34])
+                          <arg>
+                          Nolabel
+                            expression (toplevel/native/topmain.ml[104,3817+35]..[104,3817+39])
+                              Pexp_ident "argv" (toplevel/native/topmain.ml[104,3817+35]..[104,3817+39])
+                          <arg>
+                          Nolabel
+                            expression (toplevel/native/topmain.ml[104,3817+40]..[104,3817+53])
+                              Pexp_ident "file_argument" (toplevel/native/topmain.ml[104,3817+40]..[104,3817+53])
+                          <arg>
+                          Nolabel
+                            expression (toplevel/native/topmain.ml[104,3817+54]..[104,3817+61])
+                              Pexp_ident "program" (toplevel/native/topmain.ml[104,3817+54]..[104,3817+61])
+                        ]
+                      expression (toplevel/native/topmain.ml[105,3880+2]..[108,4023+35])
+                        Pexp_sequence
+                        expression (toplevel/native/topmain.ml[105,3880+2]..[105,3880+35])
+                          Pexp_apply
+                          expression (toplevel/native/topmain.ml[105,3880+2]..[105,3880+32])
+                            Pexp_ident "Compmisc.read_clflags_from_env" (toplevel/native/topmain.ml[105,3880+2]..[105,3880+32])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (toplevel/native/topmain.ml[105,3880+33]..[105,3880+35])
+                                Pexp_construct "()" (toplevel/native/topmain.ml[105,3880+33]..[105,3880+35])
+                                None
+                          ]
+                        expression (toplevel/native/topmain.ml[106,3917+2]..[108,4023+35])
+                          Pexp_sequence
+                          expression (toplevel/native/topmain.ml[106,3917+2]..[106,3917+79])
+                            Pexp_ifthenelse
+                            expression (toplevel/native/topmain.ml[106,3917+5]..[106,3917+39])
+                              Pexp_apply
+                              expression (toplevel/native/topmain.ml[106,3917+5]..[106,3917+8])
+                                Pexp_ident "not" (toplevel/native/topmain.ml[106,3917+5]..[106,3917+8])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/native/topmain.ml[106,3917+9]..[106,3917+39])
+                                    Pexp_apply
+                                    expression (toplevel/native/topmain.ml[106,3917+10]..[106,3917+17])
+                                      Pexp_ident "prepare" (toplevel/native/topmain.ml[106,3917+10]..[106,3917+17])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (toplevel/native/topmain.ml[106,3917+18]..[106,3917+38])
+                                          Pexp_ident "Format.err_formatter" (toplevel/native/topmain.ml[106,3917+18]..[106,3917+38])
+                                    ]
+                              ]
+                            expression (toplevel/native/topmain.ml[106,3917+45]..[106,3917+79])
+                              Pexp_apply
+                              expression (toplevel/native/topmain.ml[106,3917+45]..[106,3917+50])
+                                Pexp_ident "raise" (toplevel/native/topmain.ml[106,3917+45]..[106,3917+50])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/native/topmain.ml[106,3917+51]..[106,3917+79])
+                                    Pexp_construct "Compenv.Exit_with_status" (toplevel/native/topmain.ml[106,3917+52]..[106,3917+76])
+                                    Some
+                                      expression (toplevel/native/topmain.ml[106,3917+77]..[106,3917+78])
+                                        Pexp_constant PConst_int (2,None)
+                              ]
+                            None
+                          expression (toplevel/native/topmain.ml[107,3998+2]..[108,4023+35])
+                            Pexp_sequence
+                            expression (toplevel/native/topmain.ml[107,3998+2]..[107,3998+23])
+                              Pexp_apply
+                              expression (toplevel/native/topmain.ml[107,3998+2]..[107,3998+20])
+                                Pexp_ident "Compmisc.init_path" (toplevel/native/topmain.ml[107,3998+2]..[107,3998+20])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/native/topmain.ml[107,3998+21]..[107,3998+23])
+                                    Pexp_construct "()" (toplevel/native/topmain.ml[107,3998+21]..[107,3998+23])
+                                    None
+                              ]
+                            expression (toplevel/native/topmain.ml[108,4023+2]..[108,4023+35])
+                              Pexp_apply
+                              expression (toplevel/native/topmain.ml[108,4023+2]..[108,4023+14])
+                                Pexp_ident "Toploop.loop" (toplevel/native/topmain.ml[108,4023+2]..[108,4023+14])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/native/topmain.ml[108,4023+15]..[108,4023+35])
+                                    Pexp_ident "Format.std_formatter" (toplevel/native/topmain.ml[108,4023+15]..[108,4023+35])
+                              ]
+    ]
+  structure_item (toplevel/native/topmain.ml[110,4060+0]..[113,4141+11])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/native/topmain.ml[110,4060+4]..[110,4060+8])
+          Ppat_var "main" (toplevel/native/topmain.ml[110,4060+4]..[110,4060+8])
+        expression (toplevel/native/topmain.ml[110,4060+9]..[113,4141+11]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (toplevel/native/topmain.ml[110,4060+9]..[110,4060+11])
+            Ppat_construct "()" (toplevel/native/topmain.ml[110,4060+9]..[110,4060+11])
+            None
+          expression (toplevel/native/topmain.ml[111,4074+2]..[113,4141+11])
+            Pexp_match
+            expression (toplevel/native/topmain.ml[111,4074+8]..[111,4074+15])
+              Pexp_apply
+              expression (toplevel/native/topmain.ml[111,4074+8]..[111,4074+12])
+                Pexp_ident "main" (toplevel/native/topmain.ml[111,4074+8]..[111,4074+12])
+              [
+                <arg>
+                Nolabel
+                  expression (toplevel/native/topmain.ml[111,4074+13]..[111,4074+15])
+                    Pexp_construct "()" (toplevel/native/topmain.ml[111,4074+13]..[111,4074+15])
+                    None
+              ]
+            [
+              <case>
+                pattern (toplevel/native/topmain.ml[112,4095+4]..[112,4095+40])
+                  Ppat_exception
+                  pattern (toplevel/native/topmain.ml[112,4095+14]..[112,4095+40])
+                    Ppat_construct "Compenv.Exit_with_status" (toplevel/native/topmain.ml[112,4095+14]..[112,4095+38])
+                    Some
+                      []
+                      pattern (toplevel/native/topmain.ml[112,4095+39]..[112,4095+40])
+                        Ppat_var "n" (toplevel/native/topmain.ml[112,4095+39]..[112,4095+40])
+                expression (toplevel/native/topmain.ml[112,4095+44]..[112,4095+45])
+                  Pexp_ident "n" (toplevel/native/topmain.ml[112,4095+44]..[112,4095+45])
+              <case>
+                pattern (toplevel/native/topmain.ml[113,4141+4]..[113,4141+6])
+                  Ppat_construct "()" (toplevel/native/topmain.ml[113,4141+4]..[113,4141+6])
+                  None
+                expression (toplevel/native/topmain.ml[113,4141+10]..[113,4141+11])
+                  Pexp_constant PConst_int (0,None)
+            ]
+    ]
+]
+

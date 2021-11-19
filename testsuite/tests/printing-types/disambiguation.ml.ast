@@ -1,0 +1,119 @@
+[
+  structure_item (testsuite/tests/printing-types/disambiguation.ml[5,24+0]..[5,24+32])
+    Pstr_type Rec
+    [
+      type_declaration "x" (testsuite/tests/printing-types/disambiguation.ml[5,24+8]..[5,24+9]) (testsuite/tests/printing-types/disambiguation.ml[5,24+0]..[5,24+32])
+        ptype_params =
+          [
+            core_type (testsuite/tests/printing-types/disambiguation.ml[5,24+5]..[5,24+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Private
+        ptype_manifest =
+          Some
+            core_type (testsuite/tests/printing-types/disambiguation.ml[5,24+20]..[5,24+32])
+              Ptyp_alias "a"
+              core_type (testsuite/tests/printing-types/disambiguation.ml[5,24+20]..[5,24+26])
+                Ptyp_variant closed=Open
+                [
+                  Rtag "x" true
+                    []
+                ]
+                None
+    ]
+  structure_item (testsuite/tests/printing-types/disambiguation.ml[6,59+0]..[20,454+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/printing-types/disambiguation.ml[6,59+10]..[20,454+2])
+        Pstr_eval
+        expression (testsuite/tests/printing-types/disambiguation.ml[6,59+10]..[20,454+2])
+          Pexp_tuple
+          [
+            expression (testsuite/tests/printing-types/disambiguation.ml[6,59+10]..[13,256+2])
+              Pexp_constant PConst_string ("\nLine 1:\nError: Type declarations do not match:\n         type !'a x = private [> `x ] constraint 'a = 'a x\n       is not included in\n         type 'a x\n       Their constraints differ.\n",(testsuite/tests/printing-types/disambiguation.ml[6,59+12]..[13,256+0]),Some "")
+            expression (testsuite/tests/printing-types/disambiguation.ml[13,256+4]..[20,454+2])
+              Pexp_construct "Principal" (testsuite/tests/printing-types/disambiguation.ml[13,256+4]..[13,256+13])
+              Some
+                expression (testsuite/tests/printing-types/disambiguation.ml[13,256+13]..[20,454+2])
+                  Pexp_constant PConst_string ("\nLine 1:\nError: Type declarations do not match:\n         type !'a x = private 'a constraint 'a = [> `x ]\n       is not included in\n         type 'a x\n       Their constraints differ.\n",(testsuite/tests/printing-types/disambiguation.ml[13,256+15]..[20,454+0]),Some "")
+          ]
+    ]
+  structure_item (testsuite/tests/printing-types/disambiguation.ml[23,462+0]..[23,462+8])
+    Pstr_type Rec
+    [
+      type_declaration "int" (testsuite/tests/printing-types/disambiguation.ml[23,462+5]..[23,462+8]) (testsuite/tests/printing-types/disambiguation.ml[23,462+0]..[23,462+8])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/printing-types/disambiguation.ml[24,473+0]..[26,495+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/printing-types/disambiguation.ml[24,473+10]..[26,495+2])
+        Pstr_eval
+        expression (testsuite/tests/printing-types/disambiguation.ml[24,473+10]..[26,495+2])
+          Pexp_constant PConst_string ("\ntype int\n",(testsuite/tests/printing-types/disambiguation.ml[24,473+12]..[26,495+0]),Some "")
+    ]
+  structure_item (testsuite/tests/printing-types/disambiguation.ml[28,502+0]..[28,502+9])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/printing-types/disambiguation.ml[28,502+4]..[28,502+5])
+          Ppat_var "x" (testsuite/tests/printing-types/disambiguation.ml[28,502+4]..[28,502+5])
+        expression (testsuite/tests/printing-types/disambiguation.ml[28,502+8]..[28,502+9])
+          Pexp_constant PConst_int (0,None)
+    ]
+  structure_item (testsuite/tests/printing-types/disambiguation.ml[29,514+0]..[31,545+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/printing-types/disambiguation.ml[29,514+10]..[31,545+2])
+        Pstr_eval
+        expression (testsuite/tests/printing-types/disambiguation.ml[29,514+10]..[31,545+2])
+          Pexp_constant PConst_string ("\nval x : int/2 = 0\n",(testsuite/tests/printing-types/disambiguation.ml[29,514+12]..[31,545+0]),Some "")
+    ]
+  structure_item (testsuite/tests/printing-types/disambiguation.ml[34,553+0]..[34,553+10])
+    Pstr_type Rec
+    [
+      type_declaration "float" (testsuite/tests/printing-types/disambiguation.ml[34,553+5]..[34,553+10]) (testsuite/tests/printing-types/disambiguation.ml[34,553+0]..[34,553+10])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/printing-types/disambiguation.ml[35,566+0]..[37,590+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/printing-types/disambiguation.ml[35,566+10]..[37,590+2])
+        Pstr_eval
+        expression (testsuite/tests/printing-types/disambiguation.ml[35,566+10]..[37,590+2])
+          Pexp_constant PConst_string ("\ntype float\n",(testsuite/tests/printing-types/disambiguation.ml[35,566+12]..[37,590+0]),Some "")
+    ]
+  structure_item (testsuite/tests/printing-types/disambiguation.ml[39,597+0]..[39,597+2])
+    Pstr_eval
+    expression (testsuite/tests/printing-types/disambiguation.ml[39,597+0]..[39,597+2])
+      Pexp_constant PConst_float (0.,None)
+  structure_item (testsuite/tests/printing-types/disambiguation.ml[40,602+0]..[42,632+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/printing-types/disambiguation.ml[40,602+10]..[42,632+2])
+        Pstr_eval
+        expression (testsuite/tests/printing-types/disambiguation.ml[40,602+10]..[42,632+2])
+          Pexp_constant PConst_string ("\n- : float/2 = 0.\n",(testsuite/tests/printing-types/disambiguation.ml[40,602+12]..[42,632+0]),Some "")
+    ]
+]
+

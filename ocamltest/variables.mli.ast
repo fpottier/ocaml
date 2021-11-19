@@ -1,0 +1,252 @@
+[
+  signature_item (ocamltest/variables.mli[18,1122+0]..[18,1122+19])
+    Psig_type Rec
+    [
+      type_declaration "value" (ocamltest/variables.mli[18,1122+5]..[18,1122+10]) (ocamltest/variables.mli[18,1122+0]..[18,1122+19])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (ocamltest/variables.mli[18,1122+13]..[18,1122+19])
+              Ptyp_constr "string" (ocamltest/variables.mli[18,1122+13]..[18,1122+19])
+              []
+    ]
+  signature_item (ocamltest/variables.mli[20,1143+0]..[20,1143+31])
+    Psig_type Rec
+    [
+      type_declaration "exporter" (ocamltest/variables.mli[20,1143+5]..[20,1143+13]) (ocamltest/variables.mli[20,1143+0]..[20,1143+31])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (ocamltest/variables.mli[20,1143+16]..[20,1143+31])
+              Ptyp_arrow
+              Nolabel
+              core_type (ocamltest/variables.mli[20,1143+16]..[20,1143+21])
+                Ptyp_constr "value" (ocamltest/variables.mli[20,1143+16]..[20,1143+21])
+                []
+              core_type (ocamltest/variables.mli[20,1143+25]..[20,1143+31])
+                Ptyp_constr "string" (ocamltest/variables.mli[20,1143+25]..[20,1143+31])
+                []
+    ]
+  signature_item (ocamltest/variables.mli[22,1176+0]..[22,1176+6])
+    Psig_type Rec
+    [
+      type_declaration "t" (ocamltest/variables.mli[22,1176+5]..[22,1176+6]) (ocamltest/variables.mli[22,1176+0]..[22,1176+6])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (ocamltest/variables.mli[24,1184+0]..[24,1184+27])
+    Psig_value
+    value_description "compare" (ocamltest/variables.mli[24,1184+4]..[24,1184+11]) (ocamltest/variables.mli[24,1184+0]..[24,1184+27])
+      core_type (ocamltest/variables.mli[24,1184+14]..[24,1184+27])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/variables.mli[24,1184+14]..[24,1184+15])
+          Ptyp_constr "t" (ocamltest/variables.mli[24,1184+14]..[24,1184+15])
+          []
+        core_type (ocamltest/variables.mli[24,1184+19]..[24,1184+27])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/variables.mli[24,1184+19]..[24,1184+20])
+            Ptyp_constr "t" (ocamltest/variables.mli[24,1184+19]..[24,1184+20])
+            []
+          core_type (ocamltest/variables.mli[24,1184+24]..[24,1184+27])
+            Ptyp_constr "int" (ocamltest/variables.mli[24,1184+24]..[24,1184+27])
+            []
+      []
+  signature_item (ocamltest/variables.mli[26,1213+0]..[26,1213+29])
+    Psig_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (ocamltest/variables.mli[26,1213+0]..[26,1213+29])
+          pext_name = "Empty_variable_name"
+          pext_kind =
+            Pext_decl
+              []
+              None
+  signature_item (ocamltest/variables.mli[28,1244+0]..[28,1244+47])
+    Psig_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (ocamltest/variables.mli[28,1244+0]..[28,1244+47])
+          pext_name = "Variable_already_registered"
+          pext_kind =
+            Pext_decl
+              [
+                core_type (ocamltest/variables.mli[28,1244+41]..[28,1244+47])
+                  Ptyp_constr "string" (ocamltest/variables.mli[28,1244+41]..[28,1244+47])
+                  []
+              ]
+              None
+  signature_item (ocamltest/variables.mli[30,1293+0]..[30,1293+36])
+    Psig_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (ocamltest/variables.mli[30,1293+0]..[30,1293+36])
+          pext_name = "No_such_variable"
+          pext_kind =
+            Pext_decl
+              [
+                core_type (ocamltest/variables.mli[30,1293+30]..[30,1293+36])
+                  Ptyp_constr "string" (ocamltest/variables.mli[30,1293+30]..[30,1293+36])
+                  []
+              ]
+              None
+  signature_item (ocamltest/variables.mli[32,1331+0]..[32,1331+31])
+    Psig_value
+    value_description "make" (ocamltest/variables.mli[32,1331+4]..[32,1331+8]) (ocamltest/variables.mli[32,1331+0]..[32,1331+31])
+      core_type (ocamltest/variables.mli[32,1331+11]..[32,1331+31])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/variables.mli[32,1331+11]..[32,1331+26])
+          Ptyp_tuple
+          [
+            core_type (ocamltest/variables.mli[32,1331+11]..[32,1331+17])
+              Ptyp_constr "string" (ocamltest/variables.mli[32,1331+11]..[32,1331+17])
+              []
+            core_type (ocamltest/variables.mli[32,1331+20]..[32,1331+26])
+              Ptyp_constr "string" (ocamltest/variables.mli[32,1331+20]..[32,1331+26])
+              []
+          ]
+        core_type (ocamltest/variables.mli[32,1331+30]..[32,1331+31])
+          Ptyp_constr "t" (ocamltest/variables.mli[32,1331+30]..[32,1331+31])
+          []
+      []
+  signature_item (ocamltest/variables.mli[34,1364+0]..[34,1364+57])
+    Psig_value
+    value_description "make_with_exporter" (ocamltest/variables.mli[34,1364+4]..[34,1364+22]) (ocamltest/variables.mli[34,1364+0]..[34,1364+57])
+      core_type (ocamltest/variables.mli[34,1364+25]..[34,1364+57])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/variables.mli[34,1364+25]..[34,1364+33])
+          Ptyp_constr "exporter" (ocamltest/variables.mli[34,1364+25]..[34,1364+33])
+          []
+        core_type (ocamltest/variables.mli[34,1364+37]..[34,1364+57])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/variables.mli[34,1364+37]..[34,1364+52])
+            Ptyp_tuple
+            [
+              core_type (ocamltest/variables.mli[34,1364+37]..[34,1364+43])
+                Ptyp_constr "string" (ocamltest/variables.mli[34,1364+37]..[34,1364+43])
+                []
+              core_type (ocamltest/variables.mli[34,1364+46]..[34,1364+52])
+                Ptyp_constr "string" (ocamltest/variables.mli[34,1364+46]..[34,1364+52])
+                []
+            ]
+          core_type (ocamltest/variables.mli[34,1364+56]..[34,1364+57])
+            Ptyp_constr "t" (ocamltest/variables.mli[34,1364+56]..[34,1364+57])
+            []
+      []
+  signature_item (ocamltest/variables.mli[36,1423+0]..[36,1423+34])
+    Psig_value
+    value_description "name_of_variable" (ocamltest/variables.mli[36,1423+4]..[36,1423+20]) (ocamltest/variables.mli[36,1423+0]..[36,1423+34])
+      core_type (ocamltest/variables.mli[36,1423+23]..[36,1423+34])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/variables.mli[36,1423+23]..[36,1423+24])
+          Ptyp_constr "t" (ocamltest/variables.mli[36,1423+23]..[36,1423+24])
+          []
+        core_type (ocamltest/variables.mli[36,1423+28]..[36,1423+34])
+          Ptyp_constr "string" (ocamltest/variables.mli[36,1423+28]..[36,1423+34])
+          []
+      []
+  signature_item (ocamltest/variables.mli[38,1459+0]..[38,1459+41])
+    Psig_value
+    value_description "description_of_variable" (ocamltest/variables.mli[38,1459+4]..[38,1459+27]) (ocamltest/variables.mli[38,1459+0]..[38,1459+41])
+      core_type (ocamltest/variables.mli[38,1459+30]..[38,1459+41])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/variables.mli[38,1459+30]..[38,1459+31])
+          Ptyp_constr "t" (ocamltest/variables.mli[38,1459+30]..[38,1459+31])
+          []
+        core_type (ocamltest/variables.mli[38,1459+35]..[38,1459+41])
+          Ptyp_constr "string" (ocamltest/variables.mli[38,1459+35]..[38,1459+41])
+          []
+      []
+  signature_item (ocamltest/variables.mli[40,1502+0]..[40,1502+33])
+    Psig_value
+    value_description "register_variable" (ocamltest/variables.mli[40,1502+4]..[40,1502+21]) (ocamltest/variables.mli[40,1502+0]..[40,1502+33])
+      core_type (ocamltest/variables.mli[40,1502+24]..[40,1502+33])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/variables.mli[40,1502+24]..[40,1502+25])
+          Ptyp_constr "t" (ocamltest/variables.mli[40,1502+24]..[40,1502+25])
+          []
+        core_type (ocamltest/variables.mli[40,1502+29]..[40,1502+33])
+          Ptyp_constr "unit" (ocamltest/variables.mli[40,1502+29]..[40,1502+33])
+          []
+      []
+  signature_item (ocamltest/variables.mli[42,1537+0]..[42,1537+38])
+    Psig_value
+    value_description "find_variable" (ocamltest/variables.mli[42,1537+4]..[42,1537+17]) (ocamltest/variables.mli[42,1537+0]..[42,1537+38])
+      core_type (ocamltest/variables.mli[42,1537+20]..[42,1537+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/variables.mli[42,1537+20]..[42,1537+26])
+          Ptyp_constr "string" (ocamltest/variables.mli[42,1537+20]..[42,1537+26])
+          []
+        core_type (ocamltest/variables.mli[42,1537+30]..[42,1537+38])
+          Ptyp_constr "option" (ocamltest/variables.mli[42,1537+32]..[42,1537+38])
+          [
+            core_type (ocamltest/variables.mli[42,1537+30]..[42,1537+31])
+              Ptyp_constr "t" (ocamltest/variables.mli[42,1537+30]..[42,1537+31])
+              []
+          ]
+      []
+  signature_item (ocamltest/variables.mli[44,1577+0]..[44,1577+44])
+    Psig_value
+    value_description "string_of_binding" (ocamltest/variables.mli[44,1577+4]..[44,1577+21]) (ocamltest/variables.mli[44,1577+0]..[44,1577+44])
+      core_type (ocamltest/variables.mli[44,1577+24]..[44,1577+44])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/variables.mli[44,1577+24]..[44,1577+25])
+          Ptyp_constr "t" (ocamltest/variables.mli[44,1577+24]..[44,1577+25])
+          []
+        core_type (ocamltest/variables.mli[44,1577+29]..[44,1577+44])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/variables.mli[44,1577+29]..[44,1577+34])
+            Ptyp_constr "value" (ocamltest/variables.mli[44,1577+29]..[44,1577+34])
+            []
+          core_type (ocamltest/variables.mli[44,1577+38]..[44,1577+44])
+            Ptyp_constr "string" (ocamltest/variables.mli[44,1577+38]..[44,1577+44])
+            []
+      []
+  signature_item (ocamltest/variables.mli[46,1623+0]..[46,1623+45])
+    Psig_value
+    value_description "get_registered_variables" (ocamltest/variables.mli[46,1623+4]..[46,1623+28]) (ocamltest/variables.mli[46,1623+0]..[46,1623+45])
+      core_type (ocamltest/variables.mli[46,1623+31]..[46,1623+45])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/variables.mli[46,1623+31]..[46,1623+35])
+          Ptyp_constr "unit" (ocamltest/variables.mli[46,1623+31]..[46,1623+35])
+          []
+        core_type (ocamltest/variables.mli[46,1623+39]..[46,1623+45])
+          Ptyp_constr "list" (ocamltest/variables.mli[46,1623+41]..[46,1623+45])
+          [
+            core_type (ocamltest/variables.mli[46,1623+39]..[46,1623+40])
+              Ptyp_constr "t" (ocamltest/variables.mli[46,1623+39]..[46,1623+40])
+              []
+          ]
+      []
+]
+

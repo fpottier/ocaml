@@ -1,0 +1,79 @@
+[
+  structure_item (testsuite/tests/lib-stream/mpr7769.ml[5,46+0]..[9,157+18])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-stream/mpr7769.ml[5,46+4]..[5,46+6])
+          Ppat_construct "()" (testsuite/tests/lib-stream/mpr7769.ml[5,46+4]..[5,46+6])
+          None
+        expression (testsuite/tests/lib-stream/mpr7769.ml[6,55+2]..[9,157+18])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (testsuite/tests/lib-stream/mpr7769.ml[6,55+6]..[6,55+7])
+                Ppat_var "s" (testsuite/tests/lib-stream/mpr7769.ml[6,55+6]..[6,55+7])
+              expression (testsuite/tests/lib-stream/mpr7769.ml[6,55+10]..[6,55+51])
+                Pexp_apply
+                expression (testsuite/tests/lib-stream/mpr7769.ml[6,55+10]..[6,55+27])
+                  Pexp_ident "Stream.of_channel" (testsuite/tests/lib-stream/mpr7769.ml[6,55+10]..[6,55+27])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-stream/mpr7769.ml[6,55+28]..[6,55+51])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-stream/mpr7769.ml[6,55+29]..[6,55+36])
+                        Pexp_ident "open_in" (testsuite/tests/lib-stream/mpr7769.ml[6,55+29]..[6,55+36])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-stream/mpr7769.ml[6,55+37]..[6,55+50])
+                            Pexp_constant PConst_string("mpr7769.txt",(testsuite/tests/lib-stream/mpr7769.ml[6,55+38]..[6,55+49]),None)
+                      ]
+                ]
+          ]
+          expression (testsuite/tests/lib-stream/mpr7769.ml[7,110+2]..[9,157+18])
+            Pexp_sequence
+            expression (testsuite/tests/lib-stream/mpr7769.ml[7,110+2]..[7,110+15])
+              Pexp_apply
+              expression (testsuite/tests/lib-stream/mpr7769.ml[7,110+2]..[7,110+13])
+                Pexp_ident "Stream.junk" (testsuite/tests/lib-stream/mpr7769.ml[7,110+2]..[7,110+13])
+              [
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-stream/mpr7769.ml[7,110+14]..[7,110+15])
+                    Pexp_ident "s" (testsuite/tests/lib-stream/mpr7769.ml[7,110+14]..[7,110+15])
+              ]
+            expression (testsuite/tests/lib-stream/mpr7769.ml[8,127+2]..[9,157+18])
+              Pexp_sequence
+              expression (testsuite/tests/lib-stream/mpr7769.ml[8,127+2]..[8,127+28])
+                Pexp_apply
+                expression (testsuite/tests/lib-stream/mpr7769.ml[8,127+2]..[8,127+12])
+                  Pexp_ident "print_char" (testsuite/tests/lib-stream/mpr7769.ml[8,127+2]..[8,127+12])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-stream/mpr7769.ml[8,127+13]..[8,127+28])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-stream/mpr7769.ml[8,127+14]..[8,127+25])
+                        Pexp_ident "Stream.next" (testsuite/tests/lib-stream/mpr7769.ml[8,127+14]..[8,127+25])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-stream/mpr7769.ml[8,127+26]..[8,127+27])
+                            Pexp_ident "s" (testsuite/tests/lib-stream/mpr7769.ml[8,127+26]..[8,127+27])
+                      ]
+                ]
+              expression (testsuite/tests/lib-stream/mpr7769.ml[9,157+2]..[9,157+18])
+                Pexp_apply
+                expression (testsuite/tests/lib-stream/mpr7769.ml[9,157+2]..[9,157+15])
+                  Pexp_ident "print_newline" (testsuite/tests/lib-stream/mpr7769.ml[9,157+2]..[9,157+15])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-stream/mpr7769.ml[9,157+16]..[9,157+18])
+                      Pexp_construct "()" (testsuite/tests/lib-stream/mpr7769.ml[9,157+16]..[9,157+18])
+                      None
+                ]
+    ]
+]
+

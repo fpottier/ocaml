@@ -1,0 +1,139 @@
+[
+  structure_item (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[5,22+0]..[5,22+11])
+    Pstr_type Rec
+    [
+      type_declaration "t" (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[5,22+5]..[5,22+6]) (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[5,22+0]..[5,22+11])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_open
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[7,37+0]..[7,37+70])
+    Pstr_module
+    "M" (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[7,37+7]..[7,37+8])
+      module_expr (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[7,37+9]..[7,37+70])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[7,37+37]..[7,37+70])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[7,37+44]..[7,37+66])
+              Pstr_typext
+              type_extension
+                ptyext_path = "t" (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[7,37+49]..[7,37+50])
+                ptyext_params =
+                  []
+                ptyext_constructors =
+                  [
+                    extension_constructor (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[7,37+54]..[7,37+55])
+                      pext_name = "E"
+                      pext_kind =
+                        Pext_decl
+                          []
+                          None
+                    extension_constructor (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[7,37+56]..[7,37+66])
+                      pext_name = "F"
+                      pext_kind =
+                        Pext_decl
+                          [
+                            core_type (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[7,37+63]..[7,37+66])
+                              Ptyp_constr "int" (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[7,37+63]..[7,37+66])
+                              []
+                          ]
+                          None
+                  ]
+                ptyext_private = Public
+          ]
+        module_type (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[7,37+11]..[7,37+34])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[7,37+15]..[7,37+30])
+              Psig_typext
+              type_extension
+                ptyext_path = "t" (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[7,37+20]..[7,37+21])
+                ptyext_params =
+                  []
+                ptyext_constructors =
+                  [
+                    extension_constructor (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[7,37+25]..[7,37+26])
+                      pext_name = "E"
+                      pext_kind =
+                        Pext_decl
+                          []
+                          None
+                    extension_constructor (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[7,37+27]..[7,37+30])
+                      pext_name = "F"
+                      pext_kind =
+                        Pext_decl
+                          []
+                          None
+                  ]
+                ptyext_private = Public
+          ]
+  structure_item (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[8,110+0]..[27,718+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[8,110+9]..[27,718+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[8,110+9]..[27,718+2])
+          Pexp_constant PConst_string ("\ntype t = ..\nLine 3, characters 37-70:\n3 | module M : sig type t += E | F end = struct type t += E | F of int end;;\n                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError: Signature mismatch:\n       Modules do not match:\n         sig type t += E | F of int  end\n       is not included in\n         sig type t += E | F  end\n       Extension declarations do not match:\n         type t += F of int\n       is not included in\n         type t += F\n       Constructors do not match:\n         F of int\n       is not compatible with:\n         F\n       They have different arities.\n",(testsuite/tests/typing-modules/extension_constructors_errors_test.ml[8,110+11]..[27,718+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[29,725+0]..[29,725+64])
+    Pstr_module
+    "M1" (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[29,725+7]..[29,725+9])
+      module_expr (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[29,725+10]..[29,725+64])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[29,725+34]..[29,725+64])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[29,725+41]..[29,725+60])
+              Pstr_typext
+              type_extension
+                ptyext_path = "t" (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[29,725+46]..[29,725+47])
+                ptyext_params =
+                  []
+                ptyext_constructors =
+                  [
+                    extension_constructor (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[29,725+59]..[29,725+60])
+                      pext_name = "A"
+                      pext_kind =
+                        Pext_decl
+                          []
+                          None
+                  ]
+                ptyext_private = Private
+          ]
+        module_type (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[29,725+12]..[29,725+31])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[29,725+16]..[29,725+27])
+              Psig_typext
+              type_extension
+                ptyext_path = "t" (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[29,725+21]..[29,725+22])
+                ptyext_params =
+                  []
+                ptyext_constructors =
+                  [
+                    extension_constructor (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[29,725+26]..[29,725+27])
+                      pext_name = "A"
+                      pext_kind =
+                        Pext_decl
+                          []
+                          None
+                  ]
+                ptyext_private = Public
+          ]
+  structure_item (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[30,792+0]..[44,1279+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[30,792+9]..[44,1279+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-modules/extension_constructors_errors_test.ml[30,792+9]..[44,1279+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 34-64:\n1 | module M1 : sig type t += A end = struct type t += private A end;;\n                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError: Signature mismatch:\n       Modules do not match:\n         sig type t += private A end\n       is not included in\n         sig type t += A end\n       Extension declarations do not match:\n         type t += private A\n       is not included in\n         type t += A\n       A private type would be revealed.\n",(testsuite/tests/typing-modules/extension_constructors_errors_test.ml[30,792+11]..[44,1279+0]),Some "")
+    ]
+]
+

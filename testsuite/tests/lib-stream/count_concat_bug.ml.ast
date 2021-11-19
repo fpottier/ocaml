@@ -1,0 +1,1090 @@
+[
+  structure_item (testsuite/tests/lib-stream/count_concat_bug.ml[5,31+0]..[6,48+55])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-stream/count_concat_bug.ml[5,31+4]..[5,31+12])
+          Ppat_var "is_empty" (testsuite/tests/lib-stream/count_concat_bug.ml[5,31+4]..[5,31+12])
+        expression (testsuite/tests/lib-stream/count_concat_bug.ml[5,31+13]..[6,48+55]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-stream/count_concat_bug.ml[5,31+13]..[5,31+14])
+            Ppat_var "s" (testsuite/tests/lib-stream/count_concat_bug.ml[5,31+13]..[5,31+14])
+          expression (testsuite/tests/lib-stream/count_concat_bug.ml[6,48+2]..[6,48+55])
+            Pexp_try
+            expression (testsuite/tests/lib-stream/count_concat_bug.ml[6,48+6]..[6,48+26])
+              Pexp_sequence
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[6,48+6]..[6,48+20])
+                Pexp_apply
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[6,48+6]..[6,48+18])
+                  Pexp_ident "Stream.empty" (testsuite/tests/lib-stream/count_concat_bug.ml[6,48+6]..[6,48+18])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[6,48+19]..[6,48+20])
+                      Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[6,48+19]..[6,48+20])
+                ]
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[6,48+22]..[6,48+26])
+                Pexp_construct "true" (testsuite/tests/lib-stream/count_concat_bug.ml[6,48+22]..[6,48+26])
+                None
+            [
+              <case>
+                pattern (testsuite/tests/lib-stream/count_concat_bug.ml[6,48+32]..[6,48+46])
+                  Ppat_construct "Stream.Failure" (testsuite/tests/lib-stream/count_concat_bug.ml[6,48+32]..[6,48+46])
+                  None
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[6,48+50]..[6,48+55])
+                  Pexp_construct "false" (testsuite/tests/lib-stream/count_concat_bug.ml[6,48+50]..[6,48+55])
+                  None
+            ]
+    ]
+  structure_item (testsuite/tests/lib-stream/count_concat_bug.ml[8,105+0]..[15,332+4])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-stream/count_concat_bug.ml[8,105+4]..[8,105+14])
+          Ppat_var "test_icons" (testsuite/tests/lib-stream/count_concat_bug.ml[8,105+4]..[8,105+14])
+        expression (testsuite/tests/lib-stream/count_concat_bug.ml[9,122+2]..[15,332+4])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (testsuite/tests/lib-stream/count_concat_bug.ml[9,122+6]..[9,122+7])
+                Ppat_var "s" (testsuite/tests/lib-stream/count_concat_bug.ml[9,122+6]..[9,122+7])
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[9,122+10]..[9,122+31])
+                Pexp_apply
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[9,122+10]..[9,122+26])
+                  Pexp_ident "Stream.of_string" (testsuite/tests/lib-stream/count_concat_bug.ml[9,122+10]..[9,122+26])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[9,122+27]..[9,122+31])
+                      Pexp_constant PConst_string("ab",(testsuite/tests/lib-stream/count_concat_bug.ml[9,122+28]..[9,122+30]),None)
+                ]
+          ]
+          expression (testsuite/tests/lib-stream/count_concat_bug.ml[10,157+2]..[15,332+4])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (testsuite/tests/lib-stream/count_concat_bug.ml[10,157+6]..[10,157+7])
+                  Ppat_var "s" (testsuite/tests/lib-stream/count_concat_bug.ml[10,157+6]..[10,157+7])
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[10,157+10]..[10,157+28])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[10,157+10]..[10,157+22])
+                    Pexp_ident "Stream.icons" (testsuite/tests/lib-stream/count_concat_bug.ml[10,157+10]..[10,157+22])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[10,157+23]..[10,157+26])
+                        Pexp_constant PConst_char 63
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[10,157+27]..[10,157+28])
+                        Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[10,157+27]..[10,157+28])
+                  ]
+            ]
+            expression (testsuite/tests/lib-stream/count_concat_bug.ml[11,189+2]..[15,332+4])
+              Pexp_sequence
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[11,189+2]..[11,189+36])
+                Pexp_apply
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[11,189+2]..[11,189+14])
+                  Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[11,189+2]..[11,189+14])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[11,189+15]..[11,189+36])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[11,189+30]..[11,189+31])
+                        Pexp_ident "=" (testsuite/tests/lib-stream/count_concat_bug.ml[11,189+30]..[11,189+31])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[11,189+16]..[11,189+29])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[11,189+16]..[11,189+27])
+                              Pexp_ident "Stream.next" (testsuite/tests/lib-stream/count_concat_bug.ml[11,189+16]..[11,189+27])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-stream/count_concat_bug.ml[11,189+28]..[11,189+29])
+                                  Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[11,189+28]..[11,189+29])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[11,189+32]..[11,189+35])
+                            Pexp_constant PConst_char 63
+                      ]
+                ]
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[12,227+2]..[15,332+4])
+                Pexp_sequence
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[12,227+2]..[12,227+36])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[12,227+2]..[12,227+14])
+                    Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[12,227+2]..[12,227+14])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[12,227+15]..[12,227+36])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[12,227+30]..[12,227+31])
+                          Pexp_ident "=" (testsuite/tests/lib-stream/count_concat_bug.ml[12,227+30]..[12,227+31])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[12,227+16]..[12,227+29])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[12,227+16]..[12,227+27])
+                                Pexp_ident "Stream.next" (testsuite/tests/lib-stream/count_concat_bug.ml[12,227+16]..[12,227+27])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[12,227+28]..[12,227+29])
+                                    Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[12,227+28]..[12,227+29])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[12,227+32]..[12,227+35])
+                              Pexp_constant PConst_char 61
+                        ]
+                  ]
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[13,265+2]..[15,332+4])
+                  Pexp_sequence
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[13,265+2]..[13,265+36])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[13,265+2]..[13,265+14])
+                      Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[13,265+2]..[13,265+14])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[13,265+15]..[13,265+36])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[13,265+30]..[13,265+31])
+                            Pexp_ident "=" (testsuite/tests/lib-stream/count_concat_bug.ml[13,265+30]..[13,265+31])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[13,265+16]..[13,265+29])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-stream/count_concat_bug.ml[13,265+16]..[13,265+27])
+                                  Pexp_ident "Stream.next" (testsuite/tests/lib-stream/count_concat_bug.ml[13,265+16]..[13,265+27])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[13,265+28]..[13,265+29])
+                                      Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[13,265+28]..[13,265+29])
+                                ]
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[13,265+32]..[13,265+35])
+                                Pexp_constant PConst_char 62
+                          ]
+                    ]
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[14,303+2]..[15,332+4])
+                    Pexp_sequence
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[14,303+2]..[14,303+27])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[14,303+2]..[14,303+14])
+                        Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[14,303+2]..[14,303+14])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[14,303+15]..[14,303+27])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[14,303+16]..[14,303+24])
+                              Pexp_ident "is_empty" (testsuite/tests/lib-stream/count_concat_bug.ml[14,303+16]..[14,303+24])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-stream/count_concat_bug.ml[14,303+25]..[14,303+26])
+                                  Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[14,303+25]..[14,303+26])
+                            ]
+                      ]
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[15,332+2]..[15,332+4])
+                      Pexp_construct "()" (testsuite/tests/lib-stream/count_concat_bug.ml[15,332+2]..[15,332+4])
+                      None
+    ]
+  structure_item (testsuite/tests/lib-stream/count_concat_bug.ml[17,338+0]..[24,577+4])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-stream/count_concat_bug.ml[17,338+4]..[17,338+14])
+          Ppat_var "test_lcons" (testsuite/tests/lib-stream/count_concat_bug.ml[17,338+4]..[17,338+14])
+        expression (testsuite/tests/lib-stream/count_concat_bug.ml[18,355+2]..[24,577+4])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (testsuite/tests/lib-stream/count_concat_bug.ml[18,355+6]..[18,355+7])
+                Ppat_var "s" (testsuite/tests/lib-stream/count_concat_bug.ml[18,355+6]..[18,355+7])
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[18,355+10]..[18,355+31])
+                Pexp_apply
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[18,355+10]..[18,355+26])
+                  Pexp_ident "Stream.of_string" (testsuite/tests/lib-stream/count_concat_bug.ml[18,355+10]..[18,355+26])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[18,355+27]..[18,355+31])
+                      Pexp_constant PConst_string("ab",(testsuite/tests/lib-stream/count_concat_bug.ml[18,355+28]..[18,355+30]),None)
+                ]
+          ]
+          expression (testsuite/tests/lib-stream/count_concat_bug.ml[19,390+2]..[24,577+4])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (testsuite/tests/lib-stream/count_concat_bug.ml[19,390+6]..[19,390+7])
+                  Ppat_var "s" (testsuite/tests/lib-stream/count_concat_bug.ml[19,390+6]..[19,390+7])
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[19,390+10]..[19,390+40])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[19,390+10]..[19,390+22])
+                    Pexp_ident "Stream.lcons" (testsuite/tests/lib-stream/count_concat_bug.ml[19,390+10]..[19,390+22])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[19,390+23]..[19,390+38])
+                        Pexp_fun
+                        Nolabel
+                        None
+                        pattern (testsuite/tests/lib-stream/count_concat_bug.ml[19,390+28]..[19,390+30])
+                          Ppat_construct "()" (testsuite/tests/lib-stream/count_concat_bug.ml[19,390+28]..[19,390+30])
+                          None
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[19,390+34]..[19,390+37])
+                          Pexp_constant PConst_char 63
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[19,390+39]..[19,390+40])
+                        Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[19,390+39]..[19,390+40])
+                  ]
+            ]
+            expression (testsuite/tests/lib-stream/count_concat_bug.ml[20,434+2]..[24,577+4])
+              Pexp_sequence
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[20,434+2]..[20,434+36])
+                Pexp_apply
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[20,434+2]..[20,434+14])
+                  Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[20,434+2]..[20,434+14])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[20,434+15]..[20,434+36])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[20,434+30]..[20,434+31])
+                        Pexp_ident "=" (testsuite/tests/lib-stream/count_concat_bug.ml[20,434+30]..[20,434+31])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[20,434+16]..[20,434+29])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[20,434+16]..[20,434+27])
+                              Pexp_ident "Stream.next" (testsuite/tests/lib-stream/count_concat_bug.ml[20,434+16]..[20,434+27])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-stream/count_concat_bug.ml[20,434+28]..[20,434+29])
+                                  Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[20,434+28]..[20,434+29])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[20,434+32]..[20,434+35])
+                            Pexp_constant PConst_char 63
+                      ]
+                ]
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[21,472+2]..[24,577+4])
+                Pexp_sequence
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[21,472+2]..[21,472+36])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[21,472+2]..[21,472+14])
+                    Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[21,472+2]..[21,472+14])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[21,472+15]..[21,472+36])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[21,472+30]..[21,472+31])
+                          Pexp_ident "=" (testsuite/tests/lib-stream/count_concat_bug.ml[21,472+30]..[21,472+31])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[21,472+16]..[21,472+29])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[21,472+16]..[21,472+27])
+                                Pexp_ident "Stream.next" (testsuite/tests/lib-stream/count_concat_bug.ml[21,472+16]..[21,472+27])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[21,472+28]..[21,472+29])
+                                    Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[21,472+28]..[21,472+29])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[21,472+32]..[21,472+35])
+                              Pexp_constant PConst_char 61
+                        ]
+                  ]
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[22,510+2]..[24,577+4])
+                  Pexp_sequence
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[22,510+2]..[22,510+36])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[22,510+2]..[22,510+14])
+                      Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[22,510+2]..[22,510+14])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[22,510+15]..[22,510+36])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[22,510+30]..[22,510+31])
+                            Pexp_ident "=" (testsuite/tests/lib-stream/count_concat_bug.ml[22,510+30]..[22,510+31])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[22,510+16]..[22,510+29])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-stream/count_concat_bug.ml[22,510+16]..[22,510+27])
+                                  Pexp_ident "Stream.next" (testsuite/tests/lib-stream/count_concat_bug.ml[22,510+16]..[22,510+27])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[22,510+28]..[22,510+29])
+                                      Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[22,510+28]..[22,510+29])
+                                ]
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[22,510+32]..[22,510+35])
+                                Pexp_constant PConst_char 62
+                          ]
+                    ]
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[23,548+2]..[24,577+4])
+                    Pexp_sequence
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[23,548+2]..[23,548+27])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[23,548+2]..[23,548+14])
+                        Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[23,548+2]..[23,548+14])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[23,548+15]..[23,548+27])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[23,548+16]..[23,548+24])
+                              Pexp_ident "is_empty" (testsuite/tests/lib-stream/count_concat_bug.ml[23,548+16]..[23,548+24])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-stream/count_concat_bug.ml[23,548+25]..[23,548+26])
+                                  Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[23,548+25]..[23,548+26])
+                            ]
+                      ]
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[24,577+2]..[24,577+4])
+                      Pexp_construct "()" (testsuite/tests/lib-stream/count_concat_bug.ml[24,577+2]..[24,577+4])
+                      None
+    ]
+  structure_item (testsuite/tests/lib-stream/count_concat_bug.ml[26,583+0]..[33,827+4])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-stream/count_concat_bug.ml[26,583+4]..[26,583+13])
+          Ppat_var "test_iapp" (testsuite/tests/lib-stream/count_concat_bug.ml[26,583+4]..[26,583+13])
+        expression (testsuite/tests/lib-stream/count_concat_bug.ml[27,599+2]..[33,827+4])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (testsuite/tests/lib-stream/count_concat_bug.ml[27,599+6]..[27,599+7])
+                Ppat_var "s" (testsuite/tests/lib-stream/count_concat_bug.ml[27,599+6]..[27,599+7])
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[27,599+10]..[27,599+31])
+                Pexp_apply
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[27,599+10]..[27,599+26])
+                  Pexp_ident "Stream.of_string" (testsuite/tests/lib-stream/count_concat_bug.ml[27,599+10]..[27,599+26])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[27,599+27]..[27,599+31])
+                      Pexp_constant PConst_string("ab",(testsuite/tests/lib-stream/count_concat_bug.ml[27,599+28]..[27,599+30]),None)
+                ]
+          ]
+          expression (testsuite/tests/lib-stream/count_concat_bug.ml[28,634+2]..[33,827+4])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (testsuite/tests/lib-stream/count_concat_bug.ml[28,634+6]..[28,634+7])
+                  Ppat_var "s" (testsuite/tests/lib-stream/count_concat_bug.ml[28,634+6]..[28,634+7])
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[28,634+10]..[28,634+46])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[28,634+10]..[28,634+21])
+                    Pexp_ident "Stream.iapp" (testsuite/tests/lib-stream/count_concat_bug.ml[28,634+10]..[28,634+21])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[28,634+22]..[28,634+44])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[28,634+23]..[28,634+37])
+                          Pexp_ident "Stream.of_list" (testsuite/tests/lib-stream/count_concat_bug.ml[28,634+23]..[28,634+37])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[28,634+38]..[28,634+43])
+                              Pexp_construct "::" (testsuite/tests/lib-stream/count_concat_bug.ml[28,634+39]..[28,634+43]) ghost
+                              Some
+                                expression (testsuite/tests/lib-stream/count_concat_bug.ml[28,634+39]..[28,634+43]) ghost
+                                  Pexp_tuple
+                                  [
+                                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[28,634+39]..[28,634+42])
+                                      Pexp_constant PConst_char 63
+                                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[28,634+42]..[28,634+43]) ghost
+                                      Pexp_construct "[]" (testsuite/tests/lib-stream/count_concat_bug.ml[28,634+42]..[28,634+43]) ghost
+                                      None
+                                  ]
+                        ]
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[28,634+45]..[28,634+46])
+                        Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[28,634+45]..[28,634+46])
+                  ]
+            ]
+            expression (testsuite/tests/lib-stream/count_concat_bug.ml[29,684+2]..[33,827+4])
+              Pexp_sequence
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[29,684+2]..[29,684+36])
+                Pexp_apply
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[29,684+2]..[29,684+14])
+                  Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[29,684+2]..[29,684+14])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[29,684+15]..[29,684+36])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[29,684+30]..[29,684+31])
+                        Pexp_ident "=" (testsuite/tests/lib-stream/count_concat_bug.ml[29,684+30]..[29,684+31])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[29,684+16]..[29,684+29])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[29,684+16]..[29,684+27])
+                              Pexp_ident "Stream.next" (testsuite/tests/lib-stream/count_concat_bug.ml[29,684+16]..[29,684+27])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-stream/count_concat_bug.ml[29,684+28]..[29,684+29])
+                                  Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[29,684+28]..[29,684+29])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[29,684+32]..[29,684+35])
+                            Pexp_constant PConst_char 63
+                      ]
+                ]
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[30,722+2]..[33,827+4])
+                Pexp_sequence
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[30,722+2]..[30,722+36])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[30,722+2]..[30,722+14])
+                    Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[30,722+2]..[30,722+14])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[30,722+15]..[30,722+36])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[30,722+30]..[30,722+31])
+                          Pexp_ident "=" (testsuite/tests/lib-stream/count_concat_bug.ml[30,722+30]..[30,722+31])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[30,722+16]..[30,722+29])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[30,722+16]..[30,722+27])
+                                Pexp_ident "Stream.next" (testsuite/tests/lib-stream/count_concat_bug.ml[30,722+16]..[30,722+27])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[30,722+28]..[30,722+29])
+                                    Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[30,722+28]..[30,722+29])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[30,722+32]..[30,722+35])
+                              Pexp_constant PConst_char 61
+                        ]
+                  ]
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[31,760+2]..[33,827+4])
+                  Pexp_sequence
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[31,760+2]..[31,760+36])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[31,760+2]..[31,760+14])
+                      Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[31,760+2]..[31,760+14])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[31,760+15]..[31,760+36])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[31,760+30]..[31,760+31])
+                            Pexp_ident "=" (testsuite/tests/lib-stream/count_concat_bug.ml[31,760+30]..[31,760+31])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[31,760+16]..[31,760+29])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-stream/count_concat_bug.ml[31,760+16]..[31,760+27])
+                                  Pexp_ident "Stream.next" (testsuite/tests/lib-stream/count_concat_bug.ml[31,760+16]..[31,760+27])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[31,760+28]..[31,760+29])
+                                      Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[31,760+28]..[31,760+29])
+                                ]
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[31,760+32]..[31,760+35])
+                                Pexp_constant PConst_char 62
+                          ]
+                    ]
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[32,798+2]..[33,827+4])
+                    Pexp_sequence
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[32,798+2]..[32,798+27])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[32,798+2]..[32,798+14])
+                        Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[32,798+2]..[32,798+14])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[32,798+15]..[32,798+27])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[32,798+16]..[32,798+24])
+                              Pexp_ident "is_empty" (testsuite/tests/lib-stream/count_concat_bug.ml[32,798+16]..[32,798+24])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-stream/count_concat_bug.ml[32,798+25]..[32,798+26])
+                                  Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[32,798+25]..[32,798+26])
+                            ]
+                      ]
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[33,827+2]..[33,827+4])
+                      Pexp_construct "()" (testsuite/tests/lib-stream/count_concat_bug.ml[33,827+2]..[33,827+4])
+                      None
+    ]
+  structure_item (testsuite/tests/lib-stream/count_concat_bug.ml[35,833+0]..[43,1112+4])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-stream/count_concat_bug.ml[35,833+4]..[35,833+19])
+          Ppat_var "test_lapp_right" (testsuite/tests/lib-stream/count_concat_bug.ml[35,833+4]..[35,833+19])
+        expression (testsuite/tests/lib-stream/count_concat_bug.ml[36,855+2]..[43,1112+4])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (testsuite/tests/lib-stream/count_concat_bug.ml[36,855+6]..[36,855+8])
+                Ppat_var "s1" (testsuite/tests/lib-stream/count_concat_bug.ml[36,855+6]..[36,855+8])
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[36,855+11]..[36,855+31])
+                Pexp_apply
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[36,855+11]..[36,855+25])
+                  Pexp_ident "Stream.of_list" (testsuite/tests/lib-stream/count_concat_bug.ml[36,855+11]..[36,855+25])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[36,855+26]..[36,855+31])
+                      Pexp_construct "::" (testsuite/tests/lib-stream/count_concat_bug.ml[36,855+27]..[36,855+31]) ghost
+                      Some
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[36,855+27]..[36,855+31]) ghost
+                          Pexp_tuple
+                          [
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[36,855+27]..[36,855+30])
+                              Pexp_constant PConst_char 63
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[36,855+30]..[36,855+31]) ghost
+                              Pexp_construct "[]" (testsuite/tests/lib-stream/count_concat_bug.ml[36,855+30]..[36,855+31]) ghost
+                              None
+                          ]
+                ]
+          ]
+          expression (testsuite/tests/lib-stream/count_concat_bug.ml[37,890+2]..[43,1112+4])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (testsuite/tests/lib-stream/count_concat_bug.ml[37,890+6]..[37,890+8])
+                  Ppat_var "s2" (testsuite/tests/lib-stream/count_concat_bug.ml[37,890+6]..[37,890+8])
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[37,890+11]..[37,890+32])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[37,890+11]..[37,890+27])
+                    Pexp_ident "Stream.of_string" (testsuite/tests/lib-stream/count_concat_bug.ml[37,890+11]..[37,890+27])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[37,890+28]..[37,890+32])
+                        Pexp_constant PConst_string("ab",(testsuite/tests/lib-stream/count_concat_bug.ml[37,890+29]..[37,890+31]),None)
+                  ]
+            ]
+            expression (testsuite/tests/lib-stream/count_concat_bug.ml[38,926+2]..[43,1112+4])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (testsuite/tests/lib-stream/count_concat_bug.ml[38,926+6]..[38,926+7])
+                    Ppat_var "s" (testsuite/tests/lib-stream/count_concat_bug.ml[38,926+6]..[38,926+7])
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[38,926+10]..[38,926+39])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[38,926+10]..[38,926+21])
+                      Pexp_ident "Stream.lapp" (testsuite/tests/lib-stream/count_concat_bug.ml[38,926+10]..[38,926+21])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[38,926+22]..[38,926+36])
+                          Pexp_fun
+                          Nolabel
+                          None
+                          pattern (testsuite/tests/lib-stream/count_concat_bug.ml[38,926+27]..[38,926+29])
+                            Ppat_construct "()" (testsuite/tests/lib-stream/count_concat_bug.ml[38,926+27]..[38,926+29])
+                            None
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[38,926+33]..[38,926+35])
+                            Pexp_ident "s1" (testsuite/tests/lib-stream/count_concat_bug.ml[38,926+33]..[38,926+35])
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[38,926+37]..[38,926+39])
+                          Pexp_ident "s2" (testsuite/tests/lib-stream/count_concat_bug.ml[38,926+37]..[38,926+39])
+                    ]
+              ]
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[39,969+2]..[43,1112+4])
+                Pexp_sequence
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[39,969+2]..[39,969+36])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[39,969+2]..[39,969+14])
+                    Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[39,969+2]..[39,969+14])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[39,969+15]..[39,969+36])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[39,969+30]..[39,969+31])
+                          Pexp_ident "=" (testsuite/tests/lib-stream/count_concat_bug.ml[39,969+30]..[39,969+31])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[39,969+16]..[39,969+29])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[39,969+16]..[39,969+27])
+                                Pexp_ident "Stream.next" (testsuite/tests/lib-stream/count_concat_bug.ml[39,969+16]..[39,969+27])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[39,969+28]..[39,969+29])
+                                    Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[39,969+28]..[39,969+29])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[39,969+32]..[39,969+35])
+                              Pexp_constant PConst_char 63
+                        ]
+                  ]
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[40,1007+2]..[43,1112+4])
+                  Pexp_sequence
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[40,1007+2]..[40,1007+36])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[40,1007+2]..[40,1007+14])
+                      Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[40,1007+2]..[40,1007+14])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[40,1007+15]..[40,1007+36])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[40,1007+30]..[40,1007+31])
+                            Pexp_ident "=" (testsuite/tests/lib-stream/count_concat_bug.ml[40,1007+30]..[40,1007+31])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[40,1007+16]..[40,1007+29])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-stream/count_concat_bug.ml[40,1007+16]..[40,1007+27])
+                                  Pexp_ident "Stream.next" (testsuite/tests/lib-stream/count_concat_bug.ml[40,1007+16]..[40,1007+27])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[40,1007+28]..[40,1007+29])
+                                      Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[40,1007+28]..[40,1007+29])
+                                ]
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[40,1007+32]..[40,1007+35])
+                                Pexp_constant PConst_char 61
+                          ]
+                    ]
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[41,1045+2]..[43,1112+4])
+                    Pexp_sequence
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[41,1045+2]..[41,1045+36])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[41,1045+2]..[41,1045+14])
+                        Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[41,1045+2]..[41,1045+14])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[41,1045+15]..[41,1045+36])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[41,1045+30]..[41,1045+31])
+                              Pexp_ident "=" (testsuite/tests/lib-stream/count_concat_bug.ml[41,1045+30]..[41,1045+31])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-stream/count_concat_bug.ml[41,1045+16]..[41,1045+29])
+                                  Pexp_apply
+                                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[41,1045+16]..[41,1045+27])
+                                    Pexp_ident "Stream.next" (testsuite/tests/lib-stream/count_concat_bug.ml[41,1045+16]..[41,1045+27])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[41,1045+28]..[41,1045+29])
+                                        Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[41,1045+28]..[41,1045+29])
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-stream/count_concat_bug.ml[41,1045+32]..[41,1045+35])
+                                  Pexp_constant PConst_char 62
+                            ]
+                      ]
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[42,1083+2]..[43,1112+4])
+                      Pexp_sequence
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[42,1083+2]..[42,1083+27])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[42,1083+2]..[42,1083+14])
+                          Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[42,1083+2]..[42,1083+14])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[42,1083+15]..[42,1083+27])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[42,1083+16]..[42,1083+24])
+                                Pexp_ident "is_empty" (testsuite/tests/lib-stream/count_concat_bug.ml[42,1083+16]..[42,1083+24])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[42,1083+25]..[42,1083+26])
+                                    Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[42,1083+25]..[42,1083+26])
+                              ]
+                        ]
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[43,1112+2]..[43,1112+4])
+                        Pexp_construct "()" (testsuite/tests/lib-stream/count_concat_bug.ml[43,1112+2]..[43,1112+4])
+                        None
+    ]
+  structure_item (testsuite/tests/lib-stream/count_concat_bug.ml[45,1118+0]..[53,1397+4])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-stream/count_concat_bug.ml[45,1118+4]..[45,1118+18])
+          Ppat_var "test_lapp_left" (testsuite/tests/lib-stream/count_concat_bug.ml[45,1118+4]..[45,1118+18])
+        expression (testsuite/tests/lib-stream/count_concat_bug.ml[46,1139+2]..[53,1397+4])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (testsuite/tests/lib-stream/count_concat_bug.ml[46,1139+6]..[46,1139+8])
+                Ppat_var "s1" (testsuite/tests/lib-stream/count_concat_bug.ml[46,1139+6]..[46,1139+8])
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[46,1139+11]..[46,1139+32])
+                Pexp_apply
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[46,1139+11]..[46,1139+27])
+                  Pexp_ident "Stream.of_string" (testsuite/tests/lib-stream/count_concat_bug.ml[46,1139+11]..[46,1139+27])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[46,1139+28]..[46,1139+32])
+                      Pexp_constant PConst_string("bc",(testsuite/tests/lib-stream/count_concat_bug.ml[46,1139+29]..[46,1139+31]),None)
+                ]
+          ]
+          expression (testsuite/tests/lib-stream/count_concat_bug.ml[47,1175+2]..[53,1397+4])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (testsuite/tests/lib-stream/count_concat_bug.ml[47,1175+6]..[47,1175+8])
+                  Ppat_var "s2" (testsuite/tests/lib-stream/count_concat_bug.ml[47,1175+6]..[47,1175+8])
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[47,1175+11]..[47,1175+31])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[47,1175+11]..[47,1175+25])
+                    Pexp_ident "Stream.of_list" (testsuite/tests/lib-stream/count_concat_bug.ml[47,1175+11]..[47,1175+25])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[47,1175+26]..[47,1175+31])
+                        Pexp_construct "::" (testsuite/tests/lib-stream/count_concat_bug.ml[47,1175+27]..[47,1175+31]) ghost
+                        Some
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[47,1175+27]..[47,1175+31]) ghost
+                            Pexp_tuple
+                            [
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[47,1175+27]..[47,1175+30])
+                                Pexp_constant PConst_char 61
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[47,1175+30]..[47,1175+31]) ghost
+                                Pexp_construct "[]" (testsuite/tests/lib-stream/count_concat_bug.ml[47,1175+30]..[47,1175+31]) ghost
+                                None
+                            ]
+                  ]
+            ]
+            expression (testsuite/tests/lib-stream/count_concat_bug.ml[48,1210+2]..[53,1397+4])
+              Pexp_sequence
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[48,1210+2]..[48,1210+37])
+                Pexp_apply
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[48,1210+2]..[48,1210+14])
+                  Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[48,1210+2]..[48,1210+14])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[48,1210+15]..[48,1210+37])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[48,1210+31]..[48,1210+32])
+                        Pexp_ident "=" (testsuite/tests/lib-stream/count_concat_bug.ml[48,1210+31]..[48,1210+32])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[48,1210+16]..[48,1210+30])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[48,1210+16]..[48,1210+27])
+                              Pexp_ident "Stream.next" (testsuite/tests/lib-stream/count_concat_bug.ml[48,1210+16]..[48,1210+27])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-stream/count_concat_bug.ml[48,1210+28]..[48,1210+30])
+                                  Pexp_ident "s1" (testsuite/tests/lib-stream/count_concat_bug.ml[48,1210+28]..[48,1210+30])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[48,1210+33]..[48,1210+36])
+                            Pexp_constant PConst_char 62
+                      ]
+                ]
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[49,1249+2]..[53,1397+4])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (testsuite/tests/lib-stream/count_concat_bug.ml[49,1249+6]..[49,1249+7])
+                      Ppat_var "s" (testsuite/tests/lib-stream/count_concat_bug.ml[49,1249+6]..[49,1249+7])
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[49,1249+10]..[49,1249+39])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[49,1249+10]..[49,1249+21])
+                        Pexp_ident "Stream.lapp" (testsuite/tests/lib-stream/count_concat_bug.ml[49,1249+10]..[49,1249+21])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[49,1249+22]..[49,1249+36])
+                            Pexp_fun
+                            Nolabel
+                            None
+                            pattern (testsuite/tests/lib-stream/count_concat_bug.ml[49,1249+27]..[49,1249+29])
+                              Ppat_construct "()" (testsuite/tests/lib-stream/count_concat_bug.ml[49,1249+27]..[49,1249+29])
+                              None
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[49,1249+33]..[49,1249+35])
+                              Pexp_ident "s1" (testsuite/tests/lib-stream/count_concat_bug.ml[49,1249+33]..[49,1249+35])
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[49,1249+37]..[49,1249+39])
+                            Pexp_ident "s2" (testsuite/tests/lib-stream/count_concat_bug.ml[49,1249+37]..[49,1249+39])
+                      ]
+                ]
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[50,1292+2]..[53,1397+4])
+                  Pexp_sequence
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[50,1292+2]..[50,1292+36])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[50,1292+2]..[50,1292+14])
+                      Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[50,1292+2]..[50,1292+14])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[50,1292+15]..[50,1292+36])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[50,1292+30]..[50,1292+31])
+                            Pexp_ident "=" (testsuite/tests/lib-stream/count_concat_bug.ml[50,1292+30]..[50,1292+31])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[50,1292+16]..[50,1292+29])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-stream/count_concat_bug.ml[50,1292+16]..[50,1292+27])
+                                  Pexp_ident "Stream.next" (testsuite/tests/lib-stream/count_concat_bug.ml[50,1292+16]..[50,1292+27])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[50,1292+28]..[50,1292+29])
+                                      Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[50,1292+28]..[50,1292+29])
+                                ]
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[50,1292+32]..[50,1292+35])
+                                Pexp_constant PConst_char 63
+                          ]
+                    ]
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[51,1330+2]..[53,1397+4])
+                    Pexp_sequence
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[51,1330+2]..[51,1330+36])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[51,1330+2]..[51,1330+14])
+                        Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[51,1330+2]..[51,1330+14])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[51,1330+15]..[51,1330+36])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[51,1330+30]..[51,1330+31])
+                              Pexp_ident "=" (testsuite/tests/lib-stream/count_concat_bug.ml[51,1330+30]..[51,1330+31])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-stream/count_concat_bug.ml[51,1330+16]..[51,1330+29])
+                                  Pexp_apply
+                                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[51,1330+16]..[51,1330+27])
+                                    Pexp_ident "Stream.next" (testsuite/tests/lib-stream/count_concat_bug.ml[51,1330+16]..[51,1330+27])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[51,1330+28]..[51,1330+29])
+                                        Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[51,1330+28]..[51,1330+29])
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-stream/count_concat_bug.ml[51,1330+32]..[51,1330+35])
+                                  Pexp_constant PConst_char 61
+                            ]
+                      ]
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[52,1368+2]..[53,1397+4])
+                      Pexp_sequence
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[52,1368+2]..[52,1368+27])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[52,1368+2]..[52,1368+14])
+                          Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[52,1368+2]..[52,1368+14])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[52,1368+15]..[52,1368+27])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[52,1368+16]..[52,1368+24])
+                                Pexp_ident "is_empty" (testsuite/tests/lib-stream/count_concat_bug.ml[52,1368+16]..[52,1368+24])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[52,1368+25]..[52,1368+26])
+                                    Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[52,1368+25]..[52,1368+26])
+                              ]
+                        ]
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[53,1397+2]..[53,1397+4])
+                        Pexp_construct "()" (testsuite/tests/lib-stream/count_concat_bug.ml[53,1397+2]..[53,1397+4])
+                        None
+    ]
+  structure_item (testsuite/tests/lib-stream/count_concat_bug.ml[55,1403+0]..[61,1600+4])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-stream/count_concat_bug.ml[55,1403+4]..[55,1403+14])
+          Ppat_var "test_slazy" (testsuite/tests/lib-stream/count_concat_bug.ml[55,1403+4]..[55,1403+14])
+        expression (testsuite/tests/lib-stream/count_concat_bug.ml[56,1420+2]..[61,1600+4])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (testsuite/tests/lib-stream/count_concat_bug.ml[56,1420+6]..[56,1420+7])
+                Ppat_var "s" (testsuite/tests/lib-stream/count_concat_bug.ml[56,1420+6]..[56,1420+7])
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[56,1420+10]..[56,1420+31])
+                Pexp_apply
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[56,1420+10]..[56,1420+26])
+                  Pexp_ident "Stream.of_string" (testsuite/tests/lib-stream/count_concat_bug.ml[56,1420+10]..[56,1420+26])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[56,1420+27]..[56,1420+31])
+                      Pexp_constant PConst_string("ab",(testsuite/tests/lib-stream/count_concat_bug.ml[56,1420+28]..[56,1420+30]),None)
+                ]
+          ]
+          expression (testsuite/tests/lib-stream/count_concat_bug.ml[57,1455+2]..[61,1600+4])
+            Pexp_sequence
+            expression (testsuite/tests/lib-stream/count_concat_bug.ml[57,1455+2]..[57,1455+36])
+              Pexp_apply
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[57,1455+2]..[57,1455+14])
+                Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[57,1455+2]..[57,1455+14])
+              [
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[57,1455+15]..[57,1455+36])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[57,1455+30]..[57,1455+31])
+                      Pexp_ident "=" (testsuite/tests/lib-stream/count_concat_bug.ml[57,1455+30]..[57,1455+31])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[57,1455+16]..[57,1455+29])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[57,1455+16]..[57,1455+27])
+                            Pexp_ident "Stream.next" (testsuite/tests/lib-stream/count_concat_bug.ml[57,1455+16]..[57,1455+27])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[57,1455+28]..[57,1455+29])
+                                Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[57,1455+28]..[57,1455+29])
+                          ]
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[57,1455+32]..[57,1455+35])
+                          Pexp_constant PConst_char 61
+                    ]
+              ]
+            expression (testsuite/tests/lib-stream/count_concat_bug.ml[58,1493+2]..[61,1600+4])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (testsuite/tests/lib-stream/count_concat_bug.ml[58,1493+6]..[58,1493+7])
+                    Ppat_var "s" (testsuite/tests/lib-stream/count_concat_bug.ml[58,1493+6]..[58,1493+7])
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[58,1493+10]..[58,1493+36])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[58,1493+10]..[58,1493+22])
+                      Pexp_ident "Stream.slazy" (testsuite/tests/lib-stream/count_concat_bug.ml[58,1493+10]..[58,1493+22])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[58,1493+23]..[58,1493+36])
+                          Pexp_fun
+                          Nolabel
+                          None
+                          pattern (testsuite/tests/lib-stream/count_concat_bug.ml[58,1493+28]..[58,1493+30])
+                            Ppat_construct "()" (testsuite/tests/lib-stream/count_concat_bug.ml[58,1493+28]..[58,1493+30])
+                            None
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[58,1493+34]..[58,1493+35])
+                            Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[58,1493+34]..[58,1493+35])
+                    ]
+              ]
+              expression (testsuite/tests/lib-stream/count_concat_bug.ml[59,1533+2]..[61,1600+4])
+                Pexp_sequence
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[59,1533+2]..[59,1533+36])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[59,1533+2]..[59,1533+14])
+                    Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[59,1533+2]..[59,1533+14])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-stream/count_concat_bug.ml[59,1533+15]..[59,1533+36])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[59,1533+30]..[59,1533+31])
+                          Pexp_ident "=" (testsuite/tests/lib-stream/count_concat_bug.ml[59,1533+30]..[59,1533+31])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[59,1533+16]..[59,1533+29])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[59,1533+16]..[59,1533+27])
+                                Pexp_ident "Stream.next" (testsuite/tests/lib-stream/count_concat_bug.ml[59,1533+16]..[59,1533+27])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[59,1533+28]..[59,1533+29])
+                                    Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[59,1533+28]..[59,1533+29])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-stream/count_concat_bug.ml[59,1533+32]..[59,1533+35])
+                              Pexp_constant PConst_char 62
+                        ]
+                  ]
+                expression (testsuite/tests/lib-stream/count_concat_bug.ml[60,1571+2]..[61,1600+4])
+                  Pexp_sequence
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[60,1571+2]..[60,1571+27])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-stream/count_concat_bug.ml[60,1571+2]..[60,1571+14])
+                      Pexp_ident "Testing.test" (testsuite/tests/lib-stream/count_concat_bug.ml[60,1571+2]..[60,1571+14])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-stream/count_concat_bug.ml[60,1571+15]..[60,1571+27])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-stream/count_concat_bug.ml[60,1571+16]..[60,1571+24])
+                            Pexp_ident "is_empty" (testsuite/tests/lib-stream/count_concat_bug.ml[60,1571+16]..[60,1571+24])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-stream/count_concat_bug.ml[60,1571+25]..[60,1571+26])
+                                Pexp_ident "s" (testsuite/tests/lib-stream/count_concat_bug.ml[60,1571+25]..[60,1571+26])
+                          ]
+                    ]
+                  expression (testsuite/tests/lib-stream/count_concat_bug.ml[61,1600+2]..[61,1600+4])
+                    Pexp_construct "()" (testsuite/tests/lib-stream/count_concat_bug.ml[61,1600+2]..[61,1600+4])
+                    None
+    ]
+]
+

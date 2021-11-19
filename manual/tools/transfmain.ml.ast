@@ -1,0 +1,144 @@
+[
+  structure_item (manual/tools/transfmain.ml[1,0+0]..[6,172+8])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (manual/tools/transfmain.ml[1,0+4]..[1,0+8])
+          Ppat_var "main" (manual/tools/transfmain.ml[1,0+4]..[1,0+8])
+        expression (manual/tools/transfmain.ml[1,0+8]..[6,172+8]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (manual/tools/transfmain.ml[1,0+8]..[1,0+10])
+            Ppat_construct "()" (manual/tools/transfmain.ml[1,0+8]..[1,0+10])
+            None
+          expression (manual/tools/transfmain.ml[2,13+2]..[6,172+8])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (manual/tools/transfmain.ml[2,13+6]..[2,13+12])
+                  Ppat_var "lexbuf" (manual/tools/transfmain.ml[2,13+6]..[2,13+12])
+                expression (manual/tools/transfmain.ml[2,13+15]..[2,13+40])
+                  Pexp_apply
+                  expression (manual/tools/transfmain.ml[2,13+15]..[2,13+34])
+                    Pexp_ident "Lexing.from_channel" (manual/tools/transfmain.ml[2,13+15]..[2,13+34])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (manual/tools/transfmain.ml[2,13+35]..[2,13+40])
+                        Pexp_ident "stdin" (manual/tools/transfmain.ml[2,13+35]..[2,13+40])
+                  ]
+            ]
+            expression (manual/tools/transfmain.ml[3,57+2]..[6,172+8])
+              Pexp_sequence
+              expression (manual/tools/transfmain.ml[3,57+2]..[5,145+25])
+                Pexp_ifthenelse
+                expression (manual/tools/transfmain.ml[3,57+5]..[3,57+57])
+                  Pexp_apply
+                  expression (manual/tools/transfmain.ml[3,57+32]..[3,57+34])
+                    Pexp_ident "&&" (manual/tools/transfmain.ml[3,57+32]..[3,57+34])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (manual/tools/transfmain.ml[3,57+5]..[3,57+31])
+                        Pexp_apply
+                        expression (manual/tools/transfmain.ml[3,57+27]..[3,57+29])
+                          Pexp_ident ">=" (manual/tools/transfmain.ml[3,57+27]..[3,57+29])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (manual/tools/transfmain.ml[3,57+5]..[3,57+26])
+                              Pexp_apply
+                              expression (manual/tools/transfmain.ml[3,57+5]..[3,57+17])
+                                Pexp_ident "Array.length" (manual/tools/transfmain.ml[3,57+5]..[3,57+17])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (manual/tools/transfmain.ml[3,57+18]..[3,57+26])
+                                    Pexp_ident "Sys.argv" (manual/tools/transfmain.ml[3,57+18]..[3,57+26])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (manual/tools/transfmain.ml[3,57+30]..[3,57+31])
+                              Pexp_constant PConst_int (2,None)
+                        ]
+                    <arg>
+                    Nolabel
+                      expression (manual/tools/transfmain.ml[3,57+35]..[3,57+57])
+                        Pexp_apply
+                        expression (manual/tools/transfmain.ml[3,57+48]..[3,57+49])
+                          Pexp_ident "=" (manual/tools/transfmain.ml[3,57+48]..[3,57+49])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (manual/tools/transfmain.ml[3,57+35]..[3,57+47])
+                              Pexp_apply
+                              expression (manual/tools/transfmain.ml[3,57+35]..[3,57+47]) ghost
+                                Pexp_ident "Array.get" (manual/tools/transfmain.ml[3,57+35]..[3,57+47]) ghost
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (manual/tools/transfmain.ml[3,57+35]..[3,57+43])
+                                    Pexp_ident "Sys.argv" (manual/tools/transfmain.ml[3,57+35]..[3,57+43])
+                                <arg>
+                                Nolabel
+                                  expression (manual/tools/transfmain.ml[3,57+45]..[3,57+46])
+                                    Pexp_constant PConst_int (1,None)
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (manual/tools/transfmain.ml[3,57+50]..[3,57+57])
+                              Pexp_constant PConst_string("-html",(manual/tools/transfmain.ml[3,57+51]..[3,57+56]),None)
+                        ]
+                  ]
+                expression (manual/tools/transfmain.ml[4,115+7]..[4,115+29])
+                  Pexp_apply
+                  expression (manual/tools/transfmain.ml[4,115+7]..[4,115+22])
+                    Pexp_ident "Htmltransf.main" (manual/tools/transfmain.ml[4,115+7]..[4,115+22])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (manual/tools/transfmain.ml[4,115+23]..[4,115+29])
+                        Pexp_ident "lexbuf" (manual/tools/transfmain.ml[4,115+23]..[4,115+29])
+                  ]
+                Some
+                  expression (manual/tools/transfmain.ml[5,145+7]..[5,145+25])
+                    Pexp_apply
+                    expression (manual/tools/transfmain.ml[5,145+7]..[5,145+18])
+                      Pexp_ident "Transf.main" (manual/tools/transfmain.ml[5,145+7]..[5,145+18])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (manual/tools/transfmain.ml[5,145+19]..[5,145+25])
+                          Pexp_ident "lexbuf" (manual/tools/transfmain.ml[5,145+19]..[5,145+25])
+                    ]
+              expression (manual/tools/transfmain.ml[6,172+2]..[6,172+8])
+                Pexp_apply
+                expression (manual/tools/transfmain.ml[6,172+2]..[6,172+6])
+                  Pexp_ident "exit" (manual/tools/transfmain.ml[6,172+2]..[6,172+6])
+                [
+                  <arg>
+                  Nolabel
+                    expression (manual/tools/transfmain.ml[6,172+7]..[6,172+8])
+                      Pexp_constant PConst_int (0,None)
+                ]
+    ]
+  structure_item (manual/tools/transfmain.ml[8,184+0]..[8,184+22])
+    Pstr_eval
+    expression (manual/tools/transfmain.ml[8,184+0]..[8,184+22])
+      Pexp_apply
+      expression (manual/tools/transfmain.ml[8,184+0]..[8,184+14])
+        Pexp_ident "Printexc.print" (manual/tools/transfmain.ml[8,184+0]..[8,184+14])
+      [
+        <arg>
+        Nolabel
+          expression (manual/tools/transfmain.ml[8,184+15]..[8,184+19])
+            Pexp_ident "main" (manual/tools/transfmain.ml[8,184+15]..[8,184+19])
+        <arg>
+        Nolabel
+          expression (manual/tools/transfmain.ml[8,184+20]..[8,184+22])
+            Pexp_construct "()" (manual/tools/transfmain.ml[8,184+20]..[8,184+22])
+            None
+      ]
+]
+

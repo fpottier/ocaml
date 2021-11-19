@@ -1,0 +1,268 @@
+[
+  structure_item (testsuite/tests/lib-unix/unix-execvpe/exec.ml[10,141+0]..[10,141+11])
+    Pstr_open Fresh
+    module_expr (testsuite/tests/lib-unix/unix-execvpe/exec.ml[10,141+5]..[10,141+11])
+      Pmod_ident "Printf" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[10,141+5]..[10,141+11])
+  structure_item (testsuite/tests/lib-unix/unix-execvpe/exec.ml[12,154+0]..[24,633+12])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/unix-execvpe/exec.ml[12,154+4]..[12,154+5])
+          Ppat_any
+        expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[13,162+2]..[24,633+12])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (testsuite/tests/lib-unix/unix-execvpe/exec.ml[13,162+6]..[13,162+9])
+                Ppat_var "arg" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[13,162+6]..[13,162+9])
+              expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[13,162+12]..[13,162+60])
+                Pexp_apply
+                expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[13,162+12]..[13,162+21])
+                  Pexp_ident "Array.sub" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[13,162+12]..[13,162+21])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[13,162+22]..[13,162+30])
+                      Pexp_ident "Sys.argv" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[13,162+22]..[13,162+30])
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[13,162+31]..[13,162+32])
+                      Pexp_constant PConst_int (1,None)
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[13,162+33]..[13,162+60])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[13,162+56]..[13,162+57])
+                        Pexp_ident "-" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[13,162+56]..[13,162+57])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[13,162+34]..[13,162+55])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[13,162+34]..[13,162+46])
+                              Pexp_ident "Array.length" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[13,162+34]..[13,162+46])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[13,162+47]..[13,162+55])
+                                  Pexp_ident "Sys.argv" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[13,162+47]..[13,162+55])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[13,162+58]..[13,162+59])
+                            Pexp_constant PConst_int (1,None)
+                      ]
+                ]
+          ]
+          expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[14,226+2]..[24,633+12])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (testsuite/tests/lib-unix/unix-execvpe/exec.ml[14,226+6]..[14,226+9])
+                  Ppat_var "env" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[14,226+6]..[14,226+9])
+                expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[14,226+12]..[14,226+59])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[14,226+12]..[14,226+24])
+                    Pexp_ident "Array.append" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[14,226+12]..[14,226+24])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[14,226+25]..[14,226+38])
+                        Pexp_array
+                        [
+                          expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[14,226+27]..[14,226+36])
+                            Pexp_constant PConst_string("FOO=foo",(testsuite/tests/lib-unix/unix-execvpe/exec.ml[14,226+28]..[14,226+35]),None)
+                        ]
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[14,226+39]..[14,226+59])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[14,226+40]..[14,226+56])
+                          Pexp_ident "Unix.environment" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[14,226+40]..[14,226+56])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[14,226+56]..[14,226+58])
+                              Pexp_construct "()" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[14,226+56]..[14,226+58])
+                              None
+                        ]
+                  ]
+            ]
+            expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[15,289+2]..[24,633+12])
+              Pexp_try
+              expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[16,295+4]..[16,295+32])
+                Pexp_apply
+                expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[16,295+4]..[16,295+16])
+                  Pexp_ident "Unix.execvpe" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[16,295+4]..[16,295+16])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[16,295+17]..[16,295+24])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[16,295+17]..[16,295+24]) ghost
+                        Pexp_ident "Array.get" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[16,295+17]..[16,295+24]) ghost
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[16,295+17]..[16,295+20])
+                            Pexp_ident "arg" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[16,295+17]..[16,295+20])
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[16,295+22]..[16,295+23])
+                            Pexp_constant PConst_int (0,None)
+                      ]
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[16,295+25]..[16,295+28])
+                      Pexp_ident "arg" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[16,295+25]..[16,295+28])
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[16,295+29]..[16,295+32])
+                      Pexp_ident "env" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[16,295+29]..[16,295+32])
+                ]
+              [
+                <case>
+                  pattern (testsuite/tests/lib-unix/unix-execvpe/exec.ml[18,335+4]..[18,335+40])
+                    Ppat_construct "Unix.Unix_error" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[18,335+4]..[18,335+19])
+                    Some
+                      []
+                      pattern (testsuite/tests/lib-unix/unix-execvpe/exec.ml[18,335+19]..[18,335+40])
+                        Ppat_tuple
+                        [
+                          pattern (testsuite/tests/lib-unix/unix-execvpe/exec.ml[18,335+20]..[18,335+31])
+                            Ppat_construct "Unix.ENOENT" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[18,335+20]..[18,335+31])
+                            None
+                          pattern (testsuite/tests/lib-unix/unix-execvpe/exec.ml[18,335+33]..[18,335+34])
+                            Ppat_any
+                          pattern (testsuite/tests/lib-unix/unix-execvpe/exec.ml[18,335+36]..[18,335+39])
+                            Ppat_var "arg" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[18,335+36]..[18,335+39])
+                        ]
+                  expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[19,379+6]..[19,379+45])
+                    Pexp_sequence
+                    expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[19,379+6]..[19,379+37])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[19,379+6]..[19,379+13])
+                        Pexp_ident "eprintf" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[19,379+6]..[19,379+13])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[19,379+14]..[19,379+33])
+                            Pexp_constant PConst_string("No such file %s\n",(testsuite/tests/lib-unix/unix-execvpe/exec.ml[19,379+15]..[19,379+32]),None)
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[19,379+34]..[19,379+37])
+                            Pexp_ident "arg" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[19,379+34]..[19,379+37])
+                      ]
+                    expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[19,379+39]..[19,379+45])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[19,379+39]..[19,379+43])
+                        Pexp_ident "exit" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[19,379+39]..[19,379+43])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[19,379+44]..[19,379+45])
+                            Pexp_constant PConst_int (2,None)
+                      ]
+                <case>
+                  pattern (testsuite/tests/lib-unix/unix-execvpe/exec.ml[20,425+4]..[20,425+40])
+                    Ppat_construct "Unix.Unix_error" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[20,425+4]..[20,425+19])
+                    Some
+                      []
+                      pattern (testsuite/tests/lib-unix/unix-execvpe/exec.ml[20,425+19]..[20,425+40])
+                        Ppat_tuple
+                        [
+                          pattern (testsuite/tests/lib-unix/unix-execvpe/exec.ml[20,425+20]..[20,425+31])
+                            Ppat_construct "Unix.EACCES" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[20,425+20]..[20,425+31])
+                            None
+                          pattern (testsuite/tests/lib-unix/unix-execvpe/exec.ml[20,425+33]..[20,425+34])
+                            Ppat_any
+                          pattern (testsuite/tests/lib-unix/unix-execvpe/exec.ml[20,425+36]..[20,425+39])
+                            Ppat_var "arg" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[20,425+36]..[20,425+39])
+                        ]
+                  expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[21,469+6]..[21,469+50])
+                    Pexp_sequence
+                    expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[21,469+6]..[21,469+42])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[21,469+6]..[21,469+13])
+                        Pexp_ident "eprintf" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[21,469+6]..[21,469+13])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[21,469+14]..[21,469+38])
+                            Pexp_constant PConst_string("Permission denied %s\n",(testsuite/tests/lib-unix/unix-execvpe/exec.ml[21,469+15]..[21,469+37]),None)
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[21,469+39]..[21,469+42])
+                            Pexp_ident "arg" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[21,469+39]..[21,469+42])
+                      ]
+                    expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[21,469+44]..[21,469+50])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[21,469+44]..[21,469+48])
+                        Pexp_ident "exit" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[21,469+44]..[21,469+48])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[21,469+49]..[21,469+50])
+                            Pexp_constant PConst_int (2,None)
+                      ]
+                <case>
+                  pattern (testsuite/tests/lib-unix/unix-execvpe/exec.ml[22,520+4]..[22,520+33])
+                    Ppat_construct "Unix.Unix_error" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[22,520+4]..[22,520+19])
+                    Some
+                      []
+                      pattern (testsuite/tests/lib-unix/unix-execvpe/exec.ml[22,520+19]..[22,520+33])
+                        Ppat_tuple
+                        [
+                          pattern (testsuite/tests/lib-unix/unix-execvpe/exec.ml[22,520+20]..[22,520+23])
+                            Ppat_var "err" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[22,520+20]..[22,520+23])
+                          pattern (testsuite/tests/lib-unix/unix-execvpe/exec.ml[22,520+25]..[22,520+27])
+                            Ppat_var "fn" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[22,520+25]..[22,520+27])
+                          pattern (testsuite/tests/lib-unix/unix-execvpe/exec.ml[22,520+29]..[22,520+32])
+                            Ppat_var "arg" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[22,520+29]..[22,520+32])
+                        ]
+                  expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[23,557+6]..[24,633+12])
+                    Pexp_sequence
+                    expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[23,557+6]..[23,557+74])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[23,557+6]..[23,557+13])
+                        Pexp_ident "eprintf" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[23,557+6]..[23,557+13])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[23,557+14]..[23,557+42])
+                            Pexp_constant PConst_string("Other error %s - %s - %s\n",(testsuite/tests/lib-unix/unix-execvpe/exec.ml[23,557+15]..[23,557+41]),None)
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[23,557+43]..[23,557+67])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[23,557+44]..[23,557+62])
+                              Pexp_ident "Unix.error_message" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[23,557+44]..[23,557+62])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[23,557+63]..[23,557+66])
+                                  Pexp_ident "err" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[23,557+63]..[23,557+66])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[23,557+68]..[23,557+70])
+                            Pexp_ident "fn" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[23,557+68]..[23,557+70])
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[23,557+71]..[23,557+74])
+                            Pexp_ident "arg" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[23,557+71]..[23,557+74])
+                      ]
+                    expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[24,633+6]..[24,633+12])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[24,633+6]..[24,633+10])
+                        Pexp_ident "exit" (testsuite/tests/lib-unix/unix-execvpe/exec.ml[24,633+6]..[24,633+10])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/unix-execvpe/exec.ml[24,633+11]..[24,633+12])
+                            Pexp_constant PConst_int (4,None)
+                      ]
+              ]
+    ]
+]
+

@@ -1,0 +1,618 @@
+[
+  signature_item (ocamltest/environments.mli[18,1159+0]..[18,1159+6])
+    Psig_type Rec
+    [
+      type_declaration "t" (ocamltest/environments.mli[18,1159+5]..[18,1159+6]) (ocamltest/environments.mli[18,1159+0]..[18,1159+6])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (ocamltest/environments.mli[20,1167+0]..[20,1167+13])
+    Psig_value
+    value_description "empty" (ocamltest/environments.mli[20,1167+4]..[20,1167+9]) (ocamltest/environments.mli[20,1167+0]..[20,1167+13])
+      core_type (ocamltest/environments.mli[20,1167+12]..[20,1167+13])
+        Ptyp_constr "t" (ocamltest/environments.mli[20,1167+12]..[20,1167+13])
+        []
+      []
+  signature_item (ocamltest/environments.mli[22,1182+0]..[22,1182+52])
+    Psig_value
+    value_description "from_bindings" (ocamltest/environments.mli[22,1182+4]..[22,1182+17]) (ocamltest/environments.mli[22,1182+0]..[22,1182+52])
+      core_type (ocamltest/environments.mli[22,1182+20]..[22,1182+52])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[22,1182+20]..[22,1182+47])
+          Ptyp_constr "list" (ocamltest/environments.mli[22,1182+43]..[22,1182+47])
+          [
+            core_type (ocamltest/environments.mli[22,1182+21]..[22,1182+41])
+              Ptyp_tuple
+              [
+                core_type (ocamltest/environments.mli[22,1182+21]..[22,1182+32])
+                  Ptyp_constr "Variables.t" (ocamltest/environments.mli[22,1182+21]..[22,1182+32])
+                  []
+                core_type (ocamltest/environments.mli[22,1182+35]..[22,1182+41])
+                  Ptyp_constr "string" (ocamltest/environments.mli[22,1182+35]..[22,1182+41])
+                  []
+              ]
+          ]
+        core_type (ocamltest/environments.mli[22,1182+51]..[22,1182+52])
+          Ptyp_constr "t" (ocamltest/environments.mli[22,1182+51]..[22,1182+52])
+          []
+      []
+  signature_item (ocamltest/environments.mli[23,1235+0]..[23,1235+50])
+    Psig_value
+    value_description "to_bindings" (ocamltest/environments.mli[23,1235+4]..[23,1235+15]) (ocamltest/environments.mli[23,1235+0]..[23,1235+50])
+      core_type (ocamltest/environments.mli[23,1235+18]..[23,1235+50])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[23,1235+18]..[23,1235+19])
+          Ptyp_constr "t" (ocamltest/environments.mli[23,1235+18]..[23,1235+19])
+          []
+        core_type (ocamltest/environments.mli[23,1235+23]..[23,1235+50])
+          Ptyp_constr "list" (ocamltest/environments.mli[23,1235+46]..[23,1235+50])
+          [
+            core_type (ocamltest/environments.mli[23,1235+24]..[23,1235+44])
+              Ptyp_tuple
+              [
+                core_type (ocamltest/environments.mli[23,1235+24]..[23,1235+35])
+                  Ptyp_constr "Variables.t" (ocamltest/environments.mli[23,1235+24]..[23,1235+35])
+                  []
+                core_type (ocamltest/environments.mli[23,1235+38]..[23,1235+44])
+                  Ptyp_constr "string" (ocamltest/environments.mli[23,1235+38]..[23,1235+44])
+                  []
+              ]
+          ]
+      []
+  signature_item (ocamltest/environments.mli[24,1286+0]..[24,1286+37])
+    Psig_value
+    value_description "to_system_env" (ocamltest/environments.mli[24,1286+4]..[24,1286+17]) (ocamltest/environments.mli[24,1286+0]..[24,1286+37])
+      core_type (ocamltest/environments.mli[24,1286+20]..[24,1286+37])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[24,1286+20]..[24,1286+21])
+          Ptyp_constr "t" (ocamltest/environments.mli[24,1286+20]..[24,1286+21])
+          []
+        core_type (ocamltest/environments.mli[24,1286+25]..[24,1286+37])
+          Ptyp_constr "array" (ocamltest/environments.mli[24,1286+32]..[24,1286+37])
+          [
+            core_type (ocamltest/environments.mli[24,1286+25]..[24,1286+31])
+              Ptyp_constr "string" (ocamltest/environments.mli[24,1286+25]..[24,1286+31])
+              []
+          ]
+      []
+  signature_item (ocamltest/environments.mli[26,1325+0]..[26,1325+46])
+    Psig_value
+    value_description "lookup" (ocamltest/environments.mli[26,1325+4]..[26,1325+10]) (ocamltest/environments.mli[26,1325+0]..[26,1325+46])
+      core_type (ocamltest/environments.mli[26,1325+13]..[26,1325+46])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[26,1325+13]..[26,1325+24])
+          Ptyp_constr "Variables.t" (ocamltest/environments.mli[26,1325+13]..[26,1325+24])
+          []
+        core_type (ocamltest/environments.mli[26,1325+28]..[26,1325+46])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/environments.mli[26,1325+28]..[26,1325+29])
+            Ptyp_constr "t" (ocamltest/environments.mli[26,1325+28]..[26,1325+29])
+            []
+          core_type (ocamltest/environments.mli[26,1325+33]..[26,1325+46])
+            Ptyp_constr "option" (ocamltest/environments.mli[26,1325+40]..[26,1325+46])
+            [
+              core_type (ocamltest/environments.mli[26,1325+33]..[26,1325+39])
+                Ptyp_constr "string" (ocamltest/environments.mli[26,1325+33]..[26,1325+39])
+                []
+            ]
+      []
+  signature_item (ocamltest/environments.mli[27,1372+0]..[27,1372+55])
+    Psig_value
+    value_description "lookup_nonempty" (ocamltest/environments.mli[27,1372+4]..[27,1372+19]) (ocamltest/environments.mli[27,1372+0]..[27,1372+55])
+      core_type (ocamltest/environments.mli[27,1372+22]..[27,1372+55])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[27,1372+22]..[27,1372+33])
+          Ptyp_constr "Variables.t" (ocamltest/environments.mli[27,1372+22]..[27,1372+33])
+          []
+        core_type (ocamltest/environments.mli[27,1372+37]..[27,1372+55])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/environments.mli[27,1372+37]..[27,1372+38])
+            Ptyp_constr "t" (ocamltest/environments.mli[27,1372+37]..[27,1372+38])
+            []
+          core_type (ocamltest/environments.mli[27,1372+42]..[27,1372+55])
+            Ptyp_constr "option" (ocamltest/environments.mli[27,1372+49]..[27,1372+55])
+            [
+              core_type (ocamltest/environments.mli[27,1372+42]..[27,1372+48])
+                Ptyp_constr "string" (ocamltest/environments.mli[27,1372+42]..[27,1372+48])
+                []
+            ]
+      []
+  signature_item (ocamltest/environments.mli[28,1428+0]..[28,1428+44])
+    Psig_value
+    value_description "safe_lookup" (ocamltest/environments.mli[28,1428+4]..[28,1428+15]) (ocamltest/environments.mli[28,1428+0]..[28,1428+44])
+      core_type (ocamltest/environments.mli[28,1428+18]..[28,1428+44])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[28,1428+18]..[28,1428+29])
+          Ptyp_constr "Variables.t" (ocamltest/environments.mli[28,1428+18]..[28,1428+29])
+          []
+        core_type (ocamltest/environments.mli[28,1428+33]..[28,1428+44])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/environments.mli[28,1428+33]..[28,1428+34])
+            Ptyp_constr "t" (ocamltest/environments.mli[28,1428+33]..[28,1428+34])
+            []
+          core_type (ocamltest/environments.mli[28,1428+38]..[28,1428+44])
+            Ptyp_constr "string" (ocamltest/environments.mli[28,1428+38]..[28,1428+44])
+            []
+      []
+  signature_item (ocamltest/environments.mli[29,1473+0]..[29,1473+50])
+    Psig_value
+    value_description "is_variable_defined" (ocamltest/environments.mli[29,1473+4]..[29,1473+23]) (ocamltest/environments.mli[29,1473+0]..[29,1473+50])
+      core_type (ocamltest/environments.mli[29,1473+26]..[29,1473+50])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[29,1473+26]..[29,1473+37])
+          Ptyp_constr "Variables.t" (ocamltest/environments.mli[29,1473+26]..[29,1473+37])
+          []
+        core_type (ocamltest/environments.mli[29,1473+41]..[29,1473+50])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/environments.mli[29,1473+41]..[29,1473+42])
+            Ptyp_constr "t" (ocamltest/environments.mli[29,1473+41]..[29,1473+42])
+            []
+          core_type (ocamltest/environments.mli[29,1473+46]..[29,1473+50])
+            Ptyp_constr "bool" (ocamltest/environments.mli[29,1473+46]..[29,1473+50])
+            []
+      []
+  signature_item (ocamltest/environments.mli[31,1525+0]..[31,1525+52])
+    Psig_value
+    value_description "lookup_as_bool" (ocamltest/environments.mli[31,1525+4]..[31,1525+18]) (ocamltest/environments.mli[31,1525+0]..[31,1525+52])
+      attribute "ocaml.doc"
+        [
+          structure_item (ocamltest/environments.mli[32,1578+0]..[34,1691+25])
+            Pstr_eval
+            expression (ocamltest/environments.mli[32,1578+0]..[34,1691+25])
+              Pexp_constant PConst_string(" returns [Some true] if the variable is set to [\"true\"],\n    [Some false] if it is set to another string, and\n    [None] if not set. ",(ocamltest/environments.mli[32,1578+0]..[34,1691+25]),None)
+        ]
+      core_type (ocamltest/environments.mli[31,1525+21]..[31,1525+52])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[31,1525+21]..[31,1525+32])
+          Ptyp_constr "Variables.t" (ocamltest/environments.mli[31,1525+21]..[31,1525+32])
+          []
+        core_type (ocamltest/environments.mli[31,1525+36]..[31,1525+52])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/environments.mli[31,1525+36]..[31,1525+37])
+            Ptyp_constr "t" (ocamltest/environments.mli[31,1525+36]..[31,1525+37])
+            []
+          core_type (ocamltest/environments.mli[31,1525+41]..[31,1525+52])
+            Ptyp_constr "option" (ocamltest/environments.mli[31,1525+46]..[31,1525+52])
+            [
+              core_type (ocamltest/environments.mli[31,1525+41]..[31,1525+45])
+                Ptyp_constr "bool" (ocamltest/environments.mli[31,1525+41]..[31,1525+45])
+                []
+            ]
+      []
+  signature_item (ocamltest/environments.mli[36,1718+0]..[36,1718+50])
+    Psig_value
+    value_description "lookup_as_int" (ocamltest/environments.mli[36,1718+4]..[36,1718+17]) (ocamltest/environments.mli[36,1718+0]..[36,1718+50])
+      attribute "ocaml.doc"
+        [
+          structure_item (ocamltest/environments.mli[37,1769+0]..[39,1864+53])
+            Pstr_eval
+            expression (ocamltest/environments.mli[37,1769+0]..[39,1864+53])
+              Pexp_constant PConst_string(" returns [Some n] if the variable is set to a string\n    representation of the integer [n],\n    and [None] if it is not an integer or not set. ",(ocamltest/environments.mli[37,1769+0]..[39,1864+53]),None)
+        ]
+      core_type (ocamltest/environments.mli[36,1718+20]..[36,1718+50])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[36,1718+20]..[36,1718+31])
+          Ptyp_constr "Variables.t" (ocamltest/environments.mli[36,1718+20]..[36,1718+31])
+          []
+        core_type (ocamltest/environments.mli[36,1718+35]..[36,1718+50])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/environments.mli[36,1718+35]..[36,1718+36])
+            Ptyp_constr "t" (ocamltest/environments.mli[36,1718+35]..[36,1718+36])
+            []
+          core_type (ocamltest/environments.mli[36,1718+40]..[36,1718+50])
+            Ptyp_constr "option" (ocamltest/environments.mli[36,1718+44]..[36,1718+50])
+            [
+              core_type (ocamltest/environments.mli[36,1718+40]..[36,1718+43])
+                Ptyp_constr "int" (ocamltest/environments.mli[36,1718+40]..[36,1718+43])
+                []
+            ]
+      []
+  signature_item (ocamltest/environments.mli[41,1919+0]..[41,1919+41])
+    Psig_value
+    value_description "add" (ocamltest/environments.mli[41,1919+4]..[41,1919+7]) (ocamltest/environments.mli[41,1919+0]..[41,1919+41])
+      core_type (ocamltest/environments.mli[41,1919+10]..[41,1919+41])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[41,1919+10]..[41,1919+21])
+          Ptyp_constr "Variables.t" (ocamltest/environments.mli[41,1919+10]..[41,1919+21])
+          []
+        core_type (ocamltest/environments.mli[41,1919+25]..[41,1919+41])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/environments.mli[41,1919+25]..[41,1919+31])
+            Ptyp_constr "string" (ocamltest/environments.mli[41,1919+25]..[41,1919+31])
+            []
+          core_type (ocamltest/environments.mli[41,1919+35]..[41,1919+41])
+            Ptyp_arrow
+            Nolabel
+            core_type (ocamltest/environments.mli[41,1919+35]..[41,1919+36])
+              Ptyp_constr "t" (ocamltest/environments.mli[41,1919+35]..[41,1919+36])
+              []
+            core_type (ocamltest/environments.mli[41,1919+40]..[41,1919+41])
+              Ptyp_constr "t" (ocamltest/environments.mli[41,1919+40]..[41,1919+41])
+              []
+      []
+  signature_item (ocamltest/environments.mli[42,1961+0]..[42,1961+54])
+    Psig_value
+    value_description "add_if_undefined" (ocamltest/environments.mli[42,1961+4]..[42,1961+20]) (ocamltest/environments.mli[42,1961+0]..[42,1961+54])
+      core_type (ocamltest/environments.mli[42,1961+23]..[42,1961+54])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[42,1961+23]..[42,1961+34])
+          Ptyp_constr "Variables.t" (ocamltest/environments.mli[42,1961+23]..[42,1961+34])
+          []
+        core_type (ocamltest/environments.mli[42,1961+38]..[42,1961+54])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/environments.mli[42,1961+38]..[42,1961+44])
+            Ptyp_constr "string" (ocamltest/environments.mli[42,1961+38]..[42,1961+44])
+            []
+          core_type (ocamltest/environments.mli[42,1961+48]..[42,1961+54])
+            Ptyp_arrow
+            Nolabel
+            core_type (ocamltest/environments.mli[42,1961+48]..[42,1961+49])
+              Ptyp_constr "t" (ocamltest/environments.mli[42,1961+48]..[42,1961+49])
+              []
+            core_type (ocamltest/environments.mli[42,1961+53]..[42,1961+54])
+              Ptyp_constr "t" (ocamltest/environments.mli[42,1961+53]..[42,1961+54])
+              []
+      []
+  signature_item (ocamltest/environments.mli[43,2016+0]..[43,2016+56])
+    Psig_value
+    value_description "add_bindings" (ocamltest/environments.mli[43,2016+4]..[43,2016+16]) (ocamltest/environments.mli[43,2016+0]..[43,2016+56])
+      core_type (ocamltest/environments.mli[43,2016+19]..[43,2016+56])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[43,2016+19]..[43,2016+46])
+          Ptyp_constr "list" (ocamltest/environments.mli[43,2016+42]..[43,2016+46])
+          [
+            core_type (ocamltest/environments.mli[43,2016+20]..[43,2016+40])
+              Ptyp_tuple
+              [
+                core_type (ocamltest/environments.mli[43,2016+20]..[43,2016+31])
+                  Ptyp_constr "Variables.t" (ocamltest/environments.mli[43,2016+20]..[43,2016+31])
+                  []
+                core_type (ocamltest/environments.mli[43,2016+34]..[43,2016+40])
+                  Ptyp_constr "string" (ocamltest/environments.mli[43,2016+34]..[43,2016+40])
+                  []
+              ]
+          ]
+        core_type (ocamltest/environments.mli[43,2016+50]..[43,2016+56])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/environments.mli[43,2016+50]..[43,2016+51])
+            Ptyp_constr "t" (ocamltest/environments.mli[43,2016+50]..[43,2016+51])
+            []
+          core_type (ocamltest/environments.mli[43,2016+55]..[43,2016+56])
+            Ptyp_constr "t" (ocamltest/environments.mli[43,2016+55]..[43,2016+56])
+            []
+      []
+  signature_item (ocamltest/environments.mli[45,2074+0]..[45,2074+44])
+    Psig_value
+    value_description "append" (ocamltest/environments.mli[45,2074+4]..[45,2074+10]) (ocamltest/environments.mli[45,2074+0]..[45,2074+44])
+      core_type (ocamltest/environments.mli[45,2074+13]..[45,2074+44])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[45,2074+13]..[45,2074+24])
+          Ptyp_constr "Variables.t" (ocamltest/environments.mli[45,2074+13]..[45,2074+24])
+          []
+        core_type (ocamltest/environments.mli[45,2074+28]..[45,2074+44])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/environments.mli[45,2074+28]..[45,2074+34])
+            Ptyp_constr "string" (ocamltest/environments.mli[45,2074+28]..[45,2074+34])
+            []
+          core_type (ocamltest/environments.mli[45,2074+38]..[45,2074+44])
+            Ptyp_arrow
+            Nolabel
+            core_type (ocamltest/environments.mli[45,2074+38]..[45,2074+39])
+              Ptyp_constr "t" (ocamltest/environments.mli[45,2074+38]..[45,2074+39])
+              []
+            core_type (ocamltest/environments.mli[45,2074+43]..[45,2074+44])
+              Ptyp_constr "t" (ocamltest/environments.mli[45,2074+43]..[45,2074+44])
+              []
+      []
+  signature_item (ocamltest/environments.mli[47,2120+0]..[47,2120+35])
+    Psig_value
+    value_description "dump" (ocamltest/environments.mli[47,2120+4]..[47,2120+8]) (ocamltest/environments.mli[47,2120+0]..[47,2120+35])
+      core_type (ocamltest/environments.mli[47,2120+11]..[47,2120+35])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[47,2120+11]..[47,2120+22])
+          Ptyp_constr "out_channel" (ocamltest/environments.mli[47,2120+11]..[47,2120+22])
+          []
+        core_type (ocamltest/environments.mli[47,2120+26]..[47,2120+35])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/environments.mli[47,2120+26]..[47,2120+27])
+            Ptyp_constr "t" (ocamltest/environments.mli[47,2120+26]..[47,2120+27])
+            []
+          core_type (ocamltest/environments.mli[47,2120+31]..[47,2120+35])
+            Ptyp_constr "unit" (ocamltest/environments.mli[47,2120+31]..[47,2120+35])
+            []
+      []
+  signature_item (ocamltest/environments.mli[51,2177+0]..[51,2177+22])
+    Psig_type Rec
+    [
+      type_declaration "kind" (ocamltest/environments.mli[51,2177+5]..[51,2177+9]) (ocamltest/environments.mli[51,2177+0]..[51,2177+22])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (ocamltest/environments.mli[51,2177+12]..[51,2177+15])
+                "Pre" (ocamltest/environments.mli[51,2177+12]..[51,2177+15])
+                []
+                None
+              (ocamltest/environments.mli[51,2177+16]..[51,2177+22])
+                "Post" (ocamltest/environments.mli[51,2177+18]..[51,2177+22])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (ocamltest/environments.mli[53,2201+0]..[53,2201+44])
+    Psig_type Rec
+    [
+      type_declaration "env_initializer" (ocamltest/environments.mli[53,2201+5]..[53,2201+20]) (ocamltest/environments.mli[53,2201+0]..[53,2201+44])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (ocamltest/environments.mli[53,2201+23]..[53,2201+44])
+              Ptyp_arrow
+              Nolabel
+              core_type (ocamltest/environments.mli[53,2201+23]..[53,2201+34])
+                Ptyp_constr "out_channel" (ocamltest/environments.mli[53,2201+23]..[53,2201+34])
+                []
+              core_type (ocamltest/environments.mli[53,2201+38]..[53,2201+44])
+                Ptyp_arrow
+                Nolabel
+                core_type (ocamltest/environments.mli[53,2201+38]..[53,2201+39])
+                  Ptyp_constr "t" (ocamltest/environments.mli[53,2201+38]..[53,2201+39])
+                  []
+                core_type (ocamltest/environments.mli[53,2201+43]..[53,2201+44])
+                  Ptyp_constr "t" (ocamltest/environments.mli[53,2201+43]..[53,2201+44])
+                  []
+    ]
+  signature_item (ocamltest/environments.mli[55,2247+0]..[55,2247+68])
+    Psig_value
+    value_description "register_initializer" (ocamltest/environments.mli[55,2247+4]..[55,2247+24]) (ocamltest/environments.mli[55,2247+0]..[55,2247+68])
+      core_type (ocamltest/environments.mli[55,2247+27]..[55,2247+68])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[55,2247+27]..[55,2247+31])
+          Ptyp_constr "kind" (ocamltest/environments.mli[55,2247+27]..[55,2247+31])
+          []
+        core_type (ocamltest/environments.mli[55,2247+35]..[55,2247+68])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/environments.mli[55,2247+35]..[55,2247+41])
+            Ptyp_constr "string" (ocamltest/environments.mli[55,2247+35]..[55,2247+41])
+            []
+          core_type (ocamltest/environments.mli[55,2247+45]..[55,2247+68])
+            Ptyp_arrow
+            Nolabel
+            core_type (ocamltest/environments.mli[55,2247+45]..[55,2247+60])
+              Ptyp_constr "env_initializer" (ocamltest/environments.mli[55,2247+45]..[55,2247+60])
+              []
+            core_type (ocamltest/environments.mli[55,2247+64]..[55,2247+68])
+              Ptyp_constr "unit" (ocamltest/environments.mli[55,2247+64]..[55,2247+68])
+              []
+      []
+  signature_item (ocamltest/environments.mli[57,2317+0]..[57,2317+40])
+    Psig_value
+    value_description "initialize" (ocamltest/environments.mli[57,2317+4]..[57,2317+14]) (ocamltest/environments.mli[57,2317+0]..[57,2317+40])
+      core_type (ocamltest/environments.mli[57,2317+17]..[57,2317+40])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[57,2317+17]..[57,2317+21])
+          Ptyp_constr "kind" (ocamltest/environments.mli[57,2317+17]..[57,2317+21])
+          []
+        core_type (ocamltest/environments.mli[57,2317+25]..[57,2317+40])
+          Ptyp_constr "env_initializer" (ocamltest/environments.mli[57,2317+25]..[57,2317+40])
+          []
+      []
+  signature_item (ocamltest/environments.mli[61,2376+0]..[65,2481+25])
+    Psig_type Rec
+    [
+      type_declaration "modifier" (ocamltest/environments.mli[61,2376+5]..[61,2376+13]) (ocamltest/environments.mli[61,2376+0]..[65,2481+25])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (ocamltest/environments.mli[62,2392+2]..[62,2392+21])
+                "Include" (ocamltest/environments.mli[62,2392+4]..[62,2392+11])
+                [
+                  core_type (ocamltest/environments.mli[62,2392+15]..[62,2392+21])
+                    Ptyp_constr "string" (ocamltest/environments.mli[62,2392+15]..[62,2392+21])
+                    []
+                ]
+                None
+              (ocamltest/environments.mli[63,2414+2]..[63,2414+31])
+                "Add" (ocamltest/environments.mli[63,2414+4]..[63,2414+7])
+                [
+                  core_type (ocamltest/environments.mli[63,2414+11]..[63,2414+22])
+                    Ptyp_constr "Variables.t" (ocamltest/environments.mli[63,2414+11]..[63,2414+22])
+                    []
+                  core_type (ocamltest/environments.mli[63,2414+25]..[63,2414+31])
+                    Ptyp_constr "string" (ocamltest/environments.mli[63,2414+25]..[63,2414+31])
+                    []
+                ]
+                None
+              (ocamltest/environments.mli[64,2446+2]..[64,2446+34])
+                "Append" (ocamltest/environments.mli[64,2446+4]..[64,2446+10])
+                [
+                  core_type (ocamltest/environments.mli[64,2446+14]..[64,2446+25])
+                    Ptyp_constr "Variables.t" (ocamltest/environments.mli[64,2446+14]..[64,2446+25])
+                    []
+                  core_type (ocamltest/environments.mli[64,2446+28]..[64,2446+34])
+                    Ptyp_constr "string" (ocamltest/environments.mli[64,2446+28]..[64,2446+34])
+                    []
+                ]
+                None
+              (ocamltest/environments.mli[65,2481+2]..[65,2481+25])
+                "Remove" (ocamltest/environments.mli[65,2481+4]..[65,2481+10])
+                [
+                  core_type (ocamltest/environments.mli[65,2481+14]..[65,2481+25])
+                    Ptyp_constr "Variables.t" (ocamltest/environments.mli[65,2481+14]..[65,2481+25])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (ocamltest/environments.mli[67,2508+0]..[67,2508+30])
+    Psig_type Rec
+    [
+      type_declaration "modifiers" (ocamltest/environments.mli[67,2508+5]..[67,2508+14]) (ocamltest/environments.mli[67,2508+0]..[67,2508+30])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (ocamltest/environments.mli[67,2508+17]..[67,2508+30])
+              Ptyp_constr "list" (ocamltest/environments.mli[67,2508+26]..[67,2508+30])
+              [
+                core_type (ocamltest/environments.mli[67,2508+17]..[67,2508+25])
+                  Ptyp_constr "modifier" (ocamltest/environments.mli[67,2508+17]..[67,2508+25])
+                  []
+              ]
+    ]
+  signature_item (ocamltest/environments.mli[69,2540+0]..[69,2540+39])
+    Psig_value
+    value_description "apply_modifier" (ocamltest/environments.mli[69,2540+4]..[69,2540+18]) (ocamltest/environments.mli[69,2540+0]..[69,2540+39])
+      core_type (ocamltest/environments.mli[69,2540+21]..[69,2540+39])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[69,2540+21]..[69,2540+22])
+          Ptyp_constr "t" (ocamltest/environments.mli[69,2540+21]..[69,2540+22])
+          []
+        core_type (ocamltest/environments.mli[69,2540+26]..[69,2540+39])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/environments.mli[69,2540+26]..[69,2540+34])
+            Ptyp_constr "modifier" (ocamltest/environments.mli[69,2540+26]..[69,2540+34])
+            []
+          core_type (ocamltest/environments.mli[69,2540+38]..[69,2540+39])
+            Ptyp_constr "t" (ocamltest/environments.mli[69,2540+38]..[69,2540+39])
+            []
+      []
+  signature_item (ocamltest/environments.mli[70,2580+0]..[70,2580+41])
+    Psig_value
+    value_description "apply_modifiers" (ocamltest/environments.mli[70,2580+4]..[70,2580+19]) (ocamltest/environments.mli[70,2580+0]..[70,2580+41])
+      core_type (ocamltest/environments.mli[70,2580+22]..[70,2580+41])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[70,2580+22]..[70,2580+23])
+          Ptyp_constr "t" (ocamltest/environments.mli[70,2580+22]..[70,2580+23])
+          []
+        core_type (ocamltest/environments.mli[70,2580+27]..[70,2580+41])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/environments.mli[70,2580+27]..[70,2580+36])
+            Ptyp_constr "modifiers" (ocamltest/environments.mli[70,2580+27]..[70,2580+36])
+            []
+          core_type (ocamltest/environments.mli[70,2580+40]..[70,2580+41])
+            Ptyp_constr "t" (ocamltest/environments.mli[70,2580+40]..[70,2580+41])
+            []
+      []
+  signature_item (ocamltest/environments.mli[72,2623+0]..[72,2623+30])
+    Psig_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (ocamltest/environments.mli[72,2623+0]..[72,2623+30])
+          pext_name = "Empty_modifiers_name"
+          pext_kind =
+            Pext_decl
+              []
+              None
+  signature_item (ocamltest/environments.mli[73,2654+0]..[73,2654+53])
+    Psig_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (ocamltest/environments.mli[73,2654+0]..[73,2654+53])
+          pext_name = "Modifiers_name_already_registered"
+          pext_kind =
+            Pext_decl
+              [
+                core_type (ocamltest/environments.mli[73,2654+47]..[73,2654+53])
+                  Ptyp_constr "string" (ocamltest/environments.mli[73,2654+47]..[73,2654+53])
+                  []
+              ]
+              None
+  signature_item (ocamltest/environments.mli[74,2708+0]..[74,2708+44])
+    Psig_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (ocamltest/environments.mli[74,2708+0]..[74,2708+44])
+          pext_name = "Modifiers_name_not_found"
+          pext_kind =
+            Pext_decl
+              [
+                core_type (ocamltest/environments.mli[74,2708+38]..[74,2708+44])
+                  Ptyp_constr "string" (ocamltest/environments.mli[74,2708+38]..[74,2708+44])
+                  []
+              ]
+              None
+  signature_item (ocamltest/environments.mli[76,2754+0]..[76,2754+52])
+    Psig_value
+    value_description "register_modifiers" (ocamltest/environments.mli[76,2754+4]..[76,2754+22]) (ocamltest/environments.mli[76,2754+0]..[76,2754+52])
+      core_type (ocamltest/environments.mli[76,2754+25]..[76,2754+52])
+        Ptyp_arrow
+        Nolabel
+        core_type (ocamltest/environments.mli[76,2754+25]..[76,2754+31])
+          Ptyp_constr "string" (ocamltest/environments.mli[76,2754+25]..[76,2754+31])
+          []
+        core_type (ocamltest/environments.mli[76,2754+35]..[76,2754+52])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/environments.mli[76,2754+35]..[76,2754+44])
+            Ptyp_constr "modifiers" (ocamltest/environments.mli[76,2754+35]..[76,2754+44])
+            []
+          core_type (ocamltest/environments.mli[76,2754+48]..[76,2754+52])
+            Ptyp_constr "unit" (ocamltest/environments.mli[76,2754+48]..[76,2754+52])
+            []
+      []
+]
+

@@ -1,0 +1,519 @@
+[
+  structure_item (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[1,0+0]..[1,0+9])
+    Pstr_open Fresh
+    module_expr (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[1,0+5]..[1,0+9])
+      Pmod_ident "Unix" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[1,0+5]..[1,0+9])
+  structure_item (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[3,11+0]..[5,66+21])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[3,11+4]..[3,11+16])
+          Ppat_var "path_of_addr" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[3,11+4]..[3,11+16])
+        expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[3,11+19]..[5,66+21])
+          Pexp_function
+          [
+            <case>
+              pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[4,39+4]..[4,39+18])
+                Ppat_construct "ADDR_UNIX" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[4,39+4]..[4,39+13])
+                Some
+                  []
+                  pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[4,39+14]..[4,39+18])
+                    Ppat_var "path" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[4,39+14]..[4,39+18])
+              expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[4,39+22]..[4,39+26])
+                Pexp_ident "path" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[4,39+22]..[4,39+26])
+            <case>
+              pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[5,66+4]..[5,66+5])
+                Ppat_any
+              expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[5,66+9]..[5,66+21])
+                Pexp_assert
+                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[5,66+16]..[5,66+21])
+                  Pexp_construct "false" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[5,66+16]..[5,66+21])
+                  None
+          ]
+    ]
+  structure_item (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[8,92+0]..[19,577+20])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[8,92+4]..[8,92+15])
+          Ppat_var "test_sender" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[8,92+4]..[8,92+15])
+        expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[8,92+16]..[19,577+20]) ghost
+          Pexp_fun
+          Labelled "client_socket"
+          None
+          pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[8,92+17]..[8,92+30])
+            Ppat_var "client_socket" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[8,92+17]..[8,92+30])
+          expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[8,92+31]..[19,577+20]) ghost
+            Pexp_fun
+            Labelled "server_socket"
+            None
+            pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[8,92+32]..[8,92+45])
+              Ppat_var "server_socket" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[8,92+32]..[8,92+45])
+            expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[8,92+46]..[19,577+20]) ghost
+              Pexp_fun
+              Labelled "server_addr"
+              None
+              pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[8,92+47]..[8,92+58])
+                Ppat_var "server_addr" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[8,92+47]..[8,92+58])
+              expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[8,92+59]..[19,577+20]) ghost
+                Pexp_fun
+                Labelled "client_addr"
+                None
+                pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[8,92+60]..[8,92+71])
+                  Ppat_var "client_addr" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[8,92+60]..[8,92+71])
+                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[9,166+2]..[19,577+20])
+                  Pexp_sequence
+                  expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[9,166+2]..[9,166+47])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[9,166+2]..[9,166+15])
+                      Pexp_ident "Printf.printf" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[9,166+2]..[9,166+15])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[9,166+16]..[9,166+20])
+                          Pexp_constant PConst_string("%S",(testsuite/tests/lib-unix/unix-socket/recvfrom.ml[9,166+17]..[9,166+19]),None)
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[9,166+21]..[9,166+47])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[9,166+22]..[9,166+34])
+                            Pexp_ident "path_of_addr" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[9,166+22]..[9,166+34])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[9,166+35]..[9,166+46])
+                                Pexp_ident "client_addr" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[9,166+35]..[9,166+46])
+                          ]
+                    ]
+                  expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[10,215+2]..[19,577+20])
+                    Pexp_let Nonrec
+                    [
+                      <def>
+                        pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[10,215+6]..[10,215+10])
+                          Ppat_var "byte" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[10,215+6]..[10,215+10])
+                        expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[10,215+13]..[10,215+29])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[10,215+13]..[10,215+23])
+                            Pexp_ident "Bytes.make" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[10,215+13]..[10,215+23])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[10,215+24]..[10,215+25])
+                                Pexp_constant PConst_int (1,None)
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[10,215+26]..[10,215+29])
+                                Pexp_constant PConst_char 74
+                          ]
+                    ]
+                    expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[11,248+2]..[19,577+20])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[11,248+6]..[11,248+14])
+                            Ppat_var "sent_len" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[11,248+6]..[11,248+14])
+                          expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[11,248+17]..[11,248+61])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[11,248+17]..[11,248+23])
+                              Pexp_ident "sendto" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[11,248+17]..[11,248+23])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[11,248+24]..[11,248+37])
+                                  Pexp_ident "client_socket" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[11,248+24]..[11,248+37])
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[11,248+38]..[11,248+42])
+                                  Pexp_ident "byte" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[11,248+38]..[11,248+42])
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[11,248+43]..[11,248+44])
+                                  Pexp_constant PConst_int (0,None)
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[11,248+45]..[11,248+46])
+                                  Pexp_constant PConst_int (1,None)
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[11,248+47]..[11,248+49])
+                                  Pexp_construct "[]" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[11,248+47]..[11,248+49])
+                                  None
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[11,248+50]..[11,248+61])
+                                  Pexp_ident "server_addr" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[11,248+50]..[11,248+61])
+                            ]
+                      ]
+                      expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[12,313+2]..[19,577+20])
+                        Pexp_sequence
+                        expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[12,313+2]..[12,313+23])
+                          Pexp_assert
+                          expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[12,313+9]..[12,313+23])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[12,313+19]..[12,313+20])
+                              Pexp_ident "=" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[12,313+19]..[12,313+20])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[12,313+10]..[12,313+18])
+                                  Pexp_ident "sent_len" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[12,313+10]..[12,313+18])
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[12,313+21]..[12,313+22])
+                                  Pexp_constant PConst_int (1,None)
+                            ]
+                        expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[13,338+2]..[19,577+20])
+                          Pexp_let Nonrec
+                          [
+                            <def>
+                              pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[13,338+6]..[13,338+9])
+                                Ppat_var "buf" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[13,338+6]..[13,338+9])
+                              expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[13,338+12]..[13,338+34])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[13,338+12]..[13,338+22])
+                                  Pexp_ident "Bytes.make" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[13,338+12]..[13,338+22])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[13,338+23]..[13,338+27])
+                                      Pexp_constant PConst_int (1024,None)
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[13,338+28]..[13,338+34])
+                                      Pexp_constant PConst_char 00
+                                ]
+                          ]
+                          expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[14,376+2]..[19,577+20])
+                            Pexp_let Nonrec
+                            [
+                              <def>
+                                pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[14,376+6]..[14,376+24])
+                                  Ppat_tuple
+                                  [
+                                    pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[14,376+7]..[14,376+15])
+                                      Ppat_var "recv_len" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[14,376+7]..[14,376+15])
+                                    pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[14,376+17]..[14,376+23])
+                                      Ppat_var "sender" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[14,376+17]..[14,376+23])
+                                  ]
+                                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[14,376+27]..[14,376+63])
+                                  Pexp_apply
+                                  expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[14,376+27]..[14,376+35])
+                                    Pexp_ident "recvfrom" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[14,376+27]..[14,376+35])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[14,376+36]..[14,376+49])
+                                        Pexp_ident "server_socket" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[14,376+36]..[14,376+49])
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[14,376+50]..[14,376+53])
+                                        Pexp_ident "buf" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[14,376+50]..[14,376+53])
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[14,376+54]..[14,376+55])
+                                        Pexp_constant PConst_int (0,None)
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[14,376+56]..[14,376+60])
+                                        Pexp_constant PConst_int (1024,None)
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[14,376+61]..[14,376+63])
+                                        Pexp_construct "[]" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[14,376+61]..[14,376+63])
+                                        None
+                                  ]
+                            ]
+                            expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[16,444+2]..[19,577+20])
+                              Pexp_sequence
+                              expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[16,444+2]..[16,444+48])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[16,444+2]..[16,444+15])
+                                  Pexp_ident "Printf.printf" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[16,444+2]..[16,444+15])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[16,444+16]..[16,444+26])
+                                      Pexp_constant PConst_string(" as %S: ",(testsuite/tests/lib-unix/unix-socket/recvfrom.ml[16,444+17]..[16,444+25]),None)
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[16,444+27]..[16,444+48])
+                                      Pexp_apply
+                                      expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[16,444+28]..[16,444+40])
+                                        Pexp_ident "path_of_addr" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[16,444+28]..[16,444+40])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[16,444+41]..[16,444+47])
+                                            Pexp_ident "sender" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[16,444+41]..[16,444+47])
+                                      ]
+                                ]
+                              expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[17,494+2]..[19,577+20])
+                                Pexp_sequence
+                                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[17,494+2]..[17,494+31])
+                                  Pexp_assert
+                                  expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[17,494+9]..[17,494+31])
+                                    Pexp_apply
+                                    expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[17,494+17]..[17,494+18])
+                                      Pexp_ident "=" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[17,494+17]..[17,494+18])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[17,494+10]..[17,494+16])
+                                          Pexp_ident "sender" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[17,494+10]..[17,494+16])
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[17,494+19]..[17,494+30])
+                                          Pexp_ident "client_addr" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[17,494+19]..[17,494+30])
+                                    ]
+                                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[18,527+2]..[19,577+20])
+                                  Pexp_sequence
+                                  expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[18,527+2]..[18,527+48])
+                                    Pexp_assert
+                                    expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[18,527+9]..[18,527+48])
+                                      Pexp_apply
+                                      expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[18,527+42]..[18,527+43])
+                                        Pexp_ident "=" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[18,527+42]..[18,527+43])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[18,527+10]..[18,527+41])
+                                            Pexp_apply
+                                            expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[18,527+10]..[18,527+26])
+                                              Pexp_ident "Bytes.sub_string" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[18,527+10]..[18,527+26])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[18,527+27]..[18,527+30])
+                                                  Pexp_ident "buf" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[18,527+27]..[18,527+30])
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[18,527+31]..[18,527+32])
+                                                  Pexp_constant PConst_int (0,None)
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[18,527+33]..[18,527+41])
+                                                  Pexp_ident "recv_len" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[18,527+33]..[18,527+41])
+                                            ]
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[18,527+44]..[18,527+47])
+                                            Pexp_constant PConst_string("t",(testsuite/tests/lib-unix/unix-socket/recvfrom.ml[18,527+45]..[18,527+46]),None)
+                                      ]
+                                  expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[19,577+2]..[19,577+20])
+                                    Pexp_apply
+                                    expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[19,577+2]..[19,577+15])
+                                      Pexp_ident "print_endline" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[19,577+2]..[19,577+15])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[19,577+16]..[19,577+20])
+                                          Pexp_constant PConst_string("OK",(testsuite/tests/lib-unix/unix-socket/recvfrom.ml[19,577+17]..[19,577+19]),None)
+                                    ]
+    ]
+  structure_item (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[21,601+0]..[22,627+54])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[21,601+4]..[21,601+18])
+          Ppat_var "ensure_no_file" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[21,601+4]..[21,601+18])
+        expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[21,601+19]..[22,627+54]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[21,601+19]..[21,601+23])
+            Ppat_var "path" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[21,601+19]..[21,601+23])
+          expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[22,627+2]..[22,627+54])
+            Pexp_try
+            expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[22,627+6]..[22,627+17])
+              Pexp_apply
+              expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[22,627+6]..[22,627+12])
+                Pexp_ident "unlink" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[22,627+6]..[22,627+12])
+              [
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[22,627+13]..[22,627+17])
+                    Pexp_ident "path" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[22,627+13]..[22,627+17])
+              ]
+            [
+              <case>
+                pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[22,627+23]..[22,627+48])
+                  Ppat_construct "Unix_error" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[22,627+23]..[22,627+33])
+                  Some
+                    []
+                    pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[22,627+34]..[22,627+48])
+                      Ppat_tuple
+                      [
+                        pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[22,627+35]..[22,627+41])
+                          Ppat_construct "ENOENT" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[22,627+35]..[22,627+41])
+                          None
+                        pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[22,627+43]..[22,627+44])
+                          Ppat_any
+                        pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[22,627+46]..[22,627+47])
+                          Ppat_any
+                      ]
+                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[22,627+52]..[22,627+54])
+                  Pexp_construct "()" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[22,627+52]..[22,627+54])
+                  None
+            ]
+    ]
+  structure_item (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[24,685+0]..[26,747+59])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[24,685+4]..[24,685+15])
+          Ppat_var "with_socket" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[24,685+4]..[24,685+15])
+        expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[24,685+16]..[26,747+59]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[24,685+16]..[24,685+18])
+            Ppat_var "fn" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[24,685+16]..[24,685+18])
+          expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[25,706+2]..[26,747+59])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[25,706+6]..[25,706+7])
+                  Ppat_var "s" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[25,706+6]..[25,706+7])
+                expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[25,706+10]..[25,706+37])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[25,706+10]..[25,706+16])
+                    Pexp_ident "socket" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[25,706+10]..[25,706+16])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[25,706+17]..[25,706+24])
+                        Pexp_construct "PF_UNIX" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[25,706+17]..[25,706+24])
+                        None
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[25,706+25]..[25,706+35])
+                        Pexp_construct "SOCK_DGRAM" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[25,706+25]..[25,706+35])
+                        None
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[25,706+36]..[25,706+37])
+                        Pexp_constant PConst_int (0,None)
+                  ]
+            ]
+            expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+2]..[26,747+59])
+              Pexp_apply
+              expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+2]..[26,747+13])
+                Pexp_ident "Fun.protect" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+2]..[26,747+13])
+              [
+                <arg>
+                Labelled "finally"
+                  expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+23]..[26,747+42])
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+28]..[26,747+30])
+                      Ppat_construct "()" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+28]..[26,747+30])
+                      None
+                    expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+34]..[26,747+41])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+34]..[26,747+39])
+                        Pexp_ident "close" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+34]..[26,747+39])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+40]..[26,747+41])
+                            Pexp_ident "s" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+40]..[26,747+41])
+                      ]
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+43]..[26,747+59])
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+48]..[26,747+50])
+                      Ppat_construct "()" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+48]..[26,747+50])
+                      None
+                    expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+54]..[26,747+58])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+54]..[26,747+56])
+                        Pexp_ident "fn" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+54]..[26,747+56])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+57]..[26,747+58])
+                            Pexp_ident "s" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[26,747+57]..[26,747+58])
+                      ]
+              ]
+    ]
+  structure_item (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[28,808+0]..[33,928+3])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[28,808+4]..[28,808+21])
+          Ppat_var "with_bound_socket" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[28,808+4]..[28,808+21])
+        expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[28,808+22]..[33,928+3]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[28,808+22]..[28,808+26])
+            Ppat_var "path" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[28,808+22]..[28,808+26])
+          expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[28,808+27]..[33,928+3]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[28,808+27]..[28,808+29])
+              Ppat_var "fn" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[28,808+27]..[28,808+29])
+            expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[29,840+2]..[33,928+3])
+              Pexp_apply
+              expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[29,840+2]..[29,840+13])
+                Pexp_ident "with_socket" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[29,840+2]..[29,840+13])
+              [
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[29,840+14]..[33,928+3])
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[29,840+19]..[29,840+20])
+                      Ppat_var "s" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[29,840+19]..[29,840+20])
+                    expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[30,864+4]..[32,914+13])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[30,864+8]..[30,864+12])
+                            Ppat_var "addr" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[30,864+8]..[30,864+12])
+                          expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[30,864+15]..[30,864+29])
+                            Pexp_construct "ADDR_UNIX" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[30,864+15]..[30,864+24])
+                            Some
+                              expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[30,864+25]..[30,864+29])
+                                Pexp_ident "path" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[30,864+25]..[30,864+29])
+                      ]
+                      expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[31,897+4]..[32,914+13])
+                        Pexp_sequence
+                        expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[31,897+4]..[31,897+15])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[31,897+4]..[31,897+8])
+                            Pexp_ident "bind" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[31,897+4]..[31,897+8])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[31,897+9]..[31,897+10])
+                                Pexp_ident "s" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[31,897+9]..[31,897+10])
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[31,897+11]..[31,897+15])
+                                Pexp_ident "addr" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[31,897+11]..[31,897+15])
+                          ]
+                        expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[32,914+4]..[32,914+13])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[32,914+4]..[32,914+6])
+                            Pexp_ident "fn" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[32,914+4]..[32,914+6])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[32,914+7]..[32,914+11])
+                                Pexp_ident "addr" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[32,914+7]..[32,914+11])
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[32,914+12]..[32,914+13])
+                                Pexp_ident "s" (testsuite/tests/lib-unix/unix-socket/recvfrom.ml[32,914+12]..[32,914+13])
+                          ]
+              ]
+    ]
+]
+

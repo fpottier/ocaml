@@ -1,0 +1,2696 @@
+[
+  signature_item (driver/main_args.mli[19,1214+0]..[51,2232+3])
+    Psig_modtype "Common_options" (driver/main_args.mli[19,1214+12]..[19,1214+26])
+      module_type (driver/main_args.mli[19,1214+29]..[51,2232+3])
+        Pmty_signature
+        [
+          signature_item (driver/main_args.mli[20,1247+2]..[20,1247+29])
+            Psig_value
+            value_description "_absname" (driver/main_args.mli[20,1247+6]..[20,1247+14]) (driver/main_args.mli[20,1247+2]..[20,1247+29])
+              core_type (driver/main_args.mli[20,1247+17]..[20,1247+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[20,1247+17]..[20,1247+21])
+                  Ptyp_constr "unit" (driver/main_args.mli[20,1247+17]..[20,1247+21])
+                  []
+                core_type (driver/main_args.mli[20,1247+25]..[20,1247+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[20,1247+25]..[20,1247+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[21,1277+2]..[21,1277+29])
+            Psig_value
+            value_description "_alert" (driver/main_args.mli[21,1277+6]..[21,1277+12]) (driver/main_args.mli[21,1277+2]..[21,1277+29])
+              core_type (driver/main_args.mli[21,1277+15]..[21,1277+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[21,1277+15]..[21,1277+21])
+                  Ptyp_constr "string" (driver/main_args.mli[21,1277+15]..[21,1277+21])
+                  []
+                core_type (driver/main_args.mli[21,1277+25]..[21,1277+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[21,1277+25]..[21,1277+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[22,1307+2]..[22,1307+25])
+            Psig_value
+            value_description "_I" (driver/main_args.mli[22,1307+6]..[22,1307+8]) (driver/main_args.mli[22,1307+2]..[22,1307+25])
+              core_type (driver/main_args.mli[22,1307+11]..[22,1307+25])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[22,1307+11]..[22,1307+17])
+                  Ptyp_constr "string" (driver/main_args.mli[22,1307+11]..[22,1307+17])
+                  []
+                core_type (driver/main_args.mli[22,1307+21]..[22,1307+25])
+                  Ptyp_constr "unit" (driver/main_args.mli[22,1307+21]..[22,1307+25])
+                  []
+              []
+          signature_item (driver/main_args.mli[23,1333+2]..[23,1333+28])
+            Psig_value
+            value_description "_labels" (driver/main_args.mli[23,1333+6]..[23,1333+13]) (driver/main_args.mli[23,1333+2]..[23,1333+28])
+              core_type (driver/main_args.mli[23,1333+16]..[23,1333+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[23,1333+16]..[23,1333+20])
+                  Ptyp_constr "unit" (driver/main_args.mli[23,1333+16]..[23,1333+20])
+                  []
+                core_type (driver/main_args.mli[23,1333+24]..[23,1333+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[23,1333+24]..[23,1333+28])
+                  []
+              []
+          signature_item (driver/main_args.mli[24,1362+2]..[24,1362+32])
+            Psig_value
+            value_description "_alias_deps" (driver/main_args.mli[24,1362+6]..[24,1362+17]) (driver/main_args.mli[24,1362+2]..[24,1362+32])
+              core_type (driver/main_args.mli[24,1362+20]..[24,1362+32])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[24,1362+20]..[24,1362+24])
+                  Ptyp_constr "unit" (driver/main_args.mli[24,1362+20]..[24,1362+24])
+                  []
+                core_type (driver/main_args.mli[24,1362+28]..[24,1362+32])
+                  Ptyp_constr "unit" (driver/main_args.mli[24,1362+28]..[24,1362+32])
+                  []
+              []
+          signature_item (driver/main_args.mli[25,1395+2]..[25,1395+35])
+            Psig_value
+            value_description "_no_alias_deps" (driver/main_args.mli[25,1395+6]..[25,1395+20]) (driver/main_args.mli[25,1395+2]..[25,1395+35])
+              core_type (driver/main_args.mli[25,1395+23]..[25,1395+35])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[25,1395+23]..[25,1395+27])
+                  Ptyp_constr "unit" (driver/main_args.mli[25,1395+23]..[25,1395+27])
+                  []
+                core_type (driver/main_args.mli[25,1395+31]..[25,1395+35])
+                  Ptyp_constr "unit" (driver/main_args.mli[25,1395+31]..[25,1395+35])
+                  []
+              []
+          signature_item (driver/main_args.mli[26,1431+2]..[26,1431+31])
+            Psig_value
+            value_description "_app_funct" (driver/main_args.mli[26,1431+6]..[26,1431+16]) (driver/main_args.mli[26,1431+2]..[26,1431+31])
+              core_type (driver/main_args.mli[26,1431+19]..[26,1431+31])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[26,1431+19]..[26,1431+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[26,1431+19]..[26,1431+23])
+                  []
+                core_type (driver/main_args.mli[26,1431+27]..[26,1431+31])
+                  Ptyp_constr "unit" (driver/main_args.mli[26,1431+27]..[26,1431+31])
+                  []
+              []
+          signature_item (driver/main_args.mli[27,1463+2]..[27,1463+34])
+            Psig_value
+            value_description "_no_app_funct" (driver/main_args.mli[27,1463+6]..[27,1463+19]) (driver/main_args.mli[27,1463+2]..[27,1463+34])
+              core_type (driver/main_args.mli[27,1463+22]..[27,1463+34])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[27,1463+22]..[27,1463+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[27,1463+22]..[27,1463+26])
+                  []
+                core_type (driver/main_args.mli[27,1463+30]..[27,1463+34])
+                  Ptyp_constr "unit" (driver/main_args.mli[27,1463+30]..[27,1463+34])
+                  []
+              []
+          signature_item (driver/main_args.mli[28,1498+2]..[28,1498+30])
+            Psig_value
+            value_description "_noassert" (driver/main_args.mli[28,1498+6]..[28,1498+15]) (driver/main_args.mli[28,1498+2]..[28,1498+30])
+              core_type (driver/main_args.mli[28,1498+18]..[28,1498+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[28,1498+18]..[28,1498+22])
+                  Ptyp_constr "unit" (driver/main_args.mli[28,1498+18]..[28,1498+22])
+                  []
+                core_type (driver/main_args.mli[28,1498+26]..[28,1498+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[28,1498+26]..[28,1498+30])
+                  []
+              []
+          signature_item (driver/main_args.mli[29,1529+2]..[29,1529+30])
+            Psig_value
+            value_description "_nolabels" (driver/main_args.mli[29,1529+6]..[29,1529+15]) (driver/main_args.mli[29,1529+2]..[29,1529+30])
+              core_type (driver/main_args.mli[29,1529+18]..[29,1529+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[29,1529+18]..[29,1529+22])
+                  Ptyp_constr "unit" (driver/main_args.mli[29,1529+18]..[29,1529+22])
+                  []
+                core_type (driver/main_args.mli[29,1529+26]..[29,1529+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[29,1529+26]..[29,1529+30])
+                  []
+              []
+          signature_item (driver/main_args.mli[30,1560+2]..[30,1560+30])
+            Psig_value
+            value_description "_nostdlib" (driver/main_args.mli[30,1560+6]..[30,1560+15]) (driver/main_args.mli[30,1560+2]..[30,1560+30])
+              core_type (driver/main_args.mli[30,1560+18]..[30,1560+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[30,1560+18]..[30,1560+22])
+                  Ptyp_constr "unit" (driver/main_args.mli[30,1560+18]..[30,1560+22])
+                  []
+                core_type (driver/main_args.mli[30,1560+26]..[30,1560+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[30,1560+26]..[30,1560+30])
+                  []
+              []
+          signature_item (driver/main_args.mli[31,1591+2]..[31,1591+28])
+            Psig_value
+            value_description "_open" (driver/main_args.mli[31,1591+6]..[31,1591+11]) (driver/main_args.mli[31,1591+2]..[31,1591+28])
+              core_type (driver/main_args.mli[31,1591+14]..[31,1591+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[31,1591+14]..[31,1591+20])
+                  Ptyp_constr "string" (driver/main_args.mli[31,1591+14]..[31,1591+20])
+                  []
+                core_type (driver/main_args.mli[31,1591+24]..[31,1591+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[31,1591+24]..[31,1591+28])
+                  []
+              []
+          signature_item (driver/main_args.mli[32,1620+2]..[32,1620+27])
+            Psig_value
+            value_description "_ppx" (driver/main_args.mli[32,1620+6]..[32,1620+10]) (driver/main_args.mli[32,1620+2]..[32,1620+27])
+              core_type (driver/main_args.mli[32,1620+13]..[32,1620+27])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[32,1620+13]..[32,1620+19])
+                  Ptyp_constr "string" (driver/main_args.mli[32,1620+13]..[32,1620+19])
+                  []
+                core_type (driver/main_args.mli[32,1620+23]..[32,1620+27])
+                  Ptyp_constr "unit" (driver/main_args.mli[32,1620+23]..[32,1620+27])
+                  []
+              []
+          signature_item (driver/main_args.mli[33,1648+2]..[33,1648+31])
+            Psig_value
+            value_description "_principal" (driver/main_args.mli[33,1648+6]..[33,1648+16]) (driver/main_args.mli[33,1648+2]..[33,1648+31])
+              core_type (driver/main_args.mli[33,1648+19]..[33,1648+31])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[33,1648+19]..[33,1648+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[33,1648+19]..[33,1648+23])
+                  []
+                core_type (driver/main_args.mli[33,1648+27]..[33,1648+31])
+                  Ptyp_constr "unit" (driver/main_args.mli[33,1648+27]..[33,1648+31])
+                  []
+              []
+          signature_item (driver/main_args.mli[34,1680+2]..[34,1680+34])
+            Psig_value
+            value_description "_no_principal" (driver/main_args.mli[34,1680+6]..[34,1680+19]) (driver/main_args.mli[34,1680+2]..[34,1680+34])
+              core_type (driver/main_args.mli[34,1680+22]..[34,1680+34])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[34,1680+22]..[34,1680+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[34,1680+22]..[34,1680+26])
+                  []
+                core_type (driver/main_args.mli[34,1680+30]..[34,1680+34])
+                  Ptyp_constr "unit" (driver/main_args.mli[34,1680+30]..[34,1680+34])
+                  []
+              []
+          signature_item (driver/main_args.mli[35,1715+2]..[35,1715+30])
+            Psig_value
+            value_description "_rectypes" (driver/main_args.mli[35,1715+6]..[35,1715+15]) (driver/main_args.mli[35,1715+2]..[35,1715+30])
+              core_type (driver/main_args.mli[35,1715+18]..[35,1715+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[35,1715+18]..[35,1715+22])
+                  Ptyp_constr "unit" (driver/main_args.mli[35,1715+18]..[35,1715+22])
+                  []
+                core_type (driver/main_args.mli[35,1715+26]..[35,1715+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[35,1715+26]..[35,1715+30])
+                  []
+              []
+          signature_item (driver/main_args.mli[36,1746+2]..[36,1746+33])
+            Psig_value
+            value_description "_no_rectypes" (driver/main_args.mli[36,1746+6]..[36,1746+18]) (driver/main_args.mli[36,1746+2]..[36,1746+33])
+              core_type (driver/main_args.mli[36,1746+21]..[36,1746+33])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[36,1746+21]..[36,1746+25])
+                  Ptyp_constr "unit" (driver/main_args.mli[36,1746+21]..[36,1746+25])
+                  []
+                core_type (driver/main_args.mli[36,1746+29]..[36,1746+33])
+                  Ptyp_constr "unit" (driver/main_args.mli[36,1746+29]..[36,1746+33])
+                  []
+              []
+          signature_item (driver/main_args.mli[37,1780+2]..[37,1780+33])
+            Psig_value
+            value_description "_safe_string" (driver/main_args.mli[37,1780+6]..[37,1780+18]) (driver/main_args.mli[37,1780+2]..[37,1780+33])
+              core_type (driver/main_args.mli[37,1780+21]..[37,1780+33])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[37,1780+21]..[37,1780+25])
+                  Ptyp_constr "unit" (driver/main_args.mli[37,1780+21]..[37,1780+25])
+                  []
+                core_type (driver/main_args.mli[37,1780+29]..[37,1780+33])
+                  Ptyp_constr "unit" (driver/main_args.mli[37,1780+29]..[37,1780+33])
+                  []
+              []
+          signature_item (driver/main_args.mli[38,1814+2]..[38,1814+33])
+            Psig_value
+            value_description "_short_paths" (driver/main_args.mli[38,1814+6]..[38,1814+18]) (driver/main_args.mli[38,1814+2]..[38,1814+33])
+              core_type (driver/main_args.mli[38,1814+21]..[38,1814+33])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[38,1814+21]..[38,1814+25])
+                  Ptyp_constr "unit" (driver/main_args.mli[38,1814+21]..[38,1814+25])
+                  []
+                core_type (driver/main_args.mli[38,1814+29]..[38,1814+33])
+                  Ptyp_constr "unit" (driver/main_args.mli[38,1814+29]..[38,1814+33])
+                  []
+              []
+          signature_item (driver/main_args.mli[39,1848+2]..[39,1848+37])
+            Psig_value
+            value_description "_strict_sequence" (driver/main_args.mli[39,1848+6]..[39,1848+22]) (driver/main_args.mli[39,1848+2]..[39,1848+37])
+              core_type (driver/main_args.mli[39,1848+25]..[39,1848+37])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[39,1848+25]..[39,1848+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[39,1848+25]..[39,1848+29])
+                  []
+                core_type (driver/main_args.mli[39,1848+33]..[39,1848+37])
+                  Ptyp_constr "unit" (driver/main_args.mli[39,1848+33]..[39,1848+37])
+                  []
+              []
+          signature_item (driver/main_args.mli[40,1886+2]..[40,1886+40])
+            Psig_value
+            value_description "_no_strict_sequence" (driver/main_args.mli[40,1886+6]..[40,1886+25]) (driver/main_args.mli[40,1886+2]..[40,1886+40])
+              core_type (driver/main_args.mli[40,1886+28]..[40,1886+40])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[40,1886+28]..[40,1886+32])
+                  Ptyp_constr "unit" (driver/main_args.mli[40,1886+28]..[40,1886+32])
+                  []
+                core_type (driver/main_args.mli[40,1886+36]..[40,1886+40])
+                  Ptyp_constr "unit" (driver/main_args.mli[40,1886+36]..[40,1886+40])
+                  []
+              []
+          signature_item (driver/main_args.mli[41,1927+2]..[41,1927+36])
+            Psig_value
+            value_description "_strict_formats" (driver/main_args.mli[41,1927+6]..[41,1927+21]) (driver/main_args.mli[41,1927+2]..[41,1927+36])
+              core_type (driver/main_args.mli[41,1927+24]..[41,1927+36])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[41,1927+24]..[41,1927+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[41,1927+24]..[41,1927+28])
+                  []
+                core_type (driver/main_args.mli[41,1927+32]..[41,1927+36])
+                  Ptyp_constr "unit" (driver/main_args.mli[41,1927+32]..[41,1927+36])
+                  []
+              []
+          signature_item (driver/main_args.mli[42,1964+2]..[42,1964+39])
+            Psig_value
+            value_description "_no_strict_formats" (driver/main_args.mli[42,1964+6]..[42,1964+24]) (driver/main_args.mli[42,1964+2]..[42,1964+39])
+              core_type (driver/main_args.mli[42,1964+27]..[42,1964+39])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[42,1964+27]..[42,1964+31])
+                  Ptyp_constr "unit" (driver/main_args.mli[42,1964+27]..[42,1964+31])
+                  []
+                core_type (driver/main_args.mli[42,1964+35]..[42,1964+39])
+                  Ptyp_constr "unit" (driver/main_args.mli[42,1964+35]..[42,1964+39])
+                  []
+              []
+          signature_item (driver/main_args.mli[43,2004+2]..[43,2004+35])
+            Psig_value
+            value_description "_unboxed_types" (driver/main_args.mli[43,2004+6]..[43,2004+20]) (driver/main_args.mli[43,2004+2]..[43,2004+35])
+              core_type (driver/main_args.mli[43,2004+23]..[43,2004+35])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[43,2004+23]..[43,2004+27])
+                  Ptyp_constr "unit" (driver/main_args.mli[43,2004+23]..[43,2004+27])
+                  []
+                core_type (driver/main_args.mli[43,2004+31]..[43,2004+35])
+                  Ptyp_constr "unit" (driver/main_args.mli[43,2004+31]..[43,2004+35])
+                  []
+              []
+          signature_item (driver/main_args.mli[44,2040+2]..[44,2040+38])
+            Psig_value
+            value_description "_no_unboxed_types" (driver/main_args.mli[44,2040+6]..[44,2040+23]) (driver/main_args.mli[44,2040+2]..[44,2040+38])
+              core_type (driver/main_args.mli[44,2040+26]..[44,2040+38])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[44,2040+26]..[44,2040+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[44,2040+26]..[44,2040+30])
+                  []
+                core_type (driver/main_args.mli[44,2040+34]..[44,2040+38])
+                  Ptyp_constr "unit" (driver/main_args.mli[44,2040+34]..[44,2040+38])
+                  []
+              []
+          signature_item (driver/main_args.mli[45,2079+2]..[45,2079+35])
+            Psig_value
+            value_description "_unsafe_string" (driver/main_args.mli[45,2079+6]..[45,2079+20]) (driver/main_args.mli[45,2079+2]..[45,2079+35])
+              core_type (driver/main_args.mli[45,2079+23]..[45,2079+35])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[45,2079+23]..[45,2079+27])
+                  Ptyp_constr "unit" (driver/main_args.mli[45,2079+23]..[45,2079+27])
+                  []
+                core_type (driver/main_args.mli[45,2079+31]..[45,2079+35])
+                  Ptyp_constr "unit" (driver/main_args.mli[45,2079+31]..[45,2079+35])
+                  []
+              []
+          signature_item (driver/main_args.mli[46,2115+2]..[46,2115+29])
+            Psig_value
+            value_description "_version" (driver/main_args.mli[46,2115+6]..[46,2115+14]) (driver/main_args.mli[46,2115+2]..[46,2115+29])
+              core_type (driver/main_args.mli[46,2115+17]..[46,2115+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[46,2115+17]..[46,2115+21])
+                  Ptyp_constr "unit" (driver/main_args.mli[46,2115+17]..[46,2115+21])
+                  []
+                core_type (driver/main_args.mli[46,2115+25]..[46,2115+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[46,2115+25]..[46,2115+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[47,2145+2]..[47,2145+26])
+            Psig_value
+            value_description "_vnum" (driver/main_args.mli[47,2145+6]..[47,2145+11]) (driver/main_args.mli[47,2145+2]..[47,2145+26])
+              core_type (driver/main_args.mli[47,2145+14]..[47,2145+26])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[47,2145+14]..[47,2145+18])
+                  Ptyp_constr "unit" (driver/main_args.mli[47,2145+14]..[47,2145+18])
+                  []
+                core_type (driver/main_args.mli[47,2145+22]..[47,2145+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[47,2145+22]..[47,2145+26])
+                  []
+              []
+          signature_item (driver/main_args.mli[48,2172+2]..[48,2172+25])
+            Psig_value
+            value_description "_w" (driver/main_args.mli[48,2172+6]..[48,2172+8]) (driver/main_args.mli[48,2172+2]..[48,2172+25])
+              core_type (driver/main_args.mli[48,2172+11]..[48,2172+25])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[48,2172+11]..[48,2172+17])
+                  Ptyp_constr "string" (driver/main_args.mli[48,2172+11]..[48,2172+17])
+                  []
+                core_type (driver/main_args.mli[48,2172+21]..[48,2172+25])
+                  Ptyp_constr "unit" (driver/main_args.mli[48,2172+21]..[48,2172+25])
+                  []
+              []
+          signature_item (driver/main_args.mli[50,2199+2]..[50,2199+32])
+            Psig_value
+            value_description "anonymous" (driver/main_args.mli[50,2199+6]..[50,2199+15]) (driver/main_args.mli[50,2199+2]..[50,2199+32])
+              core_type (driver/main_args.mli[50,2199+18]..[50,2199+32])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[50,2199+18]..[50,2199+24])
+                  Ptyp_constr "string" (driver/main_args.mli[50,2199+18]..[50,2199+24])
+                  []
+                core_type (driver/main_args.mli[50,2199+28]..[50,2199+32])
+                  Ptyp_constr "unit" (driver/main_args.mli[50,2199+28]..[50,2199+32])
+                  []
+              []
+        ]
+  signature_item (driver/main_args.mli[53,2237+0]..[71,2726+3])
+    Psig_modtype "Core_options" (driver/main_args.mli[53,2237+12]..[53,2237+24])
+      module_type (driver/main_args.mli[53,2237+27]..[71,2726+3])
+        Pmty_signature
+        [
+          signature_item (driver/main_args.mli[54,2268+2]..[54,2268+24])
+            Psig_include
+            module_type (driver/main_args.mli[54,2268+10]..[54,2268+24])
+              Pmty_ident "Common_options" (driver/main_args.mli[54,2268+10]..[54,2268+24])
+          signature_item (driver/main_args.mli[56,2294+2]..[56,2294+34])
+            Psig_value
+            value_description "_nopervasives" (driver/main_args.mli[56,2294+6]..[56,2294+19]) (driver/main_args.mli[56,2294+2]..[56,2294+34])
+              core_type (driver/main_args.mli[56,2294+22]..[56,2294+34])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[56,2294+22]..[56,2294+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[56,2294+22]..[56,2294+26])
+                  []
+                core_type (driver/main_args.mli[56,2294+30]..[56,2294+34])
+                  Ptyp_constr "unit" (driver/main_args.mli[56,2294+30]..[56,2294+34])
+                  []
+              []
+          signature_item (driver/main_args.mli[57,2329+2]..[57,2329+28])
+            Psig_value
+            value_description "_unsafe" (driver/main_args.mli[57,2329+6]..[57,2329+13]) (driver/main_args.mli[57,2329+2]..[57,2329+28])
+              core_type (driver/main_args.mli[57,2329+16]..[57,2329+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[57,2329+16]..[57,2329+20])
+                  Ptyp_constr "unit" (driver/main_args.mli[57,2329+16]..[57,2329+20])
+                  []
+                core_type (driver/main_args.mli[57,2329+24]..[57,2329+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[57,2329+24]..[57,2329+28])
+                  []
+              []
+          signature_item (driver/main_args.mli[58,2358+2]..[58,2358+34])
+            Psig_value
+            value_description "_warn_error" (driver/main_args.mli[58,2358+6]..[58,2358+17]) (driver/main_args.mli[58,2358+2]..[58,2358+34])
+              core_type (driver/main_args.mli[58,2358+20]..[58,2358+34])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[58,2358+20]..[58,2358+26])
+                  Ptyp_constr "string" (driver/main_args.mli[58,2358+20]..[58,2358+26])
+                  []
+                core_type (driver/main_args.mli[58,2358+30]..[58,2358+34])
+                  Ptyp_constr "unit" (driver/main_args.mli[58,2358+30]..[58,2358+34])
+                  []
+              []
+          signature_item (driver/main_args.mli[59,2393+2]..[59,2393+31])
+            Psig_value
+            value_description "_warn_help" (driver/main_args.mli[59,2393+6]..[59,2393+16]) (driver/main_args.mli[59,2393+2]..[59,2393+31])
+              core_type (driver/main_args.mli[59,2393+19]..[59,2393+31])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[59,2393+19]..[59,2393+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[59,2393+19]..[59,2393+23])
+                  []
+                core_type (driver/main_args.mli[59,2393+27]..[59,2393+31])
+                  Ptyp_constr "unit" (driver/main_args.mli[59,2393+27]..[59,2393+31])
+                  []
+              []
+          signature_item (driver/main_args.mli[61,2426+2]..[61,2426+36])
+            Psig_value
+            value_description "_dno_unique_ids" (driver/main_args.mli[61,2426+6]..[61,2426+21]) (driver/main_args.mli[61,2426+2]..[61,2426+36])
+              core_type (driver/main_args.mli[61,2426+24]..[61,2426+36])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[61,2426+24]..[61,2426+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[61,2426+24]..[61,2426+28])
+                  []
+                core_type (driver/main_args.mli[61,2426+32]..[61,2426+36])
+                  Ptyp_constr "unit" (driver/main_args.mli[61,2426+32]..[61,2426+36])
+                  []
+              []
+          signature_item (driver/main_args.mli[62,2463+2]..[62,2463+33])
+            Psig_value
+            value_description "_dunique_ids" (driver/main_args.mli[62,2463+6]..[62,2463+18]) (driver/main_args.mli[62,2463+2]..[62,2463+33])
+              core_type (driver/main_args.mli[62,2463+21]..[62,2463+33])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[62,2463+21]..[62,2463+25])
+                  Ptyp_constr "unit" (driver/main_args.mli[62,2463+21]..[62,2463+25])
+                  []
+                core_type (driver/main_args.mli[62,2463+29]..[62,2463+33])
+                  Ptyp_constr "unit" (driver/main_args.mli[62,2463+29]..[62,2463+33])
+                  []
+              []
+          signature_item (driver/main_args.mli[63,2497+2]..[63,2497+35])
+            Psig_value
+            value_description "_dno_locations" (driver/main_args.mli[63,2497+6]..[63,2497+20]) (driver/main_args.mli[63,2497+2]..[63,2497+35])
+              core_type (driver/main_args.mli[63,2497+23]..[63,2497+35])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[63,2497+23]..[63,2497+27])
+                  Ptyp_constr "unit" (driver/main_args.mli[63,2497+23]..[63,2497+27])
+                  []
+                core_type (driver/main_args.mli[63,2497+31]..[63,2497+35])
+                  Ptyp_constr "unit" (driver/main_args.mli[63,2497+31]..[63,2497+35])
+                  []
+              []
+          signature_item (driver/main_args.mli[64,2533+2]..[64,2533+32])
+            Psig_value
+            value_description "_dlocations" (driver/main_args.mli[64,2533+6]..[64,2533+17]) (driver/main_args.mli[64,2533+2]..[64,2533+32])
+              core_type (driver/main_args.mli[64,2533+20]..[64,2533+32])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[64,2533+20]..[64,2533+24])
+                  Ptyp_constr "unit" (driver/main_args.mli[64,2533+20]..[64,2533+24])
+                  []
+                core_type (driver/main_args.mli[64,2533+28]..[64,2533+32])
+                  Ptyp_constr "unit" (driver/main_args.mli[64,2533+28]..[64,2533+32])
+                  []
+              []
+          signature_item (driver/main_args.mli[65,2566+2]..[65,2566+29])
+            Psig_value
+            value_description "_dsource" (driver/main_args.mli[65,2566+6]..[65,2566+14]) (driver/main_args.mli[65,2566+2]..[65,2566+29])
+              core_type (driver/main_args.mli[65,2566+17]..[65,2566+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[65,2566+17]..[65,2566+21])
+                  Ptyp_constr "unit" (driver/main_args.mli[65,2566+17]..[65,2566+21])
+                  []
+                core_type (driver/main_args.mli[65,2566+25]..[65,2566+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[65,2566+25]..[65,2566+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[66,2596+2]..[66,2596+32])
+            Psig_value
+            value_description "_dparsetree" (driver/main_args.mli[66,2596+6]..[66,2596+17]) (driver/main_args.mli[66,2596+2]..[66,2596+32])
+              core_type (driver/main_args.mli[66,2596+20]..[66,2596+32])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[66,2596+20]..[66,2596+24])
+                  Ptyp_constr "unit" (driver/main_args.mli[66,2596+20]..[66,2596+24])
+                  []
+                core_type (driver/main_args.mli[66,2596+28]..[66,2596+32])
+                  Ptyp_constr "unit" (driver/main_args.mli[66,2596+28]..[66,2596+32])
+                  []
+              []
+          signature_item (driver/main_args.mli[67,2629+2]..[67,2629+32])
+            Psig_value
+            value_description "_dtypedtree" (driver/main_args.mli[67,2629+6]..[67,2629+17]) (driver/main_args.mli[67,2629+2]..[67,2629+32])
+              core_type (driver/main_args.mli[67,2629+20]..[67,2629+32])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[67,2629+20]..[67,2629+24])
+                  Ptyp_constr "unit" (driver/main_args.mli[67,2629+20]..[67,2629+24])
+                  []
+                core_type (driver/main_args.mli[67,2629+28]..[67,2629+32])
+                  Ptyp_constr "unit" (driver/main_args.mli[67,2629+28]..[67,2629+32])
+                  []
+              []
+          signature_item (driver/main_args.mli[68,2662+2]..[68,2662+32])
+            Psig_value
+            value_description "_drawlambda" (driver/main_args.mli[68,2662+6]..[68,2662+17]) (driver/main_args.mli[68,2662+2]..[68,2662+32])
+              core_type (driver/main_args.mli[68,2662+20]..[68,2662+32])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[68,2662+20]..[68,2662+24])
+                  Ptyp_constr "unit" (driver/main_args.mli[68,2662+20]..[68,2662+24])
+                  []
+                core_type (driver/main_args.mli[68,2662+28]..[68,2662+32])
+                  Ptyp_constr "unit" (driver/main_args.mli[68,2662+28]..[68,2662+32])
+                  []
+              []
+          signature_item (driver/main_args.mli[69,2695+2]..[69,2695+29])
+            Psig_value
+            value_description "_dlambda" (driver/main_args.mli[69,2695+6]..[69,2695+14]) (driver/main_args.mli[69,2695+2]..[69,2695+29])
+              core_type (driver/main_args.mli[69,2695+17]..[69,2695+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[69,2695+17]..[69,2695+21])
+                  Ptyp_constr "unit" (driver/main_args.mli[69,2695+17]..[69,2695+21])
+                  []
+                core_type (driver/main_args.mli[69,2695+25]..[69,2695+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[69,2695+25]..[69,2695+29])
+                  []
+              []
+        ]
+  signature_item (driver/main_args.mli[73,2731+0]..[125,4317+3])
+    Psig_modtype "Compiler_options" (driver/main_args.mli[73,2731+12]..[73,2731+28])
+      module_type (driver/main_args.mli[73,2731+31]..[125,4317+3])
+        Pmty_signature
+        [
+          signature_item (driver/main_args.mli[74,2766+2]..[74,2766+23])
+            Psig_value
+            value_description "_a" (driver/main_args.mli[74,2766+6]..[74,2766+8]) (driver/main_args.mli[74,2766+2]..[74,2766+23])
+              core_type (driver/main_args.mli[74,2766+11]..[74,2766+23])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[74,2766+11]..[74,2766+15])
+                  Ptyp_constr "unit" (driver/main_args.mli[74,2766+11]..[74,2766+15])
+                  []
+                core_type (driver/main_args.mli[74,2766+19]..[74,2766+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[74,2766+19]..[74,2766+23])
+                  []
+              []
+          signature_item (driver/main_args.mli[75,2790+2]..[75,2790+27])
+            Psig_value
+            value_description "_annot" (driver/main_args.mli[75,2790+6]..[75,2790+12]) (driver/main_args.mli[75,2790+2]..[75,2790+27])
+              core_type (driver/main_args.mli[75,2790+15]..[75,2790+27])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[75,2790+15]..[75,2790+19])
+                  Ptyp_constr "unit" (driver/main_args.mli[75,2790+15]..[75,2790+19])
+                  []
+                core_type (driver/main_args.mli[75,2790+23]..[75,2790+27])
+                  Ptyp_constr "unit" (driver/main_args.mli[75,2790+23]..[75,2790+27])
+                  []
+              []
+          signature_item (driver/main_args.mli[76,2818+2]..[76,2818+30])
+            Psig_value
+            value_description "_binannot" (driver/main_args.mli[76,2818+6]..[76,2818+15]) (driver/main_args.mli[76,2818+2]..[76,2818+30])
+              core_type (driver/main_args.mli[76,2818+18]..[76,2818+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[76,2818+18]..[76,2818+22])
+                  Ptyp_constr "unit" (driver/main_args.mli[76,2818+18]..[76,2818+22])
+                  []
+                core_type (driver/main_args.mli[76,2818+26]..[76,2818+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[76,2818+26]..[76,2818+30])
+                  []
+              []
+          signature_item (driver/main_args.mli[77,2849+2]..[77,2849+23])
+            Psig_value
+            value_description "_c" (driver/main_args.mli[77,2849+6]..[77,2849+8]) (driver/main_args.mli[77,2849+2]..[77,2849+23])
+              core_type (driver/main_args.mli[77,2849+11]..[77,2849+23])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[77,2849+11]..[77,2849+15])
+                  Ptyp_constr "unit" (driver/main_args.mli[77,2849+11]..[77,2849+15])
+                  []
+                core_type (driver/main_args.mli[77,2849+19]..[77,2849+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[77,2849+19]..[77,2849+23])
+                  []
+              []
+          signature_item (driver/main_args.mli[78,2873+2]..[78,2873+26])
+            Psig_value
+            value_description "_cc" (driver/main_args.mli[78,2873+6]..[78,2873+9]) (driver/main_args.mli[78,2873+2]..[78,2873+26])
+              core_type (driver/main_args.mli[78,2873+12]..[78,2873+26])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[78,2873+12]..[78,2873+18])
+                  Ptyp_constr "string" (driver/main_args.mli[78,2873+12]..[78,2873+18])
+                  []
+                core_type (driver/main_args.mli[78,2873+22]..[78,2873+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[78,2873+22]..[78,2873+26])
+                  []
+              []
+          signature_item (driver/main_args.mli[79,2900+2]..[79,2900+29])
+            Psig_value
+            value_description "_cclib" (driver/main_args.mli[79,2900+6]..[79,2900+12]) (driver/main_args.mli[79,2900+2]..[79,2900+29])
+              core_type (driver/main_args.mli[79,2900+15]..[79,2900+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[79,2900+15]..[79,2900+21])
+                  Ptyp_constr "string" (driver/main_args.mli[79,2900+15]..[79,2900+21])
+                  []
+                core_type (driver/main_args.mli[79,2900+25]..[79,2900+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[79,2900+25]..[79,2900+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[80,2930+2]..[80,2930+29])
+            Psig_value
+            value_description "_ccopt" (driver/main_args.mli[80,2930+6]..[80,2930+12]) (driver/main_args.mli[80,2930+2]..[80,2930+29])
+              core_type (driver/main_args.mli[80,2930+15]..[80,2930+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[80,2930+15]..[80,2930+21])
+                  Ptyp_constr "string" (driver/main_args.mli[80,2930+15]..[80,2930+21])
+                  []
+                core_type (driver/main_args.mli[80,2930+25]..[80,2930+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[80,2930+25]..[80,2930+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[81,2960+2]..[81,2960+28])
+            Psig_value
+            value_description "_config" (driver/main_args.mli[81,2960+6]..[81,2960+13]) (driver/main_args.mli[81,2960+2]..[81,2960+28])
+              core_type (driver/main_args.mli[81,2960+16]..[81,2960+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[81,2960+16]..[81,2960+20])
+                  Ptyp_constr "unit" (driver/main_args.mli[81,2960+16]..[81,2960+20])
+                  []
+                core_type (driver/main_args.mli[81,2960+24]..[81,2960+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[81,2960+24]..[81,2960+28])
+                  []
+              []
+          signature_item (driver/main_args.mli[82,2989+2]..[82,2989+34])
+            Psig_value
+            value_description "_config_var" (driver/main_args.mli[82,2989+6]..[82,2989+17]) (driver/main_args.mli[82,2989+2]..[82,2989+34])
+              core_type (driver/main_args.mli[82,2989+20]..[82,2989+34])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[82,2989+20]..[82,2989+26])
+                  Ptyp_constr "string" (driver/main_args.mli[82,2989+20]..[82,2989+26])
+                  []
+                core_type (driver/main_args.mli[82,2989+30]..[82,2989+34])
+                  Ptyp_constr "unit" (driver/main_args.mli[82,2989+30]..[82,2989+34])
+                  []
+              []
+          signature_item (driver/main_args.mli[83,3024+2]..[83,3024+32])
+            Psig_value
+            value_description "_for_pack" (driver/main_args.mli[83,3024+6]..[83,3024+15]) (driver/main_args.mli[83,3024+2]..[83,3024+32])
+              core_type (driver/main_args.mli[83,3024+18]..[83,3024+32])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[83,3024+18]..[83,3024+24])
+                  Ptyp_constr "string" (driver/main_args.mli[83,3024+18]..[83,3024+24])
+                  []
+                core_type (driver/main_args.mli[83,3024+28]..[83,3024+32])
+                  Ptyp_constr "unit" (driver/main_args.mli[83,3024+28]..[83,3024+32])
+                  []
+              []
+          signature_item (driver/main_args.mli[84,3057+2]..[84,3057+23])
+            Psig_value
+            value_description "_g" (driver/main_args.mli[84,3057+6]..[84,3057+8]) (driver/main_args.mli[84,3057+2]..[84,3057+23])
+              core_type (driver/main_args.mli[84,3057+11]..[84,3057+23])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[84,3057+11]..[84,3057+15])
+                  Ptyp_constr "unit" (driver/main_args.mli[84,3057+11]..[84,3057+15])
+                  []
+                core_type (driver/main_args.mli[84,3057+19]..[84,3057+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[84,3057+19]..[84,3057+23])
+                  []
+              []
+          signature_item (driver/main_args.mli[85,3081+2]..[85,3081+34])
+            Psig_value
+            value_description "_stop_after" (driver/main_args.mli[85,3081+6]..[85,3081+17]) (driver/main_args.mli[85,3081+2]..[85,3081+34])
+              core_type (driver/main_args.mli[85,3081+20]..[85,3081+34])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[85,3081+20]..[85,3081+26])
+                  Ptyp_constr "string" (driver/main_args.mli[85,3081+20]..[85,3081+26])
+                  []
+                core_type (driver/main_args.mli[85,3081+30]..[85,3081+34])
+                  Ptyp_constr "unit" (driver/main_args.mli[85,3081+30]..[85,3081+34])
+                  []
+              []
+          signature_item (driver/main_args.mli[86,3116+2]..[86,3116+23])
+            Psig_value
+            value_description "_i" (driver/main_args.mli[86,3116+6]..[86,3116+8]) (driver/main_args.mli[86,3116+2]..[86,3116+23])
+              core_type (driver/main_args.mli[86,3116+11]..[86,3116+23])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[86,3116+11]..[86,3116+15])
+                  Ptyp_constr "unit" (driver/main_args.mli[86,3116+11]..[86,3116+15])
+                  []
+                core_type (driver/main_args.mli[86,3116+19]..[86,3116+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[86,3116+19]..[86,3116+23])
+                  []
+              []
+          signature_item (driver/main_args.mli[87,3140+2]..[87,3140+28])
+            Psig_value
+            value_description "_impl" (driver/main_args.mli[87,3140+6]..[87,3140+11]) (driver/main_args.mli[87,3140+2]..[87,3140+28])
+              core_type (driver/main_args.mli[87,3140+14]..[87,3140+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[87,3140+14]..[87,3140+20])
+                  Ptyp_constr "string" (driver/main_args.mli[87,3140+14]..[87,3140+20])
+                  []
+                core_type (driver/main_args.mli[87,3140+24]..[87,3140+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[87,3140+24]..[87,3140+28])
+                  []
+              []
+          signature_item (driver/main_args.mli[88,3169+2]..[88,3169+28])
+            Psig_value
+            value_description "_intf" (driver/main_args.mli[88,3169+6]..[88,3169+11]) (driver/main_args.mli[88,3169+2]..[88,3169+28])
+              core_type (driver/main_args.mli[88,3169+14]..[88,3169+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[88,3169+14]..[88,3169+20])
+                  Ptyp_constr "string" (driver/main_args.mli[88,3169+14]..[88,3169+20])
+                  []
+                core_type (driver/main_args.mli[88,3169+24]..[88,3169+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[88,3169+24]..[88,3169+28])
+                  []
+              []
+          signature_item (driver/main_args.mli[89,3198+2]..[89,3198+35])
+            Psig_value
+            value_description "_intf_suffix" (driver/main_args.mli[89,3198+6]..[89,3198+18]) (driver/main_args.mli[89,3198+2]..[89,3198+35])
+              core_type (driver/main_args.mli[89,3198+21]..[89,3198+35])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[89,3198+21]..[89,3198+27])
+                  Ptyp_constr "string" (driver/main_args.mli[89,3198+21]..[89,3198+27])
+                  []
+                core_type (driver/main_args.mli[89,3198+31]..[89,3198+35])
+                  Ptyp_constr "unit" (driver/main_args.mli[89,3198+31]..[89,3198+35])
+                  []
+              []
+          signature_item (driver/main_args.mli[90,3234+2]..[90,3234+31])
+            Psig_value
+            value_description "_keep_docs" (driver/main_args.mli[90,3234+6]..[90,3234+16]) (driver/main_args.mli[90,3234+2]..[90,3234+31])
+              core_type (driver/main_args.mli[90,3234+19]..[90,3234+31])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[90,3234+19]..[90,3234+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[90,3234+19]..[90,3234+23])
+                  []
+                core_type (driver/main_args.mli[90,3234+27]..[90,3234+31])
+                  Ptyp_constr "unit" (driver/main_args.mli[90,3234+27]..[90,3234+31])
+                  []
+              []
+          signature_item (driver/main_args.mli[91,3266+2]..[91,3266+34])
+            Psig_value
+            value_description "_no_keep_docs" (driver/main_args.mli[91,3266+6]..[91,3266+19]) (driver/main_args.mli[91,3266+2]..[91,3266+34])
+              core_type (driver/main_args.mli[91,3266+22]..[91,3266+34])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[91,3266+22]..[91,3266+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[91,3266+22]..[91,3266+26])
+                  []
+                core_type (driver/main_args.mli[91,3266+30]..[91,3266+34])
+                  Ptyp_constr "unit" (driver/main_args.mli[91,3266+30]..[91,3266+34])
+                  []
+              []
+          signature_item (driver/main_args.mli[92,3301+2]..[92,3301+31])
+            Psig_value
+            value_description "_keep_locs" (driver/main_args.mli[92,3301+6]..[92,3301+16]) (driver/main_args.mli[92,3301+2]..[92,3301+31])
+              core_type (driver/main_args.mli[92,3301+19]..[92,3301+31])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[92,3301+19]..[92,3301+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[92,3301+19]..[92,3301+23])
+                  []
+                core_type (driver/main_args.mli[92,3301+27]..[92,3301+31])
+                  Ptyp_constr "unit" (driver/main_args.mli[92,3301+27]..[92,3301+31])
+                  []
+              []
+          signature_item (driver/main_args.mli[93,3333+2]..[93,3333+34])
+            Psig_value
+            value_description "_no_keep_locs" (driver/main_args.mli[93,3333+6]..[93,3333+19]) (driver/main_args.mli[93,3333+2]..[93,3333+34])
+              core_type (driver/main_args.mli[93,3333+22]..[93,3333+34])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[93,3333+22]..[93,3333+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[93,3333+22]..[93,3333+26])
+                  []
+                core_type (driver/main_args.mli[93,3333+30]..[93,3333+34])
+                  Ptyp_constr "unit" (driver/main_args.mli[93,3333+30]..[93,3333+34])
+                  []
+              []
+          signature_item (driver/main_args.mli[94,3368+2]..[94,3368+29])
+            Psig_value
+            value_description "_linkall" (driver/main_args.mli[94,3368+6]..[94,3368+14]) (driver/main_args.mli[94,3368+2]..[94,3368+29])
+              core_type (driver/main_args.mli[94,3368+17]..[94,3368+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[94,3368+17]..[94,3368+21])
+                  Ptyp_constr "unit" (driver/main_args.mli[94,3368+17]..[94,3368+21])
+                  []
+                core_type (driver/main_args.mli[94,3368+25]..[94,3368+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[94,3368+25]..[94,3368+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[95,3398+2]..[95,3398+32])
+            Psig_value
+            value_description "_noautolink" (driver/main_args.mli[95,3398+6]..[95,3398+17]) (driver/main_args.mli[95,3398+2]..[95,3398+32])
+              core_type (driver/main_args.mli[95,3398+20]..[95,3398+32])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[95,3398+20]..[95,3398+24])
+                  Ptyp_constr "unit" (driver/main_args.mli[95,3398+20]..[95,3398+24])
+                  []
+                core_type (driver/main_args.mli[95,3398+28]..[95,3398+32])
+                  Ptyp_constr "unit" (driver/main_args.mli[95,3398+28]..[95,3398+32])
+                  []
+              []
+          signature_item (driver/main_args.mli[96,3431+2]..[96,3431+25])
+            Psig_value
+            value_description "_o" (driver/main_args.mli[96,3431+6]..[96,3431+8]) (driver/main_args.mli[96,3431+2]..[96,3431+25])
+              core_type (driver/main_args.mli[96,3431+11]..[96,3431+25])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[96,3431+11]..[96,3431+17])
+                  Ptyp_constr "string" (driver/main_args.mli[96,3431+11]..[96,3431+17])
+                  []
+                core_type (driver/main_args.mli[96,3431+21]..[96,3431+25])
+                  Ptyp_constr "unit" (driver/main_args.mli[96,3431+21]..[96,3431+25])
+                  []
+              []
+          signature_item (driver/main_args.mli[97,3457+2]..[97,3457+29])
+            Psig_value
+            value_description "_opaque" (driver/main_args.mli[97,3457+6]..[97,3457+13]) (driver/main_args.mli[97,3457+2]..[97,3457+29])
+              core_type (driver/main_args.mli[97,3457+17]..[97,3457+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[97,3457+17]..[97,3457+21])
+                  Ptyp_constr "unit" (driver/main_args.mli[97,3457+17]..[97,3457+21])
+                  []
+                core_type (driver/main_args.mli[97,3457+25]..[97,3457+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[97,3457+25]..[97,3457+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[98,3487+2]..[98,3487+32])
+            Psig_value
+            value_description "_output_obj" (driver/main_args.mli[98,3487+6]..[98,3487+17]) (driver/main_args.mli[98,3487+2]..[98,3487+32])
+              core_type (driver/main_args.mli[98,3487+20]..[98,3487+32])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[98,3487+20]..[98,3487+24])
+                  Ptyp_constr "unit" (driver/main_args.mli[98,3487+20]..[98,3487+24])
+                  []
+                core_type (driver/main_args.mli[98,3487+28]..[98,3487+32])
+                  Ptyp_constr "unit" (driver/main_args.mli[98,3487+28]..[98,3487+32])
+                  []
+              []
+          signature_item (driver/main_args.mli[99,3520+2]..[99,3520+41])
+            Psig_value
+            value_description "_output_complete_obj" (driver/main_args.mli[99,3520+6]..[99,3520+26]) (driver/main_args.mli[99,3520+2]..[99,3520+41])
+              core_type (driver/main_args.mli[99,3520+29]..[99,3520+41])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[99,3520+29]..[99,3520+33])
+                  Ptyp_constr "unit" (driver/main_args.mli[99,3520+29]..[99,3520+33])
+                  []
+                core_type (driver/main_args.mli[99,3520+37]..[99,3520+41])
+                  Ptyp_constr "unit" (driver/main_args.mli[99,3520+37]..[99,3520+41])
+                  []
+              []
+          signature_item (driver/main_args.mli[100,3562+2]..[100,3562+26])
+            Psig_value
+            value_description "_pack" (driver/main_args.mli[100,3562+6]..[100,3562+11]) (driver/main_args.mli[100,3562+2]..[100,3562+26])
+              core_type (driver/main_args.mli[100,3562+14]..[100,3562+26])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[100,3562+14]..[100,3562+18])
+                  Ptyp_constr "unit" (driver/main_args.mli[100,3562+14]..[100,3562+18])
+                  []
+                core_type (driver/main_args.mli[100,3562+22]..[100,3562+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[100,3562+22]..[100,3562+26])
+                  []
+              []
+          signature_item (driver/main_args.mli[101,3589+2]..[101,3589+30])
+            Psig_value
+            value_description "_plugin" (driver/main_args.mli[101,3589+6]..[101,3589+13]) (driver/main_args.mli[101,3589+2]..[101,3589+30])
+              core_type (driver/main_args.mli[101,3589+16]..[101,3589+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[101,3589+16]..[101,3589+22])
+                  Ptyp_constr "string" (driver/main_args.mli[101,3589+16]..[101,3589+22])
+                  []
+                core_type (driver/main_args.mli[101,3589+26]..[101,3589+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[101,3589+26]..[101,3589+30])
+                  []
+              []
+          signature_item (driver/main_args.mli[102,3620+2]..[102,3620+26])
+            Psig_value
+            value_description "_pp" (driver/main_args.mli[102,3620+6]..[102,3620+9]) (driver/main_args.mli[102,3620+2]..[102,3620+26])
+              core_type (driver/main_args.mli[102,3620+12]..[102,3620+26])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[102,3620+12]..[102,3620+18])
+                  Ptyp_constr "string" (driver/main_args.mli[102,3620+12]..[102,3620+18])
+                  []
+                core_type (driver/main_args.mli[102,3620+22]..[102,3620+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[102,3620+22]..[102,3620+26])
+                  []
+              []
+          signature_item (driver/main_args.mli[103,3647+2]..[103,3647+31])
+            Psig_value
+            value_description "_principal" (driver/main_args.mli[103,3647+6]..[103,3647+16]) (driver/main_args.mli[103,3647+2]..[103,3647+31])
+              core_type (driver/main_args.mli[103,3647+19]..[103,3647+31])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[103,3647+19]..[103,3647+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[103,3647+19]..[103,3647+23])
+                  []
+                core_type (driver/main_args.mli[103,3647+27]..[103,3647+31])
+                  Ptyp_constr "unit" (driver/main_args.mli[103,3647+27]..[103,3647+31])
+                  []
+              []
+          signature_item (driver/main_args.mli[104,3679+2]..[104,3679+34])
+            Psig_value
+            value_description "_no_principal" (driver/main_args.mli[104,3679+6]..[104,3679+19]) (driver/main_args.mli[104,3679+2]..[104,3679+34])
+              core_type (driver/main_args.mli[104,3679+22]..[104,3679+34])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[104,3679+22]..[104,3679+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[104,3679+22]..[104,3679+26])
+                  []
+                core_type (driver/main_args.mli[104,3679+30]..[104,3679+34])
+                  Ptyp_constr "unit" (driver/main_args.mli[104,3679+30]..[104,3679+34])
+                  []
+              []
+          signature_item (driver/main_args.mli[105,3714+2]..[105,3714+30])
+            Psig_value
+            value_description "_rectypes" (driver/main_args.mli[105,3714+6]..[105,3714+15]) (driver/main_args.mli[105,3714+2]..[105,3714+30])
+              core_type (driver/main_args.mli[105,3714+18]..[105,3714+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[105,3714+18]..[105,3714+22])
+                  Ptyp_constr "unit" (driver/main_args.mli[105,3714+18]..[105,3714+22])
+                  []
+                core_type (driver/main_args.mli[105,3714+26]..[105,3714+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[105,3714+26]..[105,3714+30])
+                  []
+              []
+          signature_item (driver/main_args.mli[106,3745+2]..[106,3745+39])
+            Psig_value
+            value_description "_runtime_variant" (driver/main_args.mli[106,3745+6]..[106,3745+22]) (driver/main_args.mli[106,3745+2]..[106,3745+39])
+              core_type (driver/main_args.mli[106,3745+25]..[106,3745+39])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[106,3745+25]..[106,3745+31])
+                  Ptyp_constr "string" (driver/main_args.mli[106,3745+25]..[106,3745+31])
+                  []
+                core_type (driver/main_args.mli[106,3745+35]..[106,3745+39])
+                  Ptyp_constr "unit" (driver/main_args.mli[106,3745+35]..[106,3745+39])
+                  []
+              []
+          signature_item (driver/main_args.mli[107,3785+2]..[107,3785+34])
+            Psig_value
+            value_description "_with_runtime" (driver/main_args.mli[107,3785+6]..[107,3785+19]) (driver/main_args.mli[107,3785+2]..[107,3785+34])
+              core_type (driver/main_args.mli[107,3785+22]..[107,3785+34])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[107,3785+22]..[107,3785+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[107,3785+22]..[107,3785+26])
+                  []
+                core_type (driver/main_args.mli[107,3785+30]..[107,3785+34])
+                  Ptyp_constr "unit" (driver/main_args.mli[107,3785+30]..[107,3785+34])
+                  []
+              []
+          signature_item (driver/main_args.mli[108,3820+2]..[108,3820+37])
+            Psig_value
+            value_description "_without_runtime" (driver/main_args.mli[108,3820+6]..[108,3820+22]) (driver/main_args.mli[108,3820+2]..[108,3820+37])
+              core_type (driver/main_args.mli[108,3820+25]..[108,3820+37])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[108,3820+25]..[108,3820+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[108,3820+25]..[108,3820+29])
+                  []
+                core_type (driver/main_args.mli[108,3820+33]..[108,3820+37])
+                  Ptyp_constr "unit" (driver/main_args.mli[108,3820+33]..[108,3820+37])
+                  []
+              []
+          signature_item (driver/main_args.mli[109,3858+2]..[109,3858+33])
+            Psig_value
+            value_description "_safe_string" (driver/main_args.mli[109,3858+6]..[109,3858+18]) (driver/main_args.mli[109,3858+2]..[109,3858+33])
+              core_type (driver/main_args.mli[109,3858+21]..[109,3858+33])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[109,3858+21]..[109,3858+25])
+                  Ptyp_constr "unit" (driver/main_args.mli[109,3858+21]..[109,3858+25])
+                  []
+                core_type (driver/main_args.mli[109,3858+29]..[109,3858+33])
+                  Ptyp_constr "unit" (driver/main_args.mli[109,3858+29]..[109,3858+33])
+                  []
+              []
+          signature_item (driver/main_args.mli[110,3892+2]..[110,3892+33])
+            Psig_value
+            value_description "_short_paths" (driver/main_args.mli[110,3892+6]..[110,3892+18]) (driver/main_args.mli[110,3892+2]..[110,3892+33])
+              core_type (driver/main_args.mli[110,3892+21]..[110,3892+33])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[110,3892+21]..[110,3892+25])
+                  Ptyp_constr "unit" (driver/main_args.mli[110,3892+21]..[110,3892+25])
+                  []
+                core_type (driver/main_args.mli[110,3892+29]..[110,3892+33])
+                  Ptyp_constr "unit" (driver/main_args.mli[110,3892+29]..[110,3892+33])
+                  []
+              []
+          signature_item (driver/main_args.mli[111,3926+2]..[111,3926+28])
+            Psig_value
+            value_description "_thread" (driver/main_args.mli[111,3926+6]..[111,3926+13]) (driver/main_args.mli[111,3926+2]..[111,3926+28])
+              core_type (driver/main_args.mli[111,3926+16]..[111,3926+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[111,3926+16]..[111,3926+20])
+                  Ptyp_constr "unit" (driver/main_args.mli[111,3926+16]..[111,3926+20])
+                  []
+                core_type (driver/main_args.mli[111,3926+24]..[111,3926+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[111,3926+24]..[111,3926+28])
+                  []
+              []
+          signature_item (driver/main_args.mli[112,3955+2]..[112,3955+23])
+            Psig_value
+            value_description "_v" (driver/main_args.mli[112,3955+6]..[112,3955+8]) (driver/main_args.mli[112,3955+2]..[112,3955+23])
+              core_type (driver/main_args.mli[112,3955+11]..[112,3955+23])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[112,3955+11]..[112,3955+15])
+                  Ptyp_constr "unit" (driver/main_args.mli[112,3955+11]..[112,3955+15])
+                  []
+                core_type (driver/main_args.mli[112,3955+19]..[112,3955+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[112,3955+19]..[112,3955+23])
+                  []
+              []
+          signature_item (driver/main_args.mli[113,3979+2]..[113,3979+29])
+            Psig_value
+            value_description "_verbose" (driver/main_args.mli[113,3979+6]..[113,3979+14]) (driver/main_args.mli[113,3979+2]..[113,3979+29])
+              core_type (driver/main_args.mli[113,3979+17]..[113,3979+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[113,3979+17]..[113,3979+21])
+                  Ptyp_constr "unit" (driver/main_args.mli[113,3979+17]..[113,3979+21])
+                  []
+                core_type (driver/main_args.mli[113,3979+25]..[113,3979+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[113,3979+25]..[113,3979+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[114,4009+2]..[114,4009+27])
+            Psig_value
+            value_description "_where" (driver/main_args.mli[114,4009+6]..[114,4009+12]) (driver/main_args.mli[114,4009+2]..[114,4009+27])
+              core_type (driver/main_args.mli[114,4009+15]..[114,4009+27])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[114,4009+15]..[114,4009+19])
+                  Ptyp_constr "unit" (driver/main_args.mli[114,4009+15]..[114,4009+19])
+                  []
+                core_type (driver/main_args.mli[114,4009+23]..[114,4009+27])
+                  Ptyp_constr "unit" (driver/main_args.mli[114,4009+23]..[114,4009+27])
+                  []
+              []
+          signature_item (driver/main_args.mli[115,4037+2]..[115,4037+29])
+            Psig_value
+            value_description "_color" (driver/main_args.mli[115,4037+6]..[115,4037+12]) (driver/main_args.mli[115,4037+2]..[115,4037+29])
+              core_type (driver/main_args.mli[115,4037+15]..[115,4037+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[115,4037+15]..[115,4037+21])
+                  Ptyp_constr "string" (driver/main_args.mli[115,4037+15]..[115,4037+21])
+                  []
+                core_type (driver/main_args.mli[115,4037+25]..[115,4037+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[115,4037+25]..[115,4037+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[116,4067+2]..[116,4067+35])
+            Psig_value
+            value_description "_error_style" (driver/main_args.mli[116,4067+6]..[116,4067+18]) (driver/main_args.mli[116,4067+2]..[116,4067+35])
+              core_type (driver/main_args.mli[116,4067+21]..[116,4067+35])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[116,4067+21]..[116,4067+27])
+                  Ptyp_constr "string" (driver/main_args.mli[116,4067+21]..[116,4067+27])
+                  []
+                core_type (driver/main_args.mli[116,4067+31]..[116,4067+35])
+                  Ptyp_constr "unit" (driver/main_args.mli[116,4067+31]..[116,4067+35])
+                  []
+              []
+          signature_item (driver/main_args.mli[118,4104+2]..[118,4104+39])
+            Psig_value
+            value_description "_match_context_rows" (driver/main_args.mli[118,4104+6]..[118,4104+25]) (driver/main_args.mli[118,4104+2]..[118,4104+39])
+              core_type (driver/main_args.mli[118,4104+28]..[118,4104+39])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[118,4104+28]..[118,4104+31])
+                  Ptyp_constr "int" (driver/main_args.mli[118,4104+28]..[118,4104+31])
+                  []
+                core_type (driver/main_args.mli[118,4104+35]..[118,4104+39])
+                  Ptyp_constr "unit" (driver/main_args.mli[118,4104+35]..[118,4104+39])
+                  []
+              []
+          signature_item (driver/main_args.mli[119,4144+2]..[119,4144+30])
+            Psig_value
+            value_description "_dtimings" (driver/main_args.mli[119,4144+6]..[119,4144+15]) (driver/main_args.mli[119,4144+2]..[119,4144+30])
+              core_type (driver/main_args.mli[119,4144+18]..[119,4144+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[119,4144+18]..[119,4144+22])
+                  Ptyp_constr "unit" (driver/main_args.mli[119,4144+18]..[119,4144+22])
+                  []
+                core_type (driver/main_args.mli[119,4144+26]..[119,4144+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[119,4144+26]..[119,4144+30])
+                  []
+              []
+          signature_item (driver/main_args.mli[120,4175+2]..[120,4175+30])
+            Psig_value
+            value_description "_dprofile" (driver/main_args.mli[120,4175+6]..[120,4175+15]) (driver/main_args.mli[120,4175+2]..[120,4175+30])
+              core_type (driver/main_args.mli[120,4175+18]..[120,4175+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[120,4175+18]..[120,4175+22])
+                  Ptyp_constr "unit" (driver/main_args.mli[120,4175+18]..[120,4175+22])
+                  []
+                core_type (driver/main_args.mli[120,4175+26]..[120,4175+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[120,4175+26]..[120,4175+30])
+                  []
+              []
+          signature_item (driver/main_args.mli[121,4206+2]..[121,4206+36])
+            Psig_value
+            value_description "_dump_into_file" (driver/main_args.mli[121,4206+6]..[121,4206+21]) (driver/main_args.mli[121,4206+2]..[121,4206+36])
+              core_type (driver/main_args.mli[121,4206+24]..[121,4206+36])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[121,4206+24]..[121,4206+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[121,4206+24]..[121,4206+28])
+                  []
+                core_type (driver/main_args.mli[121,4206+32]..[121,4206+36])
+                  Ptyp_constr "unit" (driver/main_args.mli[121,4206+32]..[121,4206+36])
+                  []
+              []
+          signature_item (driver/main_args.mli[123,4244+2]..[123,4244+35])
+            Psig_value
+            value_description "_args" (driver/main_args.mli[123,4244+6]..[123,4244+11]) (driver/main_args.mli[123,4244+2]..[123,4244+35])
+              core_type (driver/main_args.mli[123,4244+13]..[123,4244+35])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[123,4244+13]..[123,4244+19])
+                  Ptyp_constr "string" (driver/main_args.mli[123,4244+13]..[123,4244+19])
+                  []
+                core_type (driver/main_args.mli[123,4244+23]..[123,4244+35])
+                  Ptyp_constr "array" (driver/main_args.mli[123,4244+30]..[123,4244+35])
+                  [
+                    core_type (driver/main_args.mli[123,4244+23]..[123,4244+29])
+                      Ptyp_constr "string" (driver/main_args.mli[123,4244+23]..[123,4244+29])
+                      []
+                  ]
+              []
+          signature_item (driver/main_args.mli[124,4280+2]..[124,4280+36])
+            Psig_value
+            value_description "_args0" (driver/main_args.mli[124,4280+6]..[124,4280+12]) (driver/main_args.mli[124,4280+2]..[124,4280+36])
+              core_type (driver/main_args.mli[124,4280+14]..[124,4280+36])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[124,4280+14]..[124,4280+20])
+                  Ptyp_constr "string" (driver/main_args.mli[124,4280+14]..[124,4280+20])
+                  []
+                core_type (driver/main_args.mli[124,4280+24]..[124,4280+36])
+                  Ptyp_constr "array" (driver/main_args.mli[124,4280+31]..[124,4280+36])
+                  [
+                    core_type (driver/main_args.mli[124,4280+24]..[124,4280+30])
+                      Ptyp_constr "string" (driver/main_args.mli[124,4280+24]..[124,4280+30])
+                      []
+                  ]
+              []
+        ]
+  signature_item (driver/main_args.mli[128,4325+0]..[140,4709+3])
+    Psig_modtype "Toplevel_options" (driver/main_args.mli[128,4325+12]..[128,4325+28])
+      module_type (driver/main_args.mli[128,4325+31]..[140,4709+3])
+        Pmty_signature
+        [
+          signature_item (driver/main_args.mli[129,4360+2]..[129,4360+22])
+            Psig_include
+            module_type (driver/main_args.mli[129,4360+10]..[129,4360+22])
+              Pmty_ident "Core_options" (driver/main_args.mli[129,4360+10]..[129,4360+22])
+          signature_item (driver/main_args.mli[130,4383+2]..[130,4383+28])
+            Psig_value
+            value_description "_init" (driver/main_args.mli[130,4383+6]..[130,4383+11]) (driver/main_args.mli[130,4383+2]..[130,4383+28])
+              core_type (driver/main_args.mli[130,4383+14]..[130,4383+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[130,4383+14]..[130,4383+20])
+                  Ptyp_constr "string" (driver/main_args.mli[130,4383+14]..[130,4383+20])
+                  []
+                core_type (driver/main_args.mli[130,4383+24]..[130,4383+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[130,4383+24]..[130,4383+28])
+                  []
+              []
+          signature_item (driver/main_args.mli[131,4412+2]..[131,4412+28])
+            Psig_value
+            value_description "_noinit" (driver/main_args.mli[131,4412+6]..[131,4412+13]) (driver/main_args.mli[131,4412+2]..[131,4412+28])
+              core_type (driver/main_args.mli[131,4412+16]..[131,4412+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[131,4412+16]..[131,4412+20])
+                  Ptyp_constr "unit" (driver/main_args.mli[131,4412+16]..[131,4412+20])
+                  []
+                core_type (driver/main_args.mli[131,4412+24]..[131,4412+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[131,4412+24]..[131,4412+28])
+                  []
+              []
+          signature_item (driver/main_args.mli[132,4441+2]..[132,4441+32])
+            Psig_value
+            value_description "_no_version" (driver/main_args.mli[132,4441+6]..[132,4441+17]) (driver/main_args.mli[132,4441+2]..[132,4441+32])
+              core_type (driver/main_args.mli[132,4441+20]..[132,4441+32])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[132,4441+20]..[132,4441+24])
+                  Ptyp_constr "unit" (driver/main_args.mli[132,4441+20]..[132,4441+24])
+                  []
+                core_type (driver/main_args.mli[132,4441+28]..[132,4441+32])
+                  Ptyp_constr "unit" (driver/main_args.mli[132,4441+28]..[132,4441+32])
+                  []
+              []
+          signature_item (driver/main_args.mli[133,4474+2]..[133,4474+30])
+            Psig_value
+            value_description "_noprompt" (driver/main_args.mli[133,4474+6]..[133,4474+15]) (driver/main_args.mli[133,4474+2]..[133,4474+30])
+              core_type (driver/main_args.mli[133,4474+18]..[133,4474+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[133,4474+18]..[133,4474+22])
+                  Ptyp_constr "unit" (driver/main_args.mli[133,4474+18]..[133,4474+22])
+                  []
+                core_type (driver/main_args.mli[133,4474+26]..[133,4474+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[133,4474+26]..[133,4474+30])
+                  []
+              []
+          signature_item (driver/main_args.mli[134,4505+2]..[134,4505+34])
+            Psig_value
+            value_description "_nopromptcont" (driver/main_args.mli[134,4505+6]..[134,4505+19]) (driver/main_args.mli[134,4505+2]..[134,4505+34])
+              core_type (driver/main_args.mli[134,4505+22]..[134,4505+34])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[134,4505+22]..[134,4505+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[134,4505+22]..[134,4505+26])
+                  []
+                core_type (driver/main_args.mli[134,4505+30]..[134,4505+34])
+                  Ptyp_constr "unit" (driver/main_args.mli[134,4505+30]..[134,4505+34])
+                  []
+              []
+          signature_item (driver/main_args.mli[135,4540+2]..[135,4540+27])
+            Psig_value
+            value_description "_stdin" (driver/main_args.mli[135,4540+6]..[135,4540+12]) (driver/main_args.mli[135,4540+2]..[135,4540+27])
+              core_type (driver/main_args.mli[135,4540+15]..[135,4540+27])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[135,4540+15]..[135,4540+19])
+                  Ptyp_constr "unit" (driver/main_args.mli[135,4540+15]..[135,4540+19])
+                  []
+                core_type (driver/main_args.mli[135,4540+23]..[135,4540+27])
+                  Ptyp_constr "unit" (driver/main_args.mli[135,4540+23]..[135,4540+27])
+                  []
+              []
+          signature_item (driver/main_args.mli[136,4568+2]..[136,4568+36])
+            Psig_value
+            value_description "_args" (driver/main_args.mli[136,4568+6]..[136,4568+11]) (driver/main_args.mli[136,4568+2]..[136,4568+36])
+              core_type (driver/main_args.mli[136,4568+14]..[136,4568+36])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[136,4568+14]..[136,4568+20])
+                  Ptyp_constr "string" (driver/main_args.mli[136,4568+14]..[136,4568+20])
+                  []
+                core_type (driver/main_args.mli[136,4568+24]..[136,4568+36])
+                  Ptyp_constr "array" (driver/main_args.mli[136,4568+31]..[136,4568+36])
+                  [
+                    core_type (driver/main_args.mli[136,4568+24]..[136,4568+30])
+                      Ptyp_constr "string" (driver/main_args.mli[136,4568+24]..[136,4568+30])
+                      []
+                  ]
+              []
+          signature_item (driver/main_args.mli[137,4605+2]..[137,4605+37])
+            Psig_value
+            value_description "_args0" (driver/main_args.mli[137,4605+6]..[137,4605+12]) (driver/main_args.mli[137,4605+2]..[137,4605+37])
+              core_type (driver/main_args.mli[137,4605+15]..[137,4605+37])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[137,4605+15]..[137,4605+21])
+                  Ptyp_constr "string" (driver/main_args.mli[137,4605+15]..[137,4605+21])
+                  []
+                core_type (driver/main_args.mli[137,4605+25]..[137,4605+37])
+                  Ptyp_constr "array" (driver/main_args.mli[137,4605+32]..[137,4605+37])
+                  [
+                    core_type (driver/main_args.mli[137,4605+25]..[137,4605+31])
+                      Ptyp_constr "string" (driver/main_args.mli[137,4605+25]..[137,4605+31])
+                      []
+                  ]
+              []
+          signature_item (driver/main_args.mli[138,4643+2]..[138,4643+29])
+            Psig_value
+            value_description "_color" (driver/main_args.mli[138,4643+6]..[138,4643+12]) (driver/main_args.mli[138,4643+2]..[138,4643+29])
+              core_type (driver/main_args.mli[138,4643+15]..[138,4643+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[138,4643+15]..[138,4643+21])
+                  Ptyp_constr "string" (driver/main_args.mli[138,4643+15]..[138,4643+21])
+                  []
+                core_type (driver/main_args.mli[138,4643+25]..[138,4643+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[138,4643+25]..[138,4643+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[139,4673+2]..[139,4673+35])
+            Psig_value
+            value_description "_error_style" (driver/main_args.mli[139,4673+6]..[139,4673+18]) (driver/main_args.mli[139,4673+2]..[139,4673+35])
+              core_type (driver/main_args.mli[139,4673+21]..[139,4673+35])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[139,4673+21]..[139,4673+27])
+                  Ptyp_constr "string" (driver/main_args.mli[139,4673+21]..[139,4673+27])
+                  []
+                core_type (driver/main_args.mli[139,4673+31]..[139,4673+35])
+                  Ptyp_constr "unit" (driver/main_args.mli[139,4673+31]..[139,4673+35])
+                  []
+              []
+        ]
+  signature_item (driver/main_args.mli[143,4717+0]..[160,5204+3])
+    Psig_modtype "Bytecomp_options" (driver/main_args.mli[143,4717+12]..[143,4717+28])
+      module_type (driver/main_args.mli[143,4717+31]..[160,5204+3])
+        Pmty_signature
+        [
+          signature_item (driver/main_args.mli[144,4752+2]..[144,4752+22])
+            Psig_include
+            module_type (driver/main_args.mli[144,4752+10]..[144,4752+22])
+              Pmty_ident "Core_options" (driver/main_args.mli[144,4752+10]..[144,4752+22])
+          signature_item (driver/main_args.mli[145,4775+2]..[145,4775+26])
+            Psig_include
+            module_type (driver/main_args.mli[145,4775+10]..[145,4775+26])
+              Pmty_ident "Compiler_options" (driver/main_args.mli[145,4775+10]..[145,4775+26])
+          signature_item (driver/main_args.mli[146,4802+2]..[146,4802+31])
+            Psig_value
+            value_description "_compat_32" (driver/main_args.mli[146,4802+6]..[146,4802+16]) (driver/main_args.mli[146,4802+2]..[146,4802+31])
+              core_type (driver/main_args.mli[146,4802+19]..[146,4802+31])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[146,4802+19]..[146,4802+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[146,4802+19]..[146,4802+23])
+                  []
+                core_type (driver/main_args.mli[146,4802+27]..[146,4802+31])
+                  Ptyp_constr "unit" (driver/main_args.mli[146,4802+27]..[146,4802+31])
+                  []
+              []
+          signature_item (driver/main_args.mli[147,4834+2]..[147,4834+28])
+            Psig_value
+            value_description "_custom" (driver/main_args.mli[147,4834+6]..[147,4834+13]) (driver/main_args.mli[147,4834+2]..[147,4834+28])
+              core_type (driver/main_args.mli[147,4834+16]..[147,4834+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[147,4834+16]..[147,4834+20])
+                  Ptyp_constr "unit" (driver/main_args.mli[147,4834+16]..[147,4834+20])
+                  []
+                core_type (driver/main_args.mli[147,4834+24]..[147,4834+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[147,4834+24]..[147,4834+28])
+                  []
+              []
+          signature_item (driver/main_args.mli[148,4863+2]..[148,4863+36])
+            Psig_value
+            value_description "_no_check_prims" (driver/main_args.mli[148,4863+6]..[148,4863+21]) (driver/main_args.mli[148,4863+2]..[148,4863+36])
+              core_type (driver/main_args.mli[148,4863+24]..[148,4863+36])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[148,4863+24]..[148,4863+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[148,4863+24]..[148,4863+28])
+                  []
+                core_type (driver/main_args.mli[148,4863+32]..[148,4863+36])
+                  Ptyp_constr "unit" (driver/main_args.mli[148,4863+32]..[148,4863+36])
+                  []
+              []
+          signature_item (driver/main_args.mli[149,4900+2]..[149,4900+29])
+            Psig_value
+            value_description "_dllib" (driver/main_args.mli[149,4900+6]..[149,4900+12]) (driver/main_args.mli[149,4900+2]..[149,4900+29])
+              core_type (driver/main_args.mli[149,4900+15]..[149,4900+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[149,4900+15]..[149,4900+21])
+                  Ptyp_constr "string" (driver/main_args.mli[149,4900+15]..[149,4900+21])
+                  []
+                core_type (driver/main_args.mli[149,4900+25]..[149,4900+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[149,4900+25]..[149,4900+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[150,4930+2]..[150,4930+31])
+            Psig_value
+            value_description "_dllpath" (driver/main_args.mli[150,4930+6]..[150,4930+14]) (driver/main_args.mli[150,4930+2]..[150,4930+31])
+              core_type (driver/main_args.mli[150,4930+17]..[150,4930+31])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[150,4930+17]..[150,4930+23])
+                  Ptyp_constr "string" (driver/main_args.mli[150,4930+17]..[150,4930+23])
+                  []
+                core_type (driver/main_args.mli[150,4930+27]..[150,4930+31])
+                  Ptyp_constr "unit" (driver/main_args.mli[150,4930+27]..[150,4930+31])
+                  []
+              []
+          signature_item (driver/main_args.mli[151,4962+2]..[151,4962+34])
+            Psig_value
+            value_description "_make_runtime" (driver/main_args.mli[151,4962+6]..[151,4962+19]) (driver/main_args.mli[151,4962+2]..[151,4962+34])
+              core_type (driver/main_args.mli[151,4962+22]..[151,4962+34])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[151,4962+22]..[151,4962+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[151,4962+22]..[151,4962+26])
+                  []
+                core_type (driver/main_args.mli[151,4962+30]..[151,4962+34])
+                  Ptyp_constr "unit" (driver/main_args.mli[151,4962+30]..[151,4962+34])
+                  []
+              []
+          signature_item (driver/main_args.mli[152,4997+2]..[152,4997+30])
+            Psig_value
+            value_description "_vmthread" (driver/main_args.mli[152,4997+6]..[152,4997+15]) (driver/main_args.mli[152,4997+2]..[152,4997+30])
+              core_type (driver/main_args.mli[152,4997+18]..[152,4997+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[152,4997+18]..[152,4997+22])
+                  Ptyp_constr "unit" (driver/main_args.mli[152,4997+18]..[152,4997+22])
+                  []
+                core_type (driver/main_args.mli[152,4997+26]..[152,4997+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[152,4997+26]..[152,4997+30])
+                  []
+              []
+          signature_item (driver/main_args.mli[153,5028+2]..[153,5028+35])
+            Psig_value
+            value_description "_use_runtime" (driver/main_args.mli[153,5028+6]..[153,5028+18]) (driver/main_args.mli[153,5028+2]..[153,5028+35])
+              core_type (driver/main_args.mli[153,5028+21]..[153,5028+35])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[153,5028+21]..[153,5028+27])
+                  Ptyp_constr "string" (driver/main_args.mli[153,5028+21]..[153,5028+27])
+                  []
+                core_type (driver/main_args.mli[153,5028+31]..[153,5028+35])
+                  Ptyp_constr "unit" (driver/main_args.mli[153,5028+31]..[153,5028+35])
+                  []
+              []
+          signature_item (driver/main_args.mli[154,5064+2]..[154,5064+41])
+            Psig_value
+            value_description "_output_complete_exe" (driver/main_args.mli[154,5064+6]..[154,5064+26]) (driver/main_args.mli[154,5064+2]..[154,5064+41])
+              core_type (driver/main_args.mli[154,5064+29]..[154,5064+41])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[154,5064+29]..[154,5064+33])
+                  Ptyp_constr "unit" (driver/main_args.mli[154,5064+29]..[154,5064+33])
+                  []
+                core_type (driver/main_args.mli[154,5064+37]..[154,5064+41])
+                  Ptyp_constr "unit" (driver/main_args.mli[154,5064+37]..[154,5064+41])
+                  []
+              []
+          signature_item (driver/main_args.mli[156,5107+2]..[156,5107+28])
+            Psig_value
+            value_description "_dinstr" (driver/main_args.mli[156,5107+6]..[156,5107+13]) (driver/main_args.mli[156,5107+2]..[156,5107+28])
+              core_type (driver/main_args.mli[156,5107+16]..[156,5107+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[156,5107+16]..[156,5107+20])
+                  Ptyp_constr "unit" (driver/main_args.mli[156,5107+16]..[156,5107+20])
+                  []
+                core_type (driver/main_args.mli[156,5107+24]..[156,5107+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[156,5107+24]..[156,5107+28])
+                  []
+              []
+          signature_item (driver/main_args.mli[157,5136+2]..[157,5136+32])
+            Psig_value
+            value_description "_dcamlprimc" (driver/main_args.mli[157,5136+6]..[157,5136+17]) (driver/main_args.mli[157,5136+2]..[157,5136+32])
+              core_type (driver/main_args.mli[157,5136+20]..[157,5136+32])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[157,5136+20]..[157,5136+24])
+                  Ptyp_constr "unit" (driver/main_args.mli[157,5136+20]..[157,5136+24])
+                  []
+                core_type (driver/main_args.mli[157,5136+28]..[157,5136+32])
+                  Ptyp_constr "unit" (driver/main_args.mli[157,5136+28]..[157,5136+32])
+                  []
+              []
+          signature_item (driver/main_args.mli[159,5170+2]..[159,5170+33])
+            Psig_value
+            value_description "_use_prims" (driver/main_args.mli[159,5170+6]..[159,5170+16]) (driver/main_args.mli[159,5170+2]..[159,5170+33])
+              core_type (driver/main_args.mli[159,5170+19]..[159,5170+33])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[159,5170+19]..[159,5170+25])
+                  Ptyp_constr "string" (driver/main_args.mli[159,5170+19]..[159,5170+25])
+                  []
+                core_type (driver/main_args.mli[159,5170+29]..[159,5170+33])
+                  Ptyp_constr "unit" (driver/main_args.mli[159,5170+29]..[159,5170+33])
+                  []
+              []
+        ]
+  signature_item (driver/main_args.mli[162,5211+0]..[166,5302+3])
+    Psig_modtype "Bytetop_options" (driver/main_args.mli[162,5211+12]..[162,5211+27])
+      module_type (driver/main_args.mli[162,5211+30]..[166,5302+3])
+        Pmty_signature
+        [
+          signature_item (driver/main_args.mli[163,5245+2]..[163,5245+26])
+            Psig_include
+            module_type (driver/main_args.mli[163,5245+10]..[163,5245+26])
+              Pmty_ident "Toplevel_options" (driver/main_args.mli[163,5245+10]..[163,5245+26])
+          signature_item (driver/main_args.mli[164,5272+2]..[164,5272+28])
+            Psig_value
+            value_description "_dinstr" (driver/main_args.mli[164,5272+6]..[164,5272+13]) (driver/main_args.mli[164,5272+2]..[164,5272+28])
+              core_type (driver/main_args.mli[164,5272+16]..[164,5272+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[164,5272+16]..[164,5272+20])
+                  Ptyp_constr "unit" (driver/main_args.mli[164,5272+16]..[164,5272+20])
+                  []
+                core_type (driver/main_args.mli[164,5272+24]..[164,5272+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[164,5272+24]..[164,5272+28])
+                  []
+              []
+        ]
+  signature_item (driver/main_args.mli[168,5309+0]..[222,7203+3])
+    Psig_modtype "Optcommon_options" (driver/main_args.mli[168,5309+12]..[168,5309+29])
+      module_type (driver/main_args.mli[168,5309+32]..[222,7203+3])
+        Pmty_signature
+        [
+          signature_item (driver/main_args.mli[169,5345+2]..[169,5345+29])
+            Psig_value
+            value_description "_compact" (driver/main_args.mli[169,5345+6]..[169,5345+14]) (driver/main_args.mli[169,5345+2]..[169,5345+29])
+              core_type (driver/main_args.mli[169,5345+17]..[169,5345+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[169,5345+17]..[169,5345+21])
+                  Ptyp_constr "unit" (driver/main_args.mli[169,5345+17]..[169,5345+21])
+                  []
+                core_type (driver/main_args.mli[169,5345+25]..[169,5345+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[169,5345+25]..[169,5345+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[170,5375+2]..[170,5375+30])
+            Psig_value
+            value_description "_inline" (driver/main_args.mli[170,5375+6]..[170,5375+13]) (driver/main_args.mli[170,5375+2]..[170,5375+30])
+              core_type (driver/main_args.mli[170,5375+16]..[170,5375+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[170,5375+16]..[170,5375+22])
+                  Ptyp_constr "string" (driver/main_args.mli[170,5375+16]..[170,5375+22])
+                  []
+                core_type (driver/main_args.mli[170,5375+26]..[170,5375+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[170,5375+26]..[170,5375+30])
+                  []
+              []
+          signature_item (driver/main_args.mli[171,5406+2]..[171,5406+39])
+            Psig_value
+            value_description "_inline_toplevel" (driver/main_args.mli[171,5406+6]..[171,5406+22]) (driver/main_args.mli[171,5406+2]..[171,5406+39])
+              core_type (driver/main_args.mli[171,5406+25]..[171,5406+39])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[171,5406+25]..[171,5406+31])
+                  Ptyp_constr "string" (driver/main_args.mli[171,5406+25]..[171,5406+31])
+                  []
+                core_type (driver/main_args.mli[171,5406+35]..[171,5406+39])
+                  Ptyp_constr "unit" (driver/main_args.mli[171,5406+35]..[171,5406+39])
+                  []
+              []
+          signature_item (driver/main_args.mli[172,5446+2]..[172,5446+37])
+            Psig_value
+            value_description "_inlining_report" (driver/main_args.mli[172,5446+6]..[172,5446+22]) (driver/main_args.mli[172,5446+2]..[172,5446+37])
+              core_type (driver/main_args.mli[172,5446+25]..[172,5446+37])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[172,5446+25]..[172,5446+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[172,5446+25]..[172,5446+29])
+                  []
+                core_type (driver/main_args.mli[172,5446+33]..[172,5446+37])
+                  Ptyp_constr "unit" (driver/main_args.mli[172,5446+33]..[172,5446+37])
+                  []
+              []
+          signature_item (driver/main_args.mli[173,5484+2]..[173,5484+33])
+            Psig_value
+            value_description "_dump_pass" (driver/main_args.mli[173,5484+6]..[173,5484+16]) (driver/main_args.mli[173,5484+2]..[173,5484+33])
+              core_type (driver/main_args.mli[173,5484+19]..[173,5484+33])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[173,5484+19]..[173,5484+25])
+                  Ptyp_constr "string" (driver/main_args.mli[173,5484+19]..[173,5484+25])
+                  []
+                core_type (driver/main_args.mli[173,5484+29]..[173,5484+33])
+                  Ptyp_constr "unit" (driver/main_args.mli[173,5484+29]..[173,5484+33])
+                  []
+              []
+          signature_item (driver/main_args.mli[174,5518+2]..[174,5518+40])
+            Psig_value
+            value_description "_inline_max_depth" (driver/main_args.mli[174,5518+6]..[174,5518+23]) (driver/main_args.mli[174,5518+2]..[174,5518+40])
+              core_type (driver/main_args.mli[174,5518+26]..[174,5518+40])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[174,5518+26]..[174,5518+32])
+                  Ptyp_constr "string" (driver/main_args.mli[174,5518+26]..[174,5518+32])
+                  []
+                core_type (driver/main_args.mli[174,5518+36]..[174,5518+40])
+                  Ptyp_constr "unit" (driver/main_args.mli[174,5518+36]..[174,5518+40])
+                  []
+              []
+          signature_item (driver/main_args.mli[175,5559+2]..[175,5559+27])
+            Psig_value
+            value_description "_rounds" (driver/main_args.mli[175,5559+6]..[175,5559+13]) (driver/main_args.mli[175,5559+2]..[175,5559+27])
+              core_type (driver/main_args.mli[175,5559+16]..[175,5559+27])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[175,5559+16]..[175,5559+19])
+                  Ptyp_constr "int" (driver/main_args.mli[175,5559+16]..[175,5559+19])
+                  []
+                core_type (driver/main_args.mli[175,5559+23]..[175,5559+27])
+                  Ptyp_constr "unit" (driver/main_args.mli[175,5559+23]..[175,5559+27])
+                  []
+              []
+          signature_item (driver/main_args.mli[176,5587+2]..[176,5587+41])
+            Psig_value
+            value_description "_inline_max_unroll" (driver/main_args.mli[176,5587+6]..[176,5587+24]) (driver/main_args.mli[176,5587+2]..[176,5587+41])
+              core_type (driver/main_args.mli[176,5587+27]..[176,5587+41])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[176,5587+27]..[176,5587+33])
+                  Ptyp_constr "string" (driver/main_args.mli[176,5587+27]..[176,5587+33])
+                  []
+                core_type (driver/main_args.mli[176,5587+37]..[176,5587+41])
+                  Ptyp_constr "unit" (driver/main_args.mli[176,5587+37]..[176,5587+41])
+                  []
+              []
+          signature_item (driver/main_args.mli[177,5629+2]..[177,5629+38])
+            Psig_value
+            value_description "_classic_inlining" (driver/main_args.mli[177,5629+6]..[177,5629+23]) (driver/main_args.mli[177,5629+2]..[177,5629+38])
+              core_type (driver/main_args.mli[177,5629+26]..[177,5629+38])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[177,5629+26]..[177,5629+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[177,5629+26]..[177,5629+30])
+                  []
+                core_type (driver/main_args.mli[177,5629+34]..[177,5629+38])
+                  Ptyp_constr "unit" (driver/main_args.mli[177,5629+34]..[177,5629+38])
+                  []
+              []
+          signature_item (driver/main_args.mli[178,5668+2]..[178,5668+40])
+            Psig_value
+            value_description "_inline_call_cost" (driver/main_args.mli[178,5668+6]..[178,5668+23]) (driver/main_args.mli[178,5668+2]..[178,5668+40])
+              core_type (driver/main_args.mli[178,5668+26]..[178,5668+40])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[178,5668+26]..[178,5668+32])
+                  Ptyp_constr "string" (driver/main_args.mli[178,5668+26]..[178,5668+32])
+                  []
+                core_type (driver/main_args.mli[178,5668+36]..[178,5668+40])
+                  Ptyp_constr "unit" (driver/main_args.mli[178,5668+36]..[178,5668+40])
+                  []
+              []
+          signature_item (driver/main_args.mli[179,5709+2]..[179,5709+41])
+            Psig_value
+            value_description "_inline_alloc_cost" (driver/main_args.mli[179,5709+6]..[179,5709+24]) (driver/main_args.mli[179,5709+2]..[179,5709+41])
+              core_type (driver/main_args.mli[179,5709+27]..[179,5709+41])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[179,5709+27]..[179,5709+33])
+                  Ptyp_constr "string" (driver/main_args.mli[179,5709+27]..[179,5709+33])
+                  []
+                core_type (driver/main_args.mli[179,5709+37]..[179,5709+41])
+                  Ptyp_constr "unit" (driver/main_args.mli[179,5709+37]..[179,5709+41])
+                  []
+              []
+          signature_item (driver/main_args.mli[180,5751+2]..[180,5751+40])
+            Psig_value
+            value_description "_inline_prim_cost" (driver/main_args.mli[180,5751+6]..[180,5751+23]) (driver/main_args.mli[180,5751+2]..[180,5751+40])
+              core_type (driver/main_args.mli[180,5751+26]..[180,5751+40])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[180,5751+26]..[180,5751+32])
+                  Ptyp_constr "string" (driver/main_args.mli[180,5751+26]..[180,5751+32])
+                  []
+                core_type (driver/main_args.mli[180,5751+36]..[180,5751+40])
+                  Ptyp_constr "unit" (driver/main_args.mli[180,5751+36]..[180,5751+40])
+                  []
+              []
+          signature_item (driver/main_args.mli[181,5792+2]..[181,5792+42])
+            Psig_value
+            value_description "_inline_branch_cost" (driver/main_args.mli[181,5792+6]..[181,5792+25]) (driver/main_args.mli[181,5792+2]..[181,5792+42])
+              core_type (driver/main_args.mli[181,5792+28]..[181,5792+42])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[181,5792+28]..[181,5792+34])
+                  Ptyp_constr "string" (driver/main_args.mli[181,5792+28]..[181,5792+34])
+                  []
+                core_type (driver/main_args.mli[181,5792+38]..[181,5792+42])
+                  Ptyp_constr "unit" (driver/main_args.mli[181,5792+38]..[181,5792+42])
+                  []
+              []
+          signature_item (driver/main_args.mli[182,5835+2]..[182,5835+44])
+            Psig_value
+            value_description "_inline_indirect_cost" (driver/main_args.mli[182,5835+6]..[182,5835+27]) (driver/main_args.mli[182,5835+2]..[182,5835+44])
+              core_type (driver/main_args.mli[182,5835+30]..[182,5835+44])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[182,5835+30]..[182,5835+36])
+                  Ptyp_constr "string" (driver/main_args.mli[182,5835+30]..[182,5835+36])
+                  []
+                core_type (driver/main_args.mli[182,5835+40]..[182,5835+44])
+                  Ptyp_constr "unit" (driver/main_args.mli[182,5835+40]..[182,5835+44])
+                  []
+              []
+          signature_item (driver/main_args.mli[183,5880+2]..[183,5880+46])
+            Psig_value
+            value_description "_inline_lifting_benefit" (driver/main_args.mli[183,5880+6]..[183,5880+29]) (driver/main_args.mli[183,5880+2]..[183,5880+46])
+              core_type (driver/main_args.mli[183,5880+32]..[183,5880+46])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[183,5880+32]..[183,5880+38])
+                  Ptyp_constr "string" (driver/main_args.mli[183,5880+32]..[183,5880+38])
+                  []
+                core_type (driver/main_args.mli[183,5880+42]..[183,5880+46])
+                  Ptyp_constr "unit" (driver/main_args.mli[183,5880+42]..[183,5880+46])
+                  []
+              []
+          signature_item (driver/main_args.mli[184,5927+2]..[184,5927+36])
+            Psig_value
+            value_description "_unbox_closures" (driver/main_args.mli[184,5927+6]..[184,5927+21]) (driver/main_args.mli[184,5927+2]..[184,5927+36])
+              core_type (driver/main_args.mli[184,5927+24]..[184,5927+36])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[184,5927+24]..[184,5927+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[184,5927+24]..[184,5927+28])
+                  []
+                core_type (driver/main_args.mli[184,5927+32]..[184,5927+36])
+                  Ptyp_constr "unit" (driver/main_args.mli[184,5927+32]..[184,5927+36])
+                  []
+              []
+          signature_item (driver/main_args.mli[185,5964+2]..[185,5964+42])
+            Psig_value
+            value_description "_unbox_closures_factor" (driver/main_args.mli[185,5964+6]..[185,5964+28]) (driver/main_args.mli[185,5964+2]..[185,5964+42])
+              core_type (driver/main_args.mli[185,5964+31]..[185,5964+42])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[185,5964+31]..[185,5964+34])
+                  Ptyp_constr "int" (driver/main_args.mli[185,5964+31]..[185,5964+34])
+                  []
+                core_type (driver/main_args.mli[185,5964+38]..[185,5964+42])
+                  Ptyp_constr "unit" (driver/main_args.mli[185,5964+38]..[185,5964+42])
+                  []
+              []
+          signature_item (driver/main_args.mli[186,6007+2]..[186,6007+44])
+            Psig_value
+            value_description "_inline_branch_factor" (driver/main_args.mli[186,6007+6]..[186,6007+27]) (driver/main_args.mli[186,6007+2]..[186,6007+44])
+              core_type (driver/main_args.mli[186,6007+30]..[186,6007+44])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[186,6007+30]..[186,6007+36])
+                  Ptyp_constr "string" (driver/main_args.mli[186,6007+30]..[186,6007+36])
+                  []
+                core_type (driver/main_args.mli[186,6007+40]..[186,6007+44])
+                  Ptyp_constr "unit" (driver/main_args.mli[186,6007+40]..[186,6007+44])
+                  []
+              []
+          signature_item (driver/main_args.mli[187,6052+2]..[187,6052+45])
+            Psig_value
+            value_description "_remove_unused_arguments" (driver/main_args.mli[187,6052+6]..[187,6052+30]) (driver/main_args.mli[187,6052+2]..[187,6052+45])
+              core_type (driver/main_args.mli[187,6052+33]..[187,6052+45])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[187,6052+33]..[187,6052+37])
+                  Ptyp_constr "unit" (driver/main_args.mli[187,6052+33]..[187,6052+37])
+                  []
+                core_type (driver/main_args.mli[187,6052+41]..[187,6052+45])
+                  Ptyp_constr "unit" (driver/main_args.mli[187,6052+41]..[187,6052+45])
+                  []
+              []
+          signature_item (driver/main_args.mli[188,6098+2]..[188,6098+52])
+            Psig_value
+            value_description "_no_unbox_free_vars_of_closures" (driver/main_args.mli[188,6098+6]..[188,6098+37]) (driver/main_args.mli[188,6098+2]..[188,6098+52])
+              core_type (driver/main_args.mli[188,6098+40]..[188,6098+52])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[188,6098+40]..[188,6098+44])
+                  Ptyp_constr "unit" (driver/main_args.mli[188,6098+40]..[188,6098+44])
+                  []
+                core_type (driver/main_args.mli[188,6098+48]..[188,6098+52])
+                  Ptyp_constr "unit" (driver/main_args.mli[188,6098+48]..[188,6098+52])
+                  []
+              []
+          signature_item (driver/main_args.mli[189,6151+2]..[189,6151+47])
+            Psig_value
+            value_description "_no_unbox_specialised_args" (driver/main_args.mli[189,6151+6]..[189,6151+32]) (driver/main_args.mli[189,6151+2]..[189,6151+47])
+              core_type (driver/main_args.mli[189,6151+35]..[189,6151+47])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[189,6151+35]..[189,6151+39])
+                  Ptyp_constr "unit" (driver/main_args.mli[189,6151+35]..[189,6151+39])
+                  []
+                core_type (driver/main_args.mli[189,6151+43]..[189,6151+47])
+                  Ptyp_constr "unit" (driver/main_args.mli[189,6151+43]..[189,6151+47])
+                  []
+              []
+          signature_item (driver/main_args.mli[190,6199+2]..[190,6199+24])
+            Psig_value
+            value_description "_o2" (driver/main_args.mli[190,6199+6]..[190,6199+9]) (driver/main_args.mli[190,6199+2]..[190,6199+24])
+              core_type (driver/main_args.mli[190,6199+12]..[190,6199+24])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[190,6199+12]..[190,6199+16])
+                  Ptyp_constr "unit" (driver/main_args.mli[190,6199+12]..[190,6199+16])
+                  []
+                core_type (driver/main_args.mli[190,6199+20]..[190,6199+24])
+                  Ptyp_constr "unit" (driver/main_args.mli[190,6199+20]..[190,6199+24])
+                  []
+              []
+          signature_item (driver/main_args.mli[191,6224+2]..[191,6224+24])
+            Psig_value
+            value_description "_o3" (driver/main_args.mli[191,6224+6]..[191,6224+9]) (driver/main_args.mli[191,6224+2]..[191,6224+24])
+              core_type (driver/main_args.mli[191,6224+12]..[191,6224+24])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[191,6224+12]..[191,6224+16])
+                  Ptyp_constr "unit" (driver/main_args.mli[191,6224+12]..[191,6224+16])
+                  []
+                core_type (driver/main_args.mli[191,6224+20]..[191,6224+24])
+                  Ptyp_constr "unit" (driver/main_args.mli[191,6224+20]..[191,6224+24])
+                  []
+              []
+          signature_item (driver/main_args.mli[192,6249+2]..[192,6249+32])
+            Psig_value
+            value_description "_insn_sched" (driver/main_args.mli[192,6249+6]..[192,6249+17]) (driver/main_args.mli[192,6249+2]..[192,6249+32])
+              core_type (driver/main_args.mli[192,6249+20]..[192,6249+32])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[192,6249+20]..[192,6249+24])
+                  Ptyp_constr "unit" (driver/main_args.mli[192,6249+20]..[192,6249+24])
+                  []
+                core_type (driver/main_args.mli[192,6249+28]..[192,6249+32])
+                  Ptyp_constr "unit" (driver/main_args.mli[192,6249+28]..[192,6249+32])
+                  []
+              []
+          signature_item (driver/main_args.mli[193,6282+2]..[193,6282+35])
+            Psig_value
+            value_description "_no_insn_sched" (driver/main_args.mli[193,6282+6]..[193,6282+20]) (driver/main_args.mli[193,6282+2]..[193,6282+35])
+              core_type (driver/main_args.mli[193,6282+23]..[193,6282+35])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[193,6282+23]..[193,6282+27])
+                  Ptyp_constr "unit" (driver/main_args.mli[193,6282+23]..[193,6282+27])
+                  []
+                core_type (driver/main_args.mli[193,6282+31]..[193,6282+35])
+                  Ptyp_constr "unit" (driver/main_args.mli[193,6282+31]..[193,6282+35])
+                  []
+              []
+          signature_item (driver/main_args.mli[194,6318+2]..[194,6318+29])
+            Psig_value
+            value_description "_linscan" (driver/main_args.mli[194,6318+6]..[194,6318+14]) (driver/main_args.mli[194,6318+2]..[194,6318+29])
+              core_type (driver/main_args.mli[194,6318+17]..[194,6318+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[194,6318+17]..[194,6318+21])
+                  Ptyp_constr "unit" (driver/main_args.mli[194,6318+17]..[194,6318+21])
+                  []
+                core_type (driver/main_args.mli[194,6318+25]..[194,6318+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[194,6318+25]..[194,6318+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[195,6348+2]..[195,6348+41])
+            Psig_value
+            value_description "_no_float_const_prop" (driver/main_args.mli[195,6348+6]..[195,6348+26]) (driver/main_args.mli[195,6348+2]..[195,6348+41])
+              core_type (driver/main_args.mli[195,6348+29]..[195,6348+41])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[195,6348+29]..[195,6348+33])
+                  Ptyp_constr "unit" (driver/main_args.mli[195,6348+29]..[195,6348+33])
+                  []
+                core_type (driver/main_args.mli[195,6348+37]..[195,6348+41])
+                  Ptyp_constr "unit" (driver/main_args.mli[195,6348+37]..[195,6348+41])
+                  []
+              []
+          signature_item (driver/main_args.mli[197,6391+2]..[197,6391+36])
+            Psig_value
+            value_description "_clambda_checks" (driver/main_args.mli[197,6391+6]..[197,6391+21]) (driver/main_args.mli[197,6391+2]..[197,6391+36])
+              core_type (driver/main_args.mli[197,6391+24]..[197,6391+36])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[197,6391+24]..[197,6391+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[197,6391+24]..[197,6391+28])
+                  []
+                core_type (driver/main_args.mli[197,6391+32]..[197,6391+36])
+                  Ptyp_constr "unit" (driver/main_args.mli[197,6391+32]..[197,6391+36])
+                  []
+              []
+          signature_item (driver/main_args.mli[198,6428+2]..[198,6428+30])
+            Psig_value
+            value_description "_dflambda" (driver/main_args.mli[198,6428+6]..[198,6428+15]) (driver/main_args.mli[198,6428+2]..[198,6428+30])
+              core_type (driver/main_args.mli[198,6428+18]..[198,6428+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[198,6428+18]..[198,6428+22])
+                  Ptyp_constr "unit" (driver/main_args.mli[198,6428+18]..[198,6428+22])
+                  []
+                core_type (driver/main_args.mli[198,6428+26]..[198,6428+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[198,6428+26]..[198,6428+30])
+                  []
+              []
+          signature_item (driver/main_args.mli[199,6459+2]..[199,6459+33])
+            Psig_value
+            value_description "_drawflambda" (driver/main_args.mli[199,6459+6]..[199,6459+18]) (driver/main_args.mli[199,6459+2]..[199,6459+33])
+              core_type (driver/main_args.mli[199,6459+21]..[199,6459+33])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[199,6459+21]..[199,6459+25])
+                  Ptyp_constr "unit" (driver/main_args.mli[199,6459+21]..[199,6459+25])
+                  []
+                core_type (driver/main_args.mli[199,6459+29]..[199,6459+33])
+                  Ptyp_constr "unit" (driver/main_args.mli[199,6459+29]..[199,6459+33])
+                  []
+              []
+          signature_item (driver/main_args.mli[200,6493+2]..[200,6493+41])
+            Psig_value
+            value_description "_dflambda_invariants" (driver/main_args.mli[200,6493+6]..[200,6493+26]) (driver/main_args.mli[200,6493+2]..[200,6493+41])
+              core_type (driver/main_args.mli[200,6493+29]..[200,6493+41])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[200,6493+29]..[200,6493+33])
+                  Ptyp_constr "unit" (driver/main_args.mli[200,6493+29]..[200,6493+33])
+                  []
+                core_type (driver/main_args.mli[200,6493+37]..[200,6493+41])
+                  Ptyp_constr "unit" (driver/main_args.mli[200,6493+37]..[200,6493+41])
+                  []
+              []
+          signature_item (driver/main_args.mli[201,6535+2]..[201,6535+44])
+            Psig_value
+            value_description "_dflambda_no_invariants" (driver/main_args.mli[201,6535+6]..[201,6535+29]) (driver/main_args.mli[201,6535+2]..[201,6535+44])
+              core_type (driver/main_args.mli[201,6535+32]..[201,6535+44])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[201,6535+32]..[201,6535+36])
+                  Ptyp_constr "unit" (driver/main_args.mli[201,6535+32]..[201,6535+36])
+                  []
+                core_type (driver/main_args.mli[201,6535+40]..[201,6535+44])
+                  Ptyp_constr "unit" (driver/main_args.mli[201,6535+40]..[201,6535+44])
+                  []
+              []
+          signature_item (driver/main_args.mli[202,6580+2]..[202,6580+33])
+            Psig_value
+            value_description "_dflambda_let" (driver/main_args.mli[202,6580+6]..[202,6580+19]) (driver/main_args.mli[202,6580+2]..[202,6580+33])
+              core_type (driver/main_args.mli[202,6580+22]..[202,6580+33])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[202,6580+22]..[202,6580+25])
+                  Ptyp_constr "int" (driver/main_args.mli[202,6580+22]..[202,6580+25])
+                  []
+                core_type (driver/main_args.mli[202,6580+29]..[202,6580+33])
+                  Ptyp_constr "unit" (driver/main_args.mli[202,6580+29]..[202,6580+33])
+                  []
+              []
+          signature_item (driver/main_args.mli[203,6614+2]..[203,6614+38])
+            Psig_value
+            value_description "_dflambda_verbose" (driver/main_args.mli[203,6614+6]..[203,6614+23]) (driver/main_args.mli[203,6614+2]..[203,6614+38])
+              core_type (driver/main_args.mli[203,6614+26]..[203,6614+38])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[203,6614+26]..[203,6614+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[203,6614+26]..[203,6614+30])
+                  []
+                core_type (driver/main_args.mli[203,6614+34]..[203,6614+38])
+                  Ptyp_constr "unit" (driver/main_args.mli[203,6614+34]..[203,6614+38])
+                  []
+              []
+          signature_item (driver/main_args.mli[204,6653+2]..[204,6653+33])
+            Psig_value
+            value_description "_drawclambda" (driver/main_args.mli[204,6653+6]..[204,6653+18]) (driver/main_args.mli[204,6653+2]..[204,6653+33])
+              core_type (driver/main_args.mli[204,6653+21]..[204,6653+33])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[204,6653+21]..[204,6653+25])
+                  Ptyp_constr "unit" (driver/main_args.mli[204,6653+21]..[204,6653+25])
+                  []
+                core_type (driver/main_args.mli[204,6653+29]..[204,6653+33])
+                  Ptyp_constr "unit" (driver/main_args.mli[204,6653+29]..[204,6653+33])
+                  []
+              []
+          signature_item (driver/main_args.mli[205,6687+2]..[205,6687+30])
+            Psig_value
+            value_description "_dclambda" (driver/main_args.mli[205,6687+6]..[205,6687+15]) (driver/main_args.mli[205,6687+2]..[205,6687+30])
+              core_type (driver/main_args.mli[205,6687+18]..[205,6687+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[205,6687+18]..[205,6687+22])
+                  Ptyp_constr "unit" (driver/main_args.mli[205,6687+18]..[205,6687+22])
+                  []
+                core_type (driver/main_args.mli[205,6687+26]..[205,6687+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[205,6687+26]..[205,6687+30])
+                  []
+              []
+          signature_item (driver/main_args.mli[206,6718+2]..[206,6718+37])
+            Psig_value
+            value_description "_dcmm_invariants" (driver/main_args.mli[206,6718+6]..[206,6718+22]) (driver/main_args.mli[206,6718+2]..[206,6718+37])
+              core_type (driver/main_args.mli[206,6718+25]..[206,6718+37])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[206,6718+25]..[206,6718+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[206,6718+25]..[206,6718+29])
+                  []
+                core_type (driver/main_args.mli[206,6718+33]..[206,6718+37])
+                  Ptyp_constr "unit" (driver/main_args.mli[206,6718+33]..[206,6718+37])
+                  []
+              []
+          signature_item (driver/main_args.mli[207,6756+2]..[207,6756+26])
+            Psig_value
+            value_description "_dcmm" (driver/main_args.mli[207,6756+6]..[207,6756+11]) (driver/main_args.mli[207,6756+2]..[207,6756+26])
+              core_type (driver/main_args.mli[207,6756+14]..[207,6756+26])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[207,6756+14]..[207,6756+18])
+                  Ptyp_constr "unit" (driver/main_args.mli[207,6756+14]..[207,6756+18])
+                  []
+                core_type (driver/main_args.mli[207,6756+22]..[207,6756+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[207,6756+22]..[207,6756+26])
+                  []
+              []
+          signature_item (driver/main_args.mli[208,6783+2]..[208,6783+26])
+            Psig_value
+            value_description "_dsel" (driver/main_args.mli[208,6783+6]..[208,6783+11]) (driver/main_args.mli[208,6783+2]..[208,6783+26])
+              core_type (driver/main_args.mli[208,6783+14]..[208,6783+26])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[208,6783+14]..[208,6783+18])
+                  Ptyp_constr "unit" (driver/main_args.mli[208,6783+14]..[208,6783+18])
+                  []
+                core_type (driver/main_args.mli[208,6783+22]..[208,6783+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[208,6783+22]..[208,6783+26])
+                  []
+              []
+          signature_item (driver/main_args.mli[209,6810+2]..[209,6810+30])
+            Psig_value
+            value_description "_dcombine" (driver/main_args.mli[209,6810+6]..[209,6810+15]) (driver/main_args.mli[209,6810+2]..[209,6810+30])
+              core_type (driver/main_args.mli[209,6810+18]..[209,6810+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[209,6810+18]..[209,6810+22])
+                  Ptyp_constr "unit" (driver/main_args.mli[209,6810+18]..[209,6810+22])
+                  []
+                core_type (driver/main_args.mli[209,6810+26]..[209,6810+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[209,6810+26]..[209,6810+30])
+                  []
+              []
+          signature_item (driver/main_args.mli[210,6841+2]..[210,6841+26])
+            Psig_value
+            value_description "_dcse" (driver/main_args.mli[210,6841+6]..[210,6841+11]) (driver/main_args.mli[210,6841+2]..[210,6841+26])
+              core_type (driver/main_args.mli[210,6841+14]..[210,6841+26])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[210,6841+14]..[210,6841+18])
+                  Ptyp_constr "unit" (driver/main_args.mli[210,6841+14]..[210,6841+18])
+                  []
+                core_type (driver/main_args.mli[210,6841+22]..[210,6841+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[210,6841+22]..[210,6841+26])
+                  []
+              []
+          signature_item (driver/main_args.mli[211,6868+2]..[211,6868+27])
+            Psig_value
+            value_description "_dlive" (driver/main_args.mli[211,6868+6]..[211,6868+12]) (driver/main_args.mli[211,6868+2]..[211,6868+27])
+              core_type (driver/main_args.mli[211,6868+15]..[211,6868+27])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[211,6868+15]..[211,6868+19])
+                  Ptyp_constr "unit" (driver/main_args.mli[211,6868+15]..[211,6868+19])
+                  []
+                core_type (driver/main_args.mli[211,6868+23]..[211,6868+27])
+                  Ptyp_constr "unit" (driver/main_args.mli[211,6868+23]..[211,6868+27])
+                  []
+              []
+          signature_item (driver/main_args.mli[212,6896+2]..[212,6896+28])
+            Psig_value
+            value_description "_dspill" (driver/main_args.mli[212,6896+6]..[212,6896+13]) (driver/main_args.mli[212,6896+2]..[212,6896+28])
+              core_type (driver/main_args.mli[212,6896+16]..[212,6896+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[212,6896+16]..[212,6896+20])
+                  Ptyp_constr "unit" (driver/main_args.mli[212,6896+16]..[212,6896+20])
+                  []
+                core_type (driver/main_args.mli[212,6896+24]..[212,6896+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[212,6896+24]..[212,6896+28])
+                  []
+              []
+          signature_item (driver/main_args.mli[213,6925+2]..[213,6925+28])
+            Psig_value
+            value_description "_dsplit" (driver/main_args.mli[213,6925+6]..[213,6925+13]) (driver/main_args.mli[213,6925+2]..[213,6925+28])
+              core_type (driver/main_args.mli[213,6925+16]..[213,6925+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[213,6925+16]..[213,6925+20])
+                  Ptyp_constr "unit" (driver/main_args.mli[213,6925+16]..[213,6925+20])
+                  []
+                core_type (driver/main_args.mli[213,6925+24]..[213,6925+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[213,6925+24]..[213,6925+28])
+                  []
+              []
+          signature_item (driver/main_args.mli[214,6954+2]..[214,6954+29])
+            Psig_value
+            value_description "_dinterf" (driver/main_args.mli[214,6954+6]..[214,6954+14]) (driver/main_args.mli[214,6954+2]..[214,6954+29])
+              core_type (driver/main_args.mli[214,6954+17]..[214,6954+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[214,6954+17]..[214,6954+21])
+                  Ptyp_constr "unit" (driver/main_args.mli[214,6954+17]..[214,6954+21])
+                  []
+                core_type (driver/main_args.mli[214,6954+25]..[214,6954+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[214,6954+25]..[214,6954+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[215,6984+2]..[215,6984+29])
+            Psig_value
+            value_description "_dprefer" (driver/main_args.mli[215,6984+6]..[215,6984+14]) (driver/main_args.mli[215,6984+2]..[215,6984+29])
+              core_type (driver/main_args.mli[215,6984+17]..[215,6984+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[215,6984+17]..[215,6984+21])
+                  Ptyp_constr "unit" (driver/main_args.mli[215,6984+17]..[215,6984+21])
+                  []
+                core_type (driver/main_args.mli[215,6984+25]..[215,6984+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[215,6984+25]..[215,6984+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[216,7014+2]..[216,7014+28])
+            Psig_value
+            value_description "_dalloc" (driver/main_args.mli[216,7014+6]..[216,7014+13]) (driver/main_args.mli[216,7014+2]..[216,7014+28])
+              core_type (driver/main_args.mli[216,7014+16]..[216,7014+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[216,7014+16]..[216,7014+20])
+                  Ptyp_constr "unit" (driver/main_args.mli[216,7014+16]..[216,7014+20])
+                  []
+                core_type (driver/main_args.mli[216,7014+24]..[216,7014+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[216,7014+24]..[216,7014+28])
+                  []
+              []
+          signature_item (driver/main_args.mli[217,7043+2]..[217,7043+29])
+            Psig_value
+            value_description "_dreload" (driver/main_args.mli[217,7043+6]..[217,7043+14]) (driver/main_args.mli[217,7043+2]..[217,7043+29])
+              core_type (driver/main_args.mli[217,7043+17]..[217,7043+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[217,7043+17]..[217,7043+21])
+                  Ptyp_constr "unit" (driver/main_args.mli[217,7043+17]..[217,7043+21])
+                  []
+                core_type (driver/main_args.mli[217,7043+25]..[217,7043+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[217,7043+25]..[217,7043+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[218,7073+2]..[218,7073+34])
+            Psig_value
+            value_description "_dscheduling" (driver/main_args.mli[218,7073+6]..[218,7073+18]) (driver/main_args.mli[218,7073+2]..[218,7073+34])
+              core_type (driver/main_args.mli[218,7073+22]..[218,7073+34])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[218,7073+22]..[218,7073+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[218,7073+22]..[218,7073+26])
+                  []
+                core_type (driver/main_args.mli[218,7073+30]..[218,7073+34])
+                  Ptyp_constr "unit" (driver/main_args.mli[218,7073+30]..[218,7073+34])
+                  []
+              []
+          signature_item (driver/main_args.mli[219,7108+2]..[219,7108+30])
+            Psig_value
+            value_description "_dlinear" (driver/main_args.mli[219,7108+6]..[219,7108+14]) (driver/main_args.mli[219,7108+2]..[219,7108+30])
+              core_type (driver/main_args.mli[219,7108+18]..[219,7108+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[219,7108+18]..[219,7108+22])
+                  Ptyp_constr "unit" (driver/main_args.mli[219,7108+18]..[219,7108+22])
+                  []
+                core_type (driver/main_args.mli[219,7108+26]..[219,7108+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[219,7108+26]..[219,7108+30])
+                  []
+              []
+          signature_item (driver/main_args.mli[220,7139+2]..[220,7139+31])
+            Psig_value
+            value_description "_dinterval" (driver/main_args.mli[220,7139+6]..[220,7139+16]) (driver/main_args.mli[220,7139+2]..[220,7139+31])
+              core_type (driver/main_args.mli[220,7139+19]..[220,7139+31])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[220,7139+19]..[220,7139+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[220,7139+19]..[220,7139+23])
+                  []
+                core_type (driver/main_args.mli[220,7139+27]..[220,7139+31])
+                  Ptyp_constr "unit" (driver/main_args.mli[220,7139+27]..[220,7139+31])
+                  []
+              []
+          signature_item (driver/main_args.mli[221,7171+2]..[221,7171+31])
+            Psig_value
+            value_description "_dstartup" (driver/main_args.mli[221,7171+6]..[221,7171+15]) (driver/main_args.mli[221,7171+2]..[221,7171+31])
+              core_type (driver/main_args.mli[221,7171+19]..[221,7171+31])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[221,7171+19]..[221,7171+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[221,7171+19]..[221,7171+23])
+                  []
+                core_type (driver/main_args.mli[221,7171+27]..[221,7171+31])
+                  Ptyp_constr "unit" (driver/main_args.mli[221,7171+27]..[221,7171+31])
+                  []
+              []
+        ]
+  signature_item (driver/main_args.mli[224,7210+0]..[237,7609+3])
+    Psig_modtype "Optcomp_options" (driver/main_args.mli[224,7210+12]..[224,7210+27])
+      module_type (driver/main_args.mli[224,7210+30]..[237,7609+3])
+        Pmty_signature
+        [
+          signature_item (driver/main_args.mli[225,7244+2]..[225,7244+22])
+            Psig_include
+            module_type (driver/main_args.mli[225,7244+10]..[225,7244+22])
+              Pmty_ident "Core_options" (driver/main_args.mli[225,7244+10]..[225,7244+22])
+          signature_item (driver/main_args.mli[226,7267+2]..[226,7267+26])
+            Psig_include
+            module_type (driver/main_args.mli[226,7267+10]..[226,7267+26])
+              Pmty_ident "Compiler_options" (driver/main_args.mli[226,7267+10]..[226,7267+26])
+          signature_item (driver/main_args.mli[227,7294+2]..[227,7294+27])
+            Psig_include
+            module_type (driver/main_args.mli[227,7294+10]..[227,7294+27])
+              Pmty_ident "Optcommon_options" (driver/main_args.mli[227,7294+10]..[227,7294+27])
+          signature_item (driver/main_args.mli[228,7322+2]..[228,7322+31])
+            Psig_value
+            value_description "_nodynlink" (driver/main_args.mli[228,7322+6]..[228,7322+16]) (driver/main_args.mli[228,7322+2]..[228,7322+31])
+              core_type (driver/main_args.mli[228,7322+19]..[228,7322+31])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[228,7322+19]..[228,7322+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[228,7322+19]..[228,7322+23])
+                  []
+                core_type (driver/main_args.mli[228,7322+27]..[228,7322+31])
+                  Ptyp_constr "unit" (driver/main_args.mli[228,7322+27]..[228,7322+31])
+                  []
+              []
+          signature_item (driver/main_args.mli[229,7354+2]..[229,7354+23])
+            Psig_value
+            value_description "_p" (driver/main_args.mli[229,7354+6]..[229,7354+8]) (driver/main_args.mli[229,7354+2]..[229,7354+23])
+              core_type (driver/main_args.mli[229,7354+11]..[229,7354+23])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[229,7354+11]..[229,7354+15])
+                  Ptyp_constr "unit" (driver/main_args.mli[229,7354+11]..[229,7354+15])
+                  []
+                core_type (driver/main_args.mli[229,7354+19]..[229,7354+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[229,7354+19]..[229,7354+23])
+                  []
+              []
+          signature_item (driver/main_args.mli[230,7378+2]..[230,7378+26])
+            Psig_value
+            value_description "_pp" (driver/main_args.mli[230,7378+6]..[230,7378+9]) (driver/main_args.mli[230,7378+2]..[230,7378+26])
+              core_type (driver/main_args.mli[230,7378+12]..[230,7378+26])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[230,7378+12]..[230,7378+18])
+                  Ptyp_constr "string" (driver/main_args.mli[230,7378+12]..[230,7378+18])
+                  []
+                core_type (driver/main_args.mli[230,7378+22]..[230,7378+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[230,7378+22]..[230,7378+26])
+                  []
+              []
+          signature_item (driver/main_args.mli[231,7405+2]..[231,7405+23])
+            Psig_value
+            value_description "_S" (driver/main_args.mli[231,7405+6]..[231,7405+8]) (driver/main_args.mli[231,7405+2]..[231,7405+23])
+              core_type (driver/main_args.mli[231,7405+11]..[231,7405+23])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[231,7405+11]..[231,7405+15])
+                  Ptyp_constr "unit" (driver/main_args.mli[231,7405+11]..[231,7405+15])
+                  []
+                core_type (driver/main_args.mli[231,7405+19]..[231,7405+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[231,7405+19]..[231,7405+23])
+                  []
+              []
+          signature_item (driver/main_args.mli[232,7429+2]..[232,7429+28])
+            Psig_value
+            value_description "_shared" (driver/main_args.mli[232,7429+6]..[232,7429+13]) (driver/main_args.mli[232,7429+2]..[232,7429+28])
+              core_type (driver/main_args.mli[232,7429+16]..[232,7429+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[232,7429+16]..[232,7429+20])
+                  Ptyp_constr "unit" (driver/main_args.mli[232,7429+16]..[232,7429+20])
+                  []
+                core_type (driver/main_args.mli[232,7429+24]..[232,7429+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[232,7429+24]..[232,7429+28])
+                  []
+              []
+          signature_item (driver/main_args.mli[233,7458+2]..[233,7458+36])
+            Psig_value
+            value_description "_afl_instrument" (driver/main_args.mli[233,7458+6]..[233,7458+21]) (driver/main_args.mli[233,7458+2]..[233,7458+36])
+              core_type (driver/main_args.mli[233,7458+24]..[233,7458+36])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[233,7458+24]..[233,7458+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[233,7458+24]..[233,7458+28])
+                  []
+                core_type (driver/main_args.mli[233,7458+32]..[233,7458+36])
+                  Ptyp_constr "unit" (driver/main_args.mli[233,7458+32]..[233,7458+36])
+                  []
+              []
+          signature_item (driver/main_args.mli[234,7495+2]..[234,7495+35])
+            Psig_value
+            value_description "_afl_inst_ratio" (driver/main_args.mli[234,7495+6]..[234,7495+21]) (driver/main_args.mli[234,7495+2]..[234,7495+35])
+              core_type (driver/main_args.mli[234,7495+24]..[234,7495+35])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[234,7495+24]..[234,7495+27])
+                  Ptyp_constr "int" (driver/main_args.mli[234,7495+24]..[234,7495+27])
+                  []
+                core_type (driver/main_args.mli[234,7495+31]..[234,7495+35])
+                  Ptyp_constr "unit" (driver/main_args.mli[234,7495+31]..[234,7495+35])
+                  []
+              []
+          signature_item (driver/main_args.mli[235,7531+2]..[235,7531+39])
+            Psig_value
+            value_description "_function_sections" (driver/main_args.mli[235,7531+6]..[235,7531+24]) (driver/main_args.mli[235,7531+2]..[235,7531+39])
+              core_type (driver/main_args.mli[235,7531+27]..[235,7531+39])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[235,7531+27]..[235,7531+31])
+                  Ptyp_constr "unit" (driver/main_args.mli[235,7531+27]..[235,7531+31])
+                  []
+                core_type (driver/main_args.mli[235,7531+35]..[235,7531+39])
+                  Ptyp_constr "unit" (driver/main_args.mli[235,7531+35]..[235,7531+39])
+                  []
+              []
+          signature_item (driver/main_args.mli[236,7571+2]..[236,7571+37])
+            Psig_value
+            value_description "_save_ir_after" (driver/main_args.mli[236,7571+6]..[236,7571+20]) (driver/main_args.mli[236,7571+2]..[236,7571+37])
+              core_type (driver/main_args.mli[236,7571+23]..[236,7571+37])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[236,7571+23]..[236,7571+29])
+                  Ptyp_constr "string" (driver/main_args.mli[236,7571+23]..[236,7571+29])
+                  []
+                core_type (driver/main_args.mli[236,7571+33]..[236,7571+37])
+                  Ptyp_constr "unit" (driver/main_args.mli[236,7571+33]..[236,7571+37])
+                  []
+              []
+        ]
+  signature_item (driver/main_args.mli[239,7616+0]..[244,7758+3])
+    Psig_modtype "Opttop_options" (driver/main_args.mli[239,7616+12]..[239,7616+26])
+      module_type (driver/main_args.mli[239,7616+29]..[244,7758+3])
+        Pmty_signature
+        [
+          signature_item (driver/main_args.mli[240,7649+2]..[240,7649+26])
+            Psig_include
+            module_type (driver/main_args.mli[240,7649+10]..[240,7649+26])
+              Pmty_ident "Toplevel_options" (driver/main_args.mli[240,7649+10]..[240,7649+26])
+          signature_item (driver/main_args.mli[241,7676+2]..[241,7676+27])
+            Psig_include
+            module_type (driver/main_args.mli[241,7676+10]..[241,7676+27])
+              Pmty_ident "Optcommon_options" (driver/main_args.mli[241,7676+10]..[241,7676+27])
+          signature_item (driver/main_args.mli[242,7704+2]..[242,7704+29])
+            Psig_value
+            value_description "_verbose" (driver/main_args.mli[242,7704+6]..[242,7704+14]) (driver/main_args.mli[242,7704+2]..[242,7704+29])
+              core_type (driver/main_args.mli[242,7704+17]..[242,7704+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[242,7704+17]..[242,7704+21])
+                  Ptyp_constr "unit" (driver/main_args.mli[242,7704+17]..[242,7704+21])
+                  []
+                core_type (driver/main_args.mli[242,7704+25]..[242,7704+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[242,7704+25]..[242,7704+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[243,7734+2]..[243,7734+23])
+            Psig_value
+            value_description "_S" (driver/main_args.mli[243,7734+6]..[243,7734+8]) (driver/main_args.mli[243,7734+2]..[243,7734+23])
+              core_type (driver/main_args.mli[243,7734+11]..[243,7734+23])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[243,7734+11]..[243,7734+15])
+                  Ptyp_constr "unit" (driver/main_args.mli[243,7734+11]..[243,7734+15])
+                  []
+                core_type (driver/main_args.mli[243,7734+19]..[243,7734+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[243,7734+19]..[243,7734+23])
+                  []
+              []
+        ]
+  signature_item (driver/main_args.mli[246,7765+0]..[256,8060+3])
+    Psig_modtype "Ocamldoc_options" (driver/main_args.mli[246,7765+12]..[246,7765+28])
+      module_type (driver/main_args.mli[246,7765+31]..[256,8060+3])
+        Pmty_signature
+        [
+          signature_item (driver/main_args.mli[247,7800+2]..[247,7800+24])
+            Psig_include
+            module_type (driver/main_args.mli[247,7800+10]..[247,7800+24])
+              Pmty_ident "Common_options" (driver/main_args.mli[247,7800+10]..[247,7800+24])
+          signature_item (driver/main_args.mli[248,7825+2]..[248,7825+28])
+            Psig_value
+            value_description "_impl" (driver/main_args.mli[248,7825+6]..[248,7825+11]) (driver/main_args.mli[248,7825+2]..[248,7825+28])
+              core_type (driver/main_args.mli[248,7825+14]..[248,7825+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[248,7825+14]..[248,7825+20])
+                  Ptyp_constr "string" (driver/main_args.mli[248,7825+14]..[248,7825+20])
+                  []
+                core_type (driver/main_args.mli[248,7825+24]..[248,7825+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[248,7825+24]..[248,7825+28])
+                  []
+              []
+          signature_item (driver/main_args.mli[249,7854+2]..[249,7854+28])
+            Psig_value
+            value_description "_intf" (driver/main_args.mli[249,7854+6]..[249,7854+11]) (driver/main_args.mli[249,7854+2]..[249,7854+28])
+              core_type (driver/main_args.mli[249,7854+14]..[249,7854+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[249,7854+14]..[249,7854+20])
+                  Ptyp_constr "string" (driver/main_args.mli[249,7854+14]..[249,7854+20])
+                  []
+                core_type (driver/main_args.mli[249,7854+24]..[249,7854+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[249,7854+24]..[249,7854+28])
+                  []
+              []
+          signature_item (driver/main_args.mli[250,7883+2]..[250,7883+35])
+            Psig_value
+            value_description "_intf_suffix" (driver/main_args.mli[250,7883+6]..[250,7883+18]) (driver/main_args.mli[250,7883+2]..[250,7883+35])
+              core_type (driver/main_args.mli[250,7883+21]..[250,7883+35])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[250,7883+21]..[250,7883+27])
+                  Ptyp_constr "string" (driver/main_args.mli[250,7883+21]..[250,7883+27])
+                  []
+                core_type (driver/main_args.mli[250,7883+31]..[250,7883+35])
+                  Ptyp_constr "unit" (driver/main_args.mli[250,7883+31]..[250,7883+35])
+                  []
+              []
+          signature_item (driver/main_args.mli[251,7919+2]..[251,7919+26])
+            Psig_value
+            value_description "_pp" (driver/main_args.mli[251,7919+6]..[251,7919+9]) (driver/main_args.mli[251,7919+2]..[251,7919+26])
+              core_type (driver/main_args.mli[251,7919+12]..[251,7919+26])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[251,7919+12]..[251,7919+18])
+                  Ptyp_constr "string" (driver/main_args.mli[251,7919+12]..[251,7919+18])
+                  []
+                core_type (driver/main_args.mli[251,7919+22]..[251,7919+26])
+                  Ptyp_constr "unit" (driver/main_args.mli[251,7919+22]..[251,7919+26])
+                  []
+              []
+          signature_item (driver/main_args.mli[252,7946+2]..[252,7946+28])
+            Psig_value
+            value_description "_thread" (driver/main_args.mli[252,7946+6]..[252,7946+13]) (driver/main_args.mli[252,7946+2]..[252,7946+28])
+              core_type (driver/main_args.mli[252,7946+16]..[252,7946+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[252,7946+16]..[252,7946+20])
+                  Ptyp_constr "unit" (driver/main_args.mli[252,7946+16]..[252,7946+20])
+                  []
+                core_type (driver/main_args.mli[252,7946+24]..[252,7946+28])
+                  Ptyp_constr "unit" (driver/main_args.mli[252,7946+24]..[252,7946+28])
+                  []
+              []
+          signature_item (driver/main_args.mli[253,7975+2]..[253,7975+23])
+            Psig_value
+            value_description "_v" (driver/main_args.mli[253,7975+6]..[253,7975+8]) (driver/main_args.mli[253,7975+2]..[253,7975+23])
+              core_type (driver/main_args.mli[253,7975+11]..[253,7975+23])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[253,7975+11]..[253,7975+15])
+                  Ptyp_constr "unit" (driver/main_args.mli[253,7975+11]..[253,7975+15])
+                  []
+                core_type (driver/main_args.mli[253,7975+19]..[253,7975+23])
+                  Ptyp_constr "unit" (driver/main_args.mli[253,7975+19]..[253,7975+23])
+                  []
+              []
+          signature_item (driver/main_args.mli[254,7999+2]..[254,7999+29])
+            Psig_value
+            value_description "_verbose" (driver/main_args.mli[254,7999+6]..[254,7999+14]) (driver/main_args.mli[254,7999+2]..[254,7999+29])
+              core_type (driver/main_args.mli[254,7999+17]..[254,7999+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[254,7999+17]..[254,7999+21])
+                  Ptyp_constr "unit" (driver/main_args.mli[254,7999+17]..[254,7999+21])
+                  []
+                core_type (driver/main_args.mli[254,7999+25]..[254,7999+29])
+                  Ptyp_constr "unit" (driver/main_args.mli[254,7999+25]..[254,7999+29])
+                  []
+              []
+          signature_item (driver/main_args.mli[255,8029+2]..[255,8029+30])
+            Psig_value
+            value_description "_vmthread" (driver/main_args.mli[255,8029+6]..[255,8029+15]) (driver/main_args.mli[255,8029+2]..[255,8029+30])
+              core_type (driver/main_args.mli[255,8029+18]..[255,8029+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (driver/main_args.mli[255,8029+18]..[255,8029+22])
+                  Ptyp_constr "unit" (driver/main_args.mli[255,8029+18]..[255,8029+22])
+                  []
+                core_type (driver/main_args.mli[255,8029+26]..[255,8029+30])
+                  Ptyp_constr "unit" (driver/main_args.mli[255,8029+26]..[255,8029+30])
+                  []
+              []
+        ]
+  signature_item (driver/main_args.mli[258,8065+0]..[260,8141+3])
+    Psig_modtype "Arg_list" (driver/main_args.mli[258,8065+12]..[258,8065+20])
+      module_type (driver/main_args.mli[258,8065+23]..[260,8141+3])
+        Pmty_signature
+        [
+          signature_item (driver/main_args.mli[259,8092+4]..[259,8092+48])
+            Psig_value
+            value_description "list" (driver/main_args.mli[259,8092+8]..[259,8092+12]) (driver/main_args.mli[259,8092+4]..[259,8092+48])
+              core_type (driver/main_args.mli[259,8092+15]..[259,8092+48])
+                Ptyp_constr "list" (driver/main_args.mli[259,8092+44]..[259,8092+48])
+                [
+                  core_type (driver/main_args.mli[259,8092+16]..[259,8092+42])
+                    Ptyp_tuple
+                    [
+                      core_type (driver/main_args.mli[259,8092+16]..[259,8092+22])
+                        Ptyp_constr "string" (driver/main_args.mli[259,8092+16]..[259,8092+22])
+                        []
+                      core_type (driver/main_args.mli[259,8092+25]..[259,8092+33])
+                        Ptyp_constr "Arg.spec" (driver/main_args.mli[259,8092+25]..[259,8092+33])
+                        []
+                      core_type (driver/main_args.mli[259,8092+36]..[259,8092+42])
+                        Ptyp_constr "string" (driver/main_args.mli[259,8092+36]..[259,8092+42])
+                        []
+                    ]
+                ]
+              []
+        ]
+  signature_item (driver/main_args.mli[262,8148+0]..[262,8148+59])
+    Psig_module "Make_bytecomp_options" (driver/main_args.mli[262,8148+7]..[262,8148+28])
+    module_type (driver/main_args.mli[262,8148+31]..[262,8148+59])
+      Pmty_functor "_" (_none_[0,0+-1]..[0,0+-1]) ghost
+      module_type (driver/main_args.mli[262,8148+31]..[262,8148+47])
+        Pmty_ident "Bytecomp_options" (driver/main_args.mli[262,8148+31]..[262,8148+47])
+      module_type (driver/main_args.mli[262,8148+51]..[262,8148+59])
+        Pmty_ident "Arg_list" (driver/main_args.mli[262,8148+51]..[262,8148+59])
+  signature_item (driver/main_args.mli[263,8210+0]..[263,8210+57])
+    Psig_module "Make_bytetop_options" (driver/main_args.mli[263,8210+7]..[263,8210+27])
+    module_type (driver/main_args.mli[263,8210+30]..[263,8210+57])
+      Pmty_functor "_" (_none_[0,0+-1]..[0,0+-1]) ghost
+      module_type (driver/main_args.mli[263,8210+30]..[263,8210+45])
+        Pmty_ident "Bytetop_options" (driver/main_args.mli[263,8210+30]..[263,8210+45])
+      module_type (driver/main_args.mli[263,8210+49]..[263,8210+57])
+        Pmty_ident "Arg_list" (driver/main_args.mli[263,8210+49]..[263,8210+57])
+  signature_item (driver/main_args.mli[264,8270+0]..[264,8270+57])
+    Psig_module "Make_optcomp_options" (driver/main_args.mli[264,8270+7]..[264,8270+27])
+    module_type (driver/main_args.mli[264,8270+30]..[264,8270+57])
+      Pmty_functor "_" (_none_[0,0+-1]..[0,0+-1]) ghost
+      module_type (driver/main_args.mli[264,8270+30]..[264,8270+45])
+        Pmty_ident "Optcomp_options" (driver/main_args.mli[264,8270+30]..[264,8270+45])
+      module_type (driver/main_args.mli[264,8270+49]..[264,8270+57])
+        Pmty_ident "Arg_list" (driver/main_args.mli[264,8270+49]..[264,8270+57])
+  signature_item (driver/main_args.mli[265,8330+0]..[265,8330+55])
+    Psig_module "Make_opttop_options" (driver/main_args.mli[265,8330+7]..[265,8330+26])
+    module_type (driver/main_args.mli[265,8330+29]..[265,8330+55])
+      Pmty_functor "_" (_none_[0,0+-1]..[0,0+-1]) ghost
+      module_type (driver/main_args.mli[265,8330+29]..[265,8330+43])
+        Pmty_ident "Opttop_options" (driver/main_args.mli[265,8330+29]..[265,8330+43])
+      module_type (driver/main_args.mli[265,8330+47]..[265,8330+55])
+        Pmty_ident "Arg_list" (driver/main_args.mli[265,8330+47]..[265,8330+55])
+  signature_item (driver/main_args.mli[266,8388+0]..[266,8388+59])
+    Psig_module "Make_ocamldoc_options" (driver/main_args.mli[266,8388+7]..[266,8388+28])
+    module_type (driver/main_args.mli[266,8388+31]..[266,8388+59])
+      Pmty_functor "_" (_none_[0,0+-1]..[0,0+-1]) ghost
+      module_type (driver/main_args.mli[266,8388+31]..[266,8388+47])
+        Pmty_ident "Ocamldoc_options" (driver/main_args.mli[266,8388+31]..[266,8388+47])
+      module_type (driver/main_args.mli[266,8388+51]..[266,8388+59])
+        Pmty_ident "Arg_list" (driver/main_args.mli[266,8388+51]..[266,8388+59])
+  signature_item (driver/main_args.mli[273,8765+0]..[276,8861+38])
+    Psig_value
+    value_description "options_with_command_line_syntax" (driver/main_args.mli[273,8765+4]..[273,8765+36]) (driver/main_args.mli[273,8765+0]..[276,8861+38])
+      attribute "ocaml.doc"
+        [
+          structure_item (driver/main_args.mli[268,8451+0]..[272,8731+33])
+            Pstr_eval
+            expression (driver/main_args.mli[268,8451+0]..[272,8731+33])
+              Pexp_constant PConst_string(" [options_with_command_line_syntax options r] returns [options2] that behaves\n    like [options], but additionally pushes command line argument on [r] (quoted\n    by [Filename.quote] when necessary).\n    This is meant for ocaml{c,opt}p, which use this to forward most of their\n    arguments to ocaml{c,opt}. ",(driver/main_args.mli[268,8451+0]..[272,8731+33]),None)
+        ]
+      core_type (driver/main_args.mli[274,8802+4]..[276,8861+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (driver/main_args.mli[274,8802+4]..[274,8802+37])
+          Ptyp_constr "list" (driver/main_args.mli[274,8802+33]..[274,8802+37])
+          [
+            core_type (driver/main_args.mli[274,8802+5]..[274,8802+31])
+              Ptyp_tuple
+              [
+                core_type (driver/main_args.mli[274,8802+5]..[274,8802+11])
+                  Ptyp_constr "string" (driver/main_args.mli[274,8802+5]..[274,8802+11])
+                  []
+                core_type (driver/main_args.mli[274,8802+14]..[274,8802+22])
+                  Ptyp_constr "Arg.spec" (driver/main_args.mli[274,8802+14]..[274,8802+22])
+                  []
+                core_type (driver/main_args.mli[274,8802+25]..[274,8802+31])
+                  Ptyp_constr "string" (driver/main_args.mli[274,8802+25]..[274,8802+31])
+                  []
+              ]
+          ]
+        core_type (driver/main_args.mli[275,8840+5]..[276,8861+38])
+          Ptyp_arrow
+          Nolabel
+          core_type (driver/main_args.mli[275,8840+5]..[275,8840+20])
+            Ptyp_constr "ref" (driver/main_args.mli[275,8840+17]..[275,8840+20])
+            [
+              core_type (driver/main_args.mli[275,8840+5]..[275,8840+16])
+                Ptyp_constr "list" (driver/main_args.mli[275,8840+12]..[275,8840+16])
+                [
+                  core_type (driver/main_args.mli[275,8840+5]..[275,8840+11])
+                    Ptyp_constr "string" (driver/main_args.mli[275,8840+5]..[275,8840+11])
+                    []
+                ]
+            ]
+          core_type (driver/main_args.mli[276,8861+5]..[276,8861+38])
+            Ptyp_constr "list" (driver/main_args.mli[276,8861+34]..[276,8861+38])
+            [
+              core_type (driver/main_args.mli[276,8861+6]..[276,8861+32])
+                Ptyp_tuple
+                [
+                  core_type (driver/main_args.mli[276,8861+6]..[276,8861+12])
+                    Ptyp_constr "string" (driver/main_args.mli[276,8861+6]..[276,8861+12])
+                    []
+                  core_type (driver/main_args.mli[276,8861+15]..[276,8861+23])
+                    Ptyp_constr "Arg.spec" (driver/main_args.mli[276,8861+15]..[276,8861+23])
+                    []
+                  core_type (driver/main_args.mli[276,8861+26]..[276,8861+32])
+                    Ptyp_constr "string" (driver/main_args.mli[276,8861+26]..[276,8861+32])
+                    []
+                ]
+            ]
+      []
+  signature_item (driver/main_args.mli[278,8901+0]..[284,9094+3])
+    Psig_module "Default" (driver/main_args.mli[278,8901+7]..[278,8901+14])
+    module_type (driver/main_args.mli[278,8901+16]..[284,9094+3])
+      Pmty_signature
+      [
+        signature_item (driver/main_args.mli[279,8921+2]..[279,8921+33])
+          Psig_module "Topmain" (driver/main_args.mli[279,8921+9]..[279,8921+16])
+          module_type (driver/main_args.mli[279,8921+18]..[279,8921+33])
+            Pmty_ident "Bytetop_options" (driver/main_args.mli[279,8921+18]..[279,8921+33])
+        signature_item (driver/main_args.mli[280,8955+2]..[280,8955+35])
+          Psig_module "Opttopmain" (driver/main_args.mli[280,8955+9]..[280,8955+19])
+          module_type (driver/main_args.mli[280,8955+21]..[280,8955+35])
+            Pmty_ident "Opttop_options" (driver/main_args.mli[280,8955+21]..[280,8955+35])
+        signature_item (driver/main_args.mli[281,8991+2]..[281,8991+31])
+          Psig_module "Main" (driver/main_args.mli[281,8991+9]..[281,8991+13])
+          module_type (driver/main_args.mli[281,8991+15]..[281,8991+31])
+            Pmty_ident "Bytecomp_options" (driver/main_args.mli[281,8991+15]..[281,8991+31])
+        signature_item (driver/main_args.mli[282,9023+2]..[282,9023+33])
+          Psig_module "Optmain" (driver/main_args.mli[282,9023+9]..[282,9023+16])
+          module_type (driver/main_args.mli[282,9023+18]..[282,9023+33])
+            Pmty_ident "Optcomp_options" (driver/main_args.mli[282,9023+18]..[282,9023+33])
+        signature_item (driver/main_args.mli[283,9057+2]..[283,9057+36])
+          Psig_module "Odoc_args" (driver/main_args.mli[283,9057+9]..[283,9057+18])
+          module_type (driver/main_args.mli[283,9057+20]..[283,9057+36])
+            Pmty_ident "Ocamldoc_options" (driver/main_args.mli[283,9057+20]..[283,9057+36])
+      ]
+]
+

@@ -1,0 +1,2193 @@
+[
+  structure_item (ocamltest/ocaml_variables.ml[25,1322+0]..[25,1322+21])
+    Pstr_open Fresh
+    module_expr (ocamltest/ocaml_variables.ml[25,1322+5]..[25,1322+21])
+      Pmod_ident "Ocamltest_stdlib" (ocamltest/ocaml_variables.ml[25,1322+5]..[25,1322+21])
+  structure_item (ocamltest/ocaml_variables.ml[27,1345+0]..[27,1345+14])
+    Pstr_open Fresh
+    module_expr (ocamltest/ocaml_variables.ml[27,1345+5]..[27,1345+14])
+      Pmod_ident "Variables" (ocamltest/ocaml_variables.ml[27,1345+5]..[27,1345+14])
+  structure_item (ocamltest/ocaml_variables.ml[29,1402+0]..[30,1441+40])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[29,1402+4]..[29,1402+15])
+          Ppat_var "all_modules" (ocamltest/ocaml_variables.ml[29,1402+4]..[29,1402+15])
+        expression (ocamltest/ocaml_variables.ml[29,1402+18]..[30,1441+40])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[29,1402+18]..[29,1402+22])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[29,1402+18]..[29,1402+22])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[29,1402+23]..[30,1441+40])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[29,1402+24]..[29,1402+37])
+                    Pexp_constant PConst_string("all_modules",(ocamltest/ocaml_variables.ml[29,1402+25]..[29,1402+36]),None)
+                  expression (ocamltest/ocaml_variables.ml[30,1441+2]..[30,1441+39])
+                    Pexp_constant PConst_string("All the modules to compile and link",(ocamltest/ocaml_variables.ml[30,1441+3]..[30,1441+38]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[32,1483+0]..[33,1508+22])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[32,1483+4]..[32,1483+8])
+          Ppat_var "arch" (ocamltest/ocaml_variables.ml[32,1483+4]..[32,1483+8])
+        expression (ocamltest/ocaml_variables.ml[32,1483+11]..[33,1508+22])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[32,1483+11]..[32,1483+15])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[32,1483+11]..[32,1483+15])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[32,1483+16]..[33,1508+22])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[32,1483+17]..[32,1483+23])
+                    Pexp_constant PConst_string("arch",(ocamltest/ocaml_variables.ml[32,1483+18]..[32,1483+22]),None)
+                  expression (ocamltest/ocaml_variables.ml[33,1508+2]..[33,1508+21])
+                    Pexp_constant PConst_string("Host architecture",(ocamltest/ocaml_variables.ml[33,1508+3]..[33,1508+20]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[35,1532+0]..[36,1577+38])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[35,1532+4]..[35,1532+18])
+          Ppat_var "binary_modules" (ocamltest/ocaml_variables.ml[35,1532+4]..[35,1532+18])
+        expression (ocamltest/ocaml_variables.ml[35,1532+21]..[36,1577+38])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[35,1532+21]..[35,1532+25])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[35,1532+21]..[35,1532+25])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[35,1532+26]..[36,1577+38])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[35,1532+27]..[35,1532+43])
+                    Pexp_constant PConst_string("binary_modules",(ocamltest/ocaml_variables.ml[35,1532+28]..[35,1532+42]),None)
+                  expression (ocamltest/ocaml_variables.ml[36,1577+2]..[36,1577+37])
+                    Pexp_constant PConst_string("Additional binary modules to link",(ocamltest/ocaml_variables.ml[36,1577+3]..[36,1577+36]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[38,1617+0]..[39,1656+40])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[38,1617+4]..[38,1617+15])
+          Ppat_var "bytecc_libs" (ocamltest/ocaml_variables.ml[38,1617+4]..[38,1617+15])
+        expression (ocamltest/ocaml_variables.ml[38,1617+18]..[39,1656+40])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[38,1617+18]..[38,1617+22])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[38,1617+18]..[38,1617+22])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[38,1617+23]..[39,1656+40])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[38,1617+24]..[38,1617+37])
+                    Pexp_constant PConst_string("bytecc_libs",(ocamltest/ocaml_variables.ml[38,1617+25]..[38,1617+36]),None)
+                  expression (ocamltest/ocaml_variables.ml[39,1656+2]..[39,1656+39])
+                    Pexp_constant PConst_string("Libraries to link with for bytecode",(ocamltest/ocaml_variables.ml[39,1656+3]..[39,1656+38]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[41,1698+0]..[42,1743+48])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[41,1698+4]..[41,1698+18])
+          Ppat_var "c_preprocessor" (ocamltest/ocaml_variables.ml[41,1698+4]..[41,1698+18])
+        expression (ocamltest/ocaml_variables.ml[41,1698+21]..[42,1743+48])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[41,1698+21]..[41,1698+25])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[41,1698+21]..[41,1698+25])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[41,1698+26]..[42,1743+48])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[41,1698+27]..[41,1698+43])
+                    Pexp_constant PConst_string("c_preprocessor",(ocamltest/ocaml_variables.ml[41,1698+28]..[41,1698+42]),None)
+                  expression (ocamltest/ocaml_variables.ml[42,1743+2]..[42,1743+47])
+                    Pexp_constant PConst_string("Command to use to invoke the C preprocessor",(ocamltest/ocaml_variables.ml[42,1743+3]..[42,1743+46]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[44,1793+0]..[45,1814+44])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[44,1793+4]..[44,1793+6])
+          Ppat_var "cc" (ocamltest/ocaml_variables.ml[44,1793+4]..[44,1793+6])
+        expression (ocamltest/ocaml_variables.ml[44,1793+9]..[45,1814+44])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[44,1793+9]..[44,1793+13])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[44,1793+9]..[44,1793+13])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[44,1793+14]..[45,1814+44])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[44,1793+15]..[44,1793+19])
+                    Pexp_constant PConst_string("cc",(ocamltest/ocaml_variables.ml[44,1793+16]..[44,1793+18]),None)
+                  expression (ocamltest/ocaml_variables.ml[45,1814+2]..[45,1814+43])
+                    Pexp_constant PConst_string("Command to use to invoke the C compiler",(ocamltest/ocaml_variables.ml[45,1814+3]..[45,1814+42]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[47,1860+0]..[47,1860+54])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[47,1860+4]..[47,1860+29])
+          Ppat_var "caml_ld_library_path_name" (ocamltest/ocaml_variables.ml[47,1860+4]..[47,1860+29])
+        expression (ocamltest/ocaml_variables.ml[47,1860+32]..[47,1860+54])
+          Pexp_constant PConst_string("CAML_LD_LIBRARY_PATH",(ocamltest/ocaml_variables.ml[47,1860+33]..[47,1860+53]),None)
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[49,1916+0]..[57,2283+60])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[49,1916+4]..[49,1916+31])
+          Ppat_var "export_caml_ld_library_path" (ocamltest/ocaml_variables.ml[49,1916+4]..[49,1916+31])
+        expression (ocamltest/ocaml_variables.ml[49,1916+32]..[57,2283+60]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/ocaml_variables.ml[49,1916+32]..[49,1916+37])
+            Ppat_var "value" (ocamltest/ocaml_variables.ml[49,1916+32]..[49,1916+37])
+          expression (ocamltest/ocaml_variables.ml[50,1956+2]..[57,2283+60])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (ocamltest/ocaml_variables.ml[50,1956+6]..[50,1956+19])
+                  Ppat_var "current_value" (ocamltest/ocaml_variables.ml[50,1956+6]..[50,1956+19])
+                expression (ocamltest/ocaml_variables.ml[50,1956+22]..[50,1956+63])
+                  Pexp_apply
+                  expression (ocamltest/ocaml_variables.ml[50,1956+22]..[50,1956+37])
+                    Pexp_ident "Sys.safe_getenv" (ocamltest/ocaml_variables.ml[50,1956+22]..[50,1956+37])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/ocaml_variables.ml[50,1956+38]..[50,1956+63])
+                        Pexp_ident "caml_ld_library_path_name" (ocamltest/ocaml_variables.ml[50,1956+38]..[50,1956+63])
+                  ]
+            ]
+            expression (ocamltest/ocaml_variables.ml[51,2023+2]..[57,2283+60])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (ocamltest/ocaml_variables.ml[51,2023+6]..[51,2023+17])
+                    Ppat_var "local_value" (ocamltest/ocaml_variables.ml[51,2023+6]..[51,2023+17])
+                  expression (ocamltest/ocaml_variables.ml[52,2043+4]..[52,2043+58])
+                    Pexp_apply
+                    expression (ocamltest/ocaml_variables.ml[52,2043+5]..[52,2043+18])
+                      Pexp_ident "String.concat" (ocamltest/ocaml_variables.ml[52,2043+5]..[52,2043+18])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/ocaml_variables.ml[52,2043+19]..[52,2043+36])
+                          Pexp_ident "Filename.path_sep" (ocamltest/ocaml_variables.ml[52,2043+19]..[52,2043+36])
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/ocaml_variables.ml[52,2043+37]..[52,2043+57])
+                          Pexp_apply
+                          expression (ocamltest/ocaml_variables.ml[52,2043+38]..[52,2043+50])
+                            Pexp_ident "String.words" (ocamltest/ocaml_variables.ml[52,2043+38]..[52,2043+50])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (ocamltest/ocaml_variables.ml[52,2043+51]..[52,2043+56])
+                                Pexp_ident "value" (ocamltest/ocaml_variables.ml[52,2043+51]..[52,2043+56])
+                          ]
+                    ]
+              ]
+              expression (ocamltest/ocaml_variables.ml[53,2105+2]..[57,2283+60])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (ocamltest/ocaml_variables.ml[53,2105+6]..[53,2105+15])
+                      Ppat_var "new_value" (ocamltest/ocaml_variables.ml[53,2105+6]..[53,2105+15])
+                    expression (ocamltest/ocaml_variables.ml[54,2123+4]..[56,2215+64])
+                      Pexp_ifthenelse
+                      expression (ocamltest/ocaml_variables.ml[54,2123+7]..[54,2123+21])
+                        Pexp_apply
+                        expression (ocamltest/ocaml_variables.ml[54,2123+18]..[54,2123+19])
+                          Pexp_ident "=" (ocamltest/ocaml_variables.ml[54,2123+18]..[54,2123+19])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (ocamltest/ocaml_variables.ml[54,2123+7]..[54,2123+18])
+                              Pexp_ident "local_value" (ocamltest/ocaml_variables.ml[54,2123+7]..[54,2123+18])
+                          <arg>
+                          Nolabel
+                            expression (ocamltest/ocaml_variables.ml[54,2123+19]..[54,2123+21])
+                              Pexp_constant PConst_string("",(ocamltest/ocaml_variables.ml[54,2123+20]..[54,2123+20]),None)
+                        ]
+                      expression (ocamltest/ocaml_variables.ml[54,2123+27]..[54,2123+40])
+                        Pexp_ident "current_value" (ocamltest/ocaml_variables.ml[54,2123+27]..[54,2123+40])
+                      Some
+                        expression (ocamltest/ocaml_variables.ml[55,2169+4]..[56,2215+64])
+                          Pexp_ifthenelse
+                          expression (ocamltest/ocaml_variables.ml[55,2169+7]..[55,2169+23])
+                            Pexp_apply
+                            expression (ocamltest/ocaml_variables.ml[55,2169+20]..[55,2169+21])
+                              Pexp_ident "=" (ocamltest/ocaml_variables.ml[55,2169+20]..[55,2169+21])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (ocamltest/ocaml_variables.ml[55,2169+7]..[55,2169+20])
+                                  Pexp_ident "current_value" (ocamltest/ocaml_variables.ml[55,2169+7]..[55,2169+20])
+                              <arg>
+                              Nolabel
+                                expression (ocamltest/ocaml_variables.ml[55,2169+21]..[55,2169+23])
+                                  Pexp_constant PConst_string("",(ocamltest/ocaml_variables.ml[55,2169+22]..[55,2169+22]),None)
+                            ]
+                          expression (ocamltest/ocaml_variables.ml[55,2169+29]..[55,2169+40])
+                            Pexp_ident "local_value" (ocamltest/ocaml_variables.ml[55,2169+29]..[55,2169+40])
+                          Some
+                            expression (ocamltest/ocaml_variables.ml[56,2215+4]..[56,2215+64])
+                              Pexp_apply
+                              expression (ocamltest/ocaml_variables.ml[56,2215+4]..[56,2215+17])
+                                Pexp_ident "String.concat" (ocamltest/ocaml_variables.ml[56,2215+4]..[56,2215+17])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (ocamltest/ocaml_variables.ml[56,2215+18]..[56,2215+35])
+                                    Pexp_ident "Filename.path_sep" (ocamltest/ocaml_variables.ml[56,2215+18]..[56,2215+35])
+                                <arg>
+                                Nolabel
+                                  expression (ocamltest/ocaml_variables.ml[56,2215+36]..[56,2215+64])
+                                    Pexp_construct "::" (ocamltest/ocaml_variables.ml[56,2215+37]..[56,2215+64]) ghost
+                                    Some
+                                      expression (ocamltest/ocaml_variables.ml[56,2215+37]..[56,2215+64]) ghost
+                                        Pexp_tuple
+                                        [
+                                          expression (ocamltest/ocaml_variables.ml[56,2215+37]..[56,2215+48])
+                                            Pexp_ident "local_value" (ocamltest/ocaml_variables.ml[56,2215+37]..[56,2215+48])
+                                          expression (ocamltest/ocaml_variables.ml[56,2215+50]..[56,2215+64]) ghost
+                                            Pexp_construct "::" (ocamltest/ocaml_variables.ml[56,2215+50]..[56,2215+64]) ghost
+                                            Some
+                                              expression (ocamltest/ocaml_variables.ml[56,2215+50]..[56,2215+64]) ghost
+                                                Pexp_tuple
+                                                [
+                                                  expression (ocamltest/ocaml_variables.ml[56,2215+50]..[56,2215+63])
+                                                    Pexp_ident "current_value" (ocamltest/ocaml_variables.ml[56,2215+50]..[56,2215+63])
+                                                  expression (ocamltest/ocaml_variables.ml[56,2215+63]..[56,2215+64]) ghost
+                                                    Pexp_construct "[]" (ocamltest/ocaml_variables.ml[56,2215+63]..[56,2215+64]) ghost
+                                                    None
+                                                ]
+                                        ]
+                              ]
+                ]
+                expression (ocamltest/ocaml_variables.ml[57,2283+2]..[57,2283+60])
+                  Pexp_apply
+                  expression (ocamltest/ocaml_variables.ml[57,2283+2]..[57,2283+16])
+                    Pexp_ident "Printf.sprintf" (ocamltest/ocaml_variables.ml[57,2283+2]..[57,2283+16])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/ocaml_variables.ml[57,2283+17]..[57,2283+24])
+                        Pexp_constant PConst_string("%s=%s",(ocamltest/ocaml_variables.ml[57,2283+18]..[57,2283+23]),None)
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/ocaml_variables.ml[57,2283+25]..[57,2283+50])
+                        Pexp_ident "caml_ld_library_path_name" (ocamltest/ocaml_variables.ml[57,2283+25]..[57,2283+50])
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/ocaml_variables.ml[57,2283+51]..[57,2283+60])
+                        Pexp_ident "new_value" (ocamltest/ocaml_variables.ml[57,2283+51]..[57,2283+60])
+                  ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[59,2345+0]..[63,2449+62])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[59,2345+4]..[59,2345+24])
+          Ppat_var "caml_ld_library_path" (ocamltest/ocaml_variables.ml[59,2345+4]..[59,2345+24])
+        expression (ocamltest/ocaml_variables.ml[60,2372+2]..[63,2449+62])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[60,2372+2]..[60,2372+20])
+            Pexp_ident "make_with_exporter" (ocamltest/ocaml_variables.ml[60,2372+2]..[60,2372+20])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[61,2393+4]..[61,2393+31])
+                Pexp_ident "export_caml_ld_library_path" (ocamltest/ocaml_variables.ml[61,2393+4]..[61,2393+31])
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[62,2425+4]..[63,2449+62])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[62,2425+5]..[62,2425+22])
+                    Pexp_constant PConst_string("ld_library_path",(ocamltest/ocaml_variables.ml[62,2425+6]..[62,2425+21]),None)
+                  expression (ocamltest/ocaml_variables.ml[63,2449+6]..[63,2449+61])
+                    Pexp_constant PConst_string("List of paths to lookup for loading dynamic libraries",(ocamltest/ocaml_variables.ml[63,2449+7]..[63,2449+60]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[65,2513+0]..[66,2568+36])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[65,2513+4]..[65,2513+23])
+          Ppat_var "codegen_exit_status" (ocamltest/ocaml_variables.ml[65,2513+4]..[65,2513+23])
+        expression (ocamltest/ocaml_variables.ml[65,2513+26]..[66,2568+36])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[65,2513+26]..[65,2513+30])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[65,2513+26]..[65,2513+30])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[65,2513+31]..[66,2568+36])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[65,2513+32]..[65,2513+53])
+                    Pexp_constant PConst_string("codegen_exit_status",(ocamltest/ocaml_variables.ml[65,2513+33]..[65,2513+52]),None)
+                  expression (ocamltest/ocaml_variables.ml[66,2568+2]..[66,2568+35])
+                    Pexp_constant PConst_string("Expected exit status of codegen",(ocamltest/ocaml_variables.ml[66,2568+3]..[66,2568+34]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[68,2606+0]..[69,2655+51])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[68,2606+4]..[68,2606+20])
+          Ppat_var "compare_programs" (ocamltest/ocaml_variables.ml[68,2606+4]..[68,2606+20])
+        expression (ocamltest/ocaml_variables.ml[68,2606+23]..[69,2655+51])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[68,2606+23]..[68,2606+27])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[68,2606+23]..[68,2606+27])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[68,2606+28]..[69,2655+51])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[68,2606+29]..[68,2606+47])
+                    Pexp_constant PConst_string("compare_programs",(ocamltest/ocaml_variables.ml[68,2606+30]..[68,2606+46]),None)
+                  expression (ocamltest/ocaml_variables.ml[69,2655+2]..[69,2655+50])
+                    Pexp_constant PConst_string("Set to \"false\" to disable program comparison",(ocamltest/ocaml_variables.ml[69,2655+3]..[69,2655+49]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[71,2708+0]..[72,2775+67])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[71,2708+4]..[71,2708+29])
+          Ppat_var "compiler_directory_suffix" (ocamltest/ocaml_variables.ml[71,2708+4]..[71,2708+29])
+        expression (ocamltest/ocaml_variables.ml[71,2708+32]..[72,2775+67])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[71,2708+32]..[71,2708+36])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[71,2708+32]..[71,2708+36])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[71,2708+37]..[72,2775+67])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[71,2708+38]..[71,2708+65])
+                    Pexp_constant PConst_string("compiler_directory_suffix",(ocamltest/ocaml_variables.ml[71,2708+39]..[71,2708+64]),None)
+                  expression (ocamltest/ocaml_variables.ml[72,2775+2]..[72,2775+66])
+                    Pexp_constant PConst_string("Suffix to add to the directory where the test will be compiled",(ocamltest/ocaml_variables.ml[72,2775+3]..[72,2775+65]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[74,2844+0]..[75,2897+73])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[74,2844+4]..[74,2844+22])
+          Ppat_var "compiler_reference" (ocamltest/ocaml_variables.ml[74,2844+4]..[74,2844+22])
+        expression (ocamltest/ocaml_variables.ml[74,2844+25]..[75,2897+73])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[74,2844+25]..[74,2844+29])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[74,2844+25]..[74,2844+29])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[74,2844+30]..[75,2897+73])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[74,2844+31]..[74,2844+51])
+                    Pexp_constant PConst_string("compiler_reference",(ocamltest/ocaml_variables.ml[74,2844+32]..[74,2844+50]),None)
+                  expression (ocamltest/ocaml_variables.ml[75,2897+2]..[75,2897+72])
+                    Pexp_constant PConst_string("Reference file for compiler output for ocamlc.byte and ocamlopt.byte",(ocamltest/ocaml_variables.ml[75,2897+3]..[75,2897+71]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[77,2972+0]..[78,3027+71])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[77,2972+4]..[77,2972+23])
+          Ppat_var "compiler_reference2" (ocamltest/ocaml_variables.ml[77,2972+4]..[77,2972+23])
+        expression (ocamltest/ocaml_variables.ml[77,2972+26]..[78,3027+71])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[77,2972+26]..[77,2972+30])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[77,2972+26]..[77,2972+30])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[77,2972+31]..[78,3027+71])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[77,2972+32]..[77,2972+53])
+                    Pexp_constant PConst_string("compiler_reference2",(ocamltest/ocaml_variables.ml[77,2972+33]..[77,2972+52]),None)
+                  expression (ocamltest/ocaml_variables.ml[78,3027+2]..[78,3027+70])
+                    Pexp_constant PConst_string("Reference file for compiler output for ocamlc.opt and ocamlopt.opt",(ocamltest/ocaml_variables.ml[78,3027+3]..[78,3027+69]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[80,3100+0]..[81,3167+80])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[80,3100+4]..[80,3100+29])
+          Ppat_var "compiler_reference_suffix" (ocamltest/ocaml_variables.ml[80,3100+4]..[80,3100+29])
+        expression (ocamltest/ocaml_variables.ml[80,3100+32]..[81,3167+80])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[80,3100+32]..[80,3100+36])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[80,3100+32]..[80,3100+36])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[80,3100+37]..[81,3167+80])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[80,3100+38]..[80,3100+65])
+                    Pexp_constant PConst_string("compiler_reference_suffix",(ocamltest/ocaml_variables.ml[80,3100+39]..[80,3100+64]),None)
+                  expression (ocamltest/ocaml_variables.ml[81,3167+2]..[81,3167+79])
+                    Pexp_constant PConst_string("Suffix to add to the file name containing the reference for compiler output",(ocamltest/ocaml_variables.ml[81,3167+3]..[81,3167+78]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[83,3249+0]..[84,3296+46])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[83,3249+4]..[83,3249+19])
+          Ppat_var "compiler_output" (ocamltest/ocaml_variables.ml[83,3249+4]..[83,3249+19])
+        expression (ocamltest/ocaml_variables.ml[83,3249+22]..[84,3296+46])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[83,3249+22]..[83,3249+26])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[83,3249+22]..[83,3249+26])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[83,3249+27]..[84,3296+46])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[83,3249+28]..[83,3249+45])
+                    Pexp_constant PConst_string("compiler_output",(ocamltest/ocaml_variables.ml[83,3249+29]..[83,3249+44]),None)
+                  expression (ocamltest/ocaml_variables.ml[84,3296+2]..[84,3296+45])
+                    Pexp_constant PConst_string("Where to log output of bytecode compilers",(ocamltest/ocaml_variables.ml[84,3296+3]..[84,3296+44]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[86,3344+0]..[87,3393+44])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[86,3344+4]..[86,3344+20])
+          Ppat_var "compiler_output2" (ocamltest/ocaml_variables.ml[86,3344+4]..[86,3344+20])
+        expression (ocamltest/ocaml_variables.ml[86,3344+23]..[87,3393+44])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[86,3344+23]..[86,3344+27])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[86,3344+23]..[86,3344+27])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[86,3344+28]..[87,3393+44])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[86,3344+29]..[86,3344+47])
+                    Pexp_constant PConst_string("compiler_output2",(ocamltest/ocaml_variables.ml[86,3344+30]..[86,3344+46]),None)
+                  expression (ocamltest/ocaml_variables.ml[87,3393+2]..[87,3393+43])
+                    Pexp_constant PConst_string("Where to log output of native compilers",(ocamltest/ocaml_variables.ml[87,3393+3]..[87,3393+42]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[89,3439+0]..[90,3484+32])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[89,3439+4]..[89,3439+18])
+          Ppat_var "compiler_stdin" (ocamltest/ocaml_variables.ml[89,3439+4]..[89,3439+18])
+        expression (ocamltest/ocaml_variables.ml[89,3439+21]..[90,3484+32])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[89,3439+21]..[89,3439+25])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[89,3439+21]..[89,3439+25])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[89,3439+26]..[90,3484+32])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[89,3439+27]..[89,3439+43])
+                    Pexp_constant PConst_string("compiler_stdin",(ocamltest/ocaml_variables.ml[89,3439+28]..[89,3439+42]),None)
+                  expression (ocamltest/ocaml_variables.ml[90,3484+2]..[90,3484+31])
+                    Pexp_constant PConst_string("standard input of compilers",(ocamltest/ocaml_variables.ml[90,3484+3]..[90,3484+30]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[92,3518+0]..[93,3559+31])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[92,3518+4]..[92,3518+16])
+          Ppat_var "compile_only" (ocamltest/ocaml_variables.ml[92,3518+4]..[92,3518+16])
+        expression (ocamltest/ocaml_variables.ml[92,3518+19]..[93,3559+31])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[92,3518+19]..[92,3518+23])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[92,3518+19]..[92,3518+23])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[92,3518+24]..[93,3559+31])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[92,3518+25]..[92,3518+39])
+                    Pexp_constant PConst_string("compile_only",(ocamltest/ocaml_variables.ml[92,3518+26]..[92,3518+38]),None)
+                  expression (ocamltest/ocaml_variables.ml[93,3559+2]..[93,3559+30])
+                    Pexp_constant PConst_string("Compile only (do not link)",(ocamltest/ocaml_variables.ml[93,3559+3]..[93,3559+29]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[95,3592+0]..[95,3592+53])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[95,3592+4]..[95,3592+7])
+          Ppat_var "csc" (ocamltest/ocaml_variables.ml[95,3592+4]..[95,3592+7])
+        expression (ocamltest/ocaml_variables.ml[95,3592+10]..[95,3592+53])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[95,3592+10]..[95,3592+14])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[95,3592+10]..[95,3592+14])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[95,3592+15]..[95,3592+53])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[95,3592+16]..[95,3592+21])
+                    Pexp_constant PConst_string("csc",(ocamltest/ocaml_variables.ml[95,3592+17]..[95,3592+20]),None)
+                  expression (ocamltest/ocaml_variables.ml[95,3592+23]..[95,3592+52])
+                    Pexp_constant PConst_string("Path to the CSharp compiler",(ocamltest/ocaml_variables.ml[95,3592+24]..[95,3592+51]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[97,3647+0]..[97,3647+67])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[97,3647+4]..[97,3647+13])
+          Ppat_var "csc_flags" (ocamltest/ocaml_variables.ml[97,3647+4]..[97,3647+13])
+        expression (ocamltest/ocaml_variables.ml[97,3647+16]..[97,3647+67])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[97,3647+16]..[97,3647+20])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[97,3647+16]..[97,3647+20])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[97,3647+21]..[97,3647+67])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[97,3647+22]..[97,3647+33])
+                    Pexp_constant PConst_string("csc_flags",(ocamltest/ocaml_variables.ml[97,3647+23]..[97,3647+32]),None)
+                  expression (ocamltest/ocaml_variables.ml[97,3647+35]..[97,3647+66])
+                    Pexp_constant PConst_string("Flags for the CSharp compiler",(ocamltest/ocaml_variables.ml[97,3647+36]..[97,3647+65]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[99,3716+0]..[100,3755+48])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[99,3716+4]..[99,3716+15])
+          Ppat_var "directories" (ocamltest/ocaml_variables.ml[99,3716+4]..[99,3716+15])
+        expression (ocamltest/ocaml_variables.ml[99,3716+18]..[100,3755+48])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[99,3716+18]..[99,3716+22])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[99,3716+18]..[99,3716+22])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[99,3716+23]..[100,3755+48])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[99,3716+24]..[99,3716+37])
+                    Pexp_constant PConst_string("directories",(ocamltest/ocaml_variables.ml[99,3716+25]..[99,3716+36]),None)
+                  expression (ocamltest/ocaml_variables.ml[100,3755+2]..[100,3755+47])
+                    Pexp_constant PConst_string("Directories to include by all the compilers",(ocamltest/ocaml_variables.ml[100,3755+3]..[100,3755+46]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[102,3805+0]..[103,3832+38])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[102,3805+4]..[102,3805+9])
+          Ppat_var "flags" (ocamltest/ocaml_variables.ml[102,3805+4]..[102,3805+9])
+        expression (ocamltest/ocaml_variables.ml[102,3805+12]..[103,3832+38])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[102,3805+12]..[102,3805+16])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[102,3805+12]..[102,3805+16])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[102,3805+17]..[103,3832+38])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[102,3805+18]..[102,3805+25])
+                    Pexp_constant PConst_string("flags",(ocamltest/ocaml_variables.ml[102,3805+19]..[102,3805+24]),None)
+                  expression (ocamltest/ocaml_variables.ml[103,3832+2]..[103,3832+37])
+                    Pexp_constant PConst_string("Flags passed to all the compilers",(ocamltest/ocaml_variables.ml[103,3832+3]..[103,3832+36]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[105,3872+0]..[106,3909+68])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[105,3872+4]..[105,3872+14])
+          Ppat_var "last_flags" (ocamltest/ocaml_variables.ml[105,3872+4]..[105,3872+14])
+        expression (ocamltest/ocaml_variables.ml[105,3872+17]..[106,3909+68])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[105,3872+17]..[105,3872+21])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[105,3872+17]..[105,3872+21])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[105,3872+22]..[106,3909+68])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[105,3872+23]..[105,3872+35])
+                    Pexp_constant PConst_string("last_flags",(ocamltest/ocaml_variables.ml[105,3872+24]..[105,3872+34]),None)
+                  expression (ocamltest/ocaml_variables.ml[106,3909+2]..[106,3909+67])
+                    Pexp_constant PConst_string("Flags passed to all the compilers at the end of the commandline",(ocamltest/ocaml_variables.ml[106,3909+3]..[106,3909+66]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[108,3979+0]..[109,4014+48])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[108,3979+4]..[108,3979+13])
+          Ppat_var "libraries" (ocamltest/ocaml_variables.ml[108,3979+4]..[108,3979+13])
+        expression (ocamltest/ocaml_variables.ml[108,3979+16]..[109,4014+48])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[108,3979+16]..[108,3979+20])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[108,3979+16]..[108,3979+20])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[108,3979+21]..[109,4014+48])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[108,3979+22]..[108,3979+33])
+                    Pexp_constant PConst_string("libraries",(ocamltest/ocaml_variables.ml[108,3979+23]..[108,3979+32]),None)
+                  expression (ocamltest/ocaml_variables.ml[109,4014+2]..[109,4014+47])
+                    Pexp_constant PConst_string("Libraries the program should be linked with",(ocamltest/ocaml_variables.ml[109,4014+3]..[109,4014+46]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[111,4064+0]..[112,4091+34])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[111,4064+4]..[111,4064+9])
+          Ppat_var "mkdll" (ocamltest/ocaml_variables.ml[111,4064+4]..[111,4064+9])
+        expression (ocamltest/ocaml_variables.ml[111,4064+12]..[112,4091+34])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[111,4064+12]..[111,4064+16])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[111,4064+12]..[111,4064+16])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[111,4064+17]..[112,4091+34])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[111,4064+18]..[111,4064+25])
+                    Pexp_constant PConst_string("mkdll",(ocamltest/ocaml_variables.ml[111,4064+19]..[111,4064+24]),None)
+                  expression (ocamltest/ocaml_variables.ml[112,4091+2]..[112,4091+33])
+                    Pexp_constant PConst_string("Command to use to build a DLL",(ocamltest/ocaml_variables.ml[112,4091+3]..[112,4091+32]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[114,4127+0]..[115,4154+52])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[114,4127+4]..[114,4127+9])
+          Ppat_var "mkexe" (ocamltest/ocaml_variables.ml[114,4127+4]..[114,4127+9])
+        expression (ocamltest/ocaml_variables.ml[114,4127+12]..[115,4154+52])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[114,4127+12]..[114,4127+16])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[114,4127+12]..[114,4127+16])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[114,4127+17]..[115,4154+52])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[114,4127+18]..[114,4127+25])
+                    Pexp_constant PConst_string("mkexe",(ocamltest/ocaml_variables.ml[114,4127+19]..[114,4127+24]),None)
+                  expression (ocamltest/ocaml_variables.ml[115,4154+2]..[115,4154+51])
+                    Pexp_constant PConst_string("Command used to build an executable program DLL",(ocamltest/ocaml_variables.ml[115,4154+3]..[115,4154+50]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[117,4208+0]..[118,4238+31])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[117,4208+4]..[117,4208+11])
+          Ppat_var "module_" (ocamltest/ocaml_variables.ml[117,4208+4]..[117,4208+11])
+        expression (ocamltest/ocaml_variables.ml[117,4208+14]..[118,4238+31])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[117,4208+14]..[117,4208+18])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[117,4208+14]..[117,4208+18])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[117,4208+19]..[118,4238+31])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[117,4208+20]..[117,4208+28])
+                    Pexp_constant PConst_string("module",(ocamltest/ocaml_variables.ml[117,4208+21]..[117,4208+27]),None)
+                  expression (ocamltest/ocaml_variables.ml[118,4238+2]..[118,4238+30])
+                    Pexp_constant PConst_string("Compile one module at once",(ocamltest/ocaml_variables.ml[118,4238+3]..[118,4238+29]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[120,4271+0]..[121,4302+30])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[120,4271+4]..[120,4271+11])
+          Ppat_var "modules" (ocamltest/ocaml_variables.ml[120,4271+4]..[120,4271+11])
+        expression (ocamltest/ocaml_variables.ml[120,4271+14]..[121,4302+30])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[120,4271+14]..[120,4271+18])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[120,4271+14]..[120,4271+18])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[120,4271+19]..[121,4302+30])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[120,4271+20]..[120,4271+29])
+                    Pexp_constant PConst_string("modules",(ocamltest/ocaml_variables.ml[120,4271+21]..[120,4271+28]),None)
+                  expression (ocamltest/ocaml_variables.ml[121,4302+2]..[121,4302+29])
+                    Pexp_constant PConst_string("Other modules of the test",(ocamltest/ocaml_variables.ml[121,4302+3]..[121,4302+28]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[123,4334+0]..[124,4377+43])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[123,4334+4]..[123,4334+17])
+          Ppat_var "nativecc_libs" (ocamltest/ocaml_variables.ml[123,4334+4]..[123,4334+17])
+        expression (ocamltest/ocaml_variables.ml[123,4334+20]..[124,4377+43])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[123,4334+20]..[123,4334+24])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[123,4334+20]..[123,4334+24])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[123,4334+25]..[124,4377+43])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[123,4334+26]..[123,4334+41])
+                    Pexp_constant PConst_string("nativecc_libs",(ocamltest/ocaml_variables.ml[123,4334+27]..[123,4334+40]),None)
+                  expression (ocamltest/ocaml_variables.ml[124,4377+2]..[124,4377+42])
+                    Pexp_constant PConst_string("Libraries to link with for native code",(ocamltest/ocaml_variables.ml[124,4377+3]..[124,4377+41]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[126,4422+0]..[127,4451+30])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[126,4422+4]..[126,4422+10])
+          Ppat_var "objext" (ocamltest/ocaml_variables.ml[126,4422+4]..[126,4422+10])
+        expression (ocamltest/ocaml_variables.ml[126,4422+13]..[127,4451+30])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[126,4422+13]..[126,4422+17])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[126,4422+13]..[126,4422+17])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[126,4422+18]..[127,4451+30])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[126,4422+19]..[126,4422+27])
+                    Pexp_constant PConst_string("objext",(ocamltest/ocaml_variables.ml[126,4422+20]..[126,4422+26]),None)
+                  expression (ocamltest/ocaml_variables.ml[127,4451+2]..[127,4451+29])
+                    Pexp_constant PConst_string("Extension of object files",(ocamltest/ocaml_variables.ml[127,4451+3]..[127,4451+28]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[129,4483+0]..[130,4512+31])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[129,4483+4]..[129,4483+10])
+          Ppat_var "libext" (ocamltest/ocaml_variables.ml[129,4483+4]..[129,4483+10])
+        expression (ocamltest/ocaml_variables.ml[129,4483+13]..[130,4512+31])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[129,4483+13]..[129,4483+17])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[129,4483+13]..[129,4483+17])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[129,4483+18]..[130,4512+31])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[129,4483+19]..[129,4483+27])
+                    Pexp_constant PConst_string("libext",(ocamltest/ocaml_variables.ml[129,4483+20]..[129,4483+26]),None)
+                  expression (ocamltest/ocaml_variables.ml[130,4512+2]..[130,4512+30])
+                    Pexp_constant PConst_string("Extension of library files",(ocamltest/ocaml_variables.ml[130,4512+3]..[130,4512+29]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[132,4545+0]..[133,4574+32])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[132,4545+4]..[132,4545+10])
+          Ppat_var "asmext" (ocamltest/ocaml_variables.ml[132,4545+4]..[132,4545+10])
+        expression (ocamltest/ocaml_variables.ml[132,4545+13]..[133,4574+32])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[132,4545+13]..[132,4545+17])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[132,4545+13]..[132,4545+17])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[132,4545+18]..[133,4574+32])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[132,4545+19]..[132,4545+27])
+                    Pexp_constant PConst_string("asmext",(ocamltest/ocaml_variables.ml[132,4545+20]..[132,4545+26]),None)
+                  expression (ocamltest/ocaml_variables.ml[133,4574+2]..[133,4574+31])
+                    Pexp_constant PConst_string("Extension of assembly files",(ocamltest/ocaml_variables.ml[133,4574+3]..[133,4574+30]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[135,4608+0]..[136,4647+39])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[135,4608+4]..[135,4608+15])
+          Ppat_var "ocamlc_byte" (ocamltest/ocaml_variables.ml[135,4608+4]..[135,4608+15])
+        expression (ocamltest/ocaml_variables.ml[135,4608+18]..[136,4647+39])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[135,4608+18]..[135,4608+22])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[135,4608+18]..[135,4608+22])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[135,4608+23]..[136,4647+39])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[135,4608+24]..[135,4608+37])
+                    Pexp_constant PConst_string("ocamlc_byte",(ocamltest/ocaml_variables.ml[135,4608+25]..[135,4608+36]),None)
+                  expression (ocamltest/ocaml_variables.ml[136,4647+2]..[136,4647+38])
+                    Pexp_constant PConst_string("Path of the ocamlc.byte executable",(ocamltest/ocaml_variables.ml[136,4647+3]..[136,4647+37]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[138,4688+0]..[139,4731+41])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[138,4688+4]..[138,4688+17])
+          Ppat_var "ocamlopt_byte" (ocamltest/ocaml_variables.ml[138,4688+4]..[138,4688+17])
+        expression (ocamltest/ocaml_variables.ml[138,4688+20]..[139,4731+41])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[138,4688+20]..[138,4688+24])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[138,4688+20]..[138,4688+24])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[138,4688+25]..[139,4731+41])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[138,4688+26]..[138,4688+41])
+                    Pexp_constant PConst_string("ocamlopt_byte",(ocamltest/ocaml_variables.ml[138,4688+27]..[138,4688+40]),None)
+                  expression (ocamltest/ocaml_variables.ml[139,4731+2]..[139,4731+40])
+                    Pexp_constant PConst_string("Path of the ocamlopt.byte executable",(ocamltest/ocaml_variables.ml[139,4731+3]..[139,4731+39]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[141,4774+0]..[142,4807+36])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[141,4774+4]..[141,4774+12])
+          Ppat_var "ocamlrun" (ocamltest/ocaml_variables.ml[141,4774+4]..[141,4774+12])
+        expression (ocamltest/ocaml_variables.ml[141,4774+15]..[142,4807+36])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[141,4774+15]..[141,4774+19])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[141,4774+15]..[141,4774+19])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[141,4774+20]..[142,4807+36])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[141,4774+21]..[141,4774+31])
+                    Pexp_constant PConst_string("ocamlrun",(ocamltest/ocaml_variables.ml[141,4774+22]..[141,4774+30]),None)
+                  expression (ocamltest/ocaml_variables.ml[142,4807+2]..[142,4807+35])
+                    Pexp_constant PConst_string("Path of the ocamlrun executable",(ocamltest/ocaml_variables.ml[142,4807+3]..[142,4807+34]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[144,4845+0]..[145,4886+47])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[144,4845+4]..[144,4845+16])
+          Ppat_var "ocamlc_flags" (ocamltest/ocaml_variables.ml[144,4845+4]..[144,4845+16])
+        expression (ocamltest/ocaml_variables.ml[144,4845+19]..[145,4886+47])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[144,4845+19]..[144,4845+23])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[144,4845+19]..[144,4845+23])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[144,4845+24]..[145,4886+47])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[144,4845+25]..[144,4845+39])
+                    Pexp_constant PConst_string("ocamlc_flags",(ocamltest/ocaml_variables.ml[144,4845+26]..[144,4845+38]),None)
+                  expression (ocamltest/ocaml_variables.ml[145,4886+2]..[145,4886+46])
+                    Pexp_constant PConst_string("Flags passed to ocamlc.byte and ocamlc.opt",(ocamltest/ocaml_variables.ml[145,4886+3]..[145,4886+45]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[147,4935+0]..[148,4992+58])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[147,4935+4]..[147,4935+24])
+          Ppat_var "ocamlc_default_flags" (ocamltest/ocaml_variables.ml[147,4935+4]..[147,4935+24])
+        expression (ocamltest/ocaml_variables.ml[147,4935+27]..[148,4992+58])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[147,4935+27]..[147,4935+31])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[147,4935+27]..[147,4935+31])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[147,4935+32]..[148,4992+58])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[147,4935+33]..[147,4935+55])
+                    Pexp_constant PConst_string("ocamlc_default_flags",(ocamltest/ocaml_variables.ml[147,4935+34]..[147,4935+54]),None)
+                  expression (ocamltest/ocaml_variables.ml[148,4992+2]..[148,4992+57])
+                    Pexp_constant PConst_string("Flags passed by default to ocamlc.byte and ocamlc.opt",(ocamltest/ocaml_variables.ml[148,4992+3]..[148,4992+56]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[152,5054+0]..[153,5099+29])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[152,5054+4]..[152,5054+18])
+          Ppat_var "ocamllex_flags" (ocamltest/ocaml_variables.ml[152,5054+4]..[152,5054+18])
+        expression (ocamltest/ocaml_variables.ml[152,5054+21]..[153,5099+29])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[152,5054+21]..[152,5054+25])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[152,5054+21]..[152,5054+25])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[152,5054+26]..[153,5099+29])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[152,5054+27]..[152,5054+43])
+                    Pexp_constant PConst_string("ocamllex_flags",(ocamltest/ocaml_variables.ml[152,5054+28]..[152,5054+42]),None)
+                  expression (ocamltest/ocaml_variables.ml[153,5099+2]..[153,5099+28])
+                    Pexp_constant PConst_string("Flags passed to ocamllex",(ocamltest/ocaml_variables.ml[153,5099+3]..[153,5099+27]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[155,5130+0]..[156,5175+51])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[155,5130+4]..[155,5130+18])
+          Ppat_var "ocamlopt_flags" (ocamltest/ocaml_variables.ml[155,5130+4]..[155,5130+18])
+        expression (ocamltest/ocaml_variables.ml[155,5130+21]..[156,5175+51])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[155,5130+21]..[155,5130+25])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[155,5130+21]..[155,5130+25])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[155,5130+26]..[156,5175+51])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[155,5130+27]..[155,5130+43])
+                    Pexp_constant PConst_string("ocamlopt_flags",(ocamltest/ocaml_variables.ml[155,5130+28]..[155,5130+42]),None)
+                  expression (ocamltest/ocaml_variables.ml[156,5175+2]..[156,5175+50])
+                    Pexp_constant PConst_string("Flags passed to ocamlopt.byte and ocamlopt.opt",(ocamltest/ocaml_variables.ml[156,5175+3]..[156,5175+49]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[158,5228+0]..[159,5289+62])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[158,5228+4]..[158,5228+26])
+          Ppat_var "ocamlopt_default_flags" (ocamltest/ocaml_variables.ml[158,5228+4]..[158,5228+26])
+        expression (ocamltest/ocaml_variables.ml[158,5228+29]..[159,5289+62])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[158,5228+29]..[158,5228+33])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[158,5228+29]..[158,5228+33])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[158,5228+34]..[159,5289+62])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[158,5228+35]..[158,5228+59])
+                    Pexp_constant PConst_string("ocamlopt_default_flags",(ocamltest/ocaml_variables.ml[158,5228+36]..[158,5228+58]),None)
+                  expression (ocamltest/ocaml_variables.ml[159,5289+2]..[159,5289+61])
+                    Pexp_constant PConst_string("Flags passed by default to ocamlopt.byte and ocamlopt.opt",(ocamltest/ocaml_variables.ml[159,5289+3]..[159,5289+60]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[161,5353+0]..[162,5400+30])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[161,5353+4]..[161,5353+19])
+          Ppat_var "ocamlyacc_flags" (ocamltest/ocaml_variables.ml[161,5353+4]..[161,5353+19])
+        expression (ocamltest/ocaml_variables.ml[161,5353+22]..[162,5400+30])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[161,5353+22]..[161,5353+26])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[161,5353+22]..[161,5353+26])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[161,5353+27]..[162,5400+30])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[161,5353+28]..[161,5353+45])
+                    Pexp_constant PConst_string("ocamlyacc_flags",(ocamltest/ocaml_variables.ml[161,5353+29]..[161,5353+44]),None)
+                  expression (ocamltest/ocaml_variables.ml[162,5400+2]..[162,5400+29])
+                    Pexp_constant PConst_string("Flags passed to ocamlyacc",(ocamltest/ocaml_variables.ml[162,5400+3]..[162,5400+28]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[164,5432+0]..[165,5483+34])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[164,5432+4]..[164,5432+21])
+          Ppat_var "ocaml_exit_status" (ocamltest/ocaml_variables.ml[164,5432+4]..[164,5432+21])
+        expression (ocamltest/ocaml_variables.ml[164,5432+24]..[165,5483+34])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[164,5432+24]..[164,5432+28])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[164,5432+24]..[164,5432+28])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[164,5432+29]..[165,5483+34])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[164,5432+30]..[164,5432+49])
+                    Pexp_constant PConst_string("ocaml_exit_status",(ocamltest/ocaml_variables.ml[164,5432+31]..[164,5432+48]),None)
+                  expression (ocamltest/ocaml_variables.ml[165,5483+2]..[165,5483+33])
+                    Pexp_constant PConst_string("Expected exit status of ocaml",(ocamltest/ocaml_variables.ml[165,5483+3]..[165,5483+32]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[167,5519+0]..[168,5574+50])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[167,5519+4]..[167,5519+23])
+          Ppat_var "ocaml_filetype_flag" (ocamltest/ocaml_variables.ml[167,5519+4]..[167,5519+23])
+        expression (ocamltest/ocaml_variables.ml[167,5519+26]..[168,5574+50])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[167,5519+26]..[167,5519+30])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[167,5519+26]..[167,5519+30])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[167,5519+31]..[168,5574+50])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[167,5519+32]..[167,5519+53])
+                    Pexp_constant PConst_string("ocaml_filetype_flag",(ocamltest/ocaml_variables.ml[167,5519+33]..[167,5519+52]),None)
+                  expression (ocamltest/ocaml_variables.ml[168,5574+2]..[168,5574+49])
+                    Pexp_constant PConst_string("Filetype of the testfile (-impl, -intf, etc.)",(ocamltest/ocaml_variables.ml[168,5574+3]..[168,5574+48]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[170,5626+0]..[171,5689+38])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[170,5626+4]..[170,5626+27])
+          Ppat_var "ocamlc_byte_exit_status" (ocamltest/ocaml_variables.ml[170,5626+4]..[170,5626+27])
+        expression (ocamltest/ocaml_variables.ml[170,5626+30]..[171,5689+38])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[170,5626+30]..[170,5626+34])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[170,5626+30]..[170,5626+34])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[170,5626+35]..[171,5689+38])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[170,5626+36]..[170,5626+61])
+                    Pexp_constant PConst_string("ocamlc_byte_exit_status",(ocamltest/ocaml_variables.ml[170,5626+37]..[170,5626+60]),None)
+                  expression (ocamltest/ocaml_variables.ml[171,5689+2]..[171,5689+37])
+                    Pexp_constant PConst_string("Expected exit status of ocac.byte",(ocamltest/ocaml_variables.ml[171,5689+3]..[171,5689+36]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[173,5729+0]..[174,5796+42])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[173,5729+4]..[173,5729+29])
+          Ppat_var "ocamlopt_byte_exit_status" (ocamltest/ocaml_variables.ml[173,5729+4]..[173,5729+29])
+        expression (ocamltest/ocaml_variables.ml[173,5729+32]..[174,5796+42])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[173,5729+32]..[173,5729+36])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[173,5729+32]..[173,5729+36])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[173,5729+37]..[174,5796+42])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[173,5729+38]..[173,5729+65])
+                    Pexp_constant PConst_string("ocamlopt_byte_exit_status",(ocamltest/ocaml_variables.ml[173,5729+39]..[173,5729+64]),None)
+                  expression (ocamltest/ocaml_variables.ml[174,5796+2]..[174,5796+41])
+                    Pexp_constant PConst_string("Expected exit status of ocamlopt.byte",(ocamltest/ocaml_variables.ml[174,5796+3]..[174,5796+40]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[176,5840+0]..[177,5897+37])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[176,5840+4]..[176,5840+24])
+          Ppat_var "ocamlnat_exit_status" (ocamltest/ocaml_variables.ml[176,5840+4]..[176,5840+24])
+        expression (ocamltest/ocaml_variables.ml[176,5840+27]..[177,5897+37])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[176,5840+27]..[176,5840+31])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[176,5840+27]..[176,5840+31])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[176,5840+32]..[177,5897+37])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[176,5840+33]..[176,5840+55])
+                    Pexp_constant PConst_string("ocamlnat_exit_status",(ocamltest/ocaml_variables.ml[176,5840+34]..[176,5840+54]),None)
+                  expression (ocamltest/ocaml_variables.ml[177,5897+2]..[177,5897+36])
+                    Pexp_constant PConst_string("Expected exit status of ocamlnat",(ocamltest/ocaml_variables.ml[177,5897+3]..[177,5897+35]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[179,5936+0]..[180,5997+37])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[179,5936+4]..[179,5936+26])
+          Ppat_var "ocamlc_opt_exit_status" (ocamltest/ocaml_variables.ml[179,5936+4]..[179,5936+26])
+        expression (ocamltest/ocaml_variables.ml[179,5936+29]..[180,5997+37])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[179,5936+29]..[179,5936+33])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[179,5936+29]..[179,5936+33])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[179,5936+34]..[180,5997+37])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[179,5936+35]..[179,5936+59])
+                    Pexp_constant PConst_string("ocamlc_opt_exit_status",(ocamltest/ocaml_variables.ml[179,5936+36]..[179,5936+58]),None)
+                  expression (ocamltest/ocaml_variables.ml[180,5997+2]..[180,5997+36])
+                    Pexp_constant PConst_string("Expected exit status of ocac.opt",(ocamltest/ocaml_variables.ml[180,5997+3]..[180,5997+35]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[182,6036+0]..[183,6101+41])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[182,6036+4]..[182,6036+28])
+          Ppat_var "ocamlopt_opt_exit_status" (ocamltest/ocaml_variables.ml[182,6036+4]..[182,6036+28])
+        expression (ocamltest/ocaml_variables.ml[182,6036+31]..[183,6101+41])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[182,6036+31]..[182,6036+35])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[182,6036+31]..[182,6036+35])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[182,6036+36]..[183,6101+41])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[182,6036+37]..[182,6036+63])
+                    Pexp_constant PConst_string("ocamlopt_opt_exit_status",(ocamltest/ocaml_variables.ml[182,6036+38]..[182,6036+62]),None)
+                  expression (ocamltest/ocaml_variables.ml[183,6101+2]..[183,6101+40])
+                    Pexp_constant PConst_string("Expected exit status of ocamlopt.opt",(ocamltest/ocaml_variables.ml[183,6101+3]..[183,6101+39]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[185,6144+0]..[186,6177+46])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[185,6144+4]..[185,6144+24])
+          Ppat_var "export_ocamlrunparam" (ocamltest/ocaml_variables.ml[185,6144+4]..[185,6144+24])
+        expression (ocamltest/ocaml_variables.ml[185,6144+25]..[186,6177+46]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/ocaml_variables.ml[185,6144+25]..[185,6144+30])
+            Ppat_var "value" (ocamltest/ocaml_variables.ml[185,6144+25]..[185,6144+30])
+          expression (ocamltest/ocaml_variables.ml[186,6177+2]..[186,6177+46])
+            Pexp_apply
+            expression (ocamltest/ocaml_variables.ml[186,6177+2]..[186,6177+16])
+              Pexp_ident "Printf.sprintf" (ocamltest/ocaml_variables.ml[186,6177+2]..[186,6177+16])
+            [
+              <arg>
+              Nolabel
+                expression (ocamltest/ocaml_variables.ml[186,6177+17]..[186,6177+24])
+                  Pexp_constant PConst_string("%s=%s",(ocamltest/ocaml_variables.ml[186,6177+18]..[186,6177+23]),None)
+              <arg>
+              Nolabel
+                expression (ocamltest/ocaml_variables.ml[186,6177+25]..[186,6177+40])
+                  Pexp_constant PConst_string("OCAMLRUNPARAM",(ocamltest/ocaml_variables.ml[186,6177+26]..[186,6177+39]),None)
+              <arg>
+              Nolabel
+                expression (ocamltest/ocaml_variables.ml[186,6177+41]..[186,6177+46])
+                  Pexp_ident "value" (ocamltest/ocaml_variables.ml[186,6177+41]..[186,6177+46])
+            ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[188,6225+0]..[192,6313+36])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[188,6225+4]..[188,6225+17])
+          Ppat_var "ocamlrunparam" (ocamltest/ocaml_variables.ml[188,6225+4]..[188,6225+17])
+        expression (ocamltest/ocaml_variables.ml[189,6245+2]..[192,6313+36])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[189,6245+2]..[189,6245+20])
+            Pexp_ident "make_with_exporter" (ocamltest/ocaml_variables.ml[189,6245+2]..[189,6245+20])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[190,6266+4]..[190,6266+24])
+                Pexp_ident "export_ocamlrunparam" (ocamltest/ocaml_variables.ml[190,6266+4]..[190,6266+24])
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[191,6291+4]..[192,6313+36])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[191,6291+5]..[191,6291+20])
+                    Pexp_constant PConst_string("ocamlrunparam",(ocamltest/ocaml_variables.ml[191,6291+6]..[191,6291+19]),None)
+                  expression (ocamltest/ocaml_variables.ml[192,6313+6]..[192,6313+35])
+                    Pexp_constant PConst_string("Equivalent of OCAMLRUNPARAM",(ocamltest/ocaml_variables.ml[192,6313+7]..[192,6313+34]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[194,6351+0]..[195,6390+28])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[194,6351+4]..[194,6351+15])
+          Ppat_var "ocamlsrcdir" (ocamltest/ocaml_variables.ml[194,6351+4]..[194,6351+15])
+        expression (ocamltest/ocaml_variables.ml[194,6351+18]..[195,6390+28])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[194,6351+18]..[194,6351+22])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[194,6351+18]..[194,6351+22])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[194,6351+23]..[195,6390+28])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[194,6351+24]..[194,6351+37])
+                    Pexp_constant PConst_string("ocamlsrcdir",(ocamltest/ocaml_variables.ml[194,6351+25]..[194,6351+36]),None)
+                  expression (ocamltest/ocaml_variables.ml[195,6390+2]..[195,6390+27])
+                    Pexp_constant PConst_string("Where OCaml sources are",(ocamltest/ocaml_variables.ml[195,6390+3]..[195,6390+26]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[197,6420+0]..[198,6469+25])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[197,6420+4]..[197,6420+20])
+          Ppat_var "ocamldebug_flags" (ocamltest/ocaml_variables.ml[197,6420+4]..[197,6420+20])
+        expression (ocamltest/ocaml_variables.ml[197,6420+23]..[198,6469+25])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[197,6420+23]..[197,6420+27])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[197,6420+23]..[197,6420+27])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[197,6420+28]..[198,6469+25])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[197,6420+29]..[197,6420+47])
+                    Pexp_constant PConst_string("ocamldebug_flags",(ocamltest/ocaml_variables.ml[197,6420+30]..[197,6420+46]),None)
+                  expression (ocamltest/ocaml_variables.ml[198,6469+2]..[198,6469+24])
+                    Pexp_constant PConst_string("Flags for ocamldebug",(ocamltest/ocaml_variables.ml[198,6469+3]..[198,6469+23]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[200,6496+0]..[201,6547+46])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[200,6496+4]..[200,6496+21])
+          Ppat_var "ocamldebug_script" (ocamltest/ocaml_variables.ml[200,6496+4]..[200,6496+21])
+        expression (ocamltest/ocaml_variables.ml[200,6496+24]..[201,6547+46])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[200,6496+24]..[200,6496+28])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[200,6496+24]..[200,6496+28])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[200,6496+29]..[201,6547+46])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[200,6496+30]..[200,6496+49])
+                    Pexp_constant PConst_string("ocamldebug_script",(ocamltest/ocaml_variables.ml[200,6496+31]..[200,6496+48]),None)
+                  expression (ocamltest/ocaml_variables.ml[201,6547+2]..[201,6547+45])
+                    Pexp_constant PConst_string("Where ocamldebug should read its commands",(ocamltest/ocaml_variables.ml[201,6547+3]..[201,6547+44]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[203,6595+0]..[204,6626+29])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[203,6595+4]..[203,6595+11])
+          Ppat_var "os_type" (ocamltest/ocaml_variables.ml[203,6595+4]..[203,6595+11])
+        expression (ocamltest/ocaml_variables.ml[203,6595+14]..[204,6626+29])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[203,6595+14]..[203,6595+18])
+            Pexp_ident "make" (ocamltest/ocaml_variables.ml[203,6595+14]..[203,6595+18])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[203,6595+19]..[204,6626+29])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[203,6595+20]..[203,6595+29])
+                    Pexp_constant PConst_string("os_type",(ocamltest/ocaml_variables.ml[203,6595+21]..[203,6595+28]),None)
+                  expression (ocamltest/ocaml_variables.ml[204,6626+2]..[204,6626+28])
+                    Pexp_constant PConst_string("The OS we are running on",(ocamltest/ocaml_variables.ml[204,6626+3]..[204,6626+27]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[206,6657+0]..[207,6712+19])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[206,6657+4]..[206,6657+18])
+          Ppat_var "ocamldoc_flags" (ocamltest/ocaml_variables.ml[206,6657+4]..[206,6657+18])
+        expression (ocamltest/ocaml_variables.ml[206,6657+21]..[207,6712+19])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[206,6657+21]..[206,6657+35])
+            Pexp_ident "Variables.make" (ocamltest/ocaml_variables.ml[206,6657+21]..[206,6657+35])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[206,6657+36]..[207,6712+19])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[206,6657+37]..[206,6657+53])
+                    Pexp_constant PConst_string("ocamldoc_flags",(ocamltest/ocaml_variables.ml[206,6657+38]..[206,6657+52]),None)
+                  expression (ocamltest/ocaml_variables.ml[207,6712+2]..[207,6712+18])
+                    Pexp_constant PConst_string("ocamldoc flags",(ocamltest/ocaml_variables.ml[207,6712+3]..[207,6712+17]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[209,6733+0]..[210,6792+46])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[209,6733+4]..[209,6733+20])
+          Ppat_var "ocamldoc_backend" (ocamltest/ocaml_variables.ml[209,6733+4]..[209,6733+20])
+        expression (ocamltest/ocaml_variables.ml[209,6733+23]..[210,6792+46])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[209,6733+23]..[209,6733+37])
+            Pexp_ident "Variables.make" (ocamltest/ocaml_variables.ml[209,6733+23]..[209,6733+37])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[209,6733+38]..[210,6792+46])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[209,6733+39]..[209,6733+57])
+                    Pexp_constant PConst_string("ocamldoc_backend",(ocamltest/ocaml_variables.ml[209,6733+40]..[209,6733+56]),None)
+                  expression (ocamltest/ocaml_variables.ml[210,6792+2]..[210,6792+45])
+                    Pexp_constant PConst_string("ocamldoc backend (html, latex, man, ... )",(ocamltest/ocaml_variables.ml[210,6792+3]..[210,6792+44]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[212,6840+0]..[213,6867+75])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[212,6840+4]..[212,6840+24])
+          Ppat_var "ocamldoc_exit_status" (ocamltest/ocaml_variables.ml[212,6840+4]..[212,6840+24])
+        expression (ocamltest/ocaml_variables.ml[213,6867+2]..[213,6867+75])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[213,6867+2]..[213,6867+16])
+            Pexp_ident "Variables.make" (ocamltest/ocaml_variables.ml[213,6867+2]..[213,6867+16])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[213,6867+17]..[213,6867+75])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[213,6867+19]..[213,6867+41])
+                    Pexp_constant PConst_string("ocamldoc_exit_status",(ocamltest/ocaml_variables.ml[213,6867+20]..[213,6867+40]),None)
+                  expression (ocamltest/ocaml_variables.ml[213,6867+43]..[213,6867+74])
+                    Pexp_constant PConst_string("expected ocamldoc exit status",(ocamltest/ocaml_variables.ml[213,6867+44]..[213,6867+73]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[215,6944+0]..[216,6966+69])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[215,6944+4]..[215,6944+19])
+          Ppat_var "ocamldoc_output" (ocamltest/ocaml_variables.ml[215,6944+4]..[215,6944+19])
+        expression (ocamltest/ocaml_variables.ml[216,6966+2]..[216,6966+69])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[216,6966+2]..[216,6966+16])
+            Pexp_ident "Variables.make" (ocamltest/ocaml_variables.ml[216,6966+2]..[216,6966+16])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[216,6966+17]..[216,6966+69])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[216,6966+19]..[216,6966+36])
+                    Pexp_constant PConst_string("ocamldoc_output",(ocamltest/ocaml_variables.ml[216,6966+20]..[216,6966+35]),None)
+                  expression (ocamltest/ocaml_variables.ml[216,6966+38]..[216,6966+68])
+                    Pexp_constant PConst_string("Where to log ocamldoc output",(ocamltest/ocaml_variables.ml[216,6966+39]..[216,6966+67]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[218,7037+0]..[220,7103+60])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[218,7037+4]..[218,7037+22])
+          Ppat_var "ocamldoc_reference" (ocamltest/ocaml_variables.ml[218,7037+4]..[218,7037+22])
+        expression (ocamltest/ocaml_variables.ml[219,7062+2]..[220,7103+60])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[219,7062+2]..[219,7062+16])
+            Pexp_ident "Variables.make" (ocamltest/ocaml_variables.ml[219,7062+2]..[219,7062+16])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[219,7062+17]..[220,7103+60])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[219,7062+19]..[219,7062+39])
+                    Pexp_constant PConst_string("ocamldoc_reference",(ocamltest/ocaml_variables.ml[219,7062+20]..[219,7062+38]),None)
+                  expression (ocamltest/ocaml_variables.ml[220,7103+19]..[220,7103+59])
+                    Pexp_constant PConst_string("Where to find expected ocamldoc output",(ocamltest/ocaml_variables.ml[220,7103+20]..[220,7103+58]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[222,7165+0]..[224,7243+72])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[222,7165+4]..[222,7165+28])
+          Ppat_var "ocaml_script_as_argument" (ocamltest/ocaml_variables.ml[222,7165+4]..[222,7165+28])
+        expression (ocamltest/ocaml_variables.ml[223,7196+2]..[224,7243+72])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[223,7196+2]..[223,7196+16])
+            Pexp_ident "Variables.make" (ocamltest/ocaml_variables.ml[223,7196+2]..[223,7196+16])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[223,7196+17]..[224,7243+72])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[223,7196+19]..[223,7196+45])
+                    Pexp_constant PConst_string("ocaml_script_as_argument",(ocamltest/ocaml_variables.ml[223,7196+20]..[223,7196+44]),None)
+                  expression (ocamltest/ocaml_variables.ml[224,7243+4]..[224,7243+71])
+                    Pexp_constant PConst_string("Whether the ocaml script should be passed as argument or on stdin",(ocamltest/ocaml_variables.ml[224,7243+5]..[224,7243+70]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[226,7317+0]..[227,7331+54])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[226,7317+4]..[226,7317+11])
+          Ppat_var "plugins" (ocamltest/ocaml_variables.ml[226,7317+4]..[226,7317+11])
+        expression (ocamltest/ocaml_variables.ml[227,7331+2]..[227,7331+54])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[227,7331+2]..[227,7331+16])
+            Pexp_ident "Variables.make" (ocamltest/ocaml_variables.ml[227,7331+2]..[227,7331+16])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[227,7331+17]..[227,7331+54])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[227,7331+19]..[227,7331+28])
+                    Pexp_constant PConst_string("plugins",(ocamltest/ocaml_variables.ml[227,7331+20]..[227,7331+27]),None)
+                  expression (ocamltest/ocaml_variables.ml[227,7331+30]..[227,7331+52])
+                    Pexp_constant PConst_string("plugins for ocamldoc",(ocamltest/ocaml_variables.ml[227,7331+31]..[227,7331+51]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[229,7387+0]..[231,7458+70])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[229,7387+4]..[229,7387+25])
+          Ppat_var "shared_library_cflags" (ocamltest/ocaml_variables.ml[229,7387+4]..[229,7387+25])
+        expression (ocamltest/ocaml_variables.ml[230,7415+2]..[231,7458+70])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[230,7415+2]..[230,7415+16])
+            Pexp_ident "Variables.make" (ocamltest/ocaml_variables.ml[230,7415+2]..[230,7415+16])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[230,7415+17]..[231,7458+70])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[230,7415+18]..[230,7415+41])
+                    Pexp_constant PConst_string("shared_library_cflags",(ocamltest/ocaml_variables.ml[230,7415+19]..[230,7415+40]),None)
+                  expression (ocamltest/ocaml_variables.ml[231,7458+4]..[231,7458+69])
+                    Pexp_constant PConst_string("Flags used to compile C files for inclusion in shared libraries",(ocamltest/ocaml_variables.ml[231,7458+5]..[231,7458+68]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[233,7530+0]..[235,7583+39])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[233,7530+4]..[233,7530+16])
+          Ppat_var "sharedobjext" (ocamltest/ocaml_variables.ml[233,7530+4]..[233,7530+16])
+        expression (ocamltest/ocaml_variables.ml[234,7549+2]..[235,7583+39])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[234,7549+2]..[234,7549+16])
+            Pexp_ident "Variables.make" (ocamltest/ocaml_variables.ml[234,7549+2]..[234,7549+16])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[234,7549+17]..[235,7583+39])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[234,7549+18]..[234,7549+32])
+                    Pexp_constant PConst_string("sharedobjext",(ocamltest/ocaml_variables.ml[234,7549+19]..[234,7549+31]),None)
+                  expression (ocamltest/ocaml_variables.ml[235,7583+4]..[235,7583+38])
+                    Pexp_constant PConst_string("Extension of shared object files",(ocamltest/ocaml_variables.ml[235,7583+5]..[235,7583+37]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[237,7624+0]..[239,7675+54])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[237,7624+4]..[237,7624+15])
+          Ppat_var "use_runtime" (ocamltest/ocaml_variables.ml[237,7624+4]..[237,7624+15])
+        expression (ocamltest/ocaml_variables.ml[238,7642+2]..[239,7675+54])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[238,7642+2]..[238,7642+16])
+            Pexp_ident "Variables.make" (ocamltest/ocaml_variables.ml[238,7642+2]..[238,7642+16])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[238,7642+17]..[239,7675+54])
+                Pexp_tuple
+                [
+                  expression (ocamltest/ocaml_variables.ml[238,7642+18]..[238,7642+31])
+                    Pexp_constant PConst_string("use_runtime",(ocamltest/ocaml_variables.ml[238,7642+19]..[238,7642+30]),None)
+                  expression (ocamltest/ocaml_variables.ml[239,7675+4]..[239,7675+52])
+                    Pexp_constant PConst_string("Whether the -use-runtime option should be used",(ocamltest/ocaml_variables.ml[239,7675+5]..[239,7675+51]),None)
+                ]
+          ]
+    ]
+  structure_item (ocamltest/ocaml_variables.ml[241,7731+0]..[302,8965+3])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/ocaml_variables.ml[241,7731+4]..[241,7731+5])
+          Ppat_any
+        expression (ocamltest/ocaml_variables.ml[241,7731+8]..[302,8965+3])
+          Pexp_apply
+          expression (ocamltest/ocaml_variables.ml[241,7731+8]..[241,7731+17])
+            Pexp_ident "List.iter" (ocamltest/ocaml_variables.ml[241,7731+8]..[241,7731+17])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[241,7731+18]..[241,7731+35])
+                Pexp_ident "register_variable" (ocamltest/ocaml_variables.ml[241,7731+18]..[241,7731+35])
+            <arg>
+            Nolabel
+              expression (ocamltest/ocaml_variables.ml[242,7767+2]..[302,8965+3])
+                Pexp_construct "::" (ocamltest/ocaml_variables.ml[243,7771+4]..[302,8965+3]) ghost
+                Some
+                  expression (ocamltest/ocaml_variables.ml[243,7771+4]..[302,8965+3]) ghost
+                    Pexp_tuple
+                    [
+                      expression (ocamltest/ocaml_variables.ml[243,7771+4]..[243,7771+15])
+                        Pexp_ident "all_modules" (ocamltest/ocaml_variables.ml[243,7771+4]..[243,7771+15])
+                      expression (ocamltest/ocaml_variables.ml[244,7788+4]..[302,8965+3]) ghost
+                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[244,7788+4]..[302,8965+3]) ghost
+                        Some
+                          expression (ocamltest/ocaml_variables.ml[244,7788+4]..[302,8965+3]) ghost
+                            Pexp_tuple
+                            [
+                              expression (ocamltest/ocaml_variables.ml[244,7788+4]..[244,7788+8])
+                                Pexp_ident "arch" (ocamltest/ocaml_variables.ml[244,7788+4]..[244,7788+8])
+                              expression (ocamltest/ocaml_variables.ml[245,7798+4]..[302,8965+3]) ghost
+                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[245,7798+4]..[302,8965+3]) ghost
+                                Some
+                                  expression (ocamltest/ocaml_variables.ml[245,7798+4]..[302,8965+3]) ghost
+                                    Pexp_tuple
+                                    [
+                                      expression (ocamltest/ocaml_variables.ml[245,7798+4]..[245,7798+18])
+                                        Pexp_ident "binary_modules" (ocamltest/ocaml_variables.ml[245,7798+4]..[245,7798+18])
+                                      expression (ocamltest/ocaml_variables.ml[246,7818+4]..[302,8965+3]) ghost
+                                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[246,7818+4]..[302,8965+3]) ghost
+                                        Some
+                                          expression (ocamltest/ocaml_variables.ml[246,7818+4]..[302,8965+3]) ghost
+                                            Pexp_tuple
+                                            [
+                                              expression (ocamltest/ocaml_variables.ml[246,7818+4]..[246,7818+15])
+                                                Pexp_ident "bytecc_libs" (ocamltest/ocaml_variables.ml[246,7818+4]..[246,7818+15])
+                                              expression (ocamltest/ocaml_variables.ml[247,7835+4]..[302,8965+3]) ghost
+                                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[247,7835+4]..[302,8965+3]) ghost
+                                                Some
+                                                  expression (ocamltest/ocaml_variables.ml[247,7835+4]..[302,8965+3]) ghost
+                                                    Pexp_tuple
+                                                    [
+                                                      expression (ocamltest/ocaml_variables.ml[247,7835+4]..[247,7835+18])
+                                                        Pexp_ident "c_preprocessor" (ocamltest/ocaml_variables.ml[247,7835+4]..[247,7835+18])
+                                                      expression (ocamltest/ocaml_variables.ml[248,7855+4]..[302,8965+3]) ghost
+                                                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[248,7855+4]..[302,8965+3]) ghost
+                                                        Some
+                                                          expression (ocamltest/ocaml_variables.ml[248,7855+4]..[302,8965+3]) ghost
+                                                            Pexp_tuple
+                                                            [
+                                                              expression (ocamltest/ocaml_variables.ml[248,7855+4]..[248,7855+24])
+                                                                Pexp_ident "caml_ld_library_path" (ocamltest/ocaml_variables.ml[248,7855+4]..[248,7855+24])
+                                                              expression (ocamltest/ocaml_variables.ml[249,7881+4]..[302,8965+3]) ghost
+                                                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[249,7881+4]..[302,8965+3]) ghost
+                                                                Some
+                                                                  expression (ocamltest/ocaml_variables.ml[249,7881+4]..[302,8965+3]) ghost
+                                                                    Pexp_tuple
+                                                                    [
+                                                                      expression (ocamltest/ocaml_variables.ml[249,7881+4]..[249,7881+23])
+Pexp_ident "codegen_exit_status" (ocamltest/ocaml_variables.ml[249,7881+4]..[249,7881+23])
+                                                                      expression (ocamltest/ocaml_variables.ml[250,7906+4]..[302,8965+3]) ghost
+Pexp_construct "::" (ocamltest/ocaml_variables.ml[250,7906+4]..[302,8965+3]) ghost
+Some
+  expression (ocamltest/ocaml_variables.ml[250,7906+4]..[302,8965+3]) ghost
+    Pexp_tuple
+    [
+      expression (ocamltest/ocaml_variables.ml[250,7906+4]..[250,7906+20])
+        Pexp_ident "compare_programs" (ocamltest/ocaml_variables.ml[250,7906+4]..[250,7906+20])
+      expression (ocamltest/ocaml_variables.ml[251,7928+4]..[302,8965+3]) ghost
+        Pexp_construct "::" (ocamltest/ocaml_variables.ml[251,7928+4]..[302,8965+3]) ghost
+        Some
+          expression (ocamltest/ocaml_variables.ml[251,7928+4]..[302,8965+3]) ghost
+            Pexp_tuple
+            [
+              expression (ocamltest/ocaml_variables.ml[251,7928+4]..[251,7928+29])
+                Pexp_ident "compiler_directory_suffix" (ocamltest/ocaml_variables.ml[251,7928+4]..[251,7928+29])
+              expression (ocamltest/ocaml_variables.ml[252,7959+4]..[302,8965+3]) ghost
+                Pexp_construct "::" (ocamltest/ocaml_variables.ml[252,7959+4]..[302,8965+3]) ghost
+                Some
+                  expression (ocamltest/ocaml_variables.ml[252,7959+4]..[302,8965+3]) ghost
+                    Pexp_tuple
+                    [
+                      expression (ocamltest/ocaml_variables.ml[252,7959+4]..[252,7959+22])
+                        Pexp_ident "compiler_reference" (ocamltest/ocaml_variables.ml[252,7959+4]..[252,7959+22])
+                      expression (ocamltest/ocaml_variables.ml[253,7983+4]..[302,8965+3]) ghost
+                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[253,7983+4]..[302,8965+3]) ghost
+                        Some
+                          expression (ocamltest/ocaml_variables.ml[253,7983+4]..[302,8965+3]) ghost
+                            Pexp_tuple
+                            [
+                              expression (ocamltest/ocaml_variables.ml[253,7983+4]..[253,7983+23])
+                                Pexp_ident "compiler_reference2" (ocamltest/ocaml_variables.ml[253,7983+4]..[253,7983+23])
+                              expression (ocamltest/ocaml_variables.ml[254,8008+4]..[302,8965+3]) ghost
+                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[254,8008+4]..[302,8965+3]) ghost
+                                Some
+                                  expression (ocamltest/ocaml_variables.ml[254,8008+4]..[302,8965+3]) ghost
+                                    Pexp_tuple
+                                    [
+                                      expression (ocamltest/ocaml_variables.ml[254,8008+4]..[254,8008+29])
+                                        Pexp_ident "compiler_reference_suffix" (ocamltest/ocaml_variables.ml[254,8008+4]..[254,8008+29])
+                                      expression (ocamltest/ocaml_variables.ml[255,8039+4]..[302,8965+3]) ghost
+                                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[255,8039+4]..[302,8965+3]) ghost
+                                        Some
+                                          expression (ocamltest/ocaml_variables.ml[255,8039+4]..[302,8965+3]) ghost
+                                            Pexp_tuple
+                                            [
+                                              expression (ocamltest/ocaml_variables.ml[255,8039+4]..[255,8039+19])
+                                                Pexp_ident "compiler_output" (ocamltest/ocaml_variables.ml[255,8039+4]..[255,8039+19])
+                                              expression (ocamltest/ocaml_variables.ml[256,8060+4]..[302,8965+3]) ghost
+                                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[256,8060+4]..[302,8965+3]) ghost
+                                                Some
+                                                  expression (ocamltest/ocaml_variables.ml[256,8060+4]..[302,8965+3]) ghost
+                                                    Pexp_tuple
+                                                    [
+                                                      expression (ocamltest/ocaml_variables.ml[256,8060+4]..[256,8060+20])
+                                                        Pexp_ident "compiler_output2" (ocamltest/ocaml_variables.ml[256,8060+4]..[256,8060+20])
+                                                      expression (ocamltest/ocaml_variables.ml[257,8082+4]..[302,8965+3]) ghost
+                                                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[257,8082+4]..[302,8965+3]) ghost
+                                                        Some
+                                                          expression (ocamltest/ocaml_variables.ml[257,8082+4]..[302,8965+3]) ghost
+                                                            Pexp_tuple
+                                                            [
+                                                              expression (ocamltest/ocaml_variables.ml[257,8082+4]..[257,8082+18])
+                                                                Pexp_ident "compiler_stdin" (ocamltest/ocaml_variables.ml[257,8082+4]..[257,8082+18])
+                                                              expression (ocamltest/ocaml_variables.ml[258,8102+4]..[302,8965+3]) ghost
+                                                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[258,8102+4]..[302,8965+3]) ghost
+                                                                Some
+                                                                  expression (ocamltest/ocaml_variables.ml[258,8102+4]..[302,8965+3]) ghost
+                                                                    Pexp_tuple
+                                                                    [
+                                                                      expression (ocamltest/ocaml_variables.ml[258,8102+4]..[258,8102+16])
+Pexp_ident "compile_only" (ocamltest/ocaml_variables.ml[258,8102+4]..[258,8102+16])
+                                                                      expression (ocamltest/ocaml_variables.ml[259,8120+4]..[302,8965+3]) ghost
+Pexp_construct "::" (ocamltest/ocaml_variables.ml[259,8120+4]..[302,8965+3]) ghost
+Some
+  expression (ocamltest/ocaml_variables.ml[259,8120+4]..[302,8965+3]) ghost
+    Pexp_tuple
+    [
+      expression (ocamltest/ocaml_variables.ml[259,8120+4]..[259,8120+7])
+        Pexp_ident "csc" (ocamltest/ocaml_variables.ml[259,8120+4]..[259,8120+7])
+      expression (ocamltest/ocaml_variables.ml[260,8129+4]..[302,8965+3]) ghost
+        Pexp_construct "::" (ocamltest/ocaml_variables.ml[260,8129+4]..[302,8965+3]) ghost
+        Some
+          expression (ocamltest/ocaml_variables.ml[260,8129+4]..[302,8965+3]) ghost
+            Pexp_tuple
+            [
+              expression (ocamltest/ocaml_variables.ml[260,8129+4]..[260,8129+13])
+                Pexp_ident "csc_flags" (ocamltest/ocaml_variables.ml[260,8129+4]..[260,8129+13])
+              expression (ocamltest/ocaml_variables.ml[261,8144+4]..[302,8965+3]) ghost
+                Pexp_construct "::" (ocamltest/ocaml_variables.ml[261,8144+4]..[302,8965+3]) ghost
+                Some
+                  expression (ocamltest/ocaml_variables.ml[261,8144+4]..[302,8965+3]) ghost
+                    Pexp_tuple
+                    [
+                      expression (ocamltest/ocaml_variables.ml[261,8144+4]..[261,8144+15])
+                        Pexp_ident "directories" (ocamltest/ocaml_variables.ml[261,8144+4]..[261,8144+15])
+                      expression (ocamltest/ocaml_variables.ml[262,8161+4]..[302,8965+3]) ghost
+                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[262,8161+4]..[302,8965+3]) ghost
+                        Some
+                          expression (ocamltest/ocaml_variables.ml[262,8161+4]..[302,8965+3]) ghost
+                            Pexp_tuple
+                            [
+                              expression (ocamltest/ocaml_variables.ml[262,8161+4]..[262,8161+9])
+                                Pexp_ident "flags" (ocamltest/ocaml_variables.ml[262,8161+4]..[262,8161+9])
+                              expression (ocamltest/ocaml_variables.ml[263,8172+4]..[302,8965+3]) ghost
+                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[263,8172+4]..[302,8965+3]) ghost
+                                Some
+                                  expression (ocamltest/ocaml_variables.ml[263,8172+4]..[302,8965+3]) ghost
+                                    Pexp_tuple
+                                    [
+                                      expression (ocamltest/ocaml_variables.ml[263,8172+4]..[263,8172+14])
+                                        Pexp_ident "last_flags" (ocamltest/ocaml_variables.ml[263,8172+4]..[263,8172+14])
+                                      expression (ocamltest/ocaml_variables.ml[264,8188+4]..[302,8965+3]) ghost
+                                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[264,8188+4]..[302,8965+3]) ghost
+                                        Some
+                                          expression (ocamltest/ocaml_variables.ml[264,8188+4]..[302,8965+3]) ghost
+                                            Pexp_tuple
+                                            [
+                                              expression (ocamltest/ocaml_variables.ml[264,8188+4]..[264,8188+13])
+                                                Pexp_ident "libraries" (ocamltest/ocaml_variables.ml[264,8188+4]..[264,8188+13])
+                                              expression (ocamltest/ocaml_variables.ml[265,8203+4]..[302,8965+3]) ghost
+                                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[265,8203+4]..[302,8965+3]) ghost
+                                                Some
+                                                  expression (ocamltest/ocaml_variables.ml[265,8203+4]..[302,8965+3]) ghost
+                                                    Pexp_tuple
+                                                    [
+                                                      expression (ocamltest/ocaml_variables.ml[265,8203+4]..[265,8203+9])
+                                                        Pexp_ident "mkdll" (ocamltest/ocaml_variables.ml[265,8203+4]..[265,8203+9])
+                                                      expression (ocamltest/ocaml_variables.ml[266,8214+4]..[302,8965+3]) ghost
+                                                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[266,8214+4]..[302,8965+3]) ghost
+                                                        Some
+                                                          expression (ocamltest/ocaml_variables.ml[266,8214+4]..[302,8965+3]) ghost
+                                                            Pexp_tuple
+                                                            [
+                                                              expression (ocamltest/ocaml_variables.ml[266,8214+4]..[266,8214+11])
+                                                                Pexp_ident "module_" (ocamltest/ocaml_variables.ml[266,8214+4]..[266,8214+11])
+                                                              expression (ocamltest/ocaml_variables.ml[267,8227+4]..[302,8965+3]) ghost
+                                                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[267,8227+4]..[302,8965+3]) ghost
+                                                                Some
+                                                                  expression (ocamltest/ocaml_variables.ml[267,8227+4]..[302,8965+3]) ghost
+                                                                    Pexp_tuple
+                                                                    [
+                                                                      expression (ocamltest/ocaml_variables.ml[267,8227+4]..[267,8227+11])
+Pexp_ident "modules" (ocamltest/ocaml_variables.ml[267,8227+4]..[267,8227+11])
+                                                                      expression (ocamltest/ocaml_variables.ml[268,8240+4]..[302,8965+3]) ghost
+Pexp_construct "::" (ocamltest/ocaml_variables.ml[268,8240+4]..[302,8965+3]) ghost
+Some
+  expression (ocamltest/ocaml_variables.ml[268,8240+4]..[302,8965+3]) ghost
+    Pexp_tuple
+    [
+      expression (ocamltest/ocaml_variables.ml[268,8240+4]..[268,8240+17])
+        Pexp_ident "nativecc_libs" (ocamltest/ocaml_variables.ml[268,8240+4]..[268,8240+17])
+      expression (ocamltest/ocaml_variables.ml[269,8259+4]..[302,8965+3]) ghost
+        Pexp_construct "::" (ocamltest/ocaml_variables.ml[269,8259+4]..[302,8965+3]) ghost
+        Some
+          expression (ocamltest/ocaml_variables.ml[269,8259+4]..[302,8965+3]) ghost
+            Pexp_tuple
+            [
+              expression (ocamltest/ocaml_variables.ml[269,8259+4]..[269,8259+10])
+                Pexp_ident "objext" (ocamltest/ocaml_variables.ml[269,8259+4]..[269,8259+10])
+              expression (ocamltest/ocaml_variables.ml[270,8271+4]..[302,8965+3]) ghost
+                Pexp_construct "::" (ocamltest/ocaml_variables.ml[270,8271+4]..[302,8965+3]) ghost
+                Some
+                  expression (ocamltest/ocaml_variables.ml[270,8271+4]..[302,8965+3]) ghost
+                    Pexp_tuple
+                    [
+                      expression (ocamltest/ocaml_variables.ml[270,8271+4]..[270,8271+10])
+                        Pexp_ident "libext" (ocamltest/ocaml_variables.ml[270,8271+4]..[270,8271+10])
+                      expression (ocamltest/ocaml_variables.ml[271,8283+4]..[302,8965+3]) ghost
+                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[271,8283+4]..[302,8965+3]) ghost
+                        Some
+                          expression (ocamltest/ocaml_variables.ml[271,8283+4]..[302,8965+3]) ghost
+                            Pexp_tuple
+                            [
+                              expression (ocamltest/ocaml_variables.ml[271,8283+4]..[271,8283+10])
+                                Pexp_ident "asmext" (ocamltest/ocaml_variables.ml[271,8283+4]..[271,8283+10])
+                              expression (ocamltest/ocaml_variables.ml[272,8295+4]..[302,8965+3]) ghost
+                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[272,8295+4]..[302,8965+3]) ghost
+                                Some
+                                  expression (ocamltest/ocaml_variables.ml[272,8295+4]..[302,8965+3]) ghost
+                                    Pexp_tuple
+                                    [
+                                      expression (ocamltest/ocaml_variables.ml[272,8295+4]..[272,8295+15])
+                                        Pexp_ident "ocamlc_byte" (ocamltest/ocaml_variables.ml[272,8295+4]..[272,8295+15])
+                                      expression (ocamltest/ocaml_variables.ml[273,8312+4]..[302,8965+3]) ghost
+                                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[273,8312+4]..[302,8965+3]) ghost
+                                        Some
+                                          expression (ocamltest/ocaml_variables.ml[273,8312+4]..[302,8965+3]) ghost
+                                            Pexp_tuple
+                                            [
+                                              expression (ocamltest/ocaml_variables.ml[273,8312+4]..[273,8312+17])
+                                                Pexp_ident "ocamlopt_byte" (ocamltest/ocaml_variables.ml[273,8312+4]..[273,8312+17])
+                                              expression (ocamltest/ocaml_variables.ml[274,8331+4]..[302,8965+3]) ghost
+                                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[274,8331+4]..[302,8965+3]) ghost
+                                                Some
+                                                  expression (ocamltest/ocaml_variables.ml[274,8331+4]..[302,8965+3]) ghost
+                                                    Pexp_tuple
+                                                    [
+                                                      expression (ocamltest/ocaml_variables.ml[274,8331+4]..[274,8331+12])
+                                                        Pexp_ident "ocamlrun" (ocamltest/ocaml_variables.ml[274,8331+4]..[274,8331+12])
+                                                      expression (ocamltest/ocaml_variables.ml[275,8345+4]..[302,8965+3]) ghost
+                                                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[275,8345+4]..[302,8965+3]) ghost
+                                                        Some
+                                                          expression (ocamltest/ocaml_variables.ml[275,8345+4]..[302,8965+3]) ghost
+                                                            Pexp_tuple
+                                                            [
+                                                              expression (ocamltest/ocaml_variables.ml[275,8345+4]..[275,8345+16])
+                                                                Pexp_ident "ocamlc_flags" (ocamltest/ocaml_variables.ml[275,8345+4]..[275,8345+16])
+                                                              expression (ocamltest/ocaml_variables.ml[276,8363+4]..[302,8965+3]) ghost
+                                                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[276,8363+4]..[302,8965+3]) ghost
+                                                                Some
+                                                                  expression (ocamltest/ocaml_variables.ml[276,8363+4]..[302,8965+3]) ghost
+                                                                    Pexp_tuple
+                                                                    [
+                                                                      expression (ocamltest/ocaml_variables.ml[276,8363+4]..[276,8363+24])
+Pexp_ident "ocamlc_default_flags" (ocamltest/ocaml_variables.ml[276,8363+4]..[276,8363+24])
+                                                                      expression (ocamltest/ocaml_variables.ml[277,8389+4]..[302,8965+3]) ghost
+Pexp_construct "::" (ocamltest/ocaml_variables.ml[277,8389+4]..[302,8965+3]) ghost
+Some
+  expression (ocamltest/ocaml_variables.ml[277,8389+4]..[302,8965+3]) ghost
+    Pexp_tuple
+    [
+      expression (ocamltest/ocaml_variables.ml[277,8389+4]..[277,8389+18])
+        Pexp_ident "ocamlopt_flags" (ocamltest/ocaml_variables.ml[277,8389+4]..[277,8389+18])
+      expression (ocamltest/ocaml_variables.ml[278,8409+4]..[302,8965+3]) ghost
+        Pexp_construct "::" (ocamltest/ocaml_variables.ml[278,8409+4]..[302,8965+3]) ghost
+        Some
+          expression (ocamltest/ocaml_variables.ml[278,8409+4]..[302,8965+3]) ghost
+            Pexp_tuple
+            [
+              expression (ocamltest/ocaml_variables.ml[278,8409+4]..[278,8409+26])
+                Pexp_ident "ocamlopt_default_flags" (ocamltest/ocaml_variables.ml[278,8409+4]..[278,8409+26])
+              expression (ocamltest/ocaml_variables.ml[279,8437+4]..[302,8965+3]) ghost
+                Pexp_construct "::" (ocamltest/ocaml_variables.ml[279,8437+4]..[302,8965+3]) ghost
+                Some
+                  expression (ocamltest/ocaml_variables.ml[279,8437+4]..[302,8965+3]) ghost
+                    Pexp_tuple
+                    [
+                      expression (ocamltest/ocaml_variables.ml[279,8437+4]..[279,8437+21])
+                        Pexp_ident "ocaml_exit_status" (ocamltest/ocaml_variables.ml[279,8437+4]..[279,8437+21])
+                      expression (ocamltest/ocaml_variables.ml[280,8460+4]..[302,8965+3]) ghost
+                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[280,8460+4]..[302,8965+3]) ghost
+                        Some
+                          expression (ocamltest/ocaml_variables.ml[280,8460+4]..[302,8965+3]) ghost
+                            Pexp_tuple
+                            [
+                              expression (ocamltest/ocaml_variables.ml[280,8460+4]..[280,8460+23])
+                                Pexp_ident "ocaml_filetype_flag" (ocamltest/ocaml_variables.ml[280,8460+4]..[280,8460+23])
+                              expression (ocamltest/ocaml_variables.ml[281,8485+4]..[302,8965+3]) ghost
+                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[281,8485+4]..[302,8965+3]) ghost
+                                Some
+                                  expression (ocamltest/ocaml_variables.ml[281,8485+4]..[302,8965+3]) ghost
+                                    Pexp_tuple
+                                    [
+                                      expression (ocamltest/ocaml_variables.ml[281,8485+4]..[281,8485+27])
+                                        Pexp_ident "ocamlc_byte_exit_status" (ocamltest/ocaml_variables.ml[281,8485+4]..[281,8485+27])
+                                      expression (ocamltest/ocaml_variables.ml[282,8514+4]..[302,8965+3]) ghost
+                                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[282,8514+4]..[302,8965+3]) ghost
+                                        Some
+                                          expression (ocamltest/ocaml_variables.ml[282,8514+4]..[302,8965+3]) ghost
+                                            Pexp_tuple
+                                            [
+                                              expression (ocamltest/ocaml_variables.ml[282,8514+4]..[282,8514+29])
+                                                Pexp_ident "ocamlopt_byte_exit_status" (ocamltest/ocaml_variables.ml[282,8514+4]..[282,8514+29])
+                                              expression (ocamltest/ocaml_variables.ml[283,8545+4]..[302,8965+3]) ghost
+                                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[283,8545+4]..[302,8965+3]) ghost
+                                                Some
+                                                  expression (ocamltest/ocaml_variables.ml[283,8545+4]..[302,8965+3]) ghost
+                                                    Pexp_tuple
+                                                    [
+                                                      expression (ocamltest/ocaml_variables.ml[283,8545+4]..[283,8545+24])
+                                                        Pexp_ident "ocamlnat_exit_status" (ocamltest/ocaml_variables.ml[283,8545+4]..[283,8545+24])
+                                                      expression (ocamltest/ocaml_variables.ml[284,8571+4]..[302,8965+3]) ghost
+                                                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[284,8571+4]..[302,8965+3]) ghost
+                                                        Some
+                                                          expression (ocamltest/ocaml_variables.ml[284,8571+4]..[302,8965+3]) ghost
+                                                            Pexp_tuple
+                                                            [
+                                                              expression (ocamltest/ocaml_variables.ml[284,8571+4]..[284,8571+26])
+                                                                Pexp_ident "ocamlc_opt_exit_status" (ocamltest/ocaml_variables.ml[284,8571+4]..[284,8571+26])
+                                                              expression (ocamltest/ocaml_variables.ml[285,8599+4]..[302,8965+3]) ghost
+                                                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[285,8599+4]..[302,8965+3]) ghost
+                                                                Some
+                                                                  expression (ocamltest/ocaml_variables.ml[285,8599+4]..[302,8965+3]) ghost
+                                                                    Pexp_tuple
+                                                                    [
+                                                                      expression (ocamltest/ocaml_variables.ml[285,8599+4]..[285,8599+28])
+Pexp_ident "ocamlopt_opt_exit_status" (ocamltest/ocaml_variables.ml[285,8599+4]..[285,8599+28])
+                                                                      expression (ocamltest/ocaml_variables.ml[286,8629+4]..[302,8965+3]) ghost
+Pexp_construct "::" (ocamltest/ocaml_variables.ml[286,8629+4]..[302,8965+3]) ghost
+Some
+  expression (ocamltest/ocaml_variables.ml[286,8629+4]..[302,8965+3]) ghost
+    Pexp_tuple
+    [
+      expression (ocamltest/ocaml_variables.ml[286,8629+4]..[286,8629+17])
+        Pexp_ident "ocamlrunparam" (ocamltest/ocaml_variables.ml[286,8629+4]..[286,8629+17])
+      expression (ocamltest/ocaml_variables.ml[287,8648+4]..[302,8965+3]) ghost
+        Pexp_construct "::" (ocamltest/ocaml_variables.ml[287,8648+4]..[302,8965+3]) ghost
+        Some
+          expression (ocamltest/ocaml_variables.ml[287,8648+4]..[302,8965+3]) ghost
+            Pexp_tuple
+            [
+              expression (ocamltest/ocaml_variables.ml[287,8648+4]..[287,8648+18])
+                Pexp_ident "ocamllex_flags" (ocamltest/ocaml_variables.ml[287,8648+4]..[287,8648+18])
+              expression (ocamltest/ocaml_variables.ml[288,8668+4]..[302,8965+3]) ghost
+                Pexp_construct "::" (ocamltest/ocaml_variables.ml[288,8668+4]..[302,8965+3]) ghost
+                Some
+                  expression (ocamltest/ocaml_variables.ml[288,8668+4]..[302,8965+3]) ghost
+                    Pexp_tuple
+                    [
+                      expression (ocamltest/ocaml_variables.ml[288,8668+4]..[288,8668+19])
+                        Pexp_ident "ocamlyacc_flags" (ocamltest/ocaml_variables.ml[288,8668+4]..[288,8668+19])
+                      expression (ocamltest/ocaml_variables.ml[289,8689+4]..[302,8965+3]) ghost
+                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[289,8689+4]..[302,8965+3]) ghost
+                        Some
+                          expression (ocamltest/ocaml_variables.ml[289,8689+4]..[302,8965+3]) ghost
+                            Pexp_tuple
+                            [
+                              expression (ocamltest/ocaml_variables.ml[289,8689+4]..[289,8689+18])
+                                Pexp_ident "ocamldoc_flags" (ocamltest/ocaml_variables.ml[289,8689+4]..[289,8689+18])
+                              expression (ocamltest/ocaml_variables.ml[290,8709+4]..[302,8965+3]) ghost
+                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[290,8709+4]..[302,8965+3]) ghost
+                                Some
+                                  expression (ocamltest/ocaml_variables.ml[290,8709+4]..[302,8965+3]) ghost
+                                    Pexp_tuple
+                                    [
+                                      expression (ocamltest/ocaml_variables.ml[290,8709+4]..[290,8709+20])
+                                        Pexp_ident "ocamldoc_backend" (ocamltest/ocaml_variables.ml[290,8709+4]..[290,8709+20])
+                                      expression (ocamltest/ocaml_variables.ml[291,8731+4]..[302,8965+3]) ghost
+                                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[291,8731+4]..[302,8965+3]) ghost
+                                        Some
+                                          expression (ocamltest/ocaml_variables.ml[291,8731+4]..[302,8965+3]) ghost
+                                            Pexp_tuple
+                                            [
+                                              expression (ocamltest/ocaml_variables.ml[291,8731+4]..[291,8731+19])
+                                                Pexp_ident "ocamldoc_output" (ocamltest/ocaml_variables.ml[291,8731+4]..[291,8731+19])
+                                              expression (ocamltest/ocaml_variables.ml[292,8752+4]..[302,8965+3]) ghost
+                                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[292,8752+4]..[302,8965+3]) ghost
+                                                Some
+                                                  expression (ocamltest/ocaml_variables.ml[292,8752+4]..[302,8965+3]) ghost
+                                                    Pexp_tuple
+                                                    [
+                                                      expression (ocamltest/ocaml_variables.ml[292,8752+4]..[292,8752+22])
+                                                        Pexp_ident "ocamldoc_reference" (ocamltest/ocaml_variables.ml[292,8752+4]..[292,8752+22])
+                                                      expression (ocamltest/ocaml_variables.ml[293,8776+4]..[302,8965+3]) ghost
+                                                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[293,8776+4]..[302,8965+3]) ghost
+                                                        Some
+                                                          expression (ocamltest/ocaml_variables.ml[293,8776+4]..[302,8965+3]) ghost
+                                                            Pexp_tuple
+                                                            [
+                                                              expression (ocamltest/ocaml_variables.ml[293,8776+4]..[293,8776+24])
+                                                                Pexp_ident "ocamldoc_exit_status" (ocamltest/ocaml_variables.ml[293,8776+4]..[293,8776+24])
+                                                              expression (ocamltest/ocaml_variables.ml[294,8802+4]..[302,8965+3]) ghost
+                                                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[294,8802+4]..[302,8965+3]) ghost
+                                                                Some
+                                                                  expression (ocamltest/ocaml_variables.ml[294,8802+4]..[302,8965+3]) ghost
+                                                                    Pexp_tuple
+                                                                    [
+                                                                      expression (ocamltest/ocaml_variables.ml[294,8802+4]..[294,8802+20])
+Pexp_ident "ocamldebug_flags" (ocamltest/ocaml_variables.ml[294,8802+4]..[294,8802+20])
+                                                                      expression (ocamltest/ocaml_variables.ml[295,8824+4]..[302,8965+3]) ghost
+Pexp_construct "::" (ocamltest/ocaml_variables.ml[295,8824+4]..[302,8965+3]) ghost
+Some
+  expression (ocamltest/ocaml_variables.ml[295,8824+4]..[302,8965+3]) ghost
+    Pexp_tuple
+    [
+      expression (ocamltest/ocaml_variables.ml[295,8824+4]..[295,8824+21])
+        Pexp_ident "ocamldebug_script" (ocamltest/ocaml_variables.ml[295,8824+4]..[295,8824+21])
+      expression (ocamltest/ocaml_variables.ml[296,8847+4]..[302,8965+3]) ghost
+        Pexp_construct "::" (ocamltest/ocaml_variables.ml[296,8847+4]..[302,8965+3]) ghost
+        Some
+          expression (ocamltest/ocaml_variables.ml[296,8847+4]..[302,8965+3]) ghost
+            Pexp_tuple
+            [
+              expression (ocamltest/ocaml_variables.ml[296,8847+4]..[296,8847+28])
+                Pexp_ident "ocaml_script_as_argument" (ocamltest/ocaml_variables.ml[296,8847+4]..[296,8847+28])
+              expression (ocamltest/ocaml_variables.ml[297,8877+4]..[302,8965+3]) ghost
+                Pexp_construct "::" (ocamltest/ocaml_variables.ml[297,8877+4]..[302,8965+3]) ghost
+                Some
+                  expression (ocamltest/ocaml_variables.ml[297,8877+4]..[302,8965+3]) ghost
+                    Pexp_tuple
+                    [
+                      expression (ocamltest/ocaml_variables.ml[297,8877+4]..[297,8877+11])
+                        Pexp_ident "os_type" (ocamltest/ocaml_variables.ml[297,8877+4]..[297,8877+11])
+                      expression (ocamltest/ocaml_variables.ml[298,8890+4]..[302,8965+3]) ghost
+                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[298,8890+4]..[302,8965+3]) ghost
+                        Some
+                          expression (ocamltest/ocaml_variables.ml[298,8890+4]..[302,8965+3]) ghost
+                            Pexp_tuple
+                            [
+                              expression (ocamltest/ocaml_variables.ml[298,8890+4]..[298,8890+11])
+                                Pexp_ident "plugins" (ocamltest/ocaml_variables.ml[298,8890+4]..[298,8890+11])
+                              expression (ocamltest/ocaml_variables.ml[299,8903+4]..[302,8965+3]) ghost
+                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[299,8903+4]..[302,8965+3]) ghost
+                                Some
+                                  expression (ocamltest/ocaml_variables.ml[299,8903+4]..[302,8965+3]) ghost
+                                    Pexp_tuple
+                                    [
+                                      expression (ocamltest/ocaml_variables.ml[299,8903+4]..[299,8903+25])
+                                        Pexp_ident "shared_library_cflags" (ocamltest/ocaml_variables.ml[299,8903+4]..[299,8903+25])
+                                      expression (ocamltest/ocaml_variables.ml[300,8930+4]..[302,8965+3]) ghost
+                                        Pexp_construct "::" (ocamltest/ocaml_variables.ml[300,8930+4]..[302,8965+3]) ghost
+                                        Some
+                                          expression (ocamltest/ocaml_variables.ml[300,8930+4]..[302,8965+3]) ghost
+                                            Pexp_tuple
+                                            [
+                                              expression (ocamltest/ocaml_variables.ml[300,8930+4]..[300,8930+16])
+                                                Pexp_ident "sharedobjext" (ocamltest/ocaml_variables.ml[300,8930+4]..[300,8930+16])
+                                              expression (ocamltest/ocaml_variables.ml[301,8948+4]..[302,8965+3]) ghost
+                                                Pexp_construct "::" (ocamltest/ocaml_variables.ml[301,8948+4]..[302,8965+3]) ghost
+                                                Some
+                                                  expression (ocamltest/ocaml_variables.ml[301,8948+4]..[302,8965+3]) ghost
+                                                    Pexp_tuple
+                                                    [
+                                                      expression (ocamltest/ocaml_variables.ml[301,8948+4]..[301,8948+15])
+                                                        Pexp_ident "use_runtime" (ocamltest/ocaml_variables.ml[301,8948+4]..[301,8948+15])
+                                                      expression (ocamltest/ocaml_variables.ml[302,8965+2]..[302,8965+3]) ghost
+                                                        Pexp_construct "[]" (ocamltest/ocaml_variables.ml[302,8965+2]..[302,8965+3]) ghost
+                                                        None
+                                                    ]
+                                            ]
+                                    ]
+                            ]
+                    ]
+            ]
+    ]
+                                                                    ]
+                                                            ]
+                                                    ]
+                                            ]
+                                    ]
+                            ]
+                    ]
+            ]
+    ]
+                                                                    ]
+                                                            ]
+                                                    ]
+                                            ]
+                                    ]
+                            ]
+                    ]
+            ]
+    ]
+                                                                    ]
+                                                            ]
+                                                    ]
+                                            ]
+                                    ]
+                            ]
+                    ]
+            ]
+    ]
+                                                                    ]
+                                                            ]
+                                                    ]
+                                            ]
+                                    ]
+                            ]
+                    ]
+            ]
+    ]
+                                                                    ]
+                                                            ]
+                                                    ]
+                                            ]
+                                    ]
+                            ]
+                    ]
+            ]
+    ]
+                                                                    ]
+                                                            ]
+                                                    ]
+                                            ]
+                                    ]
+                            ]
+                    ]
+          ]
+    ]
+]
+

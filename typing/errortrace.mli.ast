@@ -1,0 +1,1051 @@
+[
+  signature_item (typing/errortrace.mli[18,1233+0]..[18,1233+10])
+    Psig_open Fresh "Types" (typing/errortrace.mli[18,1233+5]..[18,1233+10])
+  signature_item (typing/errortrace.mli[20,1245+0]..[20,1245+30])
+    Psig_type Rec
+    [
+      type_declaration "position" (typing/errortrace.mli[20,1245+5]..[20,1245+13]) (typing/errortrace.mli[20,1245+0]..[20,1245+30])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/errortrace.mli[20,1245+16]..[20,1245+21])
+                "First" (typing/errortrace.mli[20,1245+16]..[20,1245+21])
+                []
+                None
+              (typing/errortrace.mli[20,1245+22]..[20,1245+30])
+                "Second" (typing/errortrace.mli[20,1245+24]..[20,1245+30])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/errortrace.mli[22,1277+0]..[22,1277+40])
+    Psig_value
+    value_description "swap_position" (typing/errortrace.mli[22,1277+4]..[22,1277+17]) (typing/errortrace.mli[22,1277+0]..[22,1277+40])
+      core_type (typing/errortrace.mli[22,1277+20]..[22,1277+40])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/errortrace.mli[22,1277+20]..[22,1277+28])
+          Ptyp_constr "position" (typing/errortrace.mli[22,1277+20]..[22,1277+28])
+          []
+        core_type (typing/errortrace.mli[22,1277+32]..[22,1277+40])
+          Ptyp_constr "position" (typing/errortrace.mli[22,1277+32]..[22,1277+40])
+          []
+      []
+  signature_item (typing/errortrace.mli[23,1318+0]..[23,1318+52])
+    Psig_value
+    value_description "print_pos" (typing/errortrace.mli[23,1318+4]..[23,1318+13]) (typing/errortrace.mli[23,1318+0]..[23,1318+52])
+      core_type (typing/errortrace.mli[23,1318+16]..[23,1318+52])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/errortrace.mli[23,1318+16]..[23,1318+32])
+          Ptyp_constr "Format.formatter" (typing/errortrace.mli[23,1318+16]..[23,1318+32])
+          []
+        core_type (typing/errortrace.mli[23,1318+36]..[23,1318+52])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/errortrace.mli[23,1318+36]..[23,1318+44])
+            Ptyp_constr "position" (typing/errortrace.mli[23,1318+36]..[23,1318+44])
+            []
+          core_type (typing/errortrace.mli[23,1318+48]..[23,1318+52])
+            Ptyp_constr "unit" (typing/errortrace.mli[23,1318+48]..[23,1318+52])
+            []
+      []
+  signature_item (typing/errortrace.mli[25,1372+0]..[25,1372+56])
+    Psig_type Rec
+    [
+      type_declaration "desc" (typing/errortrace.mli[25,1372+5]..[25,1372+9]) (typing/errortrace.mli[25,1372+0]..[25,1372+56])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (typing/errortrace.mli[25,1372+14]..[25,1372+27])
+                Immutable
+                "t" (typing/errortrace.mli[25,1372+14]..[25,1372+15])                core_type (typing/errortrace.mli[25,1372+17]..[25,1372+26])
+                  Ptyp_constr "type_expr" (typing/errortrace.mli[25,1372+17]..[25,1372+26])
+                  []
+              (typing/errortrace.mli[25,1372+28]..[25,1372+54])
+                Immutable
+                "expanded" (typing/errortrace.mli[25,1372+28]..[25,1372+36])                core_type (typing/errortrace.mli[25,1372+38]..[25,1372+54])
+                  Ptyp_constr "option" (typing/errortrace.mli[25,1372+48]..[25,1372+54])
+                  [
+                    core_type (typing/errortrace.mli[25,1372+38]..[25,1372+47])
+                      Ptyp_constr "type_expr" (typing/errortrace.mli[25,1372+38]..[25,1372+47])
+                      []
+                  ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/errortrace.mli[26,1429+0]..[26,1429+39])
+    Psig_type Rec
+    [
+      type_declaration "diff" (typing/errortrace.mli[26,1429+8]..[26,1429+12]) (typing/errortrace.mli[26,1429+0]..[26,1429+39])
+        ptype_params =
+          [
+            core_type (typing/errortrace.mli[26,1429+5]..[26,1429+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (typing/errortrace.mli[26,1429+17]..[26,1429+25])
+                Immutable
+                "got" (typing/errortrace.mli[26,1429+17]..[26,1429+20])                core_type (typing/errortrace.mli[26,1429+22]..[26,1429+24])
+                  Ptyp_var a
+              (typing/errortrace.mli[26,1429+26]..[26,1429+38])
+                Immutable
+                "expected" (typing/errortrace.mli[26,1429+26]..[26,1429+34])                core_type (typing/errortrace.mli[26,1429+36]..[26,1429+38])
+                  Ptyp_var a
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/errortrace.mli[29,1543+0]..[29,1543+46])
+    Psig_value
+    value_description "map_diff" (typing/errortrace.mli[29,1543+4]..[29,1543+12]) (typing/errortrace.mli[29,1543+0]..[29,1543+46])
+      attribute "ocaml.doc"
+        [
+          structure_item (typing/errortrace.mli[28,1470+0]..[28,1470+72])
+            Pstr_eval
+            expression (typing/errortrace.mli[28,1470+0]..[28,1470+72])
+              Pexp_constant PConst_string(" [map_diff f {expected;got}] is [{expected=f expected; got=f got}] ",(typing/errortrace.mli[28,1470+0]..[28,1470+72]),None)
+        ]
+      core_type (typing/errortrace.mli[29,1543+14]..[29,1543+46])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/errortrace.mli[29,1543+15]..[29,1543+23])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/errortrace.mli[29,1543+15]..[29,1543+17])
+            Ptyp_var a
+          core_type (typing/errortrace.mli[29,1543+21]..[29,1543+23])
+            Ptyp_var b
+        core_type (typing/errortrace.mli[29,1543+28]..[29,1543+46])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/errortrace.mli[29,1543+28]..[29,1543+35])
+            Ptyp_constr "diff" (typing/errortrace.mli[29,1543+31]..[29,1543+35])
+            [
+              core_type (typing/errortrace.mli[29,1543+28]..[29,1543+30])
+                Ptyp_var a
+            ]
+          core_type (typing/errortrace.mli[29,1543+39]..[29,1543+46])
+            Ptyp_constr "diff" (typing/errortrace.mli[29,1543+42]..[29,1543+46])
+            [
+              core_type (typing/errortrace.mli[29,1543+39]..[29,1543+41])
+                Ptyp_var b
+            ]
+      []
+  signature_item (typing/errortrace.mli[32,1626+0]..[40,1876+14])
+    Psig_type Rec
+    [
+      type_declaration "escape_kind" (typing/errortrace.mli[32,1626+8]..[32,1626+19]) (typing/errortrace.mli[32,1626+0]..[40,1876+14])
+        attribute "ocaml.doc"
+          [
+            structure_item (typing/errortrace.mli[31,1591+0]..[31,1591+34])
+              Pstr_eval
+              expression (typing/errortrace.mli[31,1591+0]..[31,1591+34])
+                Pexp_constant PConst_string(" Scope escape related errors ",(typing/errortrace.mli[31,1591+0]..[31,1591+34]),None)
+          ]
+        ptype_params =
+          [
+            core_type (typing/errortrace.mli[32,1626+5]..[32,1626+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/errortrace.mli[33,1648+2]..[33,1648+25])
+                "Constructor" (typing/errortrace.mli[33,1648+4]..[33,1648+15])
+                [
+                  core_type (typing/errortrace.mli[33,1648+19]..[33,1648+25])
+                    Ptyp_constr "Path.t" (typing/errortrace.mli[33,1648+19]..[33,1648+25])
+                    []
+                ]
+                None
+              (typing/errortrace.mli[34,1674+2]..[34,1674+21])
+                "Univ" (typing/errortrace.mli[34,1674+4]..[34,1674+8])
+                [
+                  core_type (typing/errortrace.mli[34,1674+12]..[34,1674+21])
+                    Ptyp_constr "type_expr" (typing/errortrace.mli[34,1674+12]..[34,1674+21])
+                    []
+                ]
+                None
+              (typing/errortrace.mli[37,1822+2]..[37,1822+8])
+                "Self" (typing/errortrace.mli[37,1822+4]..[37,1822+8])
+                []
+                None
+              (typing/errortrace.mli[38,1831+2]..[38,1831+25])
+                "Module_type" (typing/errortrace.mli[38,1831+4]..[38,1831+15])
+                [
+                  core_type (typing/errortrace.mli[38,1831+19]..[38,1831+25])
+                    Ptyp_constr "Path.t" (typing/errortrace.mli[38,1831+19]..[38,1831+25])
+                    []
+                ]
+                None
+              (typing/errortrace.mli[39,1857+2]..[39,1857+18])
+                "Equation" (typing/errortrace.mli[39,1857+4]..[39,1857+12])
+                [
+                  core_type (typing/errortrace.mli[39,1857+16]..[39,1857+18])
+                    Ptyp_var a
+                ]
+                None
+              (typing/errortrace.mli[40,1876+2]..[40,1876+14])
+                "Constraint" (typing/errortrace.mli[40,1876+4]..[40,1876+14])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/errortrace.mli[42,1892+0]..[44,1936+32])
+    Psig_type Rec
+    [
+      type_declaration "escape" (typing/errortrace.mli[42,1892+8]..[42,1892+14]) (typing/errortrace.mli[42,1892+0]..[44,1936+32])
+        ptype_params =
+          [
+            core_type (typing/errortrace.mli[42,1892+5]..[42,1892+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (typing/errortrace.mli[43,1909+4]..[43,1909+26])
+                Immutable
+                "kind" (typing/errortrace.mli[43,1909+4]..[43,1909+8])                core_type (typing/errortrace.mli[43,1909+11]..[43,1909+25])
+                  Ptyp_constr "escape_kind" (typing/errortrace.mli[43,1909+14]..[43,1909+25])
+                  [
+                    core_type (typing/errortrace.mli[43,1909+11]..[43,1909+13])
+                      Ptyp_var a
+                  ]
+              (typing/errortrace.mli[44,1936+4]..[44,1936+30])
+                Immutable
+                "context" (typing/errortrace.mli[44,1936+4]..[44,1936+11])                core_type (typing/errortrace.mli[44,1936+14]..[44,1936+30])
+                  Ptyp_constr "option" (typing/errortrace.mli[44,1936+24]..[44,1936+30])
+                  [
+                    core_type (typing/errortrace.mli[44,1936+14]..[44,1936+23])
+                      Ptyp_constr "type_expr" (typing/errortrace.mli[44,1936+14]..[44,1936+23])
+                      []
+                  ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/errortrace.mli[46,1970+0]..[46,1970+29])
+    Psig_value
+    value_description "short" (typing/errortrace.mli[46,1970+4]..[46,1970+9]) (typing/errortrace.mli[46,1970+0]..[46,1970+29])
+      core_type (typing/errortrace.mli[46,1970+12]..[46,1970+29])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/errortrace.mli[46,1970+12]..[46,1970+21])
+          Ptyp_constr "type_expr" (typing/errortrace.mli[46,1970+12]..[46,1970+21])
+          []
+        core_type (typing/errortrace.mli[46,1970+25]..[46,1970+29])
+          Ptyp_constr "desc" (typing/errortrace.mli[46,1970+25]..[46,1970+29])
+          []
+      []
+  signature_item (typing/errortrace.mli[48,2001+0]..[50,2066+11])
+    Psig_value
+    value_description "explain" (typing/errortrace.mli[48,2001+4]..[48,2001+11]) (typing/errortrace.mli[48,2001+0]..[50,2066+11])
+      core_type (typing/errortrace.mli[48,2001+13]..[50,2066+11])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/errortrace.mli[48,2001+13]..[48,2001+20])
+          Ptyp_constr "list" (typing/errortrace.mli[48,2001+16]..[48,2001+20])
+          [
+            core_type (typing/errortrace.mli[48,2001+13]..[48,2001+15])
+              Ptyp_var a
+          ]
+        core_type (typing/errortrace.mli[49,2025+2]..[50,2066+11])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/errortrace.mli[49,2025+3]..[49,2025+36])
+            Ptyp_arrow
+            Labelled "prev"
+            core_type (typing/errortrace.mli[49,2025+8]..[49,2025+17])
+              Ptyp_constr "option" (typing/errortrace.mli[49,2025+11]..[49,2025+17])
+              [
+                core_type (typing/errortrace.mli[49,2025+8]..[49,2025+10])
+                  Ptyp_var a
+              ]
+            core_type (typing/errortrace.mli[49,2025+21]..[49,2025+36])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/errortrace.mli[49,2025+21]..[49,2025+23])
+                Ptyp_var a
+              core_type (typing/errortrace.mli[49,2025+27]..[49,2025+36])
+                Ptyp_constr "option" (typing/errortrace.mli[49,2025+30]..[49,2025+36])
+                [
+                  core_type (typing/errortrace.mli[49,2025+27]..[49,2025+29])
+                    Ptyp_var b
+                ]
+          core_type (typing/errortrace.mli[50,2066+2]..[50,2066+11])
+            Ptyp_constr "option" (typing/errortrace.mli[50,2066+5]..[50,2066+11])
+            [
+              core_type (typing/errortrace.mli[50,2066+2]..[50,2066+4])
+                Ptyp_var b
+            ]
+      []
+  signature_item (typing/errortrace.mli[53,2098+0]..[53,2098+38])
+    Psig_type Rec
+    [
+      type_declaration "unification" (typing/errortrace.mli[53,2098+5]..[53,2098+16]) (typing/errortrace.mli[53,2098+0]..[53,2098+38])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/errortrace.mli[53,2098+27]..[53,2098+38])
+                "Unification" (typing/errortrace.mli[53,2098+27]..[53,2098+38])
+                []
+                None
+            ]
+        ptype_private = Private
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/errortrace.mli[54,2137+0]..[54,2137+37])
+    Psig_type Rec
+    [
+      type_declaration "comparison" (typing/errortrace.mli[54,2137+5]..[54,2137+15]) (typing/errortrace.mli[54,2137+0]..[54,2137+37])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/errortrace.mli[54,2137+27]..[54,2137+37])
+                "Comparison" (typing/errortrace.mli[54,2137+27]..[54,2137+37])
+                []
+                None
+            ]
+        ptype_private = Private
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/errortrace.mli[56,2176+0]..[58,2219+34])
+    Psig_type Rec
+    [
+      type_declaration "fixed_row_case" (typing/errortrace.mli[56,2176+5]..[56,2176+19]) (typing/errortrace.mli[56,2176+0]..[58,2219+34])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/errortrace.mli[57,2198+2]..[57,2198+20])
+                "Cannot_be_closed" (typing/errortrace.mli[57,2198+4]..[57,2198+20])
+                []
+                None
+              (typing/errortrace.mli[58,2219+2]..[58,2219+34])
+                "Cannot_add_tags" (typing/errortrace.mli[58,2219+4]..[58,2219+19])
+                [
+                  core_type (typing/errortrace.mli[58,2219+23]..[58,2219+34])
+                    Ptyp_constr "list" (typing/errortrace.mli[58,2219+30]..[58,2219+34])
+                    [
+                      core_type (typing/errortrace.mli[58,2219+23]..[58,2219+29])
+                        Ptyp_constr "string" (typing/errortrace.mli[58,2219+23]..[58,2219+29])
+                        []
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/errortrace.mli[60,2255+0]..[69,2595+79])
+    Psig_type Rec
+    [
+      type_declaration "variant" (typing/errortrace.mli[60,2255+14]..[60,2255+21]) (typing/errortrace.mli[60,2255+0]..[69,2595+79])
+        ptype_params =
+          [
+            core_type (typing/errortrace.mli[60,2255+5]..[60,2255+13])
+              Ptyp_var variety
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/errortrace.mli[62,2294+2]..[62,2294+48])
+                "Incompatible_types_for" (typing/errortrace.mli[62,2294+4]..[62,2294+26])
+                [
+                  core_type (typing/errortrace.mli[62,2294+29]..[62,2294+35])
+                    Ptyp_constr "string" (typing/errortrace.mli[62,2294+29]..[62,2294+35])
+                    []
+                ]
+                Some
+                  core_type (typing/errortrace.mli[62,2294+39]..[62,2294+48])
+                    Ptyp_constr "variant" (typing/errortrace.mli[62,2294+41]..[62,2294+48])
+                    [
+                      core_type (typing/errortrace.mli[62,2294+39]..[62,2294+40])
+                        Ptyp_any
+                    ]
+              (typing/errortrace.mli[63,2343+2]..[63,2343+71])
+                "No_tags" (typing/errortrace.mli[63,2343+4]..[63,2343+11])
+                [
+                  core_type (typing/errortrace.mli[63,2343+14]..[63,2343+22])
+                    Ptyp_constr "position" (typing/errortrace.mli[63,2343+14]..[63,2343+22])
+                    []
+                  core_type (typing/errortrace.mli[63,2343+25]..[63,2343+58])
+                    Ptyp_constr "list" (typing/errortrace.mli[63,2343+54]..[63,2343+58])
+                    [
+                      core_type (typing/errortrace.mli[63,2343+26]..[63,2343+52])
+                        Ptyp_tuple
+                        [
+                          core_type (typing/errortrace.mli[63,2343+26]..[63,2343+40])
+                            Ptyp_constr "Asttypes.label" (typing/errortrace.mli[63,2343+26]..[63,2343+40])
+                            []
+                          core_type (typing/errortrace.mli[63,2343+43]..[63,2343+52])
+                            Ptyp_constr "row_field" (typing/errortrace.mli[63,2343+43]..[63,2343+52])
+                            []
+                        ]
+                    ]
+                ]
+                Some
+                  core_type (typing/errortrace.mli[63,2343+62]..[63,2343+71])
+                    Ptyp_constr "variant" (typing/errortrace.mli[63,2343+64]..[63,2343+71])
+                    [
+                      core_type (typing/errortrace.mli[63,2343+62]..[63,2343+63])
+                        Ptyp_any
+                    ]
+              (typing/errortrace.mli[65,2435+2]..[65,2435+41])
+                "No_intersection" (typing/errortrace.mli[65,2435+4]..[65,2435+19])
+                []
+                Some
+                  core_type (typing/errortrace.mli[65,2435+22]..[65,2435+41])
+                    Ptyp_constr "variant" (typing/errortrace.mli[65,2435+34]..[65,2435+41])
+                    [
+                      core_type (typing/errortrace.mli[65,2435+22]..[65,2435+33])
+                        Ptyp_constr "unification" (typing/errortrace.mli[65,2435+22]..[65,2435+33])
+                        []
+                    ]
+              (typing/errortrace.mli[66,2477+2]..[67,2493+74])
+                "Fixed_row" (typing/errortrace.mli[66,2477+4]..[66,2477+13])
+                [
+                  core_type (typing/errortrace.mli[67,2493+6]..[67,2493+14])
+                    Ptyp_constr "position" (typing/errortrace.mli[67,2493+6]..[67,2493+14])
+                    []
+                  core_type (typing/errortrace.mli[67,2493+17]..[67,2493+31])
+                    Ptyp_constr "fixed_row_case" (typing/errortrace.mli[67,2493+17]..[67,2493+31])
+                    []
+                  core_type (typing/errortrace.mli[67,2493+34]..[67,2493+51])
+                    Ptyp_constr "fixed_explanation" (typing/errortrace.mli[67,2493+34]..[67,2493+51])
+                    []
+                ]
+                Some
+                  core_type (typing/errortrace.mli[67,2493+55]..[67,2493+74])
+                    Ptyp_constr "variant" (typing/errortrace.mli[67,2493+67]..[67,2493+74])
+                    [
+                      core_type (typing/errortrace.mli[67,2493+55]..[67,2493+66])
+                        Ptyp_constr "unification" (typing/errortrace.mli[67,2493+55]..[67,2493+66])
+                        []
+                    ]
+              (typing/errortrace.mli[69,2595+2]..[69,2595+79])
+                "Openness" (typing/errortrace.mli[69,2595+4]..[69,2595+12])
+                [
+                  core_type (typing/errortrace.mli[69,2595+15]..[69,2595+23])
+                    Ptyp_constr "position" (typing/errortrace.mli[69,2595+15]..[69,2595+23])
+                    []
+                ]
+                Some
+                  core_type (typing/errortrace.mli[69,2595+61]..[69,2595+79])
+                    Ptyp_constr "variant" (typing/errortrace.mli[69,2595+72]..[69,2595+79])
+                    [
+                      core_type (typing/errortrace.mli[69,2595+61]..[69,2595+71])
+                        Ptyp_constr "comparison" (typing/errortrace.mli[69,2595+61]..[69,2595+71])
+                        []
+                    ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/errortrace.mli[71,2676+0]..[76,2815+43])
+    Psig_type Rec
+    [
+      type_declaration "obj" (typing/errortrace.mli[71,2676+14]..[71,2676+17]) (typing/errortrace.mli[71,2676+0]..[76,2815+43])
+        ptype_params =
+          [
+            core_type (typing/errortrace.mli[71,2676+5]..[71,2676+13])
+              Ptyp_var variety
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/errortrace.mli[73,2711+2]..[73,2711+46])
+                "Missing_field" (typing/errortrace.mli[73,2711+4]..[73,2711+17])
+                [
+                  core_type (typing/errortrace.mli[73,2711+20]..[73,2711+28])
+                    Ptyp_constr "position" (typing/errortrace.mli[73,2711+20]..[73,2711+28])
+                    []
+                  core_type (typing/errortrace.mli[73,2711+31]..[73,2711+37])
+                    Ptyp_constr "string" (typing/errortrace.mli[73,2711+31]..[73,2711+37])
+                    []
+                ]
+                Some
+                  core_type (typing/errortrace.mli[73,2711+41]..[73,2711+46])
+                    Ptyp_constr "obj" (typing/errortrace.mli[73,2711+43]..[73,2711+46])
+                    [
+                      core_type (typing/errortrace.mli[73,2711+41]..[73,2711+42])
+                        Ptyp_any
+                    ]
+              (typing/errortrace.mli[74,2758+2]..[74,2758+36])
+                "Abstract_row" (typing/errortrace.mli[74,2758+4]..[74,2758+16])
+                [
+                  core_type (typing/errortrace.mli[74,2758+19]..[74,2758+27])
+                    Ptyp_constr "position" (typing/errortrace.mli[74,2758+19]..[74,2758+27])
+                    []
+                ]
+                Some
+                  core_type (typing/errortrace.mli[74,2758+31]..[74,2758+36])
+                    Ptyp_constr "obj" (typing/errortrace.mli[74,2758+33]..[74,2758+36])
+                    [
+                      core_type (typing/errortrace.mli[74,2758+31]..[74,2758+32])
+                        Ptyp_any
+                    ]
+              (typing/errortrace.mli[76,2815+2]..[76,2815+43])
+                "Self_cannot_be_closed" (typing/errortrace.mli[76,2815+4]..[76,2815+25])
+                []
+                Some
+                  core_type (typing/errortrace.mli[76,2815+28]..[76,2815+43])
+                    Ptyp_constr "obj" (typing/errortrace.mli[76,2815+40]..[76,2815+43])
+                    [
+                      core_type (typing/errortrace.mli[76,2815+28]..[76,2815+39])
+                        Ptyp_constr "unification" (typing/errortrace.mli[76,2815+28]..[76,2815+39])
+                        []
+                    ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/errortrace.mli[78,2860+0]..[86,3217+52])
+    Psig_type Rec
+    [
+      type_declaration "elt" (typing/errortrace.mli[78,2860+20]..[78,2860+23]) (typing/errortrace.mli[78,2860+0]..[86,3217+52])
+        ptype_params =
+          [
+            core_type (typing/errortrace.mli[78,2860+6]..[78,2860+8])
+              Ptyp_var a
+            core_type (typing/errortrace.mli[78,2860+10]..[78,2860+18])
+              Ptyp_var variety
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/errortrace.mli[80,2901+2]..[80,2901+33])
+                "Diff" (typing/errortrace.mli[80,2901+4]..[80,2901+8])
+                [
+                  core_type (typing/errortrace.mli[80,2901+11]..[80,2901+18])
+                    Ptyp_constr "diff" (typing/errortrace.mli[80,2901+14]..[80,2901+18])
+                    [
+                      core_type (typing/errortrace.mli[80,2901+11]..[80,2901+13])
+                        Ptyp_var a
+                    ]
+                ]
+                Some
+                  core_type (typing/errortrace.mli[80,2901+22]..[80,2901+33])
+                    Ptyp_constr "elt" (typing/errortrace.mli[80,2901+30]..[80,2901+33])
+                    [
+                      core_type (typing/errortrace.mli[80,2901+23]..[80,2901+25])
+                        Ptyp_var a
+                      core_type (typing/errortrace.mli[80,2901+27]..[80,2901+28])
+                        Ptyp_any
+                    ]
+              (typing/errortrace.mli[81,2935+2]..[81,2935+52])
+                "Variant" (typing/errortrace.mli[81,2935+4]..[81,2935+11])
+                [
+                  core_type (typing/errortrace.mli[81,2935+14]..[81,2935+30])
+                    Ptyp_constr "variant" (typing/errortrace.mli[81,2935+23]..[81,2935+30])
+                    [
+                      core_type (typing/errortrace.mli[81,2935+14]..[81,2935+22])
+                        Ptyp_var variety
+                    ]
+                ]
+                Some
+                  core_type (typing/errortrace.mli[81,2935+34]..[81,2935+52])
+                    Ptyp_constr "elt" (typing/errortrace.mli[81,2935+49]..[81,2935+52])
+                    [
+                      core_type (typing/errortrace.mli[81,2935+35]..[81,2935+37])
+                        Ptyp_var a
+                      core_type (typing/errortrace.mli[81,2935+39]..[81,2935+47])
+                        Ptyp_var variety
+                    ]
+              (typing/errortrace.mli[82,2988+2]..[82,2988+44])
+                "Obj" (typing/errortrace.mli[82,2988+4]..[82,2988+7])
+                [
+                  core_type (typing/errortrace.mli[82,2988+10]..[82,2988+22])
+                    Ptyp_constr "obj" (typing/errortrace.mli[82,2988+19]..[82,2988+22])
+                    [
+                      core_type (typing/errortrace.mli[82,2988+10]..[82,2988+18])
+                        Ptyp_var variety
+                    ]
+                ]
+                Some
+                  core_type (typing/errortrace.mli[82,2988+26]..[82,2988+44])
+                    Ptyp_constr "elt" (typing/errortrace.mli[82,2988+41]..[82,2988+44])
+                    [
+                      core_type (typing/errortrace.mli[82,2988+27]..[82,2988+29])
+                        Ptyp_var a
+                      core_type (typing/errortrace.mli[82,2988+31]..[82,2988+39])
+                        Ptyp_var variety
+                    ]
+              (typing/errortrace.mli[83,3033+2]..[83,3033+37])
+                "Escape" (typing/errortrace.mli[83,3033+4]..[83,3033+10])
+                [
+                  core_type (typing/errortrace.mli[83,3033+13]..[83,3033+22])
+                    Ptyp_constr "escape" (typing/errortrace.mli[83,3033+16]..[83,3033+22])
+                    [
+                      core_type (typing/errortrace.mli[83,3033+13]..[83,3033+15])
+                        Ptyp_var a
+                    ]
+                ]
+                Some
+                  core_type (typing/errortrace.mli[83,3033+26]..[83,3033+37])
+                    Ptyp_constr "elt" (typing/errortrace.mli[83,3033+34]..[83,3033+37])
+                    [
+                      core_type (typing/errortrace.mli[83,3033+27]..[83,3033+29])
+                        Ptyp_var a
+                      core_type (typing/errortrace.mli[83,3033+31]..[83,3033+32])
+                        Ptyp_any
+                    ]
+              (typing/errortrace.mli[84,3071+2]..[84,3071+78])
+                "Incompatible_fields" (typing/errortrace.mli[84,3071+4]..[84,3071+23])
+                [
+                  (typing/errortrace.mli[84,3071+28]..[84,3071+40])
+                    Immutable
+                    "name" (typing/errortrace.mli[84,3071+28]..[84,3071+32])                    core_type (typing/errortrace.mli[84,3071+33]..[84,3071+39])
+                      Ptyp_constr "string" (typing/errortrace.mli[84,3071+33]..[84,3071+39])
+                      []
+                  (typing/errortrace.mli[84,3071+41]..[84,3071+61])
+                    Immutable
+                    "diff" (typing/errortrace.mli[84,3071+41]..[84,3071+45])                    core_type (typing/errortrace.mli[84,3071+47]..[84,3071+61])
+                      Ptyp_constr "diff" (typing/errortrace.mli[84,3071+57]..[84,3071+61])
+                      [
+                        core_type (typing/errortrace.mli[84,3071+47]..[84,3071+56])
+                          Ptyp_constr "type_expr" (typing/errortrace.mli[84,3071+47]..[84,3071+56])
+                          []
+                      ]
+                ]
+                Some
+                  core_type (typing/errortrace.mli[84,3071+67]..[84,3071+78])
+                    Ptyp_constr "elt" (typing/errortrace.mli[84,3071+75]..[84,3071+78])
+                    [
+                      core_type (typing/errortrace.mli[84,3071+68]..[84,3071+70])
+                        Ptyp_var a
+                      core_type (typing/errortrace.mli[84,3071+72]..[84,3071+73])
+                        Ptyp_any
+                    ]
+              (typing/errortrace.mli[86,3217+2]..[86,3217+52])
+                "Rec_occur" (typing/errortrace.mli[86,3217+4]..[86,3217+13])
+                [
+                  core_type (typing/errortrace.mli[86,3217+16]..[86,3217+25])
+                    Ptyp_constr "type_expr" (typing/errortrace.mli[86,3217+16]..[86,3217+25])
+                    []
+                  core_type (typing/errortrace.mli[86,3217+28]..[86,3217+37])
+                    Ptyp_constr "type_expr" (typing/errortrace.mli[86,3217+28]..[86,3217+37])
+                    []
+                ]
+                Some
+                  core_type (typing/errortrace.mli[86,3217+41]..[86,3217+52])
+                    Ptyp_constr "elt" (typing/errortrace.mli[86,3217+49]..[86,3217+52])
+                    [
+                      core_type (typing/errortrace.mli[86,3217+42]..[86,3217+44])
+                        Ptyp_var a
+                      core_type (typing/errortrace.mli[86,3217+46]..[86,3217+47])
+                        Ptyp_any
+                    ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/errortrace.mli[88,3271+0]..[89,3289+27])
+    Psig_type Rec
+    [
+      type_declaration "t" (typing/errortrace.mli[88,3271+14]..[88,3271+15]) (typing/errortrace.mli[88,3271+0]..[89,3289+27])
+        ptype_params =
+          [
+            core_type (typing/errortrace.mli[88,3271+5]..[88,3271+13])
+              Ptyp_var variety
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (typing/errortrace.mli[89,3289+2]..[89,3289+27])
+              Ptyp_constr "list" (typing/errortrace.mli[89,3289+23]..[89,3289+27])
+              [
+                core_type (typing/errortrace.mli[89,3289+2]..[89,3289+22])
+                  Ptyp_constr "elt" (typing/errortrace.mli[89,3289+19]..[89,3289+22])
+                  [
+                    core_type (typing/errortrace.mli[89,3289+3]..[89,3289+7])
+                      Ptyp_constr "desc" (typing/errortrace.mli[89,3289+3]..[89,3289+7])
+                      []
+                    core_type (typing/errortrace.mli[89,3289+9]..[89,3289+17])
+                      Ptyp_var variety
+                  ]
+              ]
+    ]
+  signature_item (typing/errortrace.mli[91,3318+0]..[91,3318+50])
+    Psig_value
+    value_description "diff" (typing/errortrace.mli[91,3318+4]..[91,3318+8]) (typing/errortrace.mli[91,3318+0]..[91,3318+50])
+      core_type (typing/errortrace.mli[91,3318+11]..[91,3318+50])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/errortrace.mli[91,3318+11]..[91,3318+20])
+          Ptyp_constr "type_expr" (typing/errortrace.mli[91,3318+11]..[91,3318+20])
+          []
+        core_type (typing/errortrace.mli[91,3318+24]..[91,3318+50])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/errortrace.mli[91,3318+24]..[91,3318+33])
+            Ptyp_constr "type_expr" (typing/errortrace.mli[91,3318+24]..[91,3318+33])
+            []
+          core_type (typing/errortrace.mli[91,3318+37]..[91,3318+50])
+            Ptyp_constr "elt" (typing/errortrace.mli[91,3318+47]..[91,3318+50])
+            [
+              core_type (typing/errortrace.mli[91,3318+38]..[91,3318+42])
+                Ptyp_constr "desc" (typing/errortrace.mli[91,3318+38]..[91,3318+42])
+                []
+              core_type (typing/errortrace.mli[91,3318+44]..[91,3318+45])
+                Ptyp_any
+            ]
+      []
+  signature_item (typing/errortrace.mli[96,3534+0]..[97,3548+73])
+    Psig_value
+    value_description "flatten" (typing/errortrace.mli[96,3534+4]..[96,3534+11]) (typing/errortrace.mli[96,3534+0]..[97,3548+73])
+      attribute "ocaml.doc"
+        [
+          structure_item (typing/errortrace.mli[93,3370+0]..[95,3502+31])
+            Pstr_eval
+            expression (typing/errortrace.mli[93,3370+0]..[95,3502+31])
+              Pexp_constant PConst_string(" [flatten f trace] flattens all elements of type {!desc} in\n    [trace] to either [f x.t expanded] if [x.expanded=Some expanded]\n    or [f x.t x.t] otherwise ",(typing/errortrace.mli[93,3370+0]..[95,3502+31]),None)
+        ]
+      core_type (typing/errortrace.mli[97,3548+2]..[97,3548+73])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/errortrace.mli[97,3548+3]..[97,3548+31])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/errortrace.mli[97,3548+3]..[97,3548+12])
+            Ptyp_constr "type_expr" (typing/errortrace.mli[97,3548+3]..[97,3548+12])
+            []
+          core_type (typing/errortrace.mli[97,3548+16]..[97,3548+31])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/errortrace.mli[97,3548+16]..[97,3548+25])
+              Ptyp_constr "type_expr" (typing/errortrace.mli[97,3548+16]..[97,3548+25])
+              []
+            core_type (typing/errortrace.mli[97,3548+29]..[97,3548+31])
+              Ptyp_var a
+        core_type (typing/errortrace.mli[97,3548+36]..[97,3548+73])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/errortrace.mli[97,3548+36]..[97,3548+46])
+            Ptyp_constr "t" (typing/errortrace.mli[97,3548+45]..[97,3548+46])
+            [
+              core_type (typing/errortrace.mli[97,3548+36]..[97,3548+44])
+                Ptyp_var variety
+            ]
+          core_type (typing/errortrace.mli[97,3548+50]..[97,3548+73])
+            Ptyp_constr "list" (typing/errortrace.mli[97,3548+69]..[97,3548+73])
+            [
+              core_type (typing/errortrace.mli[97,3548+50]..[97,3548+68])
+                Ptyp_constr "elt" (typing/errortrace.mli[97,3548+65]..[97,3548+68])
+                [
+                  core_type (typing/errortrace.mli[97,3548+51]..[97,3548+53])
+                    Ptyp_var a
+                  core_type (typing/errortrace.mli[97,3548+55]..[97,3548+63])
+                    Ptyp_var variety
+                ]
+            ]
+      []
+  signature_item (typing/errortrace.mli[99,3623+0]..[99,3623+74])
+    Psig_value
+    value_description "map" (typing/errortrace.mli[99,3623+4]..[99,3623+7]) (typing/errortrace.mli[99,3623+0]..[99,3623+74])
+      core_type (typing/errortrace.mli[99,3623+10]..[99,3623+74])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/errortrace.mli[99,3623+11]..[99,3623+19])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/errortrace.mli[99,3623+11]..[99,3623+13])
+            Ptyp_var a
+          core_type (typing/errortrace.mli[99,3623+17]..[99,3623+19])
+            Ptyp_var b
+        core_type (typing/errortrace.mli[99,3623+24]..[99,3623+74])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/errortrace.mli[99,3623+24]..[99,3623+47])
+            Ptyp_constr "list" (typing/errortrace.mli[99,3623+43]..[99,3623+47])
+            [
+              core_type (typing/errortrace.mli[99,3623+24]..[99,3623+42])
+                Ptyp_constr "elt" (typing/errortrace.mli[99,3623+39]..[99,3623+42])
+                [
+                  core_type (typing/errortrace.mli[99,3623+25]..[99,3623+27])
+                    Ptyp_var a
+                  core_type (typing/errortrace.mli[99,3623+29]..[99,3623+37])
+                    Ptyp_var variety
+                ]
+            ]
+          core_type (typing/errortrace.mli[99,3623+51]..[99,3623+74])
+            Ptyp_constr "list" (typing/errortrace.mli[99,3623+70]..[99,3623+74])
+            [
+              core_type (typing/errortrace.mli[99,3623+51]..[99,3623+69])
+                Ptyp_constr "elt" (typing/errortrace.mli[99,3623+66]..[99,3623+69])
+                [
+                  core_type (typing/errortrace.mli[99,3623+52]..[99,3623+54])
+                    Ptyp_var b
+                  core_type (typing/errortrace.mli[99,3623+56]..[99,3623+64])
+                    Ptyp_var variety
+                ]
+            ]
+      []
+  signature_item (typing/errortrace.mli[101,3699+0]..[101,3699+75])
+    Psig_value
+    value_description "incompatible_fields" (typing/errortrace.mli[101,3699+4]..[101,3699+23]) (typing/errortrace.mli[101,3699+0]..[101,3699+75])
+      core_type (typing/errortrace.mli[101,3699+26]..[101,3699+75])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/errortrace.mli[101,3699+26]..[101,3699+32])
+          Ptyp_constr "string" (typing/errortrace.mli[101,3699+26]..[101,3699+32])
+          []
+        core_type (typing/errortrace.mli[101,3699+36]..[101,3699+75])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/errortrace.mli[101,3699+36]..[101,3699+45])
+            Ptyp_constr "type_expr" (typing/errortrace.mli[101,3699+36]..[101,3699+45])
+            []
+          core_type (typing/errortrace.mli[101,3699+49]..[101,3699+75])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/errortrace.mli[101,3699+49]..[101,3699+58])
+              Ptyp_constr "type_expr" (typing/errortrace.mli[101,3699+49]..[101,3699+58])
+              []
+            core_type (typing/errortrace.mli[101,3699+62]..[101,3699+75])
+              Ptyp_constr "elt" (typing/errortrace.mli[101,3699+72]..[101,3699+75])
+              [
+                core_type (typing/errortrace.mli[101,3699+63]..[101,3699+67])
+                  Ptyp_constr "desc" (typing/errortrace.mli[101,3699+63]..[101,3699+67])
+                  []
+                core_type (typing/errortrace.mli[101,3699+69]..[101,3699+70])
+                  Ptyp_any
+              ]
+      []
+  signature_item (typing/errortrace.mli[103,3776+0]..[103,3776+41])
+    Psig_value
+    value_description "swap_trace" (typing/errortrace.mli[103,3776+4]..[103,3776+14]) (typing/errortrace.mli[103,3776+0]..[103,3776+41])
+      core_type (typing/errortrace.mli[103,3776+17]..[103,3776+41])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/errortrace.mli[103,3776+17]..[103,3776+27])
+          Ptyp_constr "t" (typing/errortrace.mli[103,3776+26]..[103,3776+27])
+          [
+            core_type (typing/errortrace.mli[103,3776+17]..[103,3776+25])
+              Ptyp_var variety
+          ]
+        core_type (typing/errortrace.mli[103,3776+31]..[103,3776+41])
+          Ptyp_constr "t" (typing/errortrace.mli[103,3776+40]..[103,3776+41])
+          [
+            core_type (typing/errortrace.mli[103,3776+31]..[103,3776+39])
+              Ptyp_var variety
+          ]
+      []
+  signature_item (typing/errortrace.mli[105,3819+0]..[116,4082+3])
+    Psig_module "Subtype" (typing/errortrace.mli[105,3819+7]..[105,3819+14])
+    module_type (typing/errortrace.mli[105,3819+17]..[116,4082+3])
+      Pmty_signature
+      [
+        signature_item (typing/errortrace.mli[106,3840+2]..[107,3856+21])
+          Psig_type Rec
+          [
+            type_declaration "elt" (typing/errortrace.mli[106,3840+10]..[106,3840+13]) (typing/errortrace.mli[106,3840+2]..[107,3856+21])
+              ptype_params =
+                [
+                  core_type (typing/errortrace.mli[106,3840+7]..[106,3840+9])
+                    Ptyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_variant
+                  [
+                    (typing/errortrace.mli[107,3856+4]..[107,3856+21])
+                      "Diff" (typing/errortrace.mli[107,3856+6]..[107,3856+10])
+                      [
+                        core_type (typing/errortrace.mli[107,3856+14]..[107,3856+21])
+                          Ptyp_constr "diff" (typing/errortrace.mli[107,3856+17]..[107,3856+21])
+                          [
+                            core_type (typing/errortrace.mli[107,3856+14]..[107,3856+16])
+                              Ptyp_var a
+                          ]
+                      ]
+                      None
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (typing/errortrace.mli[109,3879+2]..[109,3879+24])
+          Psig_type Rec
+          [
+            type_declaration "t" (typing/errortrace.mli[109,3879+7]..[109,3879+8]) (typing/errortrace.mli[109,3879+2]..[109,3879+24])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (typing/errortrace.mli[109,3879+11]..[109,3879+24])
+                    Ptyp_constr "list" (typing/errortrace.mli[109,3879+20]..[109,3879+24])
+                    [
+                      core_type (typing/errortrace.mli[109,3879+11]..[109,3879+19])
+                        Ptyp_constr "elt" (typing/errortrace.mli[109,3879+16]..[109,3879+19])
+                        [
+                          core_type (typing/errortrace.mli[109,3879+11]..[109,3879+15])
+                            Ptyp_constr "desc" (typing/errortrace.mli[109,3879+11]..[109,3879+15])
+                            []
+                        ]
+                    ]
+          ]
+        signature_item (typing/errortrace.mli[111,3905+2]..[111,3905+46])
+          Psig_value
+          value_description "diff" (typing/errortrace.mli[111,3905+6]..[111,3905+10]) (typing/errortrace.mli[111,3905+2]..[111,3905+46])
+            core_type (typing/errortrace.mli[111,3905+12]..[111,3905+46])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/errortrace.mli[111,3905+12]..[111,3905+21])
+                Ptyp_constr "type_expr" (typing/errortrace.mli[111,3905+12]..[111,3905+21])
+                []
+              core_type (typing/errortrace.mli[111,3905+25]..[111,3905+46])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/errortrace.mli[111,3905+25]..[111,3905+34])
+                  Ptyp_constr "type_expr" (typing/errortrace.mli[111,3905+25]..[111,3905+34])
+                  []
+                core_type (typing/errortrace.mli[111,3905+38]..[111,3905+46])
+                  Ptyp_constr "elt" (typing/errortrace.mli[111,3905+43]..[111,3905+46])
+                  [
+                    core_type (typing/errortrace.mli[111,3905+38]..[111,3905+42])
+                      Ptyp_constr "desc" (typing/errortrace.mli[111,3905+38]..[111,3905+42])
+                      []
+                  ]
+            []
+        signature_item (typing/errortrace.mli[113,3953+2]..[113,3953+66])
+          Psig_value
+          value_description "flatten" (typing/errortrace.mli[113,3953+6]..[113,3953+13]) (typing/errortrace.mli[113,3953+2]..[113,3953+66])
+            core_type (typing/errortrace.mli[113,3953+16]..[113,3953+66])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/errortrace.mli[113,3953+17]..[113,3953+45])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/errortrace.mli[113,3953+17]..[113,3953+26])
+                  Ptyp_constr "type_expr" (typing/errortrace.mli[113,3953+17]..[113,3953+26])
+                  []
+                core_type (typing/errortrace.mli[113,3953+30]..[113,3953+45])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/errortrace.mli[113,3953+30]..[113,3953+39])
+                    Ptyp_constr "type_expr" (typing/errortrace.mli[113,3953+30]..[113,3953+39])
+                    []
+                  core_type (typing/errortrace.mli[113,3953+43]..[113,3953+45])
+                    Ptyp_var a
+              core_type (typing/errortrace.mli[113,3953+50]..[113,3953+66])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/errortrace.mli[113,3953+50]..[113,3953+51])
+                  Ptyp_constr "t" (typing/errortrace.mli[113,3953+50]..[113,3953+51])
+                  []
+                core_type (typing/errortrace.mli[113,3953+55]..[113,3953+66])
+                  Ptyp_constr "list" (typing/errortrace.mli[113,3953+62]..[113,3953+66])
+                  [
+                    core_type (typing/errortrace.mli[113,3953+55]..[113,3953+61])
+                      Ptyp_constr "elt" (typing/errortrace.mli[113,3953+58]..[113,3953+61])
+                      [
+                        core_type (typing/errortrace.mli[113,3953+55]..[113,3953+57])
+                          Ptyp_var a
+                      ]
+                  ]
+            []
+        signature_item (typing/errortrace.mli[115,4021+2]..[115,4021+60])
+          Psig_value
+          value_description "map" (typing/errortrace.mli[115,4021+6]..[115,4021+9]) (typing/errortrace.mli[115,4021+2]..[115,4021+60])
+            core_type (typing/errortrace.mli[115,4021+12]..[115,4021+60])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/errortrace.mli[115,4021+13]..[115,4021+25])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/errortrace.mli[115,4021+13]..[115,4021+17])
+                  Ptyp_constr "desc" (typing/errortrace.mli[115,4021+13]..[115,4021+17])
+                  []
+                core_type (typing/errortrace.mli[115,4021+21]..[115,4021+25])
+                  Ptyp_constr "desc" (typing/errortrace.mli[115,4021+21]..[115,4021+25])
+                  []
+              core_type (typing/errortrace.mli[115,4021+30]..[115,4021+60])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/errortrace.mli[115,4021+30]..[115,4021+43])
+                  Ptyp_constr "list" (typing/errortrace.mli[115,4021+39]..[115,4021+43])
+                  [
+                    core_type (typing/errortrace.mli[115,4021+30]..[115,4021+38])
+                      Ptyp_constr "elt" (typing/errortrace.mli[115,4021+35]..[115,4021+38])
+                      [
+                        core_type (typing/errortrace.mli[115,4021+30]..[115,4021+34])
+                          Ptyp_constr "desc" (typing/errortrace.mli[115,4021+30]..[115,4021+34])
+                          []
+                      ]
+                  ]
+                core_type (typing/errortrace.mli[115,4021+47]..[115,4021+60])
+                  Ptyp_constr "list" (typing/errortrace.mli[115,4021+56]..[115,4021+60])
+                  [
+                    core_type (typing/errortrace.mli[115,4021+47]..[115,4021+55])
+                      Ptyp_constr "elt" (typing/errortrace.mli[115,4021+52]..[115,4021+55])
+                      [
+                        core_type (typing/errortrace.mli[115,4021+47]..[115,4021+51])
+                          Ptyp_constr "desc" (typing/errortrace.mli[115,4021+47]..[115,4021+51])
+                          []
+                      ]
+                  ]
+            []
+      ]
+]
+

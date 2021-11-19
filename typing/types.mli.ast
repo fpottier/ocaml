@@ -1,0 +1,3116 @@
+[
+  signature_item (typing/types.mli[16,1079+0]..[16,1079+51])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (typing/types.mli[16,1079+0]..[16,1079+51])
+        Pstr_eval
+        expression (typing/types.mli[16,1079+0]..[16,1079+51])
+          Pexp_constant PConst_string(" {0 Representation of types and declarations} ",(typing/types.mli[16,1079+0]..[16,1079+51]),None)
+    ]
+  signature_item (typing/types.mli[18,1132+0]..[22,1291+2])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (typing/types.mli[18,1132+0]..[22,1291+2])
+        Pstr_eval
+        expression (typing/types.mli[18,1132+0]..[22,1291+2])
+          Pexp_constant PConst_string(" [Types] defines the representation of types and declarations (that is, the\n    content of module signatures).\n\n    CMI files are made of marshalled types.\n",(typing/types.mli[18,1132+0]..[22,1291+2]),None)
+    ]
+  signature_item (typing/types.mli[25,1373+0]..[25,1373+13])
+    Psig_open Fresh "Asttypes" (typing/types.mli[25,1373+5]..[25,1373+13])
+      attribute "ocaml.doc"
+        [
+          structure_item (typing/types.mli[24,1295+0]..[24,1295+77])
+            Pstr_eval
+            expression (typing/types.mli[24,1295+0]..[24,1295+77])
+              Pexp_constant PConst_string(" Asttypes exposes basic definitions shared both by Parsetree and Types. ",(typing/types.mli[24,1295+0]..[24,1295+77]),None)
+        ]
+  signature_item (typing/types.mli[58,2798+0]..[237,9119+27])
+    Psig_type Rec
+    [
+      type_declaration "type_expr" (typing/types.mli[58,2798+5]..[58,2798+14]) (typing/types.mli[58,2798+0]..[62,2900+13])
+        attribute "ocaml.doc"
+          [
+            structure_item (typing/types.mli[27,1388+0]..[57,2794+3])
+              Pstr_eval
+              expression (typing/types.mli[27,1388+0]..[57,2794+3])
+                Pexp_constant PConst_string(" Type expressions for the core language.\n\n    The [type_desc] variant defines all the possible type expressions one can\n    find in OCaml. [type_expr] wraps this with some annotations.\n\n    The [level] field tracks the level of polymorphism associated to a type,\n    guiding the generalization algorithm.\n    Put shortly, when referring to a type in a given environment, both the type\n    and the environment have a level. If the type has an higher level, then it\n    can be considered fully polymorphic (type variables will be printed as\n    ['a]), otherwise it'll be weakly polymorphic, or non generalized (type\n    variables printed as ['_a]).\n    See [http://okmij.org/ftp/ML/generalization.html] for more information.\n\n    Note about [type_declaration]: one should not make the confusion between\n    [type_expr] and [type_declaration].\n\n    [type_declaration] refers specifically to the [type] construct in OCaml\n    language, where you create and name a new type or type alias.\n\n    [type_expr] is used when you refer to existing types, e.g. when annotating\n    the expected type of a value.\n\n    Also, as the type system of OCaml is generative, a [type_declaration] can\n    have the side-effect of introducing a new type constructor, different from\n    all other known types.\n    Whereas [type_expr] is a pure construct which allows referring to existing\n    types.\n\n    Note on mutability: TBD.\n ",(typing/types.mli[27,1388+0]..[57,2794+3]),None)
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (typing/types.mli[59,2823+4]..[59,2823+28])
+                Mutable
+                "desc" (typing/types.mli[59,2823+12]..[59,2823+16])                core_type (typing/types.mli[59,2823+18]..[59,2823+27])
+                  Ptyp_constr "type_desc" (typing/types.mli[59,2823+18]..[59,2823+27])
+                  []
+              (typing/types.mli[60,2852+4]..[60,2852+23])
+                Mutable
+                "level" (typing/types.mli[60,2852+12]..[60,2852+17])                core_type (typing/types.mli[60,2852+19]..[60,2852+22])
+                  Ptyp_constr "int" (typing/types.mli[60,2852+19]..[60,2852+22])
+                  []
+              (typing/types.mli[61,2876+4]..[61,2876+23])
+                Mutable
+                "scope" (typing/types.mli[61,2876+12]..[61,2876+17])                core_type (typing/types.mli[61,2876+19]..[61,2876+22])
+                  Ptyp_constr "int" (typing/types.mli[61,2876+19]..[61,2876+22])
+                  []
+              (typing/types.mli[62,2900+4]..[62,2900+11])
+                Immutable
+                "id" (typing/types.mli[62,2900+4]..[62,2900+6])                core_type (typing/types.mli[62,2900+8]..[62,2900+11])
+                  Ptyp_constr "int" (typing/types.mli[62,2900+8]..[62,2900+11])
+                  []
+            ]
+        ptype_private = Private
+        ptype_manifest =
+          None
+      type_declaration "type_desc" (typing/types.mli[64,2915+4]..[64,2915+13]) (typing/types.mli[64,2915+0]..[132,5486+55])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[65,2931+2]..[65,2931+25])
+                "Tvar" (typing/types.mli[65,2931+4]..[65,2931+8])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[66,2957+2]..[67,2999+34])
+                      Pstr_eval
+                      expression (typing/types.mli[66,2957+2]..[67,2999+34])
+                        Pexp_constant PConst_string(" [Tvar (Some \"a\")] ==> ['a] or ['_a]\n      [Tvar None]       ==> [_] ",(typing/types.mli[66,2957+2]..[67,2999+34]),None)
+                  ]
+                [
+                  core_type (typing/types.mli[65,2931+12]..[65,2931+25])
+                    Ptyp_constr "option" (typing/types.mli[65,2931+19]..[65,2931+25])
+                    [
+                      core_type (typing/types.mli[65,2931+12]..[65,2931+18])
+                        Ptyp_constr "string" (typing/types.mli[65,2931+12]..[65,2931+18])
+                        []
+                    ]
+                ]
+                None
+              (typing/types.mli[69,3035+2]..[69,3035+60])
+                "Tarrow" (typing/types.mli[69,3035+4]..[69,3035+10])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[70,3096+2]..[74,3274+48])
+                      Pstr_eval
+                      expression (typing/types.mli[70,3096+2]..[74,3274+48])
+                        Pexp_constant PConst_string(" [Tarrow (Nolabel,      e1, e2, c)] ==> [e1    -> e2]\n      [Tarrow (Labelled \"l\", e1, e2, c)] ==> [l:e1  -> e2]\n      [Tarrow (Optional \"l\", e1, e2, c)] ==> [?l:e1 -> e2]\n\n      See [commutable] for the last argument. ",(typing/types.mli[70,3096+2]..[74,3274+48]),None)
+                  ]
+                [
+                  core_type (typing/types.mli[69,3035+14]..[69,3035+23])
+                    Ptyp_constr "arg_label" (typing/types.mli[69,3035+14]..[69,3035+23])
+                    []
+                  core_type (typing/types.mli[69,3035+26]..[69,3035+35])
+                    Ptyp_constr "type_expr" (typing/types.mli[69,3035+26]..[69,3035+35])
+                    []
+                  core_type (typing/types.mli[69,3035+38]..[69,3035+47])
+                    Ptyp_constr "type_expr" (typing/types.mli[69,3035+38]..[69,3035+47])
+                    []
+                  core_type (typing/types.mli[69,3035+50]..[69,3035+60])
+                    Ptyp_constr "commutable" (typing/types.mli[69,3035+50]..[69,3035+60])
+                    []
+                ]
+                None
+              (typing/types.mli[76,3324+2]..[76,3324+28])
+                "Ttuple" (typing/types.mli[76,3324+4]..[76,3324+10])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[77,3353+2]..[77,3353+51])
+                      Pstr_eval
+                      expression (typing/types.mli[77,3353+2]..[77,3353+51])
+                        Pexp_constant PConst_string(" [Ttuple [t1;...;tn]] ==> [(t1 * ... * tn)] ",(typing/types.mli[77,3353+2]..[77,3353+51]),None)
+                  ]
+                [
+                  core_type (typing/types.mli[76,3324+14]..[76,3324+28])
+                    Ptyp_constr "list" (typing/types.mli[76,3324+24]..[76,3324+28])
+                    [
+                      core_type (typing/types.mli[76,3324+14]..[76,3324+23])
+                        Ptyp_constr "type_expr" (typing/types.mli[76,3324+14]..[76,3324+23])
+                        []
+                    ]
+                ]
+                None
+              (typing/types.mli[79,3406+2]..[79,3406+56])
+                "Tconstr" (typing/types.mli[79,3406+4]..[79,3406+11])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[80,3463+2]..[81,3529+79])
+                      Pstr_eval
+                      expression (typing/types.mli[80,3463+2]..[81,3529+79])
+                        Pexp_constant PConst_string(" [Tconstr (`A.B.t', [t1;...;tn], _)] ==> [(t1,...,tn) A.B.t]\n      The last parameter keep tracks of known expansions, see [abbrev_memo]. ",(typing/types.mli[80,3463+2]..[81,3529+79]),None)
+                  ]
+                [
+                  core_type (typing/types.mli[79,3406+15]..[79,3406+21])
+                    Ptyp_constr "Path.t" (typing/types.mli[79,3406+15]..[79,3406+21])
+                    []
+                  core_type (typing/types.mli[79,3406+24]..[79,3406+38])
+                    Ptyp_constr "list" (typing/types.mli[79,3406+34]..[79,3406+38])
+                    [
+                      core_type (typing/types.mli[79,3406+24]..[79,3406+33])
+                        Ptyp_constr "type_expr" (typing/types.mli[79,3406+24]..[79,3406+33])
+                        []
+                    ]
+                  core_type (typing/types.mli[79,3406+41]..[79,3406+56])
+                    Ptyp_constr "ref" (typing/types.mli[79,3406+53]..[79,3406+56])
+                    [
+                      core_type (typing/types.mli[79,3406+41]..[79,3406+52])
+                        Ptyp_constr "abbrev_memo" (typing/types.mli[79,3406+41]..[79,3406+52])
+                        []
+                    ]
+                ]
+                None
+              (typing/types.mli[83,3610+2]..[83,3610+63])
+                "Tobject" (typing/types.mli[83,3610+4]..[83,3610+11])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[84,3674+2]..[100,4356+4])
+                      Pstr_eval
+                      expression (typing/types.mli[84,3674+2]..[100,4356+4])
+                        Pexp_constant PConst_string(" [Tobject (`f1:t1;...;fn: tn', `None')] ==> [< f1: t1; ...; fn: tn >]\n      f1, fn are represented as a linked list of types using Tfield and Tnil\n      constructors.\n\n      [Tobject (_, `Some (`A.ct', [t1;...;tn]')] ==> [(t1, ..., tn) A.ct].\n      where A.ct is the type of some class.\n\n      There are also special cases for so-called \"class-types\", cf. [Typeclass]\n      and [Ctype.set_object_name]:\n\n        [Tobject (Tfield(_,_,...(Tfield(_,_,rv)...),\n                         Some(`A.#ct`, [rv;t1;...;tn])]\n             ==> [(t1, ..., tn) #A.ct]\n        [Tobject (_, Some(`A.#ct`, [Tnil;t1;...;tn])] ==> [(t1, ..., tn) A.ct]\n\n      where [rv] is the hidden row variable.\n  ",(typing/types.mli[84,3674+2]..[100,4356+4]),None)
+                  ]
+                [
+                  core_type (typing/types.mli[83,3610+15]..[83,3610+24])
+                    Ptyp_constr "type_expr" (typing/types.mli[83,3610+15]..[83,3610+24])
+                    []
+                  core_type (typing/types.mli[83,3610+27]..[83,3610+63])
+                    Ptyp_constr "ref" (typing/types.mli[83,3610+60]..[83,3610+63])
+                    [
+                      core_type (typing/types.mli[83,3610+27]..[83,3610+59])
+                        Ptyp_constr "option" (typing/types.mli[83,3610+53]..[83,3610+59])
+                        [
+                          core_type (typing/types.mli[83,3610+28]..[83,3610+51])
+                            Ptyp_tuple
+                            [
+                              core_type (typing/types.mli[83,3610+28]..[83,3610+34])
+                                Ptyp_constr "Path.t" (typing/types.mli[83,3610+28]..[83,3610+34])
+                                []
+                              core_type (typing/types.mli[83,3610+37]..[83,3610+51])
+                                Ptyp_constr "list" (typing/types.mli[83,3610+47]..[83,3610+51])
+                                [
+                                  core_type (typing/types.mli[83,3610+37]..[83,3610+46])
+                                    Ptyp_constr "type_expr" (typing/types.mli[83,3610+37]..[83,3610+46])
+                                    []
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+                None
+              (typing/types.mli[102,4362+2]..[102,4362+57])
+                "Tfield" (typing/types.mli[102,4362+4]..[102,4362+10])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[103,4420+2]..[103,4420+67])
+                      Pstr_eval
+                      expression (typing/types.mli[103,4420+2]..[103,4420+67])
+                        Pexp_constant PConst_string(" [Tfield (\"foo\", Fpresent, t, ts)] ==> [<...; foo : t; ts>] ",(typing/types.mli[103,4420+2]..[103,4420+67]),None)
+                  ]
+                [
+                  core_type (typing/types.mli[102,4362+14]..[102,4362+20])
+                    Ptyp_constr "string" (typing/types.mli[102,4362+14]..[102,4362+20])
+                    []
+                  core_type (typing/types.mli[102,4362+23]..[102,4362+33])
+                    Ptyp_constr "field_kind" (typing/types.mli[102,4362+23]..[102,4362+33])
+                    []
+                  core_type (typing/types.mli[102,4362+36]..[102,4362+45])
+                    Ptyp_constr "type_expr" (typing/types.mli[102,4362+36]..[102,4362+45])
+                    []
+                  core_type (typing/types.mli[102,4362+48]..[102,4362+57])
+                    Ptyp_constr "type_expr" (typing/types.mli[102,4362+48]..[102,4362+57])
+                    []
+                ]
+                None
+              (typing/types.mli[105,4489+2]..[105,4489+8])
+                "Tnil" (typing/types.mli[105,4489+4]..[105,4489+8])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[106,4498+2]..[106,4498+29])
+                      Pstr_eval
+                      expression (typing/types.mli[106,4498+2]..[106,4498+29])
+                        Pexp_constant PConst_string(" [Tnil] ==> [<...; >] ",(typing/types.mli[106,4498+2]..[106,4498+29]),None)
+                  ]
+                []
+                None
+              (typing/types.mli[108,4529+2]..[108,4529+22])
+                "Tlink" (typing/types.mli[108,4529+4]..[108,4529+9])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[109,4552+2]..[109,4552+48])
+                      Pstr_eval
+                      expression (typing/types.mli[109,4552+2]..[109,4552+48])
+                        Pexp_constant PConst_string(" Indirection used by unification engine. ",(typing/types.mli[109,4552+2]..[109,4552+48]),None)
+                  ]
+                [
+                  core_type (typing/types.mli[108,4529+13]..[108,4529+22])
+                    Ptyp_constr "type_expr" (typing/types.mli[108,4529+13]..[108,4529+22])
+                    []
+                ]
+                None
+              (typing/types.mli[111,4602+2]..[111,4602+42])
+                "Tsubst" (typing/types.mli[111,4602+4]..[111,4602+10])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[112,4645+2]..[118,5017+67])
+                      Pstr_eval
+                      expression (typing/types.mli[112,4645+2]..[118,5017+67])
+                        Pexp_constant PConst_string(" [Tsubst] is used temporarily to store information in low-level\n      functions manipulating representation of types, such as\n      instantiation or copy.\n      The first argument contains a copy of the original node.\n      The second is available only when the first is the row variable of\n      a polymorphic variant.  It then contains a copy of the whole variant.\n      This constructor should not appear outside of these cases. ",(typing/types.mli[112,4645+2]..[118,5017+67]),None)
+                  ]
+                [
+                  core_type (typing/types.mli[111,4602+14]..[111,4602+23])
+                    Ptyp_constr "type_expr" (typing/types.mli[111,4602+14]..[111,4602+23])
+                    []
+                  core_type (typing/types.mli[111,4602+26]..[111,4602+42])
+                    Ptyp_constr "option" (typing/types.mli[111,4602+36]..[111,4602+42])
+                    [
+                      core_type (typing/types.mli[111,4602+26]..[111,4602+35])
+                        Ptyp_constr "type_expr" (typing/types.mli[111,4602+26]..[111,4602+35])
+                        []
+                    ]
+                ]
+                None
+              (typing/types.mli[120,5086+2]..[120,5086+24])
+                "Tvariant" (typing/types.mli[120,5086+4]..[120,5086+12])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[121,5111+2]..[121,5111+64])
+                      Pstr_eval
+                      expression (typing/types.mli[121,5111+2]..[121,5111+64])
+                        Pexp_constant PConst_string(" Representation of polymorphic variants, see [row_desc]. ",(typing/types.mli[121,5111+2]..[121,5111+64]),None)
+                  ]
+                [
+                  core_type (typing/types.mli[120,5086+16]..[120,5086+24])
+                    Ptyp_constr "row_desc" (typing/types.mli[120,5086+16]..[120,5086+24])
+                    []
+                ]
+                None
+              (typing/types.mli[123,5177+2]..[123,5177+28])
+                "Tunivar" (typing/types.mli[123,5177+4]..[123,5177+11])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[124,5206+2]..[125,5258+37])
+                      Pstr_eval
+                      expression (typing/types.mli[124,5206+2]..[125,5258+37])
+                        Pexp_constant PConst_string(" Occurrence of a type variable introduced by a\n      forall quantifier / [Tpoly]. ",(typing/types.mli[124,5206+2]..[125,5258+37]),None)
+                  ]
+                [
+                  core_type (typing/types.mli[123,5177+15]..[123,5177+28])
+                    Ptyp_constr "option" (typing/types.mli[123,5177+22]..[123,5177+28])
+                    [
+                      core_type (typing/types.mli[123,5177+15]..[123,5177+21])
+                        Ptyp_constr "string" (typing/types.mli[123,5177+15]..[123,5177+21])
+                        []
+                    ]
+                ]
+                None
+              (typing/types.mli[127,5297+2]..[127,5297+39])
+                "Tpoly" (typing/types.mli[127,5297+4]..[127,5297+9])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[128,5337+2]..[130,5438+46])
+                      Pstr_eval
+                      expression (typing/types.mli[128,5337+2]..[130,5438+46])
+                        Pexp_constant PConst_string(" [Tpoly (ty,tyl)] ==> ['a1... 'an. ty],\n      where 'a1 ... 'an are names given to types in tyl\n      and occurrences of those types in ty. ",(typing/types.mli[128,5337+2]..[130,5438+46]),None)
+                  ]
+                [
+                  core_type (typing/types.mli[127,5297+13]..[127,5297+22])
+                    Ptyp_constr "type_expr" (typing/types.mli[127,5297+13]..[127,5297+22])
+                    []
+                  core_type (typing/types.mli[127,5297+25]..[127,5297+39])
+                    Ptyp_constr "list" (typing/types.mli[127,5297+35]..[127,5297+39])
+                    [
+                      core_type (typing/types.mli[127,5297+25]..[127,5297+34])
+                        Ptyp_constr "type_expr" (typing/types.mli[127,5297+25]..[127,5297+34])
+                        []
+                    ]
+                ]
+                None
+              (typing/types.mli[132,5486+2]..[132,5486+55])
+                "Tpackage" (typing/types.mli[132,5486+4]..[132,5486+12])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[133,5542+2]..[133,5542+54])
+                      Pstr_eval
+                      expression (typing/types.mli[133,5542+2]..[133,5542+54])
+                        Pexp_constant PConst_string(" Type of a first-class module (a.k.a package). ",(typing/types.mli[133,5542+2]..[133,5542+54]),None)
+                  ]
+                [
+                  core_type (typing/types.mli[132,5486+16]..[132,5486+22])
+                    Ptyp_constr "Path.t" (typing/types.mli[132,5486+16]..[132,5486+22])
+                    []
+                  core_type (typing/types.mli[132,5486+25]..[132,5486+55])
+                    Ptyp_constr "list" (typing/types.mli[132,5486+51]..[132,5486+55])
+                    [
+                      core_type (typing/types.mli[132,5486+26]..[132,5486+49])
+                        Ptyp_tuple
+                        [
+                          core_type (typing/types.mli[132,5486+26]..[132,5486+37])
+                            Ptyp_constr "Longident.t" (typing/types.mli[132,5486+26]..[132,5486+37])
+                            []
+                          core_type (typing/types.mli[132,5486+40]..[132,5486+49])
+                            Ptyp_constr "type_expr" (typing/types.mli[132,5486+40]..[132,5486+49])
+                            []
+                        ]
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "row_desc" (typing/types.mli[161,6466+4]..[161,6466+12]) (typing/types.mli[161,6466+0]..[167,6671+50])
+        attribute "ocaml.doc"
+          [
+            structure_item (typing/types.mli[135,5598+0]..[160,6463+2])
+              Pstr_eval
+              expression (typing/types.mli[135,5598+0]..[160,6463+2])
+                Pexp_constant PConst_string(" [  `X | `Y ]       (row_closed = true)\n    [< `X | `Y ]       (row_closed = true)\n    [> `X | `Y ]       (row_closed = false)\n    [< `X | `Y > `X ]  (row_closed = true)\n\n    type t = [> `X ] as 'a      (row_more = Tvar a)\n    type t = private [> `X ]    (row_more = Tconstr (t#row, [], ref Mnil))\n\n    And for:\n\n        let f = function `X -> `X -> | `Y -> `X\n\n    the type of \"f\" will be a [Tarrow] whose lhs will (basically) be:\n\n        Tvariant { row_fields = [(\"X\", _)];\n                   row_more   =\n                     Tvariant { row_fields = [(\"Y\", _)];\n                                row_more   =\n                                  Tvariant { row_fields = [];\n                                             row_more   = _;\n                                             _ };\n                                _ };\n                   _\n                 }\n\n",(typing/types.mli[135,5598+0]..[160,6463+2]),None)
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (typing/types.mli[162,6481+6]..[162,6481+43])
+                Immutable
+                "row_fields" (typing/types.mli[162,6481+6]..[162,6481+16])                core_type (typing/types.mli[162,6481+18]..[162,6481+42])
+                  Ptyp_constr "list" (typing/types.mli[162,6481+38]..[162,6481+42])
+                  [
+                    core_type (typing/types.mli[162,6481+19]..[162,6481+36])
+                      Ptyp_tuple
+                      [
+                        core_type (typing/types.mli[162,6481+19]..[162,6481+24])
+                          Ptyp_constr "label" (typing/types.mli[162,6481+19]..[162,6481+24])
+                          []
+                        core_type (typing/types.mli[162,6481+27]..[162,6481+36])
+                          Ptyp_constr "row_field" (typing/types.mli[162,6481+27]..[162,6481+36])
+                          []
+                      ]
+                  ]
+              (typing/types.mli[163,6525+6]..[163,6525+26])
+                Immutable
+                "row_more" (typing/types.mli[163,6525+6]..[163,6525+14])                core_type (typing/types.mli[163,6525+16]..[163,6525+25])
+                  Ptyp_constr "type_expr" (typing/types.mli[163,6525+16]..[163,6525+25])
+                  []
+              (typing/types.mli[164,6552+6]..[164,6552+22])
+                Immutable
+                "row_bound" (typing/types.mli[164,6552+6]..[164,6552+15])                core_type (typing/types.mli[164,6552+17]..[164,6552+21])
+                  Ptyp_constr "unit" (typing/types.mli[164,6552+17]..[164,6552+21])
+                  []
+              (typing/types.mli[165,6604+6]..[165,6604+23])
+                Immutable
+                "row_closed" (typing/types.mli[165,6604+6]..[165,6604+16])                core_type (typing/types.mli[165,6604+18]..[165,6604+22])
+                  Ptyp_constr "bool" (typing/types.mli[165,6604+18]..[165,6604+22])
+                  []
+              (typing/types.mli[166,6628+6]..[166,6628+42])
+                Immutable
+                "row_fixed" (typing/types.mli[166,6628+6]..[166,6628+15])                core_type (typing/types.mli[166,6628+17]..[166,6628+41])
+                  Ptyp_constr "option" (typing/types.mli[166,6628+35]..[166,6628+41])
+                  [
+                    core_type (typing/types.mli[166,6628+17]..[166,6628+34])
+                      Ptyp_constr "fixed_explanation" (typing/types.mli[166,6628+17]..[166,6628+34])
+                      []
+                  ]
+              (typing/types.mli[167,6671+6]..[167,6671+48])
+                Immutable
+                "row_name" (typing/types.mli[167,6671+6]..[167,6671+14])                core_type (typing/types.mli[167,6671+16]..[167,6671+48])
+                  Ptyp_constr "option" (typing/types.mli[167,6671+42]..[167,6671+48])
+                  [
+                    core_type (typing/types.mli[167,6671+17]..[167,6671+40])
+                      Ptyp_tuple
+                      [
+                        core_type (typing/types.mli[167,6671+17]..[167,6671+23])
+                          Ptyp_constr "Path.t" (typing/types.mli[167,6671+17]..[167,6671+23])
+                          []
+                        core_type (typing/types.mli[167,6671+26]..[167,6671+40])
+                          Ptyp_constr "list" (typing/types.mli[167,6671+36]..[167,6671+40])
+                          [
+                            core_type (typing/types.mli[167,6671+26]..[167,6671+35])
+                              Ptyp_constr "type_expr" (typing/types.mli[167,6671+26]..[167,6671+35])
+                              []
+                          ]
+                      ]
+                  ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "fixed_explanation" (typing/types.mli[168,6722+4]..[168,6722+21]) (typing/types.mli[168,6722+0]..[172,6911+9])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[169,6746+2]..[169,6746+23])
+                "Univar" (typing/types.mli[169,6746+4]..[169,6746+10])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[169,6746+24]..[169,6746+66])
+                      Pstr_eval
+                      expression (typing/types.mli[169,6746+24]..[169,6746+66])
+                        Pexp_constant PConst_string(" The row type was bound to an univar ",(typing/types.mli[169,6746+24]..[169,6746+66]),None)
+                  ]
+                [
+                  core_type (typing/types.mli[169,6746+14]..[169,6746+23])
+                    Ptyp_constr "type_expr" (typing/types.mli[169,6746+14]..[169,6746+23])
+                    []
+                ]
+                None
+              (typing/types.mli[170,6813+2]..[170,6813+17])
+                "Fixed_private" (typing/types.mli[170,6813+4]..[170,6813+17])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[170,6813+18]..[170,6813+48])
+                      Pstr_eval
+                      expression (typing/types.mli[170,6813+18]..[170,6813+48])
+                        Pexp_constant PConst_string(" The row type is private ",(typing/types.mli[170,6813+18]..[170,6813+48]),None)
+                  ]
+                []
+                None
+              (typing/types.mli[171,6862+2]..[171,6862+21])
+                "Reified" (typing/types.mli[171,6862+4]..[171,6862+11])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[171,6862+22]..[171,6862+48])
+                      Pstr_eval
+                      expression (typing/types.mli[171,6862+22]..[171,6862+48])
+                        Pexp_constant PConst_string(" The row was reified ",(typing/types.mli[171,6862+22]..[171,6862+48]),None)
+                  ]
+                [
+                  core_type (typing/types.mli[171,6862+15]..[171,6862+21])
+                    Ptyp_constr "Path.t" (typing/types.mli[171,6862+15]..[171,6862+21])
+                    []
+                ]
+                None
+              (typing/types.mli[172,6911+2]..[172,6911+9])
+                "Rigid" (typing/types.mli[172,6911+4]..[172,6911+9])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[172,6911+10]..[172,6911+75])
+                      Pstr_eval
+                      expression (typing/types.mli[172,6911+10]..[172,6911+75])
+                        Pexp_constant PConst_string(" The row type was made rigid during constraint verification ",(typing/types.mli[172,6911+10]..[172,6911+75]),None)
+                  ]
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "row_field" (typing/types.mli[173,6987+4]..[173,6987+13]) (typing/types.mli[173,6987+0]..[179,7248+11])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[174,7003+4]..[174,7003+32])
+                "Rpresent" (typing/types.mli[174,7003+4]..[174,7003+12])
+                [
+                  core_type (typing/types.mli[174,7003+16]..[174,7003+32])
+                    Ptyp_constr "option" (typing/types.mli[174,7003+26]..[174,7003+32])
+                    [
+                      core_type (typing/types.mli[174,7003+16]..[174,7003+25])
+                        Ptyp_constr "type_expr" (typing/types.mli[174,7003+16]..[174,7003+25])
+                        []
+                    ]
+                ]
+                None
+              (typing/types.mli[175,7036+2]..[175,7036+66])
+                "Reither" (typing/types.mli[175,7036+4]..[175,7036+11])
+                [
+                  core_type (typing/types.mli[175,7036+15]..[175,7036+19])
+                    Ptyp_constr "bool" (typing/types.mli[175,7036+15]..[175,7036+19])
+                    []
+                  core_type (typing/types.mli[175,7036+22]..[175,7036+36])
+                    Ptyp_constr "list" (typing/types.mli[175,7036+32]..[175,7036+36])
+                    [
+                      core_type (typing/types.mli[175,7036+22]..[175,7036+31])
+                        Ptyp_constr "type_expr" (typing/types.mli[175,7036+22]..[175,7036+31])
+                        []
+                    ]
+                  core_type (typing/types.mli[175,7036+39]..[175,7036+43])
+                    Ptyp_constr "bool" (typing/types.mli[175,7036+39]..[175,7036+43])
+                    []
+                  core_type (typing/types.mli[175,7036+46]..[175,7036+66])
+                    Ptyp_constr "ref" (typing/types.mli[175,7036+63]..[175,7036+66])
+                    [
+                      core_type (typing/types.mli[175,7036+46]..[175,7036+62])
+                        Ptyp_constr "option" (typing/types.mli[175,7036+56]..[175,7036+62])
+                        [
+                          core_type (typing/types.mli[175,7036+46]..[175,7036+55])
+                            Ptyp_constr "row_field" (typing/types.mli[175,7036+46]..[175,7036+55])
+                            []
+                        ]
+                    ]
+                ]
+                None
+              (typing/types.mli[179,7248+2]..[179,7248+11])
+                "Rabsent" (typing/types.mli[179,7248+4]..[179,7248+11])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "abbrev_memo" (typing/types.mli[196,7892+4]..[196,7892+15]) (typing/types.mli[196,7892+0]..[205,8228+28])
+        attribute "ocaml.doc"
+          [
+            structure_item (typing/types.mli[181,7261+0]..[195,7889+2])
+              Pstr_eval
+              expression (typing/types.mli[181,7261+0]..[195,7889+2])
+                Pexp_constant PConst_string(" [abbrev_memo] allows one to keep track of different expansions of a type\n    alias. This is done for performance purposes.\n\n    For instance, when defining [type 'a pair = 'a * 'a], when one refers to an\n    ['a pair], it is just a shortcut for the ['a * 'a] type.\n    This expansion will be stored in the [abbrev_memo] of the corresponding\n    [Tconstr] node.\n\n    In practice, [abbrev_memo] behaves like list of expansions with a mutable\n    tail.\n\n    Note on marshalling: [abbrev_memo] must not appear in saved types.\n    [Btype], with [cleanup_abbrev] and [memo], takes care of tracking and\n    removing abbreviations.\n",(typing/types.mli[181,7261+0]..[195,7889+2]),None)
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[197,7910+2]..[197,7910+8])
+                "Mnil" (typing/types.mli[197,7910+4]..[197,7910+8])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[197,7910+9]..[197,7910+37])
+                      Pstr_eval
+                      expression (typing/types.mli[197,7910+9]..[197,7910+37])
+                        Pexp_constant PConst_string(" No known abbreviation ",(typing/types.mli[197,7910+9]..[197,7910+37]),None)
+                  ]
+                []
+                None
+              (typing/types.mli[199,7949+2]..[199,7949+72])
+                "Mcons" (typing/types.mli[199,7949+4]..[199,7949+9])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[200,8022+2]..[203,8147+79])
+                      Pstr_eval
+                      expression (typing/types.mli[200,8022+2]..[203,8147+79])
+                        Pexp_constant PConst_string(" Found one abbreviation.\n      A valid abbreviation should be at least as visible and reachable by the\n      same path.\n      The first expression is the abbreviation and the second the expansion. ",(typing/types.mli[200,8022+2]..[203,8147+79]),None)
+                  ]
+                [
+                  core_type (typing/types.mli[199,7949+13]..[199,7949+25])
+                    Ptyp_constr "private_flag" (typing/types.mli[199,7949+13]..[199,7949+25])
+                    []
+                  core_type (typing/types.mli[199,7949+28]..[199,7949+34])
+                    Ptyp_constr "Path.t" (typing/types.mli[199,7949+28]..[199,7949+34])
+                    []
+                  core_type (typing/types.mli[199,7949+37]..[199,7949+46])
+                    Ptyp_constr "type_expr" (typing/types.mli[199,7949+37]..[199,7949+46])
+                    []
+                  core_type (typing/types.mli[199,7949+49]..[199,7949+58])
+                    Ptyp_constr "type_expr" (typing/types.mli[199,7949+49]..[199,7949+58])
+                    []
+                  core_type (typing/types.mli[199,7949+61]..[199,7949+72])
+                    Ptyp_constr "abbrev_memo" (typing/types.mli[199,7949+61]..[199,7949+72])
+                    []
+                ]
+                None
+              (typing/types.mli[205,8228+2]..[205,8228+28])
+                "Mlink" (typing/types.mli[205,8228+4]..[205,8228+9])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (typing/types.mli[206,8257+2]..[206,8257+58])
+                      Pstr_eval
+                      expression (typing/types.mli[206,8257+2]..[206,8257+58])
+                        Pexp_constant PConst_string(" Abbreviations can be found after this indirection ",(typing/types.mli[206,8257+2]..[206,8257+58]),None)
+                  ]
+                [
+                  core_type (typing/types.mli[205,8228+13]..[205,8228+28])
+                    Ptyp_constr "ref" (typing/types.mli[205,8228+25]..[205,8228+28])
+                    [
+                      core_type (typing/types.mli[205,8228+13]..[205,8228+24])
+                        Ptyp_constr "abbrev_memo" (typing/types.mli[205,8228+13]..[205,8228+24])
+                        []
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "field_kind" (typing/types.mli[208,8317+4]..[208,8317+14]) (typing/types.mli[208,8317+0]..[211,8381+11])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[209,8334+4]..[209,8334+33])
+                "Fvar" (typing/types.mli[209,8334+4]..[209,8334+8])
+                [
+                  core_type (typing/types.mli[209,8334+12]..[209,8334+33])
+                    Ptyp_constr "ref" (typing/types.mli[209,8334+30]..[209,8334+33])
+                    [
+                      core_type (typing/types.mli[209,8334+12]..[209,8334+29])
+                        Ptyp_constr "option" (typing/types.mli[209,8334+23]..[209,8334+29])
+                        [
+                          core_type (typing/types.mli[209,8334+12]..[209,8334+22])
+                            Ptyp_constr "field_kind" (typing/types.mli[209,8334+12]..[209,8334+22])
+                            []
+                        ]
+                    ]
+                ]
+                None
+              (typing/types.mli[210,8368+2]..[210,8368+12])
+                "Fpresent" (typing/types.mli[210,8368+4]..[210,8368+12])
+                []
+                None
+              (typing/types.mli[211,8381+2]..[211,8381+11])
+                "Fabsent" (typing/types.mli[211,8381+4]..[211,8381+11])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "commutable" (typing/types.mli[234,9081+4]..[234,9081+14]) (typing/types.mli[234,9081+0]..[237,9119+27])
+        attribute "ocaml.doc"
+          [
+            structure_item (typing/types.mli[213,8394+0]..[233,9078+2])
+              Pstr_eval
+              expression (typing/types.mli[213,8394+0]..[233,9078+2])
+                Pexp_constant PConst_string(" [commutable] is a flag appended to every arrow type.\n\n    When typing an application, if the type of the functional is\n    known, its type is instantiated with [Cok] arrows, otherwise as\n    [Clink (ref Cunknown)].\n\n    When the type is not known, the application will be used to infer\n    the actual type.  This is fragile in presence of labels where\n    there is no principal type.\n\n    Two incompatible applications relying on [Cunknown] arrows will\n    trigger an error.\n\n    let f g =\n      g ~a:() ~b:();\n      g ~b:() ~a:();\n\n    Error: This function is applied to arguments\n    in an order different from other calls.\n    This is only allowed when the real type is known.\n",(typing/types.mli[213,8394+0]..[233,9078+2]),None)
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[235,9098+4]..[235,9098+7])
+                "Cok" (typing/types.mli[235,9098+4]..[235,9098+7])
+                []
+                None
+              (typing/types.mli[236,9106+2]..[236,9106+12])
+                "Cunknown" (typing/types.mli[236,9106+4]..[236,9106+12])
+                []
+                None
+              (typing/types.mli[237,9119+2]..[237,9119+27])
+                "Clink" (typing/types.mli[237,9119+4]..[237,9119+9])
+                [
+                  core_type (typing/types.mli[237,9119+13]..[237,9119+27])
+                    Ptyp_constr "ref" (typing/types.mli[237,9119+24]..[237,9119+27])
+                    [
+                      core_type (typing/types.mli[237,9119+13]..[237,9119+23])
+                        Ptyp_constr "commutable" (typing/types.mli[237,9119+13]..[237,9119+23])
+                        []
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/types.mli[239,9148+0]..[244,9390+3])
+    Psig_module "Private_type_expr" (typing/types.mli[239,9148+7]..[239,9148+24])
+    module_type (typing/types.mli[239,9148+27]..[244,9390+3])
+      Pmty_signature
+      [
+        signature_item (typing/types.mli[240,9179+2]..[240,9179+76])
+          Psig_value
+          value_description "create" (typing/types.mli[240,9179+6]..[240,9179+12]) (typing/types.mli[240,9179+2]..[240,9179+76])
+            core_type (typing/types.mli[240,9179+15]..[240,9179+76])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[240,9179+15]..[240,9179+24])
+                Ptyp_constr "type_desc" (typing/types.mli[240,9179+15]..[240,9179+24])
+                []
+              core_type (typing/types.mli[240,9179+28]..[240,9179+76])
+                Ptyp_arrow
+                Labelled "level"
+                core_type (typing/types.mli[240,9179+35]..[240,9179+38])
+                  Ptyp_constr "int" (typing/types.mli[240,9179+35]..[240,9179+38])
+                  []
+                core_type (typing/types.mli[240,9179+42]..[240,9179+76])
+                  Ptyp_arrow
+                  Labelled "scope"
+                  core_type (typing/types.mli[240,9179+49]..[240,9179+52])
+                    Ptyp_constr "int" (typing/types.mli[240,9179+49]..[240,9179+52])
+                    []
+                  core_type (typing/types.mli[240,9179+56]..[240,9179+76])
+                    Ptyp_arrow
+                    Labelled "id"
+                    core_type (typing/types.mli[240,9179+60]..[240,9179+63])
+                      Ptyp_constr "int" (typing/types.mli[240,9179+60]..[240,9179+63])
+                      []
+                    core_type (typing/types.mli[240,9179+67]..[240,9179+76])
+                      Ptyp_constr "type_expr" (typing/types.mli[240,9179+67]..[240,9179+76])
+                      []
+            []
+        signature_item (typing/types.mli[241,9256+2]..[241,9256+47])
+          Psig_value
+          value_description "set_desc" (typing/types.mli[241,9256+6]..[241,9256+14]) (typing/types.mli[241,9256+2]..[241,9256+47])
+            core_type (typing/types.mli[241,9256+17]..[241,9256+47])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[241,9256+17]..[241,9256+26])
+                Ptyp_constr "type_expr" (typing/types.mli[241,9256+17]..[241,9256+26])
+                []
+              core_type (typing/types.mli[241,9256+30]..[241,9256+47])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/types.mli[241,9256+30]..[241,9256+39])
+                  Ptyp_constr "type_desc" (typing/types.mli[241,9256+30]..[241,9256+39])
+                  []
+                core_type (typing/types.mli[241,9256+43]..[241,9256+47])
+                  Ptyp_constr "unit" (typing/types.mli[241,9256+43]..[241,9256+47])
+                  []
+            []
+        signature_item (typing/types.mli[242,9304+2]..[242,9304+42])
+          Psig_value
+          value_description "set_level" (typing/types.mli[242,9304+6]..[242,9304+15]) (typing/types.mli[242,9304+2]..[242,9304+42])
+            core_type (typing/types.mli[242,9304+18]..[242,9304+42])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[242,9304+18]..[242,9304+27])
+                Ptyp_constr "type_expr" (typing/types.mli[242,9304+18]..[242,9304+27])
+                []
+              core_type (typing/types.mli[242,9304+31]..[242,9304+42])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/types.mli[242,9304+31]..[242,9304+34])
+                  Ptyp_constr "int" (typing/types.mli[242,9304+31]..[242,9304+34])
+                  []
+                core_type (typing/types.mli[242,9304+38]..[242,9304+42])
+                  Ptyp_constr "unit" (typing/types.mli[242,9304+38]..[242,9304+42])
+                  []
+            []
+        signature_item (typing/types.mli[243,9347+2]..[243,9347+42])
+          Psig_value
+          value_description "set_scope" (typing/types.mli[243,9347+6]..[243,9347+15]) (typing/types.mli[243,9347+2]..[243,9347+42])
+            core_type (typing/types.mli[243,9347+18]..[243,9347+42])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[243,9347+18]..[243,9347+27])
+                Ptyp_constr "type_expr" (typing/types.mli[243,9347+18]..[243,9347+27])
+                []
+              core_type (typing/types.mli[243,9347+31]..[243,9347+42])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/types.mli[243,9347+31]..[243,9347+34])
+                  Ptyp_constr "int" (typing/types.mli[243,9347+31]..[243,9347+34])
+                  []
+                core_type (typing/types.mli[243,9347+38]..[243,9347+42])
+                  Ptyp_constr "unit" (typing/types.mli[243,9347+38]..[243,9347+42])
+                  []
+            []
+      ]
+  signature_item (typing/types.mli[246,9395+0]..[251,9518+3])
+    Psig_module "TypeOps" (typing/types.mli[246,9395+7]..[246,9395+14])
+    module_type (typing/types.mli[246,9395+17]..[251,9518+3])
+      Pmty_signature
+      [
+        signature_item (typing/types.mli[247,9416+2]..[247,9416+20])
+          Psig_type Rec
+          [
+            type_declaration "t" (typing/types.mli[247,9416+7]..[247,9416+8]) (typing/types.mli[247,9416+2]..[247,9416+20])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (typing/types.mli[247,9416+11]..[247,9416+20])
+                    Ptyp_constr "type_expr" (typing/types.mli[247,9416+11]..[247,9416+20])
+                    []
+          ]
+        signature_item (typing/types.mli[248,9437+2]..[248,9437+29])
+          Psig_value
+          value_description "compare" (typing/types.mli[248,9437+6]..[248,9437+13]) (typing/types.mli[248,9437+2]..[248,9437+29])
+            core_type (typing/types.mli[248,9437+16]..[248,9437+29])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[248,9437+16]..[248,9437+17])
+                Ptyp_constr "t" (typing/types.mli[248,9437+16]..[248,9437+17])
+                []
+              core_type (typing/types.mli[248,9437+21]..[248,9437+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/types.mli[248,9437+21]..[248,9437+22])
+                  Ptyp_constr "t" (typing/types.mli[248,9437+21]..[248,9437+22])
+                  []
+                core_type (typing/types.mli[248,9437+26]..[248,9437+29])
+                  Ptyp_constr "int" (typing/types.mli[248,9437+26]..[248,9437+29])
+                  []
+            []
+        signature_item (typing/types.mli[249,9467+2]..[249,9467+28])
+          Psig_value
+          value_description "equal" (typing/types.mli[249,9467+6]..[249,9467+11]) (typing/types.mli[249,9467+2]..[249,9467+28])
+            core_type (typing/types.mli[249,9467+14]..[249,9467+28])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[249,9467+14]..[249,9467+15])
+                Ptyp_constr "t" (typing/types.mli[249,9467+14]..[249,9467+15])
+                []
+              core_type (typing/types.mli[249,9467+19]..[249,9467+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/types.mli[249,9467+19]..[249,9467+20])
+                  Ptyp_constr "t" (typing/types.mli[249,9467+19]..[249,9467+20])
+                  []
+                core_type (typing/types.mli[249,9467+24]..[249,9467+28])
+                  Ptyp_constr "bool" (typing/types.mli[249,9467+24]..[249,9467+28])
+                  []
+            []
+        signature_item (typing/types.mli[250,9496+2]..[250,9496+21])
+          Psig_value
+          value_description "hash" (typing/types.mli[250,9496+6]..[250,9496+10]) (typing/types.mli[250,9496+2]..[250,9496+21])
+            core_type (typing/types.mli[250,9496+13]..[250,9496+21])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[250,9496+13]..[250,9496+14])
+                Ptyp_constr "t" (typing/types.mli[250,9496+13]..[250,9496+14])
+                []
+              core_type (typing/types.mli[250,9496+18]..[250,9496+21])
+                Ptyp_constr "int" (typing/types.mli[250,9496+18]..[250,9496+21])
+                []
+            []
+      ]
+  signature_item (typing/types.mli[255,9530+0]..[268,9824+3])
+    Psig_module "Uid" (typing/types.mli[255,9530+7]..[255,9530+10])
+    module_type (typing/types.mli[255,9530+13]..[268,9824+3])
+      Pmty_signature
+      [
+        signature_item (typing/types.mli[256,9547+2]..[256,9547+8])
+          Psig_type Rec
+          [
+            type_declaration "t" (typing/types.mli[256,9547+7]..[256,9547+8]) (typing/types.mli[256,9547+2]..[256,9547+8])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (typing/types.mli[258,9557+2]..[258,9557+27])
+          Psig_value
+          value_description "reinit" (typing/types.mli[258,9557+6]..[258,9557+12]) (typing/types.mli[258,9557+2]..[258,9557+27])
+            core_type (typing/types.mli[258,9557+15]..[258,9557+27])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[258,9557+15]..[258,9557+19])
+                Ptyp_constr "unit" (typing/types.mli[258,9557+15]..[258,9557+19])
+                []
+              core_type (typing/types.mli[258,9557+23]..[258,9557+27])
+                Ptyp_constr "unit" (typing/types.mli[258,9557+23]..[258,9557+27])
+                []
+            []
+        signature_item (typing/types.mli[260,9586+2]..[260,9586+35])
+          Psig_value
+          value_description "mk" (typing/types.mli[260,9586+6]..[260,9586+8]) (typing/types.mli[260,9586+2]..[260,9586+35])
+            core_type (typing/types.mli[260,9586+11]..[260,9586+35])
+              Ptyp_arrow
+              Labelled "current_unit"
+              core_type (typing/types.mli[260,9586+24]..[260,9586+30])
+                Ptyp_constr "string" (typing/types.mli[260,9586+24]..[260,9586+30])
+                []
+              core_type (typing/types.mli[260,9586+34]..[260,9586+35])
+                Ptyp_constr "t" (typing/types.mli[260,9586+34]..[260,9586+35])
+                []
+            []
+        signature_item (typing/types.mli[261,9622+2]..[261,9622+43])
+          Psig_value
+          value_description "of_compilation_unit_id" (typing/types.mli[261,9622+6]..[261,9622+28]) (typing/types.mli[261,9622+2]..[261,9622+43])
+            core_type (typing/types.mli[261,9622+31]..[261,9622+43])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[261,9622+31]..[261,9622+38])
+                Ptyp_constr "Ident.t" (typing/types.mli[261,9622+31]..[261,9622+38])
+                []
+              core_type (typing/types.mli[261,9622+42]..[261,9622+43])
+                Ptyp_constr "t" (typing/types.mli[261,9622+42]..[261,9622+43])
+                []
+            []
+        signature_item (typing/types.mli[262,9666+2]..[262,9666+33])
+          Psig_value
+          value_description "of_predef_id" (typing/types.mli[262,9666+6]..[262,9666+18]) (typing/types.mli[262,9666+2]..[262,9666+33])
+            core_type (typing/types.mli[262,9666+21]..[262,9666+33])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[262,9666+21]..[262,9666+28])
+                Ptyp_constr "Ident.t" (typing/types.mli[262,9666+21]..[262,9666+28])
+                []
+              core_type (typing/types.mli[262,9666+32]..[262,9666+33])
+                Ptyp_constr "t" (typing/types.mli[262,9666+32]..[262,9666+33])
+                []
+            []
+        signature_item (typing/types.mli[263,9700+2]..[263,9700+38])
+          Psig_value
+          value_description "internal_not_actually_unique" (typing/types.mli[263,9700+6]..[263,9700+34]) (typing/types.mli[263,9700+2]..[263,9700+38])
+            core_type (typing/types.mli[263,9700+37]..[263,9700+38])
+              Ptyp_constr "t" (typing/types.mli[263,9700+37]..[263,9700+38])
+              []
+            []
+        signature_item (typing/types.mli[265,9740+2]..[265,9740+40])
+          Psig_value
+          value_description "for_actual_declaration" (typing/types.mli[265,9740+6]..[265,9740+28]) (typing/types.mli[265,9740+2]..[265,9740+40])
+            core_type (typing/types.mli[265,9740+31]..[265,9740+40])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[265,9740+31]..[265,9740+32])
+                Ptyp_constr "t" (typing/types.mli[265,9740+31]..[265,9740+32])
+                []
+              core_type (typing/types.mli[265,9740+36]..[265,9740+40])
+                Ptyp_constr "bool" (typing/types.mli[265,9740+36]..[265,9740+40])
+                []
+            []
+        signature_item (typing/types.mli[267,9782+2]..[267,9782+41])
+          Psig_include
+          module_type (typing/types.mli[267,9782+10]..[267,9782+41])
+            Pmty_with
+            module_type (typing/types.mli[267,9782+10]..[267,9782+24])
+              Pmty_ident "Identifiable.S" (typing/types.mli[267,9782+10]..[267,9782+24])
+            [
+              Pwith_typesubst "t" (typing/types.mli[267,9782+35]..[267,9782+36])
+                type_declaration "t" (typing/types.mli[267,9782+35]..[267,9782+36]) (typing/types.mli[267,9782+30]..[267,9782+41])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    Some
+                      core_type (typing/types.mli[267,9782+40]..[267,9782+41])
+                        Ptyp_constr "t" (typing/types.mli[267,9782+40]..[267,9782+41])
+                        []
+            ]
+      ]
+  signature_item (typing/types.mli[272,9875+0]..[272,9875+43])
+    Psig_module "Meths" (typing/types.mli[272,9875+7]..[272,9875+12])
+    module_type (typing/types.mli[272,9875+15]..[272,9875+43])
+      Pmty_with
+      module_type (typing/types.mli[272,9875+15]..[272,9875+20])
+        Pmty_ident "Map.S" (typing/types.mli[272,9875+15]..[272,9875+20])
+      [
+        Pwith_type "key" (typing/types.mli[272,9875+31]..[272,9875+34])
+          type_declaration "key" (typing/types.mli[272,9875+31]..[272,9875+34]) (typing/types.mli[272,9875+26]..[272,9875+43])
+            ptype_params =
+              []
+            ptype_cstrs =
+              []
+            ptype_kind =
+              Ptype_abstract
+            ptype_private = Public
+            ptype_manifest =
+              Some
+                core_type (typing/types.mli[272,9875+37]..[272,9875+43])
+                  Ptyp_constr "string" (typing/types.mli[272,9875+37]..[272,9875+43])
+                  []
+      ]
+  signature_item (typing/types.mli[273,9919+0]..[273,9919+43])
+    Psig_module "Vars" (typing/types.mli[273,9919+7]..[273,9919+11])
+    module_type (typing/types.mli[273,9919+15]..[273,9919+43])
+      Pmty_with
+      module_type (typing/types.mli[273,9919+15]..[273,9919+20])
+        Pmty_ident "Map.S" (typing/types.mli[273,9919+15]..[273,9919+20])
+      [
+        Pwith_type "key" (typing/types.mli[273,9919+31]..[273,9919+34])
+          type_declaration "key" (typing/types.mli[273,9919+31]..[273,9919+34]) (typing/types.mli[273,9919+26]..[273,9919+43])
+            ptype_params =
+              []
+            ptype_cstrs =
+              []
+            ptype_kind =
+              Ptype_abstract
+            ptype_private = Public
+            ptype_manifest =
+              Some
+                core_type (typing/types.mli[273,9919+37]..[273,9919+43])
+                  Ptyp_constr "string" (typing/types.mli[273,9919+37]..[273,9919+43])
+                  []
+      ]
+  signature_item (typing/types.mli[277,9990+0]..[293,10625+47])
+    Psig_type Rec
+    [
+      type_declaration "value_description" (typing/types.mli[277,9990+5]..[277,9990+22]) (typing/types.mli[277,9990+0]..[283,10192+3])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (typing/types.mli[278,10015+4]..[278,10015+24])
+                Immutable
+                "val_type" (typing/types.mli[278,10015+4]..[278,10015+12])                core_type (typing/types.mli[278,10015+14]..[278,10015+23])
+                  Ptyp_constr "type_expr" (typing/types.mli[278,10015+14]..[278,10015+23])
+                  []
+              (typing/types.mli[279,10079+4]..[279,10079+25])
+                Immutable
+                "val_kind" (typing/types.mli[279,10079+4]..[279,10079+12])                core_type (typing/types.mli[279,10079+14]..[279,10079+24])
+                  Ptyp_constr "value_kind" (typing/types.mli[279,10079+14]..[279,10079+24])
+                  []
+              (typing/types.mli[280,10105+4]..[280,10105+24])
+                Immutable
+                "val_loc" (typing/types.mli[280,10105+4]..[280,10105+11])                core_type (typing/types.mli[280,10105+13]..[280,10105+23])
+                  Ptyp_constr "Location.t" (typing/types.mli[280,10105+13]..[280,10105+23])
+                  []
+              (typing/types.mli[281,10130+4]..[281,10130+41])
+                Immutable
+                "val_attributes" (typing/types.mli[281,10130+4]..[281,10130+18])                core_type (typing/types.mli[281,10130+20]..[281,10130+40])
+                  Ptyp_constr "Parsetree.attributes" (typing/types.mli[281,10130+20]..[281,10130+40])
+                  []
+              (typing/types.mli[282,10172+4]..[282,10172+19])
+                Immutable
+                "val_uid" (typing/types.mli[282,10172+4]..[282,10172+11])                core_type (typing/types.mli[282,10172+13]..[282,10172+18])
+                  Ptyp_constr "Uid.t" (typing/types.mli[282,10172+13]..[282,10172+18])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "value_kind" (typing/types.mli[285,10197+4]..[285,10197+14]) (typing/types.mli[285,10197+0]..[293,10625+47])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[286,10214+4]..[286,10214+11])
+                "Val_reg" (typing/types.mli[286,10214+4]..[286,10214+11])
+                []
+                None
+              (typing/types.mli[287,10274+2]..[287,10274+37])
+                "Val_prim" (typing/types.mli[287,10274+4]..[287,10274+12])
+                [
+                  core_type (typing/types.mli[287,10274+16]..[287,10274+37])
+                    Ptyp_constr "Primitive.description" (typing/types.mli[287,10274+16]..[287,10274+37])
+                    []
+                ]
+                None
+              (typing/types.mli[288,10330+2]..[288,10330+37])
+                "Val_ivar" (typing/types.mli[288,10330+4]..[288,10330+12])
+                [
+                  core_type (typing/types.mli[288,10330+16]..[288,10330+28])
+                    Ptyp_constr "mutable_flag" (typing/types.mli[288,10330+16]..[288,10330+28])
+                    []
+                  core_type (typing/types.mli[288,10330+31]..[288,10330+37])
+                    Ptyp_constr "string" (typing/types.mli[288,10330+31]..[288,10330+37])
+                    []
+                ]
+                None
+              (typing/types.mli[289,10406+2]..[291,10539+34])
+                "Val_self" (typing/types.mli[289,10406+4]..[289,10406+12])
+                [
+                  core_type (typing/types.mli[289,10406+16]..[289,10406+49])
+                    Ptyp_constr "ref" (typing/types.mli[289,10406+46]..[289,10406+49])
+                    [
+                      core_type (typing/types.mli[289,10406+16]..[289,10406+45])
+                        Ptyp_constr "Meths.t" (typing/types.mli[289,10406+38]..[289,10406+45])
+                        [
+                          core_type (typing/types.mli[289,10406+17]..[289,10406+36])
+                            Ptyp_tuple
+                            [
+                              core_type (typing/types.mli[289,10406+17]..[289,10406+24])
+                                Ptyp_constr "Ident.t" (typing/types.mli[289,10406+17]..[289,10406+24])
+                                []
+                              core_type (typing/types.mli[289,10406+27]..[289,10406+36])
+                                Ptyp_constr "type_expr" (typing/types.mli[289,10406+27]..[289,10406+36])
+                                []
+                            ]
+                        ]
+                    ]
+                  core_type (typing/types.mli[290,10458+16]..[290,10458+78])
+                    Ptyp_constr "ref" (typing/types.mli[290,10458+75]..[290,10458+78])
+                    [
+                      core_type (typing/types.mli[290,10458+16]..[290,10458+74])
+                        Ptyp_constr "Vars.t" (typing/types.mli[290,10458+68]..[290,10458+74])
+                        [
+                          core_type (typing/types.mli[290,10458+17]..[290,10458+66])
+                            Ptyp_tuple
+                            [
+                              core_type (typing/types.mli[290,10458+17]..[290,10458+24])
+                                Ptyp_constr "Ident.t" (typing/types.mli[290,10458+17]..[290,10458+24])
+                                []
+                              core_type (typing/types.mli[290,10458+27]..[290,10458+39])
+                                Ptyp_constr "mutable_flag" (typing/types.mli[290,10458+27]..[290,10458+39])
+                                []
+                              core_type (typing/types.mli[290,10458+42]..[290,10458+54])
+                                Ptyp_constr "virtual_flag" (typing/types.mli[290,10458+42]..[290,10458+54])
+                                []
+                              core_type (typing/types.mli[290,10458+57]..[290,10458+66])
+                                Ptyp_constr "type_expr" (typing/types.mli[290,10458+57]..[290,10458+66])
+                                []
+                            ]
+                        ]
+                    ]
+                  core_type (typing/types.mli[291,10539+16]..[291,10539+22])
+                    Ptyp_constr "string" (typing/types.mli[291,10539+16]..[291,10539+22])
+                    []
+                  core_type (typing/types.mli[291,10539+25]..[291,10539+34])
+                    Ptyp_constr "type_expr" (typing/types.mli[291,10539+25]..[291,10539+34])
+                    []
+                ]
+                None
+              (typing/types.mli[293,10625+2]..[293,10625+47])
+                "Val_anc" (typing/types.mli[293,10625+4]..[293,10625+11])
+                [
+                  core_type (typing/types.mli[293,10625+15]..[293,10625+38])
+                    Ptyp_constr "list" (typing/types.mli[293,10625+34]..[293,10625+38])
+                    [
+                      core_type (typing/types.mli[293,10625+16]..[293,10625+32])
+                        Ptyp_tuple
+                        [
+                          core_type (typing/types.mli[293,10625+16]..[293,10625+22])
+                            Ptyp_constr "string" (typing/types.mli[293,10625+16]..[293,10625+22])
+                            []
+                          core_type (typing/types.mli[293,10625+25]..[293,10625+32])
+                            Ptyp_constr "Ident.t" (typing/types.mli[293,10625+25]..[293,10625+32])
+                            []
+                        ]
+                    ]
+                  core_type (typing/types.mli[293,10625+41]..[293,10625+47])
+                    Ptyp_constr "string" (typing/types.mli[293,10625+41]..[293,10625+47])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/types.mli[298,10745+0]..[323,12064+3])
+    Psig_module "Variance" (typing/types.mli[298,10745+7]..[298,10745+15])
+    module_type (typing/types.mli[298,10745+18]..[323,12064+3])
+      Pmty_signature
+      [
+        signature_item (typing/types.mli[299,10767+2]..[299,10767+8])
+          Psig_type Rec
+          [
+            type_declaration "t" (typing/types.mli[299,10767+7]..[299,10767+8]) (typing/types.mli[299,10767+2]..[299,10767+8])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (typing/types.mli[300,10776+2]..[307,11193+9])
+          Psig_type Rec
+          [
+            type_declaration "f" (typing/types.mli[300,10776+7]..[300,10776+8]) (typing/types.mli[300,10776+2]..[307,11193+9])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_variant
+                  [
+                    (typing/types.mli[301,10787+6]..[301,10787+13])
+                      "May_pos" (typing/types.mli[301,10787+6]..[301,10787+13])
+                      []
+                      None
+                    (typing/types.mli[302,10849+4]..[302,10849+13])
+                      "May_neg" (typing/types.mli[302,10849+6]..[302,10849+13])
+                      []
+                      None
+                    (typing/types.mli[303,10911+4]..[303,10911+14])
+                      "May_weak" (typing/types.mli[303,10911+6]..[303,10911+14])
+                      []
+                      None
+                    (typing/types.mli[304,10990+4]..[304,10990+9])
+                      "Inj" (typing/types.mli[304,10990+6]..[304,10990+9])
+                      []
+                      None
+                    (typing/types.mli[305,11061+4]..[305,11061+9])
+                      "Pos" (typing/types.mli[305,11061+6]..[305,11061+9])
+                      []
+                      None
+                    (typing/types.mli[306,11127+4]..[306,11127+9])
+                      "Neg" (typing/types.mli[306,11127+6]..[306,11127+9])
+                      []
+                      None
+                    (typing/types.mli[307,11193+4]..[307,11193+9])
+                      "Inv" (typing/types.mli[307,11193+6]..[307,11193+9])
+                      []
+                      None
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (typing/types.mli[308,11267+2]..[308,11267+14])
+          Psig_value
+          value_description "null" (typing/types.mli[308,11267+6]..[308,11267+10]) (typing/types.mli[308,11267+2]..[308,11267+14])
+            core_type (typing/types.mli[308,11267+13]..[308,11267+14])
+              Ptyp_constr "t" (typing/types.mli[308,11267+13]..[308,11267+14])
+              []
+            []
+        signature_item (typing/types.mli[309,11316+2]..[309,11316+14])
+          Psig_value
+          value_description "full" (typing/types.mli[309,11316+6]..[309,11316+10]) (typing/types.mli[309,11316+2]..[309,11316+14])
+            core_type (typing/types.mli[309,11316+13]..[309,11316+14])
+              Ptyp_constr "t" (typing/types.mli[309,11316+13]..[309,11316+14])
+              []
+            []
+        signature_item (typing/types.mli[310,11382+2]..[310,11382+19])
+          Psig_value
+          value_description "covariant" (typing/types.mli[310,11382+6]..[310,11382+15]) (typing/types.mli[310,11382+2]..[310,11382+19])
+            core_type (typing/types.mli[310,11382+18]..[310,11382+19])
+              Ptyp_constr "t" (typing/types.mli[310,11382+18]..[310,11382+19])
+              []
+            []
+        signature_item (typing/types.mli[311,11459+2]..[311,11459+17])
+          Psig_value
+          value_description "unknown" (typing/types.mli[311,11459+6]..[311,11459+13]) (typing/types.mli[311,11459+2]..[311,11459+17])
+            core_type (typing/types.mli[311,11459+16]..[311,11459+17])
+              Ptyp_constr "t" (typing/types.mli[311,11459+16]..[311,11459+17])
+              []
+            []
+        signature_item (typing/types.mli[312,11530+2]..[312,11530+26])
+          Psig_value
+          value_description "union" (typing/types.mli[312,11530+6]..[312,11530+11]) (typing/types.mli[312,11530+2]..[312,11530+26])
+            core_type (typing/types.mli[312,11530+15]..[312,11530+26])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[312,11530+15]..[312,11530+16])
+                Ptyp_constr "t" (typing/types.mli[312,11530+15]..[312,11530+16])
+                []
+              core_type (typing/types.mli[312,11530+20]..[312,11530+26])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/types.mli[312,11530+20]..[312,11530+21])
+                  Ptyp_constr "t" (typing/types.mli[312,11530+20]..[312,11530+21])
+                  []
+                core_type (typing/types.mli[312,11530+25]..[312,11530+26])
+                  Ptyp_constr "t" (typing/types.mli[312,11530+25]..[312,11530+26])
+                  []
+            []
+        signature_item (typing/types.mli[313,11557+2]..[313,11557+26])
+          Psig_value
+          value_description "inter" (typing/types.mli[313,11557+6]..[313,11557+11]) (typing/types.mli[313,11557+2]..[313,11557+26])
+            core_type (typing/types.mli[313,11557+15]..[313,11557+26])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[313,11557+15]..[313,11557+16])
+                Ptyp_constr "t" (typing/types.mli[313,11557+15]..[313,11557+16])
+                []
+              core_type (typing/types.mli[313,11557+20]..[313,11557+26])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/types.mli[313,11557+20]..[313,11557+21])
+                  Ptyp_constr "t" (typing/types.mli[313,11557+20]..[313,11557+21])
+                  []
+                core_type (typing/types.mli[313,11557+25]..[313,11557+26])
+                  Ptyp_constr "t" (typing/types.mli[313,11557+25]..[313,11557+26])
+                  []
+            []
+        signature_item (typing/types.mli[314,11584+2]..[314,11584+29])
+          Psig_value
+          value_description "subset" (typing/types.mli[314,11584+6]..[314,11584+12]) (typing/types.mli[314,11584+2]..[314,11584+29])
+            core_type (typing/types.mli[314,11584+15]..[314,11584+29])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[314,11584+15]..[314,11584+16])
+                Ptyp_constr "t" (typing/types.mli[314,11584+15]..[314,11584+16])
+                []
+              core_type (typing/types.mli[314,11584+20]..[314,11584+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/types.mli[314,11584+20]..[314,11584+21])
+                  Ptyp_constr "t" (typing/types.mli[314,11584+20]..[314,11584+21])
+                  []
+                core_type (typing/types.mli[314,11584+25]..[314,11584+29])
+                  Ptyp_constr "bool" (typing/types.mli[314,11584+25]..[314,11584+29])
+                  []
+            []
+        signature_item (typing/types.mli[315,11614+2]..[315,11614+25])
+          Psig_value
+          value_description "eq" (typing/types.mli[315,11614+6]..[315,11614+8]) (typing/types.mli[315,11614+2]..[315,11614+25])
+            core_type (typing/types.mli[315,11614+11]..[315,11614+25])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[315,11614+11]..[315,11614+12])
+                Ptyp_constr "t" (typing/types.mli[315,11614+11]..[315,11614+12])
+                []
+              core_type (typing/types.mli[315,11614+16]..[315,11614+25])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/types.mli[315,11614+16]..[315,11614+17])
+                  Ptyp_constr "t" (typing/types.mli[315,11614+16]..[315,11614+17])
+                  []
+                core_type (typing/types.mli[315,11614+21]..[315,11614+25])
+                  Ptyp_constr "bool" (typing/types.mli[315,11614+21]..[315,11614+25])
+                  []
+            []
+        signature_item (typing/types.mli[316,11640+2]..[316,11640+31])
+          Psig_value
+          value_description "set" (typing/types.mli[316,11640+6]..[316,11640+9]) (typing/types.mli[316,11640+2]..[316,11640+31])
+            core_type (typing/types.mli[316,11640+12]..[316,11640+31])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[316,11640+12]..[316,11640+13])
+                Ptyp_constr "f" (typing/types.mli[316,11640+12]..[316,11640+13])
+                []
+              core_type (typing/types.mli[316,11640+17]..[316,11640+31])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/types.mli[316,11640+17]..[316,11640+21])
+                  Ptyp_constr "bool" (typing/types.mli[316,11640+17]..[316,11640+21])
+                  []
+                core_type (typing/types.mli[316,11640+25]..[316,11640+31])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/types.mli[316,11640+25]..[316,11640+26])
+                    Ptyp_constr "t" (typing/types.mli[316,11640+25]..[316,11640+26])
+                    []
+                  core_type (typing/types.mli[316,11640+30]..[316,11640+31])
+                    Ptyp_constr "t" (typing/types.mli[316,11640+30]..[316,11640+31])
+                    []
+            []
+        signature_item (typing/types.mli[317,11672+2]..[317,11672+26])
+          Psig_value
+          value_description "mem" (typing/types.mli[317,11672+6]..[317,11672+9]) (typing/types.mli[317,11672+2]..[317,11672+26])
+            core_type (typing/types.mli[317,11672+12]..[317,11672+26])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[317,11672+12]..[317,11672+13])
+                Ptyp_constr "f" (typing/types.mli[317,11672+12]..[317,11672+13])
+                []
+              core_type (typing/types.mli[317,11672+17]..[317,11672+26])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/types.mli[317,11672+17]..[317,11672+18])
+                  Ptyp_constr "t" (typing/types.mli[317,11672+17]..[317,11672+18])
+                  []
+                core_type (typing/types.mli[317,11672+22]..[317,11672+26])
+                  Ptyp_constr "bool" (typing/types.mli[317,11672+22]..[317,11672+26])
+                  []
+            []
+        signature_item (typing/types.mli[318,11699+2]..[318,11699+24])
+          Psig_value
+          value_description "conjugate" (typing/types.mli[318,11699+6]..[318,11699+15]) (typing/types.mli[318,11699+2]..[318,11699+24])
+            core_type (typing/types.mli[318,11699+18]..[318,11699+24])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[318,11699+18]..[318,11699+19])
+                Ptyp_constr "t" (typing/types.mli[318,11699+18]..[318,11699+19])
+                []
+              core_type (typing/types.mli[318,11699+23]..[318,11699+24])
+                Ptyp_constr "t" (typing/types.mli[318,11699+23]..[318,11699+24])
+                []
+            []
+        signature_item (typing/types.mli[319,11776+2]..[319,11776+34])
+          Psig_value
+          value_description "get_upper" (typing/types.mli[319,11776+6]..[319,11776+15]) (typing/types.mli[319,11776+2]..[319,11776+34])
+            core_type (typing/types.mli[319,11776+18]..[319,11776+34])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[319,11776+18]..[319,11776+19])
+                Ptyp_constr "t" (typing/types.mli[319,11776+18]..[319,11776+19])
+                []
+              core_type (typing/types.mli[319,11776+23]..[319,11776+34])
+                Ptyp_tuple
+                [
+                  core_type (typing/types.mli[319,11776+23]..[319,11776+27])
+                    Ptyp_constr "bool" (typing/types.mli[319,11776+23]..[319,11776+27])
+                    []
+                  core_type (typing/types.mli[319,11776+30]..[319,11776+34])
+                    Ptyp_constr "bool" (typing/types.mli[319,11776+30]..[319,11776+34])
+                    []
+                ]
+            []
+        signature_item (typing/types.mli[320,11853+2]..[320,11853+48])
+          Psig_value
+          value_description "get_lower" (typing/types.mli[320,11853+6]..[320,11853+15]) (typing/types.mli[320,11853+2]..[320,11853+48])
+            core_type (typing/types.mli[320,11853+18]..[320,11853+48])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[320,11853+18]..[320,11853+19])
+                Ptyp_constr "t" (typing/types.mli[320,11853+18]..[320,11853+19])
+                []
+              core_type (typing/types.mli[320,11853+23]..[320,11853+48])
+                Ptyp_tuple
+                [
+                  core_type (typing/types.mli[320,11853+23]..[320,11853+27])
+                    Ptyp_constr "bool" (typing/types.mli[320,11853+23]..[320,11853+27])
+                    []
+                  core_type (typing/types.mli[320,11853+30]..[320,11853+34])
+                    Ptyp_constr "bool" (typing/types.mli[320,11853+30]..[320,11853+34])
+                    []
+                  core_type (typing/types.mli[320,11853+37]..[320,11853+41])
+                    Ptyp_constr "bool" (typing/types.mli[320,11853+37]..[320,11853+41])
+                    []
+                  core_type (typing/types.mli[320,11853+44]..[320,11853+48])
+                    Ptyp_constr "bool" (typing/types.mli[320,11853+44]..[320,11853+48])
+                    []
+                ]
+            []
+        signature_item (typing/types.mli[321,11930+2]..[321,11930+63])
+          Psig_value
+          value_description "unknown_signature" (typing/types.mli[321,11930+6]..[321,11930+23]) (typing/types.mli[321,11930+2]..[321,11930+63])
+            attribute "ocaml.doc"
+              [
+                structure_item (typing/types.mli[322,11994+2]..[322,11994+69])
+                  Pstr_eval
+                  expression (typing/types.mli[322,11994+2]..[322,11994+69])
+                    Pexp_constant PConst_string(" The most pessimistic variance for a completely unknown type. ",(typing/types.mli[322,11994+2]..[322,11994+69]),None)
+              ]
+            core_type (typing/types.mli[321,11930+26]..[321,11930+63])
+              Ptyp_arrow
+              Labelled "injective"
+              core_type (typing/types.mli[321,11930+36]..[321,11930+40])
+                Ptyp_constr "bool" (typing/types.mli[321,11930+36]..[321,11930+40])
+                []
+              core_type (typing/types.mli[321,11930+44]..[321,11930+63])
+                Ptyp_arrow
+                Labelled "arity"
+                core_type (typing/types.mli[321,11930+50]..[321,11930+53])
+                  Ptyp_constr "int" (typing/types.mli[321,11930+50]..[321,11930+53])
+                  []
+                core_type (typing/types.mli[321,11930+57]..[321,11930+63])
+                  Ptyp_constr "list" (typing/types.mli[321,11930+59]..[321,11930+63])
+                  [
+                    core_type (typing/types.mli[321,11930+57]..[321,11930+58])
+                      Ptyp_constr "t" (typing/types.mli[321,11930+57]..[321,11930+58])
+                      []
+                  ]
+            []
+      ]
+  signature_item (typing/types.mli[325,12069+0]..[355,13186+3])
+    Psig_module "Separability" (typing/types.mli[325,12069+7]..[325,12069+19])
+    module_type (typing/types.mli[325,12069+22]..[355,13186+3])
+      Pmty_signature
+      [
+        signature_item (typing/types.mli[326,12095+2]..[327,12165+31])
+          Psig_attribute "ocaml.text"
+          [
+            structure_item (typing/types.mli[326,12095+2]..[327,12165+31])
+              Pstr_eval
+              expression (typing/types.mli[326,12095+2]..[327,12165+31])
+                Pexp_constant PConst_string(" see {!Typedecl_separability} for an explanation of separability\n      and separability modes.",(typing/types.mli[326,12095+2]..[327,12165+31]),None)
+          ]
+        signature_item (typing/types.mli[329,12198+2]..[329,12198+30])
+          Psig_type Rec
+          [
+            type_declaration "t" (typing/types.mli[329,12198+7]..[329,12198+8]) (typing/types.mli[329,12198+2]..[329,12198+30])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_variant
+                  [
+                    (typing/types.mli[329,12198+11]..[329,12198+14])
+                      "Ind" (typing/types.mli[329,12198+11]..[329,12198+14])
+                      []
+                      None
+                    (typing/types.mli[329,12198+15]..[329,12198+20])
+                      "Sep" (typing/types.mli[329,12198+17]..[329,12198+20])
+                      []
+                      None
+                    (typing/types.mli[329,12198+21]..[329,12198+30])
+                      "Deepsep" (typing/types.mli[329,12198+23]..[329,12198+30])
+                      []
+                      None
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (typing/types.mli[330,12229+2]..[330,12229+25])
+          Psig_value
+          value_description "eq" (typing/types.mli[330,12229+6]..[330,12229+8]) (typing/types.mli[330,12229+2]..[330,12229+25])
+            core_type (typing/types.mli[330,12229+11]..[330,12229+25])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[330,12229+11]..[330,12229+12])
+                Ptyp_constr "t" (typing/types.mli[330,12229+11]..[330,12229+12])
+                []
+              core_type (typing/types.mli[330,12229+16]..[330,12229+25])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/types.mli[330,12229+16]..[330,12229+17])
+                  Ptyp_constr "t" (typing/types.mli[330,12229+16]..[330,12229+17])
+                  []
+                core_type (typing/types.mli[330,12229+21]..[330,12229+25])
+                  Ptyp_constr "bool" (typing/types.mli[330,12229+21]..[330,12229+25])
+                  []
+            []
+        signature_item (typing/types.mli[331,12255+2]..[331,12255+43])
+          Psig_value
+          value_description "print" (typing/types.mli[331,12255+6]..[331,12255+11]) (typing/types.mli[331,12255+2]..[331,12255+43])
+            core_type (typing/types.mli[331,12255+14]..[331,12255+43])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[331,12255+14]..[331,12255+30])
+                Ptyp_constr "Format.formatter" (typing/types.mli[331,12255+14]..[331,12255+30])
+                []
+              core_type (typing/types.mli[331,12255+34]..[331,12255+43])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/types.mli[331,12255+34]..[331,12255+35])
+                  Ptyp_constr "t" (typing/types.mli[331,12255+34]..[331,12255+35])
+                  []
+                core_type (typing/types.mli[331,12255+39]..[331,12255+43])
+                  Ptyp_constr "unit" (typing/types.mli[331,12255+39]..[331,12255+43])
+                  []
+            []
+        signature_item (typing/types.mli[333,12300+2]..[333,12300+21])
+          Psig_value
+          value_description "rank" (typing/types.mli[333,12300+6]..[333,12300+10]) (typing/types.mli[333,12300+2]..[333,12300+21])
+            attribute "ocaml.doc"
+              [
+                structure_item (typing/types.mli[334,12322+2]..[337,12474+40])
+                  Pstr_eval
+                  expression (typing/types.mli[334,12322+2]..[337,12474+40])
+                    Pexp_constant PConst_string(" Modes are ordered from the least to the most demanding:\n      Ind < Sep < Deepsep.\n      'rank' maps them to integers in an order-respecting way:\n      m1 < m2  <=>  rank m1 < rank m2 ",(typing/types.mli[334,12322+2]..[337,12474+40]),None)
+              ]
+            core_type (typing/types.mli[333,12300+13]..[333,12300+21])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[333,12300+13]..[333,12300+14])
+                Ptyp_constr "t" (typing/types.mli[333,12300+13]..[333,12300+14])
+                []
+              core_type (typing/types.mli[333,12300+18]..[333,12300+21])
+                Ptyp_constr "int" (typing/types.mli[333,12300+18]..[333,12300+21])
+                []
+            []
+        signature_item (typing/types.mli[339,12516+2]..[339,12516+29])
+          Psig_value
+          value_description "compare" (typing/types.mli[339,12516+6]..[339,12516+13]) (typing/types.mli[339,12516+2]..[339,12516+29])
+            attribute "ocaml.doc"
+              [
+                structure_item (typing/types.mli[340,12546+2]..[340,12546+59])
+                  Pstr_eval
+                  expression (typing/types.mli[340,12546+2]..[340,12546+59])
+                    Pexp_constant PConst_string(" Compare two mode according to their mode ordering. ",(typing/types.mli[340,12546+2]..[340,12546+59]),None)
+              ]
+            core_type (typing/types.mli[339,12516+16]..[339,12516+29])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[339,12516+16]..[339,12516+17])
+                Ptyp_constr "t" (typing/types.mli[339,12516+16]..[339,12516+17])
+                []
+              core_type (typing/types.mli[339,12516+21]..[339,12516+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/types.mli[339,12516+21]..[339,12516+22])
+                  Ptyp_constr "t" (typing/types.mli[339,12516+21]..[339,12516+22])
+                  []
+                core_type (typing/types.mli[339,12516+26]..[339,12516+29])
+                  Ptyp_constr "int" (typing/types.mli[339,12516+26]..[339,12516+29])
+                  []
+            []
+        signature_item (typing/types.mli[342,12607+2]..[342,12607+23])
+          Psig_value
+          value_description "max" (typing/types.mli[342,12607+6]..[342,12607+9]) (typing/types.mli[342,12607+2]..[342,12607+23])
+            attribute "ocaml.doc"
+              [
+                structure_item (typing/types.mli[343,12631+2]..[344,12701+67])
+                  Pstr_eval
+                  expression (typing/types.mli[343,12631+2]..[344,12701+67])
+                    Pexp_constant PConst_string(" [max_mode m1 m2] returns the most demanding mode. It is used to\n      express the conjunction of two parameter mode constraints. ",(typing/types.mli[343,12631+2]..[344,12701+67]),None)
+              ]
+            core_type (typing/types.mli[342,12607+12]..[342,12607+23])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[342,12607+12]..[342,12607+13])
+                Ptyp_constr "t" (typing/types.mli[342,12607+12]..[342,12607+13])
+                []
+              core_type (typing/types.mli[342,12607+17]..[342,12607+23])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/types.mli[342,12607+17]..[342,12607+18])
+                  Ptyp_constr "t" (typing/types.mli[342,12607+17]..[342,12607+18])
+                  []
+                core_type (typing/types.mli[342,12607+22]..[342,12607+23])
+                  Ptyp_constr "t" (typing/types.mli[342,12607+22]..[342,12607+23])
+                  []
+            []
+        signature_item (typing/types.mli[346,12770+2]..[346,12770+25])
+          Psig_type Rec
+          [
+            type_declaration "signature" (typing/types.mli[346,12770+7]..[346,12770+16]) (typing/types.mli[346,12770+2]..[346,12770+25])
+              attribute "ocaml.doc"
+                [
+                  structure_item (typing/types.mli[347,12796+2]..[349,12926+72])
+                    Pstr_eval
+                    expression (typing/types.mli[347,12796+2]..[349,12926+72])
+                      Pexp_constant PConst_string(" The 'separability signature' of a type assigns a mode for\n      each of its parameters. [('a, 'b) t] has mode [(m1, m2)] if\n      [(t1, t2) t] is separable whenever [t1, t2] have mode [m1, m2]. ",(typing/types.mli[347,12796+2]..[349,12926+72]),None)
+                ]
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (typing/types.mli[346,12770+19]..[346,12770+25])
+                    Ptyp_constr "list" (typing/types.mli[346,12770+21]..[346,12770+25])
+                    [
+                      core_type (typing/types.mli[346,12770+19]..[346,12770+20])
+                        Ptyp_constr "t" (typing/types.mli[346,12770+19]..[346,12770+20])
+                        []
+                    ]
+          ]
+        signature_item (typing/types.mli[351,13000+2]..[351,13000+61])
+          Psig_value
+          value_description "print_signature" (typing/types.mli[351,13000+6]..[351,13000+21]) (typing/types.mli[351,13000+2]..[351,13000+61])
+            core_type (typing/types.mli[351,13000+24]..[351,13000+61])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/types.mli[351,13000+24]..[351,13000+40])
+                Ptyp_constr "Format.formatter" (typing/types.mli[351,13000+24]..[351,13000+40])
+                []
+              core_type (typing/types.mli[351,13000+44]..[351,13000+61])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/types.mli[351,13000+44]..[351,13000+53])
+                  Ptyp_constr "signature" (typing/types.mli[351,13000+44]..[351,13000+53])
+                  []
+                core_type (typing/types.mli[351,13000+57]..[351,13000+61])
+                  Ptyp_constr "unit" (typing/types.mli[351,13000+57]..[351,13000+61])
+                  []
+            []
+        signature_item (typing/types.mli[353,13063+2]..[353,13063+48])
+          Psig_value
+          value_description "default_signature" (typing/types.mli[353,13063+6]..[353,13063+23]) (typing/types.mli[353,13063+2]..[353,13063+48])
+            attribute "ocaml.doc"
+              [
+                structure_item (typing/types.mli[354,13112+2]..[354,13112+73])
+                  Pstr_eval
+                  expression (typing/types.mli[354,13112+2]..[354,13112+73])
+                    Pexp_constant PConst_string(" The most pessimistic separability for a completely unknown type. ",(typing/types.mli[354,13112+2]..[354,13112+73]),None)
+              ]
+            core_type (typing/types.mli[353,13063+26]..[353,13063+48])
+              Ptyp_arrow
+              Labelled "arity"
+              core_type (typing/types.mli[353,13063+32]..[353,13063+35])
+                Ptyp_constr "int" (typing/types.mli[353,13063+32]..[353,13063+35])
+                []
+              core_type (typing/types.mli[353,13063+39]..[353,13063+48])
+                Ptyp_constr "signature" (typing/types.mli[353,13063+39]..[353,13063+48])
+                []
+            []
+      ]
+  signature_item (typing/types.mli[359,13215+0]..[419,15112+41])
+    Psig_type Rec
+    [
+      type_declaration "type_declaration" (typing/types.mli[359,13215+5]..[359,13215+21]) (typing/types.mli[359,13215+0]..[376,13837+3])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (typing/types.mli[360,13239+4]..[360,13239+32])
+                Immutable
+                "type_params" (typing/types.mli[360,13239+4]..[360,13239+15])                core_type (typing/types.mli[360,13239+17]..[360,13239+31])
+                  Ptyp_constr "list" (typing/types.mli[360,13239+27]..[360,13239+31])
+                  [
+                    core_type (typing/types.mli[360,13239+17]..[360,13239+26])
+                      Ptyp_constr "type_expr" (typing/types.mli[360,13239+17]..[360,13239+26])
+                      []
+                  ]
+              (typing/types.mli[361,13272+4]..[361,13272+20])
+                Immutable
+                "type_arity" (typing/types.mli[361,13272+4]..[361,13272+14])                core_type (typing/types.mli[361,13272+16]..[361,13272+19])
+                  Ptyp_constr "int" (typing/types.mli[361,13272+16]..[361,13272+19])
+                  []
+              (typing/types.mli[362,13293+4]..[362,13293+30])
+                Immutable
+                "type_kind" (typing/types.mli[362,13293+4]..[362,13293+13])                core_type (typing/types.mli[362,13293+15]..[362,13293+29])
+                  Ptyp_constr "type_decl_kind" (typing/types.mli[362,13293+15]..[362,13293+29])
+                  []
+              (typing/types.mli[363,13324+4]..[363,13324+31])
+                Immutable
+                "type_private" (typing/types.mli[363,13324+4]..[363,13324+16])                core_type (typing/types.mli[363,13324+18]..[363,13324+30])
+                  Ptyp_constr "private_flag" (typing/types.mli[363,13324+18]..[363,13324+30])
+                  []
+              (typing/types.mli[364,13356+4]..[364,13356+36])
+                Immutable
+                "type_manifest" (typing/types.mli[364,13356+4]..[364,13356+17])                core_type (typing/types.mli[364,13356+19]..[364,13356+35])
+                  Ptyp_constr "option" (typing/types.mli[364,13356+29]..[364,13356+35])
+                  [
+                    core_type (typing/types.mli[364,13356+19]..[364,13356+28])
+                      Ptyp_constr "type_expr" (typing/types.mli[364,13356+19]..[364,13356+28])
+                      []
+                  ]
+              (typing/types.mli[365,13393+4]..[365,13393+35])
+                Immutable
+                "type_variance" (typing/types.mli[365,13393+4]..[365,13393+17])                core_type (typing/types.mli[365,13393+19]..[365,13393+34])
+                  Ptyp_constr "list" (typing/types.mli[365,13393+30]..[365,13393+34])
+                  [
+                    core_type (typing/types.mli[365,13393+19]..[365,13393+29])
+                      Ptyp_constr "Variance.t" (typing/types.mli[365,13393+19]..[365,13393+29])
+                      []
+                  ]
+              (typing/types.mli[367,13497+4]..[367,13497+43])
+                Immutable
+                "type_separability" (typing/types.mli[367,13497+4]..[367,13497+21])                core_type (typing/types.mli[367,13497+23]..[367,13497+42])
+                  Ptyp_constr "list" (typing/types.mli[367,13497+38]..[367,13497+42])
+                  [
+                    core_type (typing/types.mli[367,13497+23]..[367,13497+37])
+                      Ptyp_constr "Separability.t" (typing/types.mli[367,13497+23]..[367,13497+37])
+                      []
+                  ]
+              (typing/types.mli[368,13541+4]..[368,13541+26])
+                Immutable
+                "type_is_newtype" (typing/types.mli[368,13541+4]..[368,13541+19])                core_type (typing/types.mli[368,13541+21]..[368,13541+25])
+                  Ptyp_constr "bool" (typing/types.mli[368,13541+21]..[368,13541+25])
+                  []
+              (typing/types.mli[369,13568+4]..[369,13568+30])
+                Immutable
+                "type_expansion_scope" (typing/types.mli[369,13568+4]..[369,13568+24])                core_type (typing/types.mli[369,13568+26]..[369,13568+29])
+                  Ptyp_constr "int" (typing/types.mli[369,13568+26]..[369,13568+29])
+                  []
+              (typing/types.mli[370,13599+4]..[370,13599+25])
+                Immutable
+                "type_loc" (typing/types.mli[370,13599+4]..[370,13599+12])                core_type (typing/types.mli[370,13599+14]..[370,13599+24])
+                  Ptyp_constr "Location.t" (typing/types.mli[370,13599+14]..[370,13599+24])
+                  []
+              (typing/types.mli[371,13625+4]..[371,13625+42])
+                Immutable
+                "type_attributes" (typing/types.mli[371,13625+4]..[371,13625+19])                core_type (typing/types.mli[371,13625+21]..[371,13625+41])
+                  Ptyp_constr "Parsetree.attributes" (typing/types.mli[371,13625+21]..[371,13625+41])
+                  []
+              (typing/types.mli[372,13668+4]..[372,13668+37])
+                Immutable
+                "type_immediate" (typing/types.mli[372,13668+4]..[372,13668+18])                core_type (typing/types.mli[372,13668+20]..[372,13668+36])
+                  Ptyp_constr "Type_immediacy.t" (typing/types.mli[372,13668+20]..[372,13668+36])
+                  []
+              (typing/types.mli[373,13706+4]..[373,13706+31])
+                Immutable
+                "type_unboxed_default" (typing/types.mli[373,13706+4]..[373,13706+24])                core_type (typing/types.mli[373,13706+26]..[373,13706+30])
+                  Ptyp_constr "bool" (typing/types.mli[373,13706+26]..[373,13706+30])
+                  []
+              (typing/types.mli[375,13816+4]..[375,13816+20])
+                Immutable
+                "type_uid" (typing/types.mli[375,13816+4]..[375,13816+12])                core_type (typing/types.mli[375,13816+14]..[375,13816+19])
+                  Ptyp_constr "Uid.t" (typing/types.mli[375,13816+14]..[375,13816+19])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "type_decl_kind" (typing/types.mli[378,13842+4]..[378,13842+18]) (typing/types.mli[378,13842+0]..[378,13842+75])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (typing/types.mli[378,13842+21]..[378,13842+75])
+              Ptyp_constr "type_kind" (typing/types.mli[378,13842+66]..[378,13842+75])
+              [
+                core_type (typing/types.mli[378,13842+22]..[378,13842+39])
+                  Ptyp_constr "label_declaration" (typing/types.mli[378,13842+22]..[378,13842+39])
+                  []
+                core_type (typing/types.mli[378,13842+41]..[378,13842+64])
+                  Ptyp_constr "constructor_declaration" (typing/types.mli[378,13842+41]..[378,13842+64])
+                  []
+              ]
+      type_declaration "type_kind" (typing/types.mli[380,13919+18]..[380,13919+27]) (typing/types.mli[380,13919+0]..[384,14077+13])
+        ptype_params =
+          [
+            core_type (typing/types.mli[380,13919+5]..[380,13919+9])
+              Ptyp_var lbl
+            core_type (typing/types.mli[380,13919+11]..[380,13919+16])
+              Ptyp_var cstr
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[381,13949+4]..[381,13949+17])
+                "Type_abstract" (typing/types.mli[381,13949+4]..[381,13949+17])
+                []
+                None
+              (typing/types.mli[382,13967+2]..[382,13967+53])
+                "Type_record" (typing/types.mli[382,13967+4]..[382,13967+15])
+                [
+                  core_type (typing/types.mli[382,13967+19]..[382,13967+28])
+                    Ptyp_constr "list" (typing/types.mli[382,13967+24]..[382,13967+28])
+                    [
+                      core_type (typing/types.mli[382,13967+19]..[382,13967+23])
+                        Ptyp_var lbl
+                    ]
+                  core_type (typing/types.mli[382,13967+32]..[382,13967+53])
+                    Ptyp_constr "record_representation" (typing/types.mli[382,13967+32]..[382,13967+53])
+                    []
+                ]
+                None
+              (typing/types.mli[383,14021+2]..[383,14021+55])
+                "Type_variant" (typing/types.mli[383,14021+4]..[383,14021+16])
+                [
+                  core_type (typing/types.mli[383,14021+20]..[383,14021+30])
+                    Ptyp_constr "list" (typing/types.mli[383,14021+26]..[383,14021+30])
+                    [
+                      core_type (typing/types.mli[383,14021+20]..[383,14021+25])
+                        Ptyp_var cstr
+                    ]
+                  core_type (typing/types.mli[383,14021+33]..[383,14021+55])
+                    Ptyp_constr "variant_representation" (typing/types.mli[383,14021+33]..[383,14021+55])
+                    []
+                ]
+                None
+              (typing/types.mli[384,14077+2]..[384,14077+13])
+                "Type_open" (typing/types.mli[384,14077+4]..[384,14077+13])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "record_representation" (typing/types.mli[386,14092+4]..[386,14092+25]) (typing/types.mli[386,14092+0]..[391,14405+30])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[387,14120+4]..[387,14120+18])
+                "Record_regular" (typing/types.mli[387,14120+4]..[387,14120+18])
+                []
+                None
+              (typing/types.mli[388,14196+2]..[388,14196+16])
+                "Record_float" (typing/types.mli[388,14196+4]..[388,14196+16])
+                []
+                None
+              (typing/types.mli[389,14264+2]..[389,14264+26])
+                "Record_unboxed" (typing/types.mli[389,14264+4]..[389,14264+18])
+                [
+                  core_type (typing/types.mli[389,14264+22]..[389,14264+26])
+                    Ptyp_constr "bool" (typing/types.mli[389,14264+22]..[389,14264+26])
+                    []
+                ]
+                None
+              (typing/types.mli[390,14344+2]..[390,14344+25])
+                "Record_inlined" (typing/types.mli[390,14344+4]..[390,14344+18])
+                [
+                  core_type (typing/types.mli[390,14344+22]..[390,14344+25])
+                    Ptyp_constr "int" (typing/types.mli[390,14344+22]..[390,14344+25])
+                    []
+                ]
+                None
+              (typing/types.mli[391,14405+2]..[391,14405+30])
+                "Record_extension" (typing/types.mli[391,14405+4]..[391,14405+20])
+                [
+                  core_type (typing/types.mli[391,14405+24]..[391,14405+30])
+                    Ptyp_constr "Path.t" (typing/types.mli[391,14405+24]..[391,14405+30])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "variant_representation" (typing/types.mli[393,14483+4]..[393,14483+26]) (typing/types.mli[393,14483+0]..[395,14578+19])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[394,14512+4]..[394,14512+19])
+                "Variant_regular" (typing/types.mli[394,14512+4]..[394,14512+19])
+                []
+                None
+              (typing/types.mli[395,14578+2]..[395,14578+19])
+                "Variant_unboxed" (typing/types.mli[395,14578+4]..[395,14578+19])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "label_declaration" (typing/types.mli[397,14651+4]..[397,14651+21]) (typing/types.mli[397,14651+0]..[405,14837+3])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (typing/types.mli[399,14679+4]..[399,14679+19])
+                Immutable
+                "ld_id" (typing/types.mli[399,14679+4]..[399,14679+9])                core_type (typing/types.mli[399,14679+11]..[399,14679+18])
+                  Ptyp_constr "Ident.t" (typing/types.mli[399,14679+11]..[399,14679+18])
+                  []
+              (typing/types.mli[400,14699+4]..[400,14699+29])
+                Immutable
+                "ld_mutable" (typing/types.mli[400,14699+4]..[400,14699+14])                core_type (typing/types.mli[400,14699+16]..[400,14699+28])
+                  Ptyp_constr "mutable_flag" (typing/types.mli[400,14699+16]..[400,14699+28])
+                  []
+              (typing/types.mli[401,14729+4]..[401,14729+23])
+                Immutable
+                "ld_type" (typing/types.mli[401,14729+4]..[401,14729+11])                core_type (typing/types.mli[401,14729+13]..[401,14729+22])
+                  Ptyp_constr "type_expr" (typing/types.mli[401,14729+13]..[401,14729+22])
+                  []
+              (typing/types.mli[402,14753+4]..[402,14753+23])
+                Immutable
+                "ld_loc" (typing/types.mli[402,14753+4]..[402,14753+10])                core_type (typing/types.mli[402,14753+12]..[402,14753+22])
+                  Ptyp_constr "Location.t" (typing/types.mli[402,14753+12]..[402,14753+22])
+                  []
+              (typing/types.mli[403,14777+4]..[403,14777+40])
+                Immutable
+                "ld_attributes" (typing/types.mli[403,14777+4]..[403,14777+17])                core_type (typing/types.mli[403,14777+19]..[403,14777+39])
+                  Ptyp_constr "Parsetree.attributes" (typing/types.mli[403,14777+19]..[403,14777+39])
+                  []
+              (typing/types.mli[404,14818+4]..[404,14818+18])
+                Immutable
+                "ld_uid" (typing/types.mli[404,14818+4]..[404,14818+10])                core_type (typing/types.mli[404,14818+12]..[404,14818+17])
+                  Ptyp_constr "Uid.t" (typing/types.mli[404,14818+12]..[404,14818+17])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "constructor_declaration" (typing/types.mli[407,14842+4]..[407,14842+27]) (typing/types.mli[407,14842+0]..[415,15046+3])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (typing/types.mli[409,14876+4]..[409,14876+19])
+                Immutable
+                "cd_id" (typing/types.mli[409,14876+4]..[409,14876+9])                core_type (typing/types.mli[409,14876+11]..[409,14876+18])
+                  Ptyp_constr "Ident.t" (typing/types.mli[409,14876+11]..[409,14876+18])
+                  []
+              (typing/types.mli[410,14896+4]..[410,14896+35])
+                Immutable
+                "cd_args" (typing/types.mli[410,14896+4]..[410,14896+11])                core_type (typing/types.mli[410,14896+13]..[410,14896+34])
+                  Ptyp_constr "constructor_arguments" (typing/types.mli[410,14896+13]..[410,14896+34])
+                  []
+              (typing/types.mli[411,14932+4]..[411,14932+29])
+                Immutable
+                "cd_res" (typing/types.mli[411,14932+4]..[411,14932+10])                core_type (typing/types.mli[411,14932+12]..[411,14932+28])
+                  Ptyp_constr "option" (typing/types.mli[411,14932+22]..[411,14932+28])
+                  [
+                    core_type (typing/types.mli[411,14932+12]..[411,14932+21])
+                      Ptyp_constr "type_expr" (typing/types.mli[411,14932+12]..[411,14932+21])
+                      []
+                  ]
+              (typing/types.mli[412,14962+4]..[412,14962+23])
+                Immutable
+                "cd_loc" (typing/types.mli[412,14962+4]..[412,14962+10])                core_type (typing/types.mli[412,14962+12]..[412,14962+22])
+                  Ptyp_constr "Location.t" (typing/types.mli[412,14962+12]..[412,14962+22])
+                  []
+              (typing/types.mli[413,14986+4]..[413,14986+40])
+                Immutable
+                "cd_attributes" (typing/types.mli[413,14986+4]..[413,14986+17])                core_type (typing/types.mli[413,14986+19]..[413,14986+39])
+                  Ptyp_constr "Parsetree.attributes" (typing/types.mli[413,14986+19]..[413,14986+39])
+                  []
+              (typing/types.mli[414,15027+4]..[414,15027+18])
+                Immutable
+                "cd_uid" (typing/types.mli[414,15027+4]..[414,15027+10])                core_type (typing/types.mli[414,15027+12]..[414,15027+17])
+                  Ptyp_constr "Uid.t" (typing/types.mli[414,15027+12]..[414,15027+17])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "constructor_arguments" (typing/types.mli[417,15051+4]..[417,15051+25]) (typing/types.mli[417,15051+0]..[419,15112+41])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[418,15079+2]..[418,15079+32])
+                "Cstr_tuple" (typing/types.mli[418,15079+4]..[418,15079+14])
+                [
+                  core_type (typing/types.mli[418,15079+18]..[418,15079+32])
+                    Ptyp_constr "list" (typing/types.mli[418,15079+28]..[418,15079+32])
+                    [
+                      core_type (typing/types.mli[418,15079+18]..[418,15079+27])
+                        Ptyp_constr "type_expr" (typing/types.mli[418,15079+18]..[418,15079+27])
+                        []
+                    ]
+                ]
+                None
+              (typing/types.mli[419,15112+2]..[419,15112+41])
+                "Cstr_record" (typing/types.mli[419,15112+4]..[419,15112+15])
+                [
+                  core_type (typing/types.mli[419,15112+19]..[419,15112+41])
+                    Ptyp_constr "list" (typing/types.mli[419,15112+37]..[419,15112+41])
+                    [
+                      core_type (typing/types.mli[419,15112+19]..[419,15112+36])
+                        Ptyp_constr "label_declaration" (typing/types.mli[419,15112+19]..[419,15112+36])
+                        []
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/types.mli[421,15155+0]..[436,15560+16])
+    Psig_type Rec
+    [
+      type_declaration "extension_constructor" (typing/types.mli[421,15155+5]..[421,15155+26]) (typing/types.mli[421,15155+0]..[431,15443+3])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (typing/types.mli[423,15188+4]..[423,15188+26])
+                Immutable
+                "ext_type_path" (typing/types.mli[423,15188+4]..[423,15188+17])                core_type (typing/types.mli[423,15188+19]..[423,15188+25])
+                  Ptyp_constr "Path.t" (typing/types.mli[423,15188+19]..[423,15188+25])
+                  []
+              (typing/types.mli[424,15215+4]..[424,15215+36])
+                Immutable
+                "ext_type_params" (typing/types.mli[424,15215+4]..[424,15215+19])                core_type (typing/types.mli[424,15215+21]..[424,15215+35])
+                  Ptyp_constr "list" (typing/types.mli[424,15215+31]..[424,15215+35])
+                  [
+                    core_type (typing/types.mli[424,15215+21]..[424,15215+30])
+                      Ptyp_constr "type_expr" (typing/types.mli[424,15215+21]..[424,15215+30])
+                      []
+                  ]
+              (typing/types.mli[425,15252+4]..[425,15252+36])
+                Immutable
+                "ext_args" (typing/types.mli[425,15252+4]..[425,15252+12])                core_type (typing/types.mli[425,15252+14]..[425,15252+35])
+                  Ptyp_constr "constructor_arguments" (typing/types.mli[425,15252+14]..[425,15252+35])
+                  []
+              (typing/types.mli[426,15289+4]..[426,15289+35])
+                Immutable
+                "ext_ret_type" (typing/types.mli[426,15289+4]..[426,15289+16])                core_type (typing/types.mli[426,15289+18]..[426,15289+34])
+                  Ptyp_constr "option" (typing/types.mli[426,15289+28]..[426,15289+34])
+                  [
+                    core_type (typing/types.mli[426,15289+18]..[426,15289+27])
+                      Ptyp_constr "type_expr" (typing/types.mli[426,15289+18]..[426,15289+27])
+                      []
+                  ]
+              (typing/types.mli[427,15325+4]..[427,15325+30])
+                Immutable
+                "ext_private" (typing/types.mli[427,15325+4]..[427,15325+15])                core_type (typing/types.mli[427,15325+17]..[427,15325+29])
+                  Ptyp_constr "private_flag" (typing/types.mli[427,15325+17]..[427,15325+29])
+                  []
+              (typing/types.mli[428,15356+4]..[428,15356+24])
+                Immutable
+                "ext_loc" (typing/types.mli[428,15356+4]..[428,15356+11])                core_type (typing/types.mli[428,15356+13]..[428,15356+23])
+                  Ptyp_constr "Location.t" (typing/types.mli[428,15356+13]..[428,15356+23])
+                  []
+              (typing/types.mli[429,15381+4]..[429,15381+41])
+                Immutable
+                "ext_attributes" (typing/types.mli[429,15381+4]..[429,15381+18])                core_type (typing/types.mli[429,15381+20]..[429,15381+40])
+                  Ptyp_constr "Parsetree.attributes" (typing/types.mli[429,15381+20]..[429,15381+40])
+                  []
+              (typing/types.mli[430,15423+4]..[430,15423+19])
+                Immutable
+                "ext_uid" (typing/types.mli[430,15423+4]..[430,15423+11])                core_type (typing/types.mli[430,15423+13]..[430,15423+18])
+                  Ptyp_constr "Uid.t" (typing/types.mli[430,15423+13]..[430,15423+18])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "type_transparence" (typing/types.mli[433,15448+4]..[433,15448+21]) (typing/types.mli[433,15448+0]..[436,15560+16])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[434,15472+4]..[434,15472+15])
+                "Type_public" (typing/types.mli[434,15472+4]..[434,15472+15])
+                []
+                None
+              (typing/types.mli[435,15522+2]..[435,15522+12])
+                "Type_new" (typing/types.mli[435,15522+4]..[435,15522+12])
+                []
+                None
+              (typing/types.mli[436,15560+2]..[436,15560+16])
+                "Type_private" (typing/types.mli[436,15560+4]..[436,15560+16])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/types.mli[440,15648+0]..[440,15648+43])
+    Psig_module "Concr" (typing/types.mli[440,15648+7]..[440,15648+12])
+    module_type (typing/types.mli[440,15648+15]..[440,15648+43])
+      Pmty_with
+      module_type (typing/types.mli[440,15648+15]..[440,15648+20])
+        Pmty_ident "Set.S" (typing/types.mli[440,15648+15]..[440,15648+20])
+      [
+        Pwith_type "elt" (typing/types.mli[440,15648+31]..[440,15648+34])
+          type_declaration "elt" (typing/types.mli[440,15648+31]..[440,15648+34]) (typing/types.mli[440,15648+26]..[440,15648+43])
+            ptype_params =
+              []
+            ptype_cstrs =
+              []
+            ptype_kind =
+              Ptype_abstract
+            ptype_private = Public
+            ptype_manifest =
+              Some
+                core_type (typing/types.mli[440,15648+37]..[440,15648+43])
+                  Ptyp_constr "string" (typing/types.mli[440,15648+37]..[440,15648+43])
+                  []
+      ]
+  signature_item (typing/types.mli[442,15693+0]..[452,16018+48])
+    Psig_type Rec
+    [
+      type_declaration "class_type" (typing/types.mli[442,15693+5]..[442,15693+15]) (typing/types.mli[442,15693+0]..[445,15803+51])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[443,15711+4]..[443,15711+54])
+                "Cty_constr" (typing/types.mli[443,15711+4]..[443,15711+14])
+                [
+                  core_type (typing/types.mli[443,15711+18]..[443,15711+24])
+                    Ptyp_constr "Path.t" (typing/types.mli[443,15711+18]..[443,15711+24])
+                    []
+                  core_type (typing/types.mli[443,15711+27]..[443,15711+41])
+                    Ptyp_constr "list" (typing/types.mli[443,15711+37]..[443,15711+41])
+                    [
+                      core_type (typing/types.mli[443,15711+27]..[443,15711+36])
+                        Ptyp_constr "type_expr" (typing/types.mli[443,15711+27]..[443,15711+36])
+                        []
+                    ]
+                  core_type (typing/types.mli[443,15711+44]..[443,15711+54])
+                    Ptyp_constr "class_type" (typing/types.mli[443,15711+44]..[443,15711+54])
+                    []
+                ]
+                None
+              (typing/types.mli[444,15766+2]..[444,15766+36])
+                "Cty_signature" (typing/types.mli[444,15766+4]..[444,15766+17])
+                [
+                  core_type (typing/types.mli[444,15766+21]..[444,15766+36])
+                    Ptyp_constr "class_signature" (typing/types.mli[444,15766+21]..[444,15766+36])
+                    []
+                ]
+                None
+              (typing/types.mli[445,15803+2]..[445,15803+51])
+                "Cty_arrow" (typing/types.mli[445,15803+4]..[445,15803+13])
+                [
+                  core_type (typing/types.mli[445,15803+17]..[445,15803+26])
+                    Ptyp_constr "arg_label" (typing/types.mli[445,15803+17]..[445,15803+26])
+                    []
+                  core_type (typing/types.mli[445,15803+29]..[445,15803+38])
+                    Ptyp_constr "type_expr" (typing/types.mli[445,15803+29]..[445,15803+38])
+                    []
+                  core_type (typing/types.mli[445,15803+41]..[445,15803+51])
+                    Ptyp_constr "class_type" (typing/types.mli[445,15803+41]..[445,15803+51])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "class_signature" (typing/types.mli[447,15856+4]..[447,15856+19]) (typing/types.mli[447,15856+0]..[452,16018+48])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (typing/types.mli[448,15878+4]..[448,15878+25])
+                Immutable
+                "csig_self" (typing/types.mli[448,15878+4]..[448,15878+13])                core_type (typing/types.mli[448,15878+15]..[448,15878+24])
+                  Ptyp_constr "type_expr" (typing/types.mli[448,15878+15]..[448,15878+24])
+                  []
+              (typing/types.mli[449,15904+4]..[450,15919+73])
+                Immutable
+                "csig_vars" (typing/types.mli[449,15904+4]..[449,15904+13])                core_type (typing/types.mli[450,15919+6]..[450,15919+72])
+                  Ptyp_constr "Vars.t" (typing/types.mli[450,15919+66]..[450,15919+72])
+                  [
+                    core_type (typing/types.mli[450,15919+7]..[450,15919+64])
+                      Ptyp_tuple
+                      [
+                        core_type (typing/types.mli[450,15919+7]..[450,15919+28])
+                          Ptyp_constr "Asttypes.mutable_flag" (typing/types.mli[450,15919+7]..[450,15919+28])
+                          []
+                        core_type (typing/types.mli[450,15919+31]..[450,15919+52])
+                          Ptyp_constr "Asttypes.virtual_flag" (typing/types.mli[450,15919+31]..[450,15919+52])
+                          []
+                        core_type (typing/types.mli[450,15919+55]..[450,15919+64])
+                          Ptyp_constr "type_expr" (typing/types.mli[450,15919+55]..[450,15919+64])
+                          []
+                      ]
+                  ]
+              (typing/types.mli[451,15993+4]..[451,15993+24])
+                Immutable
+                "csig_concr" (typing/types.mli[451,15993+4]..[451,15993+14])                core_type (typing/types.mli[451,15993+16]..[451,15993+23])
+                  Ptyp_constr "Concr.t" (typing/types.mli[451,15993+16]..[451,15993+23])
+                  []
+              (typing/types.mli[452,16018+4]..[452,16018+46])
+                Immutable
+                "csig_inher" (typing/types.mli[452,16018+4]..[452,16018+14])                core_type (typing/types.mli[452,16018+16]..[452,16018+46])
+                  Ptyp_constr "list" (typing/types.mli[452,16018+42]..[452,16018+46])
+                  [
+                    core_type (typing/types.mli[452,16018+17]..[452,16018+40])
+                      Ptyp_tuple
+                      [
+                        core_type (typing/types.mli[452,16018+17]..[452,16018+23])
+                          Ptyp_constr "Path.t" (typing/types.mli[452,16018+17]..[452,16018+23])
+                          []
+                        core_type (typing/types.mli[452,16018+26]..[452,16018+40])
+                          Ptyp_constr "list" (typing/types.mli[452,16018+36]..[452,16018+40])
+                          [
+                            core_type (typing/types.mli[452,16018+26]..[452,16018+35])
+                              Ptyp_constr "type_expr" (typing/types.mli[452,16018+26]..[452,16018+35])
+                              []
+                          ]
+                      ]
+                  ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/types.mli[454,16068+0]..[463,16334+3])
+    Psig_type Rec
+    [
+      type_declaration "class_declaration" (typing/types.mli[454,16068+5]..[454,16068+22]) (typing/types.mli[454,16068+0]..[463,16334+3])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (typing/types.mli[455,16093+4]..[455,16093+31])
+                Immutable
+                "cty_params" (typing/types.mli[455,16093+4]..[455,16093+14])                core_type (typing/types.mli[455,16093+16]..[455,16093+30])
+                  Ptyp_constr "list" (typing/types.mli[455,16093+26]..[455,16093+30])
+                  [
+                    core_type (typing/types.mli[455,16093+16]..[455,16093+25])
+                      Ptyp_constr "type_expr" (typing/types.mli[455,16093+16]..[455,16093+25])
+                      []
+                  ]
+              (typing/types.mli[456,16125+4]..[456,16125+33])
+                Mutable
+                "cty_type" (typing/types.mli[456,16125+12]..[456,16125+20])                core_type (typing/types.mli[456,16125+22]..[456,16125+32])
+                  Ptyp_constr "class_type" (typing/types.mli[456,16125+22]..[456,16125+32])
+                  []
+              (typing/types.mli[457,16159+4]..[457,16159+21])
+                Immutable
+                "cty_path" (typing/types.mli[457,16159+4]..[457,16159+12])                core_type (typing/types.mli[457,16159+14]..[457,16159+20])
+                  Ptyp_constr "Path.t" (typing/types.mli[457,16159+14]..[457,16159+20])
+                  []
+              (typing/types.mli[458,16181+4]..[458,16181+30])
+                Immutable
+                "cty_new" (typing/types.mli[458,16181+4]..[458,16181+11])                core_type (typing/types.mli[458,16181+13]..[458,16181+29])
+                  Ptyp_constr "option" (typing/types.mli[458,16181+23]..[458,16181+29])
+                  [
+                    core_type (typing/types.mli[458,16181+13]..[458,16181+22])
+                      Ptyp_constr "type_expr" (typing/types.mli[458,16181+13]..[458,16181+22])
+                      []
+                  ]
+              (typing/types.mli[459,16212+4]..[459,16212+34])
+                Immutable
+                "cty_variance" (typing/types.mli[459,16212+4]..[459,16212+16])                core_type (typing/types.mli[459,16212+18]..[459,16212+33])
+                  Ptyp_constr "list" (typing/types.mli[459,16212+29]..[459,16212+33])
+                  [
+                    core_type (typing/types.mli[459,16212+18]..[459,16212+28])
+                      Ptyp_constr "Variance.t" (typing/types.mli[459,16212+18]..[459,16212+28])
+                      []
+                  ]
+              (typing/types.mli[460,16247+4]..[460,16247+24])
+                Immutable
+                "cty_loc" (typing/types.mli[460,16247+4]..[460,16247+11])                core_type (typing/types.mli[460,16247+13]..[460,16247+23])
+                  Ptyp_constr "Location.t" (typing/types.mli[460,16247+13]..[460,16247+23])
+                  []
+              (typing/types.mli[461,16272+4]..[461,16272+41])
+                Immutable
+                "cty_attributes" (typing/types.mli[461,16272+4]..[461,16272+18])                core_type (typing/types.mli[461,16272+20]..[461,16272+40])
+                  Ptyp_constr "Parsetree.attributes" (typing/types.mli[461,16272+20]..[461,16272+40])
+                  []
+              (typing/types.mli[462,16314+4]..[462,16314+19])
+                Immutable
+                "cty_uid" (typing/types.mli[462,16314+4]..[462,16314+11])                core_type (typing/types.mli[462,16314+13]..[462,16314+18])
+                  Ptyp_constr "Uid.t" (typing/types.mli[462,16314+13]..[462,16314+18])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/types.mli[465,16339+0]..[473,16578+3])
+    Psig_type Rec
+    [
+      type_declaration "class_type_declaration" (typing/types.mli[465,16339+5]..[465,16339+27]) (typing/types.mli[465,16339+0]..[473,16578+3])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (typing/types.mli[466,16369+4]..[466,16369+32])
+                Immutable
+                "clty_params" (typing/types.mli[466,16369+4]..[466,16369+15])                core_type (typing/types.mli[466,16369+17]..[466,16369+31])
+                  Ptyp_constr "list" (typing/types.mli[466,16369+27]..[466,16369+31])
+                  [
+                    core_type (typing/types.mli[466,16369+17]..[466,16369+26])
+                      Ptyp_constr "type_expr" (typing/types.mli[466,16369+17]..[466,16369+26])
+                      []
+                  ]
+              (typing/types.mli[467,16402+4]..[467,16402+26])
+                Immutable
+                "clty_type" (typing/types.mli[467,16402+4]..[467,16402+13])                core_type (typing/types.mli[467,16402+15]..[467,16402+25])
+                  Ptyp_constr "class_type" (typing/types.mli[467,16402+15]..[467,16402+25])
+                  []
+              (typing/types.mli[468,16429+4]..[468,16429+22])
+                Immutable
+                "clty_path" (typing/types.mli[468,16429+4]..[468,16429+13])                core_type (typing/types.mli[468,16429+15]..[468,16429+21])
+                  Ptyp_constr "Path.t" (typing/types.mli[468,16429+15]..[468,16429+21])
+                  []
+              (typing/types.mli[469,16452+4]..[469,16452+35])
+                Immutable
+                "clty_variance" (typing/types.mli[469,16452+4]..[469,16452+17])                core_type (typing/types.mli[469,16452+19]..[469,16452+34])
+                  Ptyp_constr "list" (typing/types.mli[469,16452+30]..[469,16452+34])
+                  [
+                    core_type (typing/types.mli[469,16452+19]..[469,16452+29])
+                      Ptyp_constr "Variance.t" (typing/types.mli[469,16452+19]..[469,16452+29])
+                      []
+                  ]
+              (typing/types.mli[470,16488+4]..[470,16488+25])
+                Immutable
+                "clty_loc" (typing/types.mli[470,16488+4]..[470,16488+12])                core_type (typing/types.mli[470,16488+14]..[470,16488+24])
+                  Ptyp_constr "Location.t" (typing/types.mli[470,16488+14]..[470,16488+24])
+                  []
+              (typing/types.mli[471,16514+4]..[471,16514+42])
+                Immutable
+                "clty_attributes" (typing/types.mli[471,16514+4]..[471,16514+19])                core_type (typing/types.mli[471,16514+21]..[471,16514+41])
+                  Ptyp_constr "Parsetree.attributes" (typing/types.mli[471,16514+21]..[471,16514+41])
+                  []
+              (typing/types.mli[472,16557+4]..[472,16557+20])
+                Immutable
+                "clty_uid" (typing/types.mli[472,16557+4]..[472,16557+12])                core_type (typing/types.mli[472,16557+14]..[472,16557+19])
+                  Ptyp_constr "Uid.t" (typing/types.mli[472,16557+14]..[472,16557+19])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/types.mli[477,16631+0]..[479,16662+10])
+    Psig_type Rec
+    [
+      type_declaration "visibility" (typing/types.mli[477,16631+5]..[477,16631+15]) (typing/types.mli[477,16631+0]..[479,16662+10])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[478,16649+2]..[478,16649+12])
+                "Exported" (typing/types.mli[478,16649+4]..[478,16649+12])
+                []
+                None
+              (typing/types.mli[479,16662+2]..[479,16662+10])
+                "Hidden" (typing/types.mli[479,16662+4]..[479,16662+10])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/types.mli[481,16674+0]..[531,18248+18])
+    Psig_type Rec
+    [
+      type_declaration "module_type" (typing/types.mli[481,16674+5]..[481,16674+16]) (typing/types.mli[481,16674+0]..[485,16799+23])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[482,16693+4]..[482,16693+23])
+                "Mty_ident" (typing/types.mli[482,16693+4]..[482,16693+13])
+                [
+                  core_type (typing/types.mli[482,16693+17]..[482,16693+23])
+                    Ptyp_constr "Path.t" (typing/types.mli[482,16693+17]..[482,16693+23])
+                    []
+                ]
+                None
+              (typing/types.mli[483,16717+2]..[483,16717+30])
+                "Mty_signature" (typing/types.mli[483,16717+4]..[483,16717+17])
+                [
+                  core_type (typing/types.mli[483,16717+21]..[483,16717+30])
+                    Ptyp_constr "signature" (typing/types.mli[483,16717+21]..[483,16717+30])
+                    []
+                ]
+                None
+              (typing/types.mli[484,16748+2]..[484,16748+50])
+                "Mty_functor" (typing/types.mli[484,16748+4]..[484,16748+15])
+                [
+                  core_type (typing/types.mli[484,16748+19]..[484,16748+36])
+                    Ptyp_constr "functor_parameter" (typing/types.mli[484,16748+19]..[484,16748+36])
+                    []
+                  core_type (typing/types.mli[484,16748+39]..[484,16748+50])
+                    Ptyp_constr "module_type" (typing/types.mli[484,16748+39]..[484,16748+50])
+                    []
+                ]
+                None
+              (typing/types.mli[485,16799+2]..[485,16799+23])
+                "Mty_alias" (typing/types.mli[485,16799+4]..[485,16799+13])
+                [
+                  core_type (typing/types.mli[485,16799+17]..[485,16799+23])
+                    Ptyp_constr "Path.t" (typing/types.mli[485,16799+17]..[485,16799+23])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "functor_parameter" (typing/types.mli[487,16824+4]..[487,16824+21]) (typing/types.mli[487,16824+0]..[489,16857+41])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[488,16848+2]..[488,16848+8])
+                "Unit" (typing/types.mli[488,16848+4]..[488,16848+8])
+                []
+                None
+              (typing/types.mli[489,16857+2]..[489,16857+41])
+                "Named" (typing/types.mli[489,16857+4]..[489,16857+9])
+                [
+                  core_type (typing/types.mli[489,16857+13]..[489,16857+27])
+                    Ptyp_constr "option" (typing/types.mli[489,16857+21]..[489,16857+27])
+                    [
+                      core_type (typing/types.mli[489,16857+13]..[489,16857+20])
+                        Ptyp_constr "Ident.t" (typing/types.mli[489,16857+13]..[489,16857+20])
+                        []
+                    ]
+                  core_type (typing/types.mli[489,16857+30]..[489,16857+41])
+                    Ptyp_constr "module_type" (typing/types.mli[489,16857+30]..[489,16857+41])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "module_presence" (typing/types.mli[491,16900+4]..[491,16900+19]) (typing/types.mli[491,16900+0]..[493,16937+13])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[492,16922+2]..[492,16922+14])
+                "Mp_present" (typing/types.mli[492,16922+4]..[492,16922+14])
+                []
+                None
+              (typing/types.mli[493,16937+2]..[493,16937+13])
+                "Mp_absent" (typing/types.mli[493,16937+4]..[493,16937+13])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "signature" (typing/types.mli[495,16952+4]..[495,16952+13]) (typing/types.mli[495,16952+0]..[495,16952+35])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (typing/types.mli[495,16952+16]..[495,16952+35])
+              Ptyp_constr "list" (typing/types.mli[495,16952+31]..[495,16952+35])
+              [
+                core_type (typing/types.mli[495,16952+16]..[495,16952+30])
+                  Ptyp_constr "signature_item" (typing/types.mli[495,16952+16]..[495,16952+30])
+                  []
+              ]
+      type_declaration "signature_item" (typing/types.mli[497,16989+4]..[497,16989+18]) (typing/types.mli[497,16989+0]..[505,17443+80])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[498,17010+4]..[498,17010+57])
+                "Sig_value" (typing/types.mli[498,17010+4]..[498,17010+13])
+                [
+                  core_type (typing/types.mli[498,17010+17]..[498,17010+24])
+                    Ptyp_constr "Ident.t" (typing/types.mli[498,17010+17]..[498,17010+24])
+                    []
+                  core_type (typing/types.mli[498,17010+27]..[498,17010+44])
+                    Ptyp_constr "value_description" (typing/types.mli[498,17010+27]..[498,17010+44])
+                    []
+                  core_type (typing/types.mli[498,17010+47]..[498,17010+57])
+                    Ptyp_constr "visibility" (typing/types.mli[498,17010+47]..[498,17010+57])
+                    []
+                ]
+                None
+              (typing/types.mli[499,17068+2]..[499,17068+68])
+                "Sig_type" (typing/types.mli[499,17068+4]..[499,17068+12])
+                [
+                  core_type (typing/types.mli[499,17068+16]..[499,17068+23])
+                    Ptyp_constr "Ident.t" (typing/types.mli[499,17068+16]..[499,17068+23])
+                    []
+                  core_type (typing/types.mli[499,17068+26]..[499,17068+42])
+                    Ptyp_constr "type_declaration" (typing/types.mli[499,17068+26]..[499,17068+42])
+                    []
+                  core_type (typing/types.mli[499,17068+45]..[499,17068+55])
+                    Ptyp_constr "rec_status" (typing/types.mli[499,17068+45]..[499,17068+55])
+                    []
+                  core_type (typing/types.mli[499,17068+58]..[499,17068+68])
+                    Ptyp_constr "visibility" (typing/types.mli[499,17068+58]..[499,17068+68])
+                    []
+                ]
+                None
+              (typing/types.mli[500,17137+2]..[500,17137+75])
+                "Sig_typext" (typing/types.mli[500,17137+4]..[500,17137+14])
+                [
+                  core_type (typing/types.mli[500,17137+18]..[500,17137+25])
+                    Ptyp_constr "Ident.t" (typing/types.mli[500,17137+18]..[500,17137+25])
+                    []
+                  core_type (typing/types.mli[500,17137+28]..[500,17137+49])
+                    Ptyp_constr "extension_constructor" (typing/types.mli[500,17137+28]..[500,17137+49])
+                    []
+                  core_type (typing/types.mli[500,17137+52]..[500,17137+62])
+                    Ptyp_constr "ext_status" (typing/types.mli[500,17137+52]..[500,17137+62])
+                    []
+                  core_type (typing/types.mli[500,17137+65]..[500,17137+75])
+                    Ptyp_constr "visibility" (typing/types.mli[500,17137+65]..[500,17137+75])
+                    []
+                ]
+                None
+              (typing/types.mli[501,17213+2]..[502,17231+78])
+                "Sig_module" (typing/types.mli[501,17213+4]..[501,17213+14])
+                [
+                  core_type (typing/types.mli[502,17231+6]..[502,17231+13])
+                    Ptyp_constr "Ident.t" (typing/types.mli[502,17231+6]..[502,17231+13])
+                    []
+                  core_type (typing/types.mli[502,17231+16]..[502,17231+31])
+                    Ptyp_constr "module_presence" (typing/types.mli[502,17231+16]..[502,17231+31])
+                    []
+                  core_type (typing/types.mli[502,17231+34]..[502,17231+52])
+                    Ptyp_constr "module_declaration" (typing/types.mli[502,17231+34]..[502,17231+52])
+                    []
+                  core_type (typing/types.mli[502,17231+55]..[502,17231+65])
+                    Ptyp_constr "rec_status" (typing/types.mli[502,17231+55]..[502,17231+65])
+                    []
+                  core_type (typing/types.mli[502,17231+68]..[502,17231+78])
+                    Ptyp_constr "visibility" (typing/types.mli[502,17231+68]..[502,17231+78])
+                    []
+                ]
+                None
+              (typing/types.mli[503,17310+2]..[503,17310+61])
+                "Sig_modtype" (typing/types.mli[503,17310+4]..[503,17310+15])
+                [
+                  core_type (typing/types.mli[503,17310+19]..[503,17310+26])
+                    Ptyp_constr "Ident.t" (typing/types.mli[503,17310+19]..[503,17310+26])
+                    []
+                  core_type (typing/types.mli[503,17310+29]..[503,17310+48])
+                    Ptyp_constr "modtype_declaration" (typing/types.mli[503,17310+29]..[503,17310+48])
+                    []
+                  core_type (typing/types.mli[503,17310+51]..[503,17310+61])
+                    Ptyp_constr "visibility" (typing/types.mli[503,17310+51]..[503,17310+61])
+                    []
+                ]
+                None
+              (typing/types.mli[504,17372+2]..[504,17372+70])
+                "Sig_class" (typing/types.mli[504,17372+4]..[504,17372+13])
+                [
+                  core_type (typing/types.mli[504,17372+17]..[504,17372+24])
+                    Ptyp_constr "Ident.t" (typing/types.mli[504,17372+17]..[504,17372+24])
+                    []
+                  core_type (typing/types.mli[504,17372+27]..[504,17372+44])
+                    Ptyp_constr "class_declaration" (typing/types.mli[504,17372+27]..[504,17372+44])
+                    []
+                  core_type (typing/types.mli[504,17372+47]..[504,17372+57])
+                    Ptyp_constr "rec_status" (typing/types.mli[504,17372+47]..[504,17372+57])
+                    []
+                  core_type (typing/types.mli[504,17372+60]..[504,17372+70])
+                    Ptyp_constr "visibility" (typing/types.mli[504,17372+60]..[504,17372+70])
+                    []
+                ]
+                None
+              (typing/types.mli[505,17443+2]..[505,17443+80])
+                "Sig_class_type" (typing/types.mli[505,17443+4]..[505,17443+18])
+                [
+                  core_type (typing/types.mli[505,17443+22]..[505,17443+29])
+                    Ptyp_constr "Ident.t" (typing/types.mli[505,17443+22]..[505,17443+29])
+                    []
+                  core_type (typing/types.mli[505,17443+32]..[505,17443+54])
+                    Ptyp_constr "class_type_declaration" (typing/types.mli[505,17443+32]..[505,17443+54])
+                    []
+                  core_type (typing/types.mli[505,17443+57]..[505,17443+67])
+                    Ptyp_constr "rec_status" (typing/types.mli[505,17443+57]..[505,17443+67])
+                    []
+                  core_type (typing/types.mli[505,17443+70]..[505,17443+80])
+                    Ptyp_constr "visibility" (typing/types.mli[505,17443+70]..[505,17443+80])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "module_declaration" (typing/types.mli[507,17525+4]..[507,17525+22]) (typing/types.mli[507,17525+0]..[513,17664+3])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (typing/types.mli[509,17554+4]..[509,17554+25])
+                Immutable
+                "md_type" (typing/types.mli[509,17554+4]..[509,17554+11])                core_type (typing/types.mli[509,17554+13]..[509,17554+24])
+                  Ptyp_constr "module_type" (typing/types.mli[509,17554+13]..[509,17554+24])
+                  []
+              (typing/types.mli[510,17580+4]..[510,17580+40])
+                Immutable
+                "md_attributes" (typing/types.mli[510,17580+4]..[510,17580+17])                core_type (typing/types.mli[510,17580+19]..[510,17580+39])
+                  Ptyp_constr "Parsetree.attributes" (typing/types.mli[510,17580+19]..[510,17580+39])
+                  []
+              (typing/types.mli[511,17621+4]..[511,17621+23])
+                Immutable
+                "md_loc" (typing/types.mli[511,17621+4]..[511,17621+10])                core_type (typing/types.mli[511,17621+12]..[511,17621+22])
+                  Ptyp_constr "Location.t" (typing/types.mli[511,17621+12]..[511,17621+22])
+                  []
+              (typing/types.mli[512,17645+4]..[512,17645+18])
+                Immutable
+                "md_uid" (typing/types.mli[512,17645+4]..[512,17645+10])                core_type (typing/types.mli[512,17645+12]..[512,17645+17])
+                  Ptyp_constr "Uid.t" (typing/types.mli[512,17645+12]..[512,17645+17])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "modtype_declaration" (typing/types.mli[515,17669+4]..[515,17669+23]) (typing/types.mli[515,17669+0]..[521,17842+3])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (typing/types.mli[517,17699+4]..[517,17699+33])
+                Immutable
+                "mtd_type" (typing/types.mli[517,17699+4]..[517,17699+12])                core_type (typing/types.mli[517,17699+14]..[517,17699+32])
+                  Ptyp_constr "option" (typing/types.mli[517,17699+26]..[517,17699+32])
+                  [
+                    core_type (typing/types.mli[517,17699+14]..[517,17699+25])
+                      Ptyp_constr "module_type" (typing/types.mli[517,17699+14]..[517,17699+25])
+                      []
+                  ]
+              (typing/types.mli[518,17755+4]..[518,17755+41])
+                Immutable
+                "mtd_attributes" (typing/types.mli[518,17755+4]..[518,17755+18])                core_type (typing/types.mli[518,17755+20]..[518,17755+40])
+                  Ptyp_constr "Parsetree.attributes" (typing/types.mli[518,17755+20]..[518,17755+40])
+                  []
+              (typing/types.mli[519,17797+4]..[519,17797+24])
+                Immutable
+                "mtd_loc" (typing/types.mli[519,17797+4]..[519,17797+11])                core_type (typing/types.mli[519,17797+13]..[519,17797+23])
+                  Ptyp_constr "Location.t" (typing/types.mli[519,17797+13]..[519,17797+23])
+                  []
+              (typing/types.mli[520,17822+4]..[520,17822+19])
+                Immutable
+                "mtd_uid" (typing/types.mli[520,17822+4]..[520,17822+11])                core_type (typing/types.mli[520,17822+13]..[520,17822+18])
+                  Ptyp_constr "Uid.t" (typing/types.mli[520,17822+13]..[520,17822+18])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "rec_status" (typing/types.mli[523,17847+4]..[523,17847+14]) (typing/types.mli[523,17847+0]..[526,17995+13])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[524,17864+4]..[524,17864+12])
+                "Trec_not" (typing/types.mli[524,17864+4]..[524,17864+12])
+                []
+                None
+              (typing/types.mli[525,17931+2]..[525,17931+14])
+                "Trec_first" (typing/types.mli[525,17931+4]..[525,17931+14])
+                []
+                None
+              (typing/types.mli[526,17995+2]..[526,17995+13])
+                "Trec_next" (typing/types.mli[526,17995+4]..[526,17995+13])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "ext_status" (typing/types.mli[528,18077+4]..[528,18077+14]) (typing/types.mli[528,18077+0]..[531,18248+18])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[529,18094+4]..[529,18094+14])
+                "Text_first" (typing/types.mli[529,18094+4]..[529,18094+14])
+                []
+                None
+              (typing/types.mli[530,18169+2]..[530,18169+13])
+                "Text_next" (typing/types.mli[530,18169+4]..[530,18169+13])
+                []
+                None
+              (typing/types.mli[531,18248+2]..[531,18248+18])
+                "Text_exception" (typing/types.mli[531,18248+4]..[531,18248+18])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/types.mli[537,18358+0]..[559,19551+35])
+    Psig_type Rec
+    [
+      type_declaration "constructor_description" (typing/types.mli[537,18358+5]..[537,18358+28]) (typing/types.mli[537,18358+0]..[553,19294+4])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (typing/types.mli[538,18389+4]..[538,18389+22])
+                Immutable
+                "cstr_name" (typing/types.mli[538,18389+4]..[538,18389+13])                core_type (typing/types.mli[538,18389+15]..[538,18389+21])
+                  Ptyp_constr "string" (typing/types.mli[538,18389+15]..[538,18389+21])
+                  []
+              (typing/types.mli[539,18452+4]..[539,18452+24])
+                Immutable
+                "cstr_res" (typing/types.mli[539,18452+4]..[539,18452+12])                core_type (typing/types.mli[539,18452+14]..[539,18452+23])
+                  Ptyp_constr "type_expr" (typing/types.mli[539,18452+14]..[539,18452+23])
+                  []
+              (typing/types.mli[540,18517+4]..[540,18517+38])
+                Immutable
+                "cstr_existentials" (typing/types.mli[540,18517+4]..[540,18517+21])                core_type (typing/types.mli[540,18517+23]..[540,18517+37])
+                  Ptyp_constr "list" (typing/types.mli[540,18517+33]..[540,18517+37])
+                  [
+                    core_type (typing/types.mli[540,18517+23]..[540,18517+32])
+                      Ptyp_constr "type_expr" (typing/types.mli[540,18517+23]..[540,18517+32])
+                      []
+                  ]
+              (typing/types.mli[541,18584+4]..[541,18584+30])
+                Immutable
+                "cstr_args" (typing/types.mli[541,18584+4]..[541,18584+13])                core_type (typing/types.mli[541,18584+15]..[541,18584+29])
+                  Ptyp_constr "list" (typing/types.mli[541,18584+25]..[541,18584+29])
+                  [
+                    core_type (typing/types.mli[541,18584+15]..[541,18584+24])
+                      Ptyp_constr "type_expr" (typing/types.mli[541,18584+15]..[541,18584+24])
+                      []
+                  ]
+              (typing/types.mli[542,18652+4]..[542,18652+20])
+                Immutable
+                "cstr_arity" (typing/types.mli[542,18652+4]..[542,18652+14])                core_type (typing/types.mli[542,18652+16]..[542,18652+19])
+                  Ptyp_constr "int" (typing/types.mli[542,18652+16]..[542,18652+19])
+                  []
+              (typing/types.mli[543,18718+4]..[543,18718+30])
+                Immutable
+                "cstr_tag" (typing/types.mli[543,18718+4]..[543,18718+12])                core_type (typing/types.mli[543,18718+14]..[543,18718+29])
+                  Ptyp_constr "constructor_tag" (typing/types.mli[543,18718+14]..[543,18718+29])
+                  []
+              (typing/types.mli[544,18784+4]..[544,18784+21])
+                Immutable
+                "cstr_consts" (typing/types.mli[544,18784+4]..[544,18784+15])                core_type (typing/types.mli[544,18784+17]..[544,18784+20])
+                  Ptyp_constr "int" (typing/types.mli[544,18784+17]..[544,18784+20])
+                  []
+              (typing/types.mli[545,18862+4]..[545,18862+24])
+                Immutable
+                "cstr_nonconsts" (typing/types.mli[545,18862+4]..[545,18862+18])                core_type (typing/types.mli[545,18862+20]..[545,18862+23])
+                  Ptyp_constr "int" (typing/types.mli[545,18862+20]..[545,18862+23])
+                  []
+              (typing/types.mli[546,18941+4]..[546,18941+21])
+                Immutable
+                "cstr_normal" (typing/types.mli[546,18941+4]..[546,18941+15])                core_type (typing/types.mli[546,18941+17]..[546,18941+20])
+                  Ptyp_constr "int" (typing/types.mli[546,18941+17]..[546,18941+20])
+                  []
+              (typing/types.mli[547,19021+4]..[547,19021+27])
+                Immutable
+                "cstr_generalized" (typing/types.mli[547,19021+4]..[547,19021+20])                core_type (typing/types.mli[547,19021+22]..[547,19021+26])
+                  Ptyp_constr "bool" (typing/types.mli[547,19021+22]..[547,19021+26])
+                  []
+              (typing/types.mli[548,19092+4]..[548,19092+31])
+                Immutable
+                "cstr_private" (typing/types.mli[548,19092+4]..[548,19092+16])                core_type (typing/types.mli[548,19092+18]..[548,19092+30])
+                  Ptyp_constr "private_flag" (typing/types.mli[548,19092+18]..[548,19092+30])
+                  []
+              (typing/types.mli[549,19161+4]..[549,19161+25])
+                Immutable
+                "cstr_loc" (typing/types.mli[549,19161+4]..[549,19161+12])                core_type (typing/types.mli[549,19161+14]..[549,19161+24])
+                  Ptyp_constr "Location.t" (typing/types.mli[549,19161+14]..[549,19161+24])
+                  []
+              (typing/types.mli[550,19187+4]..[550,19187+42])
+                Immutable
+                "cstr_attributes" (typing/types.mli[550,19187+4]..[550,19187+19])                core_type (typing/types.mli[550,19187+21]..[550,19187+41])
+                  Ptyp_constr "Parsetree.attributes" (typing/types.mli[550,19187+21]..[550,19187+41])
+                  []
+              (typing/types.mli[551,19230+4]..[551,19230+42])
+                Immutable
+                "cstr_inlined" (typing/types.mli[551,19230+4]..[551,19230+16])                core_type (typing/types.mli[551,19230+18]..[551,19230+41])
+                  Ptyp_constr "option" (typing/types.mli[551,19230+35]..[551,19230+41])
+                  [
+                    core_type (typing/types.mli[551,19230+18]..[551,19230+34])
+                      Ptyp_constr "type_declaration" (typing/types.mli[551,19230+18]..[551,19230+34])
+                      []
+                  ]
+              (typing/types.mli[552,19273+4]..[552,19273+20])
+                Immutable
+                "cstr_uid" (typing/types.mli[552,19273+4]..[552,19273+12])                core_type (typing/types.mli[552,19273+14]..[552,19273+19])
+                  Ptyp_constr "Uid.t" (typing/types.mli[552,19273+14]..[552,19273+19])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "constructor_tag" (typing/types.mli[555,19300+4]..[555,19300+19]) (typing/types.mli[555,19300+0]..[559,19551+35])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/types.mli[556,19322+4]..[556,19322+24])
+                "Cstr_constant" (typing/types.mli[556,19322+4]..[556,19322+17])
+                [
+                  core_type (typing/types.mli[556,19322+21]..[556,19322+24])
+                    Ptyp_constr "int" (typing/types.mli[556,19322+21]..[556,19322+24])
+                    []
+                ]
+                None
+              (typing/types.mli[557,19398+2]..[557,19398+21])
+                "Cstr_block" (typing/types.mli[557,19398+4]..[557,19398+14])
+                [
+                  core_type (typing/types.mli[557,19398+18]..[557,19398+21])
+                    Ptyp_constr "int" (typing/types.mli[557,19398+18]..[557,19398+21])
+                    []
+                ]
+                None
+              (typing/types.mli[558,19474+2]..[558,19474+16])
+                "Cstr_unboxed" (typing/types.mli[558,19474+4]..[558,19474+16])
+                []
+                None
+              (typing/types.mli[559,19551+2]..[559,19551+35])
+                "Cstr_extension" (typing/types.mli[559,19551+4]..[559,19551+18])
+                [
+                  core_type (typing/types.mli[559,19551+22]..[559,19551+28])
+                    Ptyp_constr "Path.t" (typing/types.mli[559,19551+22]..[559,19551+28])
+                    []
+                  core_type (typing/types.mli[559,19551+31]..[559,19551+35])
+                    Ptyp_constr "bool" (typing/types.mli[559,19551+31]..[559,19551+35])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/types.mli[563,19730+0]..[563,19730+59])
+    Psig_value
+    value_description "equal_tag" (typing/types.mli[563,19730+4]..[563,19730+13]) (typing/types.mli[563,19730+0]..[563,19730+59])
+      core_type (typing/types.mli[563,19730+17]..[563,19730+59])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/types.mli[563,19730+17]..[563,19730+32])
+          Ptyp_constr "constructor_tag" (typing/types.mli[563,19730+17]..[563,19730+32])
+          []
+        core_type (typing/types.mli[563,19730+36]..[563,19730+59])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/types.mli[563,19730+36]..[563,19730+51])
+            Ptyp_constr "constructor_tag" (typing/types.mli[563,19730+36]..[563,19730+51])
+            []
+          core_type (typing/types.mli[563,19730+55]..[563,19730+59])
+            Ptyp_constr "bool" (typing/types.mli[563,19730+55]..[563,19730+59])
+            []
+      []
+  signature_item (typing/types.mli[566,19853+0]..[567,19876+63])
+    Psig_value
+    value_description "may_equal_constr" (typing/types.mli[566,19853+4]..[566,19853+20]) (typing/types.mli[566,19853+0]..[567,19876+63])
+      core_type (typing/types.mli[567,19876+4]..[567,19876+63])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/types.mli[567,19876+4]..[567,19876+27])
+          Ptyp_constr "constructor_description" (typing/types.mli[567,19876+4]..[567,19876+27])
+          []
+        core_type (typing/types.mli[567,19876+32]..[567,19876+63])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/types.mli[567,19876+32]..[567,19876+55])
+            Ptyp_constr "constructor_description" (typing/types.mli[567,19876+32]..[567,19876+55])
+            []
+          core_type (typing/types.mli[567,19876+59]..[567,19876+63])
+            Ptyp_constr "bool" (typing/types.mli[567,19876+59]..[567,19876+63])
+            []
+      []
+  signature_item (typing/types.mli[569,19941+0]..[581,20591+3])
+    Psig_type Rec
+    [
+      type_declaration "label_description" (typing/types.mli[569,19941+5]..[569,19941+22]) (typing/types.mli[569,19941+0]..[581,20591+3])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (typing/types.mli[570,19966+4]..[570,19966+21])
+                Immutable
+                "lbl_name" (typing/types.mli[570,19966+4]..[570,19966+12])                core_type (typing/types.mli[570,19966+14]..[570,19966+20])
+                  Ptyp_constr "string" (typing/types.mli[570,19966+14]..[570,19966+20])
+                  []
+              (typing/types.mli[571,20023+4]..[571,20023+23])
+                Immutable
+                "lbl_res" (typing/types.mli[571,20023+4]..[571,20023+11])                core_type (typing/types.mli[571,20023+13]..[571,20023+22])
+                  Ptyp_constr "type_expr" (typing/types.mli[571,20023+13]..[571,20023+22])
+                  []
+              (typing/types.mli[572,20088+4]..[572,20088+23])
+                Immutable
+                "lbl_arg" (typing/types.mli[572,20088+4]..[572,20088+11])                core_type (typing/types.mli[572,20088+13]..[572,20088+22])
+                  Ptyp_constr "type_expr" (typing/types.mli[572,20088+13]..[572,20088+22])
+                  []
+              (typing/types.mli[573,20155+4]..[573,20155+26])
+                Immutable
+                "lbl_mut" (typing/types.mli[573,20155+4]..[573,20155+11])                core_type (typing/types.mli[573,20155+13]..[573,20155+25])
+                  Ptyp_constr "mutable_flag" (typing/types.mli[573,20155+13]..[573,20155+25])
+                  []
+              (typing/types.mli[574,20226+4]..[574,20226+17])
+                Immutable
+                "lbl_pos" (typing/types.mli[574,20226+4]..[574,20226+11])                core_type (typing/types.mli[574,20226+13]..[574,20226+16])
+                  Ptyp_constr "int" (typing/types.mli[574,20226+13]..[574,20226+16])
+                  []
+              (typing/types.mli[575,20290+4]..[575,20290+37])
+                Immutable
+                "lbl_all" (typing/types.mli[575,20290+4]..[575,20290+11])                core_type (typing/types.mli[575,20290+13]..[575,20290+36])
+                  Ptyp_constr "array" (typing/types.mli[575,20290+31]..[575,20290+36])
+                  [
+                    core_type (typing/types.mli[575,20290+13]..[575,20290+30])
+                      Ptyp_constr "label_description" (typing/types.mli[575,20290+13]..[575,20290+30])
+                      []
+                  ]
+              (typing/types.mli[576,20364+4]..[576,20364+38])
+                Immutable
+                "lbl_repres" (typing/types.mli[576,20364+4]..[576,20364+14])                core_type (typing/types.mli[576,20364+16]..[576,20364+37])
+                  Ptyp_constr "record_representation" (typing/types.mli[576,20364+16]..[576,20364+37])
+                  []
+              (typing/types.mli[577,20441+4]..[577,20441+30])
+                Immutable
+                "lbl_private" (typing/types.mli[577,20441+4]..[577,20441+15])                core_type (typing/types.mli[577,20441+17]..[577,20441+29])
+                  Ptyp_constr "private_flag" (typing/types.mli[577,20441+17]..[577,20441+29])
+                  []
+              (typing/types.mli[578,20504+4]..[578,20504+24])
+                Immutable
+                "lbl_loc" (typing/types.mli[578,20504+4]..[578,20504+11])                core_type (typing/types.mli[578,20504+13]..[578,20504+23])
+                  Ptyp_constr "Location.t" (typing/types.mli[578,20504+13]..[578,20504+23])
+                  []
+              (typing/types.mli[579,20529+4]..[579,20529+41])
+                Immutable
+                "lbl_attributes" (typing/types.mli[579,20529+4]..[579,20529+18])                core_type (typing/types.mli[579,20529+20]..[579,20529+40])
+                  Ptyp_constr "Parsetree.attributes" (typing/types.mli[579,20529+20]..[579,20529+40])
+                  []
+              (typing/types.mli[580,20571+4]..[580,20571+19])
+                Immutable
+                "lbl_uid" (typing/types.mli[580,20571+4]..[580,20571+11])                core_type (typing/types.mli[580,20571+13]..[580,20571+18])
+                  Ptyp_constr "Uid.t" (typing/types.mli[580,20571+13]..[580,20571+18])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/types.mli[587,20879+0]..[587,20879+54])
+    Psig_value
+    value_description "bound_value_identifiers" (typing/types.mli[587,20879+4]..[587,20879+27]) (typing/types.mli[587,20879+0]..[587,20879+54])
+      attribute "ocaml.doc"
+        [
+          structure_item (typing/types.mli[583,20596+0]..[586,20807+71])
+            Pstr_eval
+            expression (typing/types.mli[583,20596+0]..[586,20807+71])
+              Pexp_constant PConst_string(" Extracts the list of \"value\" identifiers bound by a signature.\n    \"Value\" identifiers are identifiers for signature components that\n    correspond to a run-time value: values, extensions, modules, classes.\n    Note: manifest primitives do not correspond to a run-time value! ",(typing/types.mli[583,20596+0]..[586,20807+71]),None)
+        ]
+      core_type (typing/types.mli[587,20879+29]..[587,20879+54])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/types.mli[587,20879+29]..[587,20879+38])
+          Ptyp_constr "signature" (typing/types.mli[587,20879+29]..[587,20879+38])
+          []
+        core_type (typing/types.mli[587,20879+42]..[587,20879+54])
+          Ptyp_constr "list" (typing/types.mli[587,20879+50]..[587,20879+54])
+          [
+            core_type (typing/types.mli[587,20879+42]..[587,20879+49])
+              Ptyp_constr "Ident.t" (typing/types.mli[587,20879+42]..[587,20879+49])
+              []
+          ]
+      []
+  signature_item (typing/types.mli[589,20935+0]..[589,20935+49])
+    Psig_value
+    value_description "signature_item_id" (typing/types.mli[589,20935+4]..[589,20935+21]) (typing/types.mli[589,20935+0]..[589,20935+49])
+      core_type (typing/types.mli[589,20935+24]..[589,20935+49])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/types.mli[589,20935+24]..[589,20935+38])
+          Ptyp_constr "signature_item" (typing/types.mli[589,20935+24]..[589,20935+38])
+          []
+        core_type (typing/types.mli[589,20935+42]..[589,20935+49])
+          Ptyp_constr "Ident.t" (typing/types.mli[589,20935+42]..[589,20935+49])
+          []
+      []
+]
+

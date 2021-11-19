@@ -1,0 +1,234 @@
+[
+  structure_item (ocamltest/tsl_ast.ml[18,1144+0]..[21,1196+1])
+    Pstr_type Rec
+    [
+      type_declaration "located" (ocamltest/tsl_ast.ml[18,1144+8]..[18,1144+15]) (ocamltest/tsl_ast.ml[18,1144+0]..[21,1196+1])
+        ptype_params =
+          [
+            core_type (ocamltest/tsl_ast.ml[18,1144+5]..[18,1144+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (ocamltest/tsl_ast.ml[19,1164+2]..[19,1164+12])
+                Immutable
+                "node" (ocamltest/tsl_ast.ml[19,1164+2]..[19,1164+6])                core_type (ocamltest/tsl_ast.ml[19,1164+9]..[19,1164+11])
+                  Ptyp_var a
+              (ocamltest/tsl_ast.ml[20,1177+2]..[20,1177+18])
+                Immutable
+                "loc" (ocamltest/tsl_ast.ml[20,1177+2]..[20,1177+5])                core_type (ocamltest/tsl_ast.ml[20,1177+8]..[20,1177+18])
+                  Ptyp_constr "Location.t" (ocamltest/tsl_ast.ml[20,1177+8]..[20,1177+18])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (ocamltest/tsl_ast.ml[23,1199+0]..[26,1354+29])
+    Pstr_type Rec
+    [
+      type_declaration "environment_statement" (ocamltest/tsl_ast.ml[23,1199+5]..[23,1199+26]) (ocamltest/tsl_ast.ml[23,1199+0]..[26,1354+29])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (ocamltest/tsl_ast.ml[24,1228+2]..[24,1228+56])
+                "Assignment" (ocamltest/tsl_ast.ml[24,1228+4]..[24,1228+14])
+                [
+                  core_type (ocamltest/tsl_ast.ml[24,1228+18]..[24,1228+22])
+                    Ptyp_constr "bool" (ocamltest/tsl_ast.ml[24,1228+18]..[24,1228+22])
+                    []
+                  core_type (ocamltest/tsl_ast.ml[24,1228+25]..[24,1228+39])
+                    Ptyp_constr "located" (ocamltest/tsl_ast.ml[24,1228+32]..[24,1228+39])
+                    [
+                      core_type (ocamltest/tsl_ast.ml[24,1228+25]..[24,1228+31])
+                        Ptyp_constr "string" (ocamltest/tsl_ast.ml[24,1228+25]..[24,1228+31])
+                        []
+                    ]
+                  core_type (ocamltest/tsl_ast.ml[24,1228+42]..[24,1228+56])
+                    Ptyp_constr "located" (ocamltest/tsl_ast.ml[24,1228+49]..[24,1228+56])
+                    [
+                      core_type (ocamltest/tsl_ast.ml[24,1228+42]..[24,1228+48])
+                        Ptyp_constr "string" (ocamltest/tsl_ast.ml[24,1228+42]..[24,1228+48])
+                        []
+                    ]
+                ]
+                None
+              (ocamltest/tsl_ast.ml[25,1308+2]..[25,1308+45])
+                "Append" (ocamltest/tsl_ast.ml[25,1308+4]..[25,1308+10])
+                [
+                  core_type (ocamltest/tsl_ast.ml[25,1308+14]..[25,1308+28])
+                    Ptyp_constr "located" (ocamltest/tsl_ast.ml[25,1308+21]..[25,1308+28])
+                    [
+                      core_type (ocamltest/tsl_ast.ml[25,1308+14]..[25,1308+20])
+                        Ptyp_constr "string" (ocamltest/tsl_ast.ml[25,1308+14]..[25,1308+20])
+                        []
+                    ]
+                  core_type (ocamltest/tsl_ast.ml[25,1308+31]..[25,1308+45])
+                    Ptyp_constr "located" (ocamltest/tsl_ast.ml[25,1308+38]..[25,1308+45])
+                    [
+                      core_type (ocamltest/tsl_ast.ml[25,1308+31]..[25,1308+37])
+                        Ptyp_constr "string" (ocamltest/tsl_ast.ml[25,1308+31]..[25,1308+37])
+                        []
+                    ]
+                ]
+                None
+              (ocamltest/tsl_ast.ml[26,1354+2]..[26,1354+29])
+                "Include" (ocamltest/tsl_ast.ml[26,1354+4]..[26,1354+11])
+                [
+                  core_type (ocamltest/tsl_ast.ml[26,1354+15]..[26,1354+29])
+                    Ptyp_constr "located" (ocamltest/tsl_ast.ml[26,1354+22]..[26,1354+29])
+                    [
+                      core_type (ocamltest/tsl_ast.ml[26,1354+15]..[26,1354+21])
+                        Ptyp_constr "string" (ocamltest/tsl_ast.ml[26,1354+15]..[26,1354+21])
+                        []
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (ocamltest/tsl_ast.ml[28,1417+0]..[33,1568+23])
+    Pstr_type Rec
+    [
+      type_declaration "tsl_item" (ocamltest/tsl_ast.ml[28,1417+5]..[28,1417+13]) (ocamltest/tsl_ast.ml[28,1417+0]..[33,1568+23])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (ocamltest/tsl_ast.ml[29,1433+2]..[29,1433+58])
+                "Environment_statement" (ocamltest/tsl_ast.ml[29,1433+4]..[29,1433+25])
+                [
+                  core_type (ocamltest/tsl_ast.ml[29,1433+29]..[29,1433+58])
+                    Ptyp_constr "located" (ocamltest/tsl_ast.ml[29,1433+51]..[29,1433+58])
+                    [
+                      core_type (ocamltest/tsl_ast.ml[29,1433+29]..[29,1433+50])
+                        Ptyp_constr "environment_statement" (ocamltest/tsl_ast.ml[29,1433+29]..[29,1433+50])
+                        []
+                    ]
+                ]
+                None
+              (ocamltest/tsl_ast.ml[30,1492+2]..[33,1568+23])
+                "Test" (ocamltest/tsl_ast.ml[30,1492+4]..[30,1492+8])
+                [
+                  core_type (ocamltest/tsl_ast.ml[31,1504+4]..[31,1504+7])
+                    Ptyp_constr "int" (ocamltest/tsl_ast.ml[31,1504+4]..[31,1504+7])
+                    []
+                  core_type (ocamltest/tsl_ast.ml[32,1531+4]..[32,1531+18])
+                    Ptyp_constr "located" (ocamltest/tsl_ast.ml[32,1531+11]..[32,1531+18])
+                    [
+                      core_type (ocamltest/tsl_ast.ml[32,1531+4]..[32,1531+10])
+                        Ptyp_constr "string" (ocamltest/tsl_ast.ml[32,1531+4]..[32,1531+10])
+                        []
+                    ]
+                  core_type (ocamltest/tsl_ast.ml[33,1568+4]..[33,1568+23])
+                    Ptyp_constr "list" (ocamltest/tsl_ast.ml[33,1568+19]..[33,1568+23])
+                    [
+                      core_type (ocamltest/tsl_ast.ml[33,1568+4]..[33,1568+18])
+                        Ptyp_constr "located" (ocamltest/tsl_ast.ml[33,1568+11]..[33,1568+18])
+                        [
+                          core_type (ocamltest/tsl_ast.ml[33,1568+4]..[33,1568+10])
+                            Ptyp_constr "string" (ocamltest/tsl_ast.ml[33,1568+4]..[33,1568+10])
+                            []
+                        ]
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (ocamltest/tsl_ast.ml[35,1621+0]..[35,1621+30])
+    Pstr_type Rec
+    [
+      type_declaration "tsl_block" (ocamltest/tsl_ast.ml[35,1621+5]..[35,1621+14]) (ocamltest/tsl_ast.ml[35,1621+0]..[35,1621+30])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (ocamltest/tsl_ast.ml[35,1621+17]..[35,1621+30])
+              Ptyp_constr "list" (ocamltest/tsl_ast.ml[35,1621+26]..[35,1621+30])
+              [
+                core_type (ocamltest/tsl_ast.ml[35,1621+17]..[35,1621+25])
+                  Ptyp_constr "tsl_item" (ocamltest/tsl_ast.ml[35,1621+17]..[35,1621+25])
+                  []
+              ]
+    ]
+  structure_item (ocamltest/tsl_ast.ml[37,1653+0]..[37,1653+63])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/tsl_ast.ml[37,1653+4]..[37,1653+8])
+          Ppat_var "make" (ocamltest/tsl_ast.ml[37,1653+4]..[37,1653+8])
+        expression (ocamltest/tsl_ast.ml[37,1653+9]..[37,1653+63]) ghost
+          Pexp_fun
+          Optional "loc"
+          Some
+            expression (ocamltest/tsl_ast.ml[37,1653+17]..[37,1653+30])
+              Pexp_ident "Location.none" (ocamltest/tsl_ast.ml[37,1653+17]..[37,1653+30])
+          pattern (ocamltest/tsl_ast.ml[37,1653+11]..[37,1653+14])
+            Ppat_var "loc" (ocamltest/tsl_ast.ml[37,1653+11]..[37,1653+14])
+          expression (ocamltest/tsl_ast.ml[37,1653+32]..[37,1653+63]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/tsl_ast.ml[37,1653+32]..[37,1653+35])
+              Ppat_var "foo" (ocamltest/tsl_ast.ml[37,1653+32]..[37,1653+35])
+            expression (ocamltest/tsl_ast.ml[37,1653+38]..[37,1653+63])
+              Pexp_record
+              [
+                "node" (ocamltest/tsl_ast.ml[37,1653+40]..[37,1653+44])
+                  expression (ocamltest/tsl_ast.ml[37,1653+47]..[37,1653+50])
+                    Pexp_ident "foo" (ocamltest/tsl_ast.ml[37,1653+47]..[37,1653+50])
+                "loc" (ocamltest/tsl_ast.ml[37,1653+52]..[37,1653+55])
+                  expression (ocamltest/tsl_ast.ml[37,1653+58]..[37,1653+61])
+                    Pexp_ident "loc" (ocamltest/tsl_ast.ml[37,1653+58]..[37,1653+61])
+              ]
+              None
+    ]
+  structure_item (ocamltest/tsl_ast.ml[39,1718+0]..[39,1718+26])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/tsl_ast.ml[39,1718+4]..[39,1718+19])
+          Ppat_var "make_identifier" (ocamltest/tsl_ast.ml[39,1718+4]..[39,1718+19])
+        expression (ocamltest/tsl_ast.ml[39,1718+22]..[39,1718+26])
+          Pexp_ident "make" (ocamltest/tsl_ast.ml[39,1718+22]..[39,1718+26])
+    ]
+  structure_item (ocamltest/tsl_ast.ml[40,1745+0]..[40,1745+22])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/tsl_ast.ml[40,1745+4]..[40,1745+15])
+          Ppat_var "make_string" (ocamltest/tsl_ast.ml[40,1745+4]..[40,1745+15])
+        expression (ocamltest/tsl_ast.ml[40,1745+18]..[40,1745+22])
+          Pexp_ident "make" (ocamltest/tsl_ast.ml[40,1745+18]..[40,1745+22])
+    ]
+  structure_item (ocamltest/tsl_ast.ml[41,1768+0]..[41,1768+37])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/tsl_ast.ml[41,1768+4]..[41,1768+30])
+          Ppat_var "make_environment_statement" (ocamltest/tsl_ast.ml[41,1768+4]..[41,1768+30])
+        expression (ocamltest/tsl_ast.ml[41,1768+33]..[41,1768+37])
+          Pexp_ident "make" (ocamltest/tsl_ast.ml[41,1768+33]..[41,1768+37])
+    ]
+]
+

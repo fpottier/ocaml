@@ -1,0 +1,1199 @@
+[
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[5,24+0]..[5,24+13])
+    Pstr_type Rec
+    [
+      type_declaration "foo" (testsuite/tests/typing-extensions/open_types.ml[5,24+5]..[5,24+8]) (testsuite/tests/typing-extensions/open_types.ml[5,24+0]..[5,24+13])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_open
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[7,41+0]..[9,68+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[7,41+10]..[9,68+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[7,41+10]..[9,68+2])
+          Pexp_constant PConst_string ("\ntype foo = ..\n",(testsuite/tests/typing-extensions/open_types.ml[7,41+12]..[9,68+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[13,110+0]..[13,110+19])
+    Pstr_type Rec
+    [
+      type_declaration "bar" (testsuite/tests/typing-extensions/open_types.ml[13,110+5]..[13,110+8]) (testsuite/tests/typing-extensions/open_types.ml[13,110+0]..[13,110+19])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_open
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (testsuite/tests/typing-extensions/open_types.ml[13,110+11]..[13,110+14])
+              Ptyp_constr "foo" (testsuite/tests/typing-extensions/open_types.ml[13,110+11]..[13,110+14])
+              []
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[15,133+0]..[17,166+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[15,133+10]..[17,166+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[15,133+10]..[17,166+2])
+          Pexp_constant PConst_string ("\ntype bar = foo = ..\n",(testsuite/tests/typing-extensions/open_types.ml[15,133+12]..[17,166+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[19,171+0]..[19,171+19])
+    Pstr_type Rec
+    [
+      type_declaration "baz" (testsuite/tests/typing-extensions/open_types.ml[19,171+5]..[19,171+8]) (testsuite/tests/typing-extensions/open_types.ml[19,171+0]..[19,171+19])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_open
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (testsuite/tests/typing-extensions/open_types.ml[19,171+11]..[19,171+14])
+              Ptyp_constr "foo" (testsuite/tests/typing-extensions/open_types.ml[19,171+11]..[19,171+14])
+              []
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[21,194+0]..[23,227+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[21,194+10]..[23,227+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[21,194+10]..[23,227+2])
+          Pexp_constant PConst_string ("\ntype baz = foo = ..\n",(testsuite/tests/typing-extensions/open_types.ml[21,194+12]..[23,227+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[25,232+0]..[25,232+23])
+    Pstr_typext
+    type_extension
+      ptyext_path = "bar" (testsuite/tests/typing-extensions/open_types.ml[25,232+5]..[25,232+8])
+      ptyext_params =
+        []
+      ptyext_constructors =
+        [
+          extension_constructor (testsuite/tests/typing-extensions/open_types.ml[25,232+12]..[25,232+23])
+            pext_name = "Bar1"
+            pext_kind =
+              Pext_decl
+                [
+                  core_type (testsuite/tests/typing-extensions/open_types.ml[25,232+20]..[25,232+23])
+                    Ptyp_constr "int" (testsuite/tests/typing-extensions/open_types.ml[25,232+20]..[25,232+23])
+                    []
+                ]
+                None
+        ]
+      ptyext_private = Public
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[27,259+0]..[29,296+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[27,259+10]..[29,296+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[27,259+10]..[29,296+2])
+          Pexp_constant PConst_string ("\ntype bar += Bar1 of int\n",(testsuite/tests/typing-extensions/open_types.ml[27,259+12]..[29,296+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[31,301+0]..[31,301+23])
+    Pstr_typext
+    type_extension
+      ptyext_path = "baz" (testsuite/tests/typing-extensions/open_types.ml[31,301+5]..[31,301+8])
+      ptyext_params =
+        []
+      ptyext_constructors =
+        [
+          extension_constructor (testsuite/tests/typing-extensions/open_types.ml[31,301+12]..[31,301+23])
+            pext_name = "Bar2"
+            pext_kind =
+              Pext_decl
+                [
+                  core_type (testsuite/tests/typing-extensions/open_types.ml[31,301+20]..[31,301+23])
+                    Ptyp_constr "int" (testsuite/tests/typing-extensions/open_types.ml[31,301+20]..[31,301+23])
+                    []
+                ]
+                None
+        ]
+      ptyext_private = Public
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[33,328+0]..[35,365+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[33,328+10]..[35,365+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[33,328+10]..[35,365+2])
+          Pexp_constant PConst_string ("\ntype baz += Bar2 of int\n",(testsuite/tests/typing-extensions/open_types.ml[33,328+12]..[35,365+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[37,370+0]..[37,370+46])
+    Pstr_module
+    "M" (testsuite/tests/typing-extensions/open_types.ml[37,370+7]..[37,370+8])
+      module_expr (testsuite/tests/typing-extensions/open_types.ml[37,370+11]..[37,370+46])
+        Pmod_structure
+        [
+          structure_item (testsuite/tests/typing-extensions/open_types.ml[37,370+18]..[37,370+42])
+            Pstr_typext
+            type_extension
+              ptyext_path = "bar" (testsuite/tests/typing-extensions/open_types.ml[37,370+23]..[37,370+26])
+              ptyext_params =
+                []
+              ptyext_constructors =
+                [
+                  extension_constructor (testsuite/tests/typing-extensions/open_types.ml[37,370+30]..[37,370+42])
+                    pext_name = "Foo"
+                    pext_kind =
+                      Pext_decl
+                        [
+                          core_type (testsuite/tests/typing-extensions/open_types.ml[37,370+37]..[37,370+42])
+                            Ptyp_constr "float" (testsuite/tests/typing-extensions/open_types.ml[37,370+37]..[37,370+42])
+                            []
+                        ]
+                        None
+                ]
+              ptyext_private = Public
+        ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[39,420+0]..[41,477+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[39,420+10]..[41,477+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[39,420+10]..[41,477+2])
+          Pexp_constant PConst_string ("\nmodule M : sig type bar += Foo of float end\n",(testsuite/tests/typing-extensions/open_types.ml[39,420+12]..[41,477+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[43,482+0]..[43,482+48])
+    Pstr_modtype "S" (testsuite/tests/typing-extensions/open_types.ml[43,482+12]..[43,482+13])
+      module_type (testsuite/tests/typing-extensions/open_types.ml[43,482+16]..[43,482+48])
+        Pmty_signature
+        [
+          signature_item (testsuite/tests/typing-extensions/open_types.ml[43,482+20]..[43,482+44])
+            Psig_typext
+            type_extension
+              ptyext_path = "baz" (testsuite/tests/typing-extensions/open_types.ml[43,482+25]..[43,482+28])
+              ptyext_params =
+                []
+              ptyext_constructors =
+                [
+                  extension_constructor (testsuite/tests/typing-extensions/open_types.ml[43,482+32]..[43,482+44])
+                    pext_name = "Foo"
+                    pext_kind =
+                      Pext_decl
+                        [
+                          core_type (testsuite/tests/typing-extensions/open_types.ml[43,482+39]..[43,482+44])
+                            Ptyp_constr "float" (testsuite/tests/typing-extensions/open_types.ml[43,482+39]..[43,482+44])
+                            []
+                        ]
+                        None
+                ]
+              ptyext_private = Public
+        ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[45,534+0]..[47,596+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[45,534+10]..[47,596+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[45,534+10]..[47,596+2])
+          Pexp_constant PConst_string ("\nmodule type S = sig type baz += Foo of float end\n",(testsuite/tests/typing-extensions/open_types.ml[45,534+12]..[47,596+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[49,601+0]..[49,601+20])
+    Pstr_module
+    "M_S" (testsuite/tests/typing-extensions/open_types.ml[49,601+7]..[49,601+10])
+      module_expr (testsuite/tests/typing-extensions/open_types.ml[49,601+13]..[49,601+20])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-extensions/open_types.ml[49,601+14]..[49,601+15])
+          Pmod_ident "M" (testsuite/tests/typing-extensions/open_types.ml[49,601+14]..[49,601+15])
+        module_type (testsuite/tests/typing-extensions/open_types.ml[49,601+18]..[49,601+19])
+          Pmty_ident "S" (testsuite/tests/typing-extensions/open_types.ml[49,601+18]..[49,601+19])
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[51,625+0]..[53,653+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[51,625+10]..[53,653+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[51,625+10]..[53,653+2])
+          Pexp_constant PConst_string ("\nmodule M_S : S\n",(testsuite/tests/typing-extensions/open_types.ml[51,625+12]..[53,653+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[57,700+0]..[57,700+13])
+    Pstr_type Rec
+    [
+      type_declaration "foo" (testsuite/tests/typing-extensions/open_types.ml[57,700+5]..[57,700+8]) (testsuite/tests/typing-extensions/open_types.ml[57,700+0]..[57,700+13])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_open
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[59,717+0]..[61,744+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[59,717+10]..[61,744+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[59,717+10]..[61,744+2])
+          Pexp_constant PConst_string ("\ntype foo = ..\n",(testsuite/tests/typing-extensions/open_types.ml[59,717+12]..[61,744+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[63,749+0]..[63,749+14])
+    Pstr_type Rec
+    [
+      type_declaration "bar" (testsuite/tests/typing-extensions/open_types.ml[63,749+5]..[63,749+8]) (testsuite/tests/typing-extensions/open_types.ml[63,749+0]..[63,749+14])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (testsuite/tests/typing-extensions/open_types.ml[63,749+11]..[63,749+14])
+              Ptyp_constr "foo" (testsuite/tests/typing-extensions/open_types.ml[63,749+11]..[63,749+14])
+              []
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[65,767+0]..[67,795+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[65,767+10]..[67,795+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[65,767+10]..[67,795+2])
+          Pexp_constant PConst_string ("\ntype bar = foo\n",(testsuite/tests/typing-extensions/open_types.ml[65,767+12]..[67,795+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[69,800+0]..[69,800+22])
+    Pstr_typext
+    type_extension
+      ptyext_path = "bar" (testsuite/tests/typing-extensions/open_types.ml[69,800+5]..[69,800+8])
+      ptyext_params =
+        []
+      ptyext_constructors =
+        [
+          extension_constructor (testsuite/tests/typing-extensions/open_types.ml[69,800+12]..[69,800+22])
+            pext_name = "Bar"
+            pext_kind =
+              Pext_decl
+                [
+                  core_type (testsuite/tests/typing-extensions/open_types.ml[69,800+19]..[69,800+22])
+                    Ptyp_constr "int" (testsuite/tests/typing-extensions/open_types.ml[69,800+19]..[69,800+22])
+                    []
+                ]
+                None
+        ]
+      ptyext_private = Public
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[71,826+0]..[76,963+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[71,826+10]..[76,963+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[71,826+10]..[76,963+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 0-22:\n1 | type bar += Bar of int\n    ^^^^^^^^^^^^^^^^^^^^^^\nError: Type definition bar is not extensible\n",(testsuite/tests/typing-extensions/open_types.ml[71,826+12]..[76,963+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[78,968+0]..[78,968+19])
+    Pstr_type Rec
+    [
+      type_declaration "baz" (testsuite/tests/typing-extensions/open_types.ml[78,968+5]..[78,968+8]) (testsuite/tests/typing-extensions/open_types.ml[78,968+0]..[78,968+19])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_open
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (testsuite/tests/typing-extensions/open_types.ml[78,968+11]..[78,968+14])
+              Ptyp_constr "bar" (testsuite/tests/typing-extensions/open_types.ml[78,968+11]..[78,968+14])
+              []
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[80,991+0]..[86,1177+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[80,991+10]..[86,1177+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[80,991+10]..[86,1177+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 0-19:\n1 | type baz = bar = ..\n    ^^^^^^^^^^^^^^^^^^^\nError: This variant or record definition does not match that of type bar\n       Their kinds differ.\n",(testsuite/tests/typing-extensions/open_types.ml[80,991+12]..[86,1177+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[90,1228+0]..[90,1228+16])
+    Pstr_type Rec
+    [
+      type_declaration "foo" (testsuite/tests/typing-extensions/open_types.ml[90,1228+8]..[90,1228+11]) (testsuite/tests/typing-extensions/open_types.ml[90,1228+0]..[90,1228+16])
+        ptype_params =
+          [
+            core_type (testsuite/tests/typing-extensions/open_types.ml[90,1228+5]..[90,1228+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_open
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[92,1248+0]..[94,1278+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[92,1248+10]..[94,1278+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[92,1248+10]..[94,1278+2])
+          Pexp_constant PConst_string ("\ntype 'a foo = ..\n",(testsuite/tests/typing-extensions/open_types.ml[92,1248+12]..[94,1278+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[96,1283+0]..[96,1283+31])
+    Pstr_type Rec
+    [
+      type_declaration "bar" (testsuite/tests/typing-extensions/open_types.ml[96,1283+14]..[96,1283+17]) (testsuite/tests/typing-extensions/open_types.ml[96,1283+0]..[96,1283+31])
+        ptype_params =
+          [
+            core_type (testsuite/tests/typing-extensions/open_types.ml[96,1283+6]..[96,1283+8])
+              Ptyp_var a
+            core_type (testsuite/tests/typing-extensions/open_types.ml[96,1283+10]..[96,1283+12])
+              Ptyp_var b
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_open
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (testsuite/tests/typing-extensions/open_types.ml[96,1283+20]..[96,1283+26])
+              Ptyp_constr "foo" (testsuite/tests/typing-extensions/open_types.ml[96,1283+23]..[96,1283+26])
+              [
+                core_type (testsuite/tests/typing-extensions/open_types.ml[96,1283+20]..[96,1283+22])
+                  Ptyp_var a
+              ]
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[98,1318+0]..[104,1540+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[98,1318+10]..[104,1540+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[98,1318+10]..[104,1540+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 0-31:\n1 | type ('a, 'b) bar = 'a foo = ..\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError: This variant or record definition does not match that of type 'a foo\n       They have different arities.\n",(testsuite/tests/typing-extensions/open_types.ml[98,1318+12]..[104,1540+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[106,1545+0]..[106,1545+22])
+    Pstr_type Rec
+    [
+      type_declaration "foo" (testsuite/tests/typing-extensions/open_types.ml[106,1545+14]..[106,1545+17]) (testsuite/tests/typing-extensions/open_types.ml[106,1545+0]..[106,1545+22])
+        ptype_params =
+          [
+            core_type (testsuite/tests/typing-extensions/open_types.ml[106,1545+6]..[106,1545+8])
+              Ptyp_var a
+            core_type (testsuite/tests/typing-extensions/open_types.ml[106,1545+10]..[106,1545+12])
+              Ptyp_var b
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_open
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[108,1571+0]..[110,1607+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[108,1571+10]..[110,1607+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[108,1571+10]..[110,1607+2])
+          Pexp_constant PConst_string ("\ntype ('a, 'b) foo = ..\n",(testsuite/tests/typing-extensions/open_types.ml[108,1571+12]..[110,1607+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[112,1612+0]..[112,1612+37])
+    Pstr_type Rec
+    [
+      type_declaration "bar" (testsuite/tests/typing-extensions/open_types.ml[112,1612+14]..[112,1612+17]) (testsuite/tests/typing-extensions/open_types.ml[112,1612+0]..[112,1612+37])
+        ptype_params =
+          [
+            core_type (testsuite/tests/typing-extensions/open_types.ml[112,1612+6]..[112,1612+8])
+              Ptyp_var a
+            core_type (testsuite/tests/typing-extensions/open_types.ml[112,1612+10]..[112,1612+12])
+              Ptyp_var b
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_open
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (testsuite/tests/typing-extensions/open_types.ml[112,1612+20]..[112,1612+32])
+              Ptyp_constr "foo" (testsuite/tests/typing-extensions/open_types.ml[112,1612+29]..[112,1612+32])
+              [
+                core_type (testsuite/tests/typing-extensions/open_types.ml[112,1612+21]..[112,1612+23])
+                  Ptyp_var a
+                core_type (testsuite/tests/typing-extensions/open_types.ml[112,1612+25]..[112,1612+27])
+                  Ptyp_var a
+              ]
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[114,1653+0]..[121,1899+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[114,1653+10]..[121,1899+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[114,1653+10]..[121,1899+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 0-37:\n1 | type ('a, 'b) bar = ('a, 'a) foo = ..\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError: This variant or record definition does not match that of type\n         ('a, 'a) foo\n       Their constraints differ.\n",(testsuite/tests/typing-extensions/open_types.ml[114,1653+12]..[121,1899+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[125,1957+0]..[125,1957+35])
+    Pstr_module
+    "M" (testsuite/tests/typing-extensions/open_types.ml[125,1957+7]..[125,1957+8])
+      module_expr (testsuite/tests/typing-extensions/open_types.ml[125,1957+11]..[125,1957+35])
+        Pmod_structure
+        [
+          structure_item (testsuite/tests/typing-extensions/open_types.ml[125,1957+18]..[125,1957+31])
+            Pstr_type Rec
+            [
+              type_declaration "foo" (testsuite/tests/typing-extensions/open_types.ml[125,1957+23]..[125,1957+26]) (testsuite/tests/typing-extensions/open_types.ml[125,1957+18]..[125,1957+31])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_open
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+        ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[127,1996+0]..[129,2042+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[127,1996+10]..[129,2042+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[127,1996+10]..[129,2042+2])
+          Pexp_constant PConst_string ("\nmodule M : sig type foo = .. end\n",(testsuite/tests/typing-extensions/open_types.ml[127,1996+12]..[129,2042+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[131,2047+0]..[131,2047+32])
+    Pstr_modtype "S" (testsuite/tests/typing-extensions/open_types.ml[131,2047+12]..[131,2047+13])
+      module_type (testsuite/tests/typing-extensions/open_types.ml[131,2047+16]..[131,2047+32])
+        Pmty_signature
+        [
+          signature_item (testsuite/tests/typing-extensions/open_types.ml[131,2047+20]..[131,2047+28])
+            Psig_type Rec
+            [
+              type_declaration "foo" (testsuite/tests/typing-extensions/open_types.ml[131,2047+25]..[131,2047+28]) (testsuite/tests/typing-extensions/open_types.ml[131,2047+20]..[131,2047+28])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+        ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[133,2083+0]..[135,2129+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[133,2083+10]..[135,2129+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[133,2083+10]..[135,2129+2])
+          Pexp_constant PConst_string ("\nmodule type S = sig type foo end\n",(testsuite/tests/typing-extensions/open_types.ml[133,2083+12]..[135,2129+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[137,2134+0]..[137,2134+20])
+    Pstr_module
+    "M_S" (testsuite/tests/typing-extensions/open_types.ml[137,2134+7]..[137,2134+10])
+      module_expr (testsuite/tests/typing-extensions/open_types.ml[137,2134+13]..[137,2134+20])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-extensions/open_types.ml[137,2134+14]..[137,2134+15])
+          Pmod_ident "M" (testsuite/tests/typing-extensions/open_types.ml[137,2134+14]..[137,2134+15])
+        module_type (testsuite/tests/typing-extensions/open_types.ml[137,2134+18]..[137,2134+19])
+          Pmty_ident "S" (testsuite/tests/typing-extensions/open_types.ml[137,2134+18]..[137,2134+19])
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[139,2158+0]..[141,2186+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[139,2158+10]..[141,2186+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[139,2158+10]..[141,2186+2])
+          Pexp_constant PConst_string ("\nmodule M_S : S\n",(testsuite/tests/typing-extensions/open_types.ml[139,2158+12]..[141,2186+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[143,2191+0]..[143,2191+19])
+    Pstr_typext
+    type_extension
+      ptyext_path = "M_S.foo" (testsuite/tests/typing-extensions/open_types.ml[143,2191+5]..[143,2191+12])
+      ptyext_params =
+        []
+      ptyext_constructors =
+        [
+          extension_constructor (testsuite/tests/typing-extensions/open_types.ml[143,2191+16]..[143,2191+19])
+            pext_name = "Foo"
+            pext_kind =
+              Pext_decl
+                []
+                None
+        ]
+      ptyext_private = Public
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[145,2214+0]..[150,2349+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[145,2214+10]..[150,2349+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[145,2214+10]..[150,2349+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 0-19:\n1 | type M_S.foo += Foo\n    ^^^^^^^^^^^^^^^^^^^\nError: Type definition M_S.foo is not extensible\n",(testsuite/tests/typing-extensions/open_types.ml[145,2214+12]..[150,2349+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[154,2408+0]..[154,2408+30])
+    Pstr_module
+    "M" (testsuite/tests/typing-extensions/open_types.ml[154,2408+7]..[154,2408+8])
+      module_expr (testsuite/tests/typing-extensions/open_types.ml[154,2408+11]..[154,2408+30])
+        Pmod_structure
+        [
+          structure_item (testsuite/tests/typing-extensions/open_types.ml[154,2408+18]..[154,2408+26])
+            Pstr_type Rec
+            [
+              type_declaration "foo" (testsuite/tests/typing-extensions/open_types.ml[154,2408+23]..[154,2408+26]) (testsuite/tests/typing-extensions/open_types.ml[154,2408+18]..[154,2408+26])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+        ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[156,2442+0]..[158,2483+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[156,2442+10]..[158,2483+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[156,2442+10]..[158,2483+2])
+          Pexp_constant PConst_string ("\nmodule M : sig type foo end\n",(testsuite/tests/typing-extensions/open_types.ml[156,2442+12]..[158,2483+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[160,2488+0]..[160,2488+37])
+    Pstr_modtype "S" (testsuite/tests/typing-extensions/open_types.ml[160,2488+12]..[160,2488+13])
+      module_type (testsuite/tests/typing-extensions/open_types.ml[160,2488+16]..[160,2488+37])
+        Pmty_signature
+        [
+          signature_item (testsuite/tests/typing-extensions/open_types.ml[160,2488+20]..[160,2488+33])
+            Psig_type Rec
+            [
+              type_declaration "foo" (testsuite/tests/typing-extensions/open_types.ml[160,2488+25]..[160,2488+28]) (testsuite/tests/typing-extensions/open_types.ml[160,2488+20]..[160,2488+33])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_open
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+        ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[162,2529+0]..[164,2580+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[162,2529+10]..[164,2580+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[162,2529+10]..[164,2580+2])
+          Pexp_constant PConst_string ("\nmodule type S = sig type foo = .. end\n",(testsuite/tests/typing-extensions/open_types.ml[162,2529+12]..[164,2580+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[166,2585+0]..[166,2585+20])
+    Pstr_module
+    "M_S" (testsuite/tests/typing-extensions/open_types.ml[166,2585+7]..[166,2585+10])
+      module_expr (testsuite/tests/typing-extensions/open_types.ml[166,2585+13]..[166,2585+20])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-extensions/open_types.ml[166,2585+14]..[166,2585+15])
+          Pmod_ident "M" (testsuite/tests/typing-extensions/open_types.ml[166,2585+14]..[166,2585+15])
+        module_type (testsuite/tests/typing-extensions/open_types.ml[166,2585+18]..[166,2585+19])
+          Pmty_ident "S" (testsuite/tests/typing-extensions/open_types.ml[166,2585+18]..[166,2585+19])
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[168,2609+0]..[179,2936+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[168,2609+10]..[179,2936+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[168,2609+10]..[179,2936+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 14-15:\n1 | module M_S = (M : S)\n                  ^\nError: Signature mismatch:\n       Modules do not match: sig type foo = M.foo end is not included in S\n       Type declarations do not match:\n         type foo = M.foo\n       is not included in\n         type foo = ..\n       Their kinds differ.\n",(testsuite/tests/typing-extensions/open_types.ml[168,2609+12]..[179,2936+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[183,3002+0]..[183,3002+35])
+    Pstr_module
+    "M" (testsuite/tests/typing-extensions/open_types.ml[183,3002+7]..[183,3002+8])
+      module_expr (testsuite/tests/typing-extensions/open_types.ml[183,3002+11]..[183,3002+35])
+        Pmod_structure
+        [
+          structure_item (testsuite/tests/typing-extensions/open_types.ml[183,3002+18]..[183,3002+31])
+            Pstr_type Rec
+            [
+              type_declaration "foo" (testsuite/tests/typing-extensions/open_types.ml[183,3002+23]..[183,3002+26]) (testsuite/tests/typing-extensions/open_types.ml[183,3002+18]..[183,3002+31])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_open
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+        ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[185,3041+0]..[187,3087+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[185,3041+10]..[187,3087+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[185,3041+10]..[187,3087+2])
+          Pexp_constant PConst_string ("\nmodule M : sig type foo = .. end\n",(testsuite/tests/typing-extensions/open_types.ml[185,3041+12]..[187,3087+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[189,3092+0]..[189,3092+45])
+    Pstr_modtype "S" (testsuite/tests/typing-extensions/open_types.ml[189,3092+12]..[189,3092+13])
+      module_type (testsuite/tests/typing-extensions/open_types.ml[189,3092+16]..[189,3092+45])
+        Pmty_signature
+        [
+          signature_item (testsuite/tests/typing-extensions/open_types.ml[189,3092+20]..[189,3092+41])
+            Psig_type Rec
+            [
+              type_declaration "foo" (testsuite/tests/typing-extensions/open_types.ml[189,3092+25]..[189,3092+28]) (testsuite/tests/typing-extensions/open_types.ml[189,3092+20]..[189,3092+41])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_open
+                ptype_private = Private
+                ptype_manifest =
+                  None
+            ]
+        ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[191,3141+0]..[193,3200+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[191,3141+10]..[193,3200+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[191,3141+10]..[193,3200+2])
+          Pexp_constant PConst_string ("\nmodule type S = sig type foo = private .. end\n",(testsuite/tests/typing-extensions/open_types.ml[191,3141+12]..[193,3200+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[195,3205+0]..[195,3205+20])
+    Pstr_module
+    "M_S" (testsuite/tests/typing-extensions/open_types.ml[195,3205+7]..[195,3205+10])
+      module_expr (testsuite/tests/typing-extensions/open_types.ml[195,3205+13]..[195,3205+20])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-extensions/open_types.ml[195,3205+14]..[195,3205+15])
+          Pmod_ident "M" (testsuite/tests/typing-extensions/open_types.ml[195,3205+14]..[195,3205+15])
+        module_type (testsuite/tests/typing-extensions/open_types.ml[195,3205+18]..[195,3205+19])
+          Pmty_ident "S" (testsuite/tests/typing-extensions/open_types.ml[195,3205+18]..[195,3205+19])
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[197,3229+0]..[199,3257+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[197,3229+10]..[199,3257+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[197,3229+10]..[199,3257+2])
+          Pexp_constant PConst_string ("\nmodule M_S : S\n",(testsuite/tests/typing-extensions/open_types.ml[197,3229+12]..[199,3257+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[201,3262+0]..[201,3262+19])
+    Pstr_typext
+    type_extension
+      ptyext_path = "M_S.foo" (testsuite/tests/typing-extensions/open_types.ml[201,3262+5]..[201,3262+12])
+      ptyext_params =
+        []
+      ptyext_constructors =
+        [
+          extension_constructor (testsuite/tests/typing-extensions/open_types.ml[201,3262+16]..[201,3262+19])
+            pext_name = "Foo"
+            pext_kind =
+              Pext_decl
+                []
+                None
+        ]
+      ptyext_private = Public
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[203,3285+0]..[208,3425+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[203,3285+10]..[208,3425+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[203,3285+10]..[208,3425+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 16-19:\n1 | type M_S.foo += Foo\n                    ^^^\nError: Cannot extend private type definition M_S.foo\n",(testsuite/tests/typing-extensions/open_types.ml[203,3285+12]..[208,3425+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[212,3500+0]..[212,3500+43])
+    Pstr_module
+    "M" (testsuite/tests/typing-extensions/open_types.ml[212,3500+7]..[212,3500+8])
+      module_expr (testsuite/tests/typing-extensions/open_types.ml[212,3500+11]..[212,3500+43])
+        Pmod_structure
+        [
+          structure_item (testsuite/tests/typing-extensions/open_types.ml[212,3500+18]..[212,3500+39])
+            Pstr_type Rec
+            [
+              type_declaration "foo" (testsuite/tests/typing-extensions/open_types.ml[212,3500+23]..[212,3500+26]) (testsuite/tests/typing-extensions/open_types.ml[212,3500+18]..[212,3500+39])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_open
+                ptype_private = Private
+                ptype_manifest =
+                  None
+            ]
+        ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[214,3547+0]..[216,3601+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[214,3547+10]..[216,3601+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[214,3547+10]..[216,3601+2])
+          Pexp_constant PConst_string ("\nmodule M : sig type foo = private .. end\n",(testsuite/tests/typing-extensions/open_types.ml[214,3547+12]..[216,3601+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[218,3606+0]..[218,3606+37])
+    Pstr_modtype "S" (testsuite/tests/typing-extensions/open_types.ml[218,3606+12]..[218,3606+13])
+      module_type (testsuite/tests/typing-extensions/open_types.ml[218,3606+16]..[218,3606+37])
+        Pmty_signature
+        [
+          signature_item (testsuite/tests/typing-extensions/open_types.ml[218,3606+20]..[218,3606+33])
+            Psig_type Rec
+            [
+              type_declaration "foo" (testsuite/tests/typing-extensions/open_types.ml[218,3606+25]..[218,3606+28]) (testsuite/tests/typing-extensions/open_types.ml[218,3606+20]..[218,3606+33])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_open
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+        ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[220,3647+0]..[222,3698+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[220,3647+10]..[222,3698+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[220,3647+10]..[222,3698+2])
+          Pexp_constant PConst_string ("\nmodule type S = sig type foo = .. end\n",(testsuite/tests/typing-extensions/open_types.ml[220,3647+12]..[222,3698+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[224,3703+0]..[224,3703+20])
+    Pstr_module
+    "M_S" (testsuite/tests/typing-extensions/open_types.ml[224,3703+7]..[224,3703+10])
+      module_expr (testsuite/tests/typing-extensions/open_types.ml[224,3703+13]..[224,3703+20])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-extensions/open_types.ml[224,3703+14]..[224,3703+15])
+          Pmod_ident "M" (testsuite/tests/typing-extensions/open_types.ml[224,3703+14]..[224,3703+15])
+        module_type (testsuite/tests/typing-extensions/open_types.ml[224,3703+18]..[224,3703+19])
+          Pmty_ident "S" (testsuite/tests/typing-extensions/open_types.ml[224,3703+18]..[224,3703+19])
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[226,3727+0]..[240,4119+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[226,3727+10]..[240,4119+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[226,3727+10]..[240,4119+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 14-15:\n1 | module M_S = (M : S)\n                  ^\nError: Signature mismatch:\n       Modules do not match:\n         sig type foo = M.foo = private .. end\n       is not included in\n         S\n       Type declarations do not match:\n         type foo = M.foo = private ..\n       is not included in\n         type foo = ..\n       A private type would be revealed.\n",(testsuite/tests/typing-extensions/open_types.ml[226,3727+12]..[240,4119+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[245,4173+0]..[245,4173+65])
+    Pstr_module
+    "M" (testsuite/tests/typing-extensions/open_types.ml[245,4173+7]..[245,4173+8])
+      module_expr (testsuite/tests/typing-extensions/open_types.ml[245,4173+11]..[245,4173+65])
+        Pmod_structure
+        [
+          structure_item (testsuite/tests/typing-extensions/open_types.ml[245,4173+18]..[245,4173+35])
+            Pstr_type Rec
+            [
+              type_declaration "foo" (testsuite/tests/typing-extensions/open_types.ml[245,4173+27]..[245,4173+30]) (testsuite/tests/typing-extensions/open_types.ml[245,4173+18]..[245,4173+35])
+                ptype_params =
+                  [
+                    core_type (testsuite/tests/typing-extensions/open_types.ml[245,4173+24]..[245,4173+26])
+                      Ptyp_var a
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_open
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          structure_item (testsuite/tests/typing-extensions/open_types.ml[245,4173+36]..[245,4173+61])
+            Pstr_type Rec
+            [
+              type_declaration "bar" (testsuite/tests/typing-extensions/open_types.ml[245,4173+44]..[245,4173+47]) (testsuite/tests/typing-extensions/open_types.ml[245,4173+36]..[245,4173+61])
+                ptype_params =
+                  [
+                    core_type (testsuite/tests/typing-extensions/open_types.ml[245,4173+41]..[245,4173+43])
+                      Ptyp_var a
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_open
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (testsuite/tests/typing-extensions/open_types.ml[245,4173+50]..[245,4173+56])
+                      Ptyp_constr "foo" (testsuite/tests/typing-extensions/open_types.ml[245,4173+53]..[245,4173+56])
+                      [
+                        core_type (testsuite/tests/typing-extensions/open_types.ml[245,4173+50]..[245,4173+52])
+                          Ptyp_var a
+                      ]
+            ]
+        ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[247,4242+0]..[249,4318+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[247,4242+10]..[249,4318+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[247,4242+10]..[249,4318+2])
+          Pexp_constant PConst_string ("\nmodule M : sig type +'a foo = .. type 'a bar = 'a foo = .. end\n",(testsuite/tests/typing-extensions/open_types.ml[247,4242+12]..[249,4318+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[251,4323+0]..[251,4323+66])
+    Pstr_modtype "S" (testsuite/tests/typing-extensions/open_types.ml[251,4323+12]..[251,4323+13])
+      module_type (testsuite/tests/typing-extensions/open_types.ml[251,4323+16]..[251,4323+66])
+        Pmty_signature
+        [
+          signature_item (testsuite/tests/typing-extensions/open_types.ml[251,4323+20]..[251,4323+36])
+            Psig_type Rec
+            [
+              type_declaration "foo" (testsuite/tests/typing-extensions/open_types.ml[251,4323+28]..[251,4323+31]) (testsuite/tests/typing-extensions/open_types.ml[251,4323+20]..[251,4323+36])
+                ptype_params =
+                  [
+                    core_type (testsuite/tests/typing-extensions/open_types.ml[251,4323+25]..[251,4323+27])
+                      Ptyp_var a
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_open
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (testsuite/tests/typing-extensions/open_types.ml[251,4323+37]..[251,4323+62])
+            Psig_type Rec
+            [
+              type_declaration "bar" (testsuite/tests/typing-extensions/open_types.ml[251,4323+45]..[251,4323+48]) (testsuite/tests/typing-extensions/open_types.ml[251,4323+37]..[251,4323+62])
+                ptype_params =
+                  [
+                    core_type (testsuite/tests/typing-extensions/open_types.ml[251,4323+42]..[251,4323+44])
+                      Ptyp_var a
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_open
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (testsuite/tests/typing-extensions/open_types.ml[251,4323+51]..[251,4323+57])
+                      Ptyp_constr "foo" (testsuite/tests/typing-extensions/open_types.ml[251,4323+54]..[251,4323+57])
+                      [
+                        core_type (testsuite/tests/typing-extensions/open_types.ml[251,4323+51]..[251,4323+53])
+                          Ptyp_var a
+                      ]
+            ]
+        ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[253,4393+0]..[255,4473+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[253,4393+10]..[255,4473+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[253,4393+10]..[255,4473+2])
+          Pexp_constant PConst_string ("\nmodule type S = sig type 'a foo = .. type 'a bar = 'a foo = .. end\n",(testsuite/tests/typing-extensions/open_types.ml[253,4393+12]..[255,4473+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[257,4478+0]..[257,4478+20])
+    Pstr_module
+    "M_S" (testsuite/tests/typing-extensions/open_types.ml[257,4478+7]..[257,4478+10])
+      module_expr (testsuite/tests/typing-extensions/open_types.ml[257,4478+13]..[257,4478+20])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-extensions/open_types.ml[257,4478+14]..[257,4478+15])
+          Pmod_ident "M" (testsuite/tests/typing-extensions/open_types.ml[257,4478+14]..[257,4478+15])
+        module_type (testsuite/tests/typing-extensions/open_types.ml[257,4478+18]..[257,4478+19])
+          Pmty_ident "S" (testsuite/tests/typing-extensions/open_types.ml[257,4478+18]..[257,4478+19])
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[259,4502+0]..[273,4915+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[259,4502+10]..[273,4915+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[259,4502+10]..[273,4915+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 14-15:\n1 | module M_S = (M : S)\n                  ^\nError: Signature mismatch:\n       Modules do not match:\n         sig type 'a foo = 'a M.foo = .. type 'a bar = 'a foo = .. end\n       is not included in\n         S\n       Type declarations do not match:\n         type 'a foo = 'a M.foo = ..\n       is not included in\n         type 'a foo = ..\n       Their variances do not agree.\n",(testsuite/tests/typing-extensions/open_types.ml[259,4502+12]..[273,4915+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[277,4947+0]..[277,4947+20])
+    Pstr_type Rec
+    [
+      type_declaration "exn2" (testsuite/tests/typing-extensions/open_types.ml[277,4947+5]..[277,4947+9]) (testsuite/tests/typing-extensions/open_types.ml[277,4947+0]..[277,4947+20])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_open
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (testsuite/tests/typing-extensions/open_types.ml[277,4947+12]..[277,4947+15])
+              Ptyp_constr "exn" (testsuite/tests/typing-extensions/open_types.ml[277,4947+12]..[277,4947+15])
+              []
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[279,4971+0]..[281,5005+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[279,4971+10]..[281,5005+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[279,4971+10]..[281,5005+2])
+          Pexp_constant PConst_string ("\ntype exn2 = exn = ..\n",(testsuite/tests/typing-extensions/open_types.ml[279,4971+12]..[281,5005+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[285,5051+0]..[285,5051+26])
+    Pstr_typext
+    type_extension
+      ptyext_path = "exn" (testsuite/tests/typing-extensions/open_types.ml[285,5051+5]..[285,5051+8])
+      ptyext_params =
+        []
+      ptyext_constructors =
+        [
+          extension_constructor (testsuite/tests/typing-extensions/open_types.ml[285,5051+20]..[285,5051+26])
+            pext_name = "Foobar"
+            pext_kind =
+              Pext_decl
+                []
+                None
+        ]
+      ptyext_private = Private
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[286,5078+0]..[286,5078+20])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/typing-extensions/open_types.ml[286,5078+4]..[286,5078+5])
+          Ppat_any
+        expression (testsuite/tests/typing-extensions/open_types.ml[286,5078+8]..[286,5078+20])
+          Pexp_apply
+          expression (testsuite/tests/typing-extensions/open_types.ml[286,5078+8]..[286,5078+13])
+            Pexp_ident "raise" (testsuite/tests/typing-extensions/open_types.ml[286,5078+8]..[286,5078+13])
+          [
+            <arg>
+            Nolabel
+              expression (testsuite/tests/typing-extensions/open_types.ml[286,5078+14]..[286,5078+20])
+                Pexp_construct "Foobar" (testsuite/tests/typing-extensions/open_types.ml[286,5078+14]..[286,5078+20])
+                None
+          ]
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[288,5102+0]..[294,5292+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[288,5102+10]..[294,5292+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[288,5102+10]..[294,5292+2])
+          Pexp_constant PConst_string ("\ntype exn += private Foobar\nLine 2, characters 14-20:\n2 | let _ = raise Foobar\n                  ^^^^^^\nError: Cannot use private constructor Foobar to create values of type exn\n",(testsuite/tests/typing-extensions/open_types.ml[288,5102+12]..[294,5292+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[299,5320+0]..[299,5320+13])
+    Pstr_type Rec
+    [
+      type_declaration "foo" (testsuite/tests/typing-extensions/open_types.ml[299,5320+5]..[299,5320+8]) (testsuite/tests/typing-extensions/open_types.ml[299,5320+0]..[299,5320+13])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_open
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[300,5334+0]..[300,5334+15])
+    Pstr_typext
+    type_extension
+      ptyext_path = "foo" (testsuite/tests/typing-extensions/open_types.ml[300,5334+5]..[300,5334+8])
+      ptyext_params =
+        []
+      ptyext_constructors =
+        [
+          extension_constructor (testsuite/tests/typing-extensions/open_types.ml[300,5334+12]..[300,5334+15])
+            pext_name = "Foo"
+            pext_kind =
+              Pext_decl
+                []
+                None
+        ]
+      ptyext_private = Public
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[301,5350+0]..[301,5350+26])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/typing-extensions/open_types.ml[301,5350+4]..[301,5350+5])
+          Ppat_var "f" (testsuite/tests/typing-extensions/open_types.ml[301,5350+4]..[301,5350+5])
+        expression (testsuite/tests/typing-extensions/open_types.ml[301,5350+8]..[301,5350+26])
+          Pexp_function
+          [
+            <case>
+              pattern (testsuite/tests/typing-extensions/open_types.ml[301,5350+17]..[301,5350+20])
+                Ppat_construct "Foo" (testsuite/tests/typing-extensions/open_types.ml[301,5350+17]..[301,5350+20])
+                None
+              expression (testsuite/tests/typing-extensions/open_types.ml[301,5350+24]..[301,5350+26])
+                Pexp_construct "()" (testsuite/tests/typing-extensions/open_types.ml[301,5350+24]..[301,5350+26])
+                None
+          ]
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[303,5380+0]..[315,5801+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[303,5380+10]..[315,5801+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[303,5380+10]..[315,5801+2])
+          Pexp_constant PConst_string ("\ntype foo = ..\ntype foo += Foo\nLine 3, characters 8-26:\n3 | let f = function Foo -> ()\n            ^^^^^^^^^^^^^^^^^^\nWarning 8 [partial-match]: this pattern-matching is not exhaustive.\nHere is an example of a case that is not matched:\n*extension*\nMatching over values of extensible variant types (the *extension* above)\nmust include a wild card pattern in order to be exhaustive.\nval f : foo -> unit = <fun>\n",(testsuite/tests/typing-extensions/open_types.ml[303,5380+12]..[315,5801+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[319,5841+0]..[322,5890+11])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/typing-extensions/open_types.ml[319,5841+4]..[319,5841+5])
+          Ppat_var "f" (testsuite/tests/typing-extensions/open_types.ml[319,5841+4]..[319,5841+5])
+        expression (testsuite/tests/typing-extensions/open_types.ml[319,5841+8]..[322,5890+11])
+          Pexp_function
+          [
+            <case>
+              pattern (testsuite/tests/typing-extensions/open_types.ml[320,5858+4]..[320,5858+9])
+                Ppat_construct "::" (testsuite/tests/typing-extensions/open_types.ml[320,5858+5]..[320,5858+9]) ghost
+                Some
+                  []
+                  pattern (testsuite/tests/typing-extensions/open_types.ml[320,5858+5]..[320,5858+9]) ghost
+                    Ppat_tuple
+                    [
+                      pattern (testsuite/tests/typing-extensions/open_types.ml[320,5858+5]..[320,5858+8])
+                        Ppat_construct "Foo" (testsuite/tests/typing-extensions/open_types.ml[320,5858+5]..[320,5858+8])
+                        None
+                      pattern (testsuite/tests/typing-extensions/open_types.ml[320,5858+8]..[320,5858+9]) ghost
+                        Ppat_construct "[]" (testsuite/tests/typing-extensions/open_types.ml[320,5858+8]..[320,5858+9]) ghost
+                        None
+                    ]
+              expression (testsuite/tests/typing-extensions/open_types.ml[320,5858+13]..[320,5858+14])
+                Pexp_constant PConst_int (1,None)
+            <case>
+              pattern (testsuite/tests/typing-extensions/open_types.ml[321,5873+4]..[321,5873+11])
+                Ppat_construct "::" (testsuite/tests/typing-extensions/open_types.ml[321,5873+5]..[321,5873+7])
+                Some
+                  []
+                  pattern (testsuite/tests/typing-extensions/open_types.ml[321,5873+4]..[321,5873+11]) ghost
+                    Ppat_tuple
+                    [
+                      pattern (testsuite/tests/typing-extensions/open_types.ml[321,5873+4]..[321,5873+5])
+                        Ppat_any
+                      pattern (testsuite/tests/typing-extensions/open_types.ml[321,5873+7]..[321,5873+11])
+                        Ppat_construct "::" (testsuite/tests/typing-extensions/open_types.ml[321,5873+8]..[321,5873+10])
+                        Some
+                          []
+                          pattern (testsuite/tests/typing-extensions/open_types.ml[321,5873+7]..[321,5873+11]) ghost
+                            Ppat_tuple
+                            [
+                              pattern (testsuite/tests/typing-extensions/open_types.ml[321,5873+7]..[321,5873+8])
+                                Ppat_any
+                              pattern (testsuite/tests/typing-extensions/open_types.ml[321,5873+10]..[321,5873+11])
+                                Ppat_any
+                            ]
+                    ]
+              expression (testsuite/tests/typing-extensions/open_types.ml[321,5873+15]..[321,5873+16])
+                Pexp_constant PConst_int (3,None)
+            <case>
+              pattern (testsuite/tests/typing-extensions/open_types.ml[322,5890+4]..[322,5890+6])
+                Ppat_construct "[]" (testsuite/tests/typing-extensions/open_types.ml[322,5890+4]..[322,5890+6])
+                None
+              expression (testsuite/tests/typing-extensions/open_types.ml[322,5890+10]..[322,5890+11])
+                Pexp_constant PConst_int (2,None)
+          ]
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[324,5905+0]..[336,6322+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[324,5905+10]..[336,6322+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[324,5905+10]..[336,6322+2])
+          Pexp_constant PConst_string ("\nLines 1-4, characters 8-11:\n1 | ........function\n2 |   | [Foo] -> 1\n3 |   | _::_::_ -> 3\n4 |   | [] -> 2\nWarning 8 [partial-match]: this pattern-matching is not exhaustive.\nHere is an example of a case that is not matched:\n*extension*::[]\nMatching over values of extensible variant types (the *extension* above)\nmust include a wild card pattern in order to be exhaustive.\nval f : foo list -> int = <fun>\n",(testsuite/tests/typing-extensions/open_types.ml[324,5905+12]..[336,6322+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[341,6370+0]..[341,6370+11])
+    Pstr_type Rec
+    [
+      type_declaration "t" (testsuite/tests/typing-extensions/open_types.ml[341,6370+5]..[341,6370+6]) (testsuite/tests/typing-extensions/open_types.ml[341,6370+0]..[341,6370+11])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_open
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[342,6382+0]..[342,6382+34])
+    Pstr_typext
+    type_extension
+      ptyext_path = "t" (testsuite/tests/typing-extensions/open_types.ml[342,6382+5]..[342,6382+6])
+      ptyext_params =
+        []
+      ptyext_constructors =
+        [
+          extension_constructor (testsuite/tests/typing-extensions/open_types.ml[342,6382+10]..[342,6382+34])
+            pext_name = "IPair"
+            pext_kind =
+              Pext_decl
+                [
+                  core_type (testsuite/tests/typing-extensions/open_types.ml[342,6382+19]..[342,6382+28])
+                    Ptyp_tuple
+                    [
+                      core_type (testsuite/tests/typing-extensions/open_types.ml[342,6382+19]..[342,6382+22])
+                        Ptyp_constr "int" (testsuite/tests/typing-extensions/open_types.ml[342,6382+19]..[342,6382+22])
+                        []
+                      core_type (testsuite/tests/typing-extensions/open_types.ml[342,6382+25]..[342,6382+28])
+                        Ptyp_constr "int" (testsuite/tests/typing-extensions/open_types.ml[342,6382+25]..[342,6382+28])
+                        []
+                    ]
+                ]
+                Some
+                  core_type (testsuite/tests/typing-extensions/open_types.ml[342,6382+33]..[342,6382+34])
+                    Ptyp_constr "t" (testsuite/tests/typing-extensions/open_types.ml[342,6382+33]..[342,6382+34])
+                    []
+        ]
+      ptyext_private = Public
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[343,6420+0]..[346,6480+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[343,6420+10]..[346,6480+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[343,6420+10]..[346,6480+2])
+          Pexp_constant PConst_string ("\ntype t = ..\ntype t += IPair : (int * int) -> t\n",(testsuite/tests/typing-extensions/open_types.ml[343,6420+12]..[346,6480+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[348,6485+0]..[348,6485+62])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/typing-extensions/open_types.ml[348,6485+4]..[348,6485+5])
+          Ppat_var "f" (testsuite/tests/typing-extensions/open_types.ml[348,6485+4]..[348,6485+5])
+        expression (testsuite/tests/typing-extensions/open_types.ml[348,6485+8]..[348,6485+62])
+          Pexp_function
+          [
+            <case>
+              pattern (testsuite/tests/typing-extensions/open_types.ml[348,6485+17]..[348,6485+29])
+                Ppat_construct "IPair" (testsuite/tests/typing-extensions/open_types.ml[348,6485+17]..[348,6485+22])
+                Some
+                  []
+                  pattern (testsuite/tests/typing-extensions/open_types.ml[348,6485+23]..[348,6485+29])
+                    Ppat_tuple
+                    [
+                      pattern (testsuite/tests/typing-extensions/open_types.ml[348,6485+24]..[348,6485+25])
+                        Ppat_var "i" (testsuite/tests/typing-extensions/open_types.ml[348,6485+24]..[348,6485+25])
+                      pattern (testsuite/tests/typing-extensions/open_types.ml[348,6485+27]..[348,6485+28])
+                        Ppat_var "j" (testsuite/tests/typing-extensions/open_types.ml[348,6485+27]..[348,6485+28])
+                    ]
+              expression (testsuite/tests/typing-extensions/open_types.ml[348,6485+33]..[348,6485+62])
+                Pexp_apply
+                expression (testsuite/tests/typing-extensions/open_types.ml[348,6485+33]..[348,6485+47])
+                  Pexp_ident "Format.sprintf" (testsuite/tests/typing-extensions/open_types.ml[348,6485+33]..[348,6485+47])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/typing-extensions/open_types.ml[348,6485+48]..[348,6485+58])
+                      Pexp_constant PConst_string("(%d, %d)",(testsuite/tests/typing-extensions/open_types.ml[348,6485+49]..[348,6485+57]),None)
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/typing-extensions/open_types.ml[348,6485+59]..[348,6485+60])
+                      Pexp_ident "i" (testsuite/tests/typing-extensions/open_types.ml[348,6485+59]..[348,6485+60])
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/typing-extensions/open_types.ml[348,6485+61]..[348,6485+62])
+                      Pexp_ident "j" (testsuite/tests/typing-extensions/open_types.ml[348,6485+61]..[348,6485+62])
+                ]
+          ]
+    ]
+  structure_item (testsuite/tests/typing-extensions/open_types.ml[349,6551+0]..[359,7017+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-extensions/open_types.ml[349,6551+10]..[359,7017+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-extensions/open_types.ml[349,6551+10]..[359,7017+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 8-62:\n1 | let f = function IPair (i, j) -> Format.sprintf \"(%d, %d)\" i j ;;\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nWarning 8 [partial-match]: this pattern-matching is not exhaustive.\nHere is an example of a case that is not matched:\n*extension*\nMatching over values of extensible variant types (the *extension* above)\nmust include a wild card pattern in order to be exhaustive.\nval f : t -> string = <fun>\n",(testsuite/tests/typing-extensions/open_types.ml[349,6551+12]..[359,7017+0]),Some "")
+    ]
+]
+

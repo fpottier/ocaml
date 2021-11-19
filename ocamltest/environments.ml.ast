@@ -1,0 +1,2072 @@
+[
+  structure_item (ocamltest/environments.ml[18,1159+0]..[18,1159+21])
+    Pstr_open Fresh
+    module_expr (ocamltest/environments.ml[18,1159+5]..[18,1159+21])
+      Pmod_ident "Ocamltest_stdlib" (ocamltest/environments.ml[18,1159+5]..[18,1159+21])
+  structure_item (ocamltest/environments.ml[20,1182+0]..[20,1182+41])
+    Pstr_module
+    "VariableMap" (ocamltest/environments.ml[20,1182+7]..[20,1182+18])
+      module_expr (ocamltest/environments.ml[20,1182+21]..[20,1182+41])
+        Pmod_apply
+        module_expr (ocamltest/environments.ml[20,1182+21]..[20,1182+29])
+          Pmod_ident "Map.Make" (ocamltest/environments.ml[20,1182+21]..[20,1182+29])
+        module_expr (ocamltest/environments.ml[20,1182+31]..[20,1182+40])
+          Pmod_ident "Variables" (ocamltest/environments.ml[20,1182+31]..[20,1182+40])
+  structure_item (ocamltest/environments.ml[22,1225+0]..[22,1225+29])
+    Pstr_type Rec
+    [
+      type_declaration "t" (ocamltest/environments.ml[22,1225+5]..[22,1225+6]) (ocamltest/environments.ml[22,1225+0]..[22,1225+29])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (ocamltest/environments.ml[22,1225+9]..[22,1225+29])
+              Ptyp_constr "VariableMap.t" (ocamltest/environments.ml[22,1225+16]..[22,1225+29])
+              [
+                core_type (ocamltest/environments.ml[22,1225+9]..[22,1225+15])
+                  Ptyp_constr "string" (ocamltest/environments.ml[22,1225+9]..[22,1225+15])
+                  []
+              ]
+    ]
+  structure_item (ocamltest/environments.ml[24,1256+0]..[24,1256+29])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[24,1256+4]..[24,1256+9])
+          Ppat_var "empty" (ocamltest/environments.ml[24,1256+4]..[24,1256+9])
+        expression (ocamltest/environments.ml[24,1256+12]..[24,1256+29])
+          Pexp_ident "VariableMap.empty" (ocamltest/environments.ml[24,1256+12]..[24,1256+29])
+    ]
+  structure_item (ocamltest/environments.ml[26,1287+0]..[28,1366+27])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[26,1287+4]..[26,1287+15])
+          Ppat_var "to_bindings" (ocamltest/environments.ml[26,1287+4]..[26,1287+15])
+        expression (ocamltest/environments.ml[26,1287+16]..[28,1366+27]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[26,1287+16]..[26,1287+19])
+            Ppat_var "env" (ocamltest/environments.ml[26,1287+16]..[26,1287+19])
+          expression (ocamltest/environments.ml[27,1309+2]..[28,1366+27])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (ocamltest/environments.ml[27,1309+6]..[27,1309+7])
+                  Ppat_var "f" (ocamltest/environments.ml[27,1309+6]..[27,1309+7])
+                expression (ocamltest/environments.ml[27,1309+8]..[27,1309+53]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (ocamltest/environments.ml[27,1309+8]..[27,1309+16])
+                    Ppat_var "variable" (ocamltest/environments.ml[27,1309+8]..[27,1309+16])
+                  expression (ocamltest/environments.ml[27,1309+17]..[27,1309+53]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (ocamltest/environments.ml[27,1309+17]..[27,1309+22])
+                      Ppat_var "value" (ocamltest/environments.ml[27,1309+17]..[27,1309+22])
+                    expression (ocamltest/environments.ml[27,1309+23]..[27,1309+53]) ghost
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (ocamltest/environments.ml[27,1309+23]..[27,1309+26])
+                        Ppat_var "lst" (ocamltest/environments.ml[27,1309+23]..[27,1309+26])
+                      expression (ocamltest/environments.ml[27,1309+29]..[27,1309+53])
+                        Pexp_construct "::" (ocamltest/environments.ml[27,1309+47]..[27,1309+49])
+                        Some
+                          expression (ocamltest/environments.ml[27,1309+29]..[27,1309+53]) ghost
+                            Pexp_tuple
+                            [
+                              expression (ocamltest/environments.ml[27,1309+29]..[27,1309+46])
+                                Pexp_tuple
+                                [
+                                  expression (ocamltest/environments.ml[27,1309+30]..[27,1309+38])
+                                    Pexp_ident "variable" (ocamltest/environments.ml[27,1309+30]..[27,1309+38])
+                                  expression (ocamltest/environments.ml[27,1309+40]..[27,1309+45])
+                                    Pexp_ident "value" (ocamltest/environments.ml[27,1309+40]..[27,1309+45])
+                                ]
+                              expression (ocamltest/environments.ml[27,1309+50]..[27,1309+53])
+                                Pexp_ident "lst" (ocamltest/environments.ml[27,1309+50]..[27,1309+53])
+                            ]
+            ]
+            expression (ocamltest/environments.ml[28,1366+2]..[28,1366+27])
+              Pexp_apply
+              expression (ocamltest/environments.ml[28,1366+2]..[28,1366+18])
+                Pexp_ident "VariableMap.fold" (ocamltest/environments.ml[28,1366+2]..[28,1366+18])
+              [
+                <arg>
+                Nolabel
+                  expression (ocamltest/environments.ml[28,1366+19]..[28,1366+20])
+                    Pexp_ident "f" (ocamltest/environments.ml[28,1366+19]..[28,1366+20])
+                <arg>
+                Nolabel
+                  expression (ocamltest/environments.ml[28,1366+21]..[28,1366+24])
+                    Pexp_ident "env" (ocamltest/environments.ml[28,1366+21]..[28,1366+24])
+                <arg>
+                Nolabel
+                  expression (ocamltest/environments.ml[28,1366+25]..[28,1366+27])
+                    Pexp_construct "[]" (ocamltest/environments.ml[28,1366+25]..[28,1366+27])
+                    None
+              ]
+    ]
+  structure_item (ocamltest/environments.ml[30,1395+0]..[36,1689+76])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[30,1395+4]..[30,1395+14])
+          Ppat_var "expand_aux" (ocamltest/environments.ml[30,1395+4]..[30,1395+14])
+        expression (ocamltest/environments.ml[30,1395+15]..[36,1689+76]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[30,1395+15]..[30,1395+18])
+            Ppat_var "env" (ocamltest/environments.ml[30,1395+15]..[30,1395+18])
+          expression (ocamltest/environments.ml[30,1395+19]..[36,1689+76]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[30,1395+19]..[30,1395+24])
+              Ppat_var "value" (ocamltest/environments.ml[30,1395+19]..[30,1395+24])
+            expression (ocamltest/environments.ml[31,1422+2]..[36,1689+76])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (ocamltest/environments.ml[31,1422+6]..[31,1422+14])
+                    Ppat_var "bindings" (ocamltest/environments.ml[31,1422+6]..[31,1422+14])
+                  expression (ocamltest/environments.ml[31,1422+17]..[31,1422+32])
+                    Pexp_apply
+                    expression (ocamltest/environments.ml[31,1422+17]..[31,1422+28])
+                      Pexp_ident "to_bindings" (ocamltest/environments.ml[31,1422+17]..[31,1422+28])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[31,1422+29]..[31,1422+32])
+                          Pexp_ident "env" (ocamltest/environments.ml[31,1422+29]..[31,1422+32])
+                    ]
+              ]
+              expression (ocamltest/environments.ml[32,1458+2]..[36,1689+76])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (ocamltest/environments.ml[32,1458+6]..[32,1458+7])
+                      Ppat_var "f" (ocamltest/environments.ml[32,1458+6]..[32,1458+7])
+                    expression (ocamltest/environments.ml[32,1458+8]..[32,1458+74]) ghost
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (ocamltest/environments.ml[32,1458+8]..[32,1458+25])
+                        Ppat_tuple
+                        [
+                          pattern (ocamltest/environments.ml[32,1458+9]..[32,1458+17])
+                            Ppat_var "variable" (ocamltest/environments.ml[32,1458+9]..[32,1458+17])
+                          pattern (ocamltest/environments.ml[32,1458+19]..[32,1458+24])
+                            Ppat_var "value" (ocamltest/environments.ml[32,1458+19]..[32,1458+24])
+                        ]
+                      expression (ocamltest/environments.ml[32,1458+28]..[32,1458+74])
+                        Pexp_tuple
+                        [
+                          expression (ocamltest/environments.ml[32,1458+29]..[32,1458+66])
+                            Pexp_apply
+                            expression (ocamltest/environments.ml[32,1458+30]..[32,1458+56])
+                              Pexp_ident "Variables.name_of_variable" (ocamltest/environments.ml[32,1458+30]..[32,1458+56])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (ocamltest/environments.ml[32,1458+57]..[32,1458+65])
+                                  Pexp_ident "variable" (ocamltest/environments.ml[32,1458+57]..[32,1458+65])
+                            ]
+                          expression (ocamltest/environments.ml[32,1458+68]..[32,1458+73])
+                            Pexp_ident "value" (ocamltest/environments.ml[32,1458+68]..[32,1458+73])
+                        ]
+                ]
+                expression (ocamltest/environments.ml[33,1536+2]..[36,1689+76])
+                  Pexp_let Nonrec
+                  [
+                    <def>
+                      pattern (ocamltest/environments.ml[33,1536+6]..[33,1536+21])
+                        Ppat_var "simple_bindings" (ocamltest/environments.ml[33,1536+6]..[33,1536+21])
+                      expression (ocamltest/environments.ml[33,1536+24]..[33,1536+43])
+                        Pexp_apply
+                        expression (ocamltest/environments.ml[33,1536+24]..[33,1536+32])
+                          Pexp_ident "List.map" (ocamltest/environments.ml[33,1536+24]..[33,1536+32])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (ocamltest/environments.ml[33,1536+33]..[33,1536+34])
+                              Pexp_ident "f" (ocamltest/environments.ml[33,1536+33]..[33,1536+34])
+                          <arg>
+                          Nolabel
+                            expression (ocamltest/environments.ml[33,1536+35]..[33,1536+43])
+                              Pexp_ident "bindings" (ocamltest/environments.ml[33,1536+35]..[33,1536+43])
+                        ]
+                  ]
+                  expression (ocamltest/environments.ml[34,1583+2]..[36,1689+76])
+                    Pexp_let Nonrec
+                    [
+                      <def>
+                        pattern (ocamltest/environments.ml[34,1583+6]..[34,1583+11])
+                          Ppat_var "subst" (ocamltest/environments.ml[34,1583+6]..[34,1583+11])
+                        expression (ocamltest/environments.ml[34,1583+12]..[34,1583+71]) ghost
+                          Pexp_fun
+                          Nolabel
+                          None
+                          pattern (ocamltest/environments.ml[34,1583+12]..[34,1583+13])
+                            Ppat_var "s" (ocamltest/environments.ml[34,1583+12]..[34,1583+13])
+                          expression (ocamltest/environments.ml[34,1583+16]..[34,1583+71])
+                            Pexp_try
+                            expression (ocamltest/environments.ml[34,1583+20]..[34,1583+50])
+                              Pexp_apply
+                              expression (ocamltest/environments.ml[34,1583+21]..[34,1583+31])
+                                Pexp_ident "List.assoc" (ocamltest/environments.ml[34,1583+21]..[34,1583+31])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (ocamltest/environments.ml[34,1583+32]..[34,1583+33])
+                                    Pexp_ident "s" (ocamltest/environments.ml[34,1583+32]..[34,1583+33])
+                                <arg>
+                                Nolabel
+                                  expression (ocamltest/environments.ml[34,1583+34]..[34,1583+49])
+                                    Pexp_ident "simple_bindings" (ocamltest/environments.ml[34,1583+34]..[34,1583+49])
+                              ]
+                            [
+                              <case>
+                                pattern (ocamltest/environments.ml[34,1583+56]..[34,1583+65])
+                                  Ppat_construct "Not_found" (ocamltest/environments.ml[34,1583+56]..[34,1583+65])
+                                  None
+                                expression (ocamltest/environments.ml[34,1583+69]..[34,1583+71])
+                                  Pexp_constant PConst_string("",(ocamltest/environments.ml[34,1583+70]..[34,1583+70]),None)
+                            ]
+                    ]
+                    expression (ocamltest/environments.ml[35,1658+2]..[36,1689+76])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (ocamltest/environments.ml[35,1658+6]..[35,1658+7])
+                            Ppat_var "b" (ocamltest/environments.ml[35,1658+6]..[35,1658+7])
+                          expression (ocamltest/environments.ml[35,1658+10]..[35,1658+27])
+                            Pexp_apply
+                            expression (ocamltest/environments.ml[35,1658+10]..[35,1658+23])
+                              Pexp_ident "Buffer.create" (ocamltest/environments.ml[35,1658+10]..[35,1658+23])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (ocamltest/environments.ml[35,1658+24]..[35,1658+27])
+                                  Pexp_constant PConst_int (100,None)
+                            ]
+                      ]
+                      expression (ocamltest/environments.ml[36,1689+2]..[36,1689+76])
+                        Pexp_try
+                        expression (ocamltest/environments.ml[36,1689+6]..[36,1689+60])
+                          Pexp_sequence
+                          expression (ocamltest/environments.ml[36,1689+6]..[36,1689+41])
+                            Pexp_apply
+                            expression (ocamltest/environments.ml[36,1689+6]..[36,1689+27])
+                              Pexp_ident "Buffer.add_substitute" (ocamltest/environments.ml[36,1689+6]..[36,1689+27])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (ocamltest/environments.ml[36,1689+28]..[36,1689+29])
+                                  Pexp_ident "b" (ocamltest/environments.ml[36,1689+28]..[36,1689+29])
+                              <arg>
+                              Nolabel
+                                expression (ocamltest/environments.ml[36,1689+30]..[36,1689+35])
+                                  Pexp_ident "subst" (ocamltest/environments.ml[36,1689+30]..[36,1689+35])
+                              <arg>
+                              Nolabel
+                                expression (ocamltest/environments.ml[36,1689+36]..[36,1689+41])
+                                  Pexp_ident "value" (ocamltest/environments.ml[36,1689+36]..[36,1689+41])
+                            ]
+                          expression (ocamltest/environments.ml[36,1689+43]..[36,1689+60])
+                            Pexp_apply
+                            expression (ocamltest/environments.ml[36,1689+43]..[36,1689+58])
+                              Pexp_ident "Buffer.contents" (ocamltest/environments.ml[36,1689+43]..[36,1689+58])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (ocamltest/environments.ml[36,1689+59]..[36,1689+60])
+                                  Pexp_ident "b" (ocamltest/environments.ml[36,1689+59]..[36,1689+60])
+                            ]
+                        [
+                          <case>
+                            pattern (ocamltest/environments.ml[36,1689+66]..[36,1689+67])
+                              Ppat_any
+                            expression (ocamltest/environments.ml[36,1689+71]..[36,1689+76])
+                              Pexp_ident "value" (ocamltest/environments.ml[36,1689+71]..[36,1689+76])
+                        ]
+    ]
+  structure_item (ocamltest/environments.ml[38,1767+0]..[40,1835+55])
+    Pstr_value Rec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[38,1767+8]..[38,1767+14])
+          Ppat_var "expand" (ocamltest/environments.ml[38,1767+8]..[38,1767+14])
+        expression (ocamltest/environments.ml[38,1767+15]..[40,1835+55]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[38,1767+15]..[38,1767+18])
+            Ppat_var "env" (ocamltest/environments.ml[38,1767+15]..[38,1767+18])
+          expression (ocamltest/environments.ml[38,1767+19]..[40,1835+55]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[38,1767+19]..[38,1767+24])
+              Ppat_var "value" (ocamltest/environments.ml[38,1767+19]..[38,1767+24])
+            expression (ocamltest/environments.ml[39,1794+2]..[40,1835+55])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (ocamltest/environments.ml[39,1794+6]..[39,1794+14])
+                    Ppat_var "expanded" (ocamltest/environments.ml[39,1794+6]..[39,1794+14])
+                  expression (ocamltest/environments.ml[39,1794+17]..[39,1794+37])
+                    Pexp_apply
+                    expression (ocamltest/environments.ml[39,1794+17]..[39,1794+27])
+                      Pexp_ident "expand_aux" (ocamltest/environments.ml[39,1794+17]..[39,1794+27])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[39,1794+28]..[39,1794+31])
+                          Pexp_ident "env" (ocamltest/environments.ml[39,1794+28]..[39,1794+31])
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[39,1794+32]..[39,1794+37])
+                          Pexp_ident "value" (ocamltest/environments.ml[39,1794+32]..[39,1794+37])
+                    ]
+              ]
+              expression (ocamltest/environments.ml[40,1835+2]..[40,1835+55])
+                Pexp_ifthenelse
+                expression (ocamltest/environments.ml[40,1835+5]..[40,1835+19])
+                  Pexp_apply
+                  expression (ocamltest/environments.ml[40,1835+13]..[40,1835+14])
+                    Pexp_ident "=" (ocamltest/environments.ml[40,1835+13]..[40,1835+14])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[40,1835+5]..[40,1835+13])
+                        Pexp_ident "expanded" (ocamltest/environments.ml[40,1835+5]..[40,1835+13])
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[40,1835+14]..[40,1835+19])
+                        Pexp_ident "value" (ocamltest/environments.ml[40,1835+14]..[40,1835+19])
+                  ]
+                expression (ocamltest/environments.ml[40,1835+25]..[40,1835+30])
+                  Pexp_ident "value" (ocamltest/environments.ml[40,1835+25]..[40,1835+30])
+                Some
+                  expression (ocamltest/environments.ml[40,1835+36]..[40,1835+55])
+                    Pexp_apply
+                    expression (ocamltest/environments.ml[40,1835+36]..[40,1835+42])
+                      Pexp_ident "expand" (ocamltest/environments.ml[40,1835+36]..[40,1835+42])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[40,1835+43]..[40,1835+46])
+                          Pexp_ident "env" (ocamltest/environments.ml[40,1835+43]..[40,1835+46])
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[40,1835+47]..[40,1835+55])
+                          Pexp_ident "expanded" (ocamltest/environments.ml[40,1835+47]..[40,1835+55])
+                    ]
+    ]
+  structure_item (ocamltest/environments.ml[42,1892+0]..[50,2157+12])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[42,1892+4]..[42,1892+17])
+          Ppat_var "to_system_env" (ocamltest/environments.ml[42,1892+4]..[42,1892+17])
+        expression (ocamltest/environments.ml[42,1892+18]..[50,2157+12]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[42,1892+18]..[42,1892+21])
+            Ppat_var "env" (ocamltest/environments.ml[42,1892+18]..[42,1892+21])
+          expression (ocamltest/environments.ml[43,1916+2]..[50,2157+12])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (ocamltest/environments.ml[43,1916+6]..[43,1916+16])
+                  Ppat_var "system_env" (ocamltest/environments.ml[43,1916+6]..[43,1916+16])
+                expression (ocamltest/environments.ml[43,1916+19]..[43,1916+59])
+                  Pexp_apply
+                  expression (ocamltest/environments.ml[43,1916+19]..[43,1916+29])
+                    Pexp_ident "Array.make" (ocamltest/environments.ml[43,1916+19]..[43,1916+29])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[43,1916+30]..[43,1916+56])
+                        Pexp_apply
+                        expression (ocamltest/environments.ml[43,1916+31]..[43,1916+51])
+                          Pexp_ident "VariableMap.cardinal" (ocamltest/environments.ml[43,1916+31]..[43,1916+51])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (ocamltest/environments.ml[43,1916+52]..[43,1916+55])
+                              Pexp_ident "env" (ocamltest/environments.ml[43,1916+52]..[43,1916+55])
+                        ]
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[43,1916+57]..[43,1916+59])
+                        Pexp_constant PConst_string("",(ocamltest/environments.ml[43,1916+58]..[43,1916+58]),None)
+                  ]
+            ]
+            expression (ocamltest/environments.ml[44,1979+2]..[50,2157+12])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (ocamltest/environments.ml[44,1979+6]..[44,1979+7])
+                    Ppat_var "i" (ocamltest/environments.ml[44,1979+6]..[44,1979+7])
+                  expression (ocamltest/environments.ml[44,1979+10]..[44,1979+15])
+                    Pexp_apply
+                    expression (ocamltest/environments.ml[44,1979+10]..[44,1979+13])
+                      Pexp_ident "ref" (ocamltest/environments.ml[44,1979+10]..[44,1979+13])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[44,1979+14]..[44,1979+15])
+                          Pexp_constant PConst_int (0,None)
+                    ]
+              ]
+              expression (ocamltest/environments.ml[45,1998+2]..[50,2157+12])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (ocamltest/environments.ml[45,1998+6]..[45,1998+11])
+                      Ppat_var "store" (ocamltest/environments.ml[45,1998+6]..[45,1998+11])
+                    expression (ocamltest/environments.ml[45,1998+12]..[48,2113+10]) ghost
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (ocamltest/environments.ml[45,1998+12]..[45,1998+20])
+                        Ppat_var "variable" (ocamltest/environments.ml[45,1998+12]..[45,1998+20])
+                      expression (ocamltest/environments.ml[45,1998+21]..[48,2113+10]) ghost
+                        Pexp_fun
+                        Nolabel
+                        None
+                        pattern (ocamltest/environments.ml[45,1998+21]..[45,1998+26])
+                          Ppat_var "value" (ocamltest/environments.ml[45,1998+21]..[45,1998+26])
+                        expression (ocamltest/environments.ml[46,2027+4]..[48,2113+10])
+                          Pexp_sequence
+                          expression (ocamltest/environments.ml[46,2027+4]..[47,2050+61])
+                            Pexp_apply
+                            expression (ocamltest/environments.ml[46,2027+4]..[47,2050+61]) ghost
+                              Pexp_ident "Array.set" (ocamltest/environments.ml[46,2027+4]..[47,2050+61]) ghost
+                            [
+                              <arg>
+                              Nolabel
+                                expression (ocamltest/environments.ml[46,2027+4]..[46,2027+14])
+                                  Pexp_ident "system_env" (ocamltest/environments.ml[46,2027+4]..[46,2027+14])
+                              <arg>
+                              Nolabel
+                                expression (ocamltest/environments.ml[46,2027+16]..[46,2027+18])
+                                  Pexp_apply
+                                  expression (ocamltest/environments.ml[46,2027+16]..[46,2027+17])
+                                    Pexp_ident "!" (ocamltest/environments.ml[46,2027+16]..[46,2027+17])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (ocamltest/environments.ml[46,2027+17]..[46,2027+18])
+                                        Pexp_ident "i" (ocamltest/environments.ml[46,2027+17]..[46,2027+18])
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (ocamltest/environments.ml[47,2050+6]..[47,2050+61])
+                                  Pexp_apply
+                                  expression (ocamltest/environments.ml[47,2050+6]..[47,2050+33])
+                                    Pexp_ident "Variables.string_of_binding" (ocamltest/environments.ml[47,2050+6]..[47,2050+33])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (ocamltest/environments.ml[47,2050+34]..[47,2050+42])
+                                        Pexp_ident "variable" (ocamltest/environments.ml[47,2050+34]..[47,2050+42])
+                                    <arg>
+                                    Nolabel
+                                      expression (ocamltest/environments.ml[47,2050+43]..[47,2050+61])
+                                        Pexp_apply
+                                        expression (ocamltest/environments.ml[47,2050+44]..[47,2050+50])
+                                          Pexp_ident "expand" (ocamltest/environments.ml[47,2050+44]..[47,2050+50])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (ocamltest/environments.ml[47,2050+51]..[47,2050+54])
+                                              Pexp_ident "env" (ocamltest/environments.ml[47,2050+51]..[47,2050+54])
+                                          <arg>
+                                          Nolabel
+                                            expression (ocamltest/environments.ml[47,2050+55]..[47,2050+60])
+                                              Pexp_ident "value" (ocamltest/environments.ml[47,2050+55]..[47,2050+60])
+                                        ]
+                                  ]
+                            ]
+                          expression (ocamltest/environments.ml[48,2113+4]..[48,2113+10])
+                            Pexp_apply
+                            expression (ocamltest/environments.ml[48,2113+4]..[48,2113+8])
+                              Pexp_ident "incr" (ocamltest/environments.ml[48,2113+4]..[48,2113+8])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (ocamltest/environments.ml[48,2113+9]..[48,2113+10])
+                                  Pexp_ident "i" (ocamltest/environments.ml[48,2113+9]..[48,2113+10])
+                            ]
+                ]
+                expression (ocamltest/environments.ml[49,2127+2]..[50,2157+12])
+                  Pexp_sequence
+                  expression (ocamltest/environments.ml[49,2127+2]..[49,2127+28])
+                    Pexp_apply
+                    expression (ocamltest/environments.ml[49,2127+2]..[49,2127+18])
+                      Pexp_ident "VariableMap.iter" (ocamltest/environments.ml[49,2127+2]..[49,2127+18])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[49,2127+19]..[49,2127+24])
+                          Pexp_ident "store" (ocamltest/environments.ml[49,2127+19]..[49,2127+24])
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[49,2127+25]..[49,2127+28])
+                          Pexp_ident "env" (ocamltest/environments.ml[49,2127+25]..[49,2127+28])
+                    ]
+                  expression (ocamltest/environments.ml[50,2157+2]..[50,2157+12])
+                    Pexp_ident "system_env" (ocamltest/environments.ml[50,2157+2]..[50,2157+12])
+    ]
+  structure_item (ocamltest/environments.ml[52,2171+0]..[53,2197+78])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[52,2171+4]..[52,2171+10])
+          Ppat_var "lookup" (ocamltest/environments.ml[52,2171+4]..[52,2171+10])
+        expression (ocamltest/environments.ml[52,2171+11]..[53,2197+78]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[52,2171+11]..[52,2171+19])
+            Ppat_var "variable" (ocamltest/environments.ml[52,2171+11]..[52,2171+19])
+          expression (ocamltest/environments.ml[52,2171+20]..[53,2197+78]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[52,2171+20]..[52,2171+23])
+              Ppat_var "env" (ocamltest/environments.ml[52,2171+20]..[52,2171+23])
+            expression (ocamltest/environments.ml[53,2197+2]..[53,2197+78])
+              Pexp_try
+              expression (ocamltest/environments.ml[53,2197+6]..[53,2197+55])
+                Pexp_construct "Some" (ocamltest/environments.ml[53,2197+6]..[53,2197+10])
+                Some
+                  expression (ocamltest/environments.ml[53,2197+11]..[53,2197+55])
+                    Pexp_apply
+                    expression (ocamltest/environments.ml[53,2197+12]..[53,2197+18])
+                      Pexp_ident "expand" (ocamltest/environments.ml[53,2197+12]..[53,2197+18])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[53,2197+19]..[53,2197+22])
+                          Pexp_ident "env" (ocamltest/environments.ml[53,2197+19]..[53,2197+22])
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[53,2197+23]..[53,2197+54])
+                          Pexp_apply
+                          expression (ocamltest/environments.ml[53,2197+24]..[53,2197+40])
+                            Pexp_ident "VariableMap.find" (ocamltest/environments.ml[53,2197+24]..[53,2197+40])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (ocamltest/environments.ml[53,2197+41]..[53,2197+49])
+                                Pexp_ident "variable" (ocamltest/environments.ml[53,2197+41]..[53,2197+49])
+                            <arg>
+                            Nolabel
+                              expression (ocamltest/environments.ml[53,2197+50]..[53,2197+53])
+                                Pexp_ident "env" (ocamltest/environments.ml[53,2197+50]..[53,2197+53])
+                          ]
+                    ]
+              [
+                <case>
+                  pattern (ocamltest/environments.ml[53,2197+61]..[53,2197+70])
+                    Ppat_construct "Not_found" (ocamltest/environments.ml[53,2197+61]..[53,2197+70])
+                    None
+                  expression (ocamltest/environments.ml[53,2197+74]..[53,2197+78])
+                    Pexp_construct "None" (ocamltest/environments.ml[53,2197+74]..[53,2197+78])
+                    None
+              ]
+    ]
+  structure_item (ocamltest/environments.ml[55,2277+0]..[57,2360+58])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[55,2277+4]..[55,2277+19])
+          Ppat_var "lookup_nonempty" (ocamltest/environments.ml[55,2277+4]..[55,2277+19])
+        expression (ocamltest/environments.ml[55,2277+20]..[57,2360+58]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[55,2277+20]..[55,2277+28])
+            Ppat_var "variable" (ocamltest/environments.ml[55,2277+20]..[55,2277+28])
+          expression (ocamltest/environments.ml[55,2277+29]..[57,2360+58]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[55,2277+29]..[55,2277+32])
+              Ppat_var "env" (ocamltest/environments.ml[55,2277+29]..[55,2277+32])
+            expression (ocamltest/environments.ml[55,2277+35]..[57,2360+58])
+              Pexp_match
+              expression (ocamltest/environments.ml[55,2277+41]..[55,2277+60])
+                Pexp_apply
+                expression (ocamltest/environments.ml[55,2277+41]..[55,2277+47])
+                  Pexp_ident "lookup" (ocamltest/environments.ml[55,2277+41]..[55,2277+47])
+                [
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[55,2277+48]..[55,2277+56])
+                      Pexp_ident "variable" (ocamltest/environments.ml[55,2277+48]..[55,2277+56])
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[55,2277+57]..[55,2277+60])
+                      Pexp_ident "env" (ocamltest/environments.ml[55,2277+57]..[55,2277+60])
+                ]
+              [
+                <case>
+                  pattern (ocamltest/environments.ml[56,2343+4]..[56,2343+8])
+                    Ppat_construct "None" (ocamltest/environments.ml[56,2343+4]..[56,2343+8])
+                    None
+                  expression (ocamltest/environments.ml[56,2343+12]..[56,2343+16])
+                    Pexp_construct "None" (ocamltest/environments.ml[56,2343+12]..[56,2343+16])
+                    None
+                <case>
+                  pattern (ocamltest/environments.ml[57,2360+4]..[57,2360+15])
+                    Ppat_alias "t" (ocamltest/environments.ml[57,2360+14]..[57,2360+15])
+                    pattern (ocamltest/environments.ml[57,2360+4]..[57,2360+10])
+                      Ppat_construct "Some" (ocamltest/environments.ml[57,2360+4]..[57,2360+8])
+                      Some
+                        []
+                        pattern (ocamltest/environments.ml[57,2360+9]..[57,2360+10])
+                          Ppat_var "x" (ocamltest/environments.ml[57,2360+9]..[57,2360+10])
+                  expression (ocamltest/environments.ml[57,2360+19]..[57,2360+58])
+                    Pexp_ifthenelse
+                    expression (ocamltest/environments.ml[57,2360+22]..[57,2360+41])
+                      Pexp_apply
+                      expression (ocamltest/environments.ml[57,2360+37]..[57,2360+38])
+                        Pexp_ident "=" (ocamltest/environments.ml[57,2360+37]..[57,2360+38])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (ocamltest/environments.ml[57,2360+22]..[57,2360+36])
+                            Pexp_apply
+                            expression (ocamltest/environments.ml[57,2360+22]..[57,2360+34])
+                              Pexp_ident "String.words" (ocamltest/environments.ml[57,2360+22]..[57,2360+34])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (ocamltest/environments.ml[57,2360+35]..[57,2360+36])
+                                  Pexp_ident "x" (ocamltest/environments.ml[57,2360+35]..[57,2360+36])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (ocamltest/environments.ml[57,2360+39]..[57,2360+41])
+                            Pexp_construct "[]" (ocamltest/environments.ml[57,2360+39]..[57,2360+41])
+                            None
+                      ]
+                    expression (ocamltest/environments.ml[57,2360+47]..[57,2360+51])
+                      Pexp_construct "None" (ocamltest/environments.ml[57,2360+47]..[57,2360+51])
+                      None
+                    Some
+                      expression (ocamltest/environments.ml[57,2360+57]..[57,2360+58])
+                        Pexp_ident "t" (ocamltest/environments.ml[57,2360+57]..[57,2360+58])
+              ]
+    ]
+  structure_item (ocamltest/environments.ml[59,2420+0]..[63,2533+24])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[59,2420+4]..[59,2420+18])
+          Ppat_var "lookup_as_bool" (ocamltest/environments.ml[59,2420+4]..[59,2420+18])
+        expression (ocamltest/environments.ml[59,2420+19]..[63,2533+24]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[59,2420+19]..[59,2420+27])
+            Ppat_var "variable" (ocamltest/environments.ml[59,2420+19]..[59,2420+27])
+          expression (ocamltest/environments.ml[59,2420+28]..[63,2533+24]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[59,2420+28]..[59,2420+31])
+              Ppat_var "env" (ocamltest/environments.ml[59,2420+28]..[59,2420+31])
+            expression (ocamltest/environments.ml[60,2454+2]..[63,2533+24])
+              Pexp_match
+              expression (ocamltest/environments.ml[60,2454+8]..[60,2454+27])
+                Pexp_apply
+                expression (ocamltest/environments.ml[60,2454+8]..[60,2454+14])
+                  Pexp_ident "lookup" (ocamltest/environments.ml[60,2454+8]..[60,2454+14])
+                [
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[60,2454+15]..[60,2454+23])
+                      Pexp_ident "variable" (ocamltest/environments.ml[60,2454+15]..[60,2454+23])
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[60,2454+24]..[60,2454+27])
+                      Pexp_ident "env" (ocamltest/environments.ml[60,2454+24]..[60,2454+27])
+                ]
+              [
+                <case>
+                  pattern (ocamltest/environments.ml[61,2487+4]..[61,2487+8])
+                    Ppat_construct "None" (ocamltest/environments.ml[61,2487+4]..[61,2487+8])
+                    None
+                  expression (ocamltest/environments.ml[61,2487+12]..[61,2487+16])
+                    Pexp_construct "None" (ocamltest/environments.ml[61,2487+12]..[61,2487+16])
+                    None
+                <case>
+                  pattern (ocamltest/environments.ml[62,2504+4]..[62,2504+15])
+                    Ppat_construct "Some" (ocamltest/environments.ml[62,2504+4]..[62,2504+8])
+                    Some
+                      []
+                      pattern (ocamltest/environments.ml[62,2504+9]..[62,2504+15])
+                        Ppat_constant PConst_string("true",(ocamltest/environments.ml[62,2504+10]..[62,2504+14]),None)
+                  expression (ocamltest/environments.ml[62,2504+19]..[62,2504+28])
+                    Pexp_construct "Some" (ocamltest/environments.ml[62,2504+19]..[62,2504+23])
+                    Some
+                      expression (ocamltest/environments.ml[62,2504+24]..[62,2504+28])
+                        Pexp_construct "true" (ocamltest/environments.ml[62,2504+24]..[62,2504+28])
+                        None
+                <case>
+                  pattern (ocamltest/environments.ml[63,2533+4]..[63,2533+10])
+                    Ppat_construct "Some" (ocamltest/environments.ml[63,2533+4]..[63,2533+8])
+                    Some
+                      []
+                      pattern (ocamltest/environments.ml[63,2533+9]..[63,2533+10])
+                        Ppat_any
+                  expression (ocamltest/environments.ml[63,2533+14]..[63,2533+24])
+                    Pexp_construct "Some" (ocamltest/environments.ml[63,2533+14]..[63,2533+18])
+                    Some
+                      expression (ocamltest/environments.ml[63,2533+19]..[63,2533+24])
+                        Pexp_construct "false" (ocamltest/environments.ml[63,2533+19]..[63,2533+24])
+                        None
+              ]
+    ]
+  structure_item (ocamltest/environments.ml[65,2559+0]..[69,2660+29])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[65,2559+4]..[65,2559+17])
+          Ppat_var "lookup_as_int" (ocamltest/environments.ml[65,2559+4]..[65,2559+17])
+        expression (ocamltest/environments.ml[65,2559+18]..[69,2660+29]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[65,2559+18]..[65,2559+26])
+            Ppat_var "variable" (ocamltest/environments.ml[65,2559+18]..[65,2559+26])
+          expression (ocamltest/environments.ml[65,2559+27]..[69,2660+29]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[65,2559+27]..[65,2559+30])
+              Ppat_var "env" (ocamltest/environments.ml[65,2559+27]..[65,2559+30])
+            expression (ocamltest/environments.ml[66,2592+2]..[69,2660+29])
+              Pexp_match
+              expression (ocamltest/environments.ml[66,2592+8]..[66,2592+27])
+                Pexp_apply
+                expression (ocamltest/environments.ml[66,2592+8]..[66,2592+14])
+                  Pexp_ident "lookup" (ocamltest/environments.ml[66,2592+8]..[66,2592+14])
+                [
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[66,2592+15]..[66,2592+23])
+                      Pexp_ident "variable" (ocamltest/environments.ml[66,2592+15]..[66,2592+23])
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[66,2592+24]..[66,2592+27])
+                      Pexp_ident "env" (ocamltest/environments.ml[66,2592+24]..[66,2592+27])
+                ]
+              [
+                <case>
+                  pattern (ocamltest/environments.ml[67,2625+4]..[67,2625+8])
+                    Ppat_construct "None" (ocamltest/environments.ml[67,2625+4]..[67,2625+8])
+                    None
+                  expression (ocamltest/environments.ml[67,2625+12]..[67,2625+16])
+                    Pexp_construct "None" (ocamltest/environments.ml[67,2625+12]..[67,2625+16])
+                    None
+                <case>
+                  pattern (ocamltest/environments.ml[68,2642+4]..[68,2642+14])
+                    Ppat_construct "Some" (ocamltest/environments.ml[68,2642+4]..[68,2642+8])
+                    Some
+                      []
+                      pattern (ocamltest/environments.ml[68,2642+9]..[68,2642+14])
+                        Ppat_var "value" (ocamltest/environments.ml[68,2642+9]..[68,2642+14])
+                  expression (ocamltest/environments.ml[69,2660+6]..[69,2660+29])
+                    Pexp_apply
+                    expression (ocamltest/environments.ml[69,2660+6]..[69,2660+23])
+                      Pexp_ident "int_of_string_opt" (ocamltest/environments.ml[69,2660+6]..[69,2660+23])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[69,2660+24]..[69,2660+29])
+                          Pexp_ident "value" (ocamltest/environments.ml[69,2660+24]..[69,2660+29])
+                    ]
+              ]
+    ]
+  structure_item (ocamltest/environments.ml[71,2691+0]..[73,2768+23])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[71,2691+4]..[71,2691+15])
+          Ppat_var "safe_lookup" (ocamltest/environments.ml[71,2691+4]..[71,2691+15])
+        expression (ocamltest/environments.ml[71,2691+16]..[73,2768+23]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[71,2691+16]..[71,2691+24])
+            Ppat_var "variable" (ocamltest/environments.ml[71,2691+16]..[71,2691+24])
+          expression (ocamltest/environments.ml[71,2691+25]..[73,2768+23]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[71,2691+25]..[71,2691+28])
+              Ppat_var "env" (ocamltest/environments.ml[71,2691+25]..[71,2691+28])
+            expression (ocamltest/environments.ml[71,2691+31]..[73,2768+23])
+              Pexp_match
+              expression (ocamltest/environments.ml[71,2691+37]..[71,2691+56])
+                Pexp_apply
+                expression (ocamltest/environments.ml[71,2691+37]..[71,2691+43])
+                  Pexp_ident "lookup" (ocamltest/environments.ml[71,2691+37]..[71,2691+43])
+                [
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[71,2691+44]..[71,2691+52])
+                      Pexp_ident "variable" (ocamltest/environments.ml[71,2691+44]..[71,2691+52])
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[71,2691+53]..[71,2691+56])
+                      Pexp_ident "env" (ocamltest/environments.ml[71,2691+53]..[71,2691+56])
+                ]
+              [
+                <case>
+                  pattern (ocamltest/environments.ml[72,2753+4]..[72,2753+8])
+                    Ppat_construct "None" (ocamltest/environments.ml[72,2753+4]..[72,2753+8])
+                    None
+                  expression (ocamltest/environments.ml[72,2753+12]..[72,2753+14])
+                    Pexp_constant PConst_string("",(ocamltest/environments.ml[72,2753+13]..[72,2753+13]),None)
+                <case>
+                  pattern (ocamltest/environments.ml[73,2768+4]..[73,2768+14])
+                    Ppat_construct "Some" (ocamltest/environments.ml[73,2768+4]..[73,2768+8])
+                    Some
+                      []
+                      pattern (ocamltest/environments.ml[73,2768+9]..[73,2768+14])
+                        Ppat_var "value" (ocamltest/environments.ml[73,2768+9]..[73,2768+14])
+                  expression (ocamltest/environments.ml[73,2768+18]..[73,2768+23])
+                    Pexp_ident "value" (ocamltest/environments.ml[73,2768+18]..[73,2768+23])
+              ]
+    ]
+  structure_item (ocamltest/environments.ml[75,2793+0]..[76,2832+30])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[75,2793+4]..[75,2793+23])
+          Ppat_var "is_variable_defined" (ocamltest/environments.ml[75,2793+4]..[75,2793+23])
+        expression (ocamltest/environments.ml[75,2793+24]..[76,2832+30]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[75,2793+24]..[75,2793+32])
+            Ppat_var "variable" (ocamltest/environments.ml[75,2793+24]..[75,2793+32])
+          expression (ocamltest/environments.ml[75,2793+33]..[76,2832+30]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[75,2793+33]..[75,2793+36])
+              Ppat_var "env" (ocamltest/environments.ml[75,2793+33]..[75,2793+36])
+            expression (ocamltest/environments.ml[76,2832+2]..[76,2832+30])
+              Pexp_apply
+              expression (ocamltest/environments.ml[76,2832+2]..[76,2832+17])
+                Pexp_ident "VariableMap.mem" (ocamltest/environments.ml[76,2832+2]..[76,2832+17])
+              [
+                <arg>
+                Nolabel
+                  expression (ocamltest/environments.ml[76,2832+18]..[76,2832+26])
+                    Pexp_ident "variable" (ocamltest/environments.ml[76,2832+18]..[76,2832+26])
+                <arg>
+                Nolabel
+                  expression (ocamltest/environments.ml[76,2832+27]..[76,2832+30])
+                    Pexp_ident "env" (ocamltest/environments.ml[76,2832+27]..[76,2832+30])
+              ]
+    ]
+  structure_item (ocamltest/environments.ml[78,2864+0]..[78,2864+63])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[78,2864+4]..[78,2864+7])
+          Ppat_var "add" (ocamltest/environments.ml[78,2864+4]..[78,2864+7])
+        expression (ocamltest/environments.ml[78,2864+8]..[78,2864+63]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[78,2864+8]..[78,2864+16])
+            Ppat_var "variable" (ocamltest/environments.ml[78,2864+8]..[78,2864+16])
+          expression (ocamltest/environments.ml[78,2864+17]..[78,2864+63]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[78,2864+17]..[78,2864+22])
+              Ppat_var "value" (ocamltest/environments.ml[78,2864+17]..[78,2864+22])
+            expression (ocamltest/environments.ml[78,2864+23]..[78,2864+63]) ghost
+              Pexp_fun
+              Nolabel
+              None
+              pattern (ocamltest/environments.ml[78,2864+23]..[78,2864+26])
+                Ppat_var "env" (ocamltest/environments.ml[78,2864+23]..[78,2864+26])
+              expression (ocamltest/environments.ml[78,2864+29]..[78,2864+63])
+                Pexp_apply
+                expression (ocamltest/environments.ml[78,2864+29]..[78,2864+44])
+                  Pexp_ident "VariableMap.add" (ocamltest/environments.ml[78,2864+29]..[78,2864+44])
+                [
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[78,2864+45]..[78,2864+53])
+                      Pexp_ident "variable" (ocamltest/environments.ml[78,2864+45]..[78,2864+53])
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[78,2864+54]..[78,2864+59])
+                      Pexp_ident "value" (ocamltest/environments.ml[78,2864+54]..[78,2864+59])
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[78,2864+60]..[78,2864+63])
+                      Pexp_ident "env" (ocamltest/environments.ml[78,2864+60]..[78,2864+63])
+                ]
+    ]
+  structure_item (ocamltest/environments.ml[80,2929+0]..[81,2971+70])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[80,2929+4]..[80,2929+20])
+          Ppat_var "add_if_undefined" (ocamltest/environments.ml[80,2929+4]..[80,2929+20])
+        expression (ocamltest/environments.ml[80,2929+21]..[81,2971+70]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[80,2929+21]..[80,2929+29])
+            Ppat_var "variable" (ocamltest/environments.ml[80,2929+21]..[80,2929+29])
+          expression (ocamltest/environments.ml[80,2929+30]..[81,2971+70]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[80,2929+30]..[80,2929+35])
+              Ppat_var "value" (ocamltest/environments.ml[80,2929+30]..[80,2929+35])
+            expression (ocamltest/environments.ml[80,2929+36]..[81,2971+70]) ghost
+              Pexp_fun
+              Nolabel
+              None
+              pattern (ocamltest/environments.ml[80,2929+36]..[80,2929+39])
+                Ppat_var "env" (ocamltest/environments.ml[80,2929+36]..[80,2929+39])
+              expression (ocamltest/environments.ml[81,2971+2]..[81,2971+70])
+                Pexp_ifthenelse
+                expression (ocamltest/environments.ml[81,2971+5]..[81,2971+33])
+                  Pexp_apply
+                  expression (ocamltest/environments.ml[81,2971+5]..[81,2971+20])
+                    Pexp_ident "VariableMap.mem" (ocamltest/environments.ml[81,2971+5]..[81,2971+20])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[81,2971+21]..[81,2971+29])
+                        Pexp_ident "variable" (ocamltest/environments.ml[81,2971+21]..[81,2971+29])
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[81,2971+30]..[81,2971+33])
+                        Pexp_ident "env" (ocamltest/environments.ml[81,2971+30]..[81,2971+33])
+                  ]
+                expression (ocamltest/environments.ml[81,2971+39]..[81,2971+42])
+                  Pexp_ident "env" (ocamltest/environments.ml[81,2971+39]..[81,2971+42])
+                Some
+                  expression (ocamltest/environments.ml[81,2971+48]..[81,2971+70])
+                    Pexp_apply
+                    expression (ocamltest/environments.ml[81,2971+48]..[81,2971+51])
+                      Pexp_ident "add" (ocamltest/environments.ml[81,2971+48]..[81,2971+51])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[81,2971+52]..[81,2971+60])
+                          Pexp_ident "variable" (ocamltest/environments.ml[81,2971+52]..[81,2971+60])
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[81,2971+61]..[81,2971+66])
+                          Pexp_ident "value" (ocamltest/environments.ml[81,2971+61]..[81,2971+66])
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[81,2971+67]..[81,2971+70])
+                          Pexp_ident "env" (ocamltest/environments.ml[81,2971+67]..[81,2971+70])
+                    ]
+    ]
+  structure_item (ocamltest/environments.ml[83,3043+0]..[86,3202+48])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[83,3043+4]..[83,3043+10])
+          Ppat_var "append" (ocamltest/environments.ml[83,3043+4]..[83,3043+10])
+        expression (ocamltest/environments.ml[83,3043+11]..[86,3202+48]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[83,3043+11]..[83,3043+19])
+            Ppat_var "variable" (ocamltest/environments.ml[83,3043+11]..[83,3043+19])
+          expression (ocamltest/environments.ml[83,3043+20]..[86,3202+48]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[83,3043+20]..[83,3043+33])
+              Ppat_var "appened_value" (ocamltest/environments.ml[83,3043+20]..[83,3043+33])
+            expression (ocamltest/environments.ml[83,3043+34]..[86,3202+48]) ghost
+              Pexp_fun
+              Nolabel
+              None
+              pattern (ocamltest/environments.ml[83,3043+34]..[83,3043+45])
+                Ppat_var "environment" (ocamltest/environments.ml[83,3043+34]..[83,3043+45])
+              expression (ocamltest/environments.ml[84,3091+2]..[86,3202+48])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (ocamltest/environments.ml[84,3091+6]..[84,3091+20])
+                      Ppat_var "previous_value" (ocamltest/environments.ml[84,3091+6]..[84,3091+20])
+                    expression (ocamltest/environments.ml[84,3091+23]..[84,3091+55])
+                      Pexp_apply
+                      expression (ocamltest/environments.ml[84,3091+23]..[84,3091+34])
+                        Pexp_ident "safe_lookup" (ocamltest/environments.ml[84,3091+23]..[84,3091+34])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (ocamltest/environments.ml[84,3091+35]..[84,3091+43])
+                            Pexp_ident "variable" (ocamltest/environments.ml[84,3091+35]..[84,3091+43])
+                        <arg>
+                        Nolabel
+                          expression (ocamltest/environments.ml[84,3091+44]..[84,3091+55])
+                            Pexp_ident "environment" (ocamltest/environments.ml[84,3091+44]..[84,3091+55])
+                      ]
+                ]
+                expression (ocamltest/environments.ml[85,3150+2]..[86,3202+48])
+                  Pexp_let Nonrec
+                  [
+                    <def>
+                      pattern (ocamltest/environments.ml[85,3150+6]..[85,3150+15])
+                        Ppat_var "new_value" (ocamltest/environments.ml[85,3150+6]..[85,3150+15])
+                      expression (ocamltest/environments.ml[85,3150+18]..[85,3150+48])
+                        Pexp_apply
+                        expression (ocamltest/environments.ml[85,3150+33]..[85,3150+34])
+                          Pexp_ident "^" (ocamltest/environments.ml[85,3150+33]..[85,3150+34])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (ocamltest/environments.ml[85,3150+18]..[85,3150+32])
+                              Pexp_ident "previous_value" (ocamltest/environments.ml[85,3150+18]..[85,3150+32])
+                          <arg>
+                          Nolabel
+                            expression (ocamltest/environments.ml[85,3150+35]..[85,3150+48])
+                              Pexp_ident "appened_value" (ocamltest/environments.ml[85,3150+35]..[85,3150+48])
+                        ]
+                  ]
+                  expression (ocamltest/environments.ml[86,3202+2]..[86,3202+48])
+                    Pexp_apply
+                    expression (ocamltest/environments.ml[86,3202+2]..[86,3202+17])
+                      Pexp_ident "VariableMap.add" (ocamltest/environments.ml[86,3202+2]..[86,3202+17])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[86,3202+18]..[86,3202+26])
+                          Pexp_ident "variable" (ocamltest/environments.ml[86,3202+18]..[86,3202+26])
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[86,3202+27]..[86,3202+36])
+                          Pexp_ident "new_value" (ocamltest/environments.ml[86,3202+27]..[86,3202+36])
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[86,3202+37]..[86,3202+48])
+                          Pexp_ident "environment" (ocamltest/environments.ml[86,3202+37]..[86,3202+48])
+                    ]
+    ]
+  structure_item (ocamltest/environments.ml[88,3252+0]..[88,3252+31])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[88,3252+4]..[88,3252+10])
+          Ppat_var "remove" (ocamltest/environments.ml[88,3252+4]..[88,3252+10])
+        expression (ocamltest/environments.ml[88,3252+13]..[88,3252+31])
+          Pexp_ident "VariableMap.remove" (ocamltest/environments.ml[88,3252+13]..[88,3252+31])
+    ]
+  structure_item (ocamltest/environments.ml[90,3285+0]..[92,3375+31])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[90,3285+4]..[90,3285+16])
+          Ppat_var "add_bindings" (ocamltest/environments.ml[90,3285+4]..[90,3285+16])
+        expression (ocamltest/environments.ml[90,3285+17]..[92,3375+31]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[90,3285+17]..[90,3285+25])
+            Ppat_var "bindings" (ocamltest/environments.ml[90,3285+17]..[90,3285+25])
+          expression (ocamltest/environments.ml[90,3285+26]..[92,3375+31]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[90,3285+26]..[90,3285+29])
+              Ppat_var "env" (ocamltest/environments.ml[90,3285+26]..[90,3285+29])
+            expression (ocamltest/environments.ml[91,3317+2]..[92,3375+31])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (ocamltest/environments.ml[91,3317+6]..[91,3317+7])
+                    Ppat_var "f" (ocamltest/environments.ml[91,3317+6]..[91,3317+7])
+                  expression (ocamltest/environments.ml[91,3317+8]..[91,3317+54]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (ocamltest/environments.ml[91,3317+8]..[91,3317+11])
+                      Ppat_var "env" (ocamltest/environments.ml[91,3317+8]..[91,3317+11])
+                    expression (ocamltest/environments.ml[91,3317+12]..[91,3317+54]) ghost
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (ocamltest/environments.ml[91,3317+12]..[91,3317+29])
+                        Ppat_tuple
+                        [
+                          pattern (ocamltest/environments.ml[91,3317+13]..[91,3317+21])
+                            Ppat_var "variable" (ocamltest/environments.ml[91,3317+13]..[91,3317+21])
+                          pattern (ocamltest/environments.ml[91,3317+23]..[91,3317+28])
+                            Ppat_var "value" (ocamltest/environments.ml[91,3317+23]..[91,3317+28])
+                        ]
+                      expression (ocamltest/environments.ml[91,3317+32]..[91,3317+54])
+                        Pexp_apply
+                        expression (ocamltest/environments.ml[91,3317+32]..[91,3317+35])
+                          Pexp_ident "add" (ocamltest/environments.ml[91,3317+32]..[91,3317+35])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (ocamltest/environments.ml[91,3317+36]..[91,3317+44])
+                              Pexp_ident "variable" (ocamltest/environments.ml[91,3317+36]..[91,3317+44])
+                          <arg>
+                          Nolabel
+                            expression (ocamltest/environments.ml[91,3317+45]..[91,3317+50])
+                              Pexp_ident "value" (ocamltest/environments.ml[91,3317+45]..[91,3317+50])
+                          <arg>
+                          Nolabel
+                            expression (ocamltest/environments.ml[91,3317+51]..[91,3317+54])
+                              Pexp_ident "env" (ocamltest/environments.ml[91,3317+51]..[91,3317+54])
+                        ]
+              ]
+              expression (ocamltest/environments.ml[92,3375+2]..[92,3375+31])
+                Pexp_apply
+                expression (ocamltest/environments.ml[92,3375+2]..[92,3375+16])
+                  Pexp_ident "List.fold_left" (ocamltest/environments.ml[92,3375+2]..[92,3375+16])
+                [
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[92,3375+17]..[92,3375+18])
+                      Pexp_ident "f" (ocamltest/environments.ml[92,3375+17]..[92,3375+18])
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[92,3375+19]..[92,3375+22])
+                      Pexp_ident "env" (ocamltest/environments.ml[92,3375+19]..[92,3375+22])
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[92,3375+23]..[92,3375+31])
+                      Pexp_ident "bindings" (ocamltest/environments.ml[92,3375+23]..[92,3375+31])
+                ]
+    ]
+  structure_item (ocamltest/environments.ml[94,3408+0]..[94,3408+56])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[94,3408+4]..[94,3408+17])
+          Ppat_var "from_bindings" (ocamltest/environments.ml[94,3408+4]..[94,3408+17])
+        expression (ocamltest/environments.ml[94,3408+18]..[94,3408+56]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[94,3408+18]..[94,3408+26])
+            Ppat_var "bindings" (ocamltest/environments.ml[94,3408+18]..[94,3408+26])
+          expression (ocamltest/environments.ml[94,3408+29]..[94,3408+56])
+            Pexp_apply
+            expression (ocamltest/environments.ml[94,3408+29]..[94,3408+41])
+              Pexp_ident "add_bindings" (ocamltest/environments.ml[94,3408+29]..[94,3408+41])
+            [
+              <arg>
+              Nolabel
+                expression (ocamltest/environments.ml[94,3408+42]..[94,3408+50])
+                  Pexp_ident "bindings" (ocamltest/environments.ml[94,3408+42]..[94,3408+50])
+              <arg>
+              Nolabel
+                expression (ocamltest/environments.ml[94,3408+51]..[94,3408+56])
+                  Pexp_ident "empty" (ocamltest/environments.ml[94,3408+51]..[94,3408+56])
+            ]
+    ]
+  structure_item (ocamltest/environments.ml[96,3466+0]..[97,3510+78])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[96,3466+4]..[96,3466+19])
+          Ppat_var "dump_assignment" (ocamltest/environments.ml[96,3466+4]..[96,3466+19])
+        expression (ocamltest/environments.ml[96,3466+20]..[97,3510+78]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[96,3466+20]..[96,3466+23])
+            Ppat_var "log" (ocamltest/environments.ml[96,3466+20]..[96,3466+23])
+          expression (ocamltest/environments.ml[96,3466+24]..[97,3510+78]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[96,3466+24]..[96,3466+41])
+              Ppat_tuple
+              [
+                pattern (ocamltest/environments.ml[96,3466+25]..[96,3466+33])
+                  Ppat_var "variable" (ocamltest/environments.ml[96,3466+25]..[96,3466+33])
+                pattern (ocamltest/environments.ml[96,3466+35]..[96,3466+40])
+                  Ppat_var "value" (ocamltest/environments.ml[96,3466+35]..[96,3466+40])
+              ]
+            expression (ocamltest/environments.ml[97,3510+2]..[97,3510+78])
+              Pexp_apply
+              expression (ocamltest/environments.ml[97,3510+2]..[97,3510+16])
+                Pexp_ident "Printf.fprintf" (ocamltest/environments.ml[97,3510+2]..[97,3510+16])
+              [
+                <arg>
+                Nolabel
+                  expression (ocamltest/environments.ml[97,3510+17]..[97,3510+20])
+                    Pexp_ident "log" (ocamltest/environments.ml[97,3510+17]..[97,3510+20])
+                <arg>
+                Nolabel
+                  expression (ocamltest/environments.ml[97,3510+21]..[97,3510+34])
+                    Pexp_constant PConst_string("%s = %s\n%!",(ocamltest/environments.ml[97,3510+22]..[97,3510+33]),None)
+                <arg>
+                Nolabel
+                  expression (ocamltest/environments.ml[97,3510+35]..[97,3510+72])
+                    Pexp_apply
+                    expression (ocamltest/environments.ml[97,3510+36]..[97,3510+62])
+                      Pexp_ident "Variables.name_of_variable" (ocamltest/environments.ml[97,3510+36]..[97,3510+62])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[97,3510+63]..[97,3510+71])
+                          Pexp_ident "variable" (ocamltest/environments.ml[97,3510+63]..[97,3510+71])
+                    ]
+                <arg>
+                Nolabel
+                  expression (ocamltest/environments.ml[97,3510+73]..[97,3510+78])
+                    Pexp_ident "value" (ocamltest/environments.ml[97,3510+73]..[97,3510+78])
+              ]
+    ]
+  structure_item (ocamltest/environments.ml[99,3590+0]..[100,3617+68])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[99,3590+4]..[99,3590+8])
+          Ppat_var "dump" (ocamltest/environments.ml[99,3590+4]..[99,3590+8])
+        expression (ocamltest/environments.ml[99,3590+9]..[100,3617+68]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[99,3590+9]..[99,3590+12])
+            Ppat_var "log" (ocamltest/environments.ml[99,3590+9]..[99,3590+12])
+          expression (ocamltest/environments.ml[99,3590+13]..[100,3617+68]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[99,3590+13]..[99,3590+24])
+              Ppat_var "environment" (ocamltest/environments.ml[99,3590+13]..[99,3590+24])
+            expression (ocamltest/environments.ml[100,3617+2]..[100,3617+68])
+              Pexp_apply
+              expression (ocamltest/environments.ml[100,3617+2]..[100,3617+11])
+                Pexp_ident "List.iter" (ocamltest/environments.ml[100,3617+2]..[100,3617+11])
+              [
+                <arg>
+                Nolabel
+                  expression (ocamltest/environments.ml[100,3617+12]..[100,3617+33])
+                    Pexp_apply
+                    expression (ocamltest/environments.ml[100,3617+13]..[100,3617+28])
+                      Pexp_ident "dump_assignment" (ocamltest/environments.ml[100,3617+13]..[100,3617+28])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[100,3617+29]..[100,3617+32])
+                          Pexp_ident "log" (ocamltest/environments.ml[100,3617+29]..[100,3617+32])
+                    ]
+                <arg>
+                Nolabel
+                  expression (ocamltest/environments.ml[100,3617+34]..[100,3617+68])
+                    Pexp_apply
+                    expression (ocamltest/environments.ml[100,3617+35]..[100,3617+55])
+                      Pexp_ident "VariableMap.bindings" (ocamltest/environments.ml[100,3617+35]..[100,3617+55])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[100,3617+56]..[100,3617+67])
+                          Pexp_ident "environment" (ocamltest/environments.ml[100,3617+56]..[100,3617+67])
+                    ]
+              ]
+    ]
+  structure_item (ocamltest/environments.ml[104,3707+0]..[104,3707+22])
+    Pstr_type Rec
+    [
+      type_declaration "kind" (ocamltest/environments.ml[104,3707+5]..[104,3707+9]) (ocamltest/environments.ml[104,3707+0]..[104,3707+22])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (ocamltest/environments.ml[104,3707+12]..[104,3707+15])
+                "Pre" (ocamltest/environments.ml[104,3707+12]..[104,3707+15])
+                []
+                None
+              (ocamltest/environments.ml[104,3707+16]..[104,3707+22])
+                "Post" (ocamltest/environments.ml[104,3707+18]..[104,3707+22])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (ocamltest/environments.ml[106,3731+0]..[106,3731+44])
+    Pstr_type Rec
+    [
+      type_declaration "env_initializer" (ocamltest/environments.ml[106,3731+5]..[106,3731+20]) (ocamltest/environments.ml[106,3731+0]..[106,3731+44])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (ocamltest/environments.ml[106,3731+23]..[106,3731+44])
+              Ptyp_arrow
+              Nolabel
+              core_type (ocamltest/environments.ml[106,3731+23]..[106,3731+34])
+                Ptyp_constr "out_channel" (ocamltest/environments.ml[106,3731+23]..[106,3731+34])
+                []
+              core_type (ocamltest/environments.ml[106,3731+38]..[106,3731+44])
+                Ptyp_arrow
+                Nolabel
+                core_type (ocamltest/environments.ml[106,3731+38]..[106,3731+39])
+                  Ptyp_constr "t" (ocamltest/environments.ml[106,3731+38]..[106,3731+39])
+                  []
+                core_type (ocamltest/environments.ml[106,3731+43]..[106,3731+44])
+                  Ptyp_constr "t" (ocamltest/environments.ml[106,3731+43]..[106,3731+44])
+                  []
+    ]
+  structure_item (ocamltest/environments.ml[108,3777+0]..[112,3894+3])
+    Pstr_type Rec
+    [
+      type_declaration "initializers" (ocamltest/environments.ml[108,3777+5]..[108,3777+17]) (ocamltest/environments.ml[108,3777+0]..[112,3894+3])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (ocamltest/environments.ml[110,3801+4]..[110,3801+45])
+                Immutable
+                "pre" (ocamltest/environments.ml[110,3801+4]..[110,3801+7])                core_type (ocamltest/environments.ml[110,3801+9]..[110,3801+44])
+                  Ptyp_constr "Hashtbl.t" (ocamltest/environments.ml[110,3801+35]..[110,3801+44])
+                  [
+                    core_type (ocamltest/environments.ml[110,3801+10]..[110,3801+16])
+                      Ptyp_constr "string" (ocamltest/environments.ml[110,3801+10]..[110,3801+16])
+                      []
+                    core_type (ocamltest/environments.ml[110,3801+18]..[110,3801+33])
+                      Ptyp_constr "env_initializer" (ocamltest/environments.ml[110,3801+18]..[110,3801+33])
+                      []
+                  ]
+              (ocamltest/environments.ml[111,3847+4]..[111,3847+46])
+                Immutable
+                "post" (ocamltest/environments.ml[111,3847+4]..[111,3847+8])                core_type (ocamltest/environments.ml[111,3847+10]..[111,3847+45])
+                  Ptyp_constr "Hashtbl.t" (ocamltest/environments.ml[111,3847+36]..[111,3847+45])
+                  [
+                    core_type (ocamltest/environments.ml[111,3847+11]..[111,3847+17])
+                      Ptyp_constr "string" (ocamltest/environments.ml[111,3847+11]..[111,3847+17])
+                      []
+                    core_type (ocamltest/environments.ml[111,3847+19]..[111,3847+34])
+                      Ptyp_constr "env_initializer" (ocamltest/environments.ml[111,3847+19]..[111,3847+34])
+                      []
+                  ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (ocamltest/environments.ml[114,3899+0]..[114,3899+70])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[114,3899+4]..[114,3899+16])
+          Ppat_var "initializers" (ocamltest/environments.ml[114,3899+4]..[114,3899+16])
+        expression (ocamltest/environments.ml[114,3899+19]..[114,3899+70])
+          Pexp_record
+          [
+            "pre" (ocamltest/environments.ml[114,3899+20]..[114,3899+23])
+              expression (ocamltest/environments.ml[114,3899+26]..[114,3899+43])
+                Pexp_apply
+                expression (ocamltest/environments.ml[114,3899+26]..[114,3899+40])
+                  Pexp_ident "Hashtbl.create" (ocamltest/environments.ml[114,3899+26]..[114,3899+40])
+                [
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[114,3899+41]..[114,3899+43])
+                      Pexp_constant PConst_int (10,None)
+                ]
+            "post" (ocamltest/environments.ml[114,3899+45]..[114,3899+49])
+              expression (ocamltest/environments.ml[114,3899+52]..[114,3899+69])
+                Pexp_apply
+                expression (ocamltest/environments.ml[114,3899+52]..[114,3899+66])
+                  Pexp_ident "Hashtbl.create" (ocamltest/environments.ml[114,3899+52]..[114,3899+66])
+                [
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[114,3899+67]..[114,3899+69])
+                      Pexp_constant PConst_int (10,None)
+                ]
+          ]
+          None
+    ]
+  structure_item (ocamltest/environments.ml[116,3971+0]..[118,4031+29])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[116,3971+4]..[116,3971+20])
+          Ppat_var "get_initializers" (ocamltest/environments.ml[116,3971+4]..[116,3971+20])
+        expression (ocamltest/environments.ml[116,3971+23]..[118,4031+29])
+          Pexp_function
+          [
+            <case>
+              pattern (ocamltest/environments.ml[117,4003+4]..[117,4003+7])
+                Ppat_construct "Pre" (ocamltest/environments.ml[117,4003+4]..[117,4003+7])
+                None
+              expression (ocamltest/environments.ml[117,4003+11]..[117,4003+27])
+                Pexp_field
+                expression (ocamltest/environments.ml[117,4003+11]..[117,4003+23])
+                  Pexp_ident "initializers" (ocamltest/environments.ml[117,4003+11]..[117,4003+23])
+                "pre" (ocamltest/environments.ml[117,4003+24]..[117,4003+27])
+            <case>
+              pattern (ocamltest/environments.ml[118,4031+4]..[118,4031+8])
+                Ppat_construct "Post" (ocamltest/environments.ml[118,4031+4]..[118,4031+8])
+                None
+              expression (ocamltest/environments.ml[118,4031+12]..[118,4031+29])
+                Pexp_field
+                expression (ocamltest/environments.ml[118,4031+12]..[118,4031+24])
+                  Pexp_ident "initializers" (ocamltest/environments.ml[118,4031+12]..[118,4031+24])
+                "post" (ocamltest/environments.ml[118,4031+25]..[118,4031+29])
+          ]
+    ]
+  structure_item (ocamltest/environments.ml[120,4062+0]..[121,4104+47])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[120,4062+4]..[120,4062+24])
+          Ppat_var "register_initializer" (ocamltest/environments.ml[120,4062+4]..[120,4062+24])
+        expression (ocamltest/environments.ml[120,4062+25]..[121,4104+47]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[120,4062+25]..[120,4062+29])
+            Ppat_var "kind" (ocamltest/environments.ml[120,4062+25]..[120,4062+29])
+          expression (ocamltest/environments.ml[120,4062+30]..[121,4104+47]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[120,4062+30]..[120,4062+34])
+              Ppat_var "name" (ocamltest/environments.ml[120,4062+30]..[120,4062+34])
+            expression (ocamltest/environments.ml[120,4062+35]..[121,4104+47]) ghost
+              Pexp_fun
+              Nolabel
+              None
+              pattern (ocamltest/environments.ml[120,4062+35]..[120,4062+39])
+                Ppat_var "code" (ocamltest/environments.ml[120,4062+35]..[120,4062+39])
+              expression (ocamltest/environments.ml[121,4104+2]..[121,4104+47])
+                Pexp_apply
+                expression (ocamltest/environments.ml[121,4104+2]..[121,4104+13])
+                  Pexp_ident "Hashtbl.add" (ocamltest/environments.ml[121,4104+2]..[121,4104+13])
+                [
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[121,4104+14]..[121,4104+37])
+                      Pexp_apply
+                      expression (ocamltest/environments.ml[121,4104+15]..[121,4104+31])
+                        Pexp_ident "get_initializers" (ocamltest/environments.ml[121,4104+15]..[121,4104+31])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (ocamltest/environments.ml[121,4104+32]..[121,4104+36])
+                            Pexp_ident "kind" (ocamltest/environments.ml[121,4104+32]..[121,4104+36])
+                      ]
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[121,4104+38]..[121,4104+42])
+                      Pexp_ident "name" (ocamltest/environments.ml[121,4104+38]..[121,4104+42])
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[121,4104+43]..[121,4104+47])
+                      Pexp_ident "code" (ocamltest/environments.ml[121,4104+43]..[121,4104+47])
+                ]
+    ]
+  structure_item (ocamltest/environments.ml[123,4153+0]..[124,4197+15])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[123,4153+4]..[123,4153+21])
+          Ppat_var "apply_initializer" (ocamltest/environments.ml[123,4153+4]..[123,4153+21])
+        expression (ocamltest/environments.ml[123,4153+22]..[124,4197+15]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[123,4153+22]..[123,4153+26])
+            Ppat_var "_log" (ocamltest/environments.ml[123,4153+22]..[123,4153+26])
+          expression (ocamltest/environments.ml[123,4153+27]..[124,4197+15]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[123,4153+27]..[123,4153+32])
+              Ppat_var "_name" (ocamltest/environments.ml[123,4153+27]..[123,4153+32])
+            expression (ocamltest/environments.ml[123,4153+33]..[124,4197+15]) ghost
+              Pexp_fun
+              Nolabel
+              None
+              pattern (ocamltest/environments.ml[123,4153+33]..[123,4153+37])
+                Ppat_var "code" (ocamltest/environments.ml[123,4153+33]..[123,4153+37])
+              expression (ocamltest/environments.ml[123,4153+38]..[124,4197+15]) ghost
+                Pexp_fun
+                Nolabel
+                None
+                pattern (ocamltest/environments.ml[123,4153+38]..[123,4153+41])
+                  Ppat_var "env" (ocamltest/environments.ml[123,4153+38]..[123,4153+41])
+                expression (ocamltest/environments.ml[124,4197+2]..[124,4197+15])
+                  Pexp_apply
+                  expression (ocamltest/environments.ml[124,4197+2]..[124,4197+6])
+                    Pexp_ident "code" (ocamltest/environments.ml[124,4197+2]..[124,4197+6])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[124,4197+7]..[124,4197+11])
+                        Pexp_ident "_log" (ocamltest/environments.ml[124,4197+7]..[124,4197+11])
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[124,4197+12]..[124,4197+15])
+                        Pexp_ident "env" (ocamltest/environments.ml[124,4197+12]..[124,4197+15])
+                  ]
+    ]
+  structure_item (ocamltest/environments.ml[126,4214+0]..[128,4279+44])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[126,4214+4]..[126,4214+14])
+          Ppat_var "initialize" (ocamltest/environments.ml[126,4214+4]..[126,4214+14])
+        expression (ocamltest/environments.ml[126,4214+15]..[128,4279+44]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[126,4214+15]..[126,4214+19])
+            Ppat_var "kind" (ocamltest/environments.ml[126,4214+15]..[126,4214+19])
+          expression (ocamltest/environments.ml[126,4214+20]..[128,4279+44]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[126,4214+20]..[126,4214+23])
+              Ppat_var "log" (ocamltest/environments.ml[126,4214+20]..[126,4214+23])
+            expression (ocamltest/environments.ml[126,4214+24]..[128,4279+44]) ghost
+              Pexp_fun
+              Nolabel
+              None
+              pattern (ocamltest/environments.ml[126,4214+24]..[126,4214+27])
+                Ppat_var "env" (ocamltest/environments.ml[126,4214+24]..[126,4214+27])
+              expression (ocamltest/environments.ml[127,4244+2]..[128,4279+44])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (ocamltest/environments.ml[127,4244+6]..[127,4244+7])
+                      Ppat_var "f" (ocamltest/environments.ml[127,4244+6]..[127,4244+7])
+                    expression (ocamltest/environments.ml[127,4244+10]..[127,4244+31])
+                      Pexp_apply
+                      expression (ocamltest/environments.ml[127,4244+10]..[127,4244+27])
+                        Pexp_ident "apply_initializer" (ocamltest/environments.ml[127,4244+10]..[127,4244+27])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (ocamltest/environments.ml[127,4244+28]..[127,4244+31])
+                            Pexp_ident "log" (ocamltest/environments.ml[127,4244+28]..[127,4244+31])
+                      ]
+                ]
+                expression (ocamltest/environments.ml[128,4279+2]..[128,4279+44])
+                  Pexp_apply
+                  expression (ocamltest/environments.ml[128,4279+2]..[128,4279+14])
+                    Pexp_ident "Hashtbl.fold" (ocamltest/environments.ml[128,4279+2]..[128,4279+14])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[128,4279+15]..[128,4279+16])
+                        Pexp_ident "f" (ocamltest/environments.ml[128,4279+15]..[128,4279+16])
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[128,4279+17]..[128,4279+40])
+                        Pexp_apply
+                        expression (ocamltest/environments.ml[128,4279+18]..[128,4279+34])
+                          Pexp_ident "get_initializers" (ocamltest/environments.ml[128,4279+18]..[128,4279+34])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (ocamltest/environments.ml[128,4279+35]..[128,4279+39])
+                              Pexp_ident "kind" (ocamltest/environments.ml[128,4279+35]..[128,4279+39])
+                        ]
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[128,4279+41]..[128,4279+44])
+                        Pexp_ident "env" (ocamltest/environments.ml[128,4279+41]..[128,4279+44])
+                  ]
+    ]
+  structure_item (ocamltest/environments.ml[132,4342+0]..[136,4447+25])
+    Pstr_type Rec
+    [
+      type_declaration "modifier" (ocamltest/environments.ml[132,4342+5]..[132,4342+13]) (ocamltest/environments.ml[132,4342+0]..[136,4447+25])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (ocamltest/environments.ml[133,4358+2]..[133,4358+21])
+                "Include" (ocamltest/environments.ml[133,4358+4]..[133,4358+11])
+                [
+                  core_type (ocamltest/environments.ml[133,4358+15]..[133,4358+21])
+                    Ptyp_constr "string" (ocamltest/environments.ml[133,4358+15]..[133,4358+21])
+                    []
+                ]
+                None
+              (ocamltest/environments.ml[134,4380+2]..[134,4380+31])
+                "Add" (ocamltest/environments.ml[134,4380+4]..[134,4380+7])
+                [
+                  core_type (ocamltest/environments.ml[134,4380+11]..[134,4380+22])
+                    Ptyp_constr "Variables.t" (ocamltest/environments.ml[134,4380+11]..[134,4380+22])
+                    []
+                  core_type (ocamltest/environments.ml[134,4380+25]..[134,4380+31])
+                    Ptyp_constr "string" (ocamltest/environments.ml[134,4380+25]..[134,4380+31])
+                    []
+                ]
+                None
+              (ocamltest/environments.ml[135,4412+2]..[135,4412+34])
+                "Append" (ocamltest/environments.ml[135,4412+4]..[135,4412+10])
+                [
+                  core_type (ocamltest/environments.ml[135,4412+14]..[135,4412+25])
+                    Ptyp_constr "Variables.t" (ocamltest/environments.ml[135,4412+14]..[135,4412+25])
+                    []
+                  core_type (ocamltest/environments.ml[135,4412+28]..[135,4412+34])
+                    Ptyp_constr "string" (ocamltest/environments.ml[135,4412+28]..[135,4412+34])
+                    []
+                ]
+                None
+              (ocamltest/environments.ml[136,4447+2]..[136,4447+25])
+                "Remove" (ocamltest/environments.ml[136,4447+4]..[136,4447+10])
+                [
+                  core_type (ocamltest/environments.ml[136,4447+14]..[136,4447+25])
+                    Ptyp_constr "Variables.t" (ocamltest/environments.ml[136,4447+14]..[136,4447+25])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (ocamltest/environments.ml[138,4474+0]..[138,4474+30])
+    Pstr_type Rec
+    [
+      type_declaration "modifiers" (ocamltest/environments.ml[138,4474+5]..[138,4474+14]) (ocamltest/environments.ml[138,4474+0]..[138,4474+30])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (ocamltest/environments.ml[138,4474+17]..[138,4474+30])
+              Ptyp_constr "list" (ocamltest/environments.ml[138,4474+26]..[138,4474+30])
+              [
+                core_type (ocamltest/environments.ml[138,4474+17]..[138,4474+25])
+                  Ptyp_constr "modifier" (ocamltest/environments.ml[138,4474+17]..[138,4474+25])
+                  []
+              ]
+    ]
+  structure_item (ocamltest/environments.ml[140,4506+0]..[140,4506+30])
+    Pstr_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (ocamltest/environments.ml[140,4506+0]..[140,4506+30])
+          pext_name = "Empty_modifiers_name"
+          pext_kind =
+            Pext_decl
+              []
+              None
+  structure_item (ocamltest/environments.ml[141,4537+0]..[141,4537+53])
+    Pstr_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (ocamltest/environments.ml[141,4537+0]..[141,4537+53])
+          pext_name = "Modifiers_name_already_registered"
+          pext_kind =
+            Pext_decl
+              [
+                core_type (ocamltest/environments.ml[141,4537+47]..[141,4537+53])
+                  Ptyp_constr "string" (ocamltest/environments.ml[141,4537+47]..[141,4537+53])
+                  []
+              ]
+              None
+  structure_item (ocamltest/environments.ml[142,4591+0]..[142,4591+44])
+    Pstr_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (ocamltest/environments.ml[142,4591+0]..[142,4591+44])
+          pext_name = "Modifiers_name_not_found"
+          pext_kind =
+            Pext_decl
+              [
+                core_type (ocamltest/environments.ml[142,4591+38]..[142,4591+44])
+                  Ptyp_constr "string" (ocamltest/environments.ml[142,4591+38]..[142,4591+44])
+                  []
+              ]
+              None
+  structure_item (ocamltest/environments.ml[144,4637+0]..[144,4637+78])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[144,4637+4]..[144,4637+58])
+          Ppat_constraint
+          pattern (ocamltest/environments.ml[144,4637+5]..[144,4637+25])
+            Ppat_var "registered_modifiers" (ocamltest/environments.ml[144,4637+5]..[144,4637+25])
+          core_type (ocamltest/environments.ml[144,4637+28]..[144,4637+57])
+            Ptyp_constr "Hashtbl.t" (ocamltest/environments.ml[144,4637+48]..[144,4637+57])
+            [
+              core_type (ocamltest/environments.ml[144,4637+29]..[144,4637+35])
+                Ptyp_constr "string" (ocamltest/environments.ml[144,4637+29]..[144,4637+35])
+                []
+              core_type (ocamltest/environments.ml[144,4637+37]..[144,4637+46])
+                Ptyp_constr "modifiers" (ocamltest/environments.ml[144,4637+37]..[144,4637+46])
+                []
+            ]
+        expression (ocamltest/environments.ml[144,4637+61]..[144,4637+78])
+          Pexp_apply
+          expression (ocamltest/environments.ml[144,4637+61]..[144,4637+75])
+            Pexp_ident "Hashtbl.create" (ocamltest/environments.ml[144,4637+61]..[144,4637+75])
+          [
+            <arg>
+            Nolabel
+              expression (ocamltest/environments.ml[144,4637+76]..[144,4637+78])
+                Pexp_constant PConst_int (20,None)
+          ]
+    ]
+  structure_item (ocamltest/environments.ml[146,4717+0]..[150,4904+54])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[146,4717+4]..[146,4717+22])
+          Ppat_var "register_modifiers" (ocamltest/environments.ml[146,4717+4]..[146,4717+22])
+        expression (ocamltest/environments.ml[146,4717+23]..[150,4904+54]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[146,4717+23]..[146,4717+27])
+            Ppat_var "name" (ocamltest/environments.ml[146,4717+23]..[146,4717+27])
+          expression (ocamltest/environments.ml[146,4717+28]..[150,4904+54]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[146,4717+28]..[146,4717+37])
+              Ppat_var "modifiers" (ocamltest/environments.ml[146,4717+28]..[146,4717+37])
+            expression (ocamltest/environments.ml[147,4757+2]..[150,4904+54])
+              Pexp_ifthenelse
+              expression (ocamltest/environments.ml[147,4757+5]..[147,4757+12])
+                Pexp_apply
+                expression (ocamltest/environments.ml[147,4757+9]..[147,4757+10])
+                  Pexp_ident "=" (ocamltest/environments.ml[147,4757+9]..[147,4757+10])
+                [
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[147,4757+5]..[147,4757+9])
+                      Pexp_ident "name" (ocamltest/environments.ml[147,4757+5]..[147,4757+9])
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[147,4757+10]..[147,4757+12])
+                      Pexp_constant PConst_string("",(ocamltest/environments.ml[147,4757+11]..[147,4757+11]),None)
+                ]
+              expression (ocamltest/environments.ml[147,4757+18]..[147,4757+44])
+                Pexp_apply
+                expression (ocamltest/environments.ml[147,4757+18]..[147,4757+23])
+                  Pexp_ident "raise" (ocamltest/environments.ml[147,4757+18]..[147,4757+23])
+                [
+                  <arg>
+                  Nolabel
+                    expression (ocamltest/environments.ml[147,4757+24]..[147,4757+44])
+                      Pexp_construct "Empty_modifiers_name" (ocamltest/environments.ml[147,4757+24]..[147,4757+44])
+                      None
+                ]
+              Some
+                expression (ocamltest/environments.ml[148,4802+7]..[150,4904+54])
+                  Pexp_ifthenelse
+                  expression (ocamltest/environments.ml[148,4802+10]..[148,4802+47])
+                    Pexp_apply
+                    expression (ocamltest/environments.ml[148,4802+10]..[148,4802+21])
+                      Pexp_ident "Hashtbl.mem" (ocamltest/environments.ml[148,4802+10]..[148,4802+21])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[148,4802+22]..[148,4802+42])
+                          Pexp_ident "registered_modifiers" (ocamltest/environments.ml[148,4802+22]..[148,4802+42])
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[148,4802+43]..[148,4802+47])
+                          Pexp_ident "name" (ocamltest/environments.ml[148,4802+43]..[148,4802+47])
+                    ]
+                  expression (ocamltest/environments.ml[149,4850+7]..[149,4850+53])
+                    Pexp_apply
+                    expression (ocamltest/environments.ml[149,4850+7]..[149,4850+12])
+                      Pexp_ident "raise" (ocamltest/environments.ml[149,4850+7]..[149,4850+12])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (ocamltest/environments.ml[149,4850+13]..[149,4850+53])
+                          Pexp_construct "Modifiers_name_already_registered" (ocamltest/environments.ml[149,4850+14]..[149,4850+47])
+                          Some
+                            expression (ocamltest/environments.ml[149,4850+48]..[149,4850+52])
+                              Pexp_ident "name" (ocamltest/environments.ml[149,4850+48]..[149,4850+52])
+                    ]
+                  Some
+                    expression (ocamltest/environments.ml[150,4904+7]..[150,4904+54])
+                      Pexp_apply
+                      expression (ocamltest/environments.ml[150,4904+7]..[150,4904+18])
+                        Pexp_ident "Hashtbl.add" (ocamltest/environments.ml[150,4904+7]..[150,4904+18])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (ocamltest/environments.ml[150,4904+19]..[150,4904+39])
+                            Pexp_ident "registered_modifiers" (ocamltest/environments.ml[150,4904+19]..[150,4904+39])
+                        <arg>
+                        Nolabel
+                          expression (ocamltest/environments.ml[150,4904+40]..[150,4904+44])
+                            Pexp_ident "name" (ocamltest/environments.ml[150,4904+40]..[150,4904+44])
+                        <arg>
+                        Nolabel
+                          expression (ocamltest/environments.ml[150,4904+45]..[150,4904+54])
+                            Pexp_ident "modifiers" (ocamltest/environments.ml[150,4904+45]..[150,4904+54])
+                      ]
+    ]
+  structure_item (ocamltest/environments.ml[152,4960+0]..[154,5031+57])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[152,4960+4]..[152,4960+18])
+          Ppat_var "find_modifiers" (ocamltest/environments.ml[152,4960+4]..[152,4960+18])
+        expression (ocamltest/environments.ml[152,4960+19]..[154,5031+57]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[152,4960+19]..[152,4960+23])
+            Ppat_var "name" (ocamltest/environments.ml[152,4960+19]..[152,4960+23])
+          expression (ocamltest/environments.ml[153,4986+2]..[154,5031+57])
+            Pexp_try
+            expression (ocamltest/environments.ml[153,4986+6]..[153,4986+44])
+              Pexp_apply
+              expression (ocamltest/environments.ml[153,4986+6]..[153,4986+18])
+                Pexp_ident "Hashtbl.find" (ocamltest/environments.ml[153,4986+6]..[153,4986+18])
+              [
+                <arg>
+                Nolabel
+                  expression (ocamltest/environments.ml[153,4986+19]..[153,4986+39])
+                    Pexp_ident "registered_modifiers" (ocamltest/environments.ml[153,4986+19]..[153,4986+39])
+                <arg>
+                Nolabel
+                  expression (ocamltest/environments.ml[153,4986+40]..[153,4986+44])
+                    Pexp_ident "name" (ocamltest/environments.ml[153,4986+40]..[153,4986+44])
+              ]
+            [
+              <case>
+                pattern (ocamltest/environments.ml[154,5031+7]..[154,5031+16])
+                  Ppat_construct "Not_found" (ocamltest/environments.ml[154,5031+7]..[154,5031+16])
+                  None
+                expression (ocamltest/environments.ml[154,5031+20]..[154,5031+57])
+                  Pexp_apply
+                  expression (ocamltest/environments.ml[154,5031+20]..[154,5031+25])
+                    Pexp_ident "raise" (ocamltest/environments.ml[154,5031+20]..[154,5031+25])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[154,5031+26]..[154,5031+57])
+                        Pexp_construct "Modifiers_name_not_found" (ocamltest/environments.ml[154,5031+27]..[154,5031+51])
+                        Some
+                          expression (ocamltest/environments.ml[154,5031+52]..[154,5031+56])
+                            Pexp_ident "name" (ocamltest/environments.ml[154,5031+52]..[154,5031+56])
+                  ]
+            ]
+    ]
+  structure_item (ocamltest/environments.ml[156,5090+0]..[163,5451+53])
+    Pstr_value Rec
+    [
+      <def>
+        pattern (ocamltest/environments.ml[156,5090+8]..[156,5090+22])
+          Ppat_var "apply_modifier" (ocamltest/environments.ml[156,5090+8]..[156,5090+22])
+        expression (ocamltest/environments.ml[156,5090+23]..[161,5356+50]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[156,5090+23]..[156,5090+34])
+            Ppat_var "environment" (ocamltest/environments.ml[156,5090+23]..[156,5090+34])
+          expression (ocamltest/environments.ml[156,5090+37]..[161,5356+50])
+            Pexp_function
+            [
+              <case>
+                pattern (ocamltest/environments.ml[157,5136+4]..[157,5136+26])
+                  Ppat_construct "Include" (ocamltest/environments.ml[157,5136+4]..[157,5136+11])
+                  Some
+                    []
+                    pattern (ocamltest/environments.ml[157,5136+12]..[157,5136+26])
+                      Ppat_var "modifiers_name" (ocamltest/environments.ml[157,5136+12]..[157,5136+26])
+                expression (ocamltest/environments.ml[158,5166+4]..[158,5166+63])
+                  Pexp_apply
+                  expression (ocamltest/environments.ml[158,5166+4]..[158,5166+19])
+                    Pexp_ident "apply_modifiers" (ocamltest/environments.ml[158,5166+4]..[158,5166+19])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[158,5166+20]..[158,5166+31])
+                        Pexp_ident "environment" (ocamltest/environments.ml[158,5166+20]..[158,5166+31])
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[158,5166+32]..[158,5166+63])
+                        Pexp_apply
+                        expression (ocamltest/environments.ml[158,5166+33]..[158,5166+47])
+                          Pexp_ident "find_modifiers" (ocamltest/environments.ml[158,5166+33]..[158,5166+47])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (ocamltest/environments.ml[158,5166+48]..[158,5166+62])
+                              Pexp_ident "modifiers_name" (ocamltest/environments.ml[158,5166+48]..[158,5166+62])
+                        ]
+                  ]
+              <case>
+                pattern (ocamltest/environments.ml[159,5230+4]..[159,5230+25])
+                  Ppat_construct "Add" (ocamltest/environments.ml[159,5230+4]..[159,5230+7])
+                  Some
+                    []
+                    pattern (ocamltest/environments.ml[159,5230+8]..[159,5230+25])
+                      Ppat_tuple
+                      [
+                        pattern (ocamltest/environments.ml[159,5230+9]..[159,5230+17])
+                          Ppat_var "variable" (ocamltest/environments.ml[159,5230+9]..[159,5230+17])
+                        pattern (ocamltest/environments.ml[159,5230+19]..[159,5230+24])
+                          Ppat_var "value" (ocamltest/environments.ml[159,5230+19]..[159,5230+24])
+                      ]
+                expression (ocamltest/environments.ml[159,5230+29]..[159,5230+59])
+                  Pexp_apply
+                  expression (ocamltest/environments.ml[159,5230+29]..[159,5230+32])
+                    Pexp_ident "add" (ocamltest/environments.ml[159,5230+29]..[159,5230+32])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[159,5230+33]..[159,5230+41])
+                        Pexp_ident "variable" (ocamltest/environments.ml[159,5230+33]..[159,5230+41])
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[159,5230+42]..[159,5230+47])
+                        Pexp_ident "value" (ocamltest/environments.ml[159,5230+42]..[159,5230+47])
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[159,5230+48]..[159,5230+59])
+                        Pexp_ident "environment" (ocamltest/environments.ml[159,5230+48]..[159,5230+59])
+                  ]
+              <case>
+                pattern (ocamltest/environments.ml[160,5290+4]..[160,5290+28])
+                  Ppat_construct "Append" (ocamltest/environments.ml[160,5290+4]..[160,5290+10])
+                  Some
+                    []
+                    pattern (ocamltest/environments.ml[160,5290+11]..[160,5290+28])
+                      Ppat_tuple
+                      [
+                        pattern (ocamltest/environments.ml[160,5290+12]..[160,5290+20])
+                          Ppat_var "variable" (ocamltest/environments.ml[160,5290+12]..[160,5290+20])
+                        pattern (ocamltest/environments.ml[160,5290+22]..[160,5290+27])
+                          Ppat_var "value" (ocamltest/environments.ml[160,5290+22]..[160,5290+27])
+                      ]
+                expression (ocamltest/environments.ml[160,5290+32]..[160,5290+65])
+                  Pexp_apply
+                  expression (ocamltest/environments.ml[160,5290+32]..[160,5290+38])
+                    Pexp_ident "append" (ocamltest/environments.ml[160,5290+32]..[160,5290+38])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[160,5290+39]..[160,5290+47])
+                        Pexp_ident "variable" (ocamltest/environments.ml[160,5290+39]..[160,5290+47])
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[160,5290+48]..[160,5290+53])
+                        Pexp_ident "value" (ocamltest/environments.ml[160,5290+48]..[160,5290+53])
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[160,5290+54]..[160,5290+65])
+                        Pexp_ident "environment" (ocamltest/environments.ml[160,5290+54]..[160,5290+65])
+                  ]
+              <case>
+                pattern (ocamltest/environments.ml[161,5356+4]..[161,5356+19])
+                  Ppat_construct "Remove" (ocamltest/environments.ml[161,5356+4]..[161,5356+10])
+                  Some
+                    []
+                    pattern (ocamltest/environments.ml[161,5356+11]..[161,5356+19])
+                      Ppat_var "variable" (ocamltest/environments.ml[161,5356+11]..[161,5356+19])
+                expression (ocamltest/environments.ml[161,5356+23]..[161,5356+50])
+                  Pexp_apply
+                  expression (ocamltest/environments.ml[161,5356+23]..[161,5356+29])
+                    Pexp_ident "remove" (ocamltest/environments.ml[161,5356+23]..[161,5356+29])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[161,5356+30]..[161,5356+38])
+                        Pexp_ident "variable" (ocamltest/environments.ml[161,5356+30]..[161,5356+38])
+                    <arg>
+                    Nolabel
+                      expression (ocamltest/environments.ml[161,5356+39]..[161,5356+50])
+                        Pexp_ident "environment" (ocamltest/environments.ml[161,5356+39]..[161,5356+50])
+                  ]
+            ]
+      <def>
+        pattern (ocamltest/environments.ml[162,5407+4]..[162,5407+19])
+          Ppat_var "apply_modifiers" (ocamltest/environments.ml[162,5407+4]..[162,5407+19])
+        expression (ocamltest/environments.ml[162,5407+20]..[163,5451+53]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ocamltest/environments.ml[162,5407+20]..[162,5407+31])
+            Ppat_var "environment" (ocamltest/environments.ml[162,5407+20]..[162,5407+31])
+          expression (ocamltest/environments.ml[162,5407+32]..[163,5451+53]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ocamltest/environments.ml[162,5407+32]..[162,5407+41])
+              Ppat_var "modifiers" (ocamltest/environments.ml[162,5407+32]..[162,5407+41])
+            expression (ocamltest/environments.ml[163,5451+2]..[163,5451+53])
+              Pexp_apply
+              expression (ocamltest/environments.ml[163,5451+2]..[163,5451+16])
+                Pexp_ident "List.fold_left" (ocamltest/environments.ml[163,5451+2]..[163,5451+16])
+              [
+                <arg>
+                Nolabel
+                  expression (ocamltest/environments.ml[163,5451+17]..[163,5451+31])
+                    Pexp_ident "apply_modifier" (ocamltest/environments.ml[163,5451+17]..[163,5451+31])
+                <arg>
+                Nolabel
+                  expression (ocamltest/environments.ml[163,5451+32]..[163,5451+43])
+                    Pexp_ident "environment" (ocamltest/environments.ml[163,5451+32]..[163,5451+43])
+                <arg>
+                Nolabel
+                  expression (ocamltest/environments.ml[163,5451+44]..[163,5451+53])
+                    Pexp_ident "modifiers" (ocamltest/environments.ml[163,5451+44]..[163,5451+53])
+              ]
+    ]
+]
+

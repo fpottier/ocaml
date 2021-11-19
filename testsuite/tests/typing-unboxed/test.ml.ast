@@ -1,0 +1,1697 @@
+[
+  structure_item (testsuite/tests/typing-unboxed/test.ml[5,53+0]..[5,53+52])
+    Pstr_primitive
+    value_description "a" (testsuite/tests/typing-unboxed/test.ml[5,53+9]..[5,53+10]) (testsuite/tests/typing-unboxed/test.ml[5,53+0]..[5,53+52])
+      core_type (testsuite/tests/typing-unboxed/test.ml[5,53+13]..[5,53+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[5,53+14]..[5,53+17])
+          attribute "untagged"
+            []
+          Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[5,53+14]..[5,53+17])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[5,53+34]..[5,53+38])
+          Ptyp_constr "unit" (testsuite/tests/typing-unboxed/test.ml[5,53+34]..[5,53+38])
+          []
+      [
+        "a"
+        "a_nat"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[6,106+0]..[6,106+53])
+    Pstr_primitive
+    value_description "b" (testsuite/tests/typing-unboxed/test.ml[6,106+9]..[6,106+10]) (testsuite/tests/typing-unboxed/test.ml[6,106+0]..[6,106+53])
+      core_type (testsuite/tests/typing-unboxed/test.ml[6,106+13]..[6,106+39])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[6,106+14]..[6,106+19])
+          attribute "unboxed"
+            []
+          Ptyp_constr "int32" (testsuite/tests/typing-unboxed/test.ml[6,106+14]..[6,106+19])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[6,106+35]..[6,106+39])
+          Ptyp_constr "unit" (testsuite/tests/typing-unboxed/test.ml[6,106+35]..[6,106+39])
+          []
+      [
+        "b"
+        "b_nat"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[7,160+0]..[7,160+53])
+    Pstr_primitive
+    value_description "c" (testsuite/tests/typing-unboxed/test.ml[7,160+9]..[7,160+10]) (testsuite/tests/typing-unboxed/test.ml[7,160+0]..[7,160+53])
+      core_type (testsuite/tests/typing-unboxed/test.ml[7,160+13]..[7,160+39])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[7,160+14]..[7,160+19])
+          attribute "unboxed"
+            []
+          Ptyp_constr "int64" (testsuite/tests/typing-unboxed/test.ml[7,160+14]..[7,160+19])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[7,160+35]..[7,160+39])
+          Ptyp_constr "unit" (testsuite/tests/typing-unboxed/test.ml[7,160+35]..[7,160+39])
+          []
+      [
+        "c"
+        "c_nat"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[8,214+0]..[8,214+57])
+    Pstr_primitive
+    value_description "d" (testsuite/tests/typing-unboxed/test.ml[8,214+9]..[8,214+10]) (testsuite/tests/typing-unboxed/test.ml[8,214+0]..[8,214+57])
+      core_type (testsuite/tests/typing-unboxed/test.ml[8,214+13]..[8,214+43])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[8,214+14]..[8,214+23])
+          attribute "unboxed"
+            []
+          Ptyp_constr "nativeint" (testsuite/tests/typing-unboxed/test.ml[8,214+14]..[8,214+23])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[8,214+39]..[8,214+43])
+          Ptyp_constr "unit" (testsuite/tests/typing-unboxed/test.ml[8,214+39]..[8,214+43])
+          []
+      [
+        "d"
+        "d_nat"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[9,272+0]..[9,272+53])
+    Pstr_primitive
+    value_description "e" (testsuite/tests/typing-unboxed/test.ml[9,272+9]..[9,272+10]) (testsuite/tests/typing-unboxed/test.ml[9,272+0]..[9,272+53])
+      core_type (testsuite/tests/typing-unboxed/test.ml[9,272+13]..[9,272+39])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[9,272+14]..[9,272+19])
+          attribute "unboxed"
+            []
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[9,272+14]..[9,272+19])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[9,272+35]..[9,272+39])
+          Ptyp_constr "unit" (testsuite/tests/typing-unboxed/test.ml[9,272+35]..[9,272+39])
+          []
+      [
+        "e"
+        "e_nat"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[11,327+0]..[11,327+20])
+    Pstr_type Rec
+    [
+      type_declaration "t" (testsuite/tests/typing-unboxed/test.ml[11,327+5]..[11,327+6]) (testsuite/tests/typing-unboxed/test.ml[11,327+0]..[11,327+20])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Private
+        ptype_manifest =
+          Some
+            core_type (testsuite/tests/typing-unboxed/test.ml[11,327+17]..[11,327+20])
+              Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[11,327+17]..[11,327+20])
+              []
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[13,349+0]..[13,349+50])
+    Pstr_primitive
+    value_description "f" (testsuite/tests/typing-unboxed/test.ml[13,349+9]..[13,349+10]) (testsuite/tests/typing-unboxed/test.ml[13,349+0]..[13,349+50])
+      core_type (testsuite/tests/typing-unboxed/test.ml[13,349+13]..[13,349+36])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[13,349+14]..[13,349+15])
+          attribute "untagged"
+            []
+          Ptyp_constr "t" (testsuite/tests/typing-unboxed/test.ml[13,349+14]..[13,349+15])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[13,349+32]..[13,349+36])
+          Ptyp_constr "unit" (testsuite/tests/typing-unboxed/test.ml[13,349+32]..[13,349+36])
+          []
+      [
+        "f"
+        "f_nat"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[15,401+0]..[21,645+3])
+    Pstr_module
+    "M" (testsuite/tests/typing-unboxed/test.ml[15,401+7]..[15,401+8])
+      module_expr (testsuite/tests/typing-unboxed/test.ml[15,401+9]..[21,645+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-unboxed/test.ml[18,524+6]..[21,645+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-unboxed/test.ml[19,537+2]..[19,537+53])
+              Pstr_primitive
+              value_description "a" (testsuite/tests/typing-unboxed/test.ml[19,537+11]..[19,537+12]) (testsuite/tests/typing-unboxed/test.ml[19,537+2]..[19,537+53])
+                core_type (testsuite/tests/typing-unboxed/test.ml[19,537+15]..[19,537+39])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[19,537+15]..[19,537+18])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[19,537+15]..[19,537+18])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[19,537+23]..[19,537+26])
+                    attribute "untagged"
+                      []
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[19,537+23]..[19,537+26])
+                    []
+                [
+                  "a"
+                  "a_nat"
+                ]
+            structure_item (testsuite/tests/typing-unboxed/test.ml[20,591+2]..[20,591+53])
+              Pstr_primitive
+              value_description "b" (testsuite/tests/typing-unboxed/test.ml[20,591+11]..[20,591+12]) (testsuite/tests/typing-unboxed/test.ml[20,591+2]..[20,591+53])
+                core_type (testsuite/tests/typing-unboxed/test.ml[20,591+15]..[20,591+39])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[20,591+16]..[20,591+19])
+                    attribute "untagged"
+                      []
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[20,591+16]..[20,591+19])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[20,591+36]..[20,591+39])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[20,591+36]..[20,591+39])
+                    []
+                [
+                  "b"
+                  "b_nat"
+                ]
+          ]
+        module_type (testsuite/tests/typing-unboxed/test.ml[15,401+11]..[18,524+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-unboxed/test.ml[16,416+2]..[16,416+53])
+              Psig_value
+              value_description "a" (testsuite/tests/typing-unboxed/test.ml[16,416+11]..[16,416+12]) (testsuite/tests/typing-unboxed/test.ml[16,416+2]..[16,416+53])
+                core_type (testsuite/tests/typing-unboxed/test.ml[16,416+15]..[16,416+39])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[16,416+15]..[16,416+18])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[16,416+15]..[16,416+18])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[16,416+23]..[16,416+26])
+                    attribute "untagged"
+                      []
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[16,416+23]..[16,416+26])
+                    []
+                [
+                  "a"
+                  "a_nat"
+                ]
+            signature_item (testsuite/tests/typing-unboxed/test.ml[17,470+2]..[17,470+53])
+              Psig_value
+              value_description "b" (testsuite/tests/typing-unboxed/test.ml[17,470+11]..[17,470+12]) (testsuite/tests/typing-unboxed/test.ml[17,470+2]..[17,470+53])
+                core_type (testsuite/tests/typing-unboxed/test.ml[17,470+15]..[17,470+39])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[17,470+16]..[17,470+19])
+                    attribute "untagged"
+                      []
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[17,470+16]..[17,470+19])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[17,470+36]..[17,470+39])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[17,470+36]..[17,470+39])
+                    []
+                [
+                  "b"
+                  "b_nat"
+                ]
+          ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[23,652+0]..[36,1144+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[23,652+9]..[36,1144+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[23,652+9]..[36,1144+2])
+          Pexp_constant PConst_string ("\nexternal a : (int [@untagged]) -> unit = \"a\" \"a_nat\"\nexternal b : (int32 [@unboxed]) -> unit = \"b\" \"b_nat\"\nexternal c : (int64 [@unboxed]) -> unit = \"c\" \"c_nat\"\nexternal d : (nativeint [@unboxed]) -> unit = \"d\" \"d_nat\"\nexternal e : (float [@unboxed]) -> unit = \"e\" \"e_nat\"\ntype t = private int\nexternal f : (t [@untagged]) -> unit = \"f\" \"f_nat\"\nmodule M :\n  sig\n    external a : int -> (int [@untagged]) = \"a\" \"a_nat\"\n    external b : (int [@untagged]) -> int = \"b\" \"b_nat\"\n  end\n",(testsuite/tests/typing-unboxed/test.ml[23,652+11]..[36,1144+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[38,1149+0]..[53,1819+3])
+    Pstr_module
+    "Global_attributes" (testsuite/tests/typing-unboxed/test.ml[38,1149+7]..[38,1149+24])
+      module_expr (testsuite/tests/typing-unboxed/test.ml[38,1149+27]..[53,1819+3])
+        Pmod_structure
+        [
+          structure_item (testsuite/tests/typing-unboxed/test.ml[39,1183+2]..[39,1183+32])
+            Pstr_attribute "ocaml.alert"
+            [
+              structure_item (testsuite/tests/typing-unboxed/test.ml[39,1183+18]..[39,1183+31])
+                Pstr_eval
+                expression (testsuite/tests/typing-unboxed/test.ml[39,1183+18]..[39,1183+31])
+                  Pexp_constant PConst_string("-deprecated",(testsuite/tests/typing-unboxed/test.ml[39,1183+19]..[39,1183+30]),None)
+            ]
+          structure_item (testsuite/tests/typing-unboxed/test.ml[41,1217+2]..[41,1217+61])
+            Pstr_primitive
+            value_description "a" (testsuite/tests/typing-unboxed/test.ml[41,1217+11]..[41,1217+12]) (testsuite/tests/typing-unboxed/test.ml[41,1217+2]..[41,1217+61])
+              core_type (testsuite/tests/typing-unboxed/test.ml[41,1217+15]..[41,1217+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-unboxed/test.ml[41,1217+15]..[41,1217+20])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[41,1217+15]..[41,1217+20])
+                  []
+                core_type (testsuite/tests/typing-unboxed/test.ml[41,1217+24]..[41,1217+29])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[41,1217+24]..[41,1217+29])
+                  []
+              [
+                "a"
+                "noalloc"
+                "a_nat"
+                "float"
+              ]
+          structure_item (testsuite/tests/typing-unboxed/test.ml[42,1279+2]..[42,1279+53])
+            Pstr_primitive
+            value_description "b" (testsuite/tests/typing-unboxed/test.ml[42,1279+11]..[42,1279+12]) (testsuite/tests/typing-unboxed/test.ml[42,1279+2]..[42,1279+53])
+              core_type (testsuite/tests/typing-unboxed/test.ml[42,1279+15]..[42,1279+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-unboxed/test.ml[42,1279+15]..[42,1279+20])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[42,1279+15]..[42,1279+20])
+                  []
+                core_type (testsuite/tests/typing-unboxed/test.ml[42,1279+24]..[42,1279+29])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[42,1279+24]..[42,1279+29])
+                  []
+              [
+                "b"
+                "noalloc"
+                "b_nat"
+              ]
+          structure_item (testsuite/tests/typing-unboxed/test.ml[43,1333+2]..[43,1333+51])
+            Pstr_primitive
+            value_description "c" (testsuite/tests/typing-unboxed/test.ml[43,1333+11]..[43,1333+12]) (testsuite/tests/typing-unboxed/test.ml[43,1333+2]..[43,1333+51])
+              core_type (testsuite/tests/typing-unboxed/test.ml[43,1333+15]..[43,1333+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-unboxed/test.ml[43,1333+15]..[43,1333+20])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[43,1333+15]..[43,1333+20])
+                  []
+                core_type (testsuite/tests/typing-unboxed/test.ml[43,1333+24]..[43,1333+29])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[43,1333+24]..[43,1333+29])
+                  []
+              [
+                "c"
+                "c_nat"
+                "float"
+              ]
+          structure_item (testsuite/tests/typing-unboxed/test.ml[44,1385+2]..[44,1385+45])
+            Pstr_primitive
+            value_description "d" (testsuite/tests/typing-unboxed/test.ml[44,1385+11]..[44,1385+12]) (testsuite/tests/typing-unboxed/test.ml[44,1385+2]..[44,1385+45])
+              core_type (testsuite/tests/typing-unboxed/test.ml[44,1385+15]..[44,1385+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-unboxed/test.ml[44,1385+15]..[44,1385+20])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[44,1385+15]..[44,1385+20])
+                  []
+                core_type (testsuite/tests/typing-unboxed/test.ml[44,1385+24]..[44,1385+29])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[44,1385+24]..[44,1385+29])
+                  []
+              [
+                "d"
+                "noalloc"
+              ]
+          structure_item (testsuite/tests/typing-unboxed/test.ml[45,1431+2]..[45,1431+35])
+            Pstr_primitive
+            value_description "e" (testsuite/tests/typing-unboxed/test.ml[45,1431+11]..[45,1431+12]) (testsuite/tests/typing-unboxed/test.ml[45,1431+2]..[45,1431+35])
+              core_type (testsuite/tests/typing-unboxed/test.ml[45,1431+15]..[45,1431+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-unboxed/test.ml[45,1431+15]..[45,1431+20])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[45,1431+15]..[45,1431+20])
+                  []
+                core_type (testsuite/tests/typing-unboxed/test.ml[45,1431+24]..[45,1431+29])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[45,1431+24]..[45,1431+29])
+                  []
+              [
+                "e"
+              ]
+          structure_item (testsuite/tests/typing-unboxed/test.ml[48,1535+2]..[48,1535+71])
+            Pstr_primitive
+            value_description "f" (testsuite/tests/typing-unboxed/test.ml[48,1535+11]..[48,1535+12]) (testsuite/tests/typing-unboxed/test.ml[48,1535+2]..[48,1535+71])
+              core_type (testsuite/tests/typing-unboxed/test.ml[48,1535+15]..[48,1535+55])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-unboxed/test.ml[48,1535+16]..[48,1535+21])
+                  attribute "unboxed"
+                    []
+                  Ptyp_constr "int32" (testsuite/tests/typing-unboxed/test.ml[48,1535+16]..[48,1535+21])
+                  []
+                core_type (testsuite/tests/typing-unboxed/test.ml[48,1535+38]..[48,1535+43])
+                  attribute "unboxed"
+                    []
+                  Ptyp_constr "int32" (testsuite/tests/typing-unboxed/test.ml[48,1535+38]..[48,1535+43])
+                  []
+              [
+                "f"
+                "noalloc"
+              ]
+          structure_item (testsuite/tests/typing-unboxed/test.ml[49,1607+2]..[49,1607+67])
+            Pstr_primitive
+            value_description "g" (testsuite/tests/typing-unboxed/test.ml[49,1607+11]..[49,1607+12]) (testsuite/tests/typing-unboxed/test.ml[49,1607+2]..[49,1607+67])
+              attribute "unboxed"
+                []
+              attribute "noalloc"
+                []
+              core_type (testsuite/tests/typing-unboxed/test.ml[49,1607+15]..[49,1607+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-unboxed/test.ml[49,1607+15]..[49,1607+20])
+                  Ptyp_constr "int32" (testsuite/tests/typing-unboxed/test.ml[49,1607+15]..[49,1607+20])
+                  []
+                core_type (testsuite/tests/typing-unboxed/test.ml[49,1607+24]..[49,1607+29])
+                  Ptyp_constr "int32" (testsuite/tests/typing-unboxed/test.ml[49,1607+24]..[49,1607+29])
+                  []
+              [
+                "g"
+                "g_nat"
+              ]
+          structure_item (testsuite/tests/typing-unboxed/test.ml[51,1676+2]..[51,1676+77])
+            Pstr_primitive
+            value_description "h" (testsuite/tests/typing-unboxed/test.ml[51,1676+11]..[51,1676+12]) (testsuite/tests/typing-unboxed/test.ml[51,1676+2]..[51,1676+77])
+              core_type (testsuite/tests/typing-unboxed/test.ml[51,1676+15]..[51,1676+53])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-unboxed/test.ml[51,1676+16]..[51,1676+19])
+                  attribute "untagged"
+                    []
+                  Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[51,1676+16]..[51,1676+19])
+                  []
+                core_type (testsuite/tests/typing-unboxed/test.ml[51,1676+37]..[51,1676+40])
+                  attribute "untagged"
+                    []
+                  Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[51,1676+37]..[51,1676+40])
+                  []
+              [
+                "h"
+                "h_nat"
+                "noalloc"
+              ]
+          structure_item (testsuite/tests/typing-unboxed/test.ml[52,1754+2]..[52,1754+64])
+            Pstr_primitive
+            value_description "i" (testsuite/tests/typing-unboxed/test.ml[52,1754+11]..[52,1754+12]) (testsuite/tests/typing-unboxed/test.ml[52,1754+2]..[52,1754+64])
+              attribute "untagged"
+                []
+              attribute "noalloc"
+                []
+              core_type (testsuite/tests/typing-unboxed/test.ml[52,1754+15]..[52,1754+25])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-unboxed/test.ml[52,1754+15]..[52,1754+18])
+                  Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[52,1754+15]..[52,1754+18])
+                  []
+                core_type (testsuite/tests/typing-unboxed/test.ml[52,1754+22]..[52,1754+25])
+                  Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[52,1754+22]..[52,1754+25])
+                  []
+              [
+                "i"
+                "i_nat"
+              ]
+        ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[55,1826+0]..[61,2143+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[55,1826+9]..[61,2143+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[55,1826+9]..[61,2143+2])
+          Pexp_constant PConst_string ("\nLine 11, characters 2-71:\n11 |   external f : (int32 [@unboxed]) -> (int32 [@unboxed]) = \"f\" \"noalloc\"\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError: [@The native code version of the primitive is mandatory\n       when attributes [@untagged] or [@unboxed] are present.\n",(testsuite/tests/typing-unboxed/test.ml[55,1826+11]..[61,2143+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[63,2148+0]..[70,2466+3])
+    Pstr_module
+    "Old_style_warning" (testsuite/tests/typing-unboxed/test.ml[63,2148+7]..[63,2148+24])
+      module_expr (testsuite/tests/typing-unboxed/test.ml[63,2148+27]..[70,2466+3])
+        Pmod_structure
+        [
+          structure_item (testsuite/tests/typing-unboxed/test.ml[64,2182+2]..[64,2182+25])
+            Pstr_attribute "ocaml.warning"
+            [
+              structure_item (testsuite/tests/typing-unboxed/test.ml[64,2182+20]..[64,2182+24])
+                Pstr_eval
+                expression (testsuite/tests/typing-unboxed/test.ml[64,2182+20]..[64,2182+24])
+                  Pexp_constant PConst_string("+3",(testsuite/tests/typing-unboxed/test.ml[64,2182+21]..[64,2182+23]),None)
+            ]
+          structure_item (testsuite/tests/typing-unboxed/test.ml[65,2208+2]..[65,2208+61])
+            Pstr_primitive
+            value_description "a" (testsuite/tests/typing-unboxed/test.ml[65,2208+11]..[65,2208+12]) (testsuite/tests/typing-unboxed/test.ml[65,2208+2]..[65,2208+61])
+              core_type (testsuite/tests/typing-unboxed/test.ml[65,2208+15]..[65,2208+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-unboxed/test.ml[65,2208+15]..[65,2208+20])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[65,2208+15]..[65,2208+20])
+                  []
+                core_type (testsuite/tests/typing-unboxed/test.ml[65,2208+24]..[65,2208+29])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[65,2208+24]..[65,2208+29])
+                  []
+              [
+                "a"
+                "noalloc"
+                "a_nat"
+                "float"
+              ]
+          structure_item (testsuite/tests/typing-unboxed/test.ml[66,2270+2]..[66,2270+53])
+            Pstr_primitive
+            value_description "b" (testsuite/tests/typing-unboxed/test.ml[66,2270+11]..[66,2270+12]) (testsuite/tests/typing-unboxed/test.ml[66,2270+2]..[66,2270+53])
+              core_type (testsuite/tests/typing-unboxed/test.ml[66,2270+15]..[66,2270+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-unboxed/test.ml[66,2270+15]..[66,2270+20])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[66,2270+15]..[66,2270+20])
+                  []
+                core_type (testsuite/tests/typing-unboxed/test.ml[66,2270+24]..[66,2270+29])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[66,2270+24]..[66,2270+29])
+                  []
+              [
+                "b"
+                "noalloc"
+                "b_nat"
+              ]
+          structure_item (testsuite/tests/typing-unboxed/test.ml[67,2324+2]..[67,2324+51])
+            Pstr_primitive
+            value_description "c" (testsuite/tests/typing-unboxed/test.ml[67,2324+11]..[67,2324+12]) (testsuite/tests/typing-unboxed/test.ml[67,2324+2]..[67,2324+51])
+              core_type (testsuite/tests/typing-unboxed/test.ml[67,2324+15]..[67,2324+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-unboxed/test.ml[67,2324+15]..[67,2324+20])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[67,2324+15]..[67,2324+20])
+                  []
+                core_type (testsuite/tests/typing-unboxed/test.ml[67,2324+24]..[67,2324+29])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[67,2324+24]..[67,2324+29])
+                  []
+              [
+                "c"
+                "c_nat"
+                "float"
+              ]
+          structure_item (testsuite/tests/typing-unboxed/test.ml[68,2376+2]..[68,2376+45])
+            Pstr_primitive
+            value_description "d" (testsuite/tests/typing-unboxed/test.ml[68,2376+11]..[68,2376+12]) (testsuite/tests/typing-unboxed/test.ml[68,2376+2]..[68,2376+45])
+              core_type (testsuite/tests/typing-unboxed/test.ml[68,2376+15]..[68,2376+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-unboxed/test.ml[68,2376+15]..[68,2376+20])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[68,2376+15]..[68,2376+20])
+                  []
+                core_type (testsuite/tests/typing-unboxed/test.ml[68,2376+24]..[68,2376+29])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[68,2376+24]..[68,2376+29])
+                  []
+              [
+                "d"
+                "noalloc"
+              ]
+          structure_item (testsuite/tests/typing-unboxed/test.ml[69,2422+2]..[69,2422+43])
+            Pstr_primitive
+            value_description "e" (testsuite/tests/typing-unboxed/test.ml[69,2422+11]..[69,2422+12]) (testsuite/tests/typing-unboxed/test.ml[69,2422+2]..[69,2422+43])
+              core_type (testsuite/tests/typing-unboxed/test.ml[69,2422+15]..[69,2422+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-unboxed/test.ml[69,2422+15]..[69,2422+20])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[69,2422+15]..[69,2422+20])
+                  []
+                core_type (testsuite/tests/typing-unboxed/test.ml[69,2422+24]..[69,2422+29])
+                  Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[69,2422+24]..[69,2422+29])
+                  []
+              [
+                "c"
+                "float"
+              ]
+        ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[71,2472+0]..[98,3665+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[71,2472+9]..[98,3665+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[71,2472+9]..[98,3665+2])
+          Pexp_constant PConst_string ("\nLine 3, characters 2-61:\n3 |   external a : float -> float = \"a\" \"noalloc\" \"a_nat\" \"float\"\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAlert deprecated: [@@unboxed] + [@@noalloc] should be used\ninstead of \"float\"\nLine 4, characters 2-53:\n4 |   external b : float -> float = \"b\" \"noalloc\" \"b_nat\"\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAlert deprecated: [@@noalloc] should be used instead of \"noalloc\"\nLine 5, characters 2-51:\n5 |   external c : float -> float = \"c\" \"c_nat\" \"float\"\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAlert deprecated: [@@unboxed] + [@@noalloc] should be used\ninstead of \"float\"\nLine 6, characters 2-45:\n6 |   external d : float -> float = \"d\" \"noalloc\"\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAlert deprecated: [@@noalloc] should be used instead of \"noalloc\"\nmodule Old_style_warning :\n  sig\n    external a : float -> float = \"a\" \"a_nat\" [@@unboxed] [@@noalloc]\n    external b : float -> float = \"b\" \"b_nat\" [@@noalloc]\n    external c : float -> float = \"c\" \"c_nat\" [@@unboxed] [@@noalloc]\n    external d : float -> float = \"d\" [@@noalloc]\n    external e : float -> float = \"c\" \"float\"\n  end\n",(testsuite/tests/typing-unboxed/test.ml[71,2472+11]..[98,3665+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[102,3723+0]..[106,3848+3])
+    Pstr_module
+    "Bad1" (testsuite/tests/typing-unboxed/test.ml[102,3723+7]..[102,3723+11])
+      module_expr (testsuite/tests/typing-unboxed/test.ml[102,3723+12]..[106,3848+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-unboxed/test.ml[104,3781+6]..[106,3848+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-unboxed/test.ml[105,3794+2]..[105,3794+53])
+              Pstr_primitive
+              value_description "f" (testsuite/tests/typing-unboxed/test.ml[105,3794+11]..[105,3794+12]) (testsuite/tests/typing-unboxed/test.ml[105,3794+2]..[105,3794+53])
+                core_type (testsuite/tests/typing-unboxed/test.ml[105,3794+15]..[105,3794+39])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[105,3794+15]..[105,3794+18])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[105,3794+15]..[105,3794+18])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[105,3794+23]..[105,3794+26])
+                    attribute "untagged"
+                      []
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[105,3794+23]..[105,3794+26])
+                    []
+                [
+                  "f"
+                  "f_nat"
+                ]
+          ]
+        module_type (testsuite/tests/typing-unboxed/test.ml[102,3723+14]..[104,3781+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-unboxed/test.ml[103,3741+2]..[103,3741+39])
+              Psig_value
+              value_description "f" (testsuite/tests/typing-unboxed/test.ml[103,3741+11]..[103,3741+12]) (testsuite/tests/typing-unboxed/test.ml[103,3741+2]..[103,3741+39])
+                core_type (testsuite/tests/typing-unboxed/test.ml[103,3741+15]..[103,3741+25])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[103,3741+15]..[103,3741+18])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[103,3741+15]..[103,3741+18])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[103,3741+22]..[103,3741+25])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[103,3741+22]..[103,3741+25])
+                    []
+                [
+                  "f"
+                  "f_nat"
+                ]
+          ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[108,3855+0]..[122,4347+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[108,3855+9]..[122,4347+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[108,3855+9]..[122,4347+2])
+          Pexp_constant PConst_string ("\nLines 3-5, characters 6-3:\n3 | ......struct\n4 |   external f : int -> (int [@untagged]) = \"f\" \"f_nat\"\n5 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig external f : int -> (int [@untagged]) = \"f\" \"f_nat\" end\n       is not included in\n         sig external f : int -> int = \"f\" \"f_nat\" end\n       Values do not match:\n         external f : int -> (int [@untagged]) = \"f\" \"f_nat\"\n       is not included in\n         external f : int -> int = \"f\" \"f_nat\"\n",(testsuite/tests/typing-unboxed/test.ml[108,3855+11]..[122,4347+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[124,4352+0]..[128,4477+3])
+    Pstr_module
+    "Bad2" (testsuite/tests/typing-unboxed/test.ml[124,4352+7]..[124,4352+11])
+      module_expr (testsuite/tests/typing-unboxed/test.ml[124,4352+12]..[128,4477+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-unboxed/test.ml[126,4410+6]..[128,4477+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-unboxed/test.ml[127,4423+2]..[127,4423+53])
+              Pstr_primitive
+              value_description "f" (testsuite/tests/typing-unboxed/test.ml[127,4423+11]..[127,4423+12]) (testsuite/tests/typing-unboxed/test.ml[127,4423+2]..[127,4423+53])
+                core_type (testsuite/tests/typing-unboxed/test.ml[127,4423+15]..[127,4423+39])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[127,4423+16]..[127,4423+19])
+                    attribute "untagged"
+                      []
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[127,4423+16]..[127,4423+19])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[127,4423+36]..[127,4423+39])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[127,4423+36]..[127,4423+39])
+                    []
+                [
+                  "f"
+                  "f_nat"
+                ]
+          ]
+        module_type (testsuite/tests/typing-unboxed/test.ml[124,4352+14]..[126,4410+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-unboxed/test.ml[125,4370+2]..[125,4370+39])
+              Psig_value
+              value_description "f" (testsuite/tests/typing-unboxed/test.ml[125,4370+11]..[125,4370+12]) (testsuite/tests/typing-unboxed/test.ml[125,4370+2]..[125,4370+39])
+                core_type (testsuite/tests/typing-unboxed/test.ml[125,4370+15]..[125,4370+25])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[125,4370+15]..[125,4370+18])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[125,4370+15]..[125,4370+18])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[125,4370+22]..[125,4370+25])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[125,4370+22]..[125,4370+25])
+                    []
+                [
+                  "a"
+                  "a_nat"
+                ]
+          ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[130,4484+0]..[144,4976+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[130,4484+9]..[144,4976+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[130,4484+9]..[144,4976+2])
+          Pexp_constant PConst_string ("\nLines 3-5, characters 6-3:\n3 | ......struct\n4 |   external f : (int [@untagged]) -> int = \"f\" \"f_nat\"\n5 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig external f : (int [@untagged]) -> int = \"f\" \"f_nat\" end\n       is not included in\n         sig external f : int -> int = \"a\" \"a_nat\" end\n       Values do not match:\n         external f : (int [@untagged]) -> int = \"f\" \"f_nat\"\n       is not included in\n         external f : int -> int = \"a\" \"a_nat\"\n",(testsuite/tests/typing-unboxed/test.ml[130,4484+11]..[144,4976+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[146,4981+0]..[150,5113+3])
+    Pstr_module
+    "Bad3" (testsuite/tests/typing-unboxed/test.ml[146,4981+7]..[146,4981+11])
+      module_expr (testsuite/tests/typing-unboxed/test.ml[146,4981+12]..[150,5113+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-unboxed/test.ml[148,5043+6]..[150,5113+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-unboxed/test.ml[149,5056+2]..[149,5056+56])
+              Pstr_primitive
+              value_description "f" (testsuite/tests/typing-unboxed/test.ml[149,5056+11]..[149,5056+12]) (testsuite/tests/typing-unboxed/test.ml[149,5056+2]..[149,5056+56])
+                core_type (testsuite/tests/typing-unboxed/test.ml[149,5056+15]..[149,5056+42])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[149,5056+15]..[149,5056+20])
+                    Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[149,5056+15]..[149,5056+20])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[149,5056+25]..[149,5056+30])
+                    attribute "unboxed"
+                      []
+                    Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[149,5056+25]..[149,5056+30])
+                    []
+                [
+                  "f"
+                  "f_nat"
+                ]
+          ]
+        module_type (testsuite/tests/typing-unboxed/test.ml[146,4981+14]..[148,5043+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-unboxed/test.ml[147,4999+2]..[147,4999+43])
+              Psig_value
+              value_description "f" (testsuite/tests/typing-unboxed/test.ml[147,4999+11]..[147,4999+12]) (testsuite/tests/typing-unboxed/test.ml[147,4999+2]..[147,4999+43])
+                core_type (testsuite/tests/typing-unboxed/test.ml[147,4999+15]..[147,4999+29])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[147,4999+15]..[147,4999+20])
+                    Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[147,4999+15]..[147,4999+20])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[147,4999+24]..[147,4999+29])
+                    Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[147,4999+24]..[147,4999+29])
+                    []
+                [
+                  "f"
+                  "f_nat"
+                ]
+          ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[152,5120+0]..[166,5629+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[152,5120+9]..[166,5629+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[152,5120+9]..[166,5629+2])
+          Pexp_constant PConst_string ("\nLines 3-5, characters 6-3:\n3 | ......struct\n4 |   external f : float -> (float [@unboxed]) = \"f\" \"f_nat\"\n5 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig external f : float -> (float [@unboxed]) = \"f\" \"f_nat\" end\n       is not included in\n         sig external f : float -> float = \"f\" \"f_nat\" end\n       Values do not match:\n         external f : float -> (float [@unboxed]) = \"f\" \"f_nat\"\n       is not included in\n         external f : float -> float = \"f\" \"f_nat\"\n",(testsuite/tests/typing-unboxed/test.ml[152,5120+11]..[166,5629+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[168,5634+0]..[172,5766+3])
+    Pstr_module
+    "Bad4" (testsuite/tests/typing-unboxed/test.ml[168,5634+7]..[168,5634+11])
+      module_expr (testsuite/tests/typing-unboxed/test.ml[168,5634+12]..[172,5766+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-unboxed/test.ml[170,5696+6]..[172,5766+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-unboxed/test.ml[171,5709+2]..[171,5709+56])
+              Pstr_primitive
+              value_description "f" (testsuite/tests/typing-unboxed/test.ml[171,5709+11]..[171,5709+12]) (testsuite/tests/typing-unboxed/test.ml[171,5709+2]..[171,5709+56])
+                core_type (testsuite/tests/typing-unboxed/test.ml[171,5709+15]..[171,5709+42])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[171,5709+16]..[171,5709+21])
+                    attribute "unboxed"
+                      []
+                    Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[171,5709+16]..[171,5709+21])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[171,5709+37]..[171,5709+42])
+                    Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[171,5709+37]..[171,5709+42])
+                    []
+                [
+                  "f"
+                  "f_nat"
+                ]
+          ]
+        module_type (testsuite/tests/typing-unboxed/test.ml[168,5634+14]..[170,5696+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-unboxed/test.ml[169,5652+2]..[169,5652+43])
+              Psig_value
+              value_description "f" (testsuite/tests/typing-unboxed/test.ml[169,5652+11]..[169,5652+12]) (testsuite/tests/typing-unboxed/test.ml[169,5652+2]..[169,5652+43])
+                core_type (testsuite/tests/typing-unboxed/test.ml[169,5652+15]..[169,5652+29])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[169,5652+15]..[169,5652+20])
+                    Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[169,5652+15]..[169,5652+20])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[169,5652+24]..[169,5652+29])
+                    Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[169,5652+24]..[169,5652+29])
+                    []
+                [
+                  "a"
+                  "a_nat"
+                ]
+          ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[174,5773+0]..[188,6282+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[174,5773+9]..[188,6282+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[174,5773+9]..[188,6282+2])
+          Pexp_constant PConst_string ("\nLines 3-5, characters 6-3:\n3 | ......struct\n4 |   external f : (float [@unboxed]) -> float = \"f\" \"f_nat\"\n5 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig external f : (float [@unboxed]) -> float = \"f\" \"f_nat\" end\n       is not included in\n         sig external f : float -> float = \"a\" \"a_nat\" end\n       Values do not match:\n         external f : (float [@unboxed]) -> float = \"f\" \"f_nat\"\n       is not included in\n         external f : float -> float = \"a\" \"a_nat\"\n",(testsuite/tests/typing-unboxed/test.ml[174,5773+11]..[188,6282+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[192,6357+0]..[196,6482+3])
+    Pstr_module
+    "Bad5" (testsuite/tests/typing-unboxed/test.ml[192,6357+7]..[192,6357+11])
+      module_expr (testsuite/tests/typing-unboxed/test.ml[192,6357+12]..[196,6482+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-unboxed/test.ml[194,6429+6]..[196,6482+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-unboxed/test.ml[195,6442+2]..[195,6442+39])
+              Pstr_primitive
+              value_description "f" (testsuite/tests/typing-unboxed/test.ml[195,6442+11]..[195,6442+12]) (testsuite/tests/typing-unboxed/test.ml[195,6442+2]..[195,6442+39])
+                core_type (testsuite/tests/typing-unboxed/test.ml[195,6442+15]..[195,6442+25])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[195,6442+15]..[195,6442+18])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[195,6442+15]..[195,6442+18])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[195,6442+22]..[195,6442+25])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[195,6442+22]..[195,6442+25])
+                    []
+                [
+                  "f"
+                  "f_nat"
+                ]
+          ]
+        module_type (testsuite/tests/typing-unboxed/test.ml[192,6357+14]..[194,6429+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-unboxed/test.ml[193,6375+2]..[193,6375+53])
+              Psig_value
+              value_description "f" (testsuite/tests/typing-unboxed/test.ml[193,6375+11]..[193,6375+12]) (testsuite/tests/typing-unboxed/test.ml[193,6375+2]..[193,6375+53])
+                core_type (testsuite/tests/typing-unboxed/test.ml[193,6375+15]..[193,6375+39])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[193,6375+15]..[193,6375+18])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[193,6375+15]..[193,6375+18])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[193,6375+23]..[193,6375+26])
+                    attribute "untagged"
+                      []
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[193,6375+23]..[193,6375+26])
+                    []
+                [
+                  "f"
+                  "f_nat"
+                ]
+          ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[198,6489+0]..[212,6967+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[198,6489+9]..[212,6967+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[198,6489+9]..[212,6967+2])
+          Pexp_constant PConst_string ("\nLines 3-5, characters 6-3:\n3 | ......struct\n4 |   external f : int -> int = \"f\" \"f_nat\"\n5 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig external f : int -> int = \"f\" \"f_nat\" end\n       is not included in\n         sig external f : int -> (int [@untagged]) = \"f\" \"f_nat\" end\n       Values do not match:\n         external f : int -> int = \"f\" \"f_nat\"\n       is not included in\n         external f : int -> (int [@untagged]) = \"f\" \"f_nat\"\n",(testsuite/tests/typing-unboxed/test.ml[198,6489+11]..[212,6967+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[214,6972+0]..[218,7097+3])
+    Pstr_module
+    "Bad6" (testsuite/tests/typing-unboxed/test.ml[214,6972+7]..[214,6972+11])
+      module_expr (testsuite/tests/typing-unboxed/test.ml[214,6972+12]..[218,7097+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-unboxed/test.ml[216,7044+6]..[218,7097+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-unboxed/test.ml[217,7057+2]..[217,7057+39])
+              Pstr_primitive
+              value_description "f" (testsuite/tests/typing-unboxed/test.ml[217,7057+11]..[217,7057+12]) (testsuite/tests/typing-unboxed/test.ml[217,7057+2]..[217,7057+39])
+                core_type (testsuite/tests/typing-unboxed/test.ml[217,7057+15]..[217,7057+25])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[217,7057+15]..[217,7057+18])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[217,7057+15]..[217,7057+18])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[217,7057+22]..[217,7057+25])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[217,7057+22]..[217,7057+25])
+                    []
+                [
+                  "a"
+                  "a_nat"
+                ]
+          ]
+        module_type (testsuite/tests/typing-unboxed/test.ml[214,6972+14]..[216,7044+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-unboxed/test.ml[215,6990+2]..[215,6990+53])
+              Psig_value
+              value_description "f" (testsuite/tests/typing-unboxed/test.ml[215,6990+11]..[215,6990+12]) (testsuite/tests/typing-unboxed/test.ml[215,6990+2]..[215,6990+53])
+                core_type (testsuite/tests/typing-unboxed/test.ml[215,6990+15]..[215,6990+39])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[215,6990+16]..[215,6990+19])
+                    attribute "untagged"
+                      []
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[215,6990+16]..[215,6990+19])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[215,6990+36]..[215,6990+39])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[215,6990+36]..[215,6990+39])
+                    []
+                [
+                  "f"
+                  "f_nat"
+                ]
+          ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[220,7104+0]..[234,7582+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[220,7104+9]..[234,7582+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[220,7104+9]..[234,7582+2])
+          Pexp_constant PConst_string ("\nLines 3-5, characters 6-3:\n3 | ......struct\n4 |   external f : int -> int = \"a\" \"a_nat\"\n5 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig external f : int -> int = \"a\" \"a_nat\" end\n       is not included in\n         sig external f : (int [@untagged]) -> int = \"f\" \"f_nat\" end\n       Values do not match:\n         external f : int -> int = \"a\" \"a_nat\"\n       is not included in\n         external f : (int [@untagged]) -> int = \"f\" \"f_nat\"\n",(testsuite/tests/typing-unboxed/test.ml[220,7104+11]..[234,7582+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[236,7587+0]..[240,7719+3])
+    Pstr_module
+    "Bad7" (testsuite/tests/typing-unboxed/test.ml[236,7587+7]..[236,7587+11])
+      module_expr (testsuite/tests/typing-unboxed/test.ml[236,7587+12]..[240,7719+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-unboxed/test.ml[238,7662+6]..[240,7719+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-unboxed/test.ml[239,7675+2]..[239,7675+43])
+              Pstr_primitive
+              value_description "f" (testsuite/tests/typing-unboxed/test.ml[239,7675+11]..[239,7675+12]) (testsuite/tests/typing-unboxed/test.ml[239,7675+2]..[239,7675+43])
+                core_type (testsuite/tests/typing-unboxed/test.ml[239,7675+15]..[239,7675+29])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[239,7675+15]..[239,7675+20])
+                    Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[239,7675+15]..[239,7675+20])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[239,7675+24]..[239,7675+29])
+                    Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[239,7675+24]..[239,7675+29])
+                    []
+                [
+                  "f"
+                  "f_nat"
+                ]
+          ]
+        module_type (testsuite/tests/typing-unboxed/test.ml[236,7587+14]..[238,7662+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-unboxed/test.ml[237,7605+2]..[237,7605+56])
+              Psig_value
+              value_description "f" (testsuite/tests/typing-unboxed/test.ml[237,7605+11]..[237,7605+12]) (testsuite/tests/typing-unboxed/test.ml[237,7605+2]..[237,7605+56])
+                core_type (testsuite/tests/typing-unboxed/test.ml[237,7605+15]..[237,7605+42])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[237,7605+15]..[237,7605+20])
+                    Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[237,7605+15]..[237,7605+20])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[237,7605+25]..[237,7605+30])
+                    attribute "unboxed"
+                      []
+                    Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[237,7605+25]..[237,7605+30])
+                    []
+                [
+                  "f"
+                  "f_nat"
+                ]
+          ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[242,7726+0]..[256,8222+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[242,7726+9]..[256,8222+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[242,7726+9]..[256,8222+2])
+          Pexp_constant PConst_string ("\nLines 3-5, characters 6-3:\n3 | ......struct\n4 |   external f : float -> float = \"f\" \"f_nat\"\n5 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig external f : float -> float = \"f\" \"f_nat\" end\n       is not included in\n         sig external f : float -> (float [@unboxed]) = \"f\" \"f_nat\" end\n       Values do not match:\n         external f : float -> float = \"f\" \"f_nat\"\n       is not included in\n         external f : float -> (float [@unboxed]) = \"f\" \"f_nat\"\n",(testsuite/tests/typing-unboxed/test.ml[242,7726+11]..[256,8222+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[258,8227+0]..[262,8359+3])
+    Pstr_module
+    "Bad8" (testsuite/tests/typing-unboxed/test.ml[258,8227+7]..[258,8227+11])
+      module_expr (testsuite/tests/typing-unboxed/test.ml[258,8227+12]..[262,8359+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-unboxed/test.ml[260,8302+6]..[262,8359+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-unboxed/test.ml[261,8315+2]..[261,8315+43])
+              Pstr_primitive
+              value_description "f" (testsuite/tests/typing-unboxed/test.ml[261,8315+11]..[261,8315+12]) (testsuite/tests/typing-unboxed/test.ml[261,8315+2]..[261,8315+43])
+                core_type (testsuite/tests/typing-unboxed/test.ml[261,8315+15]..[261,8315+29])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[261,8315+15]..[261,8315+20])
+                    Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[261,8315+15]..[261,8315+20])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[261,8315+24]..[261,8315+29])
+                    Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[261,8315+24]..[261,8315+29])
+                    []
+                [
+                  "a"
+                  "a_nat"
+                ]
+          ]
+        module_type (testsuite/tests/typing-unboxed/test.ml[258,8227+14]..[260,8302+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-unboxed/test.ml[259,8245+2]..[259,8245+56])
+              Psig_value
+              value_description "f" (testsuite/tests/typing-unboxed/test.ml[259,8245+11]..[259,8245+12]) (testsuite/tests/typing-unboxed/test.ml[259,8245+2]..[259,8245+56])
+                core_type (testsuite/tests/typing-unboxed/test.ml[259,8245+15]..[259,8245+42])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-unboxed/test.ml[259,8245+16]..[259,8245+21])
+                    attribute "unboxed"
+                      []
+                    Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[259,8245+16]..[259,8245+21])
+                    []
+                  core_type (testsuite/tests/typing-unboxed/test.ml[259,8245+37]..[259,8245+42])
+                    Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[259,8245+37]..[259,8245+42])
+                    []
+                [
+                  "f"
+                  "f_nat"
+                ]
+          ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[264,8366+0]..[278,8862+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[264,8366+9]..[278,8862+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[264,8366+9]..[278,8862+2])
+          Pexp_constant PConst_string ("\nLines 3-5, characters 6-3:\n3 | ......struct\n4 |   external f : float -> float = \"a\" \"a_nat\"\n5 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig external f : float -> float = \"a\" \"a_nat\" end\n       is not included in\n         sig external f : (float [@unboxed]) -> float = \"f\" \"f_nat\" end\n       Values do not match:\n         external f : float -> float = \"a\" \"a_nat\"\n       is not included in\n         external f : (float [@unboxed]) -> float = \"f\" \"f_nat\"\n",(testsuite/tests/typing-unboxed/test.ml[264,8366+11]..[278,8862+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[282,8919+0]..[282,8919+55])
+    Pstr_primitive
+    value_description "g" (testsuite/tests/typing-unboxed/test.ml[282,8919+9]..[282,8919+10]) (testsuite/tests/typing-unboxed/test.ml[282,8919+0]..[282,8919+55])
+      core_type (testsuite/tests/typing-unboxed/test.ml[282,8919+13]..[282,8919+41])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[282,8919+14]..[282,8919+19])
+          attribute "untagged"
+            []
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[282,8919+14]..[282,8919+19])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[282,8919+36]..[282,8919+41])
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[282,8919+36]..[282,8919+41])
+          []
+      [
+        "g"
+        "g_nat"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[283,8977+0]..[288,9169+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[283,8977+9]..[288,9169+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[283,8977+9]..[288,9169+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 14-19:\n1 | external g : (float [@untagged]) -> float = \"g\" \"g_nat\";;\n                  ^^^^^\nError: Don't know how to untag this type. Only int can be untagged.\n",(testsuite/tests/typing-unboxed/test.ml[283,8977+11]..[288,9169+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[289,9173+0]..[289,9173+52])
+    Pstr_primitive
+    value_description "h" (testsuite/tests/typing-unboxed/test.ml[289,9173+9]..[289,9173+10]) (testsuite/tests/typing-unboxed/test.ml[289,9173+0]..[289,9173+52])
+      core_type (testsuite/tests/typing-unboxed/test.ml[289,9173+13]..[289,9173+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[289,9173+14]..[289,9173+17])
+          attribute "unboxed"
+            []
+          Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[289,9173+14]..[289,9173+17])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[289,9173+33]..[289,9173+38])
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[289,9173+33]..[289,9173+38])
+          []
+      [
+        "h"
+        "h_nat"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[290,9228+0]..[296,9451+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[290,9228+9]..[296,9451+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[290,9228+9]..[296,9451+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 14-17:\n1 | external h : (int [@unboxed]) -> float = \"h\" \"h_nat\";;\n                  ^^^\nError: Don't know how to unbox this type.\n       Only float, int32, int64 and nativeint can be unboxed.\n",(testsuite/tests/typing-unboxed/test.ml[290,9228+11]..[296,9451+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[299,9494+0]..[299,9494+50])
+    Pstr_primitive
+    value_description "i" (testsuite/tests/typing-unboxed/test.ml[299,9494+9]..[299,9494+10]) (testsuite/tests/typing-unboxed/test.ml[299,9494+0]..[299,9494+50])
+      core_type (testsuite/tests/typing-unboxed/test.ml[299,9494+13]..[299,9494+25])
+        attribute "unboxed"
+          []
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[299,9494+13]..[299,9494+16])
+          Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[299,9494+13]..[299,9494+16])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[299,9494+20]..[299,9494+25])
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[299,9494+20]..[299,9494+25])
+          []
+      [
+        "i"
+        "i_nat"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[300,9547+0]..[306,9776+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[300,9547+9]..[306,9776+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[300,9547+9]..[306,9776+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 13-25:\n1 | external i : int -> float [@unboxed] = \"i\" \"i_nat\";;\n                 ^^^^^^^^^^^^\nError: Don't know how to unbox this type.\n       Only float, int32, int64 and nativeint can be unboxed.\n",(testsuite/tests/typing-unboxed/test.ml[300,9547+11]..[306,9776+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[309,9820+0]..[309,9820+60])
+    Pstr_primitive
+    value_description "j" (testsuite/tests/typing-unboxed/test.ml[309,9820+9]..[309,9820+10]) (testsuite/tests/typing-unboxed/test.ml[309,9820+0]..[309,9820+60])
+      core_type (testsuite/tests/typing-unboxed/test.ml[309,9820+13]..[309,9820+46])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[309,9820+13]..[309,9820+16])
+          Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[309,9820+13]..[309,9820+16])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[309,9820+20]..[309,9820+46])
+          Ptyp_tuple
+          [
+            core_type (testsuite/tests/typing-unboxed/test.ml[309,9820+21]..[309,9820+26])
+              attribute "unboxed"
+                []
+              Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[309,9820+21]..[309,9820+26])
+              []
+            core_type (testsuite/tests/typing-unboxed/test.ml[309,9820+41]..[309,9820+46])
+              Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[309,9820+41]..[309,9820+46])
+              []
+          ]
+      [
+        "j"
+        "j_nat"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[310,9883+0]..[317,10175+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[310,9883+9]..[317,10175+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[310,9883+9]..[317,10175+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 21-26:\n1 | external j : int -> (float [@unboxed]) * float = \"j\" \"j_nat\";;\n                         ^^^^^\nError: The attribute '@unboxed' should be attached to\n       a direct argument or result of the primitive,\n       it should not occur deeply into its type.\n",(testsuite/tests/typing-unboxed/test.ml[310,9883+11]..[317,10175+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[322,10280+0]..[322,10280+51])
+    Pstr_primitive
+    value_description "k" (testsuite/tests/typing-unboxed/test.ml[322,10280+9]..[322,10280+10]) (testsuite/tests/typing-unboxed/test.ml[322,10280+0]..[322,10280+51])
+      core_type (testsuite/tests/typing-unboxed/test.ml[322,10280+13]..[322,10280+37])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[322,10280+13]..[322,10280+16])
+          Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[322,10280+13]..[322,10280+16])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[322,10280+21]..[322,10280+26])
+          attribute "unboxd"
+            []
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[322,10280+21]..[322,10280+26])
+          []
+      [
+        "k"
+        "k_nat"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[323,10334+0]..[325,10386+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[323,10334+9]..[325,10386+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[323,10334+9]..[325,10386+2])
+          Pexp_constant PConst_string ("\nexternal k : int -> float = \"k\" \"k_nat\"\n",(testsuite/tests/typing-unboxed/test.ml[323,10334+11]..[325,10386+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[329,10448+0]..[329,10448+61])
+    Pstr_primitive
+    value_description "l" (testsuite/tests/typing-unboxed/test.ml[329,10448+9]..[329,10448+10]) (testsuite/tests/typing-unboxed/test.ml[329,10448+0]..[329,10448+61])
+      attribute "unboxed"
+        []
+      core_type (testsuite/tests/typing-unboxed/test.ml[329,10448+13]..[329,10448+27])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[329,10448+13]..[329,10448+18])
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[329,10448+13]..[329,10448+18])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[329,10448+22]..[329,10448+27])
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[329,10448+22]..[329,10448+27])
+          []
+      [
+        "l"
+        "l_nat"
+        "float"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[330,10512+0]..[335,10753+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[330,10512+9]..[335,10753+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[330,10512+9]..[335,10753+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 0-61:\n1 | external l : float -> float = \"l\" \"l_nat\" \"float\" [@@unboxed];;\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError: Cannot use \"float\" in conjunction with [@unboxed]/[@untagged].\n",(testsuite/tests/typing-unboxed/test.ml[330,10512+11]..[335,10753+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[336,10757+0]..[336,10757+62])
+    Pstr_primitive
+    value_description "m" (testsuite/tests/typing-unboxed/test.ml[336,10757+9]..[336,10757+10]) (testsuite/tests/typing-unboxed/test.ml[336,10757+0]..[336,10757+62])
+      core_type (testsuite/tests/typing-unboxed/test.ml[336,10757+13]..[336,10757+40])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[336,10757+14]..[336,10757+19])
+          attribute "unboxed"
+            []
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[336,10757+14]..[336,10757+19])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[336,10757+35]..[336,10757+40])
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[336,10757+35]..[336,10757+40])
+          []
+      [
+        "m"
+        "m_nat"
+        "float"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[337,10822+0]..[342,11065+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[337,10822+9]..[342,11065+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[337,10822+9]..[342,11065+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 0-62:\n1 | external m : (float [@unboxed]) -> float = \"m\" \"m_nat\" \"float\";;\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError: Cannot use \"float\" in conjunction with [@unboxed]/[@untagged].\n",(testsuite/tests/typing-unboxed/test.ml[337,10822+11]..[342,11065+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[343,11069+0]..[343,11069+55])
+    Pstr_primitive
+    value_description "n" (testsuite/tests/typing-unboxed/test.ml[343,11069+9]..[343,11069+10]) (testsuite/tests/typing-unboxed/test.ml[343,11069+0]..[343,11069+55])
+      attribute "noalloc"
+        []
+      core_type (testsuite/tests/typing-unboxed/test.ml[343,11069+13]..[343,11069+27])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[343,11069+13]..[343,11069+18])
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[343,11069+13]..[343,11069+18])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[343,11069+22]..[343,11069+27])
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[343,11069+22]..[343,11069+27])
+          []
+      [
+        "n"
+        "noalloc"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[344,11127+0]..[349,11347+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[344,11127+9]..[349,11347+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[344,11127+9]..[349,11347+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 0-55:\n1 | external n : float -> float = \"n\" \"noalloc\" [@@noalloc];;\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError: Cannot use \"noalloc\" in conjunction with [@@noalloc].\n",(testsuite/tests/typing-unboxed/test.ml[344,11127+11]..[349,11347+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[352,11421+0]..[352,11421+45])
+    Pstr_primitive
+    value_description "o" (testsuite/tests/typing-unboxed/test.ml[352,11421+9]..[352,11421+10]) (testsuite/tests/typing-unboxed/test.ml[352,11421+0]..[352,11421+45])
+      core_type (testsuite/tests/typing-unboxed/test.ml[352,11421+13]..[352,11421+39])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[352,11421+14]..[352,11421+19])
+          attribute "unboxed"
+            []
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[352,11421+14]..[352,11421+19])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[352,11421+34]..[352,11421+39])
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[352,11421+34]..[352,11421+39])
+          []
+      [
+        "o"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[353,11469+0]..[359,11733+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[353,11469+9]..[359,11733+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[353,11469+9]..[359,11733+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 0-45:\n1 | external o : (float[@unboxed]) -> float = \"o\";;\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError: [@The native code version of the primitive is mandatory\n       when attributes [@untagged] or [@unboxed] are present.\n",(testsuite/tests/typing-unboxed/test.ml[353,11469+11]..[359,11733+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[360,11737+0]..[360,11737+45])
+    Pstr_primitive
+    value_description "p" (testsuite/tests/typing-unboxed/test.ml[360,11737+9]..[360,11737+10]) (testsuite/tests/typing-unboxed/test.ml[360,11737+0]..[360,11737+45])
+      core_type (testsuite/tests/typing-unboxed/test.ml[360,11737+13]..[360,11737+39])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[360,11737+13]..[360,11737+18])
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[360,11737+13]..[360,11737+18])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[360,11737+23]..[360,11737+28])
+          attribute "unboxed"
+            []
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[360,11737+23]..[360,11737+28])
+          []
+      [
+        "p"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[361,11785+0]..[367,12049+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[361,11785+9]..[367,12049+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[361,11785+9]..[367,12049+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 0-45:\n1 | external p : float -> (float[@unboxed]) = \"p\";;\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError: [@The native code version of the primitive is mandatory\n       when attributes [@untagged] or [@unboxed] are present.\n",(testsuite/tests/typing-unboxed/test.ml[361,11785+11]..[367,12049+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[368,12053+0]..[368,12053+44])
+    Pstr_primitive
+    value_description "q" (testsuite/tests/typing-unboxed/test.ml[368,12053+9]..[368,12053+10]) (testsuite/tests/typing-unboxed/test.ml[368,12053+0]..[368,12053+44])
+      core_type (testsuite/tests/typing-unboxed/test.ml[368,12053+13]..[368,12053+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[368,12053+14]..[368,12053+17])
+          attribute "untagged"
+            []
+          Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[368,12053+14]..[368,12053+17])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[368,12053+33]..[368,12053+38])
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[368,12053+33]..[368,12053+38])
+          []
+      [
+        "q"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[369,12100+0]..[375,12362+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[369,12100+9]..[375,12362+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[369,12100+9]..[375,12362+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 0-44:\n1 | external q : (int[@untagged]) -> float = \"q\";;\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError: [@The native code version of the primitive is mandatory\n       when attributes [@untagged] or [@unboxed] are present.\n",(testsuite/tests/typing-unboxed/test.ml[369,12100+11]..[375,12362+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[376,12366+0]..[376,12366+42])
+    Pstr_primitive
+    value_description "r" (testsuite/tests/typing-unboxed/test.ml[376,12366+9]..[376,12366+10]) (testsuite/tests/typing-unboxed/test.ml[376,12366+0]..[376,12366+42])
+      core_type (testsuite/tests/typing-unboxed/test.ml[376,12366+13]..[376,12366+36])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[376,12366+13]..[376,12366+16])
+          Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[376,12366+13]..[376,12366+16])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[376,12366+21]..[376,12366+24])
+          attribute "untagged"
+            []
+          Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[376,12366+21]..[376,12366+24])
+          []
+      [
+        "r"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[377,12411+0]..[383,12669+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[377,12411+9]..[383,12669+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[377,12411+9]..[383,12669+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 0-42:\n1 | external r : int -> (int[@untagged]) = \"r\";;\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError: [@The native code version of the primitive is mandatory\n       when attributes [@untagged] or [@unboxed] are present.\n",(testsuite/tests/typing-unboxed/test.ml[377,12411+11]..[383,12669+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[384,12673+0]..[384,12673+42])
+    Pstr_primitive
+    value_description "s" (testsuite/tests/typing-unboxed/test.ml[384,12673+9]..[384,12673+10]) (testsuite/tests/typing-unboxed/test.ml[384,12673+0]..[384,12673+42])
+      attribute "untagged"
+        []
+      core_type (testsuite/tests/typing-unboxed/test.ml[384,12673+13]..[384,12673+23])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[384,12673+13]..[384,12673+16])
+          Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[384,12673+13]..[384,12673+16])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[384,12673+20]..[384,12673+23])
+          Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[384,12673+20]..[384,12673+23])
+          []
+      [
+        "s"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[385,12718+0]..[391,12976+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[385,12718+9]..[391,12976+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[385,12718+9]..[391,12976+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 0-42:\n1 | external s : int -> int = \"s\" [@@untagged];;\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError: [@The native code version of the primitive is mandatory\n       when attributes [@untagged] or [@unboxed] are present.\n",(testsuite/tests/typing-unboxed/test.ml[385,12718+11]..[391,12976+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[392,12980+0]..[392,12980+45])
+    Pstr_primitive
+    value_description "t" (testsuite/tests/typing-unboxed/test.ml[392,12980+9]..[392,12980+10]) (testsuite/tests/typing-unboxed/test.ml[392,12980+0]..[392,12980+45])
+      attribute "unboxed"
+        []
+      core_type (testsuite/tests/typing-unboxed/test.ml[392,12980+13]..[392,12980+27])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[392,12980+13]..[392,12980+18])
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[392,12980+13]..[392,12980+18])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[392,12980+22]..[392,12980+27])
+          Ptyp_constr "float" (testsuite/tests/typing-unboxed/test.ml[392,12980+22]..[392,12980+27])
+          []
+      [
+        "t"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[393,13028+0]..[399,13292+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[393,13028+9]..[399,13292+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[393,13028+9]..[399,13292+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 0-45:\n1 | external t : float -> float = \"t\" [@@unboxed];;\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError: [@The native code version of the primitive is mandatory\n       when attributes [@untagged] or [@unboxed] are present.\n",(testsuite/tests/typing-unboxed/test.ml[393,13028+11]..[399,13292+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[402,13311+0]..[402,13311+35])
+    Pstr_type Rec
+    [
+      type_declaration "b" (testsuite/tests/typing-unboxed/test.ml[402,13311+8]..[402,13311+9]) (testsuite/tests/typing-unboxed/test.ml[402,13311+0]..[402,13311+35])
+        attribute "unboxed"
+          []
+        ptype_params =
+          [
+            core_type (testsuite/tests/typing-unboxed/test.ml[402,13311+5]..[402,13311+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (testsuite/tests/typing-unboxed/test.ml[402,13311+12]..[402,13311+23])
+                "B" (testsuite/tests/typing-unboxed/test.ml[402,13311+12]..[402,13311+13])
+                [
+                  core_type (testsuite/tests/typing-unboxed/test.ml[402,13311+17]..[402,13311+23])
+                    Ptyp_constr "b" (testsuite/tests/typing-unboxed/test.ml[402,13311+22]..[402,13311+23])
+                    [
+                      core_type (testsuite/tests/typing-unboxed/test.ml[402,13311+17]..[402,13311+21])
+                        Ptyp_constr "b" (testsuite/tests/typing-unboxed/test.ml[402,13311+20]..[402,13311+21])
+                        [
+                          core_type (testsuite/tests/typing-unboxed/test.ml[402,13311+17]..[402,13311+19])
+                            Ptyp_var a
+                        ]
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[403,13349+0]..[405,13397+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[403,13349+9]..[405,13397+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[403,13349+9]..[405,13397+2])
+          Pexp_constant PConst_string ("\ntype 'a b = B of 'a b b [@@unboxed]\n",(testsuite/tests/typing-unboxed/test.ml[403,13349+11]..[405,13397+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[409,13418+0]..[409,13418+17])
+    Pstr_type Rec
+    [
+      type_declaration "i" (testsuite/tests/typing-unboxed/test.ml[409,13418+5]..[409,13418+6]) (testsuite/tests/typing-unboxed/test.ml[409,13418+0]..[409,13418+17])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (testsuite/tests/typing-unboxed/test.ml[409,13418+9]..[409,13418+17])
+                "I" (testsuite/tests/typing-unboxed/test.ml[409,13418+9]..[409,13418+10])
+                [
+                  core_type (testsuite/tests/typing-unboxed/test.ml[409,13418+14]..[409,13418+17])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[409,13418+14]..[409,13418+17])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[410,13436+0]..[410,13436+34])
+    Pstr_primitive
+    value_description "id" (testsuite/tests/typing-unboxed/test.ml[410,13436+9]..[410,13436+11]) (testsuite/tests/typing-unboxed/test.ml[410,13436+0]..[410,13436+34])
+      core_type (testsuite/tests/typing-unboxed/test.ml[410,13436+14]..[410,13436+20])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[410,13436+14]..[410,13436+15])
+          Ptyp_constr "i" (testsuite/tests/typing-unboxed/test.ml[410,13436+14]..[410,13436+15])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[410,13436+19]..[410,13436+20])
+          Ptyp_constr "i" (testsuite/tests/typing-unboxed/test.ml[410,13436+19]..[410,13436+20])
+          []
+      [
+        "%identity"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[411,13473+0]..[425,14151+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[411,13473+9]..[425,14151+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[411,13473+9]..[425,14151+2])
+          Pexp_constant PConst_string ("\ntype i = I of int\nLine 2, characters 0-34:\n2 | external id : i -> i = \"%identity\";;\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nWarning 61 [unboxable-type-in-prim-decl]: This primitive declaration uses type i, whose representation\nmay be either boxed or unboxed. Without an annotation to indicate\nwhich representation is intended, the boxed representation has been\nselected by default. This default choice may change in future\nversions of the compiler, breaking the primitive implementation.\nYou should explicitly annotate the declaration of i\nwith [@@boxed] or [@@unboxed], so that its external interface\nremains stable in the future.\nexternal id : i -> i = \"%identity\"\n",(testsuite/tests/typing-unboxed/test.ml[411,13473+11]..[425,14151+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[427,14158+0]..[427,14158+17])
+    Pstr_type Rec
+    [
+      type_declaration "i" (testsuite/tests/typing-unboxed/test.ml[427,14158+5]..[427,14158+6]) (testsuite/tests/typing-unboxed/test.ml[427,14158+0]..[427,14158+17])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (testsuite/tests/typing-unboxed/test.ml[427,14158+9]..[427,14158+17])
+                "I" (testsuite/tests/typing-unboxed/test.ml[427,14158+9]..[427,14158+10])
+                [
+                  core_type (testsuite/tests/typing-unboxed/test.ml[427,14158+14]..[427,14158+17])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[427,14158+14]..[427,14158+17])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[428,14176+0]..[428,14176+17])
+    Pstr_type Rec
+    [
+      type_declaration "j" (testsuite/tests/typing-unboxed/test.ml[428,14176+5]..[428,14176+6]) (testsuite/tests/typing-unboxed/test.ml[428,14176+0]..[428,14176+17])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (testsuite/tests/typing-unboxed/test.ml[428,14176+9]..[428,14176+17])
+                "J" (testsuite/tests/typing-unboxed/test.ml[428,14176+9]..[428,14176+10])
+                [
+                  core_type (testsuite/tests/typing-unboxed/test.ml[428,14176+14]..[428,14176+17])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[428,14176+14]..[428,14176+17])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[429,14194+0]..[429,14194+34])
+    Pstr_primitive
+    value_description "id" (testsuite/tests/typing-unboxed/test.ml[429,14194+9]..[429,14194+11]) (testsuite/tests/typing-unboxed/test.ml[429,14194+0]..[429,14194+34])
+      core_type (testsuite/tests/typing-unboxed/test.ml[429,14194+14]..[429,14194+20])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[429,14194+14]..[429,14194+15])
+          Ptyp_constr "i" (testsuite/tests/typing-unboxed/test.ml[429,14194+14]..[429,14194+15])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[429,14194+19]..[429,14194+20])
+          Ptyp_constr "j" (testsuite/tests/typing-unboxed/test.ml[429,14194+19]..[429,14194+20])
+          []
+      [
+        "%identity"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[430,14231+0]..[456,15540+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[430,14231+9]..[456,15540+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[430,14231+9]..[456,15540+2])
+          Pexp_constant PConst_string ("\ntype i = I of int\ntype j = J of int\nLine 3, characters 0-34:\n3 | external id : i -> j = \"%identity\";;\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nWarning 61 [unboxable-type-in-prim-decl]: This primitive declaration uses type i, whose representation\nmay be either boxed or unboxed. Without an annotation to indicate\nwhich representation is intended, the boxed representation has been\nselected by default. This default choice may change in future\nversions of the compiler, breaking the primitive implementation.\nYou should explicitly annotate the declaration of i\nwith [@@boxed] or [@@unboxed], so that its external interface\nremains stable in the future.\nLine 3, characters 0-34:\n3 | external id : i -> j = \"%identity\";;\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nWarning 61 [unboxable-type-in-prim-decl]: This primitive declaration uses type j, whose representation\nmay be either boxed or unboxed. Without an annotation to indicate\nwhich representation is intended, the boxed representation has been\nselected by default. This default choice may change in future\nversions of the compiler, breaking the primitive implementation.\nYou should explicitly annotate the declaration of j\nwith [@@boxed] or [@@unboxed], so that its external interface\nremains stable in the future.\nexternal id : i -> j = \"%identity\"\n",(testsuite/tests/typing-unboxed/test.ml[430,14231+11]..[456,15540+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[458,15547+0]..[458,15547+28])
+    Pstr_type Rec
+    [
+      type_declaration "ib" (testsuite/tests/typing-unboxed/test.ml[458,15547+5]..[458,15547+7]) (testsuite/tests/typing-unboxed/test.ml[458,15547+0]..[458,15547+28])
+        attribute "boxed"
+          []
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (testsuite/tests/typing-unboxed/test.ml[458,15547+10]..[458,15547+18])
+                "I" (testsuite/tests/typing-unboxed/test.ml[458,15547+10]..[458,15547+11])
+                [
+                  core_type (testsuite/tests/typing-unboxed/test.ml[458,15547+15]..[458,15547+18])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[458,15547+15]..[458,15547+18])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[459,15576+0]..[459,15576+37])
+    Pstr_primitive
+    value_description "idb" (testsuite/tests/typing-unboxed/test.ml[459,15576+9]..[459,15576+12]) (testsuite/tests/typing-unboxed/test.ml[459,15576+0]..[459,15576+37])
+      core_type (testsuite/tests/typing-unboxed/test.ml[459,15576+15]..[459,15576+23])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[459,15576+15]..[459,15576+17])
+          Ptyp_constr "ib" (testsuite/tests/typing-unboxed/test.ml[459,15576+15]..[459,15576+17])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[459,15576+21]..[459,15576+23])
+          Ptyp_constr "ib" (testsuite/tests/typing-unboxed/test.ml[459,15576+21]..[459,15576+23])
+          []
+      [
+        "%identity"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[460,15616+0]..[463,15685+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[460,15616+9]..[463,15685+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[460,15616+9]..[463,15685+2])
+          Pexp_constant PConst_string ("\ntype ib = I of int\nexternal idb : ib -> ib = \"%identity\"\n",(testsuite/tests/typing-unboxed/test.ml[460,15616+11]..[463,15685+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[465,15692+0]..[465,15692+31])
+    Pstr_type Rec
+    [
+      type_declaration "iub" (testsuite/tests/typing-unboxed/test.ml[465,15692+5]..[465,15692+8]) (testsuite/tests/typing-unboxed/test.ml[465,15692+0]..[465,15692+31])
+        attribute "unboxed"
+          []
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (testsuite/tests/typing-unboxed/test.ml[465,15692+11]..[465,15692+19])
+                "I" (testsuite/tests/typing-unboxed/test.ml[465,15692+11]..[465,15692+12])
+                [
+                  core_type (testsuite/tests/typing-unboxed/test.ml[465,15692+16]..[465,15692+19])
+                    Ptyp_constr "int" (testsuite/tests/typing-unboxed/test.ml[465,15692+16]..[465,15692+19])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[466,15724+0]..[466,15724+40])
+    Pstr_primitive
+    value_description "idub" (testsuite/tests/typing-unboxed/test.ml[466,15724+9]..[466,15724+13]) (testsuite/tests/typing-unboxed/test.ml[466,15724+0]..[466,15724+40])
+      core_type (testsuite/tests/typing-unboxed/test.ml[466,15724+16]..[466,15724+26])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/typing-unboxed/test.ml[466,15724+16]..[466,15724+19])
+          Ptyp_constr "iub" (testsuite/tests/typing-unboxed/test.ml[466,15724+16]..[466,15724+19])
+          []
+        core_type (testsuite/tests/typing-unboxed/test.ml[466,15724+23]..[466,15724+26])
+          Ptyp_constr "iub" (testsuite/tests/typing-unboxed/test.ml[466,15724+23]..[466,15724+26])
+          []
+      [
+        "%identity"
+      ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[467,15767+0]..[470,15852+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[467,15767+9]..[470,15852+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[467,15767+9]..[470,15852+2])
+          Pexp_constant PConst_string ("\ntype iub = I of int [@@unboxed]\nexternal idub : iub -> iub = \"%identity\"\n",(testsuite/tests/typing-unboxed/test.ml[467,15767+11]..[470,15852+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[473,15922+0]..[473,15922+34])
+    Pstr_modtype "T" (testsuite/tests/typing-unboxed/test.ml[473,15922+12]..[473,15922+13])
+      module_type (testsuite/tests/typing-unboxed/test.ml[473,15922+17]..[473,15922+34])
+        Pmty_signature
+        [
+          signature_item (testsuite/tests/typing-unboxed/test.ml[473,15922+21]..[473,15922+30])
+            Psig_type Rec
+            [
+              type_declaration "t" (testsuite/tests/typing-unboxed/test.ml[473,15922+29]..[473,15922+30]) (testsuite/tests/typing-unboxed/test.ml[473,15922+21]..[473,15922+30])
+                ptype_params =
+                  [
+                    core_type (testsuite/tests/typing-unboxed/test.ml[473,15922+26]..[473,15922+28])
+                      Ptyp_var k
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+        ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[474,15957+0]..[476,16024+3])
+    Pstr_module
+    "M" (testsuite/tests/typing-unboxed/test.ml[474,15957+7]..[474,15957+8])
+      module_expr (testsuite/tests/typing-unboxed/test.ml[474,15957+9]..[476,16024+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-unboxed/test.ml[474,15957+39]..[476,16024+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-unboxed/test.ml[475,16003+2]..[475,16003+20])
+              Pstr_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-unboxed/test.ml[475,16003+10]..[475,16003+11]) (testsuite/tests/typing-unboxed/test.ml[475,16003+2]..[475,16003+20])
+                  ptype_params =
+                    [
+                      core_type (testsuite/tests/typing-unboxed/test.ml[475,16003+7]..[475,16003+9])
+                        Ptyp_var k
+                    ]
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    Some
+                      core_type (testsuite/tests/typing-unboxed/test.ml[475,16003+14]..[475,16003+20])
+                        Ptyp_constr "string" (testsuite/tests/typing-unboxed/test.ml[475,16003+14]..[475,16003+20])
+                        []
+              ]
+          ]
+        module_type (testsuite/tests/typing-unboxed/test.ml[474,15957+11]..[474,15957+36])
+          Pmty_with
+          module_type (testsuite/tests/typing-unboxed/test.ml[474,15957+11]..[474,15957+12])
+            Pmty_ident "T" (testsuite/tests/typing-unboxed/test.ml[474,15957+11]..[474,15957+12])
+          [
+            Pwith_type "t" (testsuite/tests/typing-unboxed/test.ml[474,15957+26]..[474,15957+27])
+              type_declaration "t" (testsuite/tests/typing-unboxed/test.ml[474,15957+26]..[474,15957+27]) (testsuite/tests/typing-unboxed/test.ml[474,15957+18]..[474,15957+36])
+                ptype_params =
+                  [
+                    core_type (testsuite/tests/typing-unboxed/test.ml[474,15957+23]..[474,15957+25])
+                      Ptyp_var k
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (testsuite/tests/typing-unboxed/test.ml[474,15957+30]..[474,15957+36])
+                      Ptyp_constr "string" (testsuite/tests/typing-unboxed/test.ml[474,15957+30]..[474,15957+36])
+                      []
+          ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[477,16028+0]..[477,16028+36])
+    Pstr_type Rec
+    [
+      type_declaration "t" (testsuite/tests/typing-unboxed/test.ml[477,16028+5]..[477,16028+6]) (testsuite/tests/typing-unboxed/test.ml[477,16028+0]..[477,16028+36])
+        attribute "unboxed"
+          []
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (testsuite/tests/typing-unboxed/test.ml[477,16028+9]..[477,16028+24])
+                "T" (testsuite/tests/typing-unboxed/test.ml[477,16028+9]..[477,16028+10])
+                [
+                  core_type (testsuite/tests/typing-unboxed/test.ml[477,16028+13]..[477,16028+19])
+                    Ptyp_constr "M.t" (testsuite/tests/typing-unboxed/test.ml[477,16028+16]..[477,16028+19])
+                    [
+                      core_type (testsuite/tests/typing-unboxed/test.ml[477,16028+13]..[477,16028+15])
+                        Ptyp_var k
+                    ]
+                ]
+                Some
+                  core_type (testsuite/tests/typing-unboxed/test.ml[477,16028+23]..[477,16028+24])
+                    Ptyp_constr "t" (testsuite/tests/typing-unboxed/test.ml[477,16028+23]..[477,16028+24])
+                    []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/typing-unboxed/test.ml[479,16066+0]..[483,16187+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-unboxed/test.ml[479,16066+9]..[483,16187+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-unboxed/test.ml[479,16066+9]..[483,16187+2])
+          Pexp_constant PConst_string ("\nmodule type T = sig type 'k t end\nmodule M : sig type 'k t = string end\ntype t = T : 'k M.t -> t [@@unboxed]\n",(testsuite/tests/typing-unboxed/test.ml[479,16066+11]..[483,16187+0]),Some "")
+    ]
+]
+

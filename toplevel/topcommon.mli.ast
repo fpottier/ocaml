@@ -1,0 +1,1352 @@
+[
+  signature_item (toplevel/topcommon.mli[16,1079+0]..[21,1337+2])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (toplevel/topcommon.mli[16,1079+0]..[21,1337+2])
+        Pstr_eval
+        expression (toplevel/topcommon.mli[16,1079+0]..[21,1337+2])
+          Pexp_constant PConst_string(" This module provides common implementations for internals of [Toploop], for\n    bytecode and native code (see [Topeval] for the diverging parts of the\n    implementation).\n\n    You should not use it directly, refer to the functions in [Toploop] instead.\n",(toplevel/topcommon.mli[16,1079+0]..[21,1337+2]),None)
+    ]
+  signature_item (toplevel/topcommon.mli[23,1341+0]..[23,1341+7])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (toplevel/topcommon.mli[23,1341+0]..[23,1341+7])
+        Pstr_eval
+        expression (toplevel/topcommon.mli[23,1341+0]..[23,1341+7])
+          Pexp_constant PConst_string("/*",(toplevel/topcommon.mli[23,1341+0]..[23,1341+7]),None)
+    ]
+  signature_item (toplevel/topcommon.mli[28,1450+0]..[28,1450+11])
+    Psig_open Fresh "Format" (toplevel/topcommon.mli[28,1450+5]..[28,1450+11])
+  signature_item (toplevel/topcommon.mli[32,1514+0]..[32,1514+28])
+    Psig_value
+    value_description "set_paths" (toplevel/topcommon.mli[32,1514+4]..[32,1514+13]) (toplevel/topcommon.mli[32,1514+0]..[32,1514+28])
+      core_type (toplevel/topcommon.mli[32,1514+16]..[32,1514+28])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/topcommon.mli[32,1514+16]..[32,1514+20])
+          Ptyp_constr "unit" (toplevel/topcommon.mli[32,1514+16]..[32,1514+20])
+          []
+        core_type (toplevel/topcommon.mli[32,1514+24]..[32,1514+28])
+          Ptyp_constr "unit" (toplevel/topcommon.mli[32,1514+24]..[32,1514+28])
+          []
+      []
+  signature_item (toplevel/topcommon.mli[36,1592+0]..[36,1592+28])
+    Psig_value
+    value_description "toplevel_env" (toplevel/topcommon.mli[36,1592+4]..[36,1592+16]) (toplevel/topcommon.mli[36,1592+0]..[36,1592+28])
+      core_type (toplevel/topcommon.mli[36,1592+19]..[36,1592+28])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[36,1592+25]..[36,1592+28])
+        [
+          core_type (toplevel/topcommon.mli[36,1592+19]..[36,1592+24])
+            Ptyp_constr "Env.t" (toplevel/topcommon.mli[36,1592+19]..[36,1592+24])
+            []
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[38,1671+0]..[38,1671+42])
+    Psig_value
+    value_description "initialize_toplevel_env" (toplevel/topcommon.mli[38,1671+4]..[38,1671+27]) (toplevel/topcommon.mli[38,1671+0]..[38,1671+42])
+      core_type (toplevel/topcommon.mli[38,1671+30]..[38,1671+42])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/topcommon.mli[38,1671+30]..[38,1671+34])
+          Ptyp_constr "unit" (toplevel/topcommon.mli[38,1671+30]..[38,1671+34])
+          []
+        core_type (toplevel/topcommon.mli[38,1671+38]..[38,1671+42])
+          Ptyp_constr "unit" (toplevel/topcommon.mli[38,1671+38]..[38,1671+42])
+          []
+      []
+  signature_item (toplevel/topcommon.mli[40,1779+0]..[41,1803+74])
+    Psig_value
+    value_description "preprocess_phrase" (toplevel/topcommon.mli[40,1779+4]..[40,1779+21]) (toplevel/topcommon.mli[40,1779+0]..[41,1803+74])
+      core_type (toplevel/topcommon.mli[41,1803+6]..[41,1803+74])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/topcommon.mli[41,1803+6]..[41,1803+15])
+          Ptyp_constr "formatter" (toplevel/topcommon.mli[41,1803+6]..[41,1803+15])
+          []
+        core_type (toplevel/topcommon.mli[41,1803+19]..[41,1803+74])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/topcommon.mli[41,1803+19]..[41,1803+44])
+            Ptyp_constr "Parsetree.toplevel_phrase" (toplevel/topcommon.mli[41,1803+19]..[41,1803+44])
+            []
+          core_type (toplevel/topcommon.mli[41,1803+49]..[41,1803+74])
+            Ptyp_constr "Parsetree.toplevel_phrase" (toplevel/topcommon.mli[41,1803+49]..[41,1803+74])
+            []
+      []
+  signature_item (toplevel/topcommon.mli[44,2004+0]..[44,2004+35])
+    Psig_value
+    value_description "record_backtrace" (toplevel/topcommon.mli[44,2004+4]..[44,2004+20]) (toplevel/topcommon.mli[44,2004+0]..[44,2004+35])
+      core_type (toplevel/topcommon.mli[44,2004+23]..[44,2004+35])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/topcommon.mli[44,2004+23]..[44,2004+27])
+          Ptyp_constr "unit" (toplevel/topcommon.mli[44,2004+23]..[44,2004+27])
+          []
+        core_type (toplevel/topcommon.mli[44,2004+31]..[44,2004+35])
+          Ptyp_constr "unit" (toplevel/topcommon.mli[44,2004+31]..[44,2004+35])
+          []
+      []
+  signature_item (toplevel/topcommon.mli[49,2068+0]..[49,2068+30])
+    Psig_value
+    value_description "max_printer_depth" (toplevel/topcommon.mli[49,2068+4]..[49,2068+21]) (toplevel/topcommon.mli[49,2068+0]..[49,2068+30])
+      core_type (toplevel/topcommon.mli[49,2068+23]..[49,2068+30])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[49,2068+27]..[49,2068+30])
+        [
+          core_type (toplevel/topcommon.mli[49,2068+23]..[49,2068+26])
+            Ptyp_constr "int" (toplevel/topcommon.mli[49,2068+23]..[49,2068+26])
+            []
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[50,2099+0]..[50,2099+30])
+    Psig_value
+    value_description "max_printer_steps" (toplevel/topcommon.mli[50,2099+4]..[50,2099+21]) (toplevel/topcommon.mli[50,2099+0]..[50,2099+30])
+      core_type (toplevel/topcommon.mli[50,2099+23]..[50,2099+30])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[50,2099+27]..[50,2099+30])
+        [
+          core_type (toplevel/topcommon.mli[50,2099+23]..[50,2099+26])
+            Ptyp_constr "int" (toplevel/topcommon.mli[50,2099+23]..[50,2099+26])
+            []
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[52,2131+0]..[53,2153+50])
+    Psig_value
+    value_description "print_out_value" (toplevel/topcommon.mli[52,2131+4]..[52,2131+19]) (toplevel/topcommon.mli[52,2131+0]..[53,2153+50])
+      core_type (toplevel/topcommon.mli[53,2153+2]..[53,2153+50])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[53,2153+47]..[53,2153+50])
+        [
+          core_type (toplevel/topcommon.mli[53,2153+3]..[53,2153+45])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/topcommon.mli[53,2153+3]..[53,2153+12])
+              Ptyp_constr "formatter" (toplevel/topcommon.mli[53,2153+3]..[53,2153+12])
+              []
+            core_type (toplevel/topcommon.mli[53,2153+16]..[53,2153+45])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/topcommon.mli[53,2153+16]..[53,2153+37])
+                Ptyp_constr "Outcometree.out_value" (toplevel/topcommon.mli[53,2153+16]..[53,2153+37])
+                []
+              core_type (toplevel/topcommon.mli[53,2153+41]..[53,2153+45])
+                Ptyp_constr "unit" (toplevel/topcommon.mli[53,2153+41]..[53,2153+45])
+                []
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[54,2204+0]..[55,2225+49])
+    Psig_value
+    value_description "print_out_type" (toplevel/topcommon.mli[54,2204+4]..[54,2204+18]) (toplevel/topcommon.mli[54,2204+0]..[55,2225+49])
+      core_type (toplevel/topcommon.mli[55,2225+2]..[55,2225+49])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[55,2225+46]..[55,2225+49])
+        [
+          core_type (toplevel/topcommon.mli[55,2225+3]..[55,2225+44])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/topcommon.mli[55,2225+3]..[55,2225+12])
+              Ptyp_constr "formatter" (toplevel/topcommon.mli[55,2225+3]..[55,2225+12])
+              []
+            core_type (toplevel/topcommon.mli[55,2225+16]..[55,2225+44])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/topcommon.mli[55,2225+16]..[55,2225+36])
+                Ptyp_constr "Outcometree.out_type" (toplevel/topcommon.mli[55,2225+16]..[55,2225+36])
+                []
+              core_type (toplevel/topcommon.mli[55,2225+40]..[55,2225+44])
+                Ptyp_constr "unit" (toplevel/topcommon.mli[55,2225+40]..[55,2225+44])
+                []
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[56,2275+0]..[57,2302+55])
+    Psig_value
+    value_description "print_out_class_type" (toplevel/topcommon.mli[56,2275+4]..[56,2275+24]) (toplevel/topcommon.mli[56,2275+0]..[57,2302+55])
+      core_type (toplevel/topcommon.mli[57,2302+2]..[57,2302+55])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[57,2302+52]..[57,2302+55])
+        [
+          core_type (toplevel/topcommon.mli[57,2302+3]..[57,2302+50])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/topcommon.mli[57,2302+3]..[57,2302+12])
+              Ptyp_constr "formatter" (toplevel/topcommon.mli[57,2302+3]..[57,2302+12])
+              []
+            core_type (toplevel/topcommon.mli[57,2302+16]..[57,2302+50])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/topcommon.mli[57,2302+16]..[57,2302+42])
+                Ptyp_constr "Outcometree.out_class_type" (toplevel/topcommon.mli[57,2302+16]..[57,2302+42])
+                []
+              core_type (toplevel/topcommon.mli[57,2302+46]..[57,2302+50])
+                Ptyp_constr "unit" (toplevel/topcommon.mli[57,2302+46]..[57,2302+50])
+                []
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[58,2358+0]..[59,2386+56])
+    Psig_value
+    value_description "print_out_module_type" (toplevel/topcommon.mli[58,2358+4]..[58,2358+25]) (toplevel/topcommon.mli[58,2358+0]..[59,2386+56])
+      core_type (toplevel/topcommon.mli[59,2386+2]..[59,2386+56])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[59,2386+53]..[59,2386+56])
+        [
+          core_type (toplevel/topcommon.mli[59,2386+3]..[59,2386+51])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/topcommon.mli[59,2386+3]..[59,2386+12])
+              Ptyp_constr "formatter" (toplevel/topcommon.mli[59,2386+3]..[59,2386+12])
+              []
+            core_type (toplevel/topcommon.mli[59,2386+16]..[59,2386+51])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/topcommon.mli[59,2386+16]..[59,2386+43])
+                Ptyp_constr "Outcometree.out_module_type" (toplevel/topcommon.mli[59,2386+16]..[59,2386+43])
+                []
+              core_type (toplevel/topcommon.mli[59,2386+47]..[59,2386+51])
+                Ptyp_constr "unit" (toplevel/topcommon.mli[59,2386+47]..[59,2386+51])
+                []
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[60,2443+0]..[61,2474+59])
+    Psig_value
+    value_description "print_out_type_extension" (toplevel/topcommon.mli[60,2443+4]..[60,2443+28]) (toplevel/topcommon.mli[60,2443+0]..[61,2474+59])
+      core_type (toplevel/topcommon.mli[61,2474+2]..[61,2474+59])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[61,2474+56]..[61,2474+59])
+        [
+          core_type (toplevel/topcommon.mli[61,2474+3]..[61,2474+54])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/topcommon.mli[61,2474+3]..[61,2474+12])
+              Ptyp_constr "formatter" (toplevel/topcommon.mli[61,2474+3]..[61,2474+12])
+              []
+            core_type (toplevel/topcommon.mli[61,2474+16]..[61,2474+54])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/topcommon.mli[61,2474+16]..[61,2474+46])
+                Ptyp_constr "Outcometree.out_type_extension" (toplevel/topcommon.mli[61,2474+16]..[61,2474+46])
+                []
+              core_type (toplevel/topcommon.mli[61,2474+50]..[61,2474+54])
+                Ptyp_constr "unit" (toplevel/topcommon.mli[61,2474+50]..[61,2474+54])
+                []
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[62,2534+0]..[63,2559+53])
+    Psig_value
+    value_description "print_out_sig_item" (toplevel/topcommon.mli[62,2534+4]..[62,2534+22]) (toplevel/topcommon.mli[62,2534+0]..[63,2559+53])
+      core_type (toplevel/topcommon.mli[63,2559+2]..[63,2559+53])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[63,2559+50]..[63,2559+53])
+        [
+          core_type (toplevel/topcommon.mli[63,2559+3]..[63,2559+48])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/topcommon.mli[63,2559+3]..[63,2559+12])
+              Ptyp_constr "formatter" (toplevel/topcommon.mli[63,2559+3]..[63,2559+12])
+              []
+            core_type (toplevel/topcommon.mli[63,2559+16]..[63,2559+48])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/topcommon.mli[63,2559+16]..[63,2559+40])
+                Ptyp_constr "Outcometree.out_sig_item" (toplevel/topcommon.mli[63,2559+16]..[63,2559+40])
+                []
+              core_type (toplevel/topcommon.mli[63,2559+44]..[63,2559+48])
+                Ptyp_constr "unit" (toplevel/topcommon.mli[63,2559+44]..[63,2559+48])
+                []
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[64,2613+0]..[65,2639+58])
+    Psig_value
+    value_description "print_out_signature" (toplevel/topcommon.mli[64,2613+4]..[64,2613+23]) (toplevel/topcommon.mli[64,2613+0]..[65,2639+58])
+      core_type (toplevel/topcommon.mli[65,2639+2]..[65,2639+58])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[65,2639+55]..[65,2639+58])
+        [
+          core_type (toplevel/topcommon.mli[65,2639+3]..[65,2639+53])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/topcommon.mli[65,2639+3]..[65,2639+12])
+              Ptyp_constr "formatter" (toplevel/topcommon.mli[65,2639+3]..[65,2639+12])
+              []
+            core_type (toplevel/topcommon.mli[65,2639+16]..[65,2639+53])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/topcommon.mli[65,2639+16]..[65,2639+45])
+                Ptyp_constr "list" (toplevel/topcommon.mli[65,2639+41]..[65,2639+45])
+                [
+                  core_type (toplevel/topcommon.mli[65,2639+16]..[65,2639+40])
+                    Ptyp_constr "Outcometree.out_sig_item" (toplevel/topcommon.mli[65,2639+16]..[65,2639+40])
+                    []
+                ]
+              core_type (toplevel/topcommon.mli[65,2639+49]..[65,2639+53])
+                Ptyp_constr "unit" (toplevel/topcommon.mli[65,2639+49]..[65,2639+53])
+                []
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[66,2698+0]..[67,2721+51])
+    Psig_value
+    value_description "print_out_phrase" (toplevel/topcommon.mli[66,2698+4]..[66,2698+20]) (toplevel/topcommon.mli[66,2698+0]..[67,2721+51])
+      core_type (toplevel/topcommon.mli[67,2721+2]..[67,2721+51])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[67,2721+48]..[67,2721+51])
+        [
+          core_type (toplevel/topcommon.mli[67,2721+3]..[67,2721+46])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/topcommon.mli[67,2721+3]..[67,2721+12])
+              Ptyp_constr "formatter" (toplevel/topcommon.mli[67,2721+3]..[67,2721+12])
+              []
+            core_type (toplevel/topcommon.mli[67,2721+16]..[67,2721+46])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/topcommon.mli[67,2721+16]..[67,2721+38])
+                Ptyp_constr "Outcometree.out_phrase" (toplevel/topcommon.mli[67,2721+16]..[67,2721+38])
+                []
+              core_type (toplevel/topcommon.mli[67,2721+42]..[67,2721+46])
+                Ptyp_constr "unit" (toplevel/topcommon.mli[67,2721+42]..[67,2721+46])
+                []
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[70,2775+0]..[70,2775+36])
+    Psig_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (toplevel/topcommon.mli[70,2775+0]..[70,2775+36])
+          pext_name = "Undefined_global"
+          pext_kind =
+            Pext_decl
+              [
+                core_type (toplevel/topcommon.mli[70,2775+30]..[70,2775+36])
+                  Ptyp_constr "string" (toplevel/topcommon.mli[70,2775+30]..[70,2775+36])
+                  []
+              ]
+              None
+  signature_item (toplevel/topcommon.mli[72,2813+0]..[78,2975+3])
+    Psig_modtype "EVAL_BASE" (toplevel/topcommon.mli[72,2813+12]..[72,2813+21])
+      module_type (toplevel/topcommon.mli[72,2813+24]..[78,2975+3])
+        Pmty_signature
+        [
+          signature_item (toplevel/topcommon.mli[76,2939+2]..[76,2939+34])
+            Psig_value
+            value_description "eval_ident" (toplevel/topcommon.mli[76,2939+6]..[76,2939+16]) (toplevel/topcommon.mli[76,2939+2]..[76,2939+34])
+              core_type (toplevel/topcommon.mli[76,2939+18]..[76,2939+34])
+                Ptyp_arrow
+                Nolabel
+                core_type (toplevel/topcommon.mli[76,2939+18]..[76,2939+25])
+                  Ptyp_constr "Ident.t" (toplevel/topcommon.mli[76,2939+18]..[76,2939+25])
+                  []
+                core_type (toplevel/topcommon.mli[76,2939+29]..[76,2939+34])
+                  Ptyp_constr "Obj.t" (toplevel/topcommon.mli[76,2939+29]..[76,2939+34])
+                  []
+              []
+        ]
+  signature_item (toplevel/topcommon.mli[81,2981+0]..[119,4354+3])
+    Psig_module "MakeEvalPrinter" (toplevel/topcommon.mli[81,2981+7]..[81,2981+22])
+    module_type (toplevel/topcommon.mli[81,2981+23]..[119,4354+3])
+      Pmty_functor "_" (toplevel/topcommon.mli[81,2981+24]..[81,2981+25])
+      module_type (toplevel/topcommon.mli[81,2981+28]..[81,2981+37])
+        Pmty_ident "EVAL_BASE" (toplevel/topcommon.mli[81,2981+28]..[81,2981+37])
+      module_type (toplevel/topcommon.mli[81,2981+41]..[119,4354+3])
+        Pmty_signature
+        [
+          signature_item (toplevel/topcommon.mli[83,3027+2]..[83,3027+40])
+            Psig_value
+            value_description "eval_address" (toplevel/topcommon.mli[83,3027+6]..[83,3027+18]) (toplevel/topcommon.mli[83,3027+2]..[83,3027+40])
+              core_type (toplevel/topcommon.mli[83,3027+20]..[83,3027+40])
+                Ptyp_arrow
+                Nolabel
+                core_type (toplevel/topcommon.mli[83,3027+20]..[83,3027+31])
+                  Ptyp_constr "Env.address" (toplevel/topcommon.mli[83,3027+20]..[83,3027+31])
+                  []
+                core_type (toplevel/topcommon.mli[83,3027+35]..[83,3027+40])
+                  Ptyp_constr "Obj.t" (toplevel/topcommon.mli[83,3027+35]..[83,3027+40])
+                  []
+              []
+          signature_item (toplevel/topcommon.mli[86,3097+2]..[86,3097+48])
+            Psig_value
+            value_description "eval_module_path" (toplevel/topcommon.mli[86,3097+6]..[86,3097+22]) (toplevel/topcommon.mli[86,3097+2]..[86,3097+48])
+              core_type (toplevel/topcommon.mli[86,3097+24]..[86,3097+48])
+                Ptyp_arrow
+                Nolabel
+                core_type (toplevel/topcommon.mli[86,3097+24]..[86,3097+29])
+                  Ptyp_constr "Env.t" (toplevel/topcommon.mli[86,3097+24]..[86,3097+29])
+                  []
+                core_type (toplevel/topcommon.mli[86,3097+33]..[86,3097+48])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (toplevel/topcommon.mli[86,3097+33]..[86,3097+39])
+                    Ptyp_constr "Path.t" (toplevel/topcommon.mli[86,3097+33]..[86,3097+39])
+                    []
+                  core_type (toplevel/topcommon.mli[86,3097+43]..[86,3097+48])
+                    Ptyp_constr "Obj.t" (toplevel/topcommon.mli[86,3097+43]..[86,3097+48])
+                    []
+              []
+          signature_item (toplevel/topcommon.mli[87,3146+2]..[87,3146+47])
+            Psig_value
+            value_description "eval_value_path" (toplevel/topcommon.mli[87,3146+6]..[87,3146+21]) (toplevel/topcommon.mli[87,3146+2]..[87,3146+47])
+              core_type (toplevel/topcommon.mli[87,3146+23]..[87,3146+47])
+                Ptyp_arrow
+                Nolabel
+                core_type (toplevel/topcommon.mli[87,3146+23]..[87,3146+28])
+                  Ptyp_constr "Env.t" (toplevel/topcommon.mli[87,3146+23]..[87,3146+28])
+                  []
+                core_type (toplevel/topcommon.mli[87,3146+32]..[87,3146+47])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (toplevel/topcommon.mli[87,3146+32]..[87,3146+38])
+                    Ptyp_constr "Path.t" (toplevel/topcommon.mli[87,3146+32]..[87,3146+38])
+                    []
+                  core_type (toplevel/topcommon.mli[87,3146+42]..[87,3146+47])
+                    Ptyp_constr "Obj.t" (toplevel/topcommon.mli[87,3146+42]..[87,3146+47])
+                    []
+              []
+          signature_item (toplevel/topcommon.mli[88,3194+2]..[88,3194+51])
+            Psig_value
+            value_description "eval_extension_path" (toplevel/topcommon.mli[88,3194+6]..[88,3194+25]) (toplevel/topcommon.mli[88,3194+2]..[88,3194+51])
+              core_type (toplevel/topcommon.mli[88,3194+27]..[88,3194+51])
+                Ptyp_arrow
+                Nolabel
+                core_type (toplevel/topcommon.mli[88,3194+27]..[88,3194+32])
+                  Ptyp_constr "Env.t" (toplevel/topcommon.mli[88,3194+27]..[88,3194+32])
+                  []
+                core_type (toplevel/topcommon.mli[88,3194+36]..[88,3194+51])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (toplevel/topcommon.mli[88,3194+36]..[88,3194+42])
+                    Ptyp_constr "Path.t" (toplevel/topcommon.mli[88,3194+36]..[88,3194+42])
+                    []
+                  core_type (toplevel/topcommon.mli[88,3194+46]..[88,3194+51])
+                    Ptyp_constr "Obj.t" (toplevel/topcommon.mli[88,3194+46]..[88,3194+51])
+                    []
+              []
+          signature_item (toplevel/topcommon.mli[89,3246+2]..[89,3246+47])
+            Psig_value
+            value_description "eval_class_path" (toplevel/topcommon.mli[89,3246+6]..[89,3246+21]) (toplevel/topcommon.mli[89,3246+2]..[89,3246+47])
+              core_type (toplevel/topcommon.mli[89,3246+23]..[89,3246+47])
+                Ptyp_arrow
+                Nolabel
+                core_type (toplevel/topcommon.mli[89,3246+23]..[89,3246+28])
+                  Ptyp_constr "Env.t" (toplevel/topcommon.mli[89,3246+23]..[89,3246+28])
+                  []
+                core_type (toplevel/topcommon.mli[89,3246+32]..[89,3246+47])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (toplevel/topcommon.mli[89,3246+32]..[89,3246+38])
+                    Ptyp_constr "Path.t" (toplevel/topcommon.mli[89,3246+32]..[89,3246+38])
+                    []
+                  core_type (toplevel/topcommon.mli[89,3246+42]..[89,3246+47])
+                    Ptyp_constr "Obj.t" (toplevel/topcommon.mli[89,3246+42]..[89,3246+47])
+                    []
+              []
+          signature_item (toplevel/topcommon.mli[92,3362+2]..[92,3362+51])
+            Psig_module "Printer" (toplevel/topcommon.mli[92,3362+9]..[92,3362+16])
+            module_type (toplevel/topcommon.mli[92,3362+18]..[92,3362+51])
+              Pmty_with
+              module_type (toplevel/topcommon.mli[92,3362+18]..[92,3362+31])
+                Pmty_ident "Genprintval.S" (toplevel/topcommon.mli[92,3362+18]..[92,3362+31])
+              [
+                Pwith_type "t" (toplevel/topcommon.mli[92,3362+42]..[92,3362+43])
+                  type_declaration "t" (toplevel/topcommon.mli[92,3362+42]..[92,3362+43]) (toplevel/topcommon.mli[92,3362+37]..[92,3362+51])
+                    ptype_params =
+                      []
+                    ptype_cstrs =
+                      []
+                    ptype_kind =
+                      Ptype_abstract
+                    ptype_private = Public
+                    ptype_manifest =
+                      Some
+                        core_type (toplevel/topcommon.mli[92,3362+46]..[92,3362+51])
+                          Ptyp_constr "Obj.t" (toplevel/topcommon.mli[92,3362+46]..[92,3362+51])
+                          []
+              ]
+          signature_item (toplevel/topcommon.mli[94,3415+2]..[94,3415+77])
+            Psig_value
+            value_description "print_value" (toplevel/topcommon.mli[94,3415+6]..[94,3415+17]) (toplevel/topcommon.mli[94,3415+2]..[94,3415+77])
+              core_type (toplevel/topcommon.mli[94,3415+19]..[94,3415+77])
+                Ptyp_arrow
+                Nolabel
+                core_type (toplevel/topcommon.mli[94,3415+19]..[94,3415+24])
+                  Ptyp_constr "Env.t" (toplevel/topcommon.mli[94,3415+19]..[94,3415+24])
+                  []
+                core_type (toplevel/topcommon.mli[94,3415+28]..[94,3415+77])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (toplevel/topcommon.mli[94,3415+28]..[94,3415+37])
+                    Ptyp_constr "Printer.t" (toplevel/topcommon.mli[94,3415+28]..[94,3415+37])
+                    []
+                  core_type (toplevel/topcommon.mli[94,3415+41]..[94,3415+77])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/topcommon.mli[94,3415+41]..[94,3415+50])
+                      Ptyp_constr "formatter" (toplevel/topcommon.mli[94,3415+41]..[94,3415+50])
+                      []
+                    core_type (toplevel/topcommon.mli[94,3415+54]..[94,3415+77])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (toplevel/topcommon.mli[94,3415+54]..[94,3415+69])
+                        Ptyp_constr "Types.type_expr" (toplevel/topcommon.mli[94,3415+54]..[94,3415+69])
+                        []
+                      core_type (toplevel/topcommon.mli[94,3415+73]..[94,3415+77])
+                        Ptyp_constr "unit" (toplevel/topcommon.mli[94,3415+73]..[94,3415+77])
+                        []
+              []
+          signature_item (toplevel/topcommon.mli[96,3494+2]..[96,3494+61])
+            Psig_value
+            value_description "print_untyped_exception" (toplevel/topcommon.mli[96,3494+6]..[96,3494+29]) (toplevel/topcommon.mli[96,3494+2]..[96,3494+61])
+              core_type (toplevel/topcommon.mli[96,3494+31]..[96,3494+61])
+                Ptyp_arrow
+                Nolabel
+                core_type (toplevel/topcommon.mli[96,3494+31]..[96,3494+40])
+                  Ptyp_constr "formatter" (toplevel/topcommon.mli[96,3494+31]..[96,3494+40])
+                  []
+                core_type (toplevel/topcommon.mli[96,3494+44]..[96,3494+61])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (toplevel/topcommon.mli[96,3494+44]..[96,3494+53])
+                    Ptyp_constr "Printer.t" (toplevel/topcommon.mli[96,3494+44]..[96,3494+53])
+                    []
+                  core_type (toplevel/topcommon.mli[96,3494+57]..[96,3494+61])
+                    Ptyp_constr "unit" (toplevel/topcommon.mli[96,3494+57]..[96,3494+61])
+                    []
+              []
+          signature_item (toplevel/topcommon.mli[98,3557+2]..[98,3557+56])
+            Psig_value
+            value_description "print_exception_outcome" (toplevel/topcommon.mli[98,3557+6]..[98,3557+29]) (toplevel/topcommon.mli[98,3557+2]..[98,3557+56])
+              core_type (toplevel/topcommon.mli[98,3557+32]..[98,3557+56])
+                Ptyp_arrow
+                Nolabel
+                core_type (toplevel/topcommon.mli[98,3557+32]..[98,3557+41])
+                  Ptyp_constr "formatter" (toplevel/topcommon.mli[98,3557+32]..[98,3557+41])
+                  []
+                core_type (toplevel/topcommon.mli[98,3557+45]..[98,3557+56])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (toplevel/topcommon.mli[98,3557+45]..[98,3557+48])
+                    Ptyp_constr "exn" (toplevel/topcommon.mli[98,3557+45]..[98,3557+48])
+                    []
+                  core_type (toplevel/topcommon.mli[98,3557+52]..[98,3557+56])
+                    Ptyp_constr "unit" (toplevel/topcommon.mli[98,3557+52]..[98,3557+56])
+                    []
+              []
+          signature_item (toplevel/topcommon.mli[101,3688+2]..[102,3711+66])
+            Psig_value
+            value_description "outval_of_value" (toplevel/topcommon.mli[101,3688+6]..[101,3688+21]) (toplevel/topcommon.mli[101,3688+2]..[102,3711+66])
+              core_type (toplevel/topcommon.mli[102,3711+4]..[102,3711+66])
+                Ptyp_arrow
+                Nolabel
+                core_type (toplevel/topcommon.mli[102,3711+4]..[102,3711+9])
+                  Ptyp_constr "Env.t" (toplevel/topcommon.mli[102,3711+4]..[102,3711+9])
+                  []
+                core_type (toplevel/topcommon.mli[102,3711+13]..[102,3711+66])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (toplevel/topcommon.mli[102,3711+13]..[102,3711+22])
+                    Ptyp_constr "Printer.t" (toplevel/topcommon.mli[102,3711+13]..[102,3711+22])
+                    []
+                  core_type (toplevel/topcommon.mli[102,3711+26]..[102,3711+66])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/topcommon.mli[102,3711+26]..[102,3711+41])
+                      Ptyp_constr "Types.type_expr" (toplevel/topcommon.mli[102,3711+26]..[102,3711+41])
+                      []
+                    core_type (toplevel/topcommon.mli[102,3711+45]..[102,3711+66])
+                      Ptyp_constr "Outcometree.out_value" (toplevel/topcommon.mli[102,3711+45]..[102,3711+66])
+                      []
+              []
+          signature_item (toplevel/topcommon.mli[104,3779+2]..[106,3826+42])
+            Psig_type Rec
+            [
+              type_declaration "gen_printer" (toplevel/topcommon.mli[104,3779+16]..[104,3779+27]) (toplevel/topcommon.mli[104,3779+2]..[106,3826+42])
+                ptype_params =
+                  [
+                    core_type (toplevel/topcommon.mli[104,3779+8]..[104,3779+10])
+                      Ptyp_var a
+                    core_type (toplevel/topcommon.mli[104,3779+12]..[104,3779+14])
+                      Ptyp_var b
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_variant
+                    [
+                      (toplevel/topcommon.mli[105,3809+4]..[105,3809+16])
+                        "Zero" (toplevel/topcommon.mli[105,3809+6]..[105,3809+10])
+                        [
+                          core_type (toplevel/topcommon.mli[105,3809+14]..[105,3809+16])
+                            Ptyp_var b
+                        ]
+                        None
+                      (toplevel/topcommon.mli[106,3826+4]..[106,3826+42])
+                        "Succ" (toplevel/topcommon.mli[106,3826+6]..[106,3826+10])
+                        [
+                          core_type (toplevel/topcommon.mli[106,3826+15]..[106,3826+41])
+                            Ptyp_arrow
+                            Nolabel
+                            core_type (toplevel/topcommon.mli[106,3826+15]..[106,3826+17])
+                              Ptyp_var a
+                            core_type (toplevel/topcommon.mli[106,3826+21]..[106,3826+41])
+                              Ptyp_constr "gen_printer" (toplevel/topcommon.mli[106,3826+30]..[106,3826+41])
+                              [
+                                core_type (toplevel/topcommon.mli[106,3826+22]..[106,3826+24])
+                                  Ptyp_var a
+                                core_type (toplevel/topcommon.mli[106,3826+26]..[106,3826+28])
+                                  Ptyp_var b
+                              ]
+                        ]
+                        None
+                    ]
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (toplevel/topcommon.mli[108,3870+2]..[109,3894+73])
+            Psig_value
+            value_description "install_printer" (toplevel/topcommon.mli[108,3870+6]..[108,3870+21]) (toplevel/topcommon.mli[108,3870+2]..[109,3894+73])
+              core_type (toplevel/topcommon.mli[109,3894+4]..[109,3894+73])
+                Ptyp_arrow
+                Nolabel
+                core_type (toplevel/topcommon.mli[109,3894+4]..[109,3894+10])
+                  Ptyp_constr "Path.t" (toplevel/topcommon.mli[109,3894+4]..[109,3894+10])
+                  []
+                core_type (toplevel/topcommon.mli[109,3894+14]..[109,3894+73])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (toplevel/topcommon.mli[109,3894+14]..[109,3894+29])
+                    Ptyp_constr "Types.type_expr" (toplevel/topcommon.mli[109,3894+14]..[109,3894+29])
+                    []
+                  core_type (toplevel/topcommon.mli[109,3894+33]..[109,3894+73])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/topcommon.mli[109,3894+34]..[109,3894+64])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (toplevel/topcommon.mli[109,3894+34]..[109,3894+43])
+                        Ptyp_constr "formatter" (toplevel/topcommon.mli[109,3894+34]..[109,3894+43])
+                        []
+                      core_type (toplevel/topcommon.mli[109,3894+47]..[109,3894+64])
+                        Ptyp_arrow
+                        Nolabel
+                        core_type (toplevel/topcommon.mli[109,3894+47]..[109,3894+56])
+                          Ptyp_constr "Printer.t" (toplevel/topcommon.mli[109,3894+47]..[109,3894+56])
+                          []
+                        core_type (toplevel/topcommon.mli[109,3894+60]..[109,3894+64])
+                          Ptyp_constr "unit" (toplevel/topcommon.mli[109,3894+60]..[109,3894+64])
+                          []
+                    core_type (toplevel/topcommon.mli[109,3894+69]..[109,3894+73])
+                      Ptyp_constr "unit" (toplevel/topcommon.mli[109,3894+69]..[109,3894+73])
+                      []
+              []
+          signature_item (toplevel/topcommon.mli[110,3968+2]..[113,4080+67])
+            Psig_value
+            value_description "install_generic_printer" (toplevel/topcommon.mli[110,3968+6]..[110,3968+29]) (toplevel/topcommon.mli[110,3968+2]..[113,4080+67])
+              core_type (toplevel/topcommon.mli[111,4000+4]..[113,4080+67])
+                Ptyp_arrow
+                Nolabel
+                core_type (toplevel/topcommon.mli[111,4000+4]..[111,4000+10])
+                  Ptyp_constr "Path.t" (toplevel/topcommon.mli[111,4000+4]..[111,4000+10])
+                  []
+                core_type (toplevel/topcommon.mli[111,4000+14]..[113,4080+67])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (toplevel/topcommon.mli[111,4000+14]..[111,4000+20])
+                    Ptyp_constr "Path.t" (toplevel/topcommon.mli[111,4000+14]..[111,4000+20])
+                    []
+                  core_type (toplevel/topcommon.mli[112,4024+4]..[113,4080+67])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/topcommon.mli[112,4024+5]..[113,4080+58])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (toplevel/topcommon.mli[112,4024+5]..[112,4024+8])
+                        Ptyp_constr "int" (toplevel/topcommon.mli[112,4024+5]..[112,4024+8])
+                        []
+                      core_type (toplevel/topcommon.mli[112,4024+12]..[113,4080+58])
+                        Ptyp_constr "gen_printer" (toplevel/topcommon.mli[113,4080+47]..[113,4080+58])
+                        [
+                          core_type (toplevel/topcommon.mli[112,4024+13]..[112,4024+54])
+                            Ptyp_arrow
+                            Nolabel
+                            core_type (toplevel/topcommon.mli[112,4024+13]..[112,4024+16])
+                              Ptyp_constr "int" (toplevel/topcommon.mli[112,4024+13]..[112,4024+16])
+                              []
+                            core_type (toplevel/topcommon.mli[112,4024+20]..[112,4024+54])
+                              Ptyp_arrow
+                              Nolabel
+                              core_type (toplevel/topcommon.mli[112,4024+20]..[112,4024+29])
+                                Ptyp_constr "Printer.t" (toplevel/topcommon.mli[112,4024+20]..[112,4024+29])
+                                []
+                              core_type (toplevel/topcommon.mli[112,4024+33]..[112,4024+54])
+                                Ptyp_constr "Outcometree.out_value" (toplevel/topcommon.mli[112,4024+33]..[112,4024+54])
+                                []
+                          core_type (toplevel/topcommon.mli[113,4080+12]..[113,4080+45])
+                            Ptyp_arrow
+                            Nolabel
+                            core_type (toplevel/topcommon.mli[113,4080+12]..[113,4080+21])
+                              Ptyp_constr "Printer.t" (toplevel/topcommon.mli[113,4080+12]..[113,4080+21])
+                              []
+                            core_type (toplevel/topcommon.mli[113,4080+24]..[113,4080+45])
+                              Ptyp_constr "Outcometree.out_value" (toplevel/topcommon.mli[113,4080+24]..[113,4080+45])
+                              []
+                        ]
+                    core_type (toplevel/topcommon.mli[113,4080+63]..[113,4080+67])
+                      Ptyp_constr "unit" (toplevel/topcommon.mli[113,4080+63]..[113,4080+67])
+                      []
+              []
+          signature_item (toplevel/topcommon.mli[114,4148+2]..[116,4238+76])
+            Psig_value
+            value_description "install_generic_printer'" (toplevel/topcommon.mli[114,4148+6]..[114,4148+30]) (toplevel/topcommon.mli[114,4148+2]..[116,4238+76])
+              core_type (toplevel/topcommon.mli[115,4181+4]..[116,4238+76])
+                Ptyp_arrow
+                Nolabel
+                core_type (toplevel/topcommon.mli[115,4181+4]..[115,4181+10])
+                  Ptyp_constr "Path.t" (toplevel/topcommon.mli[115,4181+4]..[115,4181+10])
+                  []
+                core_type (toplevel/topcommon.mli[115,4181+14]..[116,4238+76])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (toplevel/topcommon.mli[115,4181+14]..[115,4181+20])
+                    Ptyp_constr "Path.t" (toplevel/topcommon.mli[115,4181+14]..[115,4181+20])
+                    []
+                  core_type (toplevel/topcommon.mli[115,4181+24]..[116,4238+76])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/topcommon.mli[115,4181+24]..[116,4238+68])
+                      Ptyp_constr "gen_printer" (toplevel/topcommon.mli[116,4238+57]..[116,4238+68])
+                      [
+                        core_type (toplevel/topcommon.mli[115,4181+25]..[115,4181+55])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (toplevel/topcommon.mli[115,4181+25]..[115,4181+34])
+                            Ptyp_constr "formatter" (toplevel/topcommon.mli[115,4181+25]..[115,4181+34])
+                            []
+                          core_type (toplevel/topcommon.mli[115,4181+38]..[115,4181+55])
+                            Ptyp_arrow
+                            Nolabel
+                            core_type (toplevel/topcommon.mli[115,4181+38]..[115,4181+47])
+                              Ptyp_constr "Printer.t" (toplevel/topcommon.mli[115,4181+38]..[115,4181+47])
+                              []
+                            core_type (toplevel/topcommon.mli[115,4181+51]..[115,4181+55])
+                              Ptyp_constr "unit" (toplevel/topcommon.mli[115,4181+51]..[115,4181+55])
+                              []
+                        core_type (toplevel/topcommon.mli[116,4238+25]..[116,4238+55])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (toplevel/topcommon.mli[116,4238+25]..[116,4238+34])
+                            Ptyp_constr "formatter" (toplevel/topcommon.mli[116,4238+25]..[116,4238+34])
+                            []
+                          core_type (toplevel/topcommon.mli[116,4238+38]..[116,4238+55])
+                            Ptyp_arrow
+                            Nolabel
+                            core_type (toplevel/topcommon.mli[116,4238+38]..[116,4238+47])
+                              Ptyp_constr "Printer.t" (toplevel/topcommon.mli[116,4238+38]..[116,4238+47])
+                              []
+                            core_type (toplevel/topcommon.mli[116,4238+51]..[116,4238+55])
+                              Ptyp_constr "unit" (toplevel/topcommon.mli[116,4238+51]..[116,4238+55])
+                              []
+                      ]
+                    core_type (toplevel/topcommon.mli[116,4238+72]..[116,4238+76])
+                      Ptyp_constr "unit" (toplevel/topcommon.mli[116,4238+72]..[116,4238+76])
+                      []
+              []
+          signature_item (toplevel/topcommon.mli[117,4315+2]..[117,4315+37])
+            Psig_value
+            value_description "remove_printer" (toplevel/topcommon.mli[117,4315+6]..[117,4315+20]) (toplevel/topcommon.mli[117,4315+2]..[117,4315+37])
+              core_type (toplevel/topcommon.mli[117,4315+23]..[117,4315+37])
+                Ptyp_arrow
+                Nolabel
+                core_type (toplevel/topcommon.mli[117,4315+23]..[117,4315+29])
+                  Ptyp_constr "Path.t" (toplevel/topcommon.mli[117,4315+23]..[117,4315+29])
+                  []
+                core_type (toplevel/topcommon.mli[117,4315+33]..[117,4315+37])
+                  Ptyp_constr "unit" (toplevel/topcommon.mli[117,4315+33]..[117,4315+37])
+                  []
+              []
+        ]
+  signature_item (toplevel/topcommon.mli[124,4402+0]..[129,4581+36])
+    Psig_type Rec
+    [
+      type_declaration "directive_fun" (toplevel/topcommon.mli[124,4402+5]..[124,4402+18]) (toplevel/topcommon.mli[124,4402+0]..[129,4581+36])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (toplevel/topcommon.mli[125,4423+2]..[125,4423+36])
+                "Directive_none" (toplevel/topcommon.mli[125,4423+4]..[125,4423+18])
+                [
+                  core_type (toplevel/topcommon.mli[125,4423+23]..[125,4423+35])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/topcommon.mli[125,4423+23]..[125,4423+27])
+                      Ptyp_constr "unit" (toplevel/topcommon.mli[125,4423+23]..[125,4423+27])
+                      []
+                    core_type (toplevel/topcommon.mli[125,4423+31]..[125,4423+35])
+                      Ptyp_constr "unit" (toplevel/topcommon.mli[125,4423+31]..[125,4423+35])
+                      []
+                ]
+                None
+              (toplevel/topcommon.mli[126,4460+2]..[126,4460+40])
+                "Directive_string" (toplevel/topcommon.mli[126,4460+4]..[126,4460+20])
+                [
+                  core_type (toplevel/topcommon.mli[126,4460+25]..[126,4460+39])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/topcommon.mli[126,4460+25]..[126,4460+31])
+                      Ptyp_constr "string" (toplevel/topcommon.mli[126,4460+25]..[126,4460+31])
+                      []
+                    core_type (toplevel/topcommon.mli[126,4460+35]..[126,4460+39])
+                      Ptyp_constr "unit" (toplevel/topcommon.mli[126,4460+35]..[126,4460+39])
+                      []
+                ]
+                None
+              (toplevel/topcommon.mli[127,4501+2]..[127,4501+34])
+                "Directive_int" (toplevel/topcommon.mli[127,4501+4]..[127,4501+17])
+                [
+                  core_type (toplevel/topcommon.mli[127,4501+22]..[127,4501+33])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/topcommon.mli[127,4501+22]..[127,4501+25])
+                      Ptyp_constr "int" (toplevel/topcommon.mli[127,4501+22]..[127,4501+25])
+                      []
+                    core_type (toplevel/topcommon.mli[127,4501+29]..[127,4501+33])
+                      Ptyp_constr "unit" (toplevel/topcommon.mli[127,4501+29]..[127,4501+33])
+                      []
+                ]
+                None
+              (toplevel/topcommon.mli[128,4536+2]..[128,4536+44])
+                "Directive_ident" (toplevel/topcommon.mli[128,4536+4]..[128,4536+19])
+                [
+                  core_type (toplevel/topcommon.mli[128,4536+24]..[128,4536+43])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/topcommon.mli[128,4536+24]..[128,4536+35])
+                      Ptyp_constr "Longident.t" (toplevel/topcommon.mli[128,4536+24]..[128,4536+35])
+                      []
+                    core_type (toplevel/topcommon.mli[128,4536+39]..[128,4536+43])
+                      Ptyp_constr "unit" (toplevel/topcommon.mli[128,4536+39]..[128,4536+43])
+                      []
+                ]
+                None
+              (toplevel/topcommon.mli[129,4581+2]..[129,4581+36])
+                "Directive_bool" (toplevel/topcommon.mli[129,4581+4]..[129,4581+18])
+                [
+                  core_type (toplevel/topcommon.mli[129,4581+23]..[129,4581+35])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/topcommon.mli[129,4581+23]..[129,4581+27])
+                      Ptyp_constr "bool" (toplevel/topcommon.mli[129,4581+23]..[129,4581+27])
+                      []
+                    core_type (toplevel/topcommon.mli[129,4581+31]..[129,4581+35])
+                      Ptyp_constr "unit" (toplevel/topcommon.mli[129,4581+31]..[129,4581+35])
+                      []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (toplevel/topcommon.mli[131,4619+0]..[134,4677+1])
+    Psig_type Rec
+    [
+      type_declaration "directive_info" (toplevel/topcommon.mli[131,4619+5]..[131,4619+19]) (toplevel/topcommon.mli[131,4619+0]..[134,4677+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (toplevel/topcommon.mli[132,4643+2]..[132,4643+18])
+                Immutable
+                "section" (toplevel/topcommon.mli[132,4643+2]..[132,4643+9])                core_type (toplevel/topcommon.mli[132,4643+11]..[132,4643+17])
+                  Ptyp_constr "string" (toplevel/topcommon.mli[132,4643+11]..[132,4643+17])
+                  []
+              (toplevel/topcommon.mli[133,4662+2]..[133,4662+14])
+                Immutable
+                "doc" (toplevel/topcommon.mli[133,4662+2]..[133,4662+5])                core_type (toplevel/topcommon.mli[133,4662+7]..[133,4662+13])
+                  Ptyp_constr "string" (toplevel/topcommon.mli[133,4662+7]..[133,4662+13])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (toplevel/topcommon.mli[138,4747+0]..[138,4747+69])
+    Psig_value
+    value_description "add_directive" (toplevel/topcommon.mli[138,4747+4]..[138,4747+17]) (toplevel/topcommon.mli[138,4747+0]..[138,4747+69])
+      core_type (toplevel/topcommon.mli[138,4747+20]..[138,4747+69])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/topcommon.mli[138,4747+20]..[138,4747+26])
+          Ptyp_constr "string" (toplevel/topcommon.mli[138,4747+20]..[138,4747+26])
+          []
+        core_type (toplevel/topcommon.mli[138,4747+30]..[138,4747+69])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/topcommon.mli[138,4747+30]..[138,4747+43])
+            Ptyp_constr "directive_fun" (toplevel/topcommon.mli[138,4747+30]..[138,4747+43])
+            []
+          core_type (toplevel/topcommon.mli[138,4747+47]..[138,4747+69])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/topcommon.mli[138,4747+47]..[138,4747+61])
+              Ptyp_constr "directive_info" (toplevel/topcommon.mli[138,4747+47]..[138,4747+61])
+              []
+            core_type (toplevel/topcommon.mli[138,4747+65]..[138,4747+69])
+              Ptyp_constr "unit" (toplevel/topcommon.mli[138,4747+65]..[138,4747+69])
+              []
+      []
+  signature_item (toplevel/topcommon.mli[140,4818+0]..[140,4818+50])
+    Psig_value
+    value_description "get_directive" (toplevel/topcommon.mli[140,4818+4]..[140,4818+17]) (toplevel/topcommon.mli[140,4818+0]..[140,4818+50])
+      core_type (toplevel/topcommon.mli[140,4818+20]..[140,4818+50])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/topcommon.mli[140,4818+20]..[140,4818+26])
+          Ptyp_constr "string" (toplevel/topcommon.mli[140,4818+20]..[140,4818+26])
+          []
+        core_type (toplevel/topcommon.mli[140,4818+30]..[140,4818+50])
+          Ptyp_constr "option" (toplevel/topcommon.mli[140,4818+44]..[140,4818+50])
+          [
+            core_type (toplevel/topcommon.mli[140,4818+30]..[140,4818+43])
+              Ptyp_constr "directive_fun" (toplevel/topcommon.mli[140,4818+30]..[140,4818+43])
+              []
+          ]
+      []
+  signature_item (toplevel/topcommon.mli[142,4870+0]..[142,4870+56])
+    Psig_value
+    value_description "get_directive_info" (toplevel/topcommon.mli[142,4870+4]..[142,4870+22]) (toplevel/topcommon.mli[142,4870+0]..[142,4870+56])
+      core_type (toplevel/topcommon.mli[142,4870+25]..[142,4870+56])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/topcommon.mli[142,4870+25]..[142,4870+31])
+          Ptyp_constr "string" (toplevel/topcommon.mli[142,4870+25]..[142,4870+31])
+          []
+        core_type (toplevel/topcommon.mli[142,4870+35]..[142,4870+56])
+          Ptyp_constr "option" (toplevel/topcommon.mli[142,4870+50]..[142,4870+56])
+          [
+            core_type (toplevel/topcommon.mli[142,4870+35]..[142,4870+49])
+              Ptyp_constr "directive_info" (toplevel/topcommon.mli[142,4870+35]..[142,4870+49])
+              []
+          ]
+      []
+  signature_item (toplevel/topcommon.mli[144,4928+0]..[144,4928+45])
+    Psig_value
+    value_description "all_directive_names" (toplevel/topcommon.mli[144,4928+4]..[144,4928+23]) (toplevel/topcommon.mli[144,4928+0]..[144,4928+45])
+      core_type (toplevel/topcommon.mli[144,4928+26]..[144,4928+45])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/topcommon.mli[144,4928+26]..[144,4928+30])
+          Ptyp_constr "unit" (toplevel/topcommon.mli[144,4928+26]..[144,4928+30])
+          []
+        core_type (toplevel/topcommon.mli[144,4928+34]..[144,4928+45])
+          Ptyp_constr "list" (toplevel/topcommon.mli[144,4928+41]..[144,4928+45])
+          [
+            core_type (toplevel/topcommon.mli[144,4928+34]..[144,4928+40])
+              Ptyp_constr "string" (toplevel/topcommon.mli[144,4928+34]..[144,4928+40])
+              []
+          ]
+      []
+  signature_item (toplevel/topcommon.mli[146,4975+0]..[146,4975+68])
+    Psig_value
+    value_description "directive_table" (toplevel/topcommon.mli[146,4975+17]..[146,4975+32]) (toplevel/topcommon.mli[146,4975+0]..[146,4975+68])
+      attribute "deprecated"
+        []
+      core_type (toplevel/topcommon.mli[146,4975+35]..[146,4975+68])
+        Ptyp_constr "Hashtbl.t" (toplevel/topcommon.mli[146,4975+59]..[146,4975+68])
+        [
+          core_type (toplevel/topcommon.mli[146,4975+36]..[146,4975+42])
+            Ptyp_constr "string" (toplevel/topcommon.mli[146,4975+36]..[146,4975+42])
+            []
+          core_type (toplevel/topcommon.mli[146,4975+44]..[146,4975+57])
+            Ptyp_constr "directive_fun" (toplevel/topcommon.mli[146,4975+44]..[146,4975+57])
+            []
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[150,5142+0]..[150,5142+74])
+    Psig_value
+    value_description "directive_info_table" (toplevel/topcommon.mli[150,5142+17]..[150,5142+37]) (toplevel/topcommon.mli[150,5142+0]..[150,5142+74])
+      attribute "deprecated"
+        []
+      core_type (toplevel/topcommon.mli[150,5142+40]..[150,5142+74])
+        Ptyp_constr "Hashtbl.t" (toplevel/topcommon.mli[150,5142+65]..[150,5142+74])
+        [
+          core_type (toplevel/topcommon.mli[150,5142+41]..[150,5142+47])
+            Ptyp_constr "string" (toplevel/topcommon.mli[150,5142+41]..[150,5142+47])
+            []
+          core_type (toplevel/topcommon.mli[150,5142+49]..[150,5142+63])
+            Ptyp_constr "directive_info" (toplevel/topcommon.mli[150,5142+49]..[150,5142+63])
+            []
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[156,5362+0]..[156,5362+76])
+    Psig_value
+    value_description "parse_toplevel_phrase" (toplevel/topcommon.mli[156,5362+4]..[156,5362+25]) (toplevel/topcommon.mli[156,5362+0]..[156,5362+76])
+      core_type (toplevel/topcommon.mli[156,5362+28]..[156,5362+76])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[156,5362+73]..[156,5362+76])
+        [
+          core_type (toplevel/topcommon.mli[156,5362+29]..[156,5362+71])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/topcommon.mli[156,5362+29]..[156,5362+42])
+              Ptyp_constr "Lexing.lexbuf" (toplevel/topcommon.mli[156,5362+29]..[156,5362+42])
+              []
+            core_type (toplevel/topcommon.mli[156,5362+46]..[156,5362+71])
+              Ptyp_constr "Parsetree.toplevel_phrase" (toplevel/topcommon.mli[156,5362+46]..[156,5362+71])
+              []
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[157,5439+0]..[157,5439+74])
+    Psig_value
+    value_description "parse_use_file" (toplevel/topcommon.mli[157,5439+4]..[157,5439+18]) (toplevel/topcommon.mli[157,5439+0]..[157,5439+74])
+      core_type (toplevel/topcommon.mli[157,5439+21]..[157,5439+74])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[157,5439+71]..[157,5439+74])
+        [
+          core_type (toplevel/topcommon.mli[157,5439+22]..[157,5439+69])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/topcommon.mli[157,5439+22]..[157,5439+35])
+              Ptyp_constr "Lexing.lexbuf" (toplevel/topcommon.mli[157,5439+22]..[157,5439+35])
+              []
+            core_type (toplevel/topcommon.mli[157,5439+39]..[157,5439+69])
+              Ptyp_constr "list" (toplevel/topcommon.mli[157,5439+65]..[157,5439+69])
+              [
+                core_type (toplevel/topcommon.mli[157,5439+39]..[157,5439+64])
+                  Ptyp_constr "Parsetree.toplevel_phrase" (toplevel/topcommon.mli[157,5439+39]..[157,5439+64])
+                  []
+              ]
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[158,5514+0]..[158,5514+52])
+    Psig_value
+    value_description "print_location" (toplevel/topcommon.mli[158,5514+4]..[158,5514+18]) (toplevel/topcommon.mli[158,5514+0]..[158,5514+52])
+      core_type (toplevel/topcommon.mli[158,5514+21]..[158,5514+52])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/topcommon.mli[158,5514+21]..[158,5514+30])
+          Ptyp_constr "formatter" (toplevel/topcommon.mli[158,5514+21]..[158,5514+30])
+          []
+        core_type (toplevel/topcommon.mli[158,5514+34]..[158,5514+52])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/topcommon.mli[158,5514+34]..[158,5514+44])
+            Ptyp_constr "Location.t" (toplevel/topcommon.mli[158,5514+34]..[158,5514+44])
+            []
+          core_type (toplevel/topcommon.mli[158,5514+48]..[158,5514+52])
+            Ptyp_constr "unit" (toplevel/topcommon.mli[158,5514+48]..[158,5514+52])
+            []
+      []
+  signature_item (toplevel/topcommon.mli[159,5567+0]..[159,5567+53])
+    Psig_value
+    value_description "print_error" (toplevel/topcommon.mli[159,5567+4]..[159,5567+15]) (toplevel/topcommon.mli[159,5567+0]..[159,5567+53])
+      core_type (toplevel/topcommon.mli[159,5567+18]..[159,5567+53])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/topcommon.mli[159,5567+18]..[159,5567+27])
+          Ptyp_constr "formatter" (toplevel/topcommon.mli[159,5567+18]..[159,5567+27])
+          []
+        core_type (toplevel/topcommon.mli[159,5567+31]..[159,5567+53])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/topcommon.mli[159,5567+31]..[159,5567+45])
+            Ptyp_constr "Location.error" (toplevel/topcommon.mli[159,5567+31]..[159,5567+45])
+            []
+          core_type (toplevel/topcommon.mli[159,5567+49]..[159,5567+53])
+            Ptyp_constr "unit" (toplevel/topcommon.mli[159,5567+49]..[159,5567+53])
+            []
+      []
+  signature_item (toplevel/topcommon.mli[160,5621+0]..[160,5621+65])
+    Psig_value
+    value_description "print_warning" (toplevel/topcommon.mli[160,5621+4]..[160,5621+17]) (toplevel/topcommon.mli[160,5621+0]..[160,5621+65])
+      core_type (toplevel/topcommon.mli[160,5621+20]..[160,5621+65])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/topcommon.mli[160,5621+20]..[160,5621+30])
+          Ptyp_constr "Location.t" (toplevel/topcommon.mli[160,5621+20]..[160,5621+30])
+          []
+        core_type (toplevel/topcommon.mli[160,5621+34]..[160,5621+65])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/topcommon.mli[160,5621+34]..[160,5621+43])
+            Ptyp_constr "formatter" (toplevel/topcommon.mli[160,5621+34]..[160,5621+43])
+            []
+          core_type (toplevel/topcommon.mli[160,5621+47]..[160,5621+65])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/topcommon.mli[160,5621+47]..[160,5621+57])
+              Ptyp_constr "Warnings.t" (toplevel/topcommon.mli[160,5621+47]..[160,5621+57])
+              []
+            core_type (toplevel/topcommon.mli[160,5621+61]..[160,5621+65])
+              Ptyp_constr "unit" (toplevel/topcommon.mli[160,5621+61]..[160,5621+65])
+              []
+      []
+  signature_item (toplevel/topcommon.mli[161,5687+0]..[161,5687+27])
+    Psig_value
+    value_description "input_name" (toplevel/topcommon.mli[161,5687+4]..[161,5687+14]) (toplevel/topcommon.mli[161,5687+0]..[161,5687+27])
+      core_type (toplevel/topcommon.mli[161,5687+17]..[161,5687+27])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[161,5687+24]..[161,5687+27])
+        [
+          core_type (toplevel/topcommon.mli[161,5687+17]..[161,5687+23])
+            Ptyp_constr "string" (toplevel/topcommon.mli[161,5687+17]..[161,5687+23])
+            []
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[167,5852+0]..[167,5852+28])
+    Psig_value
+    value_description "phrase_buffer" (toplevel/topcommon.mli[167,5852+4]..[167,5852+17]) (toplevel/topcommon.mli[167,5852+0]..[167,5852+28])
+      core_type (toplevel/topcommon.mli[167,5852+20]..[167,5852+28])
+        Ptyp_constr "Buffer.t" (toplevel/topcommon.mli[167,5852+20]..[167,5852+28])
+        []
+      []
+  signature_item (toplevel/topcommon.mli[169,5882+0]..[169,5882+25])
+    Psig_value
+    value_description "first_line" (toplevel/topcommon.mli[169,5882+4]..[169,5882+14]) (toplevel/topcommon.mli[169,5882+0]..[169,5882+25])
+      core_type (toplevel/topcommon.mli[169,5882+17]..[169,5882+25])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[169,5882+22]..[169,5882+25])
+        [
+          core_type (toplevel/topcommon.mli[169,5882+17]..[169,5882+21])
+            Ptyp_constr "bool" (toplevel/topcommon.mli[169,5882+17]..[169,5882+21])
+            []
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[171,5909+0]..[171,5909+22])
+    Psig_value
+    value_description "got_eof" (toplevel/topcommon.mli[171,5909+4]..[171,5909+11]) (toplevel/topcommon.mli[171,5909+0]..[171,5909+22])
+      core_type (toplevel/topcommon.mli[171,5909+14]..[171,5909+22])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[171,5909+19]..[171,5909+22])
+        [
+          core_type (toplevel/topcommon.mli[171,5909+14]..[171,5909+18])
+            Ptyp_constr "bool" (toplevel/topcommon.mli[171,5909+14]..[171,5909+18])
+            []
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[173,5933+0]..[173,5933+71])
+    Psig_value
+    value_description "read_interactive_input" (toplevel/topcommon.mli[173,5933+4]..[173,5933+26]) (toplevel/topcommon.mli[173,5933+0]..[173,5933+71])
+      core_type (toplevel/topcommon.mli[173,5933+29]..[173,5933+71])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[173,5933+68]..[173,5933+71])
+        [
+          core_type (toplevel/topcommon.mli[173,5933+30]..[173,5933+66])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/topcommon.mli[173,5933+30]..[173,5933+36])
+              Ptyp_constr "string" (toplevel/topcommon.mli[173,5933+30]..[173,5933+36])
+              []
+            core_type (toplevel/topcommon.mli[173,5933+40]..[173,5933+66])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/topcommon.mli[173,5933+40]..[173,5933+45])
+                Ptyp_constr "bytes" (toplevel/topcommon.mli[173,5933+40]..[173,5933+45])
+                []
+              core_type (toplevel/topcommon.mli[173,5933+49]..[173,5933+66])
+                Ptyp_arrow
+                Nolabel
+                core_type (toplevel/topcommon.mli[173,5933+49]..[173,5933+52])
+                  Ptyp_constr "int" (toplevel/topcommon.mli[173,5933+49]..[173,5933+52])
+                  []
+                core_type (toplevel/topcommon.mli[173,5933+56]..[173,5933+66])
+                  Ptyp_tuple
+                  [
+                    core_type (toplevel/topcommon.mli[173,5933+56]..[173,5933+59])
+                      Ptyp_constr "int" (toplevel/topcommon.mli[173,5933+56]..[173,5933+59])
+                      []
+                    core_type (toplevel/topcommon.mli[173,5933+62]..[173,5933+66])
+                      Ptyp_constr "bool" (toplevel/topcommon.mli[173,5933+62]..[173,5933+66])
+                      []
+                  ]
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[177,6019+0]..[177,6019+46])
+    Psig_value
+    value_description "toplevel_startup_hook" (toplevel/topcommon.mli[177,6019+4]..[177,6019+25]) (toplevel/topcommon.mli[177,6019+0]..[177,6019+46])
+      core_type (toplevel/topcommon.mli[177,6019+28]..[177,6019+46])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[177,6019+43]..[177,6019+46])
+        [
+          core_type (toplevel/topcommon.mli[177,6019+29]..[177,6019+41])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/topcommon.mli[177,6019+29]..[177,6019+33])
+              Ptyp_constr "unit" (toplevel/topcommon.mli[177,6019+29]..[177,6019+33])
+              []
+            core_type (toplevel/topcommon.mli[177,6019+37]..[177,6019+41])
+              Ptyp_constr "unit" (toplevel/topcommon.mli[177,6019+37]..[177,6019+41])
+              []
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[179,6067+0]..[179,6067+15])
+    Psig_type Rec
+    [
+      type_declaration "event" (toplevel/topcommon.mli[179,6067+5]..[179,6067+10]) (toplevel/topcommon.mli[179,6067+0]..[179,6067+15])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_open
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (toplevel/topcommon.mli[180,6083+0]..[182,6109+15])
+    Psig_typext
+    type_extension
+      ptyext_path = "event" (toplevel/topcommon.mli[180,6083+5]..[180,6083+10])
+      ptyext_params =
+        []
+      ptyext_constructors =
+        [
+          extension_constructor (toplevel/topcommon.mli[181,6097+2]..[181,6097+11])
+            pext_name = "Startup"
+            pext_kind =
+              Pext_decl
+                []
+                None
+          extension_constructor (toplevel/topcommon.mli[182,6109+2]..[182,6109+15])
+            pext_name = "After_setup"
+            pext_kind =
+              Pext_decl
+                []
+                None
+        ]
+      ptyext_private = Public
+  signature_item (toplevel/topcommon.mli[188,6358+0]..[188,6358+38])
+    Psig_value
+    value_description "add_hook" (toplevel/topcommon.mli[188,6358+4]..[188,6358+12]) (toplevel/topcommon.mli[188,6358+0]..[188,6358+38])
+      core_type (toplevel/topcommon.mli[188,6358+15]..[188,6358+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/topcommon.mli[188,6358+16]..[188,6358+29])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/topcommon.mli[188,6358+16]..[188,6358+21])
+            Ptyp_constr "event" (toplevel/topcommon.mli[188,6358+16]..[188,6358+21])
+            []
+          core_type (toplevel/topcommon.mli[188,6358+25]..[188,6358+29])
+            Ptyp_constr "unit" (toplevel/topcommon.mli[188,6358+25]..[188,6358+29])
+            []
+        core_type (toplevel/topcommon.mli[188,6358+34]..[188,6358+38])
+          Ptyp_constr "unit" (toplevel/topcommon.mli[188,6358+34]..[188,6358+38])
+          []
+      []
+  signature_item (toplevel/topcommon.mli[192,6496+0]..[192,6496+29])
+    Psig_value
+    value_description "run_hooks" (toplevel/topcommon.mli[192,6496+4]..[192,6496+13]) (toplevel/topcommon.mli[192,6496+0]..[192,6496+29])
+      core_type (toplevel/topcommon.mli[192,6496+16]..[192,6496+29])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/topcommon.mli[192,6496+16]..[192,6496+21])
+          Ptyp_constr "event" (toplevel/topcommon.mli[192,6496+16]..[192,6496+21])
+          []
+        core_type (toplevel/topcommon.mli[192,6496+25]..[192,6496+29])
+          Ptyp_constr "unit" (toplevel/topcommon.mli[192,6496+25]..[192,6496+29])
+          []
+      []
+  signature_item (toplevel/topcommon.mli[197,6575+0]..[197,6575+44])
+    Psig_value
+    value_description "override_sys_argv" (toplevel/topcommon.mli[197,6575+4]..[197,6575+21]) (toplevel/topcommon.mli[197,6575+0]..[197,6575+44])
+      core_type (toplevel/topcommon.mli[197,6575+24]..[197,6575+44])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/topcommon.mli[197,6575+24]..[197,6575+36])
+          Ptyp_constr "array" (toplevel/topcommon.mli[197,6575+31]..[197,6575+36])
+          [
+            core_type (toplevel/topcommon.mli[197,6575+24]..[197,6575+30])
+              Ptyp_constr "string" (toplevel/topcommon.mli[197,6575+24]..[197,6575+30])
+              []
+          ]
+        core_type (toplevel/topcommon.mli[197,6575+40]..[197,6575+44])
+          Ptyp_constr "unit" (toplevel/topcommon.mli[197,6575+40]..[197,6575+44])
+          []
+      []
+  signature_item (toplevel/topcommon.mli[205,6901+0]..[205,6901+7])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (toplevel/topcommon.mli[205,6901+0]..[205,6901+7])
+        Pstr_eval
+        expression (toplevel/topcommon.mli[205,6901+0]..[205,6901+7])
+          Pexp_constant PConst_string("/*",(toplevel/topcommon.mli[205,6901+0]..[205,6901+7]),None)
+    ]
+  signature_item (toplevel/topcommon.mli[209,6954+0]..[209,6954+60])
+    Psig_type Rec
+    [
+      type_declaration "evaluation_outcome" (toplevel/topcommon.mli[209,6954+5]..[209,6954+23]) (toplevel/topcommon.mli[209,6954+0]..[209,6954+60])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (toplevel/topcommon.mli[209,6954+26]..[209,6954+41])
+                "Result" (toplevel/topcommon.mli[209,6954+26]..[209,6954+32])
+                [
+                  core_type (toplevel/topcommon.mli[209,6954+36]..[209,6954+41])
+                    Ptyp_constr "Obj.t" (toplevel/topcommon.mli[209,6954+36]..[209,6954+41])
+                    []
+                ]
+                None
+              (toplevel/topcommon.mli[209,6954+42]..[209,6954+60])
+                "Exception" (toplevel/topcommon.mli[209,6954+44]..[209,6954+53])
+                [
+                  core_type (toplevel/topcommon.mli[209,6954+57]..[209,6954+60])
+                    Ptyp_constr "exn" (toplevel/topcommon.mli[209,6954+57]..[209,6954+60])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (toplevel/topcommon.mli[211,7016+0]..[211,7016+32])
+    Psig_value
+    value_description "backtrace" (toplevel/topcommon.mli[211,7016+4]..[211,7016+13]) (toplevel/topcommon.mli[211,7016+0]..[211,7016+32])
+      core_type (toplevel/topcommon.mli[211,7016+15]..[211,7016+32])
+        Ptyp_constr "ref" (toplevel/topcommon.mli[211,7016+29]..[211,7016+32])
+        [
+          core_type (toplevel/topcommon.mli[211,7016+15]..[211,7016+28])
+            Ptyp_constr "option" (toplevel/topcommon.mli[211,7016+22]..[211,7016+28])
+            [
+              core_type (toplevel/topcommon.mli[211,7016+15]..[211,7016+21])
+                Ptyp_constr "string" (toplevel/topcommon.mli[211,7016+15]..[211,7016+21])
+                []
+            ]
+        ]
+      []
+  signature_item (toplevel/topcommon.mli[213,7050+0]..[214,7074+59])
+    Psig_value
+    value_description "parse_mod_use_file" (toplevel/topcommon.mli[213,7050+4]..[213,7050+22]) (toplevel/topcommon.mli[213,7050+0]..[214,7074+59])
+      core_type (toplevel/topcommon.mli[214,7074+2]..[214,7074+59])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/topcommon.mli[214,7074+2]..[214,7074+8])
+          Ptyp_constr "string" (toplevel/topcommon.mli[214,7074+2]..[214,7074+8])
+          []
+        core_type (toplevel/topcommon.mli[214,7074+12]..[214,7074+59])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/topcommon.mli[214,7074+12]..[214,7074+25])
+            Ptyp_constr "Lexing.lexbuf" (toplevel/topcommon.mli[214,7074+12]..[214,7074+25])
+            []
+          core_type (toplevel/topcommon.mli[214,7074+29]..[214,7074+59])
+            Ptyp_constr "list" (toplevel/topcommon.mli[214,7074+55]..[214,7074+59])
+            [
+              core_type (toplevel/topcommon.mli[214,7074+29]..[214,7074+54])
+                Ptyp_constr "Parsetree.toplevel_phrase" (toplevel/topcommon.mli[214,7074+29]..[214,7074+54])
+                []
+            ]
+      []
+  signature_item (toplevel/topcommon.mli[216,7135+0]..[216,7135+38])
+    Psig_value
+    value_description "refill_lexbuf" (toplevel/topcommon.mli[216,7135+4]..[216,7135+17]) (toplevel/topcommon.mli[216,7135+0]..[216,7135+38])
+      core_type (toplevel/topcommon.mli[216,7135+19]..[216,7135+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/topcommon.mli[216,7135+19]..[216,7135+24])
+          Ptyp_constr "bytes" (toplevel/topcommon.mli[216,7135+19]..[216,7135+24])
+          []
+        core_type (toplevel/topcommon.mli[216,7135+28]..[216,7135+38])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/topcommon.mli[216,7135+28]..[216,7135+31])
+            Ptyp_constr "int" (toplevel/topcommon.mli[216,7135+28]..[216,7135+31])
+            []
+          core_type (toplevel/topcommon.mli[216,7135+35]..[216,7135+38])
+            Ptyp_constr "int" (toplevel/topcommon.mli[216,7135+35]..[216,7135+38])
+            []
+      []
+]
+

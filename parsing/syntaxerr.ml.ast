@@ -1,0 +1,288 @@
+[
+  structure_item (parsing/syntaxerr.ml[18,1129+0]..[26,1424+47])
+    Pstr_type Rec
+    [
+      type_declaration "error" (parsing/syntaxerr.ml[18,1129+5]..[18,1129+10]) (parsing/syntaxerr.ml[18,1129+0]..[26,1424+47])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (parsing/syntaxerr.ml[19,1142+4]..[19,1142+57])
+                "Unclosed" (parsing/syntaxerr.ml[19,1142+4]..[19,1142+12])
+                [
+                  core_type (parsing/syntaxerr.ml[19,1142+16]..[19,1142+26])
+                    Ptyp_constr "Location.t" (parsing/syntaxerr.ml[19,1142+16]..[19,1142+26])
+                    []
+                  core_type (parsing/syntaxerr.ml[19,1142+29]..[19,1142+35])
+                    Ptyp_constr "string" (parsing/syntaxerr.ml[19,1142+29]..[19,1142+35])
+                    []
+                  core_type (parsing/syntaxerr.ml[19,1142+38]..[19,1142+48])
+                    Ptyp_constr "Location.t" (parsing/syntaxerr.ml[19,1142+38]..[19,1142+48])
+                    []
+                  core_type (parsing/syntaxerr.ml[19,1142+51]..[19,1142+57])
+                    Ptyp_constr "string" (parsing/syntaxerr.ml[19,1142+51]..[19,1142+57])
+                    []
+                ]
+                None
+              (parsing/syntaxerr.ml[20,1200+2]..[20,1200+36])
+                "Expecting" (parsing/syntaxerr.ml[20,1200+4]..[20,1200+13])
+                [
+                  core_type (parsing/syntaxerr.ml[20,1200+17]..[20,1200+27])
+                    Ptyp_constr "Location.t" (parsing/syntaxerr.ml[20,1200+17]..[20,1200+27])
+                    []
+                  core_type (parsing/syntaxerr.ml[20,1200+30]..[20,1200+36])
+                    Ptyp_constr "string" (parsing/syntaxerr.ml[20,1200+30]..[20,1200+36])
+                    []
+                ]
+                None
+              (parsing/syntaxerr.ml[21,1237+2]..[21,1237+40])
+                "Not_expecting" (parsing/syntaxerr.ml[21,1237+4]..[21,1237+17])
+                [
+                  core_type (parsing/syntaxerr.ml[21,1237+21]..[21,1237+31])
+                    Ptyp_constr "Location.t" (parsing/syntaxerr.ml[21,1237+21]..[21,1237+31])
+                    []
+                  core_type (parsing/syntaxerr.ml[21,1237+34]..[21,1237+40])
+                    Ptyp_constr "string" (parsing/syntaxerr.ml[21,1237+34]..[21,1237+40])
+                    []
+                ]
+                None
+              (parsing/syntaxerr.ml[22,1278+2]..[22,1278+34])
+                "Applicative_path" (parsing/syntaxerr.ml[22,1278+4]..[22,1278+20])
+                [
+                  core_type (parsing/syntaxerr.ml[22,1278+24]..[22,1278+34])
+                    Ptyp_constr "Location.t" (parsing/syntaxerr.ml[22,1278+24]..[22,1278+34])
+                    []
+                ]
+                None
+              (parsing/syntaxerr.ml[23,1313+2]..[23,1313+44])
+                "Variable_in_scope" (parsing/syntaxerr.ml[23,1313+4]..[23,1313+21])
+                [
+                  core_type (parsing/syntaxerr.ml[23,1313+25]..[23,1313+35])
+                    Ptyp_constr "Location.t" (parsing/syntaxerr.ml[23,1313+25]..[23,1313+35])
+                    []
+                  core_type (parsing/syntaxerr.ml[23,1313+38]..[23,1313+44])
+                    Ptyp_constr "string" (parsing/syntaxerr.ml[23,1313+38]..[23,1313+44])
+                    []
+                ]
+                None
+              (parsing/syntaxerr.ml[24,1358+2]..[24,1358+23])
+                "Other" (parsing/syntaxerr.ml[24,1358+4]..[24,1358+9])
+                [
+                  core_type (parsing/syntaxerr.ml[24,1358+13]..[24,1358+23])
+                    Ptyp_constr "Location.t" (parsing/syntaxerr.ml[24,1358+13]..[24,1358+23])
+                    []
+                ]
+                None
+              (parsing/syntaxerr.ml[25,1382+2]..[25,1382+41])
+                "Ill_formed_ast" (parsing/syntaxerr.ml[25,1382+4]..[25,1382+18])
+                [
+                  core_type (parsing/syntaxerr.ml[25,1382+22]..[25,1382+32])
+                    Ptyp_constr "Location.t" (parsing/syntaxerr.ml[25,1382+22]..[25,1382+32])
+                    []
+                  core_type (parsing/syntaxerr.ml[25,1382+35]..[25,1382+41])
+                    Ptyp_constr "string" (parsing/syntaxerr.ml[25,1382+35]..[25,1382+41])
+                    []
+                ]
+                None
+              (parsing/syntaxerr.ml[26,1424+2]..[26,1424+47])
+                "Invalid_package_type" (parsing/syntaxerr.ml[26,1424+4]..[26,1424+24])
+                [
+                  core_type (parsing/syntaxerr.ml[26,1424+28]..[26,1424+38])
+                    Ptyp_constr "Location.t" (parsing/syntaxerr.ml[26,1424+28]..[26,1424+38])
+                    []
+                  core_type (parsing/syntaxerr.ml[26,1424+41]..[26,1424+47])
+                    Ptyp_constr "string" (parsing/syntaxerr.ml[26,1424+41]..[26,1424+47])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (parsing/syntaxerr.ml[28,1473+0]..[28,1473+24])
+    Pstr_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (parsing/syntaxerr.ml[28,1473+0]..[28,1473+24])
+          pext_name = "Error"
+          pext_kind =
+            Pext_decl
+              [
+                core_type (parsing/syntaxerr.ml[28,1473+19]..[28,1473+24])
+                  Ptyp_constr "error" (parsing/syntaxerr.ml[28,1473+19]..[28,1473+24])
+                  []
+              ]
+              None
+  structure_item (parsing/syntaxerr.ml[29,1498+0]..[29,1498+22])
+    Pstr_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (parsing/syntaxerr.ml[29,1498+0]..[29,1498+22])
+          pext_name = "Escape_error"
+          pext_kind =
+            Pext_decl
+              []
+              None
+  structure_item (parsing/syntaxerr.ml[31,1522+0]..[39,1722+25])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (parsing/syntaxerr.ml[31,1522+4]..[31,1522+21])
+          Ppat_var "location_of_error" (parsing/syntaxerr.ml[31,1522+4]..[31,1522+21])
+        expression (parsing/syntaxerr.ml[31,1522+24]..[39,1722+25])
+          Pexp_function
+          [
+            <case>
+              pattern (parsing/syntaxerr.ml[32,1555+4]..[39,1722+20])
+                Ppat_or
+                pattern (parsing/syntaxerr.ml[32,1555+4]..[38,1690+31])
+                  Ppat_or
+                  pattern (parsing/syntaxerr.ml[32,1555+4]..[37,1664+25])
+                    Ppat_or
+                    pattern (parsing/syntaxerr.ml[32,1555+4]..[36,1639+24])
+                      Ppat_or
+                      pattern (parsing/syntaxerr.ml[32,1555+4]..[35,1627+11])
+                        Ppat_or
+                        pattern (parsing/syntaxerr.ml[32,1555+4]..[34,1600+26])
+                          Ppat_or
+                          pattern (parsing/syntaxerr.ml[32,1555+4]..[33,1577+22])
+                            Ppat_or
+                            pattern (parsing/syntaxerr.ml[32,1555+4]..[32,1555+21])
+                              Ppat_construct "Unclosed" (parsing/syntaxerr.ml[32,1555+4]..[32,1555+12])
+                              Some
+                                []
+                                pattern (parsing/syntaxerr.ml[32,1555+12]..[32,1555+21])
+                                  Ppat_tuple
+                                  [
+                                    pattern (parsing/syntaxerr.ml[32,1555+13]..[32,1555+14])
+                                      Ppat_var "l" (parsing/syntaxerr.ml[32,1555+13]..[32,1555+14])
+                                    pattern (parsing/syntaxerr.ml[32,1555+15]..[32,1555+16])
+                                      Ppat_any
+                                    pattern (parsing/syntaxerr.ml[32,1555+17]..[32,1555+18])
+                                      Ppat_any
+                                    pattern (parsing/syntaxerr.ml[32,1555+19]..[32,1555+20])
+                                      Ppat_any
+                                  ]
+                            pattern (parsing/syntaxerr.ml[33,1577+4]..[33,1577+22])
+                              Ppat_construct "Applicative_path" (parsing/syntaxerr.ml[33,1577+4]..[33,1577+20])
+                              Some
+                                []
+                                pattern (parsing/syntaxerr.ml[33,1577+21]..[33,1577+22])
+                                  Ppat_var "l" (parsing/syntaxerr.ml[33,1577+21]..[33,1577+22])
+                          pattern (parsing/syntaxerr.ml[34,1600+4]..[34,1600+26])
+                            Ppat_construct "Variable_in_scope" (parsing/syntaxerr.ml[34,1600+4]..[34,1600+21])
+                            Some
+                              []
+                              pattern (parsing/syntaxerr.ml[34,1600+21]..[34,1600+26])
+                                Ppat_tuple
+                                [
+                                  pattern (parsing/syntaxerr.ml[34,1600+22]..[34,1600+23])
+                                    Ppat_var "l" (parsing/syntaxerr.ml[34,1600+22]..[34,1600+23])
+                                  pattern (parsing/syntaxerr.ml[34,1600+24]..[34,1600+25])
+                                    Ppat_any
+                                ]
+                        pattern (parsing/syntaxerr.ml[35,1627+4]..[35,1627+11])
+                          Ppat_construct "Other" (parsing/syntaxerr.ml[35,1627+4]..[35,1627+9])
+                          Some
+                            []
+                            pattern (parsing/syntaxerr.ml[35,1627+10]..[35,1627+11])
+                              Ppat_var "l" (parsing/syntaxerr.ml[35,1627+10]..[35,1627+11])
+                      pattern (parsing/syntaxerr.ml[36,1639+4]..[36,1639+24])
+                        Ppat_construct "Not_expecting" (parsing/syntaxerr.ml[36,1639+4]..[36,1639+17])
+                        Some
+                          []
+                          pattern (parsing/syntaxerr.ml[36,1639+18]..[36,1639+24])
+                            Ppat_tuple
+                            [
+                              pattern (parsing/syntaxerr.ml[36,1639+19]..[36,1639+20])
+                                Ppat_var "l" (parsing/syntaxerr.ml[36,1639+19]..[36,1639+20])
+                              pattern (parsing/syntaxerr.ml[36,1639+22]..[36,1639+23])
+                                Ppat_any
+                            ]
+                    pattern (parsing/syntaxerr.ml[37,1664+4]..[37,1664+25])
+                      Ppat_construct "Ill_formed_ast" (parsing/syntaxerr.ml[37,1664+4]..[37,1664+18])
+                      Some
+                        []
+                        pattern (parsing/syntaxerr.ml[37,1664+19]..[37,1664+25])
+                          Ppat_tuple
+                          [
+                            pattern (parsing/syntaxerr.ml[37,1664+20]..[37,1664+21])
+                              Ppat_var "l" (parsing/syntaxerr.ml[37,1664+20]..[37,1664+21])
+                            pattern (parsing/syntaxerr.ml[37,1664+23]..[37,1664+24])
+                              Ppat_any
+                          ]
+                  pattern (parsing/syntaxerr.ml[38,1690+4]..[38,1690+31])
+                    Ppat_construct "Invalid_package_type" (parsing/syntaxerr.ml[38,1690+4]..[38,1690+24])
+                    Some
+                      []
+                      pattern (parsing/syntaxerr.ml[38,1690+25]..[38,1690+31])
+                        Ppat_tuple
+                        [
+                          pattern (parsing/syntaxerr.ml[38,1690+26]..[38,1690+27])
+                            Ppat_var "l" (parsing/syntaxerr.ml[38,1690+26]..[38,1690+27])
+                          pattern (parsing/syntaxerr.ml[38,1690+29]..[38,1690+30])
+                            Ppat_any
+                        ]
+                pattern (parsing/syntaxerr.ml[39,1722+4]..[39,1722+20])
+                  Ppat_construct "Expecting" (parsing/syntaxerr.ml[39,1722+4]..[39,1722+13])
+                  Some
+                    []
+                    pattern (parsing/syntaxerr.ml[39,1722+14]..[39,1722+20])
+                      Ppat_tuple
+                      [
+                        pattern (parsing/syntaxerr.ml[39,1722+15]..[39,1722+16])
+                          Ppat_var "l" (parsing/syntaxerr.ml[39,1722+15]..[39,1722+16])
+                        pattern (parsing/syntaxerr.ml[39,1722+18]..[39,1722+19])
+                          Ppat_any
+                      ]
+              expression (parsing/syntaxerr.ml[39,1722+24]..[39,1722+25])
+                Pexp_ident "l" (parsing/syntaxerr.ml[39,1722+24]..[39,1722+25])
+          ]
+    ]
+  structure_item (parsing/syntaxerr.ml[42,1750+0]..[43,1777+41])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (parsing/syntaxerr.ml[42,1750+4]..[42,1750+18])
+          Ppat_var "ill_formed_ast" (parsing/syntaxerr.ml[42,1750+4]..[42,1750+18])
+        expression (parsing/syntaxerr.ml[42,1750+19]..[43,1777+41]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (parsing/syntaxerr.ml[42,1750+19]..[42,1750+22])
+            Ppat_var "loc" (parsing/syntaxerr.ml[42,1750+19]..[42,1750+22])
+          expression (parsing/syntaxerr.ml[42,1750+23]..[43,1777+41]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (parsing/syntaxerr.ml[42,1750+23]..[42,1750+24])
+              Ppat_var "s" (parsing/syntaxerr.ml[42,1750+23]..[42,1750+24])
+            expression (parsing/syntaxerr.ml[43,1777+2]..[43,1777+41])
+              Pexp_apply
+              expression (parsing/syntaxerr.ml[43,1777+2]..[43,1777+7])
+                Pexp_ident "raise" (parsing/syntaxerr.ml[43,1777+2]..[43,1777+7])
+              [
+                <arg>
+                Nolabel
+                  expression (parsing/syntaxerr.ml[43,1777+8]..[43,1777+41])
+                    Pexp_construct "Error" (parsing/syntaxerr.ml[43,1777+9]..[43,1777+14])
+                    Some
+                      expression (parsing/syntaxerr.ml[43,1777+15]..[43,1777+40])
+                        Pexp_construct "Ill_formed_ast" (parsing/syntaxerr.ml[43,1777+16]..[43,1777+30])
+                        Some
+                          expression (parsing/syntaxerr.ml[43,1777+31]..[43,1777+39])
+                            Pexp_tuple
+                            [
+                              expression (parsing/syntaxerr.ml[43,1777+32]..[43,1777+35])
+                                Pexp_ident "loc" (parsing/syntaxerr.ml[43,1777+32]..[43,1777+35])
+                              expression (parsing/syntaxerr.ml[43,1777+37]..[43,1777+38])
+                                Pexp_ident "s" (parsing/syntaxerr.ml[43,1777+37]..[43,1777+38])
+                            ]
+              ]
+    ]
+]
+

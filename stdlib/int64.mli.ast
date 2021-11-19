@@ -1,0 +1,1071 @@
+[
+  signature_item (stdlib/int64.mli[16,1079+0]..[35,1776+2])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (stdlib/int64.mli[16,1079+0]..[35,1776+2])
+        Pstr_eval
+        expression (stdlib/int64.mli[16,1079+0]..[35,1776+2])
+          Pexp_constant PConst_string(" 64-bit integers.\n\n   This module provides operations on the type [int64] of\n   signed 64-bit integers.  Unlike the built-in [int] type,\n   the type [int64] is guaranteed to be exactly 64-bit wide on all\n   platforms.  All arithmetic operations over [int64] are taken\n   modulo 2{^64}\n\n   Performance notice: values of type [int64] occupy more memory\n   space than values of type [int], and arithmetic operations on\n   [int64] are generally slower than those on [int].  Use [int64]\n   only when the application requires exact 64-bit arithmetic.\n\n    Literals for 64-bit integers are suffixed by L:\n    {[\n      let zero: int64 = 0L\n      let one: int64 = 1L\n      let m_one: int64 = -1L\n    ]}\n",(stdlib/int64.mli[16,1079+0]..[35,1776+2]),None)
+    ]
+  signature_item (stdlib/int64.mli[37,1780+0]..[37,1780+16])
+    Psig_value
+    value_description "zero" (stdlib/int64.mli[37,1780+4]..[37,1780+8]) (stdlib/int64.mli[37,1780+0]..[37,1780+16])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[38,1797+0]..[38,1797+28])
+            Pstr_eval
+            expression (stdlib/int64.mli[38,1797+0]..[38,1797+28])
+              Pexp_constant PConst_string(" The 64-bit integer 0. ",(stdlib/int64.mli[38,1797+0]..[38,1797+28]),None)
+        ]
+      core_type (stdlib/int64.mli[37,1780+11]..[37,1780+16])
+        Ptyp_constr "int64" (stdlib/int64.mli[37,1780+11]..[37,1780+16])
+        []
+      []
+  signature_item (stdlib/int64.mli[40,1827+0]..[40,1827+15])
+    Psig_value
+    value_description "one" (stdlib/int64.mli[40,1827+4]..[40,1827+7]) (stdlib/int64.mli[40,1827+0]..[40,1827+15])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[41,1843+0]..[41,1843+28])
+            Pstr_eval
+            expression (stdlib/int64.mli[41,1843+0]..[41,1843+28])
+              Pexp_constant PConst_string(" The 64-bit integer 1. ",(stdlib/int64.mli[41,1843+0]..[41,1843+28]),None)
+        ]
+      core_type (stdlib/int64.mli[40,1827+10]..[40,1827+15])
+        Ptyp_constr "int64" (stdlib/int64.mli[40,1827+10]..[40,1827+15])
+        []
+      []
+  signature_item (stdlib/int64.mli[43,1873+0]..[43,1873+21])
+    Psig_value
+    value_description "minus_one" (stdlib/int64.mli[43,1873+4]..[43,1873+13]) (stdlib/int64.mli[43,1873+0]..[43,1873+21])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[44,1895+0]..[44,1895+29])
+            Pstr_eval
+            expression (stdlib/int64.mli[44,1895+0]..[44,1895+29])
+              Pexp_constant PConst_string(" The 64-bit integer -1. ",(stdlib/int64.mli[44,1895+0]..[44,1895+29]),None)
+        ]
+      core_type (stdlib/int64.mli[43,1873+16]..[43,1873+21])
+        Ptyp_constr "int64" (stdlib/int64.mli[43,1873+16]..[43,1873+21])
+        []
+      []
+  signature_item (stdlib/int64.mli[46,1926+0]..[46,1926+44])
+    Psig_value
+    value_description "neg" (stdlib/int64.mli[46,1926+9]..[46,1926+12]) (stdlib/int64.mli[46,1926+0]..[46,1926+44])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[47,1971+0]..[47,1971+22])
+            Pstr_eval
+            expression (stdlib/int64.mli[47,1971+0]..[47,1971+22])
+              Pexp_constant PConst_string(" Unary negation. ",(stdlib/int64.mli[47,1971+0]..[47,1971+22]),None)
+        ]
+      core_type (stdlib/int64.mli[46,1926+15]..[46,1926+29])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[46,1926+15]..[46,1926+20])
+          Ptyp_constr "int64" (stdlib/int64.mli[46,1926+15]..[46,1926+20])
+          []
+        core_type (stdlib/int64.mli[46,1926+24]..[46,1926+29])
+          Ptyp_constr "int64" (stdlib/int64.mli[46,1926+24]..[46,1926+29])
+          []
+      [
+        "%int64_neg"
+      ]
+  signature_item (stdlib/int64.mli[49,1995+0]..[49,1995+53])
+    Psig_value
+    value_description "add" (stdlib/int64.mli[49,1995+9]..[49,1995+12]) (stdlib/int64.mli[49,1995+0]..[49,1995+53])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[50,2049+0]..[50,2049+16])
+            Pstr_eval
+            expression (stdlib/int64.mli[50,2049+0]..[50,2049+16])
+              Pexp_constant PConst_string(" Addition. ",(stdlib/int64.mli[50,2049+0]..[50,2049+16]),None)
+        ]
+      core_type (stdlib/int64.mli[49,1995+15]..[49,1995+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[49,1995+15]..[49,1995+20])
+          Ptyp_constr "int64" (stdlib/int64.mli[49,1995+15]..[49,1995+20])
+          []
+        core_type (stdlib/int64.mli[49,1995+24]..[49,1995+38])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[49,1995+24]..[49,1995+29])
+            Ptyp_constr "int64" (stdlib/int64.mli[49,1995+24]..[49,1995+29])
+            []
+          core_type (stdlib/int64.mli[49,1995+33]..[49,1995+38])
+            Ptyp_constr "int64" (stdlib/int64.mli[49,1995+33]..[49,1995+38])
+            []
+      [
+        "%int64_add"
+      ]
+  signature_item (stdlib/int64.mli[52,2067+0]..[52,2067+53])
+    Psig_value
+    value_description "sub" (stdlib/int64.mli[52,2067+9]..[52,2067+12]) (stdlib/int64.mli[52,2067+0]..[52,2067+53])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[53,2121+0]..[53,2121+19])
+            Pstr_eval
+            expression (stdlib/int64.mli[53,2121+0]..[53,2121+19])
+              Pexp_constant PConst_string(" Subtraction. ",(stdlib/int64.mli[53,2121+0]..[53,2121+19]),None)
+        ]
+      core_type (stdlib/int64.mli[52,2067+15]..[52,2067+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[52,2067+15]..[52,2067+20])
+          Ptyp_constr "int64" (stdlib/int64.mli[52,2067+15]..[52,2067+20])
+          []
+        core_type (stdlib/int64.mli[52,2067+24]..[52,2067+38])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[52,2067+24]..[52,2067+29])
+            Ptyp_constr "int64" (stdlib/int64.mli[52,2067+24]..[52,2067+29])
+            []
+          core_type (stdlib/int64.mli[52,2067+33]..[52,2067+38])
+            Ptyp_constr "int64" (stdlib/int64.mli[52,2067+33]..[52,2067+38])
+            []
+      [
+        "%int64_sub"
+      ]
+  signature_item (stdlib/int64.mli[55,2142+0]..[55,2142+53])
+    Psig_value
+    value_description "mul" (stdlib/int64.mli[55,2142+9]..[55,2142+12]) (stdlib/int64.mli[55,2142+0]..[55,2142+53])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[56,2196+0]..[56,2196+22])
+            Pstr_eval
+            expression (stdlib/int64.mli[56,2196+0]..[56,2196+22])
+              Pexp_constant PConst_string(" Multiplication. ",(stdlib/int64.mli[56,2196+0]..[56,2196+22]),None)
+        ]
+      core_type (stdlib/int64.mli[55,2142+15]..[55,2142+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[55,2142+15]..[55,2142+20])
+          Ptyp_constr "int64" (stdlib/int64.mli[55,2142+15]..[55,2142+20])
+          []
+        core_type (stdlib/int64.mli[55,2142+24]..[55,2142+38])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[55,2142+24]..[55,2142+29])
+            Ptyp_constr "int64" (stdlib/int64.mli[55,2142+24]..[55,2142+29])
+            []
+          core_type (stdlib/int64.mli[55,2142+33]..[55,2142+38])
+            Ptyp_constr "int64" (stdlib/int64.mli[55,2142+33]..[55,2142+38])
+            []
+      [
+        "%int64_mul"
+      ]
+  signature_item (stdlib/int64.mli[58,2220+0]..[58,2220+53])
+    Psig_value
+    value_description "div" (stdlib/int64.mli[58,2220+9]..[58,2220+12]) (stdlib/int64.mli[58,2220+0]..[58,2220+53])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[59,2274+0]..[62,2401+65])
+            Pstr_eval
+            expression (stdlib/int64.mli[59,2274+0]..[62,2401+65])
+              Pexp_constant PConst_string(" Integer division.\n   @raise Division_by_zero if the second\n   argument is zero.  This division rounds the real quotient of\n   its arguments towards zero, as specified for {!Stdlib.(/)}. ",(stdlib/int64.mli[59,2274+0]..[62,2401+65]),None)
+        ]
+      core_type (stdlib/int64.mli[58,2220+15]..[58,2220+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[58,2220+15]..[58,2220+20])
+          Ptyp_constr "int64" (stdlib/int64.mli[58,2220+15]..[58,2220+20])
+          []
+        core_type (stdlib/int64.mli[58,2220+24]..[58,2220+38])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[58,2220+24]..[58,2220+29])
+            Ptyp_constr "int64" (stdlib/int64.mli[58,2220+24]..[58,2220+29])
+            []
+          core_type (stdlib/int64.mli[58,2220+33]..[58,2220+38])
+            Ptyp_constr "int64" (stdlib/int64.mli[58,2220+33]..[58,2220+38])
+            []
+      [
+        "%int64_div"
+      ]
+  signature_item (stdlib/int64.mli[64,2468+0]..[64,2468+42])
+    Psig_value
+    value_description "unsigned_div" (stdlib/int64.mli[64,2468+4]..[64,2468+16]) (stdlib/int64.mli[64,2468+0]..[64,2468+42])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[65,2511+0]..[68,2618+20])
+            Pstr_eval
+            expression (stdlib/int64.mli[65,2511+0]..[68,2618+20])
+              Pexp_constant PConst_string(" Same as {!div}, except that arguments and result are interpreted as {e\n    unsigned} 64-bit integers.\n\n    @since 4.08.0 ",(stdlib/int64.mli[65,2511+0]..[68,2618+20]),None)
+        ]
+      core_type (stdlib/int64.mli[64,2468+19]..[64,2468+42])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[64,2468+19]..[64,2468+24])
+          Ptyp_constr "int64" (stdlib/int64.mli[64,2468+19]..[64,2468+24])
+          []
+        core_type (stdlib/int64.mli[64,2468+28]..[64,2468+42])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[64,2468+28]..[64,2468+33])
+            Ptyp_constr "int64" (stdlib/int64.mli[64,2468+28]..[64,2468+33])
+            []
+          core_type (stdlib/int64.mli[64,2468+37]..[64,2468+42])
+            Ptyp_constr "int64" (stdlib/int64.mli[64,2468+37]..[64,2468+42])
+            []
+      []
+  signature_item (stdlib/int64.mli[70,2640+0]..[70,2640+53])
+    Psig_value
+    value_description "rem" (stdlib/int64.mli[70,2640+9]..[70,2640+12]) (stdlib/int64.mli[70,2640+0]..[70,2640+53])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[71,2694+0]..[74,2871+60])
+            Pstr_eval
+            expression (stdlib/int64.mli[71,2694+0]..[74,2871+60])
+              Pexp_constant PConst_string(" Integer remainder.  If [y] is not zero, the result\n   of [Int64.rem x y] satisfies the following property:\n   [x = Int64.add (Int64.mul (Int64.div x y) y) (Int64.rem x y)].\n   If [y = 0], [Int64.rem x y] raises [Division_by_zero]. ",(stdlib/int64.mli[71,2694+0]..[74,2871+60]),None)
+        ]
+      core_type (stdlib/int64.mli[70,2640+15]..[70,2640+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[70,2640+15]..[70,2640+20])
+          Ptyp_constr "int64" (stdlib/int64.mli[70,2640+15]..[70,2640+20])
+          []
+        core_type (stdlib/int64.mli[70,2640+24]..[70,2640+38])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[70,2640+24]..[70,2640+29])
+            Ptyp_constr "int64" (stdlib/int64.mli[70,2640+24]..[70,2640+29])
+            []
+          core_type (stdlib/int64.mli[70,2640+33]..[70,2640+38])
+            Ptyp_constr "int64" (stdlib/int64.mli[70,2640+33]..[70,2640+38])
+            []
+      [
+        "%int64_mod"
+      ]
+  signature_item (stdlib/int64.mli[76,2933+0]..[76,2933+42])
+    Psig_value
+    value_description "unsigned_rem" (stdlib/int64.mli[76,2933+4]..[76,2933+16]) (stdlib/int64.mli[76,2933+0]..[76,2933+42])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[77,2976+0]..[80,3083+20])
+            Pstr_eval
+            expression (stdlib/int64.mli[77,2976+0]..[80,3083+20])
+              Pexp_constant PConst_string(" Same as {!rem}, except that arguments and result are interpreted as {e\n    unsigned} 64-bit integers.\n\n    @since 4.08.0 ",(stdlib/int64.mli[77,2976+0]..[80,3083+20]),None)
+        ]
+      core_type (stdlib/int64.mli[76,2933+19]..[76,2933+42])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[76,2933+19]..[76,2933+24])
+          Ptyp_constr "int64" (stdlib/int64.mli[76,2933+19]..[76,2933+24])
+          []
+        core_type (stdlib/int64.mli[76,2933+28]..[76,2933+42])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[76,2933+28]..[76,2933+33])
+            Ptyp_constr "int64" (stdlib/int64.mli[76,2933+28]..[76,2933+33])
+            []
+          core_type (stdlib/int64.mli[76,2933+37]..[76,2933+42])
+            Ptyp_constr "int64" (stdlib/int64.mli[76,2933+37]..[76,2933+42])
+            []
+      []
+  signature_item (stdlib/int64.mli[82,3105+0]..[82,3105+25])
+    Psig_value
+    value_description "succ" (stdlib/int64.mli[82,3105+4]..[82,3105+8]) (stdlib/int64.mli[82,3105+0]..[82,3105+25])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[83,3131+0]..[83,3131+61])
+            Pstr_eval
+            expression (stdlib/int64.mli[83,3131+0]..[83,3131+61])
+              Pexp_constant PConst_string(" Successor.  [Int64.succ x] is [Int64.add x Int64.one]. ",(stdlib/int64.mli[83,3131+0]..[83,3131+61]),None)
+        ]
+      core_type (stdlib/int64.mli[82,3105+11]..[82,3105+25])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[82,3105+11]..[82,3105+16])
+          Ptyp_constr "int64" (stdlib/int64.mli[82,3105+11]..[82,3105+16])
+          []
+        core_type (stdlib/int64.mli[82,3105+20]..[82,3105+25])
+          Ptyp_constr "int64" (stdlib/int64.mli[82,3105+20]..[82,3105+25])
+          []
+      []
+  signature_item (stdlib/int64.mli[85,3194+0]..[85,3194+25])
+    Psig_value
+    value_description "pred" (stdlib/int64.mli[85,3194+4]..[85,3194+8]) (stdlib/int64.mli[85,3194+0]..[85,3194+25])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[86,3220+0]..[86,3220+63])
+            Pstr_eval
+            expression (stdlib/int64.mli[86,3220+0]..[86,3220+63])
+              Pexp_constant PConst_string(" Predecessor.  [Int64.pred x] is [Int64.sub x Int64.one]. ",(stdlib/int64.mli[86,3220+0]..[86,3220+63]),None)
+        ]
+      core_type (stdlib/int64.mli[85,3194+11]..[85,3194+25])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[85,3194+11]..[85,3194+16])
+          Ptyp_constr "int64" (stdlib/int64.mli[85,3194+11]..[85,3194+16])
+          []
+        core_type (stdlib/int64.mli[85,3194+20]..[85,3194+25])
+          Ptyp_constr "int64" (stdlib/int64.mli[85,3194+20]..[85,3194+25])
+          []
+      []
+  signature_item (stdlib/int64.mli[88,3285+0]..[88,3285+24])
+    Psig_value
+    value_description "abs" (stdlib/int64.mli[88,3285+4]..[88,3285+7]) (stdlib/int64.mli[88,3285+0]..[88,3285+24])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[89,3310+0]..[89,3310+49])
+            Pstr_eval
+            expression (stdlib/int64.mli[89,3310+0]..[89,3310+49])
+              Pexp_constant PConst_string(" Return the absolute value of its argument. ",(stdlib/int64.mli[89,3310+0]..[89,3310+49]),None)
+        ]
+      core_type (stdlib/int64.mli[88,3285+10]..[88,3285+24])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[88,3285+10]..[88,3285+15])
+          Ptyp_constr "int64" (stdlib/int64.mli[88,3285+10]..[88,3285+15])
+          []
+        core_type (stdlib/int64.mli[88,3285+19]..[88,3285+24])
+          Ptyp_constr "int64" (stdlib/int64.mli[88,3285+19]..[88,3285+24])
+          []
+      []
+  signature_item (stdlib/int64.mli[91,3361+0]..[91,3361+19])
+    Psig_value
+    value_description "max_int" (stdlib/int64.mli[91,3361+4]..[91,3361+11]) (stdlib/int64.mli[91,3361+0]..[91,3361+19])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[92,3381+0]..[92,3381+61])
+            Pstr_eval
+            expression (stdlib/int64.mli[92,3381+0]..[92,3381+61])
+              Pexp_constant PConst_string(" The greatest representable 64-bit integer, 2{^63} - 1. ",(stdlib/int64.mli[92,3381+0]..[92,3381+61]),None)
+        ]
+      core_type (stdlib/int64.mli[91,3361+14]..[91,3361+19])
+        Ptyp_constr "int64" (stdlib/int64.mli[91,3361+14]..[91,3361+19])
+        []
+      []
+  signature_item (stdlib/int64.mli[94,3444+0]..[94,3444+19])
+    Psig_value
+    value_description "min_int" (stdlib/int64.mli[94,3444+4]..[94,3444+11]) (stdlib/int64.mli[94,3444+0]..[94,3444+19])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[95,3464+0]..[95,3464+58])
+            Pstr_eval
+            expression (stdlib/int64.mli[95,3464+0]..[95,3464+58])
+              Pexp_constant PConst_string(" The smallest representable 64-bit integer, -2{^63}. ",(stdlib/int64.mli[95,3464+0]..[95,3464+58]),None)
+        ]
+      core_type (stdlib/int64.mli[94,3444+14]..[94,3444+19])
+        Ptyp_constr "int64" (stdlib/int64.mli[94,3444+14]..[94,3444+19])
+        []
+      []
+  signature_item (stdlib/int64.mli[97,3524+0]..[97,3524+56])
+    Psig_value
+    value_description "logand" (stdlib/int64.mli[97,3524+9]..[97,3524+15]) (stdlib/int64.mli[97,3524+0]..[97,3524+56])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[98,3581+0]..[98,3581+27])
+            Pstr_eval
+            expression (stdlib/int64.mli[98,3581+0]..[98,3581+27])
+              Pexp_constant PConst_string(" Bitwise logical and. ",(stdlib/int64.mli[98,3581+0]..[98,3581+27]),None)
+        ]
+      core_type (stdlib/int64.mli[97,3524+18]..[97,3524+41])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[97,3524+18]..[97,3524+23])
+          Ptyp_constr "int64" (stdlib/int64.mli[97,3524+18]..[97,3524+23])
+          []
+        core_type (stdlib/int64.mli[97,3524+27]..[97,3524+41])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[97,3524+27]..[97,3524+32])
+            Ptyp_constr "int64" (stdlib/int64.mli[97,3524+27]..[97,3524+32])
+            []
+          core_type (stdlib/int64.mli[97,3524+36]..[97,3524+41])
+            Ptyp_constr "int64" (stdlib/int64.mli[97,3524+36]..[97,3524+41])
+            []
+      [
+        "%int64_and"
+      ]
+  signature_item (stdlib/int64.mli[100,3610+0]..[100,3610+54])
+    Psig_value
+    value_description "logor" (stdlib/int64.mli[100,3610+9]..[100,3610+14]) (stdlib/int64.mli[100,3610+0]..[100,3610+54])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[101,3665+0]..[101,3665+26])
+            Pstr_eval
+            expression (stdlib/int64.mli[101,3665+0]..[101,3665+26])
+              Pexp_constant PConst_string(" Bitwise logical or. ",(stdlib/int64.mli[101,3665+0]..[101,3665+26]),None)
+        ]
+      core_type (stdlib/int64.mli[100,3610+17]..[100,3610+40])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[100,3610+17]..[100,3610+22])
+          Ptyp_constr "int64" (stdlib/int64.mli[100,3610+17]..[100,3610+22])
+          []
+        core_type (stdlib/int64.mli[100,3610+26]..[100,3610+40])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[100,3610+26]..[100,3610+31])
+            Ptyp_constr "int64" (stdlib/int64.mli[100,3610+26]..[100,3610+31])
+            []
+          core_type (stdlib/int64.mli[100,3610+35]..[100,3610+40])
+            Ptyp_constr "int64" (stdlib/int64.mli[100,3610+35]..[100,3610+40])
+            []
+      [
+        "%int64_or"
+      ]
+  signature_item (stdlib/int64.mli[103,3693+0]..[103,3693+56])
+    Psig_value
+    value_description "logxor" (stdlib/int64.mli[103,3693+9]..[103,3693+15]) (stdlib/int64.mli[103,3693+0]..[103,3693+56])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[104,3750+0]..[104,3750+36])
+            Pstr_eval
+            expression (stdlib/int64.mli[104,3750+0]..[104,3750+36])
+              Pexp_constant PConst_string(" Bitwise logical exclusive or. ",(stdlib/int64.mli[104,3750+0]..[104,3750+36]),None)
+        ]
+      core_type (stdlib/int64.mli[103,3693+18]..[103,3693+41])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[103,3693+18]..[103,3693+23])
+          Ptyp_constr "int64" (stdlib/int64.mli[103,3693+18]..[103,3693+23])
+          []
+        core_type (stdlib/int64.mli[103,3693+27]..[103,3693+41])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[103,3693+27]..[103,3693+32])
+            Ptyp_constr "int64" (stdlib/int64.mli[103,3693+27]..[103,3693+32])
+            []
+          core_type (stdlib/int64.mli[103,3693+36]..[103,3693+41])
+            Ptyp_constr "int64" (stdlib/int64.mli[103,3693+36]..[103,3693+41])
+            []
+      [
+        "%int64_xor"
+      ]
+  signature_item (stdlib/int64.mli[106,3788+0]..[106,3788+27])
+    Psig_value
+    value_description "lognot" (stdlib/int64.mli[106,3788+4]..[106,3788+10]) (stdlib/int64.mli[106,3788+0]..[106,3788+27])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[107,3816+0]..[107,3816+32])
+            Pstr_eval
+            expression (stdlib/int64.mli[107,3816+0]..[107,3816+32])
+              Pexp_constant PConst_string(" Bitwise logical negation. ",(stdlib/int64.mli[107,3816+0]..[107,3816+32]),None)
+        ]
+      core_type (stdlib/int64.mli[106,3788+13]..[106,3788+27])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[106,3788+13]..[106,3788+18])
+          Ptyp_constr "int64" (stdlib/int64.mli[106,3788+13]..[106,3788+18])
+          []
+        core_type (stdlib/int64.mli[106,3788+22]..[106,3788+27])
+          Ptyp_constr "int64" (stdlib/int64.mli[106,3788+22]..[106,3788+27])
+          []
+      []
+  signature_item (stdlib/int64.mli[109,3850+0]..[109,3850+58])
+    Psig_value
+    value_description "shift_left" (stdlib/int64.mli[109,3850+9]..[109,3850+19]) (stdlib/int64.mli[109,3850+0]..[109,3850+58])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[110,3909+0]..[111,3972+56])
+            Pstr_eval
+            expression (stdlib/int64.mli[110,3909+0]..[111,3972+56])
+              Pexp_constant PConst_string(" [Int64.shift_left x y] shifts [x] to the left by [y] bits.\n   The result is unspecified if [y < 0] or [y >= 64]. ",(stdlib/int64.mli[110,3909+0]..[111,3972+56]),None)
+        ]
+      core_type (stdlib/int64.mli[109,3850+22]..[109,3850+43])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[109,3850+22]..[109,3850+27])
+          Ptyp_constr "int64" (stdlib/int64.mli[109,3850+22]..[109,3850+27])
+          []
+        core_type (stdlib/int64.mli[109,3850+31]..[109,3850+43])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[109,3850+31]..[109,3850+34])
+            Ptyp_constr "int" (stdlib/int64.mli[109,3850+31]..[109,3850+34])
+            []
+          core_type (stdlib/int64.mli[109,3850+38]..[109,3850+43])
+            Ptyp_constr "int64" (stdlib/int64.mli[109,3850+38]..[109,3850+43])
+            []
+      [
+        "%int64_lsl"
+      ]
+  signature_item (stdlib/int64.mli[113,4030+0]..[113,4030+59])
+    Psig_value
+    value_description "shift_right" (stdlib/int64.mli[113,4030+9]..[113,4030+20]) (stdlib/int64.mli[113,4030+0]..[113,4030+59])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[114,4090+0]..[117,4258+56])
+            Pstr_eval
+            expression (stdlib/int64.mli[114,4090+0]..[117,4258+56])
+              Pexp_constant PConst_string(" [Int64.shift_right x y] shifts [x] to the right by [y] bits.\n   This is an arithmetic shift: the sign bit of [x] is replicated\n   and inserted in the vacated bits.\n   The result is unspecified if [y < 0] or [y >= 64]. ",(stdlib/int64.mli[114,4090+0]..[117,4258+56]),None)
+        ]
+      core_type (stdlib/int64.mli[113,4030+23]..[113,4030+44])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[113,4030+23]..[113,4030+28])
+          Ptyp_constr "int64" (stdlib/int64.mli[113,4030+23]..[113,4030+28])
+          []
+        core_type (stdlib/int64.mli[113,4030+32]..[113,4030+44])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[113,4030+32]..[113,4030+35])
+            Ptyp_constr "int" (stdlib/int64.mli[113,4030+32]..[113,4030+35])
+            []
+          core_type (stdlib/int64.mli[113,4030+39]..[113,4030+44])
+            Ptyp_constr "int64" (stdlib/int64.mli[113,4030+39]..[113,4030+44])
+            []
+      [
+        "%int64_asr"
+      ]
+  signature_item (stdlib/int64.mli[119,4316+0]..[119,4316+67])
+    Psig_value
+    value_description "shift_right_logical" (stdlib/int64.mli[119,4316+9]..[119,4316+28]) (stdlib/int64.mli[119,4316+0]..[119,4316+67])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[120,4384+0]..[123,4559+56])
+            Pstr_eval
+            expression (stdlib/int64.mli[120,4384+0]..[123,4559+56])
+              Pexp_constant PConst_string(" [Int64.shift_right_logical x y] shifts [x] to the right by [y] bits.\n   This is a logical shift: zeroes are inserted in the vacated bits\n   regardless of the sign of [x].\n   The result is unspecified if [y < 0] or [y >= 64]. ",(stdlib/int64.mli[120,4384+0]..[123,4559+56]),None)
+        ]
+      core_type (stdlib/int64.mli[119,4316+31]..[119,4316+52])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[119,4316+31]..[119,4316+36])
+          Ptyp_constr "int64" (stdlib/int64.mli[119,4316+31]..[119,4316+36])
+          []
+        core_type (stdlib/int64.mli[119,4316+40]..[119,4316+52])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[119,4316+40]..[119,4316+43])
+            Ptyp_constr "int" (stdlib/int64.mli[119,4316+40]..[119,4316+43])
+            []
+          core_type (stdlib/int64.mli[119,4316+47]..[119,4316+52])
+            Ptyp_constr "int64" (stdlib/int64.mli[119,4316+47]..[119,4316+52])
+            []
+      [
+        "%int64_lsr"
+      ]
+  signature_item (stdlib/int64.mli[125,4617+0]..[125,4617+48])
+    Psig_value
+    value_description "of_int" (stdlib/int64.mli[125,4617+9]..[125,4617+15]) (stdlib/int64.mli[125,4617+0]..[125,4617+48])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[126,4666+0]..[127,4729+22])
+            Pstr_eval
+            expression (stdlib/int64.mli[126,4666+0]..[127,4729+22])
+              Pexp_constant PConst_string(" Convert the given integer (type [int]) to a 64-bit integer\n    (type [int64]). ",(stdlib/int64.mli[126,4666+0]..[127,4729+22]),None)
+        ]
+      core_type (stdlib/int64.mli[125,4617+18]..[125,4617+30])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[125,4617+18]..[125,4617+21])
+          Ptyp_constr "int" (stdlib/int64.mli[125,4617+18]..[125,4617+21])
+          []
+        core_type (stdlib/int64.mli[125,4617+25]..[125,4617+30])
+          Ptyp_constr "int64" (stdlib/int64.mli[125,4617+25]..[125,4617+30])
+          []
+      [
+        "%int64_of_int"
+      ]
+  signature_item (stdlib/int64.mli[129,4753+0]..[129,4753+48])
+    Psig_value
+    value_description "to_int" (stdlib/int64.mli[129,4753+9]..[129,4753+15]) (stdlib/int64.mli[129,4753+0]..[129,4753+48])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[130,4802+0]..[135,5109+28])
+            Pstr_eval
+            expression (stdlib/int64.mli[130,4802+0]..[135,5109+28])
+              Pexp_constant PConst_string(" Convert the given 64-bit integer (type [int64]) to an\n   integer (type [int]).  On 64-bit platforms, the 64-bit integer\n   is taken modulo 2{^63}, i.e. the high-order bit is lost\n   during the conversion.  On 32-bit platforms, the 64-bit integer\n   is taken modulo 2{^31}, i.e. the top 33 bits are lost\n   during the conversion. ",(stdlib/int64.mli[130,4802+0]..[135,5109+28]),None)
+        ]
+      core_type (stdlib/int64.mli[129,4753+18]..[129,4753+30])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[129,4753+18]..[129,4753+23])
+          Ptyp_constr "int64" (stdlib/int64.mli[129,4753+18]..[129,4753+23])
+          []
+        core_type (stdlib/int64.mli[129,4753+27]..[129,4753+30])
+          Ptyp_constr "int" (stdlib/int64.mli[129,4753+27]..[129,4753+30])
+          []
+      [
+        "%int64_to_int"
+      ]
+  signature_item (stdlib/int64.mli[137,5139+0]..[137,5139+41])
+    Psig_value
+    value_description "unsigned_to_int" (stdlib/int64.mli[137,5139+4]..[137,5139+19]) (stdlib/int64.mli[137,5139+0]..[137,5139+41])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[138,5181+0]..[142,5348+20])
+            Pstr_eval
+            expression (stdlib/int64.mli[138,5181+0]..[142,5348+20])
+              Pexp_constant PConst_string(" Same as {!to_int}, but interprets the argument as an {e unsigned} integer.\n    Returns [None] if the unsigned value of the argument cannot fit into an\n    [int].\n\n    @since 4.08.0 ",(stdlib/int64.mli[138,5181+0]..[142,5348+20]),None)
+        ]
+      core_type (stdlib/int64.mli[137,5139+22]..[137,5139+41])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[137,5139+22]..[137,5139+27])
+          Ptyp_constr "int64" (stdlib/int64.mli[137,5139+22]..[137,5139+27])
+          []
+        core_type (stdlib/int64.mli[137,5139+31]..[137,5139+41])
+          Ptyp_constr "option" (stdlib/int64.mli[137,5139+35]..[137,5139+41])
+          [
+            core_type (stdlib/int64.mli[137,5139+31]..[137,5139+34])
+              Ptyp_constr "int" (stdlib/int64.mli[137,5139+31]..[137,5139+34])
+              []
+          ]
+      []
+  signature_item (stdlib/int64.mli[144,5370+0]..[146,5461+25])
+    Psig_value
+    value_description "of_float" (stdlib/int64.mli[144,5370+9]..[144,5370+17]) (stdlib/int64.mli[144,5370+0]..[146,5461+25])
+      attribute "unboxed"
+        []
+      attribute "noalloc"
+        []
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[147,5487+0]..[150,5675+77])
+            Pstr_eval
+            expression (stdlib/int64.mli[147,5487+0]..[150,5675+77])
+              Pexp_constant PConst_string(" Convert the given floating-point number to a 64-bit integer,\n   discarding the fractional part (truncate towards 0).\n   The result of the conversion is undefined if, after truncation,\n   the number is outside the range \\[{!Int64.min_int}, {!Int64.max_int}\\]. ",(stdlib/int64.mli[147,5487+0]..[150,5675+77]),None)
+        ]
+      core_type (stdlib/int64.mli[144,5370+20]..[144,5370+34])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[144,5370+20]..[144,5370+25])
+          Ptyp_constr "float" (stdlib/int64.mli[144,5370+20]..[144,5370+25])
+          []
+        core_type (stdlib/int64.mli[144,5370+29]..[144,5370+34])
+          Ptyp_constr "int64" (stdlib/int64.mli[144,5370+29]..[144,5370+34])
+          []
+      [
+        "caml_int64_of_float"
+        "caml_int64_of_float_unboxed"
+      ]
+  signature_item (stdlib/int64.mli[152,5754+0]..[154,5845+25])
+    Psig_value
+    value_description "to_float" (stdlib/int64.mli[152,5754+9]..[152,5754+17]) (stdlib/int64.mli[152,5754+0]..[154,5845+25])
+      attribute "unboxed"
+        []
+      attribute "noalloc"
+        []
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[155,5871+0]..[155,5871+67])
+            Pstr_eval
+            expression (stdlib/int64.mli[155,5871+0]..[155,5871+67])
+              Pexp_constant PConst_string(" Convert the given 64-bit integer to a floating-point number. ",(stdlib/int64.mli[155,5871+0]..[155,5871+67]),None)
+        ]
+      core_type (stdlib/int64.mli[152,5754+20]..[152,5754+34])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[152,5754+20]..[152,5754+25])
+          Ptyp_constr "int64" (stdlib/int64.mli[152,5754+20]..[152,5754+25])
+          []
+        core_type (stdlib/int64.mli[152,5754+29]..[152,5754+34])
+          Ptyp_constr "float" (stdlib/int64.mli[152,5754+29]..[152,5754+34])
+          []
+      [
+        "caml_int64_to_float"
+        "caml_int64_to_float_unboxed"
+      ]
+  signature_item (stdlib/int64.mli[158,5941+0]..[158,5941+54])
+    Psig_value
+    value_description "of_int32" (stdlib/int64.mli[158,5941+9]..[158,5941+17]) (stdlib/int64.mli[158,5941+0]..[158,5941+54])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[159,5996+0]..[160,6048+41])
+            Pstr_eval
+            expression (stdlib/int64.mli[159,5996+0]..[160,6048+41])
+              Pexp_constant PConst_string(" Convert the given 32-bit integer (type [int32])\n   to a 64-bit integer (type [int64]). ",(stdlib/int64.mli[159,5996+0]..[160,6048+41]),None)
+        ]
+      core_type (stdlib/int64.mli[158,5941+20]..[158,5941+34])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[158,5941+20]..[158,5941+25])
+          Ptyp_constr "int32" (stdlib/int64.mli[158,5941+20]..[158,5941+25])
+          []
+        core_type (stdlib/int64.mli[158,5941+29]..[158,5941+34])
+          Ptyp_constr "int64" (stdlib/int64.mli[158,5941+29]..[158,5941+34])
+          []
+      [
+        "%int64_of_int32"
+      ]
+  signature_item (stdlib/int64.mli[162,6091+0]..[162,6091+54])
+    Psig_value
+    value_description "to_int32" (stdlib/int64.mli[162,6091+9]..[162,6091+17]) (stdlib/int64.mli[162,6091+0]..[162,6091+54])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[163,6146+0]..[166,6313+29])
+            Pstr_eval
+            expression (stdlib/int64.mli[163,6146+0]..[166,6313+29])
+              Pexp_constant PConst_string(" Convert the given 64-bit integer (type [int64]) to a\n   32-bit integer (type [int32]). The 64-bit integer\n   is taken modulo 2{^32}, i.e. the top 32 bits are lost\n   during the conversion.  ",(stdlib/int64.mli[163,6146+0]..[166,6313+29]),None)
+        ]
+      core_type (stdlib/int64.mli[162,6091+20]..[162,6091+34])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[162,6091+20]..[162,6091+25])
+          Ptyp_constr "int64" (stdlib/int64.mli[162,6091+20]..[162,6091+25])
+          []
+        core_type (stdlib/int64.mli[162,6091+29]..[162,6091+34])
+          Ptyp_constr "int32" (stdlib/int64.mli[162,6091+29]..[162,6091+34])
+          []
+      [
+        "%int64_to_int32"
+      ]
+  signature_item (stdlib/int64.mli[168,6344+0]..[168,6344+66])
+    Psig_value
+    value_description "of_nativeint" (stdlib/int64.mli[168,6344+9]..[168,6344+21]) (stdlib/int64.mli[168,6344+0]..[168,6344+66])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[169,6411+0]..[170,6467+41])
+            Pstr_eval
+            expression (stdlib/int64.mli[169,6411+0]..[170,6467+41])
+              Pexp_constant PConst_string(" Convert the given native integer (type [nativeint])\n   to a 64-bit integer (type [int64]). ",(stdlib/int64.mli[169,6411+0]..[170,6467+41]),None)
+        ]
+      core_type (stdlib/int64.mli[168,6344+24]..[168,6344+42])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[168,6344+24]..[168,6344+33])
+          Ptyp_constr "nativeint" (stdlib/int64.mli[168,6344+24]..[168,6344+33])
+          []
+        core_type (stdlib/int64.mli[168,6344+37]..[168,6344+42])
+          Ptyp_constr "int64" (stdlib/int64.mli[168,6344+37]..[168,6344+42])
+          []
+      [
+        "%int64_of_nativeint"
+      ]
+  signature_item (stdlib/int64.mli[172,6510+0]..[172,6510+66])
+    Psig_value
+    value_description "to_nativeint" (stdlib/int64.mli[172,6510+9]..[172,6510+21]) (stdlib/int64.mli[172,6510+0]..[172,6510+66])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[173,6577+0]..[176,6743+30])
+            Pstr_eval
+            expression (stdlib/int64.mli[173,6577+0]..[176,6743+30])
+              Pexp_constant PConst_string(" Convert the given 64-bit integer (type [int64]) to a\n   native integer.  On 32-bit platforms, the 64-bit integer\n   is taken modulo 2{^32}.  On 64-bit platforms,\n   the conversion is exact. ",(stdlib/int64.mli[173,6577+0]..[176,6743+30]),None)
+        ]
+      core_type (stdlib/int64.mli[172,6510+24]..[172,6510+42])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[172,6510+24]..[172,6510+29])
+          Ptyp_constr "int64" (stdlib/int64.mli[172,6510+24]..[172,6510+29])
+          []
+        core_type (stdlib/int64.mli[172,6510+33]..[172,6510+42])
+          Ptyp_constr "nativeint" (stdlib/int64.mli[172,6510+33]..[172,6510+42])
+          []
+      [
+        "%int64_to_nativeint"
+      ]
+  signature_item (stdlib/int64.mli[178,6775+0]..[178,6775+61])
+    Psig_value
+    value_description "of_string" (stdlib/int64.mli[178,6775+9]..[178,6775+18]) (stdlib/int64.mli[178,6775+0]..[178,6775+61])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[179,6837+0]..[193,7501+66])
+            Pstr_eval
+            expression (stdlib/int64.mli[179,6837+0]..[193,7501+66])
+              Pexp_constant PConst_string(" Convert the given string to a 64-bit integer.\n   The string is read in decimal (by default, or if the string\n   begins with [0u]) or in hexadecimal, octal or binary if the\n   string begins with [0x], [0o] or [0b] respectively.\n\n   The [0u] prefix reads the input as an unsigned integer in the range\n   [[0, 2*Int64.max_int+1]].  If the input exceeds {!Int64.max_int}\n   it is converted to the signed integer\n   [Int64.min_int + input - Int64.max_int - 1].\n\n   The [_] (underscore) character can appear anywhere in the string\n   and is ignored.\n   @raise Failure if the given string is not\n   a valid representation of an integer, or if the integer represented\n   exceeds the range of integers representable in type [int64]. ",(stdlib/int64.mli[179,6837+0]..[193,7501+66]),None)
+        ]
+      core_type (stdlib/int64.mli[178,6775+21]..[178,6775+36])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[178,6775+21]..[178,6775+27])
+          Ptyp_constr "string" (stdlib/int64.mli[178,6775+21]..[178,6775+27])
+          []
+        core_type (stdlib/int64.mli[178,6775+31]..[178,6775+36])
+          Ptyp_constr "int64" (stdlib/int64.mli[178,6775+31]..[178,6775+36])
+          []
+      [
+        "caml_int64_of_string"
+      ]
+  signature_item (stdlib/int64.mli[195,7569+0]..[195,7569+41])
+    Psig_value
+    value_description "of_string_opt" (stdlib/int64.mli[195,7569+4]..[195,7569+17]) (stdlib/int64.mli[195,7569+0]..[195,7569+41])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[196,7611+0]..[197,7674+18])
+            Pstr_eval
+            expression (stdlib/int64.mli[196,7611+0]..[197,7674+18])
+              Pexp_constant PConst_string(" Same as [of_string], but return [None] instead of raising.\n    @since 4.05 ",(stdlib/int64.mli[196,7611+0]..[197,7674+18]),None)
+        ]
+      core_type (stdlib/int64.mli[195,7569+19]..[195,7569+41])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[195,7569+19]..[195,7569+25])
+          Ptyp_constr "string" (stdlib/int64.mli[195,7569+19]..[195,7569+25])
+          []
+        core_type (stdlib/int64.mli[195,7569+29]..[195,7569+41])
+          Ptyp_constr "option" (stdlib/int64.mli[195,7569+35]..[195,7569+41])
+          [
+            core_type (stdlib/int64.mli[195,7569+29]..[195,7569+34])
+              Ptyp_constr "int64" (stdlib/int64.mli[195,7569+29]..[195,7569+34])
+              []
+          ]
+      []
+  signature_item (stdlib/int64.mli[199,7694+0]..[199,7694+31])
+    Psig_value
+    value_description "to_string" (stdlib/int64.mli[199,7694+4]..[199,7694+13]) (stdlib/int64.mli[199,7694+0]..[199,7694+31])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[200,7726+0]..[200,7726+68])
+            Pstr_eval
+            expression (stdlib/int64.mli[200,7726+0]..[200,7726+68])
+              Pexp_constant PConst_string(" Return the string representation of its argument, in decimal. ",(stdlib/int64.mli[200,7726+0]..[200,7726+68]),None)
+        ]
+      core_type (stdlib/int64.mli[199,7694+16]..[199,7694+31])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[199,7694+16]..[199,7694+21])
+          Ptyp_constr "int64" (stdlib/int64.mli[199,7694+16]..[199,7694+21])
+          []
+        core_type (stdlib/int64.mli[199,7694+25]..[199,7694+31])
+          Ptyp_constr "string" (stdlib/int64.mli[199,7694+25]..[199,7694+31])
+          []
+      []
+  signature_item (stdlib/int64.mli[202,7796+0]..[204,7902+25])
+    Psig_value
+    value_description "bits_of_float" (stdlib/int64.mli[202,7796+9]..[202,7796+22]) (stdlib/int64.mli[202,7796+0]..[204,7902+25])
+      attribute "unboxed"
+        []
+      attribute "noalloc"
+        []
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[205,7928+0]..[209,8179+29])
+            Pstr_eval
+            expression (stdlib/int64.mli[205,7928+0]..[209,8179+29])
+              Pexp_constant PConst_string(" Return the internal representation of the given float according\n   to the IEEE 754 floating-point 'double format' bit layout.\n   Bit 63 of the result represents the sign of the float;\n   bits 62 to 52 represent the (biased) exponent; bits 51 to 0\n   represent the mantissa. ",(stdlib/int64.mli[205,7928+0]..[209,8179+29]),None)
+        ]
+      core_type (stdlib/int64.mli[202,7796+25]..[202,7796+39])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[202,7796+25]..[202,7796+30])
+          Ptyp_constr "float" (stdlib/int64.mli[202,7796+25]..[202,7796+30])
+          []
+        core_type (stdlib/int64.mli[202,7796+34]..[202,7796+39])
+          Ptyp_constr "int64" (stdlib/int64.mli[202,7796+34]..[202,7796+39])
+          []
+      [
+        "caml_int64_bits_of_float"
+        "caml_int64_bits_of_float_unboxed"
+      ]
+  signature_item (stdlib/int64.mli[211,8210+0]..[213,8316+25])
+    Psig_value
+    value_description "float_of_bits" (stdlib/int64.mli[211,8210+9]..[211,8210+22]) (stdlib/int64.mli[211,8210+0]..[213,8316+25])
+      attribute "unboxed"
+        []
+      attribute "noalloc"
+        []
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[214,8342+0]..[216,8482+27])
+            Pstr_eval
+            expression (stdlib/int64.mli[214,8342+0]..[216,8482+27])
+              Pexp_constant PConst_string(" Return the floating-point number whose internal representation,\n   according to the IEEE 754 floating-point 'double format' bit layout,\n   is the given [int64]. ",(stdlib/int64.mli[214,8342+0]..[216,8482+27]),None)
+        ]
+      core_type (stdlib/int64.mli[211,8210+25]..[211,8210+39])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[211,8210+25]..[211,8210+30])
+          Ptyp_constr "int64" (stdlib/int64.mli[211,8210+25]..[211,8210+30])
+          []
+        core_type (stdlib/int64.mli[211,8210+34]..[211,8210+39])
+          Ptyp_constr "float" (stdlib/int64.mli[211,8210+34]..[211,8210+39])
+          []
+      [
+        "caml_int64_float_of_bits"
+        "caml_int64_float_of_bits_unboxed"
+      ]
+  signature_item (stdlib/int64.mli[218,8511+0]..[218,8511+14])
+    Psig_type Rec
+    [
+      type_declaration "t" (stdlib/int64.mli[218,8511+5]..[218,8511+6]) (stdlib/int64.mli[218,8511+0]..[218,8511+14])
+        attribute "ocaml.doc"
+          [
+            structure_item (stdlib/int64.mli[219,8526+0]..[219,8526+48])
+              Pstr_eval
+              expression (stdlib/int64.mli[219,8526+0]..[219,8526+48])
+                Pexp_constant PConst_string(" An alias for the type of 64-bit integers. ",(stdlib/int64.mli[219,8526+0]..[219,8526+48]),None)
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (stdlib/int64.mli[218,8511+9]..[218,8511+14])
+              Ptyp_constr "int64" (stdlib/int64.mli[218,8511+9]..[218,8511+14])
+              []
+    ]
+  signature_item (stdlib/int64.mli[221,8576+0]..[221,8576+26])
+    Psig_value
+    value_description "compare" (stdlib/int64.mli[221,8576+4]..[221,8576+11]) (stdlib/int64.mli[221,8576+0]..[221,8576+26])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[222,8603+0]..[225,8827+35])
+            Pstr_eval
+            expression (stdlib/int64.mli[222,8603+0]..[225,8827+35])
+              Pexp_constant PConst_string(" The comparison function for 64-bit integers, with the same specification as\n    {!Stdlib.compare}.  Along with the type [t], this function [compare]\n    allows the module [Int64] to be passed as argument to the functors\n    {!Set.Make} and {!Map.Make}. ",(stdlib/int64.mli[222,8603+0]..[225,8827+35]),None)
+        ]
+      core_type (stdlib/int64.mli[221,8576+13]..[221,8576+26])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[221,8576+13]..[221,8576+14])
+          Ptyp_constr "t" (stdlib/int64.mli[221,8576+13]..[221,8576+14])
+          []
+        core_type (stdlib/int64.mli[221,8576+18]..[221,8576+26])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[221,8576+18]..[221,8576+19])
+            Ptyp_constr "t" (stdlib/int64.mli[221,8576+18]..[221,8576+19])
+            []
+          core_type (stdlib/int64.mli[221,8576+23]..[221,8576+26])
+            Ptyp_constr "int" (stdlib/int64.mli[221,8576+23]..[221,8576+26])
+            []
+      []
+  signature_item (stdlib/int64.mli[227,8864+0]..[227,8864+35])
+    Psig_value
+    value_description "unsigned_compare" (stdlib/int64.mli[227,8864+4]..[227,8864+20]) (stdlib/int64.mli[227,8864+0]..[227,8864+35])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[228,8900+0]..[231,9000+20])
+            Pstr_eval
+            expression (stdlib/int64.mli[228,8900+0]..[231,9000+20])
+              Pexp_constant PConst_string(" Same as {!compare}, except that arguments are interpreted as {e unsigned}\n    64-bit integers.\n\n    @since 4.08.0 ",(stdlib/int64.mli[228,8900+0]..[231,9000+20]),None)
+        ]
+      core_type (stdlib/int64.mli[227,8864+22]..[227,8864+35])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[227,8864+22]..[227,8864+23])
+          Ptyp_constr "t" (stdlib/int64.mli[227,8864+22]..[227,8864+23])
+          []
+        core_type (stdlib/int64.mli[227,8864+27]..[227,8864+35])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[227,8864+27]..[227,8864+28])
+            Ptyp_constr "t" (stdlib/int64.mli[227,8864+27]..[227,8864+28])
+            []
+          core_type (stdlib/int64.mli[227,8864+32]..[227,8864+35])
+            Ptyp_constr "int" (stdlib/int64.mli[227,8864+32]..[227,8864+35])
+            []
+      []
+  signature_item (stdlib/int64.mli[233,9022+0]..[233,9022+25])
+    Psig_value
+    value_description "equal" (stdlib/int64.mli[233,9022+4]..[233,9022+9]) (stdlib/int64.mli[233,9022+0]..[233,9022+25])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[234,9048+0]..[235,9083+20])
+            Pstr_eval
+            expression (stdlib/int64.mli[234,9048+0]..[235,9083+20])
+              Pexp_constant PConst_string(" The equal function for int64s.\n    @since 4.03.0 ",(stdlib/int64.mli[234,9048+0]..[235,9083+20]),None)
+        ]
+      core_type (stdlib/int64.mli[233,9022+11]..[233,9022+25])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[233,9022+11]..[233,9022+12])
+          Ptyp_constr "t" (stdlib/int64.mli[233,9022+11]..[233,9022+12])
+          []
+        core_type (stdlib/int64.mli[233,9022+16]..[233,9022+25])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[233,9022+16]..[233,9022+17])
+            Ptyp_constr "t" (stdlib/int64.mli[233,9022+16]..[233,9022+17])
+            []
+          core_type (stdlib/int64.mli[233,9022+21]..[233,9022+25])
+            Ptyp_constr "bool" (stdlib/int64.mli[233,9022+21]..[233,9022+25])
+            []
+      []
+  signature_item (stdlib/int64.mli[237,9105+0]..[237,9105+20])
+    Psig_value
+    value_description "min" (stdlib/int64.mli[237,9105+4]..[237,9105+7]) (stdlib/int64.mli[237,9105+0]..[237,9105+20])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[238,9126+0]..[240,9189+2])
+            Pstr_eval
+            expression (stdlib/int64.mli[238,9126+0]..[240,9189+2])
+              Pexp_constant PConst_string(" Return the smaller of the two arguments.\n    @since 4.13.0\n",(stdlib/int64.mli[238,9126+0]..[240,9189+2]),None)
+        ]
+      core_type (stdlib/int64.mli[237,9105+9]..[237,9105+20])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[237,9105+9]..[237,9105+10])
+          Ptyp_constr "t" (stdlib/int64.mli[237,9105+9]..[237,9105+10])
+          []
+        core_type (stdlib/int64.mli[237,9105+14]..[237,9105+20])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[237,9105+14]..[237,9105+15])
+            Ptyp_constr "t" (stdlib/int64.mli[237,9105+14]..[237,9105+15])
+            []
+          core_type (stdlib/int64.mli[237,9105+19]..[237,9105+20])
+            Ptyp_constr "t" (stdlib/int64.mli[237,9105+19]..[237,9105+20])
+            []
+      []
+  signature_item (stdlib/int64.mli[242,9193+0]..[242,9193+20])
+    Psig_value
+    value_description "max" (stdlib/int64.mli[242,9193+4]..[242,9193+7]) (stdlib/int64.mli[242,9193+0]..[242,9193+20])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[243,9214+0]..[245,9277+3])
+            Pstr_eval
+            expression (stdlib/int64.mli[243,9214+0]..[245,9277+3])
+              Pexp_constant PConst_string(" Return the greater of the two arguments.\n    @since 4.13.0\n ",(stdlib/int64.mli[243,9214+0]..[245,9277+3]),None)
+        ]
+      core_type (stdlib/int64.mli[242,9193+9]..[242,9193+20])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[242,9193+9]..[242,9193+10])
+          Ptyp_constr "t" (stdlib/int64.mli[242,9193+9]..[242,9193+10])
+          []
+        core_type (stdlib/int64.mli[242,9193+14]..[242,9193+20])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[242,9193+14]..[242,9193+15])
+            Ptyp_constr "t" (stdlib/int64.mli[242,9193+14]..[242,9193+15])
+            []
+          core_type (stdlib/int64.mli[242,9193+19]..[242,9193+20])
+            Ptyp_constr "t" (stdlib/int64.mli[242,9193+19]..[242,9193+20])
+            []
+      []
+  signature_item (stdlib/int64.mli[247,9282+0]..[247,9282+7])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (stdlib/int64.mli[247,9282+0]..[247,9282+7])
+        Pstr_eval
+        expression (stdlib/int64.mli[247,9282+0]..[247,9282+7])
+          Pexp_constant PConst_string("/*",(stdlib/int64.mli[247,9282+0]..[247,9282+7]),None)
+    ]
+  signature_item (stdlib/int64.mli[249,9291+0]..[249,9291+31])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (stdlib/int64.mli[249,9291+0]..[249,9291+31])
+        Pstr_eval
+        expression (stdlib/int64.mli[249,9291+0]..[249,9291+31])
+          Pexp_constant PConst_string(" {1 Deprecated functions} ",(stdlib/int64.mli[249,9291+0]..[249,9291+31]),None)
+    ]
+  signature_item (stdlib/int64.mli[251,9324+0]..[251,9324+65])
+    Psig_value
+    value_description "format" (stdlib/int64.mli[251,9324+9]..[251,9324+15]) (stdlib/int64.mli[251,9324+0]..[251,9324+65])
+      attribute "ocaml.doc"
+        [
+          structure_item (stdlib/int64.mli[252,9390+0]..[253,9441+51])
+            Pstr_eval
+            expression (stdlib/int64.mli[252,9390+0]..[253,9441+51])
+              Pexp_constant PConst_string(" Do not use this deprecated function.  Instead,\n   used {!Printf.sprintf} with a [%L...] format. ",(stdlib/int64.mli[252,9390+0]..[253,9441+51]),None)
+        ]
+      core_type (stdlib/int64.mli[251,9324+18]..[251,9324+43])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/int64.mli[251,9324+18]..[251,9324+24])
+          Ptyp_constr "string" (stdlib/int64.mli[251,9324+18]..[251,9324+24])
+          []
+        core_type (stdlib/int64.mli[251,9324+28]..[251,9324+43])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/int64.mli[251,9324+28]..[251,9324+33])
+            Ptyp_constr "int64" (stdlib/int64.mli[251,9324+28]..[251,9324+33])
+            []
+          core_type (stdlib/int64.mli[251,9324+37]..[251,9324+43])
+            Ptyp_constr "string" (stdlib/int64.mli[251,9324+37]..[251,9324+43])
+            []
+      [
+        "caml_int64_format"
+      ]
+]
+

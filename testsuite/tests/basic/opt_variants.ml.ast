@@ -1,0 +1,2657 @@
+[
+  structure_item (testsuite/tests/basic/opt_variants.ml[3,12+0]..[134,3997+4])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/basic/opt_variants.ml[3,12+4]..[3,12+6])
+          Ppat_construct "()" (testsuite/tests/basic/opt_variants.ml[3,12+4]..[3,12+6])
+          None
+        expression (testsuite/tests/basic/opt_variants.ml[4,21+2]..[134,3997+4])
+          Pexp_sequence
+          expression (testsuite/tests/basic/opt_variants.ml[4,21+2]..[4,21+61])
+            Pexp_assert
+            expression (testsuite/tests/basic/opt_variants.ml[4,21+8]..[4,21+61])
+              Pexp_apply
+              expression (testsuite/tests/basic/opt_variants.ml[4,21+54]..[4,21+55])
+                Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[4,21+54]..[4,21+55])
+              [
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/basic/opt_variants.ml[4,21+9]..[4,21+53])
+                    Pexp_apply
+                    expression (testsuite/tests/basic/opt_variants.ml[4,21+9]..[4,21+23])
+                      Pexp_ident "Sys.getenv_opt" (testsuite/tests/basic/opt_variants.ml[4,21+9]..[4,21+23])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/basic/opt_variants.ml[4,21+24]..[4,21+53])
+                          Pexp_constant PConst_string("FOOBAR_UNLIKELY_TO_EXIST_42",(testsuite/tests/basic/opt_variants.ml[4,21+25]..[4,21+52]),None)
+                    ]
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/basic/opt_variants.ml[4,21+56]..[4,21+60])
+                    Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[4,21+56]..[4,21+60])
+                    None
+              ]
+          expression (testsuite/tests/basic/opt_variants.ml[6,85+2]..[134,3997+4])
+            Pexp_sequence
+            expression (testsuite/tests/basic/opt_variants.ml[6,85+2]..[6,85+40])
+              Pexp_assert
+              expression (testsuite/tests/basic/opt_variants.ml[6,85+8]..[6,85+40])
+                Pexp_apply
+                expression (testsuite/tests/basic/opt_variants.ml[6,85+33]..[6,85+34])
+                  Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[6,85+33]..[6,85+34])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/basic/opt_variants.ml[6,85+9]..[6,85+32])
+                      Pexp_apply
+                      expression (testsuite/tests/basic/opt_variants.ml[6,85+9]..[6,85+26])
+                        Pexp_ident "int_of_string_opt" (testsuite/tests/basic/opt_variants.ml[6,85+9]..[6,85+26])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/basic/opt_variants.ml[6,85+27]..[6,85+32])
+                            Pexp_constant PConst_string("foo",(testsuite/tests/basic/opt_variants.ml[6,85+28]..[6,85+31]),None)
+                      ]
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/basic/opt_variants.ml[6,85+35]..[6,85+39])
+                      Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[6,85+35]..[6,85+39])
+                      None
+                ]
+            expression (testsuite/tests/basic/opt_variants.ml[7,127+2]..[134,3997+4])
+              Pexp_sequence
+              expression (testsuite/tests/basic/opt_variants.ml[7,127+2]..[7,127+42])
+                Pexp_assert
+                expression (testsuite/tests/basic/opt_variants.ml[7,127+8]..[7,127+42])
+                  Pexp_apply
+                  expression (testsuite/tests/basic/opt_variants.ml[7,127+32]..[7,127+33])
+                    Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[7,127+32]..[7,127+33])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/basic/opt_variants.ml[7,127+9]..[7,127+31])
+                        Pexp_apply
+                        expression (testsuite/tests/basic/opt_variants.ml[7,127+9]..[7,127+26])
+                          Pexp_ident "int_of_string_opt" (testsuite/tests/basic/opt_variants.ml[7,127+9]..[7,127+26])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/basic/opt_variants.ml[7,127+27]..[7,127+31])
+                              Pexp_constant PConst_string("42",(testsuite/tests/basic/opt_variants.ml[7,127+28]..[7,127+30]),None)
+                        ]
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/basic/opt_variants.ml[7,127+34]..[7,127+41])
+                        Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[7,127+34]..[7,127+38])
+                        Some
+                          expression (testsuite/tests/basic/opt_variants.ml[7,127+39]..[7,127+41])
+                            Pexp_constant PConst_int (42,None)
+                  ]
+              expression (testsuite/tests/basic/opt_variants.ml[8,171+2]..[134,3997+4])
+                Pexp_sequence
+                expression (testsuite/tests/basic/opt_variants.ml[8,171+2]..[8,171+56])
+                  Pexp_assert
+                  expression (testsuite/tests/basic/opt_variants.ml[8,171+8]..[8,171+56])
+                    Pexp_apply
+                    expression (testsuite/tests/basic/opt_variants.ml[8,171+49]..[8,171+50])
+                      Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[8,171+49]..[8,171+50])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/basic/opt_variants.ml[8,171+9]..[8,171+48])
+                          Pexp_apply
+                          expression (testsuite/tests/basic/opt_variants.ml[8,171+9]..[8,171+26])
+                            Pexp_ident "int_of_string_opt" (testsuite/tests/basic/opt_variants.ml[8,171+9]..[8,171+26])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/basic/opt_variants.ml[8,171+27]..[8,171+48])
+                                Pexp_apply
+                                expression (testsuite/tests/basic/opt_variants.ml[8,171+28]..[8,171+39])
+                                  Pexp_ident "String.make" (testsuite/tests/basic/opt_variants.ml[8,171+28]..[8,171+39])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/basic/opt_variants.ml[8,171+40]..[8,171+43])
+                                      Pexp_constant PConst_int (100,None)
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/basic/opt_variants.ml[8,171+44]..[8,171+47])
+                                      Pexp_constant PConst_char 39
+                                ]
+                          ]
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/basic/opt_variants.ml[8,171+51]..[8,171+55])
+                          Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[8,171+51]..[8,171+55])
+                          None
+                    ]
+                expression (testsuite/tests/basic/opt_variants.ml[10,230+2]..[134,3997+4])
+                  Pexp_sequence
+                  expression (testsuite/tests/basic/opt_variants.ml[10,230+2]..[10,230+46])
+                    Pexp_assert
+                    expression (testsuite/tests/basic/opt_variants.ml[10,230+8]..[10,230+46])
+                      Pexp_apply
+                      expression (testsuite/tests/basic/opt_variants.ml[10,230+39]..[10,230+40])
+                        Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[10,230+39]..[10,230+40])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/basic/opt_variants.ml[10,230+9]..[10,230+38])
+                            Pexp_apply
+                            expression (testsuite/tests/basic/opt_variants.ml[10,230+9]..[10,230+32])
+                              Pexp_ident "Nativeint.of_string_opt" (testsuite/tests/basic/opt_variants.ml[10,230+9]..[10,230+32])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/basic/opt_variants.ml[10,230+33]..[10,230+38])
+                                  Pexp_constant PConst_string("foo",(testsuite/tests/basic/opt_variants.ml[10,230+34]..[10,230+37]),None)
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/basic/opt_variants.ml[10,230+41]..[10,230+45])
+                            Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[10,230+41]..[10,230+45])
+                            None
+                      ]
+                  expression (testsuite/tests/basic/opt_variants.ml[11,278+2]..[134,3997+4])
+                    Pexp_sequence
+                    expression (testsuite/tests/basic/opt_variants.ml[11,278+2]..[11,278+49])
+                      Pexp_assert
+                      expression (testsuite/tests/basic/opt_variants.ml[11,278+8]..[11,278+49])
+                        Pexp_apply
+                        expression (testsuite/tests/basic/opt_variants.ml[11,278+38]..[11,278+39])
+                          Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[11,278+38]..[11,278+39])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/basic/opt_variants.ml[11,278+9]..[11,278+37])
+                              Pexp_apply
+                              expression (testsuite/tests/basic/opt_variants.ml[11,278+9]..[11,278+32])
+                                Pexp_ident "Nativeint.of_string_opt" (testsuite/tests/basic/opt_variants.ml[11,278+9]..[11,278+32])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/basic/opt_variants.ml[11,278+33]..[11,278+37])
+                                    Pexp_constant PConst_string("42",(testsuite/tests/basic/opt_variants.ml[11,278+34]..[11,278+36]),None)
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/basic/opt_variants.ml[11,278+40]..[11,278+48])
+                              Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[11,278+40]..[11,278+44])
+                              Some
+                                expression (testsuite/tests/basic/opt_variants.ml[11,278+45]..[11,278+48])
+                                  Pexp_constant PConst_int (42,Some n)
+                        ]
+                    expression (testsuite/tests/basic/opt_variants.ml[12,329+2]..[134,3997+4])
+                      Pexp_sequence
+                      expression (testsuite/tests/basic/opt_variants.ml[12,329+2]..[12,329+62])
+                        Pexp_assert
+                        expression (testsuite/tests/basic/opt_variants.ml[12,329+8]..[12,329+62])
+                          Pexp_apply
+                          expression (testsuite/tests/basic/opt_variants.ml[12,329+55]..[12,329+56])
+                            Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[12,329+55]..[12,329+56])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/basic/opt_variants.ml[12,329+9]..[12,329+54])
+                                Pexp_apply
+                                expression (testsuite/tests/basic/opt_variants.ml[12,329+9]..[12,329+32])
+                                  Pexp_ident "Nativeint.of_string_opt" (testsuite/tests/basic/opt_variants.ml[12,329+9]..[12,329+32])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/basic/opt_variants.ml[12,329+33]..[12,329+54])
+                                      Pexp_apply
+                                      expression (testsuite/tests/basic/opt_variants.ml[12,329+34]..[12,329+45])
+                                        Pexp_ident "String.make" (testsuite/tests/basic/opt_variants.ml[12,329+34]..[12,329+45])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/basic/opt_variants.ml[12,329+46]..[12,329+49])
+                                            Pexp_constant PConst_int (100,None)
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/basic/opt_variants.ml[12,329+50]..[12,329+53])
+                                            Pexp_constant PConst_char 39
+                                      ]
+                                ]
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/basic/opt_variants.ml[12,329+57]..[12,329+61])
+                                Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[12,329+57]..[12,329+61])
+                                None
+                          ]
+                      expression (testsuite/tests/basic/opt_variants.ml[14,394+2]..[134,3997+4])
+                        Pexp_sequence
+                        expression (testsuite/tests/basic/opt_variants.ml[14,394+2]..[14,394+42])
+                          Pexp_assert
+                          expression (testsuite/tests/basic/opt_variants.ml[14,394+8]..[14,394+42])
+                            Pexp_apply
+                            expression (testsuite/tests/basic/opt_variants.ml[14,394+35]..[14,394+36])
+                              Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[14,394+35]..[14,394+36])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/basic/opt_variants.ml[14,394+9]..[14,394+34])
+                                  Pexp_apply
+                                  expression (testsuite/tests/basic/opt_variants.ml[14,394+9]..[14,394+28])
+                                    Pexp_ident "Int32.of_string_opt" (testsuite/tests/basic/opt_variants.ml[14,394+9]..[14,394+28])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/basic/opt_variants.ml[14,394+29]..[14,394+34])
+                                        Pexp_constant PConst_string("foo",(testsuite/tests/basic/opt_variants.ml[14,394+30]..[14,394+33]),None)
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/basic/opt_variants.ml[14,394+37]..[14,394+41])
+                                  Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[14,394+37]..[14,394+41])
+                                  None
+                            ]
+                        expression (testsuite/tests/basic/opt_variants.ml[15,438+2]..[134,3997+4])
+                          Pexp_sequence
+                          expression (testsuite/tests/basic/opt_variants.ml[15,438+2]..[15,438+45])
+                            Pexp_assert
+                            expression (testsuite/tests/basic/opt_variants.ml[15,438+8]..[15,438+45])
+                              Pexp_apply
+                              expression (testsuite/tests/basic/opt_variants.ml[15,438+34]..[15,438+35])
+                                Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[15,438+34]..[15,438+35])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/basic/opt_variants.ml[15,438+9]..[15,438+33])
+                                    Pexp_apply
+                                    expression (testsuite/tests/basic/opt_variants.ml[15,438+9]..[15,438+28])
+                                      Pexp_ident "Int32.of_string_opt" (testsuite/tests/basic/opt_variants.ml[15,438+9]..[15,438+28])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/basic/opt_variants.ml[15,438+29]..[15,438+33])
+                                          Pexp_constant PConst_string("42",(testsuite/tests/basic/opt_variants.ml[15,438+30]..[15,438+32]),None)
+                                    ]
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/basic/opt_variants.ml[15,438+36]..[15,438+44])
+                                    Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[15,438+36]..[15,438+40])
+                                    Some
+                                      expression (testsuite/tests/basic/opt_variants.ml[15,438+41]..[15,438+44])
+                                        Pexp_constant PConst_int (42,Some l)
+                              ]
+                          expression (testsuite/tests/basic/opt_variants.ml[16,485+2]..[134,3997+4])
+                            Pexp_sequence
+                            expression (testsuite/tests/basic/opt_variants.ml[16,485+2]..[16,485+58])
+                              Pexp_assert
+                              expression (testsuite/tests/basic/opt_variants.ml[16,485+8]..[16,485+58])
+                                Pexp_apply
+                                expression (testsuite/tests/basic/opt_variants.ml[16,485+51]..[16,485+52])
+                                  Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[16,485+51]..[16,485+52])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/basic/opt_variants.ml[16,485+9]..[16,485+50])
+                                      Pexp_apply
+                                      expression (testsuite/tests/basic/opt_variants.ml[16,485+9]..[16,485+28])
+                                        Pexp_ident "Int32.of_string_opt" (testsuite/tests/basic/opt_variants.ml[16,485+9]..[16,485+28])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/basic/opt_variants.ml[16,485+29]..[16,485+50])
+                                            Pexp_apply
+                                            expression (testsuite/tests/basic/opt_variants.ml[16,485+30]..[16,485+41])
+                                              Pexp_ident "String.make" (testsuite/tests/basic/opt_variants.ml[16,485+30]..[16,485+41])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/basic/opt_variants.ml[16,485+42]..[16,485+45])
+                                                  Pexp_constant PConst_int (100,None)
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/basic/opt_variants.ml[16,485+46]..[16,485+49])
+                                                  Pexp_constant PConst_char 39
+                                            ]
+                                      ]
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/basic/opt_variants.ml[16,485+53]..[16,485+57])
+                                      Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[16,485+53]..[16,485+57])
+                                      None
+                                ]
+                            expression (testsuite/tests/basic/opt_variants.ml[18,546+2]..[134,3997+4])
+                              Pexp_sequence
+                              expression (testsuite/tests/basic/opt_variants.ml[18,546+2]..[18,546+42])
+                                Pexp_assert
+                                expression (testsuite/tests/basic/opt_variants.ml[18,546+8]..[18,546+42])
+                                  Pexp_apply
+                                  expression (testsuite/tests/basic/opt_variants.ml[18,546+35]..[18,546+36])
+                                    Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[18,546+35]..[18,546+36])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/basic/opt_variants.ml[18,546+9]..[18,546+34])
+                                        Pexp_apply
+                                        expression (testsuite/tests/basic/opt_variants.ml[18,546+9]..[18,546+28])
+                                          Pexp_ident "Int64.of_string_opt" (testsuite/tests/basic/opt_variants.ml[18,546+9]..[18,546+28])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/basic/opt_variants.ml[18,546+29]..[18,546+34])
+                                              Pexp_constant PConst_string("foo",(testsuite/tests/basic/opt_variants.ml[18,546+30]..[18,546+33]),None)
+                                        ]
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/basic/opt_variants.ml[18,546+37]..[18,546+41])
+                                        Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[18,546+37]..[18,546+41])
+                                        None
+                                  ]
+                              expression (testsuite/tests/basic/opt_variants.ml[19,590+2]..[134,3997+4])
+                                Pexp_sequence
+                                expression (testsuite/tests/basic/opt_variants.ml[19,590+2]..[19,590+45])
+                                  Pexp_assert
+                                  expression (testsuite/tests/basic/opt_variants.ml[19,590+8]..[19,590+45])
+                                    Pexp_apply
+                                    expression (testsuite/tests/basic/opt_variants.ml[19,590+34]..[19,590+35])
+                                      Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[19,590+34]..[19,590+35])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/basic/opt_variants.ml[19,590+9]..[19,590+33])
+                                          Pexp_apply
+                                          expression (testsuite/tests/basic/opt_variants.ml[19,590+9]..[19,590+28])
+                                            Pexp_ident "Int64.of_string_opt" (testsuite/tests/basic/opt_variants.ml[19,590+9]..[19,590+28])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (testsuite/tests/basic/opt_variants.ml[19,590+29]..[19,590+33])
+                                                Pexp_constant PConst_string("42",(testsuite/tests/basic/opt_variants.ml[19,590+30]..[19,590+32]),None)
+                                          ]
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/basic/opt_variants.ml[19,590+36]..[19,590+44])
+                                          Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[19,590+36]..[19,590+40])
+                                          Some
+                                            expression (testsuite/tests/basic/opt_variants.ml[19,590+41]..[19,590+44])
+                                              Pexp_constant PConst_int (42,Some L)
+                                    ]
+                                expression (testsuite/tests/basic/opt_variants.ml[20,637+2]..[134,3997+4])
+                                  Pexp_sequence
+                                  expression (testsuite/tests/basic/opt_variants.ml[20,637+2]..[20,637+58])
+                                    Pexp_assert
+                                    expression (testsuite/tests/basic/opt_variants.ml[20,637+8]..[20,637+58])
+                                      Pexp_apply
+                                      expression (testsuite/tests/basic/opt_variants.ml[20,637+51]..[20,637+52])
+                                        Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[20,637+51]..[20,637+52])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/basic/opt_variants.ml[20,637+9]..[20,637+50])
+                                            Pexp_apply
+                                            expression (testsuite/tests/basic/opt_variants.ml[20,637+9]..[20,637+28])
+                                              Pexp_ident "Int64.of_string_opt" (testsuite/tests/basic/opt_variants.ml[20,637+9]..[20,637+28])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/basic/opt_variants.ml[20,637+29]..[20,637+50])
+                                                  Pexp_apply
+                                                  expression (testsuite/tests/basic/opt_variants.ml[20,637+30]..[20,637+41])
+                                                    Pexp_ident "String.make" (testsuite/tests/basic/opt_variants.ml[20,637+30]..[20,637+41])
+                                                  [
+                                                    <arg>
+                                                    Nolabel
+                                                      expression (testsuite/tests/basic/opt_variants.ml[20,637+42]..[20,637+45])
+                                                        Pexp_constant PConst_int (100,None)
+                                                    <arg>
+                                                    Nolabel
+                                                      expression (testsuite/tests/basic/opt_variants.ml[20,637+46]..[20,637+49])
+                                                        Pexp_constant PConst_char 39
+                                                  ]
+                                            ]
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/basic/opt_variants.ml[20,637+53]..[20,637+57])
+                                            Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[20,637+53]..[20,637+57])
+                                            None
+                                      ]
+                                  expression (testsuite/tests/basic/opt_variants.ml[22,698+2]..[134,3997+4])
+                                    Pexp_sequence
+                                    expression (testsuite/tests/basic/opt_variants.ml[22,698+2]..[22,698+38])
+                                      Pexp_assert
+                                      expression (testsuite/tests/basic/opt_variants.ml[22,698+8]..[22,698+38])
+                                        Pexp_apply
+                                        expression (testsuite/tests/basic/opt_variants.ml[22,698+31]..[22,698+32])
+                                          Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[22,698+31]..[22,698+32])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/basic/opt_variants.ml[22,698+9]..[22,698+30])
+                                              Pexp_apply
+                                              expression (testsuite/tests/basic/opt_variants.ml[22,698+9]..[22,698+27])
+                                                Pexp_ident "bool_of_string_opt" (testsuite/tests/basic/opt_variants.ml[22,698+9]..[22,698+27])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/basic/opt_variants.ml[22,698+28]..[22,698+30])
+                                                    Pexp_constant PConst_string("",(testsuite/tests/basic/opt_variants.ml[22,698+29]..[22,698+29]),None)
+                                              ]
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/basic/opt_variants.ml[22,698+33]..[22,698+37])
+                                              Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[22,698+33]..[22,698+37])
+                                              None
+                                        ]
+                                    expression (testsuite/tests/basic/opt_variants.ml[23,738+2]..[134,3997+4])
+                                      Pexp_sequence
+                                      expression (testsuite/tests/basic/opt_variants.ml[23,738+2]..[23,738+47])
+                                        Pexp_assert
+                                        expression (testsuite/tests/basic/opt_variants.ml[23,738+8]..[23,738+47])
+                                          Pexp_apply
+                                          expression (testsuite/tests/basic/opt_variants.ml[23,738+35]..[23,738+36])
+                                            Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[23,738+35]..[23,738+36])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (testsuite/tests/basic/opt_variants.ml[23,738+9]..[23,738+34])
+                                                Pexp_apply
+                                                expression (testsuite/tests/basic/opt_variants.ml[23,738+9]..[23,738+27])
+                                                  Pexp_ident "bool_of_string_opt" (testsuite/tests/basic/opt_variants.ml[23,738+9]..[23,738+27])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (testsuite/tests/basic/opt_variants.ml[23,738+28]..[23,738+34])
+                                                      Pexp_constant PConst_string("true",(testsuite/tests/basic/opt_variants.ml[23,738+29]..[23,738+33]),None)
+                                                ]
+                                            <arg>
+                                            Nolabel
+                                              expression (testsuite/tests/basic/opt_variants.ml[23,738+37]..[23,738+46])
+                                                Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[23,738+37]..[23,738+41])
+                                                Some
+                                                  expression (testsuite/tests/basic/opt_variants.ml[23,738+42]..[23,738+46])
+                                                    Pexp_construct "true" (testsuite/tests/basic/opt_variants.ml[23,738+42]..[23,738+46])
+                                                    None
+                                          ]
+                                      expression (testsuite/tests/basic/opt_variants.ml[24,787+2]..[134,3997+4])
+                                        Pexp_sequence
+                                        expression (testsuite/tests/basic/opt_variants.ml[24,787+2]..[24,787+49])
+                                          Pexp_assert
+                                          expression (testsuite/tests/basic/opt_variants.ml[24,787+8]..[24,787+49])
+                                            Pexp_apply
+                                            expression (testsuite/tests/basic/opt_variants.ml[24,787+36]..[24,787+37])
+                                              Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[24,787+36]..[24,787+37])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/basic/opt_variants.ml[24,787+9]..[24,787+35])
+                                                  Pexp_apply
+                                                  expression (testsuite/tests/basic/opt_variants.ml[24,787+9]..[24,787+27])
+                                                    Pexp_ident "bool_of_string_opt" (testsuite/tests/basic/opt_variants.ml[24,787+9]..[24,787+27])
+                                                  [
+                                                    <arg>
+                                                    Nolabel
+                                                      expression (testsuite/tests/basic/opt_variants.ml[24,787+28]..[24,787+35])
+                                                        Pexp_constant PConst_string("false",(testsuite/tests/basic/opt_variants.ml[24,787+29]..[24,787+34]),None)
+                                                  ]
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/basic/opt_variants.ml[24,787+38]..[24,787+48])
+                                                  Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[24,787+38]..[24,787+42])
+                                                  Some
+                                                    expression (testsuite/tests/basic/opt_variants.ml[24,787+43]..[24,787+48])
+                                                      Pexp_construct "false" (testsuite/tests/basic/opt_variants.ml[24,787+43]..[24,787+48])
+                                                      None
+                                            ]
+                                        expression (testsuite/tests/basic/opt_variants.ml[26,839+2]..[134,3997+4])
+                                          Pexp_sequence
+                                          expression (testsuite/tests/basic/opt_variants.ml[26,839+2]..[26,839+42])
+                                            Pexp_assert
+                                            expression (testsuite/tests/basic/opt_variants.ml[26,839+8]..[26,839+42])
+                                              Pexp_apply
+                                              expression (testsuite/tests/basic/opt_variants.ml[26,839+35]..[26,839+36])
+                                                Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[26,839+35]..[26,839+36])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/basic/opt_variants.ml[26,839+9]..[26,839+34])
+                                                    Pexp_apply
+                                                    expression (testsuite/tests/basic/opt_variants.ml[26,839+9]..[26,839+28])
+                                                      Pexp_ident "float_of_string_opt" (testsuite/tests/basic/opt_variants.ml[26,839+9]..[26,839+28])
+                                                    [
+                                                      <arg>
+                                                      Nolabel
+                                                        expression (testsuite/tests/basic/opt_variants.ml[26,839+29]..[26,839+34])
+                                                          Pexp_constant PConst_string("foo",(testsuite/tests/basic/opt_variants.ml[26,839+30]..[26,839+33]),None)
+                                                    ]
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/basic/opt_variants.ml[26,839+37]..[26,839+41])
+                                                    Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[26,839+37]..[26,839+41])
+                                                    None
+                                              ]
+                                          expression (testsuite/tests/basic/opt_variants.ml[27,883+2]..[134,3997+4])
+                                            Pexp_sequence
+                                            expression (testsuite/tests/basic/opt_variants.ml[27,883+2]..[27,883+46])
+                                              Pexp_assert
+                                              expression (testsuite/tests/basic/opt_variants.ml[27,883+8]..[27,883+46])
+                                                Pexp_apply
+                                                expression (testsuite/tests/basic/opt_variants.ml[27,883+35]..[27,883+36])
+                                                  Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[27,883+35]..[27,883+36])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (testsuite/tests/basic/opt_variants.ml[27,883+9]..[27,883+34])
+                                                      Pexp_apply
+                                                      expression (testsuite/tests/basic/opt_variants.ml[27,883+9]..[27,883+28])
+                                                        Pexp_ident "float_of_string_opt" (testsuite/tests/basic/opt_variants.ml[27,883+9]..[27,883+28])
+                                                      [
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (testsuite/tests/basic/opt_variants.ml[27,883+29]..[27,883+34])
+                                                            Pexp_constant PConst_string("42.",(testsuite/tests/basic/opt_variants.ml[27,883+30]..[27,883+33]),None)
+                                                      ]
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (testsuite/tests/basic/opt_variants.ml[27,883+37]..[27,883+45])
+                                                      Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[27,883+37]..[27,883+41])
+                                                      Some
+                                                        expression (testsuite/tests/basic/opt_variants.ml[27,883+42]..[27,883+45])
+                                                          Pexp_constant PConst_float (42.,None)
+                                                ]
+                                            expression (testsuite/tests/basic/opt_variants.ml[28,931+2]..[134,3997+4])
+                                              Pexp_sequence
+                                              expression (testsuite/tests/basic/opt_variants.ml[28,931+2]..[28,931+68])
+                                                Pexp_assert
+                                                expression (testsuite/tests/basic/opt_variants.ml[28,931+8]..[28,931+68])
+                                                  Pexp_apply
+                                                  expression (testsuite/tests/basic/opt_variants.ml[28,931+52]..[28,931+53])
+                                                    Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[28,931+52]..[28,931+53])
+                                                  [
+                                                    <arg>
+                                                    Nolabel
+                                                      expression (testsuite/tests/basic/opt_variants.ml[28,931+9]..[28,931+51])
+                                                        Pexp_apply
+                                                        expression (testsuite/tests/basic/opt_variants.ml[28,931+9]..[28,931+28])
+                                                          Pexp_ident "float_of_string_opt" (testsuite/tests/basic/opt_variants.ml[28,931+9]..[28,931+28])
+                                                        [
+                                                          <arg>
+                                                          Nolabel
+                                                            expression (testsuite/tests/basic/opt_variants.ml[28,931+29]..[28,931+51])
+                                                              Pexp_apply
+                                                              expression (testsuite/tests/basic/opt_variants.ml[28,931+30]..[28,931+41])
+                                                                Pexp_ident "String.make" (testsuite/tests/basic/opt_variants.ml[28,931+30]..[28,931+41])
+                                                              [
+                                                                <arg>
+                                                                Nolabel
+                                                                  expression (testsuite/tests/basic/opt_variants.ml[28,931+42]..[28,931+46])
+                                                                    Pexp_constant PConst_int (1000,None)
+                                                                <arg>
+                                                                Nolabel
+                                                                  expression (testsuite/tests/basic/opt_variants.ml[28,931+47]..[28,931+50])
+                                                                    Pexp_constant PConst_char 39
+                                                              ]
+                                                        ]
+                                                    <arg>
+                                                    Nolabel
+                                                      expression (testsuite/tests/basic/opt_variants.ml[28,931+54]..[28,931+67])
+                                                        Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[28,931+54]..[28,931+58])
+                                                        Some
+                                                          expression (testsuite/tests/basic/opt_variants.ml[28,931+59]..[28,931+67])
+                                                            Pexp_ident "infinity" (testsuite/tests/basic/opt_variants.ml[28,931+59]..[28,931+67])
+                                                  ]
+                                              expression (testsuite/tests/basic/opt_variants.ml[30,1002+2]..[134,3997+4])
+                                                Pexp_sequence
+                                                expression (testsuite/tests/basic/opt_variants.ml[30,1002+2]..[30,1002+34])
+                                                  Pexp_assert
+                                                  expression (testsuite/tests/basic/opt_variants.ml[30,1002+8]..[30,1002+34])
+                                                    Pexp_apply
+                                                    expression (testsuite/tests/basic/opt_variants.ml[30,1002+27]..[30,1002+28])
+                                                      Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[30,1002+27]..[30,1002+28])
+                                                    [
+                                                      <arg>
+                                                      Nolabel
+                                                        expression (testsuite/tests/basic/opt_variants.ml[30,1002+9]..[30,1002+26])
+                                                          Pexp_apply
+                                                          expression (testsuite/tests/basic/opt_variants.ml[30,1002+9]..[30,1002+21])
+                                                            Pexp_ident "List.nth_opt" (testsuite/tests/basic/opt_variants.ml[30,1002+9]..[30,1002+21])
+                                                          [
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (testsuite/tests/basic/opt_variants.ml[30,1002+22]..[30,1002+24])
+                                                                Pexp_construct "[]" (testsuite/tests/basic/opt_variants.ml[30,1002+22]..[30,1002+24])
+                                                                None
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (testsuite/tests/basic/opt_variants.ml[30,1002+25]..[30,1002+26])
+                                                                Pexp_constant PConst_int (0,None)
+                                                          ]
+                                                      <arg>
+                                                      Nolabel
+                                                        expression (testsuite/tests/basic/opt_variants.ml[30,1002+29]..[30,1002+33])
+                                                          Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[30,1002+29]..[30,1002+33])
+                                                          None
+                                                    ]
+                                                expression (testsuite/tests/basic/opt_variants.ml[31,1038+2]..[134,3997+4])
+                                                  Pexp_sequence
+                                                  expression (testsuite/tests/basic/opt_variants.ml[31,1038+2]..[31,1038+39])
+                                                    Pexp_assert
+                                                    expression (testsuite/tests/basic/opt_variants.ml[31,1038+8]..[31,1038+39])
+                                                      Pexp_apply
+                                                      expression (testsuite/tests/basic/opt_variants.ml[31,1038+29]..[31,1038+30])
+                                                        Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[31,1038+29]..[31,1038+30])
+                                                      [
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (testsuite/tests/basic/opt_variants.ml[31,1038+9]..[31,1038+28])
+                                                            Pexp_apply
+                                                            expression (testsuite/tests/basic/opt_variants.ml[31,1038+9]..[31,1038+21])
+                                                              Pexp_ident "List.nth_opt" (testsuite/tests/basic/opt_variants.ml[31,1038+9]..[31,1038+21])
+                                                            [
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (testsuite/tests/basic/opt_variants.ml[31,1038+22]..[31,1038+26])
+                                                                  Pexp_construct "::" (testsuite/tests/basic/opt_variants.ml[31,1038+23]..[31,1038+26]) ghost
+                                                                  Some
+                                                                    expression (testsuite/tests/basic/opt_variants.ml[31,1038+23]..[31,1038+26]) ghost
+                                                                      Pexp_tuple
+                                                                      [
+expression (testsuite/tests/basic/opt_variants.ml[31,1038+23]..[31,1038+25])
+  Pexp_constant PConst_int (42,None)
+expression (testsuite/tests/basic/opt_variants.ml[31,1038+25]..[31,1038+26]) ghost
+  Pexp_construct "[]" (testsuite/tests/basic/opt_variants.ml[31,1038+25]..[31,1038+26]) ghost
+  None
+                                                                      ]
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (testsuite/tests/basic/opt_variants.ml[31,1038+27]..[31,1038+28])
+                                                                  Pexp_constant PConst_int (0,None)
+                                                            ]
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (testsuite/tests/basic/opt_variants.ml[31,1038+31]..[31,1038+38])
+                                                            Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[31,1038+31]..[31,1038+35])
+                                                            Some
+                                                              expression (testsuite/tests/basic/opt_variants.ml[31,1038+36]..[31,1038+38])
+                                                                Pexp_constant PConst_int (42,None)
+                                                      ]
+                                                  expression (testsuite/tests/basic/opt_variants.ml[32,1079+2]..[134,3997+4])
+                                                    Pexp_sequence
+                                                    expression (testsuite/tests/basic/opt_variants.ml[32,1079+2]..[32,1079+36])
+                                                      Pexp_assert
+                                                      expression (testsuite/tests/basic/opt_variants.ml[32,1079+8]..[32,1079+36])
+                                                        Pexp_apply
+                                                        expression (testsuite/tests/basic/opt_variants.ml[32,1079+29]..[32,1079+30])
+                                                          Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[32,1079+29]..[32,1079+30])
+                                                        [
+                                                          <arg>
+                                                          Nolabel
+                                                            expression (testsuite/tests/basic/opt_variants.ml[32,1079+9]..[32,1079+28])
+                                                              Pexp_apply
+                                                              expression (testsuite/tests/basic/opt_variants.ml[32,1079+9]..[32,1079+21])
+                                                                Pexp_ident "List.nth_opt" (testsuite/tests/basic/opt_variants.ml[32,1079+9]..[32,1079+21])
+                                                              [
+                                                                <arg>
+                                                                Nolabel
+                                                                  expression (testsuite/tests/basic/opt_variants.ml[32,1079+22]..[32,1079+26])
+                                                                    Pexp_construct "::" (testsuite/tests/basic/opt_variants.ml[32,1079+23]..[32,1079+26]) ghost
+                                                                    Some
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[32,1079+23]..[32,1079+26]) ghost
+Pexp_tuple
+[
+  expression (testsuite/tests/basic/opt_variants.ml[32,1079+23]..[32,1079+25])
+    Pexp_constant PConst_int (42,None)
+  expression (testsuite/tests/basic/opt_variants.ml[32,1079+25]..[32,1079+26]) ghost
+    Pexp_construct "[]" (testsuite/tests/basic/opt_variants.ml[32,1079+25]..[32,1079+26]) ghost
+    None
+]
+                                                                <arg>
+                                                                Nolabel
+                                                                  expression (testsuite/tests/basic/opt_variants.ml[32,1079+27]..[32,1079+28])
+                                                                    Pexp_constant PConst_int (1,None)
+                                                              ]
+                                                          <arg>
+                                                          Nolabel
+                                                            expression (testsuite/tests/basic/opt_variants.ml[32,1079+31]..[32,1079+35])
+                                                              Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[32,1079+31]..[32,1079+35])
+                                                              None
+                                                        ]
+                                                    expression (testsuite/tests/basic/opt_variants.ml[34,1118+2]..[134,3997+4])
+                                                      Pexp_sequence
+                                                      expression (testsuite/tests/basic/opt_variants.ml[34,1118+2]..[34,1118+49])
+                                                        Pexp_assert
+                                                        expression (testsuite/tests/basic/opt_variants.ml[34,1118+8]..[34,1118+49])
+                                                          Pexp_apply
+                                                          expression (testsuite/tests/basic/opt_variants.ml[34,1118+42]..[34,1118+43])
+                                                            Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[34,1118+42]..[34,1118+43])
+                                                          [
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (testsuite/tests/basic/opt_variants.ml[34,1118+9]..[34,1118+41])
+                                                                Pexp_apply
+                                                                expression (testsuite/tests/basic/opt_variants.ml[34,1118+9]..[34,1118+22])
+                                                                  Pexp_ident "List.find_opt" (testsuite/tests/basic/opt_variants.ml[34,1118+9]..[34,1118+22])
+                                                                [
+                                                                  <arg>
+                                                                  Nolabel
+                                                                    expression (testsuite/tests/basic/opt_variants.ml[34,1118+23]..[34,1118+38])
+                                                                      Pexp_fun
+                                                                      Nolabel
+                                                                      None
+                                                                      pattern (testsuite/tests/basic/opt_variants.ml[34,1118+28]..[34,1118+29])
+Ppat_any
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[34,1118+33]..[34,1118+37])
+Pexp_construct "true" (testsuite/tests/basic/opt_variants.ml[34,1118+33]..[34,1118+37])
+None
+                                                                  <arg>
+                                                                  Nolabel
+                                                                    expression (testsuite/tests/basic/opt_variants.ml[34,1118+39]..[34,1118+41])
+                                                                      Pexp_construct "[]" (testsuite/tests/basic/opt_variants.ml[34,1118+39]..[34,1118+41])
+                                                                      None
+                                                                ]
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (testsuite/tests/basic/opt_variants.ml[34,1118+44]..[34,1118+48])
+                                                                Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[34,1118+44]..[34,1118+48])
+                                                                None
+                                                          ]
+                                                      expression (testsuite/tests/basic/opt_variants.ml[35,1169+2]..[134,3997+4])
+                                                        Pexp_sequence
+                                                        expression (testsuite/tests/basic/opt_variants.ml[35,1169+2]..[35,1169+59])
+                                                          Pexp_assert
+                                                          expression (testsuite/tests/basic/opt_variants.ml[35,1169+8]..[35,1169+59])
+                                                            Pexp_apply
+                                                            expression (testsuite/tests/basic/opt_variants.ml[35,1169+49]..[35,1169+50])
+                                                              Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[35,1169+49]..[35,1169+50])
+                                                            [
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (testsuite/tests/basic/opt_variants.ml[35,1169+9]..[35,1169+48])
+                                                                  Pexp_apply
+                                                                  expression (testsuite/tests/basic/opt_variants.ml[35,1169+9]..[35,1169+22])
+                                                                    Pexp_ident "List.find_opt" (testsuite/tests/basic/opt_variants.ml[35,1169+9]..[35,1169+22])
+                                                                  [
+                                                                    <arg>
+                                                                    Nolabel
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[35,1169+23]..[35,1169+40])
+Pexp_fun
+Nolabel
+None
+pattern (testsuite/tests/basic/opt_variants.ml[35,1169+28]..[35,1169+29])
+  Ppat_var "x" (testsuite/tests/basic/opt_variants.ml[35,1169+28]..[35,1169+29])
+expression (testsuite/tests/basic/opt_variants.ml[35,1169+33]..[35,1169+39])
+  Pexp_apply
+  expression (testsuite/tests/basic/opt_variants.ml[35,1169+35]..[35,1169+36])
+    Pexp_ident ">" (testsuite/tests/basic/opt_variants.ml[35,1169+35]..[35,1169+36])
+  [
+    <arg>
+    Nolabel
+      expression (testsuite/tests/basic/opt_variants.ml[35,1169+33]..[35,1169+34])
+        Pexp_ident "x" (testsuite/tests/basic/opt_variants.ml[35,1169+33]..[35,1169+34])
+    <arg>
+    Nolabel
+      expression (testsuite/tests/basic/opt_variants.ml[35,1169+37]..[35,1169+39])
+        Pexp_constant PConst_int (10,None)
+  ]
+                                                                    <arg>
+                                                                    Nolabel
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[35,1169+41]..[35,1169+48])
+Pexp_construct "::" (testsuite/tests/basic/opt_variants.ml[35,1169+42]..[35,1169+48]) ghost
+Some
+  expression (testsuite/tests/basic/opt_variants.ml[35,1169+42]..[35,1169+48]) ghost
+    Pexp_tuple
+    [
+      expression (testsuite/tests/basic/opt_variants.ml[35,1169+42]..[35,1169+43])
+        Pexp_constant PConst_int (4,None)
+      expression (testsuite/tests/basic/opt_variants.ml[35,1169+45]..[35,1169+48]) ghost
+        Pexp_construct "::" (testsuite/tests/basic/opt_variants.ml[35,1169+45]..[35,1169+48]) ghost
+        Some
+          expression (testsuite/tests/basic/opt_variants.ml[35,1169+45]..[35,1169+48]) ghost
+            Pexp_tuple
+            [
+              expression (testsuite/tests/basic/opt_variants.ml[35,1169+45]..[35,1169+47])
+                Pexp_constant PConst_int (42,None)
+              expression (testsuite/tests/basic/opt_variants.ml[35,1169+47]..[35,1169+48]) ghost
+                Pexp_construct "[]" (testsuite/tests/basic/opt_variants.ml[35,1169+47]..[35,1169+48]) ghost
+                None
+            ]
+    ]
+                                                                  ]
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (testsuite/tests/basic/opt_variants.ml[35,1169+51]..[35,1169+58])
+                                                                  Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[35,1169+51]..[35,1169+55])
+                                                                  Some
+                                                                    expression (testsuite/tests/basic/opt_variants.ml[35,1169+56]..[35,1169+58])
+                                                                      Pexp_constant PConst_int (42,None)
+                                                            ]
+                                                        expression (testsuite/tests/basic/opt_variants.ml[37,1231+2]..[134,3997+4])
+                                                          Pexp_sequence
+                                                          expression (testsuite/tests/basic/opt_variants.ml[37,1231+2]..[37,1231+37])
+                                                            Pexp_assert
+                                                            expression (testsuite/tests/basic/opt_variants.ml[37,1231+8]..[37,1231+37])
+                                                              Pexp_apply
+                                                              expression (testsuite/tests/basic/opt_variants.ml[37,1231+30]..[37,1231+31])
+                                                                Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[37,1231+30]..[37,1231+31])
+                                                              [
+                                                                <arg>
+                                                                Nolabel
+                                                                  expression (testsuite/tests/basic/opt_variants.ml[37,1231+9]..[37,1231+29])
+                                                                    Pexp_apply
+                                                                    expression (testsuite/tests/basic/opt_variants.ml[37,1231+9]..[37,1231+23])
+                                                                      Pexp_ident "List.assoc_opt" (testsuite/tests/basic/opt_variants.ml[37,1231+9]..[37,1231+23])
+                                                                    [
+                                                                      <arg>
+                                                                      Nolabel
+expression (testsuite/tests/basic/opt_variants.ml[37,1231+24]..[37,1231+26])
+  Pexp_constant PConst_int (42,None)
+                                                                      <arg>
+                                                                      Nolabel
+expression (testsuite/tests/basic/opt_variants.ml[37,1231+27]..[37,1231+29])
+  Pexp_construct "[]" (testsuite/tests/basic/opt_variants.ml[37,1231+27]..[37,1231+29])
+  None
+                                                                    ]
+                                                                <arg>
+                                                                Nolabel
+                                                                  expression (testsuite/tests/basic/opt_variants.ml[37,1231+32]..[37,1231+36])
+                                                                    Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[37,1231+32]..[37,1231+36])
+                                                                    None
+                                                              ]
+                                                          expression (testsuite/tests/basic/opt_variants.ml[38,1270+2]..[134,3997+4])
+                                                            Pexp_sequence
+                                                            expression (testsuite/tests/basic/opt_variants.ml[38,1270+2]..[38,1270+61])
+                                                              Pexp_assert
+                                                              expression (testsuite/tests/basic/opt_variants.ml[38,1270+8]..[38,1270+61])
+                                                                Pexp_apply
+                                                                expression (testsuite/tests/basic/opt_variants.ml[38,1270+49]..[38,1270+50])
+                                                                  Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[38,1270+49]..[38,1270+50])
+                                                                [
+                                                                  <arg>
+                                                                  Nolabel
+                                                                    expression (testsuite/tests/basic/opt_variants.ml[38,1270+9]..[38,1270+48])
+                                                                      Pexp_apply
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[38,1270+9]..[38,1270+23])
+Pexp_ident "List.assoc_opt" (testsuite/tests/basic/opt_variants.ml[38,1270+9]..[38,1270+23])
+                                                                      [
+<arg>
+Nolabel
+  expression (testsuite/tests/basic/opt_variants.ml[38,1270+24]..[38,1270+26])
+    Pexp_constant PConst_int (42,None)
+<arg>
+Nolabel
+  expression (testsuite/tests/basic/opt_variants.ml[38,1270+27]..[38,1270+48])
+    Pexp_construct "::" (testsuite/tests/basic/opt_variants.ml[38,1270+28]..[38,1270+48]) ghost
+    Some
+      expression (testsuite/tests/basic/opt_variants.ml[38,1270+28]..[38,1270+48]) ghost
+        Pexp_tuple
+        [
+          expression (testsuite/tests/basic/opt_variants.ml[38,1270+28]..[38,1270+37])
+            Pexp_tuple
+            [
+              expression (testsuite/tests/basic/opt_variants.ml[38,1270+28]..[38,1270+30])
+                Pexp_constant PConst_int (41,None)
+              expression (testsuite/tests/basic/opt_variants.ml[38,1270+32]..[38,1270+37])
+                Pexp_construct "false" (testsuite/tests/basic/opt_variants.ml[38,1270+32]..[38,1270+37])
+                None
+            ]
+          expression (testsuite/tests/basic/opt_variants.ml[38,1270+39]..[38,1270+48]) ghost
+            Pexp_construct "::" (testsuite/tests/basic/opt_variants.ml[38,1270+39]..[38,1270+48]) ghost
+            Some
+              expression (testsuite/tests/basic/opt_variants.ml[38,1270+39]..[38,1270+48]) ghost
+                Pexp_tuple
+                [
+                  expression (testsuite/tests/basic/opt_variants.ml[38,1270+39]..[38,1270+47])
+                    Pexp_tuple
+                    [
+                      expression (testsuite/tests/basic/opt_variants.ml[38,1270+39]..[38,1270+41])
+                        Pexp_constant PConst_int (42,None)
+                      expression (testsuite/tests/basic/opt_variants.ml[38,1270+43]..[38,1270+47])
+                        Pexp_construct "true" (testsuite/tests/basic/opt_variants.ml[38,1270+43]..[38,1270+47])
+                        None
+                    ]
+                  expression (testsuite/tests/basic/opt_variants.ml[38,1270+47]..[38,1270+48]) ghost
+                    Pexp_construct "[]" (testsuite/tests/basic/opt_variants.ml[38,1270+47]..[38,1270+48]) ghost
+                    None
+                ]
+        ]
+                                                                      ]
+                                                                  <arg>
+                                                                  Nolabel
+                                                                    expression (testsuite/tests/basic/opt_variants.ml[38,1270+51]..[38,1270+60])
+                                                                      Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[38,1270+51]..[38,1270+55])
+                                                                      Some
+expression (testsuite/tests/basic/opt_variants.ml[38,1270+56]..[38,1270+60])
+  Pexp_construct "true" (testsuite/tests/basic/opt_variants.ml[38,1270+56]..[38,1270+60])
+  None
+                                                                ]
+                                                            expression (testsuite/tests/basic/opt_variants.ml[40,1334+2]..[134,3997+4])
+                                                              Pexp_sequence
+                                                              expression (testsuite/tests/basic/opt_variants.ml[40,1334+2]..[40,1334+36])
+                                                                Pexp_assert
+                                                                expression (testsuite/tests/basic/opt_variants.ml[40,1334+8]..[40,1334+36])
+                                                                  Pexp_apply
+                                                                  expression (testsuite/tests/basic/opt_variants.ml[40,1334+29]..[40,1334+30])
+                                                                    Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[40,1334+29]..[40,1334+30])
+                                                                  [
+                                                                    <arg>
+                                                                    Nolabel
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[40,1334+9]..[40,1334+28])
+Pexp_apply
+expression (testsuite/tests/basic/opt_variants.ml[40,1334+9]..[40,1334+22])
+  Pexp_ident "List.assq_opt" (testsuite/tests/basic/opt_variants.ml[40,1334+9]..[40,1334+22])
+[
+  <arg>
+  Nolabel
+    expression (testsuite/tests/basic/opt_variants.ml[40,1334+23]..[40,1334+25])
+      Pexp_constant PConst_int (42,None)
+  <arg>
+  Nolabel
+    expression (testsuite/tests/basic/opt_variants.ml[40,1334+26]..[40,1334+28])
+      Pexp_construct "[]" (testsuite/tests/basic/opt_variants.ml[40,1334+26]..[40,1334+28])
+      None
+]
+                                                                    <arg>
+                                                                    Nolabel
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[40,1334+31]..[40,1334+35])
+Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[40,1334+31]..[40,1334+35])
+None
+                                                                  ]
+                                                              expression (testsuite/tests/basic/opt_variants.ml[41,1372+2]..[134,3997+4])
+                                                                Pexp_sequence
+                                                                expression (testsuite/tests/basic/opt_variants.ml[41,1372+2]..[41,1372+60])
+                                                                  Pexp_assert
+                                                                  expression (testsuite/tests/basic/opt_variants.ml[41,1372+8]..[41,1372+60])
+                                                                    Pexp_apply
+                                                                    expression (testsuite/tests/basic/opt_variants.ml[41,1372+48]..[41,1372+49])
+                                                                      Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[41,1372+48]..[41,1372+49])
+                                                                    [
+                                                                      <arg>
+                                                                      Nolabel
+expression (testsuite/tests/basic/opt_variants.ml[41,1372+9]..[41,1372+47])
+  Pexp_apply
+  expression (testsuite/tests/basic/opt_variants.ml[41,1372+9]..[41,1372+22])
+    Pexp_ident "List.assq_opt" (testsuite/tests/basic/opt_variants.ml[41,1372+9]..[41,1372+22])
+  [
+    <arg>
+    Nolabel
+      expression (testsuite/tests/basic/opt_variants.ml[41,1372+23]..[41,1372+25])
+        Pexp_constant PConst_int (42,None)
+    <arg>
+    Nolabel
+      expression (testsuite/tests/basic/opt_variants.ml[41,1372+26]..[41,1372+47])
+        Pexp_construct "::" (testsuite/tests/basic/opt_variants.ml[41,1372+27]..[41,1372+47]) ghost
+        Some
+          expression (testsuite/tests/basic/opt_variants.ml[41,1372+27]..[41,1372+47]) ghost
+            Pexp_tuple
+            [
+              expression (testsuite/tests/basic/opt_variants.ml[41,1372+27]..[41,1372+36])
+                Pexp_tuple
+                [
+                  expression (testsuite/tests/basic/opt_variants.ml[41,1372+27]..[41,1372+29])
+                    Pexp_constant PConst_int (41,None)
+                  expression (testsuite/tests/basic/opt_variants.ml[41,1372+31]..[41,1372+36])
+                    Pexp_construct "false" (testsuite/tests/basic/opt_variants.ml[41,1372+31]..[41,1372+36])
+                    None
+                ]
+              expression (testsuite/tests/basic/opt_variants.ml[41,1372+38]..[41,1372+47]) ghost
+                Pexp_construct "::" (testsuite/tests/basic/opt_variants.ml[41,1372+38]..[41,1372+47]) ghost
+                Some
+                  expression (testsuite/tests/basic/opt_variants.ml[41,1372+38]..[41,1372+47]) ghost
+                    Pexp_tuple
+                    [
+                      expression (testsuite/tests/basic/opt_variants.ml[41,1372+38]..[41,1372+46])
+                        Pexp_tuple
+                        [
+                          expression (testsuite/tests/basic/opt_variants.ml[41,1372+38]..[41,1372+40])
+                            Pexp_constant PConst_int (42,None)
+                          expression (testsuite/tests/basic/opt_variants.ml[41,1372+42]..[41,1372+46])
+                            Pexp_construct "true" (testsuite/tests/basic/opt_variants.ml[41,1372+42]..[41,1372+46])
+                            None
+                        ]
+                      expression (testsuite/tests/basic/opt_variants.ml[41,1372+46]..[41,1372+47]) ghost
+                        Pexp_construct "[]" (testsuite/tests/basic/opt_variants.ml[41,1372+46]..[41,1372+47]) ghost
+                        None
+                    ]
+            ]
+  ]
+                                                                      <arg>
+                                                                      Nolabel
+expression (testsuite/tests/basic/opt_variants.ml[41,1372+50]..[41,1372+59])
+  Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[41,1372+50]..[41,1372+54])
+  Some
+    expression (testsuite/tests/basic/opt_variants.ml[41,1372+55]..[41,1372+59])
+      Pexp_construct "true" (testsuite/tests/basic/opt_variants.ml[41,1372+55]..[41,1372+59])
+      None
+                                                                    ]
+                                                                expression (testsuite/tests/basic/opt_variants.ml[43,1435+2]..[134,3997+4])
+                                                                  Pexp_let Nonrec
+                                                                  [
+                                                                    <def>
+                                                                      pattern (testsuite/tests/basic/opt_variants.ml[43,1435+6]..[43,1435+7])
+Ppat_var "h" (testsuite/tests/basic/opt_variants.ml[43,1435+6]..[43,1435+7])
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[43,1435+10]..[43,1435+26])
+Pexp_apply
+expression (testsuite/tests/basic/opt_variants.ml[43,1435+10]..[43,1435+24])
+  Pexp_ident "Hashtbl.create" (testsuite/tests/basic/opt_variants.ml[43,1435+10]..[43,1435+24])
+[
+  <arg>
+  Nolabel
+    expression (testsuite/tests/basic/opt_variants.ml[43,1435+25]..[43,1435+26])
+      Pexp_constant PConst_int (5,None)
+]
+                                                                  ]
+                                                                  expression (testsuite/tests/basic/opt_variants.ml[44,1465+2]..[134,3997+4])
+                                                                    Pexp_sequence
+                                                                    expression (testsuite/tests/basic/opt_variants.ml[44,1465+2]..[44,1465+38])
+                                                                      Pexp_assert
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[44,1465+8]..[44,1465+38])
+Pexp_apply
+expression (testsuite/tests/basic/opt_variants.ml[44,1465+31]..[44,1465+32])
+  Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[44,1465+31]..[44,1465+32])
+[
+  <arg>
+  Nolabel
+    expression (testsuite/tests/basic/opt_variants.ml[44,1465+9]..[44,1465+30])
+      Pexp_apply
+      expression (testsuite/tests/basic/opt_variants.ml[44,1465+9]..[44,1465+25])
+        Pexp_ident "Hashtbl.find_opt" (testsuite/tests/basic/opt_variants.ml[44,1465+9]..[44,1465+25])
+      [
+        <arg>
+        Nolabel
+          expression (testsuite/tests/basic/opt_variants.ml[44,1465+26]..[44,1465+27])
+            Pexp_ident "h" (testsuite/tests/basic/opt_variants.ml[44,1465+26]..[44,1465+27])
+        <arg>
+        Nolabel
+          expression (testsuite/tests/basic/opt_variants.ml[44,1465+28]..[44,1465+30])
+            Pexp_constant PConst_int (42,None)
+      ]
+  <arg>
+  Nolabel
+    expression (testsuite/tests/basic/opt_variants.ml[44,1465+33]..[44,1465+37])
+      Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[44,1465+33]..[44,1465+37])
+      None
+]
+                                                                    expression (testsuite/tests/basic/opt_variants.ml[45,1505+2]..[134,3997+4])
+                                                                      Pexp_sequence
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[45,1505+2]..[45,1505+21])
+Pexp_apply
+expression (testsuite/tests/basic/opt_variants.ml[45,1505+2]..[45,1505+13])
+  Pexp_ident "Hashtbl.add" (testsuite/tests/basic/opt_variants.ml[45,1505+2]..[45,1505+13])
+[
+  <arg>
+  Nolabel
+    expression (testsuite/tests/basic/opt_variants.ml[45,1505+14]..[45,1505+15])
+      Pexp_ident "h" (testsuite/tests/basic/opt_variants.ml[45,1505+14]..[45,1505+15])
+  <arg>
+  Nolabel
+    expression (testsuite/tests/basic/opt_variants.ml[45,1505+16]..[45,1505+18])
+      Pexp_constant PConst_int (42,None)
+  <arg>
+  Nolabel
+    expression (testsuite/tests/basic/opt_variants.ml[45,1505+19]..[45,1505+21])
+      Pexp_construct "()" (testsuite/tests/basic/opt_variants.ml[45,1505+19]..[45,1505+21])
+      None
+]
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[46,1528+2]..[134,3997+4])
+Pexp_sequence
+expression (testsuite/tests/basic/opt_variants.ml[46,1528+2]..[46,1528+41])
+  Pexp_assert
+  expression (testsuite/tests/basic/opt_variants.ml[46,1528+8]..[46,1528+41])
+    Pexp_apply
+    expression (testsuite/tests/basic/opt_variants.ml[46,1528+31]..[46,1528+32])
+      Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[46,1528+31]..[46,1528+32])
+    [
+      <arg>
+      Nolabel
+        expression (testsuite/tests/basic/opt_variants.ml[46,1528+9]..[46,1528+30])
+          Pexp_apply
+          expression (testsuite/tests/basic/opt_variants.ml[46,1528+9]..[46,1528+25])
+            Pexp_ident "Hashtbl.find_opt" (testsuite/tests/basic/opt_variants.ml[46,1528+9]..[46,1528+25])
+          [
+            <arg>
+            Nolabel
+              expression (testsuite/tests/basic/opt_variants.ml[46,1528+26]..[46,1528+27])
+                Pexp_ident "h" (testsuite/tests/basic/opt_variants.ml[46,1528+26]..[46,1528+27])
+            <arg>
+            Nolabel
+              expression (testsuite/tests/basic/opt_variants.ml[46,1528+28]..[46,1528+30])
+                Pexp_constant PConst_int (42,None)
+          ]
+      <arg>
+      Nolabel
+        expression (testsuite/tests/basic/opt_variants.ml[46,1528+33]..[46,1528+40])
+          Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[46,1528+33]..[46,1528+37])
+          Some
+            expression (testsuite/tests/basic/opt_variants.ml[46,1528+38]..[46,1528+40])
+              Pexp_construct "()" (testsuite/tests/basic/opt_variants.ml[46,1528+38]..[46,1528+40])
+              None
+    ]
+expression (testsuite/tests/basic/opt_variants.ml[49,1573+2]..[134,3997+4])
+  Pexp_letmodule "IntSet" (testsuite/tests/basic/opt_variants.ml[49,1573+13]..[49,1573+19])
+  module_expr (testsuite/tests/basic/opt_variants.ml[49,1573+22]..[52,1658+8])
+    Pmod_apply
+    module_expr (testsuite/tests/basic/opt_variants.ml[49,1573+22]..[49,1573+30])
+      Pmod_ident "Set.Make" (testsuite/tests/basic/opt_variants.ml[49,1573+22]..[49,1573+30])
+    module_expr (testsuite/tests/basic/opt_variants.ml[49,1573+31]..[52,1658+7])
+      Pmod_structure
+      [
+        structure_item (testsuite/tests/basic/opt_variants.ml[50,1611+6]..[50,1611+18])
+          Pstr_type Rec
+          [
+            type_declaration "t" (testsuite/tests/basic/opt_variants.ml[50,1611+11]..[50,1611+12]) (testsuite/tests/basic/opt_variants.ml[50,1611+6]..[50,1611+18])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/basic/opt_variants.ml[50,1611+15]..[50,1611+18])
+                    Ptyp_constr "int" (testsuite/tests/basic/opt_variants.ml[50,1611+15]..[50,1611+18])
+                    []
+          ]
+        structure_item (testsuite/tests/basic/opt_variants.ml[51,1630+6]..[51,1630+27])
+          Pstr_value Nonrec
+          [
+            <def>
+              pattern (testsuite/tests/basic/opt_variants.ml[51,1630+10]..[51,1630+17])
+                Ppat_var "compare" (testsuite/tests/basic/opt_variants.ml[51,1630+10]..[51,1630+17])
+              expression (testsuite/tests/basic/opt_variants.ml[51,1630+20]..[51,1630+27])
+                Pexp_ident "compare" (testsuite/tests/basic/opt_variants.ml[51,1630+20]..[51,1630+27])
+          ]
+      ]
+  expression (testsuite/tests/basic/opt_variants.ml[54,1672+2]..[134,3997+4])
+    Pexp_let Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/basic/opt_variants.ml[54,1672+6]..[54,1672+9])
+          Ppat_var "set" (testsuite/tests/basic/opt_variants.ml[54,1672+6]..[54,1672+9])
+        expression (testsuite/tests/basic/opt_variants.ml[54,1672+12]..[54,1672+35])
+          Pexp_apply
+          expression (testsuite/tests/basic/opt_variants.ml[54,1672+12]..[54,1672+26])
+            Pexp_ident "IntSet.of_list" (testsuite/tests/basic/opt_variants.ml[54,1672+12]..[54,1672+26])
+          [
+            <arg>
+            Nolabel
+              expression (testsuite/tests/basic/opt_variants.ml[54,1672+27]..[54,1672+35])
+                Pexp_construct "::" (testsuite/tests/basic/opt_variants.ml[54,1672+28]..[54,1672+35]) ghost
+                Some
+                  expression (testsuite/tests/basic/opt_variants.ml[54,1672+28]..[54,1672+35]) ghost
+                    Pexp_tuple
+                    [
+                      expression (testsuite/tests/basic/opt_variants.ml[54,1672+28]..[54,1672+30])
+                        Pexp_constant PConst_int (42,None)
+                      expression (testsuite/tests/basic/opt_variants.ml[54,1672+32]..[54,1672+35]) ghost
+                        Pexp_construct "::" (testsuite/tests/basic/opt_variants.ml[54,1672+32]..[54,1672+35]) ghost
+                        Some
+                          expression (testsuite/tests/basic/opt_variants.ml[54,1672+32]..[54,1672+35]) ghost
+                            Pexp_tuple
+                            [
+                              expression (testsuite/tests/basic/opt_variants.ml[54,1672+32]..[54,1672+34])
+                                Pexp_constant PConst_int (43,None)
+                              expression (testsuite/tests/basic/opt_variants.ml[54,1672+34]..[54,1672+35]) ghost
+                                Pexp_construct "[]" (testsuite/tests/basic/opt_variants.ml[54,1672+34]..[54,1672+35]) ghost
+                                None
+                            ]
+                    ]
+          ]
+    ]
+    expression (testsuite/tests/basic/opt_variants.ml[55,1711+2]..[134,3997+4])
+      Pexp_sequence
+      expression (testsuite/tests/basic/opt_variants.ml[55,1711+2]..[55,1711+48])
+        Pexp_assert
+        expression (testsuite/tests/basic/opt_variants.ml[55,1711+8]..[55,1711+48])
+          Pexp_apply
+          expression (testsuite/tests/basic/opt_variants.ml[55,1711+41]..[55,1711+42])
+            Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[55,1711+41]..[55,1711+42])
+          [
+            <arg>
+            Nolabel
+              expression (testsuite/tests/basic/opt_variants.ml[55,1711+9]..[55,1711+40])
+                Pexp_apply
+                expression (testsuite/tests/basic/opt_variants.ml[55,1711+9]..[55,1711+27])
+                  Pexp_ident "IntSet.min_elt_opt" (testsuite/tests/basic/opt_variants.ml[55,1711+9]..[55,1711+27])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/basic/opt_variants.ml[55,1711+28]..[55,1711+40])
+                      Pexp_ident "IntSet.empty" (testsuite/tests/basic/opt_variants.ml[55,1711+28]..[55,1711+40])
+                ]
+            <arg>
+            Nolabel
+              expression (testsuite/tests/basic/opt_variants.ml[55,1711+43]..[55,1711+47])
+                Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[55,1711+43]..[55,1711+47])
+                None
+          ]
+      expression (testsuite/tests/basic/opt_variants.ml[56,1761+2]..[134,3997+4])
+        Pexp_sequence
+        expression (testsuite/tests/basic/opt_variants.ml[56,1761+2]..[56,1761+42])
+          Pexp_assert
+          expression (testsuite/tests/basic/opt_variants.ml[56,1761+8]..[56,1761+42])
+            Pexp_apply
+            expression (testsuite/tests/basic/opt_variants.ml[56,1761+32]..[56,1761+33])
+              Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[56,1761+32]..[56,1761+33])
+            [
+              <arg>
+              Nolabel
+                expression (testsuite/tests/basic/opt_variants.ml[56,1761+9]..[56,1761+31])
+                  Pexp_apply
+                  expression (testsuite/tests/basic/opt_variants.ml[56,1761+9]..[56,1761+27])
+                    Pexp_ident "IntSet.min_elt_opt" (testsuite/tests/basic/opt_variants.ml[56,1761+9]..[56,1761+27])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/basic/opt_variants.ml[56,1761+28]..[56,1761+31])
+                        Pexp_ident "set" (testsuite/tests/basic/opt_variants.ml[56,1761+28]..[56,1761+31])
+                  ]
+              <arg>
+              Nolabel
+                expression (testsuite/tests/basic/opt_variants.ml[56,1761+34]..[56,1761+41])
+                  Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[56,1761+34]..[56,1761+38])
+                  Some
+                    expression (testsuite/tests/basic/opt_variants.ml[56,1761+39]..[56,1761+41])
+                      Pexp_constant PConst_int (42,None)
+            ]
+        expression (testsuite/tests/basic/opt_variants.ml[58,1806+2]..[134,3997+4])
+          Pexp_sequence
+          expression (testsuite/tests/basic/opt_variants.ml[58,1806+2]..[58,1806+48])
+            Pexp_assert
+            expression (testsuite/tests/basic/opt_variants.ml[58,1806+8]..[58,1806+48])
+              Pexp_apply
+              expression (testsuite/tests/basic/opt_variants.ml[58,1806+41]..[58,1806+42])
+                Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[58,1806+41]..[58,1806+42])
+              [
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/basic/opt_variants.ml[58,1806+9]..[58,1806+40])
+                    Pexp_apply
+                    expression (testsuite/tests/basic/opt_variants.ml[58,1806+9]..[58,1806+27])
+                      Pexp_ident "IntSet.max_elt_opt" (testsuite/tests/basic/opt_variants.ml[58,1806+9]..[58,1806+27])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/basic/opt_variants.ml[58,1806+28]..[58,1806+40])
+                          Pexp_ident "IntSet.empty" (testsuite/tests/basic/opt_variants.ml[58,1806+28]..[58,1806+40])
+                    ]
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/basic/opt_variants.ml[58,1806+43]..[58,1806+47])
+                    Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[58,1806+43]..[58,1806+47])
+                    None
+              ]
+          expression (testsuite/tests/basic/opt_variants.ml[59,1856+2]..[134,3997+4])
+            Pexp_sequence
+            expression (testsuite/tests/basic/opt_variants.ml[59,1856+2]..[59,1856+42])
+              Pexp_assert
+              expression (testsuite/tests/basic/opt_variants.ml[59,1856+8]..[59,1856+42])
+                Pexp_apply
+                expression (testsuite/tests/basic/opt_variants.ml[59,1856+32]..[59,1856+33])
+                  Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[59,1856+32]..[59,1856+33])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/basic/opt_variants.ml[59,1856+9]..[59,1856+31])
+                      Pexp_apply
+                      expression (testsuite/tests/basic/opt_variants.ml[59,1856+9]..[59,1856+27])
+                        Pexp_ident "IntSet.max_elt_opt" (testsuite/tests/basic/opt_variants.ml[59,1856+9]..[59,1856+27])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/basic/opt_variants.ml[59,1856+28]..[59,1856+31])
+                            Pexp_ident "set" (testsuite/tests/basic/opt_variants.ml[59,1856+28]..[59,1856+31])
+                      ]
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/basic/opt_variants.ml[59,1856+34]..[59,1856+41])
+                      Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[59,1856+34]..[59,1856+38])
+                      Some
+                        expression (testsuite/tests/basic/opt_variants.ml[59,1856+39]..[59,1856+41])
+                          Pexp_constant PConst_int (43,None)
+                ]
+            expression (testsuite/tests/basic/opt_variants.ml[61,1901+2]..[134,3997+4])
+              Pexp_sequence
+              expression (testsuite/tests/basic/opt_variants.ml[61,1901+2]..[61,1901+47])
+                Pexp_assert
+                expression (testsuite/tests/basic/opt_variants.ml[61,1901+8]..[61,1901+47])
+                  Pexp_apply
+                  expression (testsuite/tests/basic/opt_variants.ml[61,1901+40]..[61,1901+41])
+                    Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[61,1901+40]..[61,1901+41])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/basic/opt_variants.ml[61,1901+9]..[61,1901+39])
+                        Pexp_apply
+                        expression (testsuite/tests/basic/opt_variants.ml[61,1901+9]..[61,1901+26])
+                          Pexp_ident "IntSet.choose_opt" (testsuite/tests/basic/opt_variants.ml[61,1901+9]..[61,1901+26])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/basic/opt_variants.ml[61,1901+27]..[61,1901+39])
+                              Pexp_ident "IntSet.empty" (testsuite/tests/basic/opt_variants.ml[61,1901+27]..[61,1901+39])
+                        ]
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/basic/opt_variants.ml[61,1901+42]..[61,1901+46])
+                        Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[61,1901+42]..[61,1901+46])
+                        None
+                  ]
+              expression (testsuite/tests/basic/opt_variants.ml[62,1950+2]..[134,3997+4])
+                Pexp_sequence
+                expression (testsuite/tests/basic/opt_variants.ml[62,1950+2]..[62,1950+39])
+                  Pexp_assert
+                  expression (testsuite/tests/basic/opt_variants.ml[62,1950+8]..[62,1950+39])
+                    Pexp_apply
+                    expression (testsuite/tests/basic/opt_variants.ml[62,1950+31]..[62,1950+33])
+                      Pexp_ident "<>" (testsuite/tests/basic/opt_variants.ml[62,1950+31]..[62,1950+33])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/basic/opt_variants.ml[62,1950+9]..[62,1950+30])
+                          Pexp_apply
+                          expression (testsuite/tests/basic/opt_variants.ml[62,1950+9]..[62,1950+26])
+                            Pexp_ident "IntSet.choose_opt" (testsuite/tests/basic/opt_variants.ml[62,1950+9]..[62,1950+26])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/basic/opt_variants.ml[62,1950+27]..[62,1950+30])
+                                Pexp_ident "set" (testsuite/tests/basic/opt_variants.ml[62,1950+27]..[62,1950+30])
+                          ]
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/basic/opt_variants.ml[62,1950+34]..[62,1950+38])
+                          Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[62,1950+34]..[62,1950+38])
+                          None
+                    ]
+                expression (testsuite/tests/basic/opt_variants.ml[64,1992+2]..[134,3997+4])
+                  Pexp_sequence
+                  expression (testsuite/tests/basic/opt_variants.ml[64,1992+2]..[64,1992+48])
+                    Pexp_assert
+                    expression (testsuite/tests/basic/opt_variants.ml[64,1992+8]..[64,1992+48])
+                      Pexp_apply
+                      expression (testsuite/tests/basic/opt_variants.ml[64,1992+41]..[64,1992+42])
+                        Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[64,1992+41]..[64,1992+42])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/basic/opt_variants.ml[64,1992+9]..[64,1992+40])
+                            Pexp_apply
+                            expression (testsuite/tests/basic/opt_variants.ml[64,1992+9]..[64,1992+24])
+                              Pexp_ident "IntSet.find_opt" (testsuite/tests/basic/opt_variants.ml[64,1992+9]..[64,1992+24])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/basic/opt_variants.ml[64,1992+25]..[64,1992+27])
+                                  Pexp_constant PConst_int (42,None)
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/basic/opt_variants.ml[64,1992+28]..[64,1992+40])
+                                  Pexp_ident "IntSet.empty" (testsuite/tests/basic/opt_variants.ml[64,1992+28]..[64,1992+40])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/basic/opt_variants.ml[64,1992+43]..[64,1992+47])
+                            Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[64,1992+43]..[64,1992+47])
+                            None
+                      ]
+                  expression (testsuite/tests/basic/opt_variants.ml[65,2042+2]..[134,3997+4])
+                    Pexp_sequence
+                    expression (testsuite/tests/basic/opt_variants.ml[65,2042+2]..[65,2042+42])
+                      Pexp_assert
+                      expression (testsuite/tests/basic/opt_variants.ml[65,2042+8]..[65,2042+42])
+                        Pexp_apply
+                        expression (testsuite/tests/basic/opt_variants.ml[65,2042+32]..[65,2042+33])
+                          Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[65,2042+32]..[65,2042+33])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/basic/opt_variants.ml[65,2042+9]..[65,2042+31])
+                              Pexp_apply
+                              expression (testsuite/tests/basic/opt_variants.ml[65,2042+9]..[65,2042+24])
+                                Pexp_ident "IntSet.find_opt" (testsuite/tests/basic/opt_variants.ml[65,2042+9]..[65,2042+24])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/basic/opt_variants.ml[65,2042+25]..[65,2042+27])
+                                    Pexp_constant PConst_int (42,None)
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/basic/opt_variants.ml[65,2042+28]..[65,2042+31])
+                                    Pexp_ident "set" (testsuite/tests/basic/opt_variants.ml[65,2042+28]..[65,2042+31])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/basic/opt_variants.ml[65,2042+34]..[65,2042+41])
+                              Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[65,2042+34]..[65,2042+38])
+                              Some
+                                expression (testsuite/tests/basic/opt_variants.ml[65,2042+39]..[65,2042+41])
+                                  Pexp_constant PConst_int (42,None)
+                        ]
+                    expression (testsuite/tests/basic/opt_variants.ml[66,2086+2]..[134,3997+4])
+                      Pexp_sequence
+                      expression (testsuite/tests/basic/opt_variants.ml[66,2086+2]..[66,2086+38])
+                        Pexp_assert
+                        expression (testsuite/tests/basic/opt_variants.ml[66,2086+8]..[66,2086+38])
+                          Pexp_apply
+                          expression (testsuite/tests/basic/opt_variants.ml[66,2086+31]..[66,2086+32])
+                            Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[66,2086+31]..[66,2086+32])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/basic/opt_variants.ml[66,2086+9]..[66,2086+30])
+                                Pexp_apply
+                                expression (testsuite/tests/basic/opt_variants.ml[66,2086+9]..[66,2086+24])
+                                  Pexp_ident "IntSet.find_opt" (testsuite/tests/basic/opt_variants.ml[66,2086+9]..[66,2086+24])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/basic/opt_variants.ml[66,2086+25]..[66,2086+26])
+                                      Pexp_constant PConst_int (0,None)
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/basic/opt_variants.ml[66,2086+27]..[66,2086+30])
+                                      Pexp_ident "set" (testsuite/tests/basic/opt_variants.ml[66,2086+27]..[66,2086+30])
+                                ]
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/basic/opt_variants.ml[66,2086+33]..[66,2086+37])
+                                Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[66,2086+33]..[66,2086+37])
+                                None
+                          ]
+                      expression (testsuite/tests/basic/opt_variants.ml[69,2128+2]..[134,3997+4])
+                        Pexp_letmodule "IntMap" (testsuite/tests/basic/opt_variants.ml[69,2128+13]..[69,2128+19])
+                        module_expr (testsuite/tests/basic/opt_variants.ml[69,2128+22]..[72,2213+8])
+                          Pmod_apply
+                          module_expr (testsuite/tests/basic/opt_variants.ml[69,2128+22]..[69,2128+30])
+                            Pmod_ident "Map.Make" (testsuite/tests/basic/opt_variants.ml[69,2128+22]..[69,2128+30])
+                          module_expr (testsuite/tests/basic/opt_variants.ml[69,2128+31]..[72,2213+7])
+                            Pmod_structure
+                            [
+                              structure_item (testsuite/tests/basic/opt_variants.ml[70,2166+6]..[70,2166+18])
+                                Pstr_type Rec
+                                [
+                                  type_declaration "t" (testsuite/tests/basic/opt_variants.ml[70,2166+11]..[70,2166+12]) (testsuite/tests/basic/opt_variants.ml[70,2166+6]..[70,2166+18])
+                                    ptype_params =
+                                      []
+                                    ptype_cstrs =
+                                      []
+                                    ptype_kind =
+                                      Ptype_abstract
+                                    ptype_private = Public
+                                    ptype_manifest =
+                                      Some
+                                        core_type (testsuite/tests/basic/opt_variants.ml[70,2166+15]..[70,2166+18])
+                                          Ptyp_constr "int" (testsuite/tests/basic/opt_variants.ml[70,2166+15]..[70,2166+18])
+                                          []
+                                ]
+                              structure_item (testsuite/tests/basic/opt_variants.ml[71,2185+6]..[71,2185+27])
+                                Pstr_value Nonrec
+                                [
+                                  <def>
+                                    pattern (testsuite/tests/basic/opt_variants.ml[71,2185+10]..[71,2185+17])
+                                      Ppat_var "compare" (testsuite/tests/basic/opt_variants.ml[71,2185+10]..[71,2185+17])
+                                    expression (testsuite/tests/basic/opt_variants.ml[71,2185+20]..[71,2185+27])
+                                      Pexp_ident "compare" (testsuite/tests/basic/opt_variants.ml[71,2185+20]..[71,2185+27])
+                                ]
+                            ]
+                        expression (testsuite/tests/basic/opt_variants.ml[74,2227+2]..[134,3997+4])
+                          Pexp_let Nonrec
+                          [
+                            <def>
+                              pattern (testsuite/tests/basic/opt_variants.ml[74,2227+6]..[74,2227+9])
+                                Ppat_var "map" (testsuite/tests/basic/opt_variants.ml[74,2227+6]..[74,2227+9])
+                              expression (testsuite/tests/basic/opt_variants.ml[74,2227+12]..[74,2227+64])
+                                Pexp_apply
+                                expression (testsuite/tests/basic/opt_variants.ml[74,2227+12]..[74,2227+22])
+                                  Pexp_ident "IntMap.add" (testsuite/tests/basic/opt_variants.ml[74,2227+12]..[74,2227+22])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/basic/opt_variants.ml[74,2227+23]..[74,2227+25])
+                                      Pexp_constant PConst_int (42,None)
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/basic/opt_variants.ml[74,2227+26]..[74,2227+30])
+                                      Pexp_constant PConst_string("42",(testsuite/tests/basic/opt_variants.ml[74,2227+27]..[74,2227+29]),None)
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/basic/opt_variants.ml[74,2227+31]..[74,2227+64])
+                                      Pexp_apply
+                                      expression (testsuite/tests/basic/opt_variants.ml[74,2227+32]..[74,2227+42])
+                                        Pexp_ident "IntMap.add" (testsuite/tests/basic/opt_variants.ml[74,2227+32]..[74,2227+42])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/basic/opt_variants.ml[74,2227+43]..[74,2227+45])
+                                            Pexp_constant PConst_int (43,None)
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/basic/opt_variants.ml[74,2227+46]..[74,2227+50])
+                                            Pexp_constant PConst_string("43",(testsuite/tests/basic/opt_variants.ml[74,2227+47]..[74,2227+49]),None)
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/basic/opt_variants.ml[74,2227+51]..[74,2227+63])
+                                            Pexp_ident "IntMap.empty" (testsuite/tests/basic/opt_variants.ml[74,2227+51]..[74,2227+63])
+                                      ]
+                                ]
+                          ]
+                          expression (testsuite/tests/basic/opt_variants.ml[75,2295+2]..[134,3997+4])
+                            Pexp_sequence
+                            expression (testsuite/tests/basic/opt_variants.ml[75,2295+2]..[75,2295+52])
+                              Pexp_assert
+                              expression (testsuite/tests/basic/opt_variants.ml[75,2295+8]..[75,2295+52])
+                                Pexp_apply
+                                expression (testsuite/tests/basic/opt_variants.ml[75,2295+45]..[75,2295+46])
+                                  Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[75,2295+45]..[75,2295+46])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/basic/opt_variants.ml[75,2295+9]..[75,2295+44])
+                                      Pexp_apply
+                                      expression (testsuite/tests/basic/opt_variants.ml[75,2295+9]..[75,2295+31])
+                                        Pexp_ident "IntMap.min_binding_opt" (testsuite/tests/basic/opt_variants.ml[75,2295+9]..[75,2295+31])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/basic/opt_variants.ml[75,2295+32]..[75,2295+44])
+                                            Pexp_ident "IntMap.empty" (testsuite/tests/basic/opt_variants.ml[75,2295+32]..[75,2295+44])
+                                      ]
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/basic/opt_variants.ml[75,2295+47]..[75,2295+51])
+                                      Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[75,2295+47]..[75,2295+51])
+                                      None
+                                ]
+                            expression (testsuite/tests/basic/opt_variants.ml[76,2349+2]..[134,3997+4])
+                              Pexp_sequence
+                              expression (testsuite/tests/basic/opt_variants.ml[76,2349+2]..[76,2349+54])
+                                Pexp_assert
+                                expression (testsuite/tests/basic/opt_variants.ml[76,2349+8]..[76,2349+54])
+                                  Pexp_apply
+                                  expression (testsuite/tests/basic/opt_variants.ml[76,2349+36]..[76,2349+37])
+                                    Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[76,2349+36]..[76,2349+37])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/basic/opt_variants.ml[76,2349+9]..[76,2349+35])
+                                        Pexp_apply
+                                        expression (testsuite/tests/basic/opt_variants.ml[76,2349+9]..[76,2349+31])
+                                          Pexp_ident "IntMap.min_binding_opt" (testsuite/tests/basic/opt_variants.ml[76,2349+9]..[76,2349+31])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/basic/opt_variants.ml[76,2349+32]..[76,2349+35])
+                                              Pexp_ident "map" (testsuite/tests/basic/opt_variants.ml[76,2349+32]..[76,2349+35])
+                                        ]
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/basic/opt_variants.ml[76,2349+38]..[76,2349+53])
+                                        Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[76,2349+38]..[76,2349+42])
+                                        Some
+                                          expression (testsuite/tests/basic/opt_variants.ml[76,2349+43]..[76,2349+53])
+                                            Pexp_tuple
+                                            [
+                                              expression (testsuite/tests/basic/opt_variants.ml[76,2349+44]..[76,2349+46])
+                                                Pexp_constant PConst_int (42,None)
+                                              expression (testsuite/tests/basic/opt_variants.ml[76,2349+48]..[76,2349+52])
+                                                Pexp_constant PConst_string("42",(testsuite/tests/basic/opt_variants.ml[76,2349+49]..[76,2349+51]),None)
+                                            ]
+                                  ]
+                              expression (testsuite/tests/basic/opt_variants.ml[78,2406+2]..[134,3997+4])
+                                Pexp_sequence
+                                expression (testsuite/tests/basic/opt_variants.ml[78,2406+2]..[78,2406+52])
+                                  Pexp_assert
+                                  expression (testsuite/tests/basic/opt_variants.ml[78,2406+8]..[78,2406+52])
+                                    Pexp_apply
+                                    expression (testsuite/tests/basic/opt_variants.ml[78,2406+45]..[78,2406+46])
+                                      Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[78,2406+45]..[78,2406+46])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/basic/opt_variants.ml[78,2406+9]..[78,2406+44])
+                                          Pexp_apply
+                                          expression (testsuite/tests/basic/opt_variants.ml[78,2406+9]..[78,2406+31])
+                                            Pexp_ident "IntMap.max_binding_opt" (testsuite/tests/basic/opt_variants.ml[78,2406+9]..[78,2406+31])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (testsuite/tests/basic/opt_variants.ml[78,2406+32]..[78,2406+44])
+                                                Pexp_ident "IntMap.empty" (testsuite/tests/basic/opt_variants.ml[78,2406+32]..[78,2406+44])
+                                          ]
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/basic/opt_variants.ml[78,2406+47]..[78,2406+51])
+                                          Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[78,2406+47]..[78,2406+51])
+                                          None
+                                    ]
+                                expression (testsuite/tests/basic/opt_variants.ml[79,2460+2]..[134,3997+4])
+                                  Pexp_sequence
+                                  expression (testsuite/tests/basic/opt_variants.ml[79,2460+2]..[79,2460+54])
+                                    Pexp_assert
+                                    expression (testsuite/tests/basic/opt_variants.ml[79,2460+8]..[79,2460+54])
+                                      Pexp_apply
+                                      expression (testsuite/tests/basic/opt_variants.ml[79,2460+36]..[79,2460+37])
+                                        Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[79,2460+36]..[79,2460+37])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/basic/opt_variants.ml[79,2460+9]..[79,2460+35])
+                                            Pexp_apply
+                                            expression (testsuite/tests/basic/opt_variants.ml[79,2460+9]..[79,2460+31])
+                                              Pexp_ident "IntMap.max_binding_opt" (testsuite/tests/basic/opt_variants.ml[79,2460+9]..[79,2460+31])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/basic/opt_variants.ml[79,2460+32]..[79,2460+35])
+                                                  Pexp_ident "map" (testsuite/tests/basic/opt_variants.ml[79,2460+32]..[79,2460+35])
+                                            ]
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/basic/opt_variants.ml[79,2460+38]..[79,2460+53])
+                                            Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[79,2460+38]..[79,2460+42])
+                                            Some
+                                              expression (testsuite/tests/basic/opt_variants.ml[79,2460+43]..[79,2460+53])
+                                                Pexp_tuple
+                                                [
+                                                  expression (testsuite/tests/basic/opt_variants.ml[79,2460+44]..[79,2460+46])
+                                                    Pexp_constant PConst_int (43,None)
+                                                  expression (testsuite/tests/basic/opt_variants.ml[79,2460+48]..[79,2460+52])
+                                                    Pexp_constant PConst_string("43",(testsuite/tests/basic/opt_variants.ml[79,2460+49]..[79,2460+51]),None)
+                                                ]
+                                      ]
+                                  expression (testsuite/tests/basic/opt_variants.ml[81,2517+2]..[134,3997+4])
+                                    Pexp_sequence
+                                    expression (testsuite/tests/basic/opt_variants.ml[81,2517+2]..[81,2517+47])
+                                      Pexp_assert
+                                      expression (testsuite/tests/basic/opt_variants.ml[81,2517+8]..[81,2517+47])
+                                        Pexp_apply
+                                        expression (testsuite/tests/basic/opt_variants.ml[81,2517+40]..[81,2517+41])
+                                          Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[81,2517+40]..[81,2517+41])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/basic/opt_variants.ml[81,2517+9]..[81,2517+39])
+                                              Pexp_apply
+                                              expression (testsuite/tests/basic/opt_variants.ml[81,2517+9]..[81,2517+26])
+                                                Pexp_ident "IntMap.choose_opt" (testsuite/tests/basic/opt_variants.ml[81,2517+9]..[81,2517+26])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/basic/opt_variants.ml[81,2517+27]..[81,2517+39])
+                                                    Pexp_ident "IntMap.empty" (testsuite/tests/basic/opt_variants.ml[81,2517+27]..[81,2517+39])
+                                              ]
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/basic/opt_variants.ml[81,2517+42]..[81,2517+46])
+                                              Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[81,2517+42]..[81,2517+46])
+                                              None
+                                        ]
+                                    expression (testsuite/tests/basic/opt_variants.ml[82,2566+2]..[134,3997+4])
+                                      Pexp_sequence
+                                      expression (testsuite/tests/basic/opt_variants.ml[82,2566+2]..[82,2566+39])
+                                        Pexp_assert
+                                        expression (testsuite/tests/basic/opt_variants.ml[82,2566+8]..[82,2566+39])
+                                          Pexp_apply
+                                          expression (testsuite/tests/basic/opt_variants.ml[82,2566+31]..[82,2566+33])
+                                            Pexp_ident "<>" (testsuite/tests/basic/opt_variants.ml[82,2566+31]..[82,2566+33])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (testsuite/tests/basic/opt_variants.ml[82,2566+9]..[82,2566+30])
+                                                Pexp_apply
+                                                expression (testsuite/tests/basic/opt_variants.ml[82,2566+9]..[82,2566+26])
+                                                  Pexp_ident "IntMap.choose_opt" (testsuite/tests/basic/opt_variants.ml[82,2566+9]..[82,2566+26])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (testsuite/tests/basic/opt_variants.ml[82,2566+27]..[82,2566+30])
+                                                      Pexp_ident "map" (testsuite/tests/basic/opt_variants.ml[82,2566+27]..[82,2566+30])
+                                                ]
+                                            <arg>
+                                            Nolabel
+                                              expression (testsuite/tests/basic/opt_variants.ml[82,2566+34]..[82,2566+38])
+                                                Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[82,2566+34]..[82,2566+38])
+                                                None
+                                          ]
+                                      expression (testsuite/tests/basic/opt_variants.ml[84,2608+2]..[134,3997+4])
+                                        Pexp_sequence
+                                        expression (testsuite/tests/basic/opt_variants.ml[84,2608+2]..[84,2608+48])
+                                          Pexp_assert
+                                          expression (testsuite/tests/basic/opt_variants.ml[84,2608+8]..[84,2608+48])
+                                            Pexp_apply
+                                            expression (testsuite/tests/basic/opt_variants.ml[84,2608+41]..[84,2608+42])
+                                              Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[84,2608+41]..[84,2608+42])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/basic/opt_variants.ml[84,2608+9]..[84,2608+40])
+                                                  Pexp_apply
+                                                  expression (testsuite/tests/basic/opt_variants.ml[84,2608+9]..[84,2608+24])
+                                                    Pexp_ident "IntMap.find_opt" (testsuite/tests/basic/opt_variants.ml[84,2608+9]..[84,2608+24])
+                                                  [
+                                                    <arg>
+                                                    Nolabel
+                                                      expression (testsuite/tests/basic/opt_variants.ml[84,2608+25]..[84,2608+27])
+                                                        Pexp_constant PConst_int (42,None)
+                                                    <arg>
+                                                    Nolabel
+                                                      expression (testsuite/tests/basic/opt_variants.ml[84,2608+28]..[84,2608+40])
+                                                        Pexp_ident "IntMap.empty" (testsuite/tests/basic/opt_variants.ml[84,2608+28]..[84,2608+40])
+                                                  ]
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/basic/opt_variants.ml[84,2608+43]..[84,2608+47])
+                                                  Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[84,2608+43]..[84,2608+47])
+                                                  None
+                                            ]
+                                        expression (testsuite/tests/basic/opt_variants.ml[85,2658+2]..[134,3997+4])
+                                          Pexp_sequence
+                                          expression (testsuite/tests/basic/opt_variants.ml[85,2658+2]..[85,2658+44])
+                                            Pexp_assert
+                                            expression (testsuite/tests/basic/opt_variants.ml[85,2658+8]..[85,2658+44])
+                                              Pexp_apply
+                                              expression (testsuite/tests/basic/opt_variants.ml[85,2658+32]..[85,2658+33])
+                                                Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[85,2658+32]..[85,2658+33])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/basic/opt_variants.ml[85,2658+9]..[85,2658+31])
+                                                    Pexp_apply
+                                                    expression (testsuite/tests/basic/opt_variants.ml[85,2658+9]..[85,2658+24])
+                                                      Pexp_ident "IntMap.find_opt" (testsuite/tests/basic/opt_variants.ml[85,2658+9]..[85,2658+24])
+                                                    [
+                                                      <arg>
+                                                      Nolabel
+                                                        expression (testsuite/tests/basic/opt_variants.ml[85,2658+25]..[85,2658+27])
+                                                          Pexp_constant PConst_int (42,None)
+                                                      <arg>
+                                                      Nolabel
+                                                        expression (testsuite/tests/basic/opt_variants.ml[85,2658+28]..[85,2658+31])
+                                                          Pexp_ident "map" (testsuite/tests/basic/opt_variants.ml[85,2658+28]..[85,2658+31])
+                                                    ]
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/basic/opt_variants.ml[85,2658+34]..[85,2658+43])
+                                                    Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[85,2658+34]..[85,2658+38])
+                                                    Some
+                                                      expression (testsuite/tests/basic/opt_variants.ml[85,2658+39]..[85,2658+43])
+                                                        Pexp_constant PConst_string("42",(testsuite/tests/basic/opt_variants.ml[85,2658+40]..[85,2658+42]),None)
+                                              ]
+                                          expression (testsuite/tests/basic/opt_variants.ml[86,2704+2]..[134,3997+4])
+                                            Pexp_sequence
+                                            expression (testsuite/tests/basic/opt_variants.ml[86,2704+2]..[86,2704+38])
+                                              Pexp_assert
+                                              expression (testsuite/tests/basic/opt_variants.ml[86,2704+8]..[86,2704+38])
+                                                Pexp_apply
+                                                expression (testsuite/tests/basic/opt_variants.ml[86,2704+31]..[86,2704+32])
+                                                  Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[86,2704+31]..[86,2704+32])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (testsuite/tests/basic/opt_variants.ml[86,2704+9]..[86,2704+30])
+                                                      Pexp_apply
+                                                      expression (testsuite/tests/basic/opt_variants.ml[86,2704+9]..[86,2704+24])
+                                                        Pexp_ident "IntMap.find_opt" (testsuite/tests/basic/opt_variants.ml[86,2704+9]..[86,2704+24])
+                                                      [
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (testsuite/tests/basic/opt_variants.ml[86,2704+25]..[86,2704+26])
+                                                            Pexp_constant PConst_int (0,None)
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (testsuite/tests/basic/opt_variants.ml[86,2704+27]..[86,2704+30])
+                                                            Pexp_ident "map" (testsuite/tests/basic/opt_variants.ml[86,2704+27]..[86,2704+30])
+                                                      ]
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (testsuite/tests/basic/opt_variants.ml[86,2704+33]..[86,2704+37])
+                                                      Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[86,2704+33]..[86,2704+37])
+                                                      None
+                                                ]
+                                            expression (testsuite/tests/basic/opt_variants.ml[89,2746+2]..[134,3997+4])
+                                              Pexp_let Nonrec
+                                              [
+                                                <def>
+                                                  pattern (testsuite/tests/basic/opt_variants.ml[89,2746+6]..[89,2746+7])
+                                                    Ppat_var "s" (testsuite/tests/basic/opt_variants.ml[89,2746+6]..[89,2746+7])
+                                                  expression (testsuite/tests/basic/opt_variants.ml[89,2746+10]..[89,2746+25])
+                                                    Pexp_constant PConst_string("Hello world !",(testsuite/tests/basic/opt_variants.ml[89,2746+11]..[89,2746+24]),None)
+                                              ]
+                                              expression (testsuite/tests/basic/opt_variants.ml[90,2775+2]..[134,3997+4])
+                                                Pexp_sequence
+                                                expression (testsuite/tests/basic/opt_variants.ml[90,2775+2]..[90,2775+40])
+                                                  Pexp_assert
+                                                  expression (testsuite/tests/basic/opt_variants.ml[90,2775+8]..[90,2775+40])
+                                                    Pexp_apply
+                                                    expression (testsuite/tests/basic/opt_variants.ml[90,2775+33]..[90,2775+34])
+                                                      Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[90,2775+33]..[90,2775+34])
+                                                    [
+                                                      <arg>
+                                                      Nolabel
+                                                        expression (testsuite/tests/basic/opt_variants.ml[90,2775+9]..[90,2775+31])
+                                                          Pexp_apply
+                                                          expression (testsuite/tests/basic/opt_variants.ml[90,2775+9]..[90,2775+25])
+                                                            Pexp_ident "String.index_opt" (testsuite/tests/basic/opt_variants.ml[90,2775+9]..[90,2775+25])
+                                                          [
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (testsuite/tests/basic/opt_variants.ml[90,2775+26]..[90,2775+27])
+                                                                Pexp_ident "s" (testsuite/tests/basic/opt_variants.ml[90,2775+26]..[90,2775+27])
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (testsuite/tests/basic/opt_variants.ml[90,2775+28]..[90,2775+31])
+                                                                Pexp_constant PConst_char 78
+                                                          ]
+                                                      <arg>
+                                                      Nolabel
+                                                        expression (testsuite/tests/basic/opt_variants.ml[90,2775+35]..[90,2775+39])
+                                                          Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[90,2775+35]..[90,2775+39])
+                                                          None
+                                                    ]
+                                                expression (testsuite/tests/basic/opt_variants.ml[91,2817+2]..[134,3997+4])
+                                                  Pexp_sequence
+                                                  expression (testsuite/tests/basic/opt_variants.ml[91,2817+2]..[91,2817+42])
+                                                    Pexp_assert
+                                                    expression (testsuite/tests/basic/opt_variants.ml[91,2817+8]..[91,2817+42])
+                                                      Pexp_apply
+                                                      expression (testsuite/tests/basic/opt_variants.ml[91,2817+33]..[91,2817+34])
+                                                        Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[91,2817+33]..[91,2817+34])
+                                                      [
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (testsuite/tests/basic/opt_variants.ml[91,2817+9]..[91,2817+31])
+                                                            Pexp_apply
+                                                            expression (testsuite/tests/basic/opt_variants.ml[91,2817+9]..[91,2817+25])
+                                                              Pexp_ident "String.index_opt" (testsuite/tests/basic/opt_variants.ml[91,2817+9]..[91,2817+25])
+                                                            [
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (testsuite/tests/basic/opt_variants.ml[91,2817+26]..[91,2817+27])
+                                                                  Pexp_ident "s" (testsuite/tests/basic/opt_variants.ml[91,2817+26]..[91,2817+27])
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (testsuite/tests/basic/opt_variants.ml[91,2817+28]..[91,2817+31])
+                                                                  Pexp_constant PConst_char 20
+                                                            ]
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (testsuite/tests/basic/opt_variants.ml[91,2817+35]..[91,2817+41])
+                                                            Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[91,2817+35]..[91,2817+39])
+                                                            Some
+                                                              expression (testsuite/tests/basic/opt_variants.ml[91,2817+40]..[91,2817+41])
+                                                                Pexp_constant PConst_int (5,None)
+                                                      ]
+                                                  expression (testsuite/tests/basic/opt_variants.ml[93,2862+2]..[134,3997+4])
+                                                    Pexp_sequence
+                                                    expression (testsuite/tests/basic/opt_variants.ml[93,2862+2]..[93,2862+41])
+                                                      Pexp_assert
+                                                      expression (testsuite/tests/basic/opt_variants.ml[93,2862+8]..[93,2862+41])
+                                                        Pexp_apply
+                                                        expression (testsuite/tests/basic/opt_variants.ml[93,2862+34]..[93,2862+35])
+                                                          Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[93,2862+34]..[93,2862+35])
+                                                        [
+                                                          <arg>
+                                                          Nolabel
+                                                            expression (testsuite/tests/basic/opt_variants.ml[93,2862+9]..[93,2862+32])
+                                                              Pexp_apply
+                                                              expression (testsuite/tests/basic/opt_variants.ml[93,2862+9]..[93,2862+26])
+                                                                Pexp_ident "String.rindex_opt" (testsuite/tests/basic/opt_variants.ml[93,2862+9]..[93,2862+26])
+                                                              [
+                                                                <arg>
+                                                                Nolabel
+                                                                  expression (testsuite/tests/basic/opt_variants.ml[93,2862+27]..[93,2862+28])
+                                                                    Pexp_ident "s" (testsuite/tests/basic/opt_variants.ml[93,2862+27]..[93,2862+28])
+                                                                <arg>
+                                                                Nolabel
+                                                                  expression (testsuite/tests/basic/opt_variants.ml[93,2862+29]..[93,2862+32])
+                                                                    Pexp_constant PConst_char 78
+                                                              ]
+                                                          <arg>
+                                                          Nolabel
+                                                            expression (testsuite/tests/basic/opt_variants.ml[93,2862+36]..[93,2862+40])
+                                                              Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[93,2862+36]..[93,2862+40])
+                                                              None
+                                                        ]
+                                                    expression (testsuite/tests/basic/opt_variants.ml[94,2905+2]..[134,3997+4])
+                                                      Pexp_sequence
+                                                      expression (testsuite/tests/basic/opt_variants.ml[94,2905+2]..[94,2905+44])
+                                                        Pexp_assert
+                                                        expression (testsuite/tests/basic/opt_variants.ml[94,2905+8]..[94,2905+44])
+                                                          Pexp_apply
+                                                          expression (testsuite/tests/basic/opt_variants.ml[94,2905+34]..[94,2905+35])
+                                                            Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[94,2905+34]..[94,2905+35])
+                                                          [
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (testsuite/tests/basic/opt_variants.ml[94,2905+9]..[94,2905+32])
+                                                                Pexp_apply
+                                                                expression (testsuite/tests/basic/opt_variants.ml[94,2905+9]..[94,2905+26])
+                                                                  Pexp_ident "String.rindex_opt" (testsuite/tests/basic/opt_variants.ml[94,2905+9]..[94,2905+26])
+                                                                [
+                                                                  <arg>
+                                                                  Nolabel
+                                                                    expression (testsuite/tests/basic/opt_variants.ml[94,2905+27]..[94,2905+28])
+                                                                      Pexp_ident "s" (testsuite/tests/basic/opt_variants.ml[94,2905+27]..[94,2905+28])
+                                                                  <arg>
+                                                                  Nolabel
+                                                                    expression (testsuite/tests/basic/opt_variants.ml[94,2905+29]..[94,2905+32])
+                                                                      Pexp_constant PConst_char 20
+                                                                ]
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (testsuite/tests/basic/opt_variants.ml[94,2905+36]..[94,2905+43])
+                                                                Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[94,2905+36]..[94,2905+40])
+                                                                Some
+                                                                  expression (testsuite/tests/basic/opt_variants.ml[94,2905+41]..[94,2905+43])
+                                                                    Pexp_constant PConst_int (11,None)
+                                                          ]
+                                                      expression (testsuite/tests/basic/opt_variants.ml[96,2952+2]..[134,3997+4])
+                                                        Pexp_sequence
+                                                        expression (testsuite/tests/basic/opt_variants.ml[96,2952+2]..[96,2952+47])
+                                                          Pexp_assert
+                                                          expression (testsuite/tests/basic/opt_variants.ml[96,2952+8]..[96,2952+47])
+                                                            Pexp_apply
+                                                            expression (testsuite/tests/basic/opt_variants.ml[96,2952+40]..[96,2952+41])
+                                                              Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[96,2952+40]..[96,2952+41])
+                                                            [
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (testsuite/tests/basic/opt_variants.ml[96,2952+9]..[96,2952+38])
+                                                                  Pexp_apply
+                                                                  expression (testsuite/tests/basic/opt_variants.ml[96,2952+9]..[96,2952+30])
+                                                                    Pexp_ident "String.index_from_opt" (testsuite/tests/basic/opt_variants.ml[96,2952+9]..[96,2952+30])
+                                                                  [
+                                                                    <arg>
+                                                                    Nolabel
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[96,2952+31]..[96,2952+32])
+Pexp_ident "s" (testsuite/tests/basic/opt_variants.ml[96,2952+31]..[96,2952+32])
+                                                                    <arg>
+                                                                    Nolabel
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[96,2952+33]..[96,2952+34])
+Pexp_constant PConst_int (0,None)
+                                                                    <arg>
+                                                                    Nolabel
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[96,2952+35]..[96,2952+38])
+Pexp_constant PConst_char 78
+                                                                  ]
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (testsuite/tests/basic/opt_variants.ml[96,2952+42]..[96,2952+46])
+                                                                  Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[96,2952+42]..[96,2952+46])
+                                                                  None
+                                                            ]
+                                                        expression (testsuite/tests/basic/opt_variants.ml[97,3001+2]..[134,3997+4])
+                                                          Pexp_sequence
+                                                          expression (testsuite/tests/basic/opt_variants.ml[97,3001+2]..[97,3001+50])
+                                                            Pexp_assert
+                                                            expression (testsuite/tests/basic/opt_variants.ml[97,3001+8]..[97,3001+50])
+                                                              Pexp_apply
+                                                              expression (testsuite/tests/basic/opt_variants.ml[97,3001+40]..[97,3001+41])
+                                                                Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[97,3001+40]..[97,3001+41])
+                                                              [
+                                                                <arg>
+                                                                Nolabel
+                                                                  expression (testsuite/tests/basic/opt_variants.ml[97,3001+9]..[97,3001+38])
+                                                                    Pexp_apply
+                                                                    expression (testsuite/tests/basic/opt_variants.ml[97,3001+9]..[97,3001+30])
+                                                                      Pexp_ident "String.index_from_opt" (testsuite/tests/basic/opt_variants.ml[97,3001+9]..[97,3001+30])
+                                                                    [
+                                                                      <arg>
+                                                                      Nolabel
+expression (testsuite/tests/basic/opt_variants.ml[97,3001+31]..[97,3001+32])
+  Pexp_ident "s" (testsuite/tests/basic/opt_variants.ml[97,3001+31]..[97,3001+32])
+                                                                      <arg>
+                                                                      Nolabel
+expression (testsuite/tests/basic/opt_variants.ml[97,3001+33]..[97,3001+34])
+  Pexp_constant PConst_int (6,None)
+                                                                      <arg>
+                                                                      Nolabel
+expression (testsuite/tests/basic/opt_variants.ml[97,3001+35]..[97,3001+38])
+  Pexp_constant PConst_char 20
+                                                                    ]
+                                                                <arg>
+                                                                Nolabel
+                                                                  expression (testsuite/tests/basic/opt_variants.ml[97,3001+42]..[97,3001+49])
+                                                                    Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[97,3001+42]..[97,3001+46])
+                                                                    Some
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[97,3001+47]..[97,3001+49])
+Pexp_constant PConst_int (11,None)
+                                                              ]
+                                                          expression (testsuite/tests/basic/opt_variants.ml[99,3054+2]..[134,3997+4])
+                                                            Pexp_sequence
+                                                            expression (testsuite/tests/basic/opt_variants.ml[99,3054+2]..[99,3054+48])
+                                                              Pexp_assert
+                                                              expression (testsuite/tests/basic/opt_variants.ml[99,3054+8]..[99,3054+48])
+                                                                Pexp_apply
+                                                                expression (testsuite/tests/basic/opt_variants.ml[99,3054+41]..[99,3054+42])
+                                                                  Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[99,3054+41]..[99,3054+42])
+                                                                [
+                                                                  <arg>
+                                                                  Nolabel
+                                                                    expression (testsuite/tests/basic/opt_variants.ml[99,3054+9]..[99,3054+39])
+                                                                      Pexp_apply
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[99,3054+9]..[99,3054+31])
+Pexp_ident "String.rindex_from_opt" (testsuite/tests/basic/opt_variants.ml[99,3054+9]..[99,3054+31])
+                                                                      [
+<arg>
+Nolabel
+  expression (testsuite/tests/basic/opt_variants.ml[99,3054+32]..[99,3054+33])
+    Pexp_ident "s" (testsuite/tests/basic/opt_variants.ml[99,3054+32]..[99,3054+33])
+<arg>
+Nolabel
+  expression (testsuite/tests/basic/opt_variants.ml[99,3054+34]..[99,3054+35])
+    Pexp_constant PConst_int (0,None)
+<arg>
+Nolabel
+  expression (testsuite/tests/basic/opt_variants.ml[99,3054+36]..[99,3054+39])
+    Pexp_constant PConst_char 78
+                                                                      ]
+                                                                  <arg>
+                                                                  Nolabel
+                                                                    expression (testsuite/tests/basic/opt_variants.ml[99,3054+43]..[99,3054+47])
+                                                                      Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[99,3054+43]..[99,3054+47])
+                                                                      None
+                                                                ]
+                                                            expression (testsuite/tests/basic/opt_variants.ml[100,3104+2]..[134,3997+4])
+                                                              Pexp_sequence
+                                                              expression (testsuite/tests/basic/opt_variants.ml[100,3104+2]..[100,3104+50])
+                                                                Pexp_assert
+                                                                expression (testsuite/tests/basic/opt_variants.ml[100,3104+8]..[100,3104+50])
+                                                                  Pexp_apply
+                                                                  expression (testsuite/tests/basic/opt_variants.ml[100,3104+41]..[100,3104+42])
+                                                                    Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[100,3104+41]..[100,3104+42])
+                                                                  [
+                                                                    <arg>
+                                                                    Nolabel
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[100,3104+9]..[100,3104+39])
+Pexp_apply
+expression (testsuite/tests/basic/opt_variants.ml[100,3104+9]..[100,3104+31])
+  Pexp_ident "String.rindex_from_opt" (testsuite/tests/basic/opt_variants.ml[100,3104+9]..[100,3104+31])
+[
+  <arg>
+  Nolabel
+    expression (testsuite/tests/basic/opt_variants.ml[100,3104+32]..[100,3104+33])
+      Pexp_ident "s" (testsuite/tests/basic/opt_variants.ml[100,3104+32]..[100,3104+33])
+  <arg>
+  Nolabel
+    expression (testsuite/tests/basic/opt_variants.ml[100,3104+34]..[100,3104+35])
+      Pexp_constant PConst_int (6,None)
+  <arg>
+  Nolabel
+    expression (testsuite/tests/basic/opt_variants.ml[100,3104+36]..[100,3104+39])
+      Pexp_constant PConst_char 20
+]
+                                                                    <arg>
+                                                                    Nolabel
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[100,3104+43]..[100,3104+49])
+Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[100,3104+43]..[100,3104+47])
+Some
+  expression (testsuite/tests/basic/opt_variants.ml[100,3104+48]..[100,3104+49])
+    Pexp_constant PConst_int (5,None)
+                                                                  ]
+                                                              expression (testsuite/tests/basic/opt_variants.ml[103,3158+2]..[134,3997+4])
+                                                                Pexp_letmodule "W" (testsuite/tests/basic/opt_variants.ml[103,3158+13]..[103,3158+14])
+                                                                module_expr (testsuite/tests/basic/opt_variants.ml[103,3158+17]..[107,3267+8])
+                                                                  Pmod_apply
+                                                                  module_expr (testsuite/tests/basic/opt_variants.ml[103,3158+17]..[103,3158+26])
+                                                                    Pmod_ident "Weak.Make" (testsuite/tests/basic/opt_variants.ml[103,3158+17]..[103,3158+26])
+                                                                  module_expr (testsuite/tests/basic/opt_variants.ml[103,3158+27]..[107,3267+7])
+                                                                    Pmod_structure
+                                                                    [
+                                                                      structure_item (testsuite/tests/basic/opt_variants.ml[104,3192+6]..[104,3192+22])
+Pstr_type Rec
+[
+  type_declaration "t" (testsuite/tests/basic/opt_variants.ml[104,3192+11]..[104,3192+12]) (testsuite/tests/basic/opt_variants.ml[104,3192+6]..[104,3192+22])
+    ptype_params =
+      []
+    ptype_cstrs =
+      []
+    ptype_kind =
+      Ptype_abstract
+    ptype_private = Public
+    ptype_manifest =
+      Some
+        core_type (testsuite/tests/basic/opt_variants.ml[104,3192+15]..[104,3192+22])
+          Ptyp_constr "ref" (testsuite/tests/basic/opt_variants.ml[104,3192+19]..[104,3192+22])
+          [
+            core_type (testsuite/tests/basic/opt_variants.ml[104,3192+15]..[104,3192+18])
+              Ptyp_constr "int" (testsuite/tests/basic/opt_variants.ml[104,3192+15]..[104,3192+18])
+              []
+          ]
+]
+                                                                      structure_item (testsuite/tests/basic/opt_variants.ml[105,3215+6]..[105,3215+21])
+Pstr_value Nonrec
+[
+  <def>
+    pattern (testsuite/tests/basic/opt_variants.ml[105,3215+10]..[105,3215+15])
+      Ppat_var "equal" (testsuite/tests/basic/opt_variants.ml[105,3215+10]..[105,3215+15])
+    expression (testsuite/tests/basic/opt_variants.ml[105,3215+18]..[105,3215+21])
+      Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[105,3215+18]..[105,3215+21])
+]
+                                                                      structure_item (testsuite/tests/basic/opt_variants.ml[106,3237+6]..[106,3237+29])
+Pstr_value Nonrec
+[
+  <def>
+    pattern (testsuite/tests/basic/opt_variants.ml[106,3237+10]..[106,3237+14])
+      Ppat_var "hash" (testsuite/tests/basic/opt_variants.ml[106,3237+10]..[106,3237+14])
+    expression (testsuite/tests/basic/opt_variants.ml[106,3237+17]..[106,3237+29])
+      Pexp_ident "Hashtbl.hash" (testsuite/tests/basic/opt_variants.ml[106,3237+17]..[106,3237+29])
+]
+                                                                    ]
+                                                                expression (testsuite/tests/basic/opt_variants.ml[109,3281+2]..[134,3997+4])
+                                                                  Pexp_let Nonrec
+                                                                  [
+                                                                    <def>
+                                                                      pattern (testsuite/tests/basic/opt_variants.ml[109,3281+6]..[109,3281+7])
+Ppat_var "w" (testsuite/tests/basic/opt_variants.ml[109,3281+6]..[109,3281+7])
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[109,3281+10]..[109,3281+21])
+Pexp_apply
+expression (testsuite/tests/basic/opt_variants.ml[109,3281+10]..[109,3281+18])
+  Pexp_ident "W.create" (testsuite/tests/basic/opt_variants.ml[109,3281+10]..[109,3281+18])
+[
+  <arg>
+  Nolabel
+    expression (testsuite/tests/basic/opt_variants.ml[109,3281+19]..[109,3281+21])
+      Pexp_constant PConst_int (10,None)
+]
+                                                                  ]
+                                                                  expression (testsuite/tests/basic/opt_variants.ml[110,3306+2]..[134,3997+4])
+                                                                    Pexp_let Nonrec
+                                                                    [
+                                                                      <def>
+pattern (testsuite/tests/basic/opt_variants.ml[110,3306+6]..[110,3306+7])
+  Ppat_var "x" (testsuite/tests/basic/opt_variants.ml[110,3306+6]..[110,3306+7])
+expression (testsuite/tests/basic/opt_variants.ml[110,3306+10]..[110,3306+23])
+  Pexp_apply
+  expression (testsuite/tests/basic/opt_variants.ml[110,3306+10]..[110,3306+20])
+    Pexp_ident "Random.int" (testsuite/tests/basic/opt_variants.ml[110,3306+10]..[110,3306+20])
+  [
+    <arg>
+    Nolabel
+      expression (testsuite/tests/basic/opt_variants.ml[110,3306+21]..[110,3306+23])
+        Pexp_constant PConst_int (42,None)
+  ]
+                                                                    ]
+                                                                    expression (testsuite/tests/basic/opt_variants.ml[111,3333+2]..[134,3997+4])
+                                                                      Pexp_let Nonrec
+                                                                      [
+<def>
+  pattern (testsuite/tests/basic/opt_variants.ml[111,3333+6]..[111,3333+7])
+    Ppat_var "r" (testsuite/tests/basic/opt_variants.ml[111,3333+6]..[111,3333+7])
+  expression (testsuite/tests/basic/opt_variants.ml[111,3333+10]..[111,3333+15])
+    Pexp_apply
+    expression (testsuite/tests/basic/opt_variants.ml[111,3333+10]..[111,3333+13])
+      Pexp_ident "ref" (testsuite/tests/basic/opt_variants.ml[111,3333+10]..[111,3333+13])
+    [
+      <arg>
+      Nolabel
+        expression (testsuite/tests/basic/opt_variants.ml[111,3333+14]..[111,3333+15])
+          Pexp_ident "x" (testsuite/tests/basic/opt_variants.ml[111,3333+14]..[111,3333+15])
+    ]
+                                                                      ]
+                                                                      expression (testsuite/tests/basic/opt_variants.ml[112,3352+2]..[134,3997+4])
+Pexp_sequence
+expression (testsuite/tests/basic/opt_variants.ml[112,3352+2]..[112,3352+32])
+  Pexp_assert
+  expression (testsuite/tests/basic/opt_variants.ml[112,3352+9]..[112,3352+32])
+    Pexp_apply
+    expression (testsuite/tests/basic/opt_variants.ml[112,3352+25]..[112,3352+26])
+      Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[112,3352+25]..[112,3352+26])
+    [
+      <arg>
+      Nolabel
+        expression (testsuite/tests/basic/opt_variants.ml[112,3352+10]..[112,3352+24])
+          Pexp_apply
+          expression (testsuite/tests/basic/opt_variants.ml[112,3352+10]..[112,3352+20])
+            Pexp_ident "W.find_opt" (testsuite/tests/basic/opt_variants.ml[112,3352+10]..[112,3352+20])
+          [
+            <arg>
+            Nolabel
+              expression (testsuite/tests/basic/opt_variants.ml[112,3352+21]..[112,3352+22])
+                Pexp_ident "w" (testsuite/tests/basic/opt_variants.ml[112,3352+21]..[112,3352+22])
+            <arg>
+            Nolabel
+              expression (testsuite/tests/basic/opt_variants.ml[112,3352+23]..[112,3352+24])
+                Pexp_ident "r" (testsuite/tests/basic/opt_variants.ml[112,3352+23]..[112,3352+24])
+          ]
+      <arg>
+      Nolabel
+        expression (testsuite/tests/basic/opt_variants.ml[112,3352+27]..[112,3352+31])
+          Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[112,3352+27]..[112,3352+31])
+          None
+    ]
+expression (testsuite/tests/basic/opt_variants.ml[113,3386+2]..[134,3997+4])
+  Pexp_sequence
+  expression (testsuite/tests/basic/opt_variants.ml[113,3386+2]..[113,3386+11])
+    Pexp_apply
+    expression (testsuite/tests/basic/opt_variants.ml[113,3386+2]..[113,3386+7])
+      Pexp_ident "W.add" (testsuite/tests/basic/opt_variants.ml[113,3386+2]..[113,3386+7])
+    [
+      <arg>
+      Nolabel
+        expression (testsuite/tests/basic/opt_variants.ml[113,3386+8]..[113,3386+9])
+          Pexp_ident "w" (testsuite/tests/basic/opt_variants.ml[113,3386+8]..[113,3386+9])
+      <arg>
+      Nolabel
+        expression (testsuite/tests/basic/opt_variants.ml[113,3386+10]..[113,3386+11])
+          Pexp_ident "r" (testsuite/tests/basic/opt_variants.ml[113,3386+10]..[113,3386+11])
+    ]
+  expression (testsuite/tests/basic/opt_variants.ml[114,3399+2]..[134,3997+4])
+    Pexp_sequence
+    expression (testsuite/tests/basic/opt_variants.ml[114,3399+2]..[114,3399+34])
+      Pexp_assert
+      expression (testsuite/tests/basic/opt_variants.ml[114,3399+9]..[114,3399+34])
+        Pexp_apply
+        expression (testsuite/tests/basic/opt_variants.ml[114,3399+25]..[114,3399+26])
+          Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[114,3399+25]..[114,3399+26])
+        [
+          <arg>
+          Nolabel
+            expression (testsuite/tests/basic/opt_variants.ml[114,3399+10]..[114,3399+24])
+              Pexp_apply
+              expression (testsuite/tests/basic/opt_variants.ml[114,3399+10]..[114,3399+20])
+                Pexp_ident "W.find_opt" (testsuite/tests/basic/opt_variants.ml[114,3399+10]..[114,3399+20])
+              [
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/basic/opt_variants.ml[114,3399+21]..[114,3399+22])
+                    Pexp_ident "w" (testsuite/tests/basic/opt_variants.ml[114,3399+21]..[114,3399+22])
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/basic/opt_variants.ml[114,3399+23]..[114,3399+24])
+                    Pexp_ident "r" (testsuite/tests/basic/opt_variants.ml[114,3399+23]..[114,3399+24])
+              ]
+          <arg>
+          Nolabel
+            expression (testsuite/tests/basic/opt_variants.ml[114,3399+27]..[114,3399+33])
+              Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[114,3399+27]..[114,3399+31])
+              Some
+                expression (testsuite/tests/basic/opt_variants.ml[114,3399+32]..[114,3399+33])
+                  Pexp_ident "r" (testsuite/tests/basic/opt_variants.ml[114,3399+32]..[114,3399+33])
+        ]
+    expression (testsuite/tests/basic/opt_variants.ml[116,3436+2]..[134,3997+4])
+      Pexp_let Nonrec
+      [
+        <def>
+          pattern (testsuite/tests/basic/opt_variants.ml[116,3436+6]..[116,3436+11])
+            Ppat_var "stack" (testsuite/tests/basic/opt_variants.ml[116,3436+6]..[116,3436+11])
+          expression (testsuite/tests/basic/opt_variants.ml[116,3436+14]..[116,3436+29])
+            Pexp_apply
+            expression (testsuite/tests/basic/opt_variants.ml[116,3436+14]..[116,3436+26])
+              Pexp_ident "Stack.create" (testsuite/tests/basic/opt_variants.ml[116,3436+14]..[116,3436+26])
+            [
+              <arg>
+              Nolabel
+                expression (testsuite/tests/basic/opt_variants.ml[116,3436+27]..[116,3436+29])
+                  Pexp_construct "()" (testsuite/tests/basic/opt_variants.ml[116,3436+27]..[116,3436+29])
+                  None
+            ]
+      ]
+      expression (testsuite/tests/basic/opt_variants.ml[117,3469+2]..[134,3997+4])
+        Pexp_sequence
+        expression (testsuite/tests/basic/opt_variants.ml[117,3469+2]..[117,3469+21])
+          Pexp_apply
+          expression (testsuite/tests/basic/opt_variants.ml[117,3469+2]..[117,3469+12])
+            Pexp_ident "Stack.push" (testsuite/tests/basic/opt_variants.ml[117,3469+2]..[117,3469+12])
+          [
+            <arg>
+            Nolabel
+              expression (testsuite/tests/basic/opt_variants.ml[117,3469+13]..[117,3469+15])
+                Pexp_constant PConst_int (41,None)
+            <arg>
+            Nolabel
+              expression (testsuite/tests/basic/opt_variants.ml[117,3469+16]..[117,3469+21])
+                Pexp_ident "stack" (testsuite/tests/basic/opt_variants.ml[117,3469+16]..[117,3469+21])
+          ]
+        expression (testsuite/tests/basic/opt_variants.ml[118,3492+2]..[134,3997+4])
+          Pexp_sequence
+          expression (testsuite/tests/basic/opt_variants.ml[118,3492+2]..[118,3492+21])
+            Pexp_apply
+            expression (testsuite/tests/basic/opt_variants.ml[118,3492+2]..[118,3492+12])
+              Pexp_ident "Stack.push" (testsuite/tests/basic/opt_variants.ml[118,3492+2]..[118,3492+12])
+            [
+              <arg>
+              Nolabel
+                expression (testsuite/tests/basic/opt_variants.ml[118,3492+13]..[118,3492+15])
+                  Pexp_constant PConst_int (42,None)
+              <arg>
+              Nolabel
+                expression (testsuite/tests/basic/opt_variants.ml[118,3492+16]..[118,3492+21])
+                  Pexp_ident "stack" (testsuite/tests/basic/opt_variants.ml[118,3492+16]..[118,3492+21])
+            ]
+          expression (testsuite/tests/basic/opt_variants.ml[119,3515+2]..[134,3997+4])
+            Pexp_sequence
+            expression (testsuite/tests/basic/opt_variants.ml[119,3515+2]..[119,3515+39])
+              Pexp_assert
+              expression (testsuite/tests/basic/opt_variants.ml[119,3515+8]..[119,3515+39])
+                Pexp_apply
+                expression (testsuite/tests/basic/opt_variants.ml[119,3515+29]..[119,3515+30])
+                  Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[119,3515+29]..[119,3515+30])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/basic/opt_variants.ml[119,3515+9]..[119,3515+28])
+                      Pexp_apply
+                      expression (testsuite/tests/basic/opt_variants.ml[119,3515+9]..[119,3515+22])
+                        Pexp_ident "Stack.top_opt" (testsuite/tests/basic/opt_variants.ml[119,3515+9]..[119,3515+22])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/basic/opt_variants.ml[119,3515+23]..[119,3515+28])
+                            Pexp_ident "stack" (testsuite/tests/basic/opt_variants.ml[119,3515+23]..[119,3515+28])
+                      ]
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/basic/opt_variants.ml[119,3515+31]..[119,3515+38])
+                      Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[119,3515+31]..[119,3515+35])
+                      Some
+                        expression (testsuite/tests/basic/opt_variants.ml[119,3515+36]..[119,3515+38])
+                          Pexp_constant PConst_int (42,None)
+                ]
+            expression (testsuite/tests/basic/opt_variants.ml[120,3556+2]..[134,3997+4])
+              Pexp_sequence
+              expression (testsuite/tests/basic/opt_variants.ml[120,3556+2]..[120,3556+39])
+                Pexp_assert
+                expression (testsuite/tests/basic/opt_variants.ml[120,3556+8]..[120,3556+39])
+                  Pexp_apply
+                  expression (testsuite/tests/basic/opt_variants.ml[120,3556+29]..[120,3556+30])
+                    Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[120,3556+29]..[120,3556+30])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/basic/opt_variants.ml[120,3556+9]..[120,3556+28])
+                        Pexp_apply
+                        expression (testsuite/tests/basic/opt_variants.ml[120,3556+9]..[120,3556+22])
+                          Pexp_ident "Stack.pop_opt" (testsuite/tests/basic/opt_variants.ml[120,3556+9]..[120,3556+22])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/basic/opt_variants.ml[120,3556+23]..[120,3556+28])
+                              Pexp_ident "stack" (testsuite/tests/basic/opt_variants.ml[120,3556+23]..[120,3556+28])
+                        ]
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/basic/opt_variants.ml[120,3556+31]..[120,3556+38])
+                        Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[120,3556+31]..[120,3556+35])
+                        Some
+                          expression (testsuite/tests/basic/opt_variants.ml[120,3556+36]..[120,3556+38])
+                            Pexp_constant PConst_int (42,None)
+                  ]
+              expression (testsuite/tests/basic/opt_variants.ml[121,3597+2]..[134,3997+4])
+                Pexp_sequence
+                expression (testsuite/tests/basic/opt_variants.ml[121,3597+2]..[121,3597+39])
+                  Pexp_assert
+                  expression (testsuite/tests/basic/opt_variants.ml[121,3597+8]..[121,3597+39])
+                    Pexp_apply
+                    expression (testsuite/tests/basic/opt_variants.ml[121,3597+29]..[121,3597+30])
+                      Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[121,3597+29]..[121,3597+30])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/basic/opt_variants.ml[121,3597+9]..[121,3597+28])
+                          Pexp_apply
+                          expression (testsuite/tests/basic/opt_variants.ml[121,3597+9]..[121,3597+22])
+                            Pexp_ident "Stack.pop_opt" (testsuite/tests/basic/opt_variants.ml[121,3597+9]..[121,3597+22])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/basic/opt_variants.ml[121,3597+23]..[121,3597+28])
+                                Pexp_ident "stack" (testsuite/tests/basic/opt_variants.ml[121,3597+23]..[121,3597+28])
+                          ]
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/basic/opt_variants.ml[121,3597+31]..[121,3597+38])
+                          Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[121,3597+31]..[121,3597+35])
+                          Some
+                            expression (testsuite/tests/basic/opt_variants.ml[121,3597+36]..[121,3597+38])
+                              Pexp_constant PConst_int (41,None)
+                    ]
+                expression (testsuite/tests/basic/opt_variants.ml[122,3638+2]..[134,3997+4])
+                  Pexp_sequence
+                  expression (testsuite/tests/basic/opt_variants.ml[122,3638+2]..[122,3638+36])
+                    Pexp_assert
+                    expression (testsuite/tests/basic/opt_variants.ml[122,3638+8]..[122,3638+36])
+                      Pexp_apply
+                      expression (testsuite/tests/basic/opt_variants.ml[122,3638+29]..[122,3638+30])
+                        Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[122,3638+29]..[122,3638+30])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/basic/opt_variants.ml[122,3638+9]..[122,3638+28])
+                            Pexp_apply
+                            expression (testsuite/tests/basic/opt_variants.ml[122,3638+9]..[122,3638+22])
+                              Pexp_ident "Stack.pop_opt" (testsuite/tests/basic/opt_variants.ml[122,3638+9]..[122,3638+22])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/basic/opt_variants.ml[122,3638+23]..[122,3638+28])
+                                  Pexp_ident "stack" (testsuite/tests/basic/opt_variants.ml[122,3638+23]..[122,3638+28])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/basic/opt_variants.ml[122,3638+31]..[122,3638+35])
+                            Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[122,3638+31]..[122,3638+35])
+                            None
+                      ]
+                  expression (testsuite/tests/basic/opt_variants.ml[123,3676+2]..[134,3997+4])
+                    Pexp_sequence
+                    expression (testsuite/tests/basic/opt_variants.ml[123,3676+2]..[123,3676+36])
+                      Pexp_assert
+                      expression (testsuite/tests/basic/opt_variants.ml[123,3676+8]..[123,3676+36])
+                        Pexp_apply
+                        expression (testsuite/tests/basic/opt_variants.ml[123,3676+29]..[123,3676+30])
+                          Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[123,3676+29]..[123,3676+30])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/basic/opt_variants.ml[123,3676+9]..[123,3676+28])
+                              Pexp_apply
+                              expression (testsuite/tests/basic/opt_variants.ml[123,3676+9]..[123,3676+22])
+                                Pexp_ident "Stack.top_opt" (testsuite/tests/basic/opt_variants.ml[123,3676+9]..[123,3676+22])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/basic/opt_variants.ml[123,3676+23]..[123,3676+28])
+                                    Pexp_ident "stack" (testsuite/tests/basic/opt_variants.ml[123,3676+23]..[123,3676+28])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/basic/opt_variants.ml[123,3676+31]..[123,3676+35])
+                              Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[123,3676+31]..[123,3676+35])
+                              None
+                        ]
+                    expression (testsuite/tests/basic/opt_variants.ml[125,3715+2]..[134,3997+4])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (testsuite/tests/basic/opt_variants.ml[125,3715+6]..[125,3715+11])
+                            Ppat_var "queue" (testsuite/tests/basic/opt_variants.ml[125,3715+6]..[125,3715+11])
+                          expression (testsuite/tests/basic/opt_variants.ml[125,3715+14]..[125,3715+29])
+                            Pexp_apply
+                            expression (testsuite/tests/basic/opt_variants.ml[125,3715+14]..[125,3715+26])
+                              Pexp_ident "Queue.create" (testsuite/tests/basic/opt_variants.ml[125,3715+14]..[125,3715+26])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/basic/opt_variants.ml[125,3715+27]..[125,3715+29])
+                                  Pexp_construct "()" (testsuite/tests/basic/opt_variants.ml[125,3715+27]..[125,3715+29])
+                                  None
+                            ]
+                      ]
+                      expression (testsuite/tests/basic/opt_variants.ml[126,3748+2]..[134,3997+4])
+                        Pexp_sequence
+                        expression (testsuite/tests/basic/opt_variants.ml[126,3748+2]..[126,3748+20])
+                          Pexp_apply
+                          expression (testsuite/tests/basic/opt_variants.ml[126,3748+2]..[126,3748+11])
+                            Pexp_ident "Queue.add" (testsuite/tests/basic/opt_variants.ml[126,3748+2]..[126,3748+11])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/basic/opt_variants.ml[126,3748+12]..[126,3748+14])
+                                Pexp_constant PConst_int (41,None)
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/basic/opt_variants.ml[126,3748+15]..[126,3748+20])
+                                Pexp_ident "queue" (testsuite/tests/basic/opt_variants.ml[126,3748+15]..[126,3748+20])
+                          ]
+                        expression (testsuite/tests/basic/opt_variants.ml[127,3770+2]..[134,3997+4])
+                          Pexp_sequence
+                          expression (testsuite/tests/basic/opt_variants.ml[127,3770+2]..[127,3770+20])
+                            Pexp_apply
+                            expression (testsuite/tests/basic/opt_variants.ml[127,3770+2]..[127,3770+11])
+                              Pexp_ident "Queue.add" (testsuite/tests/basic/opt_variants.ml[127,3770+2]..[127,3770+11])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/basic/opt_variants.ml[127,3770+12]..[127,3770+14])
+                                  Pexp_constant PConst_int (42,None)
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/basic/opt_variants.ml[127,3770+15]..[127,3770+20])
+                                  Pexp_ident "queue" (testsuite/tests/basic/opt_variants.ml[127,3770+15]..[127,3770+20])
+                            ]
+                          expression (testsuite/tests/basic/opt_variants.ml[128,3792+2]..[134,3997+4])
+                            Pexp_sequence
+                            expression (testsuite/tests/basic/opt_variants.ml[128,3792+2]..[128,3792+40])
+                              Pexp_assert
+                              expression (testsuite/tests/basic/opt_variants.ml[128,3792+8]..[128,3792+40])
+                                Pexp_apply
+                                expression (testsuite/tests/basic/opt_variants.ml[128,3792+30]..[128,3792+31])
+                                  Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[128,3792+30]..[128,3792+31])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/basic/opt_variants.ml[128,3792+9]..[128,3792+29])
+                                      Pexp_apply
+                                      expression (testsuite/tests/basic/opt_variants.ml[128,3792+9]..[128,3792+23])
+                                        Pexp_ident "Queue.peek_opt" (testsuite/tests/basic/opt_variants.ml[128,3792+9]..[128,3792+23])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/basic/opt_variants.ml[128,3792+24]..[128,3792+29])
+                                            Pexp_ident "queue" (testsuite/tests/basic/opt_variants.ml[128,3792+24]..[128,3792+29])
+                                      ]
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/basic/opt_variants.ml[128,3792+32]..[128,3792+39])
+                                      Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[128,3792+32]..[128,3792+36])
+                                      Some
+                                        expression (testsuite/tests/basic/opt_variants.ml[128,3792+37]..[128,3792+39])
+                                          Pexp_constant PConst_int (41,None)
+                                ]
+                            expression (testsuite/tests/basic/opt_variants.ml[129,3834+2]..[134,3997+4])
+                              Pexp_sequence
+                              expression (testsuite/tests/basic/opt_variants.ml[129,3834+2]..[129,3834+40])
+                                Pexp_assert
+                                expression (testsuite/tests/basic/opt_variants.ml[129,3834+8]..[129,3834+40])
+                                  Pexp_apply
+                                  expression (testsuite/tests/basic/opt_variants.ml[129,3834+30]..[129,3834+31])
+                                    Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[129,3834+30]..[129,3834+31])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/basic/opt_variants.ml[129,3834+9]..[129,3834+29])
+                                        Pexp_apply
+                                        expression (testsuite/tests/basic/opt_variants.ml[129,3834+9]..[129,3834+23])
+                                          Pexp_ident "Queue.take_opt" (testsuite/tests/basic/opt_variants.ml[129,3834+9]..[129,3834+23])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/basic/opt_variants.ml[129,3834+24]..[129,3834+29])
+                                              Pexp_ident "queue" (testsuite/tests/basic/opt_variants.ml[129,3834+24]..[129,3834+29])
+                                        ]
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/basic/opt_variants.ml[129,3834+32]..[129,3834+39])
+                                        Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[129,3834+32]..[129,3834+36])
+                                        Some
+                                          expression (testsuite/tests/basic/opt_variants.ml[129,3834+37]..[129,3834+39])
+                                            Pexp_constant PConst_int (41,None)
+                                  ]
+                              expression (testsuite/tests/basic/opt_variants.ml[130,3876+2]..[134,3997+4])
+                                Pexp_sequence
+                                expression (testsuite/tests/basic/opt_variants.ml[130,3876+2]..[130,3876+40])
+                                  Pexp_assert
+                                  expression (testsuite/tests/basic/opt_variants.ml[130,3876+8]..[130,3876+40])
+                                    Pexp_apply
+                                    expression (testsuite/tests/basic/opt_variants.ml[130,3876+30]..[130,3876+31])
+                                      Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[130,3876+30]..[130,3876+31])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/basic/opt_variants.ml[130,3876+9]..[130,3876+29])
+                                          Pexp_apply
+                                          expression (testsuite/tests/basic/opt_variants.ml[130,3876+9]..[130,3876+23])
+                                            Pexp_ident "Queue.take_opt" (testsuite/tests/basic/opt_variants.ml[130,3876+9]..[130,3876+23])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (testsuite/tests/basic/opt_variants.ml[130,3876+24]..[130,3876+29])
+                                                Pexp_ident "queue" (testsuite/tests/basic/opt_variants.ml[130,3876+24]..[130,3876+29])
+                                          ]
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/basic/opt_variants.ml[130,3876+32]..[130,3876+39])
+                                          Pexp_construct "Some" (testsuite/tests/basic/opt_variants.ml[130,3876+32]..[130,3876+36])
+                                          Some
+                                            expression (testsuite/tests/basic/opt_variants.ml[130,3876+37]..[130,3876+39])
+                                              Pexp_constant PConst_int (42,None)
+                                    ]
+                                expression (testsuite/tests/basic/opt_variants.ml[131,3918+2]..[134,3997+4])
+                                  Pexp_sequence
+                                  expression (testsuite/tests/basic/opt_variants.ml[131,3918+2]..[131,3918+37])
+                                    Pexp_assert
+                                    expression (testsuite/tests/basic/opt_variants.ml[131,3918+8]..[131,3918+37])
+                                      Pexp_apply
+                                      expression (testsuite/tests/basic/opt_variants.ml[131,3918+30]..[131,3918+31])
+                                        Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[131,3918+30]..[131,3918+31])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/basic/opt_variants.ml[131,3918+9]..[131,3918+29])
+                                            Pexp_apply
+                                            expression (testsuite/tests/basic/opt_variants.ml[131,3918+9]..[131,3918+23])
+                                              Pexp_ident "Queue.take_opt" (testsuite/tests/basic/opt_variants.ml[131,3918+9]..[131,3918+23])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/basic/opt_variants.ml[131,3918+24]..[131,3918+29])
+                                                  Pexp_ident "queue" (testsuite/tests/basic/opt_variants.ml[131,3918+24]..[131,3918+29])
+                                            ]
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/basic/opt_variants.ml[131,3918+32]..[131,3918+36])
+                                            Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[131,3918+32]..[131,3918+36])
+                                            None
+                                      ]
+                                  expression (testsuite/tests/basic/opt_variants.ml[132,3957+2]..[134,3997+4])
+                                    Pexp_sequence
+                                    expression (testsuite/tests/basic/opt_variants.ml[132,3957+2]..[132,3957+37])
+                                      Pexp_assert
+                                      expression (testsuite/tests/basic/opt_variants.ml[132,3957+8]..[132,3957+37])
+                                        Pexp_apply
+                                        expression (testsuite/tests/basic/opt_variants.ml[132,3957+30]..[132,3957+31])
+                                          Pexp_ident "=" (testsuite/tests/basic/opt_variants.ml[132,3957+30]..[132,3957+31])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/basic/opt_variants.ml[132,3957+9]..[132,3957+29])
+                                              Pexp_apply
+                                              expression (testsuite/tests/basic/opt_variants.ml[132,3957+9]..[132,3957+23])
+                                                Pexp_ident "Queue.peek_opt" (testsuite/tests/basic/opt_variants.ml[132,3957+9]..[132,3957+23])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/basic/opt_variants.ml[132,3957+24]..[132,3957+29])
+                                                    Pexp_ident "queue" (testsuite/tests/basic/opt_variants.ml[132,3957+24]..[132,3957+29])
+                                              ]
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/basic/opt_variants.ml[132,3957+32]..[132,3957+36])
+                                              Pexp_construct "None" (testsuite/tests/basic/opt_variants.ml[132,3957+32]..[132,3957+36])
+                                              None
+                                        ]
+                                    expression (testsuite/tests/basic/opt_variants.ml[134,3997+2]..[134,3997+4])
+                                      Pexp_construct "()" (testsuite/tests/basic/opt_variants.ml[134,3997+2]..[134,3997+4])
+                                      None
+    ]
+]
+

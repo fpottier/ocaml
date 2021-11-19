@@ -1,0 +1,832 @@
+[
+  signature_item (typing/includecore.mli[18,1125+0]..[18,1125+14])
+    Psig_open Fresh "Typedtree" (typing/includecore.mli[18,1125+5]..[18,1125+14])
+  signature_item (typing/includecore.mli[19,1140+0]..[19,1140+10])
+    Psig_open Fresh "Types" (typing/includecore.mli[19,1140+5]..[19,1140+10])
+  signature_item (typing/includecore.mli[21,1152+0]..[21,1152+52])
+    Psig_type Rec
+    [
+      type_declaration "position" (typing/includecore.mli[21,1152+5]..[21,1152+13]) (typing/includecore.mli[21,1152+0]..[21,1152+52])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/includecore.mli[21,1152+38]..[21,1152+43])
+                "First" (typing/includecore.mli[21,1152+38]..[21,1152+43])
+                []
+                None
+              (typing/includecore.mli[21,1152+44]..[21,1152+52])
+                "Second" (typing/includecore.mli[21,1152+46]..[21,1152+52])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (typing/includecore.mli[21,1152+16]..[21,1152+35])
+              Ptyp_constr "Errortrace.position" (typing/includecore.mli[21,1152+16]..[21,1152+35])
+              []
+    ]
+  signature_item (typing/includecore.mli[23,1206+0]..[29,1308+24])
+    Psig_type Rec
+    [
+      type_declaration "primitive_mismatch" (typing/includecore.mli[23,1206+5]..[23,1206+23]) (typing/includecore.mli[23,1206+0]..[29,1308+24])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/includecore.mli[24,1232+2]..[24,1232+8])
+                "Name" (typing/includecore.mli[24,1232+4]..[24,1232+8])
+                []
+                None
+              (typing/includecore.mli[25,1241+2]..[25,1241+9])
+                "Arity" (typing/includecore.mli[25,1241+4]..[25,1241+9])
+                []
+                None
+              (typing/includecore.mli[26,1251+2]..[26,1251+24])
+                "No_alloc" (typing/includecore.mli[26,1251+4]..[26,1251+12])
+                [
+                  core_type (typing/includecore.mli[26,1251+16]..[26,1251+24])
+                    Ptyp_constr "position" (typing/includecore.mli[26,1251+16]..[26,1251+24])
+                    []
+                ]
+                None
+              (typing/includecore.mli[27,1276+2]..[27,1276+15])
+                "Native_name" (typing/includecore.mli[27,1276+4]..[27,1276+15])
+                []
+                None
+              (typing/includecore.mli[28,1292+2]..[28,1292+15])
+                "Result_repr" (typing/includecore.mli[28,1292+4]..[28,1292+15])
+                []
+                None
+              (typing/includecore.mli[29,1308+2]..[29,1308+24])
+                "Argument_repr" (typing/includecore.mli[29,1308+4]..[29,1308+17])
+                [
+                  core_type (typing/includecore.mli[29,1308+21]..[29,1308+24])
+                    Ptyp_constr "int" (typing/includecore.mli[29,1308+21]..[29,1308+24])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/includecore.mli[31,1334+0]..[34,1421+54])
+    Psig_type Rec
+    [
+      type_declaration "value_mismatch" (typing/includecore.mli[31,1334+5]..[31,1334+19]) (typing/includecore.mli[31,1334+0]..[34,1421+54])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/includecore.mli[32,1356+2]..[32,1356+44])
+                "Primitive_mismatch" (typing/includecore.mli[32,1356+4]..[32,1356+22])
+                [
+                  core_type (typing/includecore.mli[32,1356+26]..[32,1356+44])
+                    Ptyp_constr "primitive_mismatch" (typing/includecore.mli[32,1356+26]..[32,1356+44])
+                    []
+                ]
+                None
+              (typing/includecore.mli[33,1401+2]..[33,1401+19])
+                "Not_a_primitive" (typing/includecore.mli[33,1401+4]..[33,1401+19])
+                []
+                None
+              (typing/includecore.mli[34,1421+2]..[34,1421+54])
+                "Type" (typing/includecore.mli[34,1421+4]..[34,1421+8])
+                [
+                  core_type (typing/includecore.mli[34,1421+12]..[34,1421+17])
+                    Ptyp_constr "Env.t" (typing/includecore.mli[34,1421+12]..[34,1421+17])
+                    []
+                  core_type (typing/includecore.mli[34,1421+20]..[34,1421+54])
+                    Ptyp_constr "Errortrace.t" (typing/includecore.mli[34,1421+42]..[34,1421+54])
+                    [
+                      core_type (typing/includecore.mli[34,1421+20]..[34,1421+41])
+                        Ptyp_constr "Errortrace.comparison" (typing/includecore.mli[34,1421+20]..[34,1421+41])
+                        []
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/includecore.mli[36,1477+0]..[36,1477+38])
+    Psig_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (typing/includecore.mli[36,1477+0]..[36,1477+38])
+          pext_name = "Dont_match"
+          pext_kind =
+            Pext_decl
+              [
+                core_type (typing/includecore.mli[36,1477+24]..[36,1477+38])
+                  Ptyp_constr "value_mismatch" (typing/includecore.mli[36,1477+24]..[36,1477+38])
+                  []
+              ]
+              None
+  signature_item (typing/includecore.mli[38,1517+0]..[40,1594+26])
+    Psig_type Rec
+    [
+      type_declaration "label_mismatch" (typing/includecore.mli[38,1517+5]..[38,1517+19]) (typing/includecore.mli[38,1517+0]..[40,1594+26])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/includecore.mli[39,1539+2]..[39,1539+54])
+                "Type" (typing/includecore.mli[39,1539+4]..[39,1539+8])
+                [
+                  core_type (typing/includecore.mli[39,1539+12]..[39,1539+17])
+                    Ptyp_constr "Env.t" (typing/includecore.mli[39,1539+12]..[39,1539+17])
+                    []
+                  core_type (typing/includecore.mli[39,1539+20]..[39,1539+54])
+                    Ptyp_constr "Errortrace.t" (typing/includecore.mli[39,1539+42]..[39,1539+54])
+                    [
+                      core_type (typing/includecore.mli[39,1539+20]..[39,1539+41])
+                        Ptyp_constr "Errortrace.comparison" (typing/includecore.mli[39,1539+20]..[39,1539+41])
+                        []
+                    ]
+                ]
+                None
+              (typing/includecore.mli[40,1594+2]..[40,1594+26])
+                "Mutability" (typing/includecore.mli[40,1594+4]..[40,1594+14])
+                [
+                  core_type (typing/includecore.mli[40,1594+18]..[40,1594+26])
+                    Ptyp_constr "position" (typing/includecore.mli[40,1594+18]..[40,1594+26])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/includecore.mli[42,1622+0]..[46,1805+44])
+    Psig_type Rec
+    [
+      type_declaration "record_mismatch" (typing/includecore.mli[42,1622+5]..[42,1622+20]) (typing/includecore.mli[42,1622+0]..[46,1805+44])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/includecore.mli[43,1645+2]..[43,1645+76])
+                "Label_mismatch" (typing/includecore.mli[43,1645+4]..[43,1645+18])
+                [
+                  core_type (typing/includecore.mli[43,1645+22]..[43,1645+39])
+                    Ptyp_constr "label_declaration" (typing/includecore.mli[43,1645+22]..[43,1645+39])
+                    []
+                  core_type (typing/includecore.mli[43,1645+42]..[43,1645+59])
+                    Ptyp_constr "label_declaration" (typing/includecore.mli[43,1645+42]..[43,1645+59])
+                    []
+                  core_type (typing/includecore.mli[43,1645+62]..[43,1645+76])
+                    Ptyp_constr "label_mismatch" (typing/includecore.mli[43,1645+62]..[43,1645+76])
+                    []
+                ]
+                None
+              (typing/includecore.mli[44,1722+2]..[44,1722+42])
+                "Label_names" (typing/includecore.mli[44,1722+4]..[44,1722+15])
+                [
+                  core_type (typing/includecore.mli[44,1722+19]..[44,1722+22])
+                    Ptyp_constr "int" (typing/includecore.mli[44,1722+19]..[44,1722+22])
+                    []
+                  core_type (typing/includecore.mli[44,1722+25]..[44,1722+32])
+                    Ptyp_constr "Ident.t" (typing/includecore.mli[44,1722+25]..[44,1722+32])
+                    []
+                  core_type (typing/includecore.mli[44,1722+35]..[44,1722+42])
+                    Ptyp_constr "Ident.t" (typing/includecore.mli[44,1722+35]..[44,1722+42])
+                    []
+                ]
+                None
+              (typing/includecore.mli[45,1765+2]..[45,1765+39])
+                "Label_missing" (typing/includecore.mli[45,1765+4]..[45,1765+17])
+                [
+                  core_type (typing/includecore.mli[45,1765+21]..[45,1765+29])
+                    Ptyp_constr "position" (typing/includecore.mli[45,1765+21]..[45,1765+29])
+                    []
+                  core_type (typing/includecore.mli[45,1765+32]..[45,1765+39])
+                    Ptyp_constr "Ident.t" (typing/includecore.mli[45,1765+32]..[45,1765+39])
+                    []
+                ]
+                None
+              (typing/includecore.mli[46,1805+2]..[46,1805+44])
+                "Unboxed_float_representation" (typing/includecore.mli[46,1805+4]..[46,1805+32])
+                [
+                  core_type (typing/includecore.mli[46,1805+36]..[46,1805+44])
+                    Ptyp_constr "position" (typing/includecore.mli[46,1805+36]..[46,1805+44])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/includecore.mli[48,1851+0]..[53,2002+36])
+    Psig_type Rec
+    [
+      type_declaration "constructor_mismatch" (typing/includecore.mli[48,1851+5]..[48,1851+25]) (typing/includecore.mli[48,1851+0]..[53,2002+36])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/includecore.mli[49,1879+2]..[49,1879+54])
+                "Type" (typing/includecore.mli[49,1879+4]..[49,1879+8])
+                [
+                  core_type (typing/includecore.mli[49,1879+12]..[49,1879+17])
+                    Ptyp_constr "Env.t" (typing/includecore.mli[49,1879+12]..[49,1879+17])
+                    []
+                  core_type (typing/includecore.mli[49,1879+20]..[49,1879+54])
+                    Ptyp_constr "Errortrace.t" (typing/includecore.mli[49,1879+42]..[49,1879+54])
+                    [
+                      core_type (typing/includecore.mli[49,1879+20]..[49,1879+41])
+                        Ptyp_constr "Errortrace.comparison" (typing/includecore.mli[49,1879+20]..[49,1879+41])
+                        []
+                    ]
+                ]
+                None
+              (typing/includecore.mli[50,1934+2]..[50,1934+9])
+                "Arity" (typing/includecore.mli[50,1934+4]..[50,1934+9])
+                []
+                None
+              (typing/includecore.mli[51,1944+2]..[51,1944+36])
+                "Inline_record" (typing/includecore.mli[51,1944+4]..[51,1944+17])
+                [
+                  core_type (typing/includecore.mli[51,1944+21]..[51,1944+36])
+                    Ptyp_constr "record_mismatch" (typing/includecore.mli[51,1944+21]..[51,1944+36])
+                    []
+                ]
+                None
+              (typing/includecore.mli[52,1981+2]..[52,1981+20])
+                "Kind" (typing/includecore.mli[52,1981+4]..[52,1981+8])
+                [
+                  core_type (typing/includecore.mli[52,1981+12]..[52,1981+20])
+                    Ptyp_constr "position" (typing/includecore.mli[52,1981+12]..[52,1981+20])
+                    []
+                ]
+                None
+              (typing/includecore.mli[53,2002+2]..[53,2002+36])
+                "Explicit_return_type" (typing/includecore.mli[53,2002+4]..[53,2002+24])
+                [
+                  core_type (typing/includecore.mli[53,2002+28]..[53,2002+36])
+                    Ptyp_constr "position" (typing/includecore.mli[53,2002+28]..[53,2002+36])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/includecore.mli[55,2040+0]..[60,2270+45])
+    Psig_type Rec
+    [
+      type_declaration "variant_mismatch" (typing/includecore.mli[55,2040+5]..[55,2040+21]) (typing/includecore.mli[55,2040+0]..[60,2270+45])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/includecore.mli[56,2064+2]..[58,2170+50])
+                "Constructor_mismatch" (typing/includecore.mli[56,2064+4]..[56,2064+24])
+                [
+                  core_type (typing/includecore.mli[56,2064+28]..[56,2064+51])
+                    Ptyp_constr "constructor_declaration" (typing/includecore.mli[56,2064+28]..[56,2064+51])
+                    []
+                  core_type (typing/includecore.mli[57,2116+30]..[57,2116+53])
+                    Ptyp_constr "constructor_declaration" (typing/includecore.mli[57,2116+30]..[57,2116+53])
+                    []
+                  core_type (typing/includecore.mli[58,2170+30]..[58,2170+50])
+                    Ptyp_constr "constructor_mismatch" (typing/includecore.mli[58,2170+30]..[58,2170+50])
+                    []
+                ]
+                None
+              (typing/includecore.mli[59,2221+2]..[59,2221+48])
+                "Constructor_names" (typing/includecore.mli[59,2221+4]..[59,2221+21])
+                [
+                  core_type (typing/includecore.mli[59,2221+25]..[59,2221+28])
+                    Ptyp_constr "int" (typing/includecore.mli[59,2221+25]..[59,2221+28])
+                    []
+                  core_type (typing/includecore.mli[59,2221+31]..[59,2221+38])
+                    Ptyp_constr "Ident.t" (typing/includecore.mli[59,2221+31]..[59,2221+38])
+                    []
+                  core_type (typing/includecore.mli[59,2221+41]..[59,2221+48])
+                    Ptyp_constr "Ident.t" (typing/includecore.mli[59,2221+41]..[59,2221+48])
+                    []
+                ]
+                None
+              (typing/includecore.mli[60,2270+2]..[60,2270+45])
+                "Constructor_missing" (typing/includecore.mli[60,2270+4]..[60,2270+23])
+                [
+                  core_type (typing/includecore.mli[60,2270+27]..[60,2270+35])
+                    Ptyp_constr "position" (typing/includecore.mli[60,2270+27]..[60,2270+35])
+                    []
+                  core_type (typing/includecore.mli[60,2270+38]..[60,2270+45])
+                    Ptyp_constr "Ident.t" (typing/includecore.mli[60,2270+38]..[60,2270+45])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/includecore.mli[62,2317+0]..[67,2519+50])
+    Psig_type Rec
+    [
+      type_declaration "extension_constructor_mismatch" (typing/includecore.mli[62,2317+5]..[62,2317+35]) (typing/includecore.mli[62,2317+0]..[67,2519+50])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/includecore.mli[63,2355+2]..[63,2355+23])
+                "Constructor_privacy" (typing/includecore.mli[63,2355+4]..[63,2355+23])
+                []
+                None
+              (typing/includecore.mli[64,2379+2]..[67,2519+50])
+                "Constructor_mismatch" (typing/includecore.mli[64,2379+4]..[64,2379+24])
+                [
+                  core_type (typing/includecore.mli[64,2379+28]..[64,2379+35])
+                    Ptyp_constr "Ident.t" (typing/includecore.mli[64,2379+28]..[64,2379+35])
+                    []
+                  core_type (typing/includecore.mli[65,2415+30]..[65,2415+51])
+                    Ptyp_constr "extension_constructor" (typing/includecore.mli[65,2415+30]..[65,2415+51])
+                    []
+                  core_type (typing/includecore.mli[66,2467+30]..[66,2467+51])
+                    Ptyp_constr "extension_constructor" (typing/includecore.mli[66,2467+30]..[66,2467+51])
+                    []
+                  core_type (typing/includecore.mli[67,2519+30]..[67,2519+50])
+                    Ptyp_constr "constructor_mismatch" (typing/includecore.mli[67,2519+30]..[67,2519+50])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/includecore.mli[69,2571+0]..[74,2709+55])
+    Psig_type Rec
+    [
+      type_declaration "private_variant_mismatch" (typing/includecore.mli[69,2571+5]..[69,2571+29]) (typing/includecore.mli[69,2571+0]..[74,2709+55])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/includecore.mli[70,2603+2]..[70,2603+12])
+                "Openness" (typing/includecore.mli[70,2603+4]..[70,2603+12])
+                []
+                None
+              (typing/includecore.mli[71,2616+2]..[71,2616+32])
+                "Missing" (typing/includecore.mli[71,2616+4]..[71,2616+11])
+                [
+                  core_type (typing/includecore.mli[71,2616+15]..[71,2616+23])
+                    Ptyp_constr "position" (typing/includecore.mli[71,2616+15]..[71,2616+23])
+                    []
+                  core_type (typing/includecore.mli[71,2616+26]..[71,2616+32])
+                    Ptyp_constr "string" (typing/includecore.mli[71,2616+26]..[71,2616+32])
+                    []
+                ]
+                None
+              (typing/includecore.mli[72,2649+2]..[72,2649+22])
+                "Presence" (typing/includecore.mli[72,2649+4]..[72,2649+12])
+                [
+                  core_type (typing/includecore.mli[72,2649+16]..[72,2649+22])
+                    Ptyp_constr "string" (typing/includecore.mli[72,2649+16]..[72,2649+22])
+                    []
+                ]
+                None
+              (typing/includecore.mli[73,2672+2]..[73,2672+36])
+                "Incompatible_types_for" (typing/includecore.mli[73,2672+4]..[73,2672+26])
+                [
+                  core_type (typing/includecore.mli[73,2672+30]..[73,2672+36])
+                    Ptyp_constr "string" (typing/includecore.mli[73,2672+30]..[73,2672+36])
+                    []
+                ]
+                None
+              (typing/includecore.mli[74,2709+2]..[74,2709+55])
+                "Types" (typing/includecore.mli[74,2709+4]..[74,2709+9])
+                [
+                  core_type (typing/includecore.mli[74,2709+13]..[74,2709+18])
+                    Ptyp_constr "Env.t" (typing/includecore.mli[74,2709+13]..[74,2709+18])
+                    []
+                  core_type (typing/includecore.mli[74,2709+21]..[74,2709+55])
+                    Ptyp_constr "Errortrace.t" (typing/includecore.mli[74,2709+43]..[74,2709+55])
+                    [
+                      core_type (typing/includecore.mli[74,2709+21]..[74,2709+42])
+                        Ptyp_constr "Errortrace.comparison" (typing/includecore.mli[74,2709+21]..[74,2709+42])
+                        []
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/includecore.mli[76,2766+0]..[78,2819+55])
+    Psig_type Rec
+    [
+      type_declaration "private_object_mismatch" (typing/includecore.mli[76,2766+5]..[76,2766+28]) (typing/includecore.mli[76,2766+0]..[78,2819+55])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/includecore.mli[77,2797+2]..[77,2797+21])
+                "Missing" (typing/includecore.mli[77,2797+4]..[77,2797+11])
+                [
+                  core_type (typing/includecore.mli[77,2797+15]..[77,2797+21])
+                    Ptyp_constr "string" (typing/includecore.mli[77,2797+15]..[77,2797+21])
+                    []
+                ]
+                None
+              (typing/includecore.mli[78,2819+2]..[78,2819+55])
+                "Types" (typing/includecore.mli[78,2819+4]..[78,2819+9])
+                [
+                  core_type (typing/includecore.mli[78,2819+13]..[78,2819+18])
+                    Ptyp_constr "Env.t" (typing/includecore.mli[78,2819+13]..[78,2819+18])
+                    []
+                  core_type (typing/includecore.mli[78,2819+21]..[78,2819+55])
+                    Ptyp_constr "Errortrace.t" (typing/includecore.mli[78,2819+43]..[78,2819+55])
+                    [
+                      core_type (typing/includecore.mli[78,2819+21]..[78,2819+42])
+                        Ptyp_constr "Errortrace.comparison" (typing/includecore.mli[78,2819+21]..[78,2819+42])
+                        []
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/includecore.mli[80,2876+0]..[92,3322+43])
+    Psig_type Rec
+    [
+      type_declaration "type_mismatch" (typing/includecore.mli[80,2876+5]..[80,2876+18]) (typing/includecore.mli[80,2876+0]..[92,3322+43])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/includecore.mli[81,2897+2]..[81,2897+9])
+                "Arity" (typing/includecore.mli[81,2897+4]..[81,2897+9])
+                []
+                None
+              (typing/includecore.mli[82,2907+2]..[82,2907+11])
+                "Privacy" (typing/includecore.mli[82,2907+4]..[82,2907+11])
+                []
+                None
+              (typing/includecore.mli[83,2919+2]..[83,2919+8])
+                "Kind" (typing/includecore.mli[83,2919+4]..[83,2919+8])
+                []
+                None
+              (typing/includecore.mli[84,2928+2]..[84,2928+60])
+                "Constraint" (typing/includecore.mli[84,2928+4]..[84,2928+14])
+                [
+                  core_type (typing/includecore.mli[84,2928+18]..[84,2928+23])
+                    Ptyp_constr "Env.t" (typing/includecore.mli[84,2928+18]..[84,2928+23])
+                    []
+                  core_type (typing/includecore.mli[84,2928+26]..[84,2928+60])
+                    Ptyp_constr "Errortrace.t" (typing/includecore.mli[84,2928+48]..[84,2928+60])
+                    [
+                      core_type (typing/includecore.mli[84,2928+26]..[84,2928+47])
+                        Ptyp_constr "Errortrace.comparison" (typing/includecore.mli[84,2928+26]..[84,2928+47])
+                        []
+                    ]
+                ]
+                None
+              (typing/includecore.mli[85,2989+2]..[85,2989+58])
+                "Manifest" (typing/includecore.mli[85,2989+4]..[85,2989+12])
+                [
+                  core_type (typing/includecore.mli[85,2989+16]..[85,2989+21])
+                    Ptyp_constr "Env.t" (typing/includecore.mli[85,2989+16]..[85,2989+21])
+                    []
+                  core_type (typing/includecore.mli[85,2989+24]..[85,2989+58])
+                    Ptyp_constr "Errortrace.t" (typing/includecore.mli[85,2989+46]..[85,2989+58])
+                    [
+                      core_type (typing/includecore.mli[85,2989+24]..[85,2989+45])
+                        Ptyp_constr "Errortrace.comparison" (typing/includecore.mli[85,2989+24]..[85,2989+45])
+                        []
+                    ]
+                ]
+                None
+              (typing/includecore.mli[86,3048+2]..[86,3048+71])
+                "Private_variant" (typing/includecore.mli[86,3048+4]..[86,3048+19])
+                [
+                  core_type (typing/includecore.mli[86,3048+23]..[86,3048+32])
+                    Ptyp_constr "type_expr" (typing/includecore.mli[86,3048+23]..[86,3048+32])
+                    []
+                  core_type (typing/includecore.mli[86,3048+35]..[86,3048+44])
+                    Ptyp_constr "type_expr" (typing/includecore.mli[86,3048+35]..[86,3048+44])
+                    []
+                  core_type (typing/includecore.mli[86,3048+47]..[86,3048+71])
+                    Ptyp_constr "private_variant_mismatch" (typing/includecore.mli[86,3048+47]..[86,3048+71])
+                    []
+                ]
+                None
+              (typing/includecore.mli[87,3120+2]..[87,3120+69])
+                "Private_object" (typing/includecore.mli[87,3120+4]..[87,3120+18])
+                [
+                  core_type (typing/includecore.mli[87,3120+22]..[87,3120+31])
+                    Ptyp_constr "type_expr" (typing/includecore.mli[87,3120+22]..[87,3120+31])
+                    []
+                  core_type (typing/includecore.mli[87,3120+34]..[87,3120+43])
+                    Ptyp_constr "type_expr" (typing/includecore.mli[87,3120+34]..[87,3120+43])
+                    []
+                  core_type (typing/includecore.mli[87,3120+46]..[87,3120+69])
+                    Ptyp_constr "private_object_mismatch" (typing/includecore.mli[87,3120+46]..[87,3120+69])
+                    []
+                ]
+                None
+              (typing/includecore.mli[88,3190+2]..[88,3190+12])
+                "Variance" (typing/includecore.mli[88,3190+4]..[88,3190+12])
+                []
+                None
+              (typing/includecore.mli[89,3203+2]..[89,3203+38])
+                "Record_mismatch" (typing/includecore.mli[89,3203+4]..[89,3203+19])
+                [
+                  core_type (typing/includecore.mli[89,3203+23]..[89,3203+38])
+                    Ptyp_constr "record_mismatch" (typing/includecore.mli[89,3203+23]..[89,3203+38])
+                    []
+                ]
+                None
+              (typing/includecore.mli[90,3242+2]..[90,3242+40])
+                "Variant_mismatch" (typing/includecore.mli[90,3242+4]..[90,3242+20])
+                [
+                  core_type (typing/includecore.mli[90,3242+24]..[90,3242+40])
+                    Ptyp_constr "variant_mismatch" (typing/includecore.mli[90,3242+24]..[90,3242+40])
+                    []
+                ]
+                None
+              (typing/includecore.mli[91,3283+2]..[91,3283+38])
+                "Unboxed_representation" (typing/includecore.mli[91,3283+4]..[91,3283+26])
+                [
+                  core_type (typing/includecore.mli[91,3283+30]..[91,3283+38])
+                    Ptyp_constr "position" (typing/includecore.mli[91,3283+30]..[91,3283+38])
+                    []
+                ]
+                None
+              (typing/includecore.mli[92,3322+2]..[92,3322+43])
+                "Immediate" (typing/includecore.mli[92,3322+4]..[92,3322+13])
+                [
+                  core_type (typing/includecore.mli[92,3322+17]..[92,3322+43])
+                    Ptyp_constr "Type_immediacy.Violation.t" (typing/includecore.mli[92,3322+17]..[92,3322+43])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/includecore.mli[94,3367+0]..[96,3430+59])
+    Psig_value
+    value_description "value_descriptions" (typing/includecore.mli[94,3367+4]..[94,3367+22]) (typing/includecore.mli[94,3367+0]..[96,3430+59])
+      core_type (typing/includecore.mli[95,3391+2]..[96,3430+59])
+        Ptyp_arrow
+        Labelled "loc"
+        core_type (typing/includecore.mli[95,3391+6]..[95,3391+16])
+          Ptyp_constr "Location.t" (typing/includecore.mli[95,3391+6]..[95,3391+16])
+          []
+        core_type (typing/includecore.mli[95,3391+20]..[96,3430+59])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/includecore.mli[95,3391+20]..[95,3391+25])
+            Ptyp_constr "Env.t" (typing/includecore.mli[95,3391+20]..[95,3391+25])
+            []
+          core_type (typing/includecore.mli[95,3391+29]..[96,3430+59])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/includecore.mli[95,3391+29]..[95,3391+35])
+              Ptyp_constr "string" (typing/includecore.mli[95,3391+29]..[95,3391+35])
+              []
+            core_type (typing/includecore.mli[96,3430+2]..[96,3430+59])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/includecore.mli[96,3430+2]..[96,3430+19])
+                Ptyp_constr "value_description" (typing/includecore.mli[96,3430+2]..[96,3430+19])
+                []
+              core_type (typing/includecore.mli[96,3430+23]..[96,3430+59])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/includecore.mli[96,3430+23]..[96,3430+40])
+                  Ptyp_constr "value_description" (typing/includecore.mli[96,3430+23]..[96,3430+40])
+                  []
+                core_type (typing/includecore.mli[96,3430+44]..[96,3430+59])
+                  Ptyp_constr "module_coercion" (typing/includecore.mli[96,3430+44]..[96,3430+59])
+                  []
+      []
+  signature_item (typing/includecore.mli[98,3491+0]..[102,3588+72])
+    Psig_value
+    value_description "type_declarations" (typing/includecore.mli[98,3491+4]..[98,3491+21]) (typing/includecore.mli[98,3491+0]..[102,3588+72])
+      core_type (typing/includecore.mli[99,3514+2]..[102,3588+72])
+        Ptyp_arrow
+        Optional "equality"
+        core_type (typing/includecore.mli[99,3514+12]..[99,3514+16])
+          Ptyp_constr "bool" (typing/includecore.mli[99,3514+12]..[99,3514+16])
+          []
+        core_type (typing/includecore.mli[100,3534+2]..[102,3588+72])
+          Ptyp_arrow
+          Labelled "loc"
+          core_type (typing/includecore.mli[100,3534+6]..[100,3534+16])
+            Ptyp_constr "Location.t" (typing/includecore.mli[100,3534+6]..[100,3534+16])
+            []
+          core_type (typing/includecore.mli[101,3554+2]..[102,3588+72])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/includecore.mli[101,3554+2]..[101,3554+7])
+              Ptyp_constr "Env.t" (typing/includecore.mli[101,3554+2]..[101,3554+7])
+              []
+            core_type (typing/includecore.mli[101,3554+11]..[102,3588+72])
+              Ptyp_arrow
+              Labelled "mark"
+              core_type (typing/includecore.mli[101,3554+16]..[101,3554+20])
+                Ptyp_constr "bool" (typing/includecore.mli[101,3554+16]..[101,3554+20])
+                []
+              core_type (typing/includecore.mli[101,3554+24]..[102,3588+72])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/includecore.mli[101,3554+24]..[101,3554+30])
+                  Ptyp_constr "string" (typing/includecore.mli[101,3554+24]..[101,3554+30])
+                  []
+                core_type (typing/includecore.mli[102,3588+2]..[102,3588+72])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/includecore.mli[102,3588+2]..[102,3588+18])
+                    Ptyp_constr "type_declaration" (typing/includecore.mli[102,3588+2]..[102,3588+18])
+                    []
+                  core_type (typing/includecore.mli[102,3588+22]..[102,3588+72])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (typing/includecore.mli[102,3588+22]..[102,3588+28])
+                      Ptyp_constr "Path.t" (typing/includecore.mli[102,3588+22]..[102,3588+28])
+                      []
+                    core_type (typing/includecore.mli[102,3588+32]..[102,3588+72])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (typing/includecore.mli[102,3588+32]..[102,3588+48])
+                        Ptyp_constr "type_declaration" (typing/includecore.mli[102,3588+32]..[102,3588+48])
+                        []
+                      core_type (typing/includecore.mli[102,3588+52]..[102,3588+72])
+                        Ptyp_constr "option" (typing/includecore.mli[102,3588+66]..[102,3588+72])
+                        [
+                          core_type (typing/includecore.mli[102,3588+52]..[102,3588+65])
+                            Ptyp_constr "type_mismatch" (typing/includecore.mli[102,3588+52]..[102,3588+65])
+                            []
+                        ]
+      []
+  signature_item (typing/includecore.mli[104,3662+0]..[107,3795+39])
+    Psig_value
+    value_description "extension_constructors" (typing/includecore.mli[104,3662+4]..[104,3662+26]) (typing/includecore.mli[104,3662+0]..[107,3795+39])
+      core_type (typing/includecore.mli[105,3690+2]..[107,3795+39])
+        Ptyp_arrow
+        Labelled "loc"
+        core_type (typing/includecore.mli[105,3690+6]..[105,3690+16])
+          Ptyp_constr "Location.t" (typing/includecore.mli[105,3690+6]..[105,3690+16])
+          []
+        core_type (typing/includecore.mli[105,3690+20]..[107,3795+39])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/includecore.mli[105,3690+20]..[105,3690+25])
+            Ptyp_constr "Env.t" (typing/includecore.mli[105,3690+20]..[105,3690+25])
+            []
+          core_type (typing/includecore.mli[105,3690+29]..[107,3795+39])
+            Ptyp_arrow
+            Labelled "mark"
+            core_type (typing/includecore.mli[105,3690+34]..[105,3690+38])
+              Ptyp_constr "bool" (typing/includecore.mli[105,3690+34]..[105,3690+38])
+              []
+            core_type (typing/includecore.mli[105,3690+42]..[107,3795+39])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/includecore.mli[105,3690+42]..[105,3690+49])
+                Ptyp_constr "Ident.t" (typing/includecore.mli[105,3690+42]..[105,3690+49])
+                []
+              core_type (typing/includecore.mli[106,3743+2]..[107,3795+39])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/includecore.mli[106,3743+2]..[106,3743+23])
+                  Ptyp_constr "extension_constructor" (typing/includecore.mli[106,3743+2]..[106,3743+23])
+                  []
+                core_type (typing/includecore.mli[106,3743+27]..[107,3795+39])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/includecore.mli[106,3743+27]..[106,3743+48])
+                    Ptyp_constr "extension_constructor" (typing/includecore.mli[106,3743+27]..[106,3743+48])
+                    []
+                  core_type (typing/includecore.mli[107,3795+2]..[107,3795+39])
+                    Ptyp_constr "option" (typing/includecore.mli[107,3795+33]..[107,3795+39])
+                    [
+                      core_type (typing/includecore.mli[107,3795+2]..[107,3795+32])
+                        Ptyp_constr "extension_constructor_mismatch" (typing/includecore.mli[107,3795+2]..[107,3795+32])
+                        []
+                    ]
+      []
+  signature_item (typing/includecore.mli[113,3909+0]..[114,3935+75])
+    Psig_value
+    value_description "report_type_mismatch" (typing/includecore.mli[113,3909+4]..[113,3909+24]) (typing/includecore.mli[113,3909+0]..[114,3935+75])
+      core_type (typing/includecore.mli[114,3935+4]..[114,3935+75])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/includecore.mli[114,3935+4]..[114,3935+10])
+          Ptyp_constr "string" (typing/includecore.mli[114,3935+4]..[114,3935+10])
+          []
+        core_type (typing/includecore.mli[114,3935+14]..[114,3935+75])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/includecore.mli[114,3935+14]..[114,3935+20])
+            Ptyp_constr "string" (typing/includecore.mli[114,3935+14]..[114,3935+20])
+            []
+          core_type (typing/includecore.mli[114,3935+24]..[114,3935+75])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/includecore.mli[114,3935+24]..[114,3935+30])
+              Ptyp_constr "string" (typing/includecore.mli[114,3935+24]..[114,3935+30])
+              []
+            core_type (typing/includecore.mli[114,3935+34]..[114,3935+75])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/includecore.mli[114,3935+34]..[114,3935+50])
+                Ptyp_constr "Format.formatter" (typing/includecore.mli[114,3935+34]..[114,3935+50])
+                []
+              core_type (typing/includecore.mli[114,3935+54]..[114,3935+75])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/includecore.mli[114,3935+54]..[114,3935+67])
+                  Ptyp_constr "type_mismatch" (typing/includecore.mli[114,3935+54]..[114,3935+67])
+                  []
+                core_type (typing/includecore.mli[114,3935+71]..[114,3935+75])
+                  Ptyp_constr "unit" (typing/includecore.mli[114,3935+71]..[114,3935+75])
+                  []
+      []
+  signature_item (typing/includecore.mli[115,4011+0]..[116,4084+60])
+    Psig_value
+    value_description "report_extension_constructor_mismatch" (typing/includecore.mli[115,4011+4]..[115,4011+41]) (typing/includecore.mli[115,4011+0]..[116,4084+60])
+      core_type (typing/includecore.mli[115,4011+43]..[116,4084+60])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/includecore.mli[115,4011+43]..[115,4011+49])
+          Ptyp_constr "string" (typing/includecore.mli[115,4011+43]..[115,4011+49])
+          []
+        core_type (typing/includecore.mli[115,4011+53]..[116,4084+60])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/includecore.mli[115,4011+53]..[115,4011+59])
+            Ptyp_constr "string" (typing/includecore.mli[115,4011+53]..[115,4011+59])
+            []
+          core_type (typing/includecore.mli[115,4011+63]..[116,4084+60])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/includecore.mli[115,4011+63]..[115,4011+69])
+              Ptyp_constr "string" (typing/includecore.mli[115,4011+63]..[115,4011+69])
+              []
+            core_type (typing/includecore.mli[116,4084+2]..[116,4084+60])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/includecore.mli[116,4084+2]..[116,4084+18])
+                Ptyp_constr "Format.formatter" (typing/includecore.mli[116,4084+2]..[116,4084+18])
+                []
+              core_type (typing/includecore.mli[116,4084+22]..[116,4084+60])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/includecore.mli[116,4084+22]..[116,4084+52])
+                  Ptyp_constr "extension_constructor_mismatch" (typing/includecore.mli[116,4084+22]..[116,4084+52])
+                  []
+                core_type (typing/includecore.mli[116,4084+56]..[116,4084+60])
+                  Ptyp_constr "unit" (typing/includecore.mli[116,4084+56]..[116,4084+60])
+                  []
+      []
+]
+

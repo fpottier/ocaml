@@ -1,0 +1,1312 @@
+[
+  signature_item (toplevel/toploop.mli[16,1079+0]..[16,1079+11])
+    Psig_open Fresh "Format" (toplevel/toploop.mli[16,1079+5]..[16,1079+11])
+  signature_item (toplevel/toploop.mli[21,1264+0]..[21,1264+30])
+    Psig_value
+    value_description "getvalue" (toplevel/toploop.mli[21,1264+4]..[21,1264+12]) (toplevel/toploop.mli[21,1264+0]..[21,1264+30])
+      core_type (toplevel/toploop.mli[21,1264+15]..[21,1264+30])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[21,1264+15]..[21,1264+21])
+          Ptyp_constr "string" (toplevel/toploop.mli[21,1264+15]..[21,1264+21])
+          []
+        core_type (toplevel/toploop.mli[21,1264+25]..[21,1264+30])
+          Ptyp_constr "Obj.t" (toplevel/toploop.mli[21,1264+25]..[21,1264+30])
+          []
+      []
+  signature_item (toplevel/toploop.mli[22,1295+0]..[22,1295+38])
+    Psig_value
+    value_description "setvalue" (toplevel/toploop.mli[22,1295+4]..[22,1295+12]) (toplevel/toploop.mli[22,1295+0]..[22,1295+38])
+      core_type (toplevel/toploop.mli[22,1295+15]..[22,1295+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[22,1295+15]..[22,1295+21])
+          Ptyp_constr "string" (toplevel/toploop.mli[22,1295+15]..[22,1295+21])
+          []
+        core_type (toplevel/toploop.mli[22,1295+25]..[22,1295+38])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[22,1295+25]..[22,1295+30])
+            Ptyp_constr "Obj.t" (toplevel/toploop.mli[22,1295+25]..[22,1295+30])
+            []
+          core_type (toplevel/toploop.mli[22,1295+34]..[22,1295+38])
+            Ptyp_constr "unit" (toplevel/toploop.mli[22,1295+34]..[22,1295+38])
+            []
+      []
+  signature_item (toplevel/toploop.mli[26,1386+0]..[26,1386+28])
+    Psig_value
+    value_description "set_paths" (toplevel/toploop.mli[26,1386+4]..[26,1386+13]) (toplevel/toploop.mli[26,1386+0]..[26,1386+28])
+      core_type (toplevel/toploop.mli[26,1386+16]..[26,1386+28])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[26,1386+16]..[26,1386+20])
+          Ptyp_constr "unit" (toplevel/toploop.mli[26,1386+16]..[26,1386+20])
+          []
+        core_type (toplevel/toploop.mli[26,1386+24]..[26,1386+28])
+          Ptyp_constr "unit" (toplevel/toploop.mli[26,1386+24]..[26,1386+28])
+          []
+      []
+  signature_item (toplevel/toploop.mli[30,1453+0]..[30,1453+28])
+    Psig_value
+    value_description "loop" (toplevel/toploop.mli[30,1453+4]..[30,1453+8]) (toplevel/toploop.mli[30,1453+0]..[30,1453+28])
+      core_type (toplevel/toploop.mli[30,1453+11]..[30,1453+28])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[30,1453+11]..[30,1453+20])
+          Ptyp_constr "formatter" (toplevel/toploop.mli[30,1453+11]..[30,1453+20])
+          []
+        core_type (toplevel/toploop.mli[30,1453+24]..[30,1453+28])
+          Ptyp_constr "unit" (toplevel/toploop.mli[30,1453+24]..[30,1453+28])
+          []
+      []
+  signature_item (toplevel/toploop.mli[34,1536+0]..[34,1536+60])
+    Psig_value
+    value_description "run_script" (toplevel/toploop.mli[34,1536+4]..[34,1536+14]) (toplevel/toploop.mli[34,1536+0]..[34,1536+60])
+      core_type (toplevel/toploop.mli[34,1536+17]..[34,1536+60])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[34,1536+17]..[34,1536+26])
+          Ptyp_constr "formatter" (toplevel/toploop.mli[34,1536+17]..[34,1536+26])
+          []
+        core_type (toplevel/toploop.mli[34,1536+30]..[34,1536+60])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[34,1536+30]..[34,1536+36])
+            Ptyp_constr "string" (toplevel/toploop.mli[34,1536+30]..[34,1536+36])
+            []
+          core_type (toplevel/toploop.mli[34,1536+40]..[34,1536+60])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[34,1536+40]..[34,1536+52])
+              Ptyp_constr "array" (toplevel/toploop.mli[34,1536+47]..[34,1536+52])
+              [
+                core_type (toplevel/toploop.mli[34,1536+40]..[34,1536+46])
+                  Ptyp_constr "string" (toplevel/toploop.mli[34,1536+40]..[34,1536+46])
+                  []
+              ]
+            core_type (toplevel/toploop.mli[34,1536+56]..[34,1536+60])
+              Ptyp_constr "bool" (toplevel/toploop.mli[34,1536+56]..[34,1536+60])
+              []
+      []
+  signature_item (toplevel/toploop.mli[39,1689+0]..[44,1872+37])
+    Psig_type Rec
+    [
+      type_declaration "directive_fun" (toplevel/toploop.mli[39,1689+5]..[39,1689+18]) (toplevel/toploop.mli[39,1689+0]..[44,1872+37])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (toplevel/toploop.mli[40,1710+3]..[40,1710+37])
+                "Directive_none" (toplevel/toploop.mli[40,1710+5]..[40,1710+19])
+                [
+                  core_type (toplevel/toploop.mli[40,1710+24]..[40,1710+36])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/toploop.mli[40,1710+24]..[40,1710+28])
+                      Ptyp_constr "unit" (toplevel/toploop.mli[40,1710+24]..[40,1710+28])
+                      []
+                    core_type (toplevel/toploop.mli[40,1710+32]..[40,1710+36])
+                      Ptyp_constr "unit" (toplevel/toploop.mli[40,1710+32]..[40,1710+36])
+                      []
+                ]
+                None
+              (toplevel/toploop.mli[41,1748+3]..[41,1748+41])
+                "Directive_string" (toplevel/toploop.mli[41,1748+5]..[41,1748+21])
+                [
+                  core_type (toplevel/toploop.mli[41,1748+26]..[41,1748+40])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/toploop.mli[41,1748+26]..[41,1748+32])
+                      Ptyp_constr "string" (toplevel/toploop.mli[41,1748+26]..[41,1748+32])
+                      []
+                    core_type (toplevel/toploop.mli[41,1748+36]..[41,1748+40])
+                      Ptyp_constr "unit" (toplevel/toploop.mli[41,1748+36]..[41,1748+40])
+                      []
+                ]
+                None
+              (toplevel/toploop.mli[42,1790+3]..[42,1790+35])
+                "Directive_int" (toplevel/toploop.mli[42,1790+5]..[42,1790+18])
+                [
+                  core_type (toplevel/toploop.mli[42,1790+23]..[42,1790+34])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/toploop.mli[42,1790+23]..[42,1790+26])
+                      Ptyp_constr "int" (toplevel/toploop.mli[42,1790+23]..[42,1790+26])
+                      []
+                    core_type (toplevel/toploop.mli[42,1790+30]..[42,1790+34])
+                      Ptyp_constr "unit" (toplevel/toploop.mli[42,1790+30]..[42,1790+34])
+                      []
+                ]
+                None
+              (toplevel/toploop.mli[43,1826+3]..[43,1826+45])
+                "Directive_ident" (toplevel/toploop.mli[43,1826+5]..[43,1826+20])
+                [
+                  core_type (toplevel/toploop.mli[43,1826+25]..[43,1826+44])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/toploop.mli[43,1826+25]..[43,1826+36])
+                      Ptyp_constr "Longident.t" (toplevel/toploop.mli[43,1826+25]..[43,1826+36])
+                      []
+                    core_type (toplevel/toploop.mli[43,1826+40]..[43,1826+44])
+                      Ptyp_constr "unit" (toplevel/toploop.mli[43,1826+40]..[43,1826+44])
+                      []
+                ]
+                None
+              (toplevel/toploop.mli[44,1872+3]..[44,1872+37])
+                "Directive_bool" (toplevel/toploop.mli[44,1872+5]..[44,1872+19])
+                [
+                  core_type (toplevel/toploop.mli[44,1872+24]..[44,1872+36])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/toploop.mli[44,1872+24]..[44,1872+28])
+                      Ptyp_constr "bool" (toplevel/toploop.mli[44,1872+24]..[44,1872+28])
+                      []
+                    core_type (toplevel/toploop.mli[44,1872+32]..[44,1872+36])
+                      Ptyp_constr "unit" (toplevel/toploop.mli[44,1872+32]..[44,1872+36])
+                      []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (toplevel/toploop.mli[46,1911+0]..[49,1969+1])
+    Psig_type Rec
+    [
+      type_declaration "directive_info" (toplevel/toploop.mli[46,1911+5]..[46,1911+19]) (toplevel/toploop.mli[46,1911+0]..[49,1969+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (toplevel/toploop.mli[47,1935+2]..[47,1935+18])
+                Immutable
+                "section" (toplevel/toploop.mli[47,1935+2]..[47,1935+9])                core_type (toplevel/toploop.mli[47,1935+11]..[47,1935+17])
+                  Ptyp_constr "string" (toplevel/toploop.mli[47,1935+11]..[47,1935+17])
+                  []
+              (toplevel/toploop.mli[48,1954+2]..[48,1954+14])
+                Immutable
+                "doc" (toplevel/toploop.mli[48,1954+2]..[48,1954+5])                core_type (toplevel/toploop.mli[48,1954+7]..[48,1954+13])
+                  Ptyp_constr "string" (toplevel/toploop.mli[48,1954+7]..[48,1954+13])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (toplevel/toploop.mli[51,1972+0]..[51,1972+69])
+    Psig_value
+    value_description "add_directive" (toplevel/toploop.mli[51,1972+4]..[51,1972+17]) (toplevel/toploop.mli[51,1972+0]..[51,1972+69])
+      core_type (toplevel/toploop.mli[51,1972+20]..[51,1972+69])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[51,1972+20]..[51,1972+26])
+          Ptyp_constr "string" (toplevel/toploop.mli[51,1972+20]..[51,1972+26])
+          []
+        core_type (toplevel/toploop.mli[51,1972+30]..[51,1972+69])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[51,1972+30]..[51,1972+43])
+            Ptyp_constr "directive_fun" (toplevel/toploop.mli[51,1972+30]..[51,1972+43])
+            []
+          core_type (toplevel/toploop.mli[51,1972+47]..[51,1972+69])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[51,1972+47]..[51,1972+61])
+              Ptyp_constr "directive_info" (toplevel/toploop.mli[51,1972+47]..[51,1972+61])
+              []
+            core_type (toplevel/toploop.mli[51,1972+65]..[51,1972+69])
+              Ptyp_constr "unit" (toplevel/toploop.mli[51,1972+65]..[51,1972+69])
+              []
+      []
+  signature_item (toplevel/toploop.mli[56,2127+0]..[56,2127+50])
+    Psig_value
+    value_description "get_directive" (toplevel/toploop.mli[56,2127+4]..[56,2127+17]) (toplevel/toploop.mli[56,2127+0]..[56,2127+50])
+      core_type (toplevel/toploop.mli[56,2127+20]..[56,2127+50])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[56,2127+20]..[56,2127+26])
+          Ptyp_constr "string" (toplevel/toploop.mli[56,2127+20]..[56,2127+26])
+          []
+        core_type (toplevel/toploop.mli[56,2127+30]..[56,2127+50])
+          Ptyp_constr "option" (toplevel/toploop.mli[56,2127+44]..[56,2127+50])
+          [
+            core_type (toplevel/toploop.mli[56,2127+30]..[56,2127+43])
+              Ptyp_constr "directive_fun" (toplevel/toploop.mli[56,2127+30]..[56,2127+43])
+              []
+          ]
+      []
+  signature_item (toplevel/toploop.mli[58,2179+0]..[58,2179+56])
+    Psig_value
+    value_description "get_directive_info" (toplevel/toploop.mli[58,2179+4]..[58,2179+22]) (toplevel/toploop.mli[58,2179+0]..[58,2179+56])
+      core_type (toplevel/toploop.mli[58,2179+25]..[58,2179+56])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[58,2179+25]..[58,2179+31])
+          Ptyp_constr "string" (toplevel/toploop.mli[58,2179+25]..[58,2179+31])
+          []
+        core_type (toplevel/toploop.mli[58,2179+35]..[58,2179+56])
+          Ptyp_constr "option" (toplevel/toploop.mli[58,2179+50]..[58,2179+56])
+          [
+            core_type (toplevel/toploop.mli[58,2179+35]..[58,2179+49])
+              Ptyp_constr "directive_info" (toplevel/toploop.mli[58,2179+35]..[58,2179+49])
+              []
+          ]
+      []
+  signature_item (toplevel/toploop.mli[60,2237+0]..[60,2237+45])
+    Psig_value
+    value_description "all_directive_names" (toplevel/toploop.mli[60,2237+4]..[60,2237+23]) (toplevel/toploop.mli[60,2237+0]..[60,2237+45])
+      core_type (toplevel/toploop.mli[60,2237+26]..[60,2237+45])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[60,2237+26]..[60,2237+30])
+          Ptyp_constr "unit" (toplevel/toploop.mli[60,2237+26]..[60,2237+30])
+          []
+        core_type (toplevel/toploop.mli[60,2237+34]..[60,2237+45])
+          Ptyp_constr "list" (toplevel/toploop.mli[60,2237+41]..[60,2237+45])
+          [
+            core_type (toplevel/toploop.mli[60,2237+34]..[60,2237+40])
+              Ptyp_constr "string" (toplevel/toploop.mli[60,2237+34]..[60,2237+40])
+              []
+          ]
+      []
+  signature_item (toplevel/toploop.mli[62,2284+0]..[62,2284+68])
+    Psig_value
+    value_description "directive_table" (toplevel/toploop.mli[62,2284+17]..[62,2284+32]) (toplevel/toploop.mli[62,2284+0]..[62,2284+68])
+      attribute "deprecated"
+        []
+      core_type (toplevel/toploop.mli[62,2284+35]..[62,2284+68])
+        Ptyp_constr "Hashtbl.t" (toplevel/toploop.mli[62,2284+59]..[62,2284+68])
+        [
+          core_type (toplevel/toploop.mli[62,2284+36]..[62,2284+42])
+            Ptyp_constr "string" (toplevel/toploop.mli[62,2284+36]..[62,2284+42])
+            []
+          core_type (toplevel/toploop.mli[62,2284+44]..[62,2284+57])
+            Ptyp_constr "directive_fun" (toplevel/toploop.mli[62,2284+44]..[62,2284+57])
+            []
+        ]
+      []
+  signature_item (toplevel/toploop.mli[66,2451+0]..[66,2451+74])
+    Psig_value
+    value_description "directive_info_table" (toplevel/toploop.mli[66,2451+17]..[66,2451+37]) (toplevel/toploop.mli[66,2451+0]..[66,2451+74])
+      attribute "deprecated"
+        []
+      core_type (toplevel/toploop.mli[66,2451+40]..[66,2451+74])
+        Ptyp_constr "Hashtbl.t" (toplevel/toploop.mli[66,2451+65]..[66,2451+74])
+        [
+          core_type (toplevel/toploop.mli[66,2451+41]..[66,2451+47])
+            Ptyp_constr "string" (toplevel/toploop.mli[66,2451+41]..[66,2451+47])
+            []
+          core_type (toplevel/toploop.mli[66,2451+49]..[66,2451+63])
+            Ptyp_constr "directive_info" (toplevel/toploop.mli[66,2451+49]..[66,2451+63])
+            []
+        ]
+      []
+  signature_item (toplevel/toploop.mli[70,2624+0]..[70,2624+28])
+    Psig_value
+    value_description "toplevel_env" (toplevel/toploop.mli[70,2624+4]..[70,2624+16]) (toplevel/toploop.mli[70,2624+0]..[70,2624+28])
+      core_type (toplevel/toploop.mli[70,2624+19]..[70,2624+28])
+        Ptyp_constr "ref" (toplevel/toploop.mli[70,2624+25]..[70,2624+28])
+        [
+          core_type (toplevel/toploop.mli[70,2624+19]..[70,2624+24])
+            Ptyp_constr "Env.t" (toplevel/toploop.mli[70,2624+19]..[70,2624+24])
+            []
+        ]
+      []
+  signature_item (toplevel/toploop.mli[72,2703+0]..[72,2703+42])
+    Psig_value
+    value_description "initialize_toplevel_env" (toplevel/toploop.mli[72,2703+4]..[72,2703+27]) (toplevel/toploop.mli[72,2703+0]..[72,2703+42])
+      core_type (toplevel/toploop.mli[72,2703+30]..[72,2703+42])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[72,2703+30]..[72,2703+34])
+          Ptyp_constr "unit" (toplevel/toploop.mli[72,2703+30]..[72,2703+34])
+          []
+        core_type (toplevel/toploop.mli[72,2703+38]..[72,2703+42])
+          Ptyp_constr "unit" (toplevel/toploop.mli[72,2703+38]..[72,2703+42])
+          []
+      []
+  signature_item (toplevel/toploop.mli[74,2811+0]..[74,2811+54])
+    Psig_value
+    value_description "print_exception_outcome" (toplevel/toploop.mli[74,2811+4]..[74,2811+27]) (toplevel/toploop.mli[74,2811+0]..[74,2811+54])
+      core_type (toplevel/toploop.mli[74,2811+30]..[74,2811+54])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[74,2811+30]..[74,2811+39])
+          Ptyp_constr "formatter" (toplevel/toploop.mli[74,2811+30]..[74,2811+39])
+          []
+        core_type (toplevel/toploop.mli[74,2811+43]..[74,2811+54])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[74,2811+43]..[74,2811+46])
+            Ptyp_constr "exn" (toplevel/toploop.mli[74,2811+43]..[74,2811+46])
+            []
+          core_type (toplevel/toploop.mli[74,2811+50]..[74,2811+54])
+            Ptyp_constr "unit" (toplevel/toploop.mli[74,2811+50]..[74,2811+54])
+            []
+      []
+  signature_item (toplevel/toploop.mli[76,2943+0]..[76,2943+75])
+    Psig_value
+    value_description "execute_phrase" (toplevel/toploop.mli[76,2943+4]..[76,2943+18]) (toplevel/toploop.mli[76,2943+0]..[76,2943+75])
+      core_type (toplevel/toploop.mli[76,2943+21]..[76,2943+75])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[76,2943+21]..[76,2943+25])
+          Ptyp_constr "bool" (toplevel/toploop.mli[76,2943+21]..[76,2943+25])
+          []
+        core_type (toplevel/toploop.mli[76,2943+29]..[76,2943+75])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[76,2943+29]..[76,2943+38])
+            Ptyp_constr "formatter" (toplevel/toploop.mli[76,2943+29]..[76,2943+38])
+            []
+          core_type (toplevel/toploop.mli[76,2943+42]..[76,2943+75])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[76,2943+42]..[76,2943+67])
+              Ptyp_constr "Parsetree.toplevel_phrase" (toplevel/toploop.mli[76,2943+42]..[76,2943+67])
+              []
+            core_type (toplevel/toploop.mli[76,2943+71]..[76,2943+75])
+              Ptyp_constr "bool" (toplevel/toploop.mli[76,2943+71]..[76,2943+75])
+              []
+      []
+  signature_item (toplevel/toploop.mli[81,3295+0]..[82,3319+74])
+    Psig_value
+    value_description "preprocess_phrase" (toplevel/toploop.mli[81,3295+4]..[81,3295+21]) (toplevel/toploop.mli[81,3295+0]..[82,3319+74])
+      core_type (toplevel/toploop.mli[82,3319+6]..[82,3319+74])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[82,3319+6]..[82,3319+15])
+          Ptyp_constr "formatter" (toplevel/toploop.mli[82,3319+6]..[82,3319+15])
+          []
+        core_type (toplevel/toploop.mli[82,3319+19]..[82,3319+74])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[82,3319+19]..[82,3319+44])
+            Ptyp_constr "Parsetree.toplevel_phrase" (toplevel/toploop.mli[82,3319+19]..[82,3319+44])
+            []
+          core_type (toplevel/toploop.mli[82,3319+49]..[82,3319+74])
+            Ptyp_constr "Parsetree.toplevel_phrase" (toplevel/toploop.mli[82,3319+49]..[82,3319+74])
+            []
+      []
+  signature_item (toplevel/toploop.mli[85,3520+0]..[85,3520+42])
+    Psig_value
+    value_description "use_file" (toplevel/toploop.mli[85,3520+4]..[85,3520+12]) (toplevel/toploop.mli[85,3520+0]..[85,3520+42])
+      core_type (toplevel/toploop.mli[85,3520+15]..[85,3520+42])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[85,3520+15]..[85,3520+24])
+          Ptyp_constr "formatter" (toplevel/toploop.mli[85,3520+15]..[85,3520+24])
+          []
+        core_type (toplevel/toploop.mli[85,3520+28]..[85,3520+42])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[85,3520+28]..[85,3520+34])
+            Ptyp_constr "string" (toplevel/toploop.mli[85,3520+28]..[85,3520+34])
+            []
+          core_type (toplevel/toploop.mli[85,3520+38]..[85,3520+42])
+            Ptyp_constr "bool" (toplevel/toploop.mli[85,3520+38]..[85,3520+42])
+            []
+      []
+  signature_item (toplevel/toploop.mli[86,3563+0]..[86,3563+44])
+    Psig_value
+    value_description "use_output" (toplevel/toploop.mli[86,3563+4]..[86,3563+14]) (toplevel/toploop.mli[86,3563+0]..[86,3563+44])
+      core_type (toplevel/toploop.mli[86,3563+17]..[86,3563+44])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[86,3563+17]..[86,3563+26])
+          Ptyp_constr "formatter" (toplevel/toploop.mli[86,3563+17]..[86,3563+26])
+          []
+        core_type (toplevel/toploop.mli[86,3563+30]..[86,3563+44])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[86,3563+30]..[86,3563+36])
+            Ptyp_constr "string" (toplevel/toploop.mli[86,3563+30]..[86,3563+36])
+            []
+          core_type (toplevel/toploop.mli[86,3563+40]..[86,3563+44])
+            Ptyp_constr "bool" (toplevel/toploop.mli[86,3563+40]..[86,3563+44])
+            []
+      []
+  signature_item (toplevel/toploop.mli[87,3608+0]..[87,3608+46])
+    Psig_value
+    value_description "use_silently" (toplevel/toploop.mli[87,3608+4]..[87,3608+16]) (toplevel/toploop.mli[87,3608+0]..[87,3608+46])
+      core_type (toplevel/toploop.mli[87,3608+19]..[87,3608+46])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[87,3608+19]..[87,3608+28])
+          Ptyp_constr "formatter" (toplevel/toploop.mli[87,3608+19]..[87,3608+28])
+          []
+        core_type (toplevel/toploop.mli[87,3608+32]..[87,3608+46])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[87,3608+32]..[87,3608+38])
+            Ptyp_constr "string" (toplevel/toploop.mli[87,3608+32]..[87,3608+38])
+            []
+          core_type (toplevel/toploop.mli[87,3608+42]..[87,3608+46])
+            Ptyp_constr "bool" (toplevel/toploop.mli[87,3608+42]..[87,3608+46])
+            []
+      []
+  signature_item (toplevel/toploop.mli[88,3655+0]..[88,3655+46])
+    Psig_value
+    value_description "mod_use_file" (toplevel/toploop.mli[88,3655+4]..[88,3655+16]) (toplevel/toploop.mli[88,3655+0]..[88,3655+46])
+      core_type (toplevel/toploop.mli[88,3655+19]..[88,3655+46])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[88,3655+19]..[88,3655+28])
+          Ptyp_constr "formatter" (toplevel/toploop.mli[88,3655+19]..[88,3655+28])
+          []
+        core_type (toplevel/toploop.mli[88,3655+32]..[88,3655+46])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[88,3655+32]..[88,3655+38])
+            Ptyp_constr "string" (toplevel/toploop.mli[88,3655+32]..[88,3655+38])
+            []
+          core_type (toplevel/toploop.mli[88,3655+42]..[88,3655+46])
+            Ptyp_constr "bool" (toplevel/toploop.mli[88,3655+42]..[88,3655+46])
+            []
+      []
+  signature_item (toplevel/toploop.mli[93,3932+0]..[93,3932+46])
+    Psig_value
+    value_description "eval_module_path" (toplevel/toploop.mli[93,3932+4]..[93,3932+20]) (toplevel/toploop.mli[93,3932+0]..[93,3932+46])
+      core_type (toplevel/toploop.mli[93,3932+22]..[93,3932+46])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[93,3932+22]..[93,3932+27])
+          Ptyp_constr "Env.t" (toplevel/toploop.mli[93,3932+22]..[93,3932+27])
+          []
+        core_type (toplevel/toploop.mli[93,3932+31]..[93,3932+46])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[93,3932+31]..[93,3932+37])
+            Ptyp_constr "Path.t" (toplevel/toploop.mli[93,3932+31]..[93,3932+37])
+            []
+          core_type (toplevel/toploop.mli[93,3932+41]..[93,3932+46])
+            Ptyp_constr "Obj.t" (toplevel/toploop.mli[93,3932+41]..[93,3932+46])
+            []
+      []
+  signature_item (toplevel/toploop.mli[94,3979+0]..[94,3979+45])
+    Psig_value
+    value_description "eval_value_path" (toplevel/toploop.mli[94,3979+4]..[94,3979+19]) (toplevel/toploop.mli[94,3979+0]..[94,3979+45])
+      core_type (toplevel/toploop.mli[94,3979+21]..[94,3979+45])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[94,3979+21]..[94,3979+26])
+          Ptyp_constr "Env.t" (toplevel/toploop.mli[94,3979+21]..[94,3979+26])
+          []
+        core_type (toplevel/toploop.mli[94,3979+30]..[94,3979+45])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[94,3979+30]..[94,3979+36])
+            Ptyp_constr "Path.t" (toplevel/toploop.mli[94,3979+30]..[94,3979+36])
+            []
+          core_type (toplevel/toploop.mli[94,3979+40]..[94,3979+45])
+            Ptyp_constr "Obj.t" (toplevel/toploop.mli[94,3979+40]..[94,3979+45])
+            []
+      []
+  signature_item (toplevel/toploop.mli[95,4025+0]..[95,4025+49])
+    Psig_value
+    value_description "eval_extension_path" (toplevel/toploop.mli[95,4025+4]..[95,4025+23]) (toplevel/toploop.mli[95,4025+0]..[95,4025+49])
+      core_type (toplevel/toploop.mli[95,4025+25]..[95,4025+49])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[95,4025+25]..[95,4025+30])
+          Ptyp_constr "Env.t" (toplevel/toploop.mli[95,4025+25]..[95,4025+30])
+          []
+        core_type (toplevel/toploop.mli[95,4025+34]..[95,4025+49])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[95,4025+34]..[95,4025+40])
+            Ptyp_constr "Path.t" (toplevel/toploop.mli[95,4025+34]..[95,4025+40])
+            []
+          core_type (toplevel/toploop.mli[95,4025+44]..[95,4025+49])
+            Ptyp_constr "Obj.t" (toplevel/toploop.mli[95,4025+44]..[95,4025+49])
+            []
+      []
+  signature_item (toplevel/toploop.mli[96,4075+0]..[96,4075+45])
+    Psig_value
+    value_description "eval_class_path" (toplevel/toploop.mli[96,4075+4]..[96,4075+19]) (toplevel/toploop.mli[96,4075+0]..[96,4075+45])
+      core_type (toplevel/toploop.mli[96,4075+21]..[96,4075+45])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[96,4075+21]..[96,4075+26])
+          Ptyp_constr "Env.t" (toplevel/toploop.mli[96,4075+21]..[96,4075+26])
+          []
+        core_type (toplevel/toploop.mli[96,4075+30]..[96,4075+45])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[96,4075+30]..[96,4075+36])
+            Ptyp_constr "Path.t" (toplevel/toploop.mli[96,4075+30]..[96,4075+36])
+            []
+          core_type (toplevel/toploop.mli[96,4075+40]..[96,4075+45])
+            Ptyp_constr "Obj.t" (toplevel/toploop.mli[96,4075+40]..[96,4075+45])
+            []
+      []
+  signature_item (toplevel/toploop.mli[98,4192+0]..[98,4192+35])
+    Psig_value
+    value_description "record_backtrace" (toplevel/toploop.mli[98,4192+4]..[98,4192+20]) (toplevel/toploop.mli[98,4192+0]..[98,4192+35])
+      core_type (toplevel/toploop.mli[98,4192+23]..[98,4192+35])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[98,4192+23]..[98,4192+27])
+          Ptyp_constr "unit" (toplevel/toploop.mli[98,4192+23]..[98,4192+27])
+          []
+        core_type (toplevel/toploop.mli[98,4192+31]..[98,4192+35])
+          Ptyp_constr "unit" (toplevel/toploop.mli[98,4192+31]..[98,4192+35])
+          []
+      []
+  signature_item (toplevel/toploop.mli[100,4229+0]..[100,4229+42])
+    Psig_value
+    value_description "load_file" (toplevel/toploop.mli[100,4229+4]..[100,4229+13]) (toplevel/toploop.mli[100,4229+0]..[100,4229+42])
+      core_type (toplevel/toploop.mli[100,4229+15]..[100,4229+42])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[100,4229+15]..[100,4229+24])
+          Ptyp_constr "formatter" (toplevel/toploop.mli[100,4229+15]..[100,4229+24])
+          []
+        core_type (toplevel/toploop.mli[100,4229+28]..[100,4229+42])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[100,4229+28]..[100,4229+34])
+            Ptyp_constr "string" (toplevel/toploop.mli[100,4229+28]..[100,4229+34])
+            []
+          core_type (toplevel/toploop.mli[100,4229+38]..[100,4229+42])
+            Ptyp_constr "bool" (toplevel/toploop.mli[100,4229+38]..[100,4229+42])
+            []
+      []
+  signature_item (toplevel/toploop.mli[104,4299+0]..[104,4299+71])
+    Psig_value
+    value_description "print_value" (toplevel/toploop.mli[104,4299+4]..[104,4299+15]) (toplevel/toploop.mli[104,4299+0]..[104,4299+71])
+      core_type (toplevel/toploop.mli[104,4299+17]..[104,4299+71])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[104,4299+17]..[104,4299+22])
+          Ptyp_constr "Env.t" (toplevel/toploop.mli[104,4299+17]..[104,4299+22])
+          []
+        core_type (toplevel/toploop.mli[104,4299+26]..[104,4299+71])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[104,4299+26]..[104,4299+31])
+            Ptyp_constr "Obj.t" (toplevel/toploop.mli[104,4299+26]..[104,4299+31])
+            []
+          core_type (toplevel/toploop.mli[104,4299+35]..[104,4299+71])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[104,4299+35]..[104,4299+44])
+              Ptyp_constr "formatter" (toplevel/toploop.mli[104,4299+35]..[104,4299+44])
+              []
+            core_type (toplevel/toploop.mli[104,4299+48]..[104,4299+71])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/toploop.mli[104,4299+48]..[104,4299+63])
+                Ptyp_constr "Types.type_expr" (toplevel/toploop.mli[104,4299+48]..[104,4299+63])
+                []
+              core_type (toplevel/toploop.mli[104,4299+67]..[104,4299+71])
+                Ptyp_constr "unit" (toplevel/toploop.mli[104,4299+67]..[104,4299+71])
+                []
+      []
+  signature_item (toplevel/toploop.mli[105,4371+0]..[105,4371+55])
+    Psig_value
+    value_description "print_untyped_exception" (toplevel/toploop.mli[105,4371+4]..[105,4371+27]) (toplevel/toploop.mli[105,4371+0]..[105,4371+55])
+      core_type (toplevel/toploop.mli[105,4371+29]..[105,4371+55])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[105,4371+29]..[105,4371+38])
+          Ptyp_constr "formatter" (toplevel/toploop.mli[105,4371+29]..[105,4371+38])
+          []
+        core_type (toplevel/toploop.mli[105,4371+42]..[105,4371+55])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[105,4371+42]..[105,4371+47])
+            Ptyp_constr "Obj.t" (toplevel/toploop.mli[105,4371+42]..[105,4371+47])
+            []
+          core_type (toplevel/toploop.mli[105,4371+51]..[105,4371+55])
+            Ptyp_constr "unit" (toplevel/toploop.mli[105,4371+51]..[105,4371+55])
+            []
+      []
+  signature_item (toplevel/toploop.mli[107,4428+0]..[109,4471+40])
+    Psig_type Rec
+    [
+      type_declaration "gen_printer" (toplevel/toploop.mli[107,4428+14]..[107,4428+25]) (toplevel/toploop.mli[107,4428+0]..[109,4471+40])
+        ptype_params =
+          [
+            core_type (toplevel/toploop.mli[107,4428+6]..[107,4428+8])
+              Ptyp_var a
+            core_type (toplevel/toploop.mli[107,4428+10]..[107,4428+12])
+              Ptyp_var b
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (toplevel/toploop.mli[108,4456+2]..[108,4456+14])
+                "Zero" (toplevel/toploop.mli[108,4456+4]..[108,4456+8])
+                [
+                  core_type (toplevel/toploop.mli[108,4456+12]..[108,4456+14])
+                    Ptyp_var b
+                ]
+                None
+              (toplevel/toploop.mli[109,4471+2]..[109,4471+40])
+                "Succ" (toplevel/toploop.mli[109,4471+4]..[109,4471+8])
+                [
+                  core_type (toplevel/toploop.mli[109,4471+13]..[109,4471+39])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/toploop.mli[109,4471+13]..[109,4471+15])
+                      Ptyp_var a
+                    core_type (toplevel/toploop.mli[109,4471+19]..[109,4471+39])
+                      Ptyp_constr "gen_printer" (toplevel/toploop.mli[109,4471+28]..[109,4471+39])
+                      [
+                        core_type (toplevel/toploop.mli[109,4471+20]..[109,4471+22])
+                          Ptyp_var a
+                        core_type (toplevel/toploop.mli[109,4471+24]..[109,4471+26])
+                          Ptyp_var b
+                      ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (toplevel/toploop.mli[111,4513+0]..[112,4535+67])
+    Psig_value
+    value_description "install_printer" (toplevel/toploop.mli[111,4513+4]..[111,4513+19]) (toplevel/toploop.mli[111,4513+0]..[112,4535+67])
+      core_type (toplevel/toploop.mli[112,4535+2]..[112,4535+67])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[112,4535+2]..[112,4535+8])
+          Ptyp_constr "Path.t" (toplevel/toploop.mli[112,4535+2]..[112,4535+8])
+          []
+        core_type (toplevel/toploop.mli[112,4535+12]..[112,4535+67])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[112,4535+12]..[112,4535+27])
+            Ptyp_constr "Types.type_expr" (toplevel/toploop.mli[112,4535+12]..[112,4535+27])
+            []
+          core_type (toplevel/toploop.mli[112,4535+31]..[112,4535+67])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[112,4535+32]..[112,4535+58])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/toploop.mli[112,4535+32]..[112,4535+41])
+                Ptyp_constr "formatter" (toplevel/toploop.mli[112,4535+32]..[112,4535+41])
+                []
+              core_type (toplevel/toploop.mli[112,4535+45]..[112,4535+58])
+                Ptyp_arrow
+                Nolabel
+                core_type (toplevel/toploop.mli[112,4535+45]..[112,4535+50])
+                  Ptyp_constr "Obj.t" (toplevel/toploop.mli[112,4535+45]..[112,4535+50])
+                  []
+                core_type (toplevel/toploop.mli[112,4535+54]..[112,4535+58])
+                  Ptyp_constr "unit" (toplevel/toploop.mli[112,4535+54]..[112,4535+58])
+                  []
+            core_type (toplevel/toploop.mli[112,4535+63]..[112,4535+67])
+              Ptyp_constr "unit" (toplevel/toploop.mli[112,4535+63]..[112,4535+67])
+              []
+      []
+  signature_item (toplevel/toploop.mli[113,4603+0]..[116,4705+63])
+    Psig_value
+    value_description "install_generic_printer" (toplevel/toploop.mli[113,4603+4]..[113,4603+27]) (toplevel/toploop.mli[113,4603+0]..[116,4705+63])
+      core_type (toplevel/toploop.mli[114,4633+2]..[116,4705+63])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[114,4633+2]..[114,4633+8])
+          Ptyp_constr "Path.t" (toplevel/toploop.mli[114,4633+2]..[114,4633+8])
+          []
+        core_type (toplevel/toploop.mli[114,4633+12]..[116,4705+63])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[114,4633+12]..[114,4633+18])
+            Ptyp_constr "Path.t" (toplevel/toploop.mli[114,4633+12]..[114,4633+18])
+            []
+          core_type (toplevel/toploop.mli[115,4655+2]..[116,4705+63])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[115,4655+3]..[116,4705+54])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/toploop.mli[115,4655+3]..[115,4655+6])
+                Ptyp_constr "int" (toplevel/toploop.mli[115,4655+3]..[115,4655+6])
+                []
+              core_type (toplevel/toploop.mli[115,4655+10]..[116,4705+54])
+                Ptyp_constr "gen_printer" (toplevel/toploop.mli[116,4705+43]..[116,4705+54])
+                [
+                  core_type (toplevel/toploop.mli[115,4655+11]..[115,4655+48])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/toploop.mli[115,4655+11]..[115,4655+14])
+                      Ptyp_constr "int" (toplevel/toploop.mli[115,4655+11]..[115,4655+14])
+                      []
+                    core_type (toplevel/toploop.mli[115,4655+18]..[115,4655+48])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (toplevel/toploop.mli[115,4655+18]..[115,4655+23])
+                        Ptyp_constr "Obj.t" (toplevel/toploop.mli[115,4655+18]..[115,4655+23])
+                        []
+                      core_type (toplevel/toploop.mli[115,4655+27]..[115,4655+48])
+                        Ptyp_constr "Outcometree.out_value" (toplevel/toploop.mli[115,4655+27]..[115,4655+48])
+                        []
+                  core_type (toplevel/toploop.mli[116,4705+11]..[116,4705+41])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/toploop.mli[116,4705+11]..[116,4705+16])
+                      Ptyp_constr "Obj.t" (toplevel/toploop.mli[116,4705+11]..[116,4705+16])
+                      []
+                    core_type (toplevel/toploop.mli[116,4705+20]..[116,4705+41])
+                      Ptyp_constr "Outcometree.out_value" (toplevel/toploop.mli[116,4705+20]..[116,4705+41])
+                      []
+                ]
+            core_type (toplevel/toploop.mli[116,4705+59]..[116,4705+63])
+              Ptyp_constr "unit" (toplevel/toploop.mli[116,4705+59]..[116,4705+63])
+              []
+      []
+  signature_item (toplevel/toploop.mli[117,4769+0]..[119,4851+70])
+    Psig_value
+    value_description "install_generic_printer'" (toplevel/toploop.mli[117,4769+4]..[117,4769+28]) (toplevel/toploop.mli[117,4769+0]..[119,4851+70])
+      core_type (toplevel/toploop.mli[118,4800+2]..[119,4851+70])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[118,4800+2]..[118,4800+8])
+          Ptyp_constr "Path.t" (toplevel/toploop.mli[118,4800+2]..[118,4800+8])
+          []
+        core_type (toplevel/toploop.mli[118,4800+12]..[119,4851+70])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[118,4800+12]..[118,4800+18])
+            Ptyp_constr "Path.t" (toplevel/toploop.mli[118,4800+12]..[118,4800+18])
+            []
+          core_type (toplevel/toploop.mli[118,4800+22]..[119,4851+70])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[118,4800+22]..[119,4851+62])
+              Ptyp_constr "gen_printer" (toplevel/toploop.mli[119,4851+51]..[119,4851+62])
+              [
+                core_type (toplevel/toploop.mli[118,4800+23]..[118,4800+49])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (toplevel/toploop.mli[118,4800+23]..[118,4800+32])
+                    Ptyp_constr "formatter" (toplevel/toploop.mli[118,4800+23]..[118,4800+32])
+                    []
+                  core_type (toplevel/toploop.mli[118,4800+36]..[118,4800+49])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/toploop.mli[118,4800+36]..[118,4800+41])
+                      Ptyp_constr "Obj.t" (toplevel/toploop.mli[118,4800+36]..[118,4800+41])
+                      []
+                    core_type (toplevel/toploop.mli[118,4800+45]..[118,4800+49])
+                      Ptyp_constr "unit" (toplevel/toploop.mli[118,4800+45]..[118,4800+49])
+                      []
+                core_type (toplevel/toploop.mli[119,4851+23]..[119,4851+49])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (toplevel/toploop.mli[119,4851+23]..[119,4851+32])
+                    Ptyp_constr "formatter" (toplevel/toploop.mli[119,4851+23]..[119,4851+32])
+                    []
+                  core_type (toplevel/toploop.mli[119,4851+36]..[119,4851+49])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (toplevel/toploop.mli[119,4851+36]..[119,4851+41])
+                      Ptyp_constr "Obj.t" (toplevel/toploop.mli[119,4851+36]..[119,4851+41])
+                      []
+                    core_type (toplevel/toploop.mli[119,4851+45]..[119,4851+49])
+                      Ptyp_constr "unit" (toplevel/toploop.mli[119,4851+45]..[119,4851+49])
+                      []
+              ]
+            core_type (toplevel/toploop.mli[119,4851+66]..[119,4851+70])
+              Ptyp_constr "unit" (toplevel/toploop.mli[119,4851+66]..[119,4851+70])
+              []
+      []
+  signature_item (toplevel/toploop.mli[120,4922+0]..[120,4922+35])
+    Psig_value
+    value_description "remove_printer" (toplevel/toploop.mli[120,4922+4]..[120,4922+18]) (toplevel/toploop.mli[120,4922+0]..[120,4922+35])
+      core_type (toplevel/toploop.mli[120,4922+21]..[120,4922+35])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[120,4922+21]..[120,4922+27])
+          Ptyp_constr "Path.t" (toplevel/toploop.mli[120,4922+21]..[120,4922+27])
+          []
+        core_type (toplevel/toploop.mli[120,4922+31]..[120,4922+35])
+          Ptyp_constr "unit" (toplevel/toploop.mli[120,4922+31]..[120,4922+35])
+          []
+      []
+  signature_item (toplevel/toploop.mli[122,4959+0]..[122,4959+30])
+    Psig_value
+    value_description "max_printer_depth" (toplevel/toploop.mli[122,4959+4]..[122,4959+21]) (toplevel/toploop.mli[122,4959+0]..[122,4959+30])
+      core_type (toplevel/toploop.mli[122,4959+23]..[122,4959+30])
+        Ptyp_constr "ref" (toplevel/toploop.mli[122,4959+27]..[122,4959+30])
+        [
+          core_type (toplevel/toploop.mli[122,4959+23]..[122,4959+26])
+            Ptyp_constr "int" (toplevel/toploop.mli[122,4959+23]..[122,4959+26])
+            []
+        ]
+      []
+  signature_item (toplevel/toploop.mli[123,4990+0]..[123,4990+30])
+    Psig_value
+    value_description "max_printer_steps" (toplevel/toploop.mli[123,4990+4]..[123,4990+21]) (toplevel/toploop.mli[123,4990+0]..[123,4990+30])
+      core_type (toplevel/toploop.mli[123,4990+23]..[123,4990+30])
+        Ptyp_constr "ref" (toplevel/toploop.mli[123,4990+27]..[123,4990+30])
+        [
+          core_type (toplevel/toploop.mli[123,4990+23]..[123,4990+26])
+            Ptyp_constr "int" (toplevel/toploop.mli[123,4990+23]..[123,4990+26])
+            []
+        ]
+      []
+  signature_item (toplevel/toploop.mli[127,5069+0]..[127,5069+76])
+    Psig_value
+    value_description "parse_toplevel_phrase" (toplevel/toploop.mli[127,5069+4]..[127,5069+25]) (toplevel/toploop.mli[127,5069+0]..[127,5069+76])
+      core_type (toplevel/toploop.mli[127,5069+28]..[127,5069+76])
+        Ptyp_constr "ref" (toplevel/toploop.mli[127,5069+73]..[127,5069+76])
+        [
+          core_type (toplevel/toploop.mli[127,5069+29]..[127,5069+71])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[127,5069+29]..[127,5069+42])
+              Ptyp_constr "Lexing.lexbuf" (toplevel/toploop.mli[127,5069+29]..[127,5069+42])
+              []
+            core_type (toplevel/toploop.mli[127,5069+46]..[127,5069+71])
+              Ptyp_constr "Parsetree.toplevel_phrase" (toplevel/toploop.mli[127,5069+46]..[127,5069+71])
+              []
+        ]
+      []
+  signature_item (toplevel/toploop.mli[128,5146+0]..[128,5146+74])
+    Psig_value
+    value_description "parse_use_file" (toplevel/toploop.mli[128,5146+4]..[128,5146+18]) (toplevel/toploop.mli[128,5146+0]..[128,5146+74])
+      core_type (toplevel/toploop.mli[128,5146+21]..[128,5146+74])
+        Ptyp_constr "ref" (toplevel/toploop.mli[128,5146+71]..[128,5146+74])
+        [
+          core_type (toplevel/toploop.mli[128,5146+22]..[128,5146+69])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[128,5146+22]..[128,5146+35])
+              Ptyp_constr "Lexing.lexbuf" (toplevel/toploop.mli[128,5146+22]..[128,5146+35])
+              []
+            core_type (toplevel/toploop.mli[128,5146+39]..[128,5146+69])
+              Ptyp_constr "list" (toplevel/toploop.mli[128,5146+65]..[128,5146+69])
+              [
+                core_type (toplevel/toploop.mli[128,5146+39]..[128,5146+64])
+                  Ptyp_constr "Parsetree.toplevel_phrase" (toplevel/toploop.mli[128,5146+39]..[128,5146+64])
+                  []
+              ]
+        ]
+      []
+  signature_item (toplevel/toploop.mli[129,5221+0]..[129,5221+52])
+    Psig_value
+    value_description "print_location" (toplevel/toploop.mli[129,5221+4]..[129,5221+18]) (toplevel/toploop.mli[129,5221+0]..[129,5221+52])
+      core_type (toplevel/toploop.mli[129,5221+21]..[129,5221+52])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[129,5221+21]..[129,5221+30])
+          Ptyp_constr "formatter" (toplevel/toploop.mli[129,5221+21]..[129,5221+30])
+          []
+        core_type (toplevel/toploop.mli[129,5221+34]..[129,5221+52])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[129,5221+34]..[129,5221+44])
+            Ptyp_constr "Location.t" (toplevel/toploop.mli[129,5221+34]..[129,5221+44])
+            []
+          core_type (toplevel/toploop.mli[129,5221+48]..[129,5221+52])
+            Ptyp_constr "unit" (toplevel/toploop.mli[129,5221+48]..[129,5221+52])
+            []
+      []
+  signature_item (toplevel/toploop.mli[130,5274+0]..[130,5274+53])
+    Psig_value
+    value_description "print_error" (toplevel/toploop.mli[130,5274+4]..[130,5274+15]) (toplevel/toploop.mli[130,5274+0]..[130,5274+53])
+      core_type (toplevel/toploop.mli[130,5274+18]..[130,5274+53])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[130,5274+18]..[130,5274+27])
+          Ptyp_constr "formatter" (toplevel/toploop.mli[130,5274+18]..[130,5274+27])
+          []
+        core_type (toplevel/toploop.mli[130,5274+31]..[130,5274+53])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[130,5274+31]..[130,5274+45])
+            Ptyp_constr "Location.error" (toplevel/toploop.mli[130,5274+31]..[130,5274+45])
+            []
+          core_type (toplevel/toploop.mli[130,5274+49]..[130,5274+53])
+            Ptyp_constr "unit" (toplevel/toploop.mli[130,5274+49]..[130,5274+53])
+            []
+      []
+  signature_item (toplevel/toploop.mli[131,5328+0]..[131,5328+65])
+    Psig_value
+    value_description "print_warning" (toplevel/toploop.mli[131,5328+4]..[131,5328+17]) (toplevel/toploop.mli[131,5328+0]..[131,5328+65])
+      core_type (toplevel/toploop.mli[131,5328+20]..[131,5328+65])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[131,5328+20]..[131,5328+30])
+          Ptyp_constr "Location.t" (toplevel/toploop.mli[131,5328+20]..[131,5328+30])
+          []
+        core_type (toplevel/toploop.mli[131,5328+34]..[131,5328+65])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[131,5328+34]..[131,5328+43])
+            Ptyp_constr "formatter" (toplevel/toploop.mli[131,5328+34]..[131,5328+43])
+            []
+          core_type (toplevel/toploop.mli[131,5328+47]..[131,5328+65])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[131,5328+47]..[131,5328+57])
+              Ptyp_constr "Warnings.t" (toplevel/toploop.mli[131,5328+47]..[131,5328+57])
+              []
+            core_type (toplevel/toploop.mli[131,5328+61]..[131,5328+65])
+              Ptyp_constr "unit" (toplevel/toploop.mli[131,5328+61]..[131,5328+65])
+              []
+      []
+  signature_item (toplevel/toploop.mli[132,5394+0]..[132,5394+27])
+    Psig_value
+    value_description "input_name" (toplevel/toploop.mli[132,5394+4]..[132,5394+14]) (toplevel/toploop.mli[132,5394+0]..[132,5394+27])
+      core_type (toplevel/toploop.mli[132,5394+17]..[132,5394+27])
+        Ptyp_constr "ref" (toplevel/toploop.mli[132,5394+24]..[132,5394+27])
+        [
+          core_type (toplevel/toploop.mli[132,5394+17]..[132,5394+23])
+            Ptyp_constr "string" (toplevel/toploop.mli[132,5394+17]..[132,5394+23])
+            []
+        ]
+      []
+  signature_item (toplevel/toploop.mli[134,5423+0]..[135,5445+50])
+    Psig_value
+    value_description "print_out_value" (toplevel/toploop.mli[134,5423+4]..[134,5423+19]) (toplevel/toploop.mli[134,5423+0]..[135,5445+50])
+      core_type (toplevel/toploop.mli[135,5445+2]..[135,5445+50])
+        Ptyp_constr "ref" (toplevel/toploop.mli[135,5445+47]..[135,5445+50])
+        [
+          core_type (toplevel/toploop.mli[135,5445+3]..[135,5445+45])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[135,5445+3]..[135,5445+12])
+              Ptyp_constr "formatter" (toplevel/toploop.mli[135,5445+3]..[135,5445+12])
+              []
+            core_type (toplevel/toploop.mli[135,5445+16]..[135,5445+45])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/toploop.mli[135,5445+16]..[135,5445+37])
+                Ptyp_constr "Outcometree.out_value" (toplevel/toploop.mli[135,5445+16]..[135,5445+37])
+                []
+              core_type (toplevel/toploop.mli[135,5445+41]..[135,5445+45])
+                Ptyp_constr "unit" (toplevel/toploop.mli[135,5445+41]..[135,5445+45])
+                []
+        ]
+      []
+  signature_item (toplevel/toploop.mli[136,5496+0]..[137,5517+49])
+    Psig_value
+    value_description "print_out_type" (toplevel/toploop.mli[136,5496+4]..[136,5496+18]) (toplevel/toploop.mli[136,5496+0]..[137,5517+49])
+      core_type (toplevel/toploop.mli[137,5517+2]..[137,5517+49])
+        Ptyp_constr "ref" (toplevel/toploop.mli[137,5517+46]..[137,5517+49])
+        [
+          core_type (toplevel/toploop.mli[137,5517+3]..[137,5517+44])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[137,5517+3]..[137,5517+12])
+              Ptyp_constr "formatter" (toplevel/toploop.mli[137,5517+3]..[137,5517+12])
+              []
+            core_type (toplevel/toploop.mli[137,5517+16]..[137,5517+44])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/toploop.mli[137,5517+16]..[137,5517+36])
+                Ptyp_constr "Outcometree.out_type" (toplevel/toploop.mli[137,5517+16]..[137,5517+36])
+                []
+              core_type (toplevel/toploop.mli[137,5517+40]..[137,5517+44])
+                Ptyp_constr "unit" (toplevel/toploop.mli[137,5517+40]..[137,5517+44])
+                []
+        ]
+      []
+  signature_item (toplevel/toploop.mli[138,5567+0]..[139,5594+55])
+    Psig_value
+    value_description "print_out_class_type" (toplevel/toploop.mli[138,5567+4]..[138,5567+24]) (toplevel/toploop.mli[138,5567+0]..[139,5594+55])
+      core_type (toplevel/toploop.mli[139,5594+2]..[139,5594+55])
+        Ptyp_constr "ref" (toplevel/toploop.mli[139,5594+52]..[139,5594+55])
+        [
+          core_type (toplevel/toploop.mli[139,5594+3]..[139,5594+50])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[139,5594+3]..[139,5594+12])
+              Ptyp_constr "formatter" (toplevel/toploop.mli[139,5594+3]..[139,5594+12])
+              []
+            core_type (toplevel/toploop.mli[139,5594+16]..[139,5594+50])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/toploop.mli[139,5594+16]..[139,5594+42])
+                Ptyp_constr "Outcometree.out_class_type" (toplevel/toploop.mli[139,5594+16]..[139,5594+42])
+                []
+              core_type (toplevel/toploop.mli[139,5594+46]..[139,5594+50])
+                Ptyp_constr "unit" (toplevel/toploop.mli[139,5594+46]..[139,5594+50])
+                []
+        ]
+      []
+  signature_item (toplevel/toploop.mli[140,5650+0]..[141,5678+56])
+    Psig_value
+    value_description "print_out_module_type" (toplevel/toploop.mli[140,5650+4]..[140,5650+25]) (toplevel/toploop.mli[140,5650+0]..[141,5678+56])
+      core_type (toplevel/toploop.mli[141,5678+2]..[141,5678+56])
+        Ptyp_constr "ref" (toplevel/toploop.mli[141,5678+53]..[141,5678+56])
+        [
+          core_type (toplevel/toploop.mli[141,5678+3]..[141,5678+51])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[141,5678+3]..[141,5678+12])
+              Ptyp_constr "formatter" (toplevel/toploop.mli[141,5678+3]..[141,5678+12])
+              []
+            core_type (toplevel/toploop.mli[141,5678+16]..[141,5678+51])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/toploop.mli[141,5678+16]..[141,5678+43])
+                Ptyp_constr "Outcometree.out_module_type" (toplevel/toploop.mli[141,5678+16]..[141,5678+43])
+                []
+              core_type (toplevel/toploop.mli[141,5678+47]..[141,5678+51])
+                Ptyp_constr "unit" (toplevel/toploop.mli[141,5678+47]..[141,5678+51])
+                []
+        ]
+      []
+  signature_item (toplevel/toploop.mli[142,5735+0]..[143,5766+59])
+    Psig_value
+    value_description "print_out_type_extension" (toplevel/toploop.mli[142,5735+4]..[142,5735+28]) (toplevel/toploop.mli[142,5735+0]..[143,5766+59])
+      core_type (toplevel/toploop.mli[143,5766+2]..[143,5766+59])
+        Ptyp_constr "ref" (toplevel/toploop.mli[143,5766+56]..[143,5766+59])
+        [
+          core_type (toplevel/toploop.mli[143,5766+3]..[143,5766+54])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[143,5766+3]..[143,5766+12])
+              Ptyp_constr "formatter" (toplevel/toploop.mli[143,5766+3]..[143,5766+12])
+              []
+            core_type (toplevel/toploop.mli[143,5766+16]..[143,5766+54])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/toploop.mli[143,5766+16]..[143,5766+46])
+                Ptyp_constr "Outcometree.out_type_extension" (toplevel/toploop.mli[143,5766+16]..[143,5766+46])
+                []
+              core_type (toplevel/toploop.mli[143,5766+50]..[143,5766+54])
+                Ptyp_constr "unit" (toplevel/toploop.mli[143,5766+50]..[143,5766+54])
+                []
+        ]
+      []
+  signature_item (toplevel/toploop.mli[144,5826+0]..[145,5851+53])
+    Psig_value
+    value_description "print_out_sig_item" (toplevel/toploop.mli[144,5826+4]..[144,5826+22]) (toplevel/toploop.mli[144,5826+0]..[145,5851+53])
+      core_type (toplevel/toploop.mli[145,5851+2]..[145,5851+53])
+        Ptyp_constr "ref" (toplevel/toploop.mli[145,5851+50]..[145,5851+53])
+        [
+          core_type (toplevel/toploop.mli[145,5851+3]..[145,5851+48])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[145,5851+3]..[145,5851+12])
+              Ptyp_constr "formatter" (toplevel/toploop.mli[145,5851+3]..[145,5851+12])
+              []
+            core_type (toplevel/toploop.mli[145,5851+16]..[145,5851+48])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/toploop.mli[145,5851+16]..[145,5851+40])
+                Ptyp_constr "Outcometree.out_sig_item" (toplevel/toploop.mli[145,5851+16]..[145,5851+40])
+                []
+              core_type (toplevel/toploop.mli[145,5851+44]..[145,5851+48])
+                Ptyp_constr "unit" (toplevel/toploop.mli[145,5851+44]..[145,5851+48])
+                []
+        ]
+      []
+  signature_item (toplevel/toploop.mli[146,5905+0]..[147,5931+58])
+    Psig_value
+    value_description "print_out_signature" (toplevel/toploop.mli[146,5905+4]..[146,5905+23]) (toplevel/toploop.mli[146,5905+0]..[147,5931+58])
+      core_type (toplevel/toploop.mli[147,5931+2]..[147,5931+58])
+        Ptyp_constr "ref" (toplevel/toploop.mli[147,5931+55]..[147,5931+58])
+        [
+          core_type (toplevel/toploop.mli[147,5931+3]..[147,5931+53])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[147,5931+3]..[147,5931+12])
+              Ptyp_constr "formatter" (toplevel/toploop.mli[147,5931+3]..[147,5931+12])
+              []
+            core_type (toplevel/toploop.mli[147,5931+16]..[147,5931+53])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/toploop.mli[147,5931+16]..[147,5931+45])
+                Ptyp_constr "list" (toplevel/toploop.mli[147,5931+41]..[147,5931+45])
+                [
+                  core_type (toplevel/toploop.mli[147,5931+16]..[147,5931+40])
+                    Ptyp_constr "Outcometree.out_sig_item" (toplevel/toploop.mli[147,5931+16]..[147,5931+40])
+                    []
+                ]
+              core_type (toplevel/toploop.mli[147,5931+49]..[147,5931+53])
+                Ptyp_constr "unit" (toplevel/toploop.mli[147,5931+49]..[147,5931+53])
+                []
+        ]
+      []
+  signature_item (toplevel/toploop.mli[148,5990+0]..[149,6013+51])
+    Psig_value
+    value_description "print_out_phrase" (toplevel/toploop.mli[148,5990+4]..[148,5990+20]) (toplevel/toploop.mli[148,5990+0]..[149,6013+51])
+      core_type (toplevel/toploop.mli[149,6013+2]..[149,6013+51])
+        Ptyp_constr "ref" (toplevel/toploop.mli[149,6013+48]..[149,6013+51])
+        [
+          core_type (toplevel/toploop.mli[149,6013+3]..[149,6013+46])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[149,6013+3]..[149,6013+12])
+              Ptyp_constr "formatter" (toplevel/toploop.mli[149,6013+3]..[149,6013+12])
+              []
+            core_type (toplevel/toploop.mli[149,6013+16]..[149,6013+46])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/toploop.mli[149,6013+16]..[149,6013+38])
+                Ptyp_constr "Outcometree.out_phrase" (toplevel/toploop.mli[149,6013+16]..[149,6013+38])
+                []
+              core_type (toplevel/toploop.mli[149,6013+42]..[149,6013+46])
+                Ptyp_constr "unit" (toplevel/toploop.mli[149,6013+42]..[149,6013+46])
+                []
+        ]
+      []
+  signature_item (toplevel/toploop.mli[153,6104+0]..[153,6104+71])
+    Psig_value
+    value_description "read_interactive_input" (toplevel/toploop.mli[153,6104+4]..[153,6104+26]) (toplevel/toploop.mli[153,6104+0]..[153,6104+71])
+      core_type (toplevel/toploop.mli[153,6104+29]..[153,6104+71])
+        Ptyp_constr "ref" (toplevel/toploop.mli[153,6104+68]..[153,6104+71])
+        [
+          core_type (toplevel/toploop.mli[153,6104+30]..[153,6104+66])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[153,6104+30]..[153,6104+36])
+              Ptyp_constr "string" (toplevel/toploop.mli[153,6104+30]..[153,6104+36])
+              []
+            core_type (toplevel/toploop.mli[153,6104+40]..[153,6104+66])
+              Ptyp_arrow
+              Nolabel
+              core_type (toplevel/toploop.mli[153,6104+40]..[153,6104+45])
+                Ptyp_constr "bytes" (toplevel/toploop.mli[153,6104+40]..[153,6104+45])
+                []
+              core_type (toplevel/toploop.mli[153,6104+49]..[153,6104+66])
+                Ptyp_arrow
+                Nolabel
+                core_type (toplevel/toploop.mli[153,6104+49]..[153,6104+52])
+                  Ptyp_constr "int" (toplevel/toploop.mli[153,6104+49]..[153,6104+52])
+                  []
+                core_type (toplevel/toploop.mli[153,6104+56]..[153,6104+66])
+                  Ptyp_tuple
+                  [
+                    core_type (toplevel/toploop.mli[153,6104+56]..[153,6104+59])
+                      Ptyp_constr "int" (toplevel/toploop.mli[153,6104+56]..[153,6104+59])
+                      []
+                    core_type (toplevel/toploop.mli[153,6104+62]..[153,6104+66])
+                      Ptyp_constr "bool" (toplevel/toploop.mli[153,6104+62]..[153,6104+66])
+                      []
+                  ]
+        ]
+      []
+  signature_item (toplevel/toploop.mli[157,6190+0]..[157,6190+46])
+    Psig_value
+    value_description "toplevel_startup_hook" (toplevel/toploop.mli[157,6190+4]..[157,6190+25]) (toplevel/toploop.mli[157,6190+0]..[157,6190+46])
+      core_type (toplevel/toploop.mli[157,6190+28]..[157,6190+46])
+        Ptyp_constr "ref" (toplevel/toploop.mli[157,6190+43]..[157,6190+46])
+        [
+          core_type (toplevel/toploop.mli[157,6190+29]..[157,6190+41])
+            Ptyp_arrow
+            Nolabel
+            core_type (toplevel/toploop.mli[157,6190+29]..[157,6190+33])
+              Ptyp_constr "unit" (toplevel/toploop.mli[157,6190+29]..[157,6190+33])
+              []
+            core_type (toplevel/toploop.mli[157,6190+37]..[157,6190+41])
+              Ptyp_constr "unit" (toplevel/toploop.mli[157,6190+37]..[157,6190+41])
+              []
+        ]
+      []
+  signature_item (toplevel/toploop.mli[159,6238+0]..[159,6238+15])
+    Psig_type Rec
+    [
+      type_declaration "event" (toplevel/toploop.mli[159,6238+5]..[159,6238+10]) (toplevel/toploop.mli[159,6238+0]..[159,6238+15])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_open
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (toplevel/toploop.mli[160,6254+0]..[162,6280+15])
+    Psig_typext
+    type_extension
+      ptyext_path = "event" (toplevel/toploop.mli[160,6254+5]..[160,6254+10])
+      ptyext_params =
+        []
+      ptyext_constructors =
+        [
+          extension_constructor (toplevel/toploop.mli[161,6268+2]..[161,6268+11])
+            pext_name = "Startup"
+            pext_kind =
+              Pext_decl
+                []
+                None
+          extension_constructor (toplevel/toploop.mli[162,6280+2]..[162,6280+15])
+            pext_name = "After_setup"
+            pext_kind =
+              Pext_decl
+                []
+                None
+        ]
+      ptyext_private = Public
+  signature_item (toplevel/toploop.mli[168,6529+0]..[168,6529+38])
+    Psig_value
+    value_description "add_hook" (toplevel/toploop.mli[168,6529+4]..[168,6529+12]) (toplevel/toploop.mli[168,6529+0]..[168,6529+38])
+      core_type (toplevel/toploop.mli[168,6529+15]..[168,6529+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[168,6529+16]..[168,6529+29])
+          Ptyp_arrow
+          Nolabel
+          core_type (toplevel/toploop.mli[168,6529+16]..[168,6529+21])
+            Ptyp_constr "event" (toplevel/toploop.mli[168,6529+16]..[168,6529+21])
+            []
+          core_type (toplevel/toploop.mli[168,6529+25]..[168,6529+29])
+            Ptyp_constr "unit" (toplevel/toploop.mli[168,6529+25]..[168,6529+29])
+            []
+        core_type (toplevel/toploop.mli[168,6529+34]..[168,6529+38])
+          Ptyp_constr "unit" (toplevel/toploop.mli[168,6529+34]..[168,6529+38])
+          []
+      []
+  signature_item (toplevel/toploop.mli[172,6667+0]..[172,6667+29])
+    Psig_value
+    value_description "run_hooks" (toplevel/toploop.mli[172,6667+4]..[172,6667+13]) (toplevel/toploop.mli[172,6667+0]..[172,6667+29])
+      core_type (toplevel/toploop.mli[172,6667+16]..[172,6667+29])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[172,6667+16]..[172,6667+21])
+          Ptyp_constr "event" (toplevel/toploop.mli[172,6667+16]..[172,6667+21])
+          []
+        core_type (toplevel/toploop.mli[172,6667+25]..[172,6667+29])
+          Ptyp_constr "unit" (toplevel/toploop.mli[172,6667+25]..[172,6667+29])
+          []
+      []
+  signature_item (toplevel/toploop.mli[177,6762+0]..[177,6762+24])
+    Psig_value
+    value_description "may_trace" (toplevel/toploop.mli[177,6762+4]..[177,6762+13]) (toplevel/toploop.mli[177,6762+0]..[177,6762+24])
+      core_type (toplevel/toploop.mli[177,6762+16]..[177,6762+24])
+        Ptyp_constr "ref" (toplevel/toploop.mli[177,6762+21]..[177,6762+24])
+        [
+          core_type (toplevel/toploop.mli[177,6762+16]..[177,6762+20])
+            Ptyp_constr "bool" (toplevel/toploop.mli[177,6762+16]..[177,6762+20])
+            []
+        ]
+      []
+  signature_item (toplevel/toploop.mli[181,6800+0]..[181,6800+44])
+    Psig_value
+    value_description "override_sys_argv" (toplevel/toploop.mli[181,6800+4]..[181,6800+21]) (toplevel/toploop.mli[181,6800+0]..[181,6800+44])
+      core_type (toplevel/toploop.mli[181,6800+24]..[181,6800+44])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/toploop.mli[181,6800+24]..[181,6800+36])
+          Ptyp_constr "array" (toplevel/toploop.mli[181,6800+31]..[181,6800+36])
+          [
+            core_type (toplevel/toploop.mli[181,6800+24]..[181,6800+30])
+              Ptyp_constr "string" (toplevel/toploop.mli[181,6800+24]..[181,6800+30])
+              []
+          ]
+        core_type (toplevel/toploop.mli[181,6800+40]..[181,6800+44])
+          Ptyp_constr "unit" (toplevel/toploop.mli[181,6800+40]..[181,6800+44])
+          []
+      []
+]
+

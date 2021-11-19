@@ -1,0 +1,995 @@
+[
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[23,826+0]..[26,879+12])
+    Pstr_eval
+    expression (testsuite/tests/basic/patmatch_for_multiple.ml[23,826+0]..[26,879+12])
+      Pexp_match
+      expression (testsuite/tests/basic/patmatch_for_multiple.ml[23,826+6]..[23,826+15])
+        Pexp_tuple
+        [
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[23,826+7]..[23,826+8])
+            Pexp_constant PConst_int (3,None)
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[23,826+10]..[23,826+11])
+            Pexp_constant PConst_int (2,None)
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[23,826+13]..[23,826+14])
+            Pexp_constant PConst_int (1,None)
+        ]
+      [
+        <case>
+          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[24,847+2]..[25,859+11])
+            Ppat_or
+            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[24,847+2]..[24,847+11])
+              Ppat_tuple
+              [
+                pattern (testsuite/tests/basic/patmatch_for_multiple.ml[24,847+3]..[24,847+4])
+                  Ppat_any
+                pattern (testsuite/tests/basic/patmatch_for_multiple.ml[24,847+6]..[24,847+7])
+                  Ppat_constant PConst_int (3,None)
+                pattern (testsuite/tests/basic/patmatch_for_multiple.ml[24,847+9]..[24,847+10])
+                  Ppat_any
+              ]
+            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[25,859+2]..[25,859+11])
+              Ppat_tuple
+              [
+                pattern (testsuite/tests/basic/patmatch_for_multiple.ml[25,859+3]..[25,859+4])
+                  Ppat_constant PConst_int (1,None)
+                pattern (testsuite/tests/basic/patmatch_for_multiple.ml[25,859+6]..[25,859+7])
+                  Ppat_any
+                pattern (testsuite/tests/basic/patmatch_for_multiple.ml[25,859+9]..[25,859+10])
+                  Ppat_any
+              ]
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[25,859+15]..[25,859+19])
+            Pexp_construct "true" (testsuite/tests/basic/patmatch_for_multiple.ml[25,859+15]..[25,859+19])
+            None
+        <case>
+          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[26,879+2]..[26,879+3])
+            Ppat_any
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[26,879+7]..[26,879+12])
+            Pexp_construct "false" (testsuite/tests/basic/patmatch_for_multiple.ml[26,879+7]..[26,879+12])
+            None
+      ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[28,895+0]..[40,1285+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[28,895+9]..[40,1285+2])
+        Pstr_eval
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[28,895+9]..[40,1285+2])
+          Pexp_constant PConst_string ("\n(let (*match*/88 = 3 *match*/89 = 2 *match*/90 = 1)\n  (catch\n    (catch\n      (catch (if (!= *match*/89 3) (exit 3) (exit 1)) with (3)\n        (if (!= *match*/88 1) (exit 2) (exit 1)))\n     with (2) 0)\n   with (1) 1))\n(let (*match*/88 = 3 *match*/89 = 2 *match*/90 = 1)\n  (catch (if (!= *match*/89 3) (if (!= *match*/88 1) 0 (exit 1)) (exit 1))\n   with (1) 1))\n- : bool = false\n",(testsuite/tests/basic/patmatch_for_multiple.ml[28,895+11]..[40,1285+0]),Some "")
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[44,1404+0]..[47,1481+12])
+    Pstr_eval
+    expression (testsuite/tests/basic/patmatch_for_multiple.ml[44,1404+0]..[47,1481+12])
+      Pexp_match
+      expression (testsuite/tests/basic/patmatch_for_multiple.ml[44,1404+6]..[44,1404+15])
+        Pexp_tuple
+        [
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[44,1404+7]..[44,1404+8])
+            Pexp_constant PConst_int (3,None)
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[44,1404+10]..[44,1404+11])
+            Pexp_constant PConst_int (2,None)
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[44,1404+13]..[44,1404+14])
+            Pexp_constant PConst_int (1,None)
+        ]
+      [
+        <case>
+          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[45,1425+2]..[46,1444+18])
+            Ppat_or
+            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[45,1425+2]..[45,1425+18])
+              Ppat_alias "x" (testsuite/tests/basic/patmatch_for_multiple.ml[45,1425+16]..[45,1425+17])
+              pattern (testsuite/tests/basic/patmatch_for_multiple.ml[45,1425+3]..[45,1425+12])
+                Ppat_tuple
+                [
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[45,1425+4]..[45,1425+5])
+                    Ppat_any
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[45,1425+7]..[45,1425+8])
+                    Ppat_constant PConst_int (3,None)
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[45,1425+10]..[45,1425+11])
+                    Ppat_any
+                ]
+            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[46,1444+2]..[46,1444+18])
+              Ppat_alias "x" (testsuite/tests/basic/patmatch_for_multiple.ml[46,1444+16]..[46,1444+17])
+              pattern (testsuite/tests/basic/patmatch_for_multiple.ml[46,1444+3]..[46,1444+12])
+                Ppat_tuple
+                [
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[46,1444+4]..[46,1444+5])
+                    Ppat_constant PConst_int (1,None)
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[46,1444+7]..[46,1444+8])
+                    Ppat_any
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[46,1444+10]..[46,1444+11])
+                    Ppat_any
+                ]
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[46,1444+22]..[46,1444+36])
+            Pexp_sequence
+            expression (testsuite/tests/basic/patmatch_for_multiple.ml[46,1444+22]..[46,1444+30])
+              Pexp_apply
+              expression (testsuite/tests/basic/patmatch_for_multiple.ml[46,1444+22]..[46,1444+28])
+                Pexp_ident "ignore" (testsuite/tests/basic/patmatch_for_multiple.ml[46,1444+22]..[46,1444+28])
+              [
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[46,1444+29]..[46,1444+30])
+                    Pexp_ident "x" (testsuite/tests/basic/patmatch_for_multiple.ml[46,1444+29]..[46,1444+30])
+              ]
+            expression (testsuite/tests/basic/patmatch_for_multiple.ml[46,1444+32]..[46,1444+36])
+              Pexp_construct "true" (testsuite/tests/basic/patmatch_for_multiple.ml[46,1444+32]..[46,1444+36])
+              None
+        <case>
+          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[47,1481+2]..[47,1481+3])
+            Ppat_any
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[47,1481+7]..[47,1481+12])
+            Pexp_construct "false" (testsuite/tests/basic/patmatch_for_multiple.ml[47,1481+7]..[47,1481+12])
+            None
+      ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[49,1497+0]..[71,2250+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[49,1497+9]..[71,2250+2])
+        Pstr_eval
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[49,1497+9]..[71,2250+2])
+          Pexp_constant PConst_string ("\n(let (*match*/93 = 3 *match*/94 = 2 *match*/95 = 1)\n  (catch\n    (catch\n      (catch\n        (if (!= *match*/94 3) (exit 6)\n          (let (x/97 =a (makeblock 0 *match*/93 *match*/94 *match*/95))\n            (exit 4 x/97)))\n       with (6)\n        (if (!= *match*/93 1) (exit 5)\n          (let (x/96 =a (makeblock 0 *match*/93 *match*/94 *match*/95))\n            (exit 4 x/96))))\n     with (5) 0)\n   with (4 x/91) (seq (ignore x/91) 1)))\n(let (*match*/93 = 3 *match*/94 = 2 *match*/95 = 1)\n  (catch\n    (if (!= *match*/94 3)\n      (if (!= *match*/93 1) 0\n        (exit 4 (makeblock 0 *match*/93 *match*/94 *match*/95)))\n      (exit 4 (makeblock 0 *match*/93 *match*/94 *match*/95)))\n   with (4 x/91) (seq (ignore x/91) 1)))\n- : bool = false\n",(testsuite/tests/basic/patmatch_for_multiple.ml[49,1497+11]..[71,2250+0]),Some "")
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[74,2289+0]..[77,2348+28])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[74,2289+4]..[74,2289+5])
+          Ppat_any
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[74,2289+8]..[77,2348+28])
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[74,2289+12]..[74,2289+13])
+            Ppat_var "a" (testsuite/tests/basic/patmatch_for_multiple.ml[74,2289+12]..[74,2289+13])
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[74,2289+14]..[77,2348+28]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[74,2289+14]..[74,2289+15])
+              Ppat_var "b" (testsuite/tests/basic/patmatch_for_multiple.ml[74,2289+14]..[74,2289+15])
+            expression (testsuite/tests/basic/patmatch_for_multiple.ml[75,2308+2]..[77,2348+28])
+              Pexp_match
+              expression (testsuite/tests/basic/patmatch_for_multiple.ml[75,2308+8]..[75,2308+12])
+                Pexp_tuple
+                [
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[75,2308+8]..[75,2308+9])
+                    Pexp_ident "a" (testsuite/tests/basic/patmatch_for_multiple.ml[75,2308+8]..[75,2308+9])
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[75,2308+11]..[75,2308+12])
+                    Pexp_ident "b" (testsuite/tests/basic/patmatch_for_multiple.ml[75,2308+11]..[75,2308+12])
+                ]
+              [
+                <case>
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[76,2326+4]..[77,2348+22])
+                    Ppat_or
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[76,2326+4]..[76,2326+21])
+                      Ppat_alias "_g" (testsuite/tests/basic/patmatch_for_multiple.ml[76,2326+18]..[76,2326+20])
+                      pattern (testsuite/tests/basic/patmatch_for_multiple.ml[76,2326+5]..[76,2326+14])
+                        Ppat_tuple
+                        [
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[76,2326+6]..[76,2326+10])
+                            Ppat_construct "true" (testsuite/tests/basic/patmatch_for_multiple.ml[76,2326+6]..[76,2326+10])
+                            None
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[76,2326+12]..[76,2326+13])
+                            Ppat_any
+                        ]
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[77,2348+4]..[77,2348+22])
+                      Ppat_alias "_g" (testsuite/tests/basic/patmatch_for_multiple.ml[77,2348+19]..[77,2348+21])
+                      pattern (testsuite/tests/basic/patmatch_for_multiple.ml[77,2348+5]..[77,2348+15])
+                        Ppat_tuple
+                        [
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[77,2348+6]..[77,2348+11])
+                            Ppat_construct "false" (testsuite/tests/basic/patmatch_for_multiple.ml[77,2348+6]..[77,2348+11])
+                            None
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[77,2348+13]..[77,2348+14])
+                            Ppat_any
+                        ]
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[77,2348+26]..[77,2348+28])
+                    Pexp_construct "()" (testsuite/tests/basic/patmatch_for_multiple.ml[77,2348+26]..[77,2348+28])
+                    None
+              ]
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[78,2377+0]..[82,2466+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[78,2377+9]..[82,2466+2])
+        Pstr_eval
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[78,2377+9]..[82,2466+2])
+          Pexp_constant PConst_string ("\n(function a/98 b/99 0)\n(function a/98 b/99 0)\n- : bool -> 'a -> unit = <fun>\n",(testsuite/tests/basic/patmatch_for_multiple.ml[78,2377+11]..[82,2466+0]),Some "")
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[94,2891+0]..[96,2948+22])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[94,2891+4]..[94,2891+5])
+          Ppat_any
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[94,2891+8]..[96,2948+22])
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[94,2891+12]..[94,2891+13])
+            Ppat_var "a" (testsuite/tests/basic/patmatch_for_multiple.ml[94,2891+12]..[94,2891+13])
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[94,2891+14]..[96,2948+22]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[94,2891+14]..[94,2891+15])
+              Ppat_var "b" (testsuite/tests/basic/patmatch_for_multiple.ml[94,2891+14]..[94,2891+15])
+            expression (testsuite/tests/basic/patmatch_for_multiple.ml[94,2891+19]..[96,2948+22])
+              Pexp_match
+              expression (testsuite/tests/basic/patmatch_for_multiple.ml[94,2891+25]..[94,2891+29])
+                Pexp_tuple
+                [
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[94,2891+25]..[94,2891+26])
+                    Pexp_ident "a" (testsuite/tests/basic/patmatch_for_multiple.ml[94,2891+25]..[94,2891+26])
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[94,2891+28]..[94,2891+29])
+                    Pexp_ident "b" (testsuite/tests/basic/patmatch_for_multiple.ml[94,2891+28]..[94,2891+29])
+                ]
+              [
+                <case>
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[95,2926+2]..[95,2926+16])
+                    Ppat_alias "p" (testsuite/tests/basic/patmatch_for_multiple.ml[95,2926+15]..[95,2926+16])
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[95,2926+2]..[95,2926+11])
+                      Ppat_tuple
+                      [
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[95,2926+3]..[95,2926+7])
+                          Ppat_construct "true" (testsuite/tests/basic/patmatch_for_multiple.ml[95,2926+3]..[95,2926+7])
+                          None
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[95,2926+9]..[95,2926+10])
+                          Ppat_any
+                      ]
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[95,2926+20]..[95,2926+21])
+                    Pexp_ident "p" (testsuite/tests/basic/patmatch_for_multiple.ml[95,2926+20]..[95,2926+21])
+                <case>
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[96,2948+2]..[96,2948+17])
+                    Ppat_alias "p" (testsuite/tests/basic/patmatch_for_multiple.ml[96,2948+16]..[96,2948+17])
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[96,2948+2]..[96,2948+12])
+                      Ppat_tuple
+                      [
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[96,2948+3]..[96,2948+8])
+                          Ppat_construct "false" (testsuite/tests/basic/patmatch_for_multiple.ml[96,2948+3]..[96,2948+8])
+                          None
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[96,2948+10]..[96,2948+11])
+                          Ppat_any
+                      ]
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[96,2948+21]..[96,2948+22])
+                    Pexp_ident "p" (testsuite/tests/basic/patmatch_for_multiple.ml[96,2948+21]..[96,2948+22])
+              ]
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[98,2994+0]..[102,3164+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[98,2994+10]..[102,3164+2])
+        Pstr_eval
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[98,2994+10]..[102,3164+2])
+          Pexp_constant PConst_string ("\n(function a/102 b/103 (let (p/104 =a (makeblock 0 a/102 b/103)) p/104))\n(function a/102 b/103 (makeblock 0 a/102 b/103))\n- : bool -> 'a -> bool * 'a = <fun>\n",(testsuite/tests/basic/patmatch_for_multiple.ml[98,2994+12]..[102,3164+0]),Some "")
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[104,3169+0]..[106,3223+24])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[104,3169+4]..[104,3169+5])
+          Ppat_any
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[104,3169+8]..[106,3223+24])
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[104,3169+12]..[104,3169+13])
+            Ppat_var "a" (testsuite/tests/basic/patmatch_for_multiple.ml[104,3169+12]..[104,3169+13])
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[104,3169+14]..[106,3223+24]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[104,3169+14]..[104,3169+15])
+              Ppat_var "b" (testsuite/tests/basic/patmatch_for_multiple.ml[104,3169+14]..[104,3169+15])
+            expression (testsuite/tests/basic/patmatch_for_multiple.ml[104,3169+19]..[106,3223+24])
+              Pexp_match
+              expression (testsuite/tests/basic/patmatch_for_multiple.ml[104,3169+25]..[104,3169+29])
+                Pexp_tuple
+                [
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[104,3169+25]..[104,3169+26])
+                    Pexp_ident "a" (testsuite/tests/basic/patmatch_for_multiple.ml[104,3169+25]..[104,3169+26])
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[104,3169+28]..[104,3169+29])
+                    Pexp_ident "b" (testsuite/tests/basic/patmatch_for_multiple.ml[104,3169+28]..[104,3169+29])
+                ]
+              [
+                <case>
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[105,3204+2]..[106,3223+19])
+                    Ppat_or
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[105,3204+2]..[105,3204+18])
+                      Ppat_alias "p" (testsuite/tests/basic/patmatch_for_multiple.ml[105,3204+16]..[105,3204+17])
+                      pattern (testsuite/tests/basic/patmatch_for_multiple.ml[105,3204+3]..[105,3204+12])
+                        Ppat_tuple
+                        [
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[105,3204+4]..[105,3204+8])
+                            Ppat_construct "true" (testsuite/tests/basic/patmatch_for_multiple.ml[105,3204+4]..[105,3204+8])
+                            None
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[105,3204+10]..[105,3204+11])
+                            Ppat_any
+                        ]
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[106,3223+2]..[106,3223+19])
+                      Ppat_alias "p" (testsuite/tests/basic/patmatch_for_multiple.ml[106,3223+17]..[106,3223+18])
+                      pattern (testsuite/tests/basic/patmatch_for_multiple.ml[106,3223+3]..[106,3223+13])
+                        Ppat_tuple
+                        [
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[106,3223+4]..[106,3223+9])
+                            Ppat_construct "false" (testsuite/tests/basic/patmatch_for_multiple.ml[106,3223+4]..[106,3223+9])
+                            None
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[106,3223+11]..[106,3223+12])
+                            Ppat_any
+                        ]
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[106,3223+23]..[106,3223+24])
+                    Pexp_ident "p" (testsuite/tests/basic/patmatch_for_multiple.ml[106,3223+23]..[106,3223+24])
+              ]
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[108,3270+0]..[112,3439+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[108,3270+9]..[112,3439+2])
+        Pstr_eval
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[108,3270+9]..[112,3439+2])
+          Pexp_constant PConst_string ("\n(function a/106 b/107 (let (p/108 =a (makeblock 0 a/106 b/107)) p/108))\n(function a/106 b/107 (makeblock 0 a/106 b/107))\n- : bool -> 'a -> bool * 'a = <fun>\n",(testsuite/tests/basic/patmatch_for_multiple.ml[108,3270+11]..[112,3439+0]),Some "")
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[114,3446+0]..[116,3511+30])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[114,3446+4]..[114,3446+5])
+          Ppat_any
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[114,3446+8]..[116,3511+30])
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[114,3446+12]..[114,3446+13])
+            Ppat_var "a" (testsuite/tests/basic/patmatch_for_multiple.ml[114,3446+12]..[114,3446+13])
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[114,3446+14]..[116,3511+30]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[114,3446+14]..[114,3446+15])
+              Ppat_var "b" (testsuite/tests/basic/patmatch_for_multiple.ml[114,3446+14]..[114,3446+15])
+            expression (testsuite/tests/basic/patmatch_for_multiple.ml[114,3446+19]..[116,3511+30])
+              Pexp_match
+              expression (testsuite/tests/basic/patmatch_for_multiple.ml[114,3446+25]..[114,3446+29])
+                Pexp_tuple
+                [
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[114,3446+25]..[114,3446+26])
+                    Pexp_ident "a" (testsuite/tests/basic/patmatch_for_multiple.ml[114,3446+25]..[114,3446+26])
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[114,3446+28]..[114,3446+29])
+                    Pexp_ident "b" (testsuite/tests/basic/patmatch_for_multiple.ml[114,3446+28]..[114,3446+29])
+                ]
+              [
+                <case>
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[115,3481+2]..[115,3481+21])
+                    Ppat_alias "p" (testsuite/tests/basic/patmatch_for_multiple.ml[115,3481+20]..[115,3481+21])
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[115,3481+2]..[115,3481+16])
+                      Ppat_tuple
+                      [
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[115,3481+3]..[115,3481+12])
+                          Ppat_alias "x" (testsuite/tests/basic/patmatch_for_multiple.ml[115,3481+11]..[115,3481+12])
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[115,3481+3]..[115,3481+7])
+                            Ppat_construct "true" (testsuite/tests/basic/patmatch_for_multiple.ml[115,3481+3]..[115,3481+7])
+                            None
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[115,3481+14]..[115,3481+15])
+                          Ppat_any
+                      ]
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[115,3481+25]..[115,3481+29])
+                    Pexp_tuple
+                    [
+                      expression (testsuite/tests/basic/patmatch_for_multiple.ml[115,3481+25]..[115,3481+26])
+                        Pexp_ident "x" (testsuite/tests/basic/patmatch_for_multiple.ml[115,3481+25]..[115,3481+26])
+                      expression (testsuite/tests/basic/patmatch_for_multiple.ml[115,3481+28]..[115,3481+29])
+                        Pexp_ident "p" (testsuite/tests/basic/patmatch_for_multiple.ml[115,3481+28]..[115,3481+29])
+                    ]
+                <case>
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[116,3511+2]..[116,3511+22])
+                    Ppat_alias "p" (testsuite/tests/basic/patmatch_for_multiple.ml[116,3511+21]..[116,3511+22])
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[116,3511+2]..[116,3511+17])
+                      Ppat_tuple
+                      [
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[116,3511+3]..[116,3511+13])
+                          Ppat_alias "x" (testsuite/tests/basic/patmatch_for_multiple.ml[116,3511+12]..[116,3511+13])
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[116,3511+3]..[116,3511+8])
+                            Ppat_construct "false" (testsuite/tests/basic/patmatch_for_multiple.ml[116,3511+3]..[116,3511+8])
+                            None
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[116,3511+15]..[116,3511+16])
+                          Ppat_any
+                      ]
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[116,3511+26]..[116,3511+30])
+                    Pexp_tuple
+                    [
+                      expression (testsuite/tests/basic/patmatch_for_multiple.ml[116,3511+26]..[116,3511+27])
+                        Pexp_ident "x" (testsuite/tests/basic/patmatch_for_multiple.ml[116,3511+26]..[116,3511+27])
+                      expression (testsuite/tests/basic/patmatch_for_multiple.ml[116,3511+29]..[116,3511+30])
+                        Pexp_ident "p" (testsuite/tests/basic/patmatch_for_multiple.ml[116,3511+29]..[116,3511+30])
+                    ]
+              ]
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[118,3564+0]..[124,3804+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[118,3564+10]..[124,3804+2])
+        Pstr_eval
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[118,3564+10]..[124,3804+2])
+          Pexp_constant PConst_string ("\n(function a/112 b/113\n  (let (x/114 =a a/112 p/115 =a (makeblock 0 a/112 b/113))\n    (makeblock 0 x/114 p/115)))\n(function a/112 b/113 (makeblock 0 a/112 (makeblock 0 a/112 b/113)))\n- : bool -> 'a -> bool * (bool * 'a) = <fun>\n",(testsuite/tests/basic/patmatch_for_multiple.ml[118,3564+12]..[124,3804+0]),Some "")
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[126,3809+0]..[128,3868+32])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[126,3809+4]..[126,3809+5])
+          Ppat_any
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[126,3809+8]..[128,3868+32])
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[126,3809+12]..[126,3809+13])
+            Ppat_var "a" (testsuite/tests/basic/patmatch_for_multiple.ml[126,3809+12]..[126,3809+13])
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[126,3809+14]..[128,3868+32]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[126,3809+14]..[126,3809+15])
+              Ppat_var "b" (testsuite/tests/basic/patmatch_for_multiple.ml[126,3809+14]..[126,3809+15])
+            expression (testsuite/tests/basic/patmatch_for_multiple.ml[126,3809+19]..[128,3868+32])
+              Pexp_match
+              expression (testsuite/tests/basic/patmatch_for_multiple.ml[126,3809+25]..[126,3809+29])
+                Pexp_tuple
+                [
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[126,3809+25]..[126,3809+26])
+                    Pexp_ident "a" (testsuite/tests/basic/patmatch_for_multiple.ml[126,3809+25]..[126,3809+26])
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[126,3809+28]..[126,3809+29])
+                    Pexp_ident "b" (testsuite/tests/basic/patmatch_for_multiple.ml[126,3809+28]..[126,3809+29])
+                ]
+              [
+                <case>
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[127,3844+2]..[128,3868+24])
+                    Ppat_or
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[127,3844+2]..[127,3844+23])
+                      Ppat_alias "p" (testsuite/tests/basic/patmatch_for_multiple.ml[127,3844+21]..[127,3844+22])
+                      pattern (testsuite/tests/basic/patmatch_for_multiple.ml[127,3844+3]..[127,3844+17])
+                        Ppat_tuple
+                        [
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[127,3844+4]..[127,3844+13])
+                            Ppat_alias "x" (testsuite/tests/basic/patmatch_for_multiple.ml[127,3844+12]..[127,3844+13])
+                            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[127,3844+4]..[127,3844+8])
+                              Ppat_construct "true" (testsuite/tests/basic/patmatch_for_multiple.ml[127,3844+4]..[127,3844+8])
+                              None
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[127,3844+15]..[127,3844+16])
+                            Ppat_any
+                        ]
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[128,3868+2]..[128,3868+24])
+                      Ppat_alias "p" (testsuite/tests/basic/patmatch_for_multiple.ml[128,3868+22]..[128,3868+23])
+                      pattern (testsuite/tests/basic/patmatch_for_multiple.ml[128,3868+3]..[128,3868+18])
+                        Ppat_tuple
+                        [
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[128,3868+4]..[128,3868+14])
+                            Ppat_alias "x" (testsuite/tests/basic/patmatch_for_multiple.ml[128,3868+13]..[128,3868+14])
+                            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[128,3868+4]..[128,3868+9])
+                              Ppat_construct "false" (testsuite/tests/basic/patmatch_for_multiple.ml[128,3868+4]..[128,3868+9])
+                              None
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[128,3868+16]..[128,3868+17])
+                            Ppat_any
+                        ]
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[128,3868+28]..[128,3868+32])
+                    Pexp_tuple
+                    [
+                      expression (testsuite/tests/basic/patmatch_for_multiple.ml[128,3868+28]..[128,3868+29])
+                        Pexp_ident "x" (testsuite/tests/basic/patmatch_for_multiple.ml[128,3868+28]..[128,3868+29])
+                      expression (testsuite/tests/basic/patmatch_for_multiple.ml[128,3868+31]..[128,3868+32])
+                        Pexp_ident "p" (testsuite/tests/basic/patmatch_for_multiple.ml[128,3868+31]..[128,3868+32])
+                    ]
+              ]
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[130,3922+0]..[136,4162+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[130,3922+10]..[136,4162+2])
+        Pstr_eval
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[130,3922+10]..[136,4162+2])
+          Pexp_constant PConst_string ("\n(function a/118 b/119\n  (let (x/120 =a a/118 p/121 =a (makeblock 0 a/118 b/119))\n    (makeblock 0 x/120 p/121)))\n(function a/118 b/119 (makeblock 0 a/118 (makeblock 0 a/118 b/119)))\n- : bool -> 'a -> bool * (bool * 'a) = <fun>\n",(testsuite/tests/basic/patmatch_for_multiple.ml[130,3922+12]..[136,4162+0]),Some "")
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[138,4167+0]..[140,4232+25])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[138,4167+4]..[138,4167+5])
+          Ppat_any
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[138,4167+8]..[140,4232+25])
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[138,4167+12]..[138,4167+13])
+            Ppat_var "a" (testsuite/tests/basic/patmatch_for_multiple.ml[138,4167+12]..[138,4167+13])
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[138,4167+14]..[140,4232+25]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[138,4167+14]..[138,4167+15])
+              Ppat_var "b" (testsuite/tests/basic/patmatch_for_multiple.ml[138,4167+14]..[138,4167+15])
+            expression (testsuite/tests/basic/patmatch_for_multiple.ml[138,4167+19]..[140,4232+25])
+              Pexp_match
+              expression (testsuite/tests/basic/patmatch_for_multiple.ml[138,4167+25]..[138,4167+29])
+                Pexp_tuple
+                [
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[138,4167+25]..[138,4167+26])
+                    Pexp_ident "a" (testsuite/tests/basic/patmatch_for_multiple.ml[138,4167+25]..[138,4167+26])
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[138,4167+28]..[138,4167+29])
+                    Pexp_ident "b" (testsuite/tests/basic/patmatch_for_multiple.ml[138,4167+28]..[138,4167+29])
+                ]
+              [
+                <case>
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[139,4202+2]..[139,4202+21])
+                    Ppat_alias "p" (testsuite/tests/basic/patmatch_for_multiple.ml[139,4202+20]..[139,4202+21])
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[139,4202+2]..[139,4202+16])
+                      Ppat_tuple
+                      [
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[139,4202+3]..[139,4202+12])
+                          Ppat_alias "x" (testsuite/tests/basic/patmatch_for_multiple.ml[139,4202+11]..[139,4202+12])
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[139,4202+3]..[139,4202+7])
+                            Ppat_construct "true" (testsuite/tests/basic/patmatch_for_multiple.ml[139,4202+3]..[139,4202+7])
+                            None
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[139,4202+14]..[139,4202+15])
+                          Ppat_any
+                      ]
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[139,4202+25]..[139,4202+29])
+                    Pexp_tuple
+                    [
+                      expression (testsuite/tests/basic/patmatch_for_multiple.ml[139,4202+25]..[139,4202+26])
+                        Pexp_ident "x" (testsuite/tests/basic/patmatch_for_multiple.ml[139,4202+25]..[139,4202+26])
+                      expression (testsuite/tests/basic/patmatch_for_multiple.ml[139,4202+28]..[139,4202+29])
+                        Pexp_ident "p" (testsuite/tests/basic/patmatch_for_multiple.ml[139,4202+28]..[139,4202+29])
+                    ]
+                <case>
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[140,4232+2]..[140,4232+17])
+                    Ppat_alias "p" (testsuite/tests/basic/patmatch_for_multiple.ml[140,4232+16]..[140,4232+17])
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[140,4232+2]..[140,4232+12])
+                      Ppat_tuple
+                      [
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[140,4232+3]..[140,4232+8])
+                          Ppat_construct "false" (testsuite/tests/basic/patmatch_for_multiple.ml[140,4232+3]..[140,4232+8])
+                          None
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[140,4232+10]..[140,4232+11])
+                          Ppat_var "x" (testsuite/tests/basic/patmatch_for_multiple.ml[140,4232+10]..[140,4232+11])
+                      ]
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[140,4232+21]..[140,4232+25])
+                    Pexp_tuple
+                    [
+                      expression (testsuite/tests/basic/patmatch_for_multiple.ml[140,4232+21]..[140,4232+22])
+                        Pexp_ident "x" (testsuite/tests/basic/patmatch_for_multiple.ml[140,4232+21]..[140,4232+22])
+                      expression (testsuite/tests/basic/patmatch_for_multiple.ml[140,4232+24]..[140,4232+25])
+                        Pexp_ident "p" (testsuite/tests/basic/patmatch_for_multiple.ml[140,4232+24]..[140,4232+25])
+                    ]
+              ]
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[142,4281+0]..[153,4698+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[142,4281+9]..[153,4698+2])
+        Pstr_eval
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[142,4281+9]..[153,4698+2])
+          Pexp_constant PConst_string ("\n(function a/128 b/129\n  (if a/128\n    (let (x/130 =a a/128 p/131 =a (makeblock 0 a/128 b/129))\n      (makeblock 0 x/130 p/131))\n    (let (x/132 =a b/129 p/133 =a (makeblock 0 a/128 b/129))\n      (makeblock 0 x/132 p/133))))\n(function a/128 b/129\n  (if a/128 (makeblock 0 a/128 (makeblock 0 a/128 b/129))\n    (makeblock 0 b/129 (makeblock 0 a/128 b/129))))\n- : bool -> bool -> bool * (bool * bool) = <fun>\n",(testsuite/tests/basic/patmatch_for_multiple.ml[142,4281+11]..[153,4698+0]),Some "")
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[155,4703+0]..[158,4782+9])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[155,4703+4]..[155,4703+5])
+          Ppat_any
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[155,4703+8]..[158,4782+9])
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[155,4703+12]..[155,4703+13])
+            Ppat_var "a" (testsuite/tests/basic/patmatch_for_multiple.ml[155,4703+12]..[155,4703+13])
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[155,4703+14]..[158,4782+9]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[155,4703+14]..[155,4703+15])
+              Ppat_var "b" (testsuite/tests/basic/patmatch_for_multiple.ml[155,4703+14]..[155,4703+15])
+            expression (testsuite/tests/basic/patmatch_for_multiple.ml[155,4703+19]..[158,4782+9])
+              Pexp_match
+              expression (testsuite/tests/basic/patmatch_for_multiple.ml[155,4703+25]..[155,4703+29])
+                Pexp_tuple
+                [
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[155,4703+25]..[155,4703+26])
+                    Pexp_ident "a" (testsuite/tests/basic/patmatch_for_multiple.ml[155,4703+25]..[155,4703+26])
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[155,4703+28]..[155,4703+29])
+                    Pexp_ident "b" (testsuite/tests/basic/patmatch_for_multiple.ml[155,4703+28]..[155,4703+29])
+                ]
+              [
+                <case>
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[156,4738+2]..[157,4762+19])
+                    Ppat_or
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[156,4738+2]..[156,4738+23])
+                      Ppat_alias "p" (testsuite/tests/basic/patmatch_for_multiple.ml[156,4738+21]..[156,4738+22])
+                      pattern (testsuite/tests/basic/patmatch_for_multiple.ml[156,4738+3]..[156,4738+17])
+                        Ppat_tuple
+                        [
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[156,4738+4]..[156,4738+13])
+                            Ppat_alias "x" (testsuite/tests/basic/patmatch_for_multiple.ml[156,4738+12]..[156,4738+13])
+                            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[156,4738+4]..[156,4738+8])
+                              Ppat_construct "true" (testsuite/tests/basic/patmatch_for_multiple.ml[156,4738+4]..[156,4738+8])
+                              None
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[156,4738+15]..[156,4738+16])
+                            Ppat_any
+                        ]
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[157,4762+2]..[157,4762+19])
+                      Ppat_alias "p" (testsuite/tests/basic/patmatch_for_multiple.ml[157,4762+17]..[157,4762+18])
+                      pattern (testsuite/tests/basic/patmatch_for_multiple.ml[157,4762+3]..[157,4762+13])
+                        Ppat_tuple
+                        [
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[157,4762+4]..[157,4762+9])
+                            Ppat_construct "false" (testsuite/tests/basic/patmatch_for_multiple.ml[157,4762+4]..[157,4762+9])
+                            None
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[157,4762+11]..[157,4762+12])
+                            Ppat_var "x" (testsuite/tests/basic/patmatch_for_multiple.ml[157,4762+11]..[157,4762+12])
+                        ]
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[158,4782+5]..[158,4782+9])
+                    Pexp_tuple
+                    [
+                      expression (testsuite/tests/basic/patmatch_for_multiple.ml[158,4782+5]..[158,4782+6])
+                        Pexp_ident "x" (testsuite/tests/basic/patmatch_for_multiple.ml[158,4782+5]..[158,4782+6])
+                      expression (testsuite/tests/basic/patmatch_for_multiple.ml[158,4782+8]..[158,4782+9])
+                        Pexp_ident "p" (testsuite/tests/basic/patmatch_for_multiple.ml[158,4782+8]..[158,4782+9])
+                    ]
+              ]
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[160,4814+0]..[175,5351+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[160,4814+9]..[175,5351+2])
+        Pstr_eval
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[160,4814+9]..[175,5351+2])
+          Pexp_constant PConst_string ("\n(function a/134 b/135\n  (catch\n    (if a/134\n      (let (x/142 =a a/134 p/143 =a (makeblock 0 a/134 b/135))\n        (exit 10 x/142 p/143))\n      (let (x/140 =a b/135 p/141 =a (makeblock 0 a/134 b/135))\n        (exit 10 x/140 p/141)))\n   with (10 x/136 p/137) (makeblock 0 x/136 p/137)))\n(function a/134 b/135\n  (catch\n    (if a/134 (exit 10 a/134 (makeblock 0 a/134 b/135))\n      (exit 10 b/135 (makeblock 0 a/134 b/135)))\n   with (10 x/136 p/137) (makeblock 0 x/136 p/137)))\n- : bool -> bool -> bool * (bool * bool) = <fun>\n",(testsuite/tests/basic/patmatch_for_multiple.ml[160,4814+11]..[175,5351+0]),Some "")
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[181,5622+0]..[183,5699+30])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[181,5622+4]..[181,5622+5])
+          Ppat_any
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[181,5622+8]..[183,5699+30])
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[181,5622+12]..[181,5622+13])
+            Ppat_var "a" (testsuite/tests/basic/patmatch_for_multiple.ml[181,5622+12]..[181,5622+13])
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[181,5622+14]..[183,5699+30]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[181,5622+14]..[181,5622+15])
+              Ppat_var "b" (testsuite/tests/basic/patmatch_for_multiple.ml[181,5622+14]..[181,5622+15])
+            expression (testsuite/tests/basic/patmatch_for_multiple.ml[181,5622+19]..[183,5699+30])
+              Pexp_match
+              expression (testsuite/tests/basic/patmatch_for_multiple.ml[181,5622+25]..[181,5622+29])
+                Pexp_tuple
+                [
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[181,5622+25]..[181,5622+26])
+                    Pexp_ident "a" (testsuite/tests/basic/patmatch_for_multiple.ml[181,5622+25]..[181,5622+26])
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[181,5622+28]..[181,5622+29])
+                    Pexp_ident "b" (testsuite/tests/basic/patmatch_for_multiple.ml[181,5622+28]..[181,5622+29])
+                ]
+              [
+                <case>
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[182,5657+2]..[182,5657+22])
+                    Ppat_alias "_p" (testsuite/tests/basic/patmatch_for_multiple.ml[182,5657+20]..[182,5657+22])
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[182,5657+2]..[182,5657+16])
+                      Ppat_tuple
+                      [
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[182,5657+3]..[182,5657+12])
+                          Ppat_alias "x" (testsuite/tests/basic/patmatch_for_multiple.ml[182,5657+11]..[182,5657+12])
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[182,5657+3]..[182,5657+7])
+                            Ppat_construct "true" (testsuite/tests/basic/patmatch_for_multiple.ml[182,5657+3]..[182,5657+7])
+                            None
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[182,5657+14]..[182,5657+15])
+                          Ppat_any
+                      ]
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[182,5657+26]..[182,5657+41])
+                    Pexp_tuple
+                    [
+                      expression (testsuite/tests/basic/patmatch_for_multiple.ml[182,5657+26]..[182,5657+27])
+                        Pexp_ident "x" (testsuite/tests/basic/patmatch_for_multiple.ml[182,5657+26]..[182,5657+27])
+                      expression (testsuite/tests/basic/patmatch_for_multiple.ml[182,5657+29]..[182,5657+41])
+                        Pexp_tuple
+                        [
+                          expression (testsuite/tests/basic/patmatch_for_multiple.ml[182,5657+30]..[182,5657+34])
+                            Pexp_construct "true" (testsuite/tests/basic/patmatch_for_multiple.ml[182,5657+30]..[182,5657+34])
+                            None
+                          expression (testsuite/tests/basic/patmatch_for_multiple.ml[182,5657+36]..[182,5657+40])
+                            Pexp_construct "true" (testsuite/tests/basic/patmatch_for_multiple.ml[182,5657+36]..[182,5657+40])
+                            None
+                        ]
+                    ]
+                <case>
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[183,5699+2]..[183,5699+22])
+                    Ppat_alias "p" (testsuite/tests/basic/patmatch_for_multiple.ml[183,5699+21]..[183,5699+22])
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[183,5699+2]..[183,5699+17])
+                      Ppat_tuple
+                      [
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[183,5699+3]..[183,5699+13])
+                          Ppat_alias "x" (testsuite/tests/basic/patmatch_for_multiple.ml[183,5699+12]..[183,5699+13])
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[183,5699+3]..[183,5699+8])
+                            Ppat_construct "false" (testsuite/tests/basic/patmatch_for_multiple.ml[183,5699+3]..[183,5699+8])
+                            None
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[183,5699+15]..[183,5699+16])
+                          Ppat_any
+                      ]
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[183,5699+26]..[183,5699+30])
+                    Pexp_tuple
+                    [
+                      expression (testsuite/tests/basic/patmatch_for_multiple.ml[183,5699+26]..[183,5699+27])
+                        Pexp_ident "x" (testsuite/tests/basic/patmatch_for_multiple.ml[183,5699+26]..[183,5699+27])
+                      expression (testsuite/tests/basic/patmatch_for_multiple.ml[183,5699+29]..[183,5699+30])
+                        Pexp_ident "p" (testsuite/tests/basic/patmatch_for_multiple.ml[183,5699+29]..[183,5699+30])
+                    ]
+              ]
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[185,5753+0]..[196,6158+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[185,5753+10]..[196,6158+2])
+        Pstr_eval
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[185,5753+10]..[196,6158+2])
+          Pexp_constant PConst_string ("\n(function a/144 b/145\n  (if a/144\n    (let (x/146 =a a/144 _p/147 =a (makeblock 0 a/144 b/145))\n      (makeblock 0 x/146 [0: 1 1]))\n    (let (x/148 =a a/144 p/149 =a (makeblock 0 a/144 b/145))\n      (makeblock 0 x/148 p/149))))\n(function a/144 b/145\n  (if a/144 (makeblock 0 a/144 [0: 1 1])\n    (makeblock 0 a/144 (makeblock 0 a/144 b/145))))\n- : bool -> bool -> bool * (bool * bool) = <fun>\n",(testsuite/tests/basic/patmatch_for_multiple.ml[185,5753+12]..[196,6158+0]),Some "")
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[198,6163+0]..[200,6222+32])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[198,6163+4]..[198,6163+5])
+          Ppat_any
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[198,6163+8]..[200,6222+32])
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[198,6163+12]..[198,6163+13])
+            Ppat_var "a" (testsuite/tests/basic/patmatch_for_multiple.ml[198,6163+12]..[198,6163+13])
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[198,6163+14]..[200,6222+32]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[198,6163+14]..[198,6163+15])
+              Ppat_var "b" (testsuite/tests/basic/patmatch_for_multiple.ml[198,6163+14]..[198,6163+15])
+            expression (testsuite/tests/basic/patmatch_for_multiple.ml[198,6163+19]..[200,6222+32])
+              Pexp_match
+              expression (testsuite/tests/basic/patmatch_for_multiple.ml[198,6163+25]..[198,6163+29])
+                Pexp_tuple
+                [
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[198,6163+25]..[198,6163+26])
+                    Pexp_ident "a" (testsuite/tests/basic/patmatch_for_multiple.ml[198,6163+25]..[198,6163+26])
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[198,6163+28]..[198,6163+29])
+                    Pexp_ident "b" (testsuite/tests/basic/patmatch_for_multiple.ml[198,6163+28]..[198,6163+29])
+                ]
+              [
+                <case>
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[199,6198+2]..[200,6222+24])
+                    Ppat_or
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[199,6198+2]..[199,6198+23])
+                      Ppat_alias "p" (testsuite/tests/basic/patmatch_for_multiple.ml[199,6198+21]..[199,6198+22])
+                      pattern (testsuite/tests/basic/patmatch_for_multiple.ml[199,6198+3]..[199,6198+17])
+                        Ppat_tuple
+                        [
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[199,6198+4]..[199,6198+13])
+                            Ppat_alias "x" (testsuite/tests/basic/patmatch_for_multiple.ml[199,6198+12]..[199,6198+13])
+                            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[199,6198+4]..[199,6198+8])
+                              Ppat_construct "true" (testsuite/tests/basic/patmatch_for_multiple.ml[199,6198+4]..[199,6198+8])
+                              None
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[199,6198+15]..[199,6198+16])
+                            Ppat_any
+                        ]
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[200,6222+2]..[200,6222+24])
+                      Ppat_alias "p" (testsuite/tests/basic/patmatch_for_multiple.ml[200,6222+22]..[200,6222+23])
+                      pattern (testsuite/tests/basic/patmatch_for_multiple.ml[200,6222+3]..[200,6222+18])
+                        Ppat_tuple
+                        [
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[200,6222+4]..[200,6222+14])
+                            Ppat_alias "x" (testsuite/tests/basic/patmatch_for_multiple.ml[200,6222+13]..[200,6222+14])
+                            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[200,6222+4]..[200,6222+9])
+                              Ppat_construct "false" (testsuite/tests/basic/patmatch_for_multiple.ml[200,6222+4]..[200,6222+9])
+                              None
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[200,6222+16]..[200,6222+17])
+                            Ppat_any
+                        ]
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[200,6222+28]..[200,6222+32])
+                    Pexp_tuple
+                    [
+                      expression (testsuite/tests/basic/patmatch_for_multiple.ml[200,6222+28]..[200,6222+29])
+                        Pexp_ident "x" (testsuite/tests/basic/patmatch_for_multiple.ml[200,6222+28]..[200,6222+29])
+                      expression (testsuite/tests/basic/patmatch_for_multiple.ml[200,6222+31]..[200,6222+32])
+                        Pexp_ident "p" (testsuite/tests/basic/patmatch_for_multiple.ml[200,6222+31]..[200,6222+32])
+                    ]
+              ]
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[202,6277+0]..[208,6516+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[202,6277+9]..[208,6516+2])
+        Pstr_eval
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[202,6277+9]..[208,6516+2])
+          Pexp_constant PConst_string ("\n(function a/150 b/151\n  (let (x/152 =a a/150 p/153 =a (makeblock 0 a/150 b/151))\n    (makeblock 0 x/152 p/153)))\n(function a/150 b/151 (makeblock 0 a/150 (makeblock 0 a/150 b/151)))\n- : bool -> 'a -> bool * (bool * 'a) = <fun>\n",(testsuite/tests/basic/patmatch_for_multiple.ml[202,6277+11]..[208,6516+0]),Some "")
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[210,6521+0]..[210,6521+49])
+    Pstr_type Rec
+    [
+      type_declaration "tuplist" (testsuite/tests/basic/patmatch_for_multiple.ml[210,6521+8]..[210,6521+15]) (testsuite/tests/basic/patmatch_for_multiple.ml[210,6521+0]..[210,6521+49])
+        ptype_params =
+          [
+            core_type (testsuite/tests/basic/patmatch_for_multiple.ml[210,6521+5]..[210,6521+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (testsuite/tests/basic/patmatch_for_multiple.ml[210,6521+18]..[210,6521+21])
+                "Nil" (testsuite/tests/basic/patmatch_for_multiple.ml[210,6521+18]..[210,6521+21])
+                []
+                None
+              (testsuite/tests/basic/patmatch_for_multiple.ml[210,6521+22]..[210,6521+49])
+                "Cons" (testsuite/tests/basic/patmatch_for_multiple.ml[210,6521+24]..[210,6521+28])
+                [
+                  core_type (testsuite/tests/basic/patmatch_for_multiple.ml[210,6521+33]..[210,6521+48])
+                    Ptyp_tuple
+                    [
+                      core_type (testsuite/tests/basic/patmatch_for_multiple.ml[210,6521+33]..[210,6521+35])
+                        Ptyp_var a
+                      core_type (testsuite/tests/basic/patmatch_for_multiple.ml[210,6521+38]..[210,6521+48])
+                        Ptyp_constr "tuplist" (testsuite/tests/basic/patmatch_for_multiple.ml[210,6521+41]..[210,6521+48])
+                        [
+                          core_type (testsuite/tests/basic/patmatch_for_multiple.ml[210,6521+38]..[210,6521+40])
+                            Ptyp_var a
+                        ]
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[211,6571+0]..[215,6637+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[211,6571+9]..[215,6637+2])
+        Pstr_eval
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[211,6571+9]..[215,6637+2])
+          Pexp_constant PConst_string ("\n0\n0\ntype 'a tuplist = Nil | Cons of ('a * 'a tuplist)\n",(testsuite/tests/basic/patmatch_for_multiple.ml[211,6571+11]..[215,6637+0]),Some "")
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[218,6711+0]..[220,6767+18])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[218,6711+4]..[218,6711+5])
+          Ppat_any
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[218,6711+7]..[220,6767+18])
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[218,6711+11]..[218,6711+12])
+            Ppat_var "a" (testsuite/tests/basic/patmatch_for_multiple.ml[218,6711+11]..[218,6711+12])
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[218,6711+13]..[220,6767+18]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[218,6711+13]..[218,6711+14])
+              Ppat_var "b" (testsuite/tests/basic/patmatch_for_multiple.ml[218,6711+13]..[218,6711+14])
+            expression (testsuite/tests/basic/patmatch_for_multiple.ml[218,6711+18]..[220,6767+18])
+              Pexp_match
+              expression (testsuite/tests/basic/patmatch_for_multiple.ml[218,6711+24]..[218,6711+28])
+                Pexp_tuple
+                [
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[218,6711+24]..[218,6711+25])
+                    Pexp_ident "a" (testsuite/tests/basic/patmatch_for_multiple.ml[218,6711+24]..[218,6711+25])
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[218,6711+27]..[218,6711+28])
+                    Pexp_ident "b" (testsuite/tests/basic/patmatch_for_multiple.ml[218,6711+27]..[218,6711+28])
+                ]
+              [
+                <case>
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[219,6745+2]..[219,6745+16])
+                    Ppat_tuple
+                    [
+                      pattern (testsuite/tests/basic/patmatch_for_multiple.ml[219,6745+3]..[219,6745+7])
+                        Ppat_construct "true" (testsuite/tests/basic/patmatch_for_multiple.ml[219,6745+3]..[219,6745+7])
+                        None
+                      pattern (testsuite/tests/basic/patmatch_for_multiple.ml[219,6745+9]..[219,6745+15])
+                        Ppat_construct "Cons" (testsuite/tests/basic/patmatch_for_multiple.ml[219,6745+9]..[219,6745+13])
+                        Some
+                          []
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[219,6745+14]..[219,6745+15])
+                            Ppat_var "p" (testsuite/tests/basic/patmatch_for_multiple.ml[219,6745+14]..[219,6745+15])
+                    ]
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[219,6745+20]..[219,6745+21])
+                    Pexp_ident "p" (testsuite/tests/basic/patmatch_for_multiple.ml[219,6745+20]..[219,6745+21])
+                <case>
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[220,6767+2]..[220,6767+13])
+                    Ppat_alias "p" (testsuite/tests/basic/patmatch_for_multiple.ml[220,6767+12]..[220,6767+13])
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[220,6767+2]..[220,6767+8])
+                      Ppat_tuple
+                      [
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[220,6767+3]..[220,6767+4])
+                          Ppat_any
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[220,6767+6]..[220,6767+7])
+                          Ppat_any
+                      ]
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[220,6767+17]..[220,6767+18])
+                    Pexp_ident "p" (testsuite/tests/basic/patmatch_for_multiple.ml[220,6767+17]..[220,6767+18])
+              ]
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[222,6809+0]..[232,7195+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[222,6809+10]..[232,7195+2])
+        Pstr_eval
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[222,6809+10]..[232,7195+2])
+          Pexp_constant PConst_string ("\n(function a/163 b/164\n  (catch\n    (if a/163 (if b/164 (let (p/165 =a (field 0 b/164)) p/165) (exit 12))\n      (exit 12))\n   with (12) (let (p/166 =a (makeblock 0 a/163 b/164)) p/166)))\n(function a/163 b/164\n  (catch (if a/163 (if b/164 (field 0 b/164) (exit 12)) (exit 12)) with (12)\n    (makeblock 0 a/163 b/164)))\n- : bool -> bool tuplist -> bool * bool tuplist = <fun>\n",(testsuite/tests/basic/patmatch_for_multiple.ml[222,6809+12]..[232,7195+0]),Some "")
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[234,7200+0]..[236,7252+20])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[234,7200+4]..[234,7200+5])
+          Ppat_any
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[234,7200+8]..[236,7252+20])
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[234,7200+12]..[234,7200+13])
+            Ppat_var "a" (testsuite/tests/basic/patmatch_for_multiple.ml[234,7200+12]..[234,7200+13])
+          expression (testsuite/tests/basic/patmatch_for_multiple.ml[234,7200+14]..[236,7252+20]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[234,7200+14]..[234,7200+15])
+              Ppat_var "b" (testsuite/tests/basic/patmatch_for_multiple.ml[234,7200+14]..[234,7200+15])
+            expression (testsuite/tests/basic/patmatch_for_multiple.ml[234,7200+19]..[236,7252+20])
+              Pexp_match
+              expression (testsuite/tests/basic/patmatch_for_multiple.ml[234,7200+25]..[234,7200+29])
+                Pexp_tuple
+                [
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[234,7200+25]..[234,7200+26])
+                    Pexp_ident "a" (testsuite/tests/basic/patmatch_for_multiple.ml[234,7200+25]..[234,7200+26])
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[234,7200+28]..[234,7200+29])
+                    Pexp_ident "b" (testsuite/tests/basic/patmatch_for_multiple.ml[234,7200+28]..[234,7200+29])
+                ]
+              [
+                <case>
+                  pattern (testsuite/tests/basic/patmatch_for_multiple.ml[235,7235+2]..[236,7252+15])
+                    Ppat_or
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[235,7235+2]..[235,7235+16])
+                      Ppat_tuple
+                      [
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[235,7235+3]..[235,7235+7])
+                          Ppat_construct "true" (testsuite/tests/basic/patmatch_for_multiple.ml[235,7235+3]..[235,7235+7])
+                          None
+                        pattern (testsuite/tests/basic/patmatch_for_multiple.ml[235,7235+9]..[235,7235+15])
+                          Ppat_construct "Cons" (testsuite/tests/basic/patmatch_for_multiple.ml[235,7235+9]..[235,7235+13])
+                          Some
+                            []
+                            pattern (testsuite/tests/basic/patmatch_for_multiple.ml[235,7235+14]..[235,7235+15])
+                              Ppat_var "p" (testsuite/tests/basic/patmatch_for_multiple.ml[235,7235+14]..[235,7235+15])
+                      ]
+                    pattern (testsuite/tests/basic/patmatch_for_multiple.ml[236,7252+2]..[236,7252+15])
+                      Ppat_alias "p" (testsuite/tests/basic/patmatch_for_multiple.ml[236,7252+13]..[236,7252+14])
+                      pattern (testsuite/tests/basic/patmatch_for_multiple.ml[236,7252+3]..[236,7252+9])
+                        Ppat_tuple
+                        [
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[236,7252+4]..[236,7252+5])
+                            Ppat_any
+                          pattern (testsuite/tests/basic/patmatch_for_multiple.ml[236,7252+7]..[236,7252+8])
+                            Ppat_any
+                        ]
+                  expression (testsuite/tests/basic/patmatch_for_multiple.ml[236,7252+19]..[236,7252+20])
+                    Pexp_ident "p" (testsuite/tests/basic/patmatch_for_multiple.ml[236,7252+19]..[236,7252+20])
+              ]
+    ]
+  structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[238,7295+0]..[254,7815+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/basic/patmatch_for_multiple.ml[238,7295+9]..[254,7815+2])
+        Pstr_eval
+        expression (testsuite/tests/basic/patmatch_for_multiple.ml[238,7295+9]..[254,7815+2])
+          Pexp_constant PConst_string ("\n(function a/167 b/168\n  (catch\n    (catch\n      (if a/167\n        (if b/168 (let (p/172 =a (field 0 b/168)) (exit 13 p/172)) (exit 14))\n        (exit 14))\n     with (14) (let (p/171 =a (makeblock 0 a/167 b/168)) (exit 13 p/171)))\n   with (13 p/169) p/169))\n(function a/167 b/168\n  (catch\n    (catch\n      (if a/167 (if b/168 (exit 13 (field 0 b/168)) (exit 14)) (exit 14))\n     with (14) (exit 13 (makeblock 0 a/167 b/168)))\n   with (13 p/169) p/169))\n- : bool -> bool tuplist -> bool * bool tuplist = <fun>\n",(testsuite/tests/basic/patmatch_for_multiple.ml[238,7295+11]..[254,7815+0]),Some "")
+    ]
+]
+

@@ -1,0 +1,92 @@
+[
+  structure_item (testsuite/tests/output-complete-obj/test2.ml[17,282+0]..[17,282+43])
+    Pstr_primitive
+    value_description "puts" (testsuite/tests/output-complete-obj/test2.ml[17,282+9]..[17,282+13]) (testsuite/tests/output-complete-obj/test2.ml[17,282+0]..[17,282+43])
+      core_type (testsuite/tests/output-complete-obj/test2.ml[17,282+15]..[17,282+29])
+        Ptyp_arrow
+        Nolabel
+        core_type (testsuite/tests/output-complete-obj/test2.ml[17,282+15]..[17,282+21])
+          Ptyp_constr "string" (testsuite/tests/output-complete-obj/test2.ml[17,282+15]..[17,282+21])
+          []
+        core_type (testsuite/tests/output-complete-obj/test2.ml[17,282+25]..[17,282+29])
+          Ptyp_constr "unit" (testsuite/tests/output-complete-obj/test2.ml[17,282+25]..[17,282+29])
+          []
+      [
+        "caml_puts"
+      ]
+  structure_item (testsuite/tests/output-complete-obj/test2.ml[19,327+0]..[19,327+62])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/output-complete-obj/test2.ml[19,327+4]..[19,327+5])
+          Ppat_any
+        expression (testsuite/tests/output-complete-obj/test2.ml[19,327+8]..[19,327+62])
+          Pexp_apply
+          expression (testsuite/tests/output-complete-obj/test2.ml[19,327+8]..[19,327+15])
+            Pexp_ident "at_exit" (testsuite/tests/output-complete-obj/test2.ml[19,327+8]..[19,327+15])
+          [
+            <arg>
+            Nolabel
+              expression (testsuite/tests/output-complete-obj/test2.ml[19,327+16]..[19,327+62])
+                Pexp_fun
+                Nolabel
+                None
+                pattern (testsuite/tests/output-complete-obj/test2.ml[19,327+21]..[19,327+23])
+                  Ppat_construct "()" (testsuite/tests/output-complete-obj/test2.ml[19,327+21]..[19,327+23])
+                  None
+                expression (testsuite/tests/output-complete-obj/test2.ml[19,327+27]..[19,327+61])
+                  Pexp_apply
+                  expression (testsuite/tests/output-complete-obj/test2.ml[19,327+27]..[19,327+40])
+                    Pexp_ident "print_endline" (testsuite/tests/output-complete-obj/test2.ml[19,327+27]..[19,327+40])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/output-complete-obj/test2.ml[19,327+41]..[19,327+61])
+                        Pexp_constant PConst_string("Program terminated",(testsuite/tests/output-complete-obj/test2.ml[19,327+42]..[19,327+60]),None)
+                  ]
+          ]
+    ]
+  structure_item (testsuite/tests/output-complete-obj/test2.ml[21,391+0]..[23,436+26])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/output-complete-obj/test2.ml[21,391+4]..[21,391+6])
+          Ppat_construct "()" (testsuite/tests/output-complete-obj/test2.ml[21,391+4]..[21,391+6])
+          None
+        expression (testsuite/tests/output-complete-obj/test2.ml[22,400+2]..[23,436+26])
+          Pexp_sequence
+          expression (testsuite/tests/output-complete-obj/test2.ml[22,400+2]..[22,400+34])
+            Pexp_apply
+            expression (testsuite/tests/output-complete-obj/test2.ml[22,400+2]..[22,400+13])
+              Pexp_ident "Unix.putenv" (testsuite/tests/output-complete-obj/test2.ml[22,400+2]..[22,400+13])
+            [
+              <arg>
+              Nolabel
+                expression (testsuite/tests/output-complete-obj/test2.ml[22,400+14]..[22,400+19])
+                  Pexp_constant PConst_string("FOO",(testsuite/tests/output-complete-obj/test2.ml[22,400+15]..[22,400+18]),None)
+              <arg>
+              Nolabel
+                expression (testsuite/tests/output-complete-obj/test2.ml[22,400+20]..[22,400+34])
+                  Pexp_constant PConst_string("Hello OCaml!",(testsuite/tests/output-complete-obj/test2.ml[22,400+21]..[22,400+33]),None)
+            ]
+          expression (testsuite/tests/output-complete-obj/test2.ml[23,436+2]..[23,436+26])
+            Pexp_apply
+            expression (testsuite/tests/output-complete-obj/test2.ml[23,436+2]..[23,436+6])
+              Pexp_ident "puts" (testsuite/tests/output-complete-obj/test2.ml[23,436+2]..[23,436+6])
+            [
+              <arg>
+              Nolabel
+                expression (testsuite/tests/output-complete-obj/test2.ml[23,436+7]..[23,436+26])
+                  Pexp_apply
+                  expression (testsuite/tests/output-complete-obj/test2.ml[23,436+8]..[23,436+19])
+                    Pexp_ident "Unix.getenv" (testsuite/tests/output-complete-obj/test2.ml[23,436+8]..[23,436+19])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/output-complete-obj/test2.ml[23,436+20]..[23,436+25])
+                        Pexp_constant PConst_string("FOO",(testsuite/tests/output-complete-obj/test2.ml[23,436+21]..[23,436+24]),None)
+                  ]
+            ]
+    ]
+]
+

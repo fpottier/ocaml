@@ -1,0 +1,2329 @@
+[
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[5,24+0]..[8,85+3])
+    Pstr_modtype "Printable" (testsuite/tests/typing-sigsubst/sigsubst.ml[5,24+12]..[5,24+21])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[5,24+24]..[8,85+3])
+        Pmty_signature
+        [
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[6,52+2]..[6,52+8])
+            Psig_type Rec
+            [
+              type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[6,52+7]..[6,52+8]) (testsuite/tests/typing-sigsubst/sigsubst.ml[6,52+2]..[6,52+8])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[7,61+2]..[7,61+23])
+            Psig_value
+            value_description "print" (testsuite/tests/typing-sigsubst/sigsubst.ml[7,61+6]..[7,61+11]) (testsuite/tests/typing-sigsubst/sigsubst.ml[7,61+2]..[7,61+23])
+              core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[7,61+14]..[7,61+23])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[7,61+14]..[7,61+15])
+                  Ptyp_constr "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[7,61+14]..[7,61+15])
+                  []
+                core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[7,61+19]..[7,61+23])
+                  Ptyp_constr "unit" (testsuite/tests/typing-sigsubst/sigsubst.ml[7,61+19]..[7,61+23])
+                  []
+              []
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[9,89+0]..[11,163+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[9,89+10]..[11,163+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[9,89+10]..[11,163+2])
+          Pexp_constant PConst_string ("\nmodule type Printable = sig type t val print : t -> unit end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[9,89+12]..[11,163+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[12,167+0]..[15,235+3])
+    Pstr_modtype "Comparable" (testsuite/tests/typing-sigsubst/sigsubst.ml[12,167+12]..[12,167+22])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[12,167+25]..[15,235+3])
+        Pmty_signature
+        [
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[13,196+2]..[13,196+8])
+            Psig_type Rec
+            [
+              type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[13,196+7]..[13,196+8]) (testsuite/tests/typing-sigsubst/sigsubst.ml[13,196+2]..[13,196+8])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[14,205+2]..[14,205+29])
+            Psig_value
+            value_description "compare" (testsuite/tests/typing-sigsubst/sigsubst.ml[14,205+6]..[14,205+13]) (testsuite/tests/typing-sigsubst/sigsubst.ml[14,205+2]..[14,205+29])
+              core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[14,205+16]..[14,205+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[14,205+16]..[14,205+17])
+                  Ptyp_constr "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[14,205+16]..[14,205+17])
+                  []
+                core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[14,205+21]..[14,205+29])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[14,205+21]..[14,205+22])
+                    Ptyp_constr "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[14,205+21]..[14,205+22])
+                    []
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[14,205+26]..[14,205+29])
+                    Ptyp_constr "int" (testsuite/tests/typing-sigsubst/sigsubst.ml[14,205+26]..[14,205+29])
+                    []
+              []
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[16,239+0]..[18,320+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[16,239+10]..[18,320+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[16,239+10]..[18,320+2])
+          Pexp_constant PConst_string ("\nmodule type Comparable = sig type t val compare : t -> t -> int end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[16,239+12]..[18,320+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[19,324+0]..[22,419+3])
+    Pstr_modtype "PrintableComparable" (testsuite/tests/typing-sigsubst/sigsubst.ml[19,324+12]..[19,324+31])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[19,324+34]..[22,419+3])
+        Pmty_signature
+        [
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[20,362+2]..[20,362+19])
+            Psig_include
+            module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[20,362+10]..[20,362+19])
+              Pmty_ident "Printable" (testsuite/tests/typing-sigsubst/sigsubst.ml[20,362+10]..[20,362+19])
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[21,382+2]..[21,382+36])
+            Psig_include
+            module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[21,382+10]..[21,382+36])
+              Pmty_with
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[21,382+10]..[21,382+20])
+                Pmty_ident "Comparable" (testsuite/tests/typing-sigsubst/sigsubst.ml[21,382+10]..[21,382+20])
+              [
+                Pwith_type "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[21,382+31]..[21,382+32])
+                  type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[21,382+31]..[21,382+32]) (testsuite/tests/typing-sigsubst/sigsubst.ml[21,382+26]..[21,382+36])
+                    ptype_params =
+                      []
+                    ptype_cstrs =
+                      []
+                    ptype_kind =
+                      Ptype_abstract
+                    ptype_private = Public
+                    ptype_manifest =
+                      Some
+                        core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[21,382+35]..[21,382+36])
+                          Ptyp_constr "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[21,382+35]..[21,382+36])
+                          []
+              ]
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[23,423+0]..[32,768+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[23,423+10]..[32,768+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[23,423+10]..[32,768+2])
+          Pexp_constant PConst_string ("\nLine 3, characters 2-36:\n3 |   include Comparable with type t = t\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError: Illegal shadowing of included type t/98 by t/102\n       Line 2, characters 2-19:\n         Type t/98 came from this include\n       Line 3, characters 2-23:\n         The value print has no valid type if t/98 is shadowed\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[23,423+12]..[32,768+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[34,773+0]..[36,819+34])
+    Pstr_modtype "Sunderscore" (testsuite/tests/typing-sigsubst/sigsubst.ml[34,773+12]..[34,773+23])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[34,773+26]..[36,819+34])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[34,773+26]..[36,819+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[35,803+2]..[35,803+15])
+              Psig_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[35,803+14]..[35,803+15]) (testsuite/tests/typing-sigsubst/sigsubst.ml[35,803+2]..[35,803+15])
+                  ptype_params =
+                    [
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[35,803+8]..[35,803+9])
+                        Ptyp_any
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[35,803+11]..[35,803+12])
+                        Ptyp_any
+                    ]
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+        [
+          Pwith_type "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[36,819+22]..[36,819+23])
+            type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[36,819+22]..[36,819+23]) (testsuite/tests/typing-sigsubst/sigsubst.ml[36,819+9]..[36,819+34])
+              ptype_params =
+                [
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[36,819+15]..[36,819+16])
+                    Ptyp_any
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[36,819+18]..[36,819+20])
+                    Ptyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[36,819+26]..[36,819+34])
+                    Ptyp_tuple
+                    [
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[36,819+26]..[36,819+29])
+                        Ptyp_constr "int" (testsuite/tests/typing-sigsubst/sigsubst.ml[36,819+26]..[36,819+29])
+                        []
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[36,819+32]..[36,819+34])
+                        Ptyp_var a
+                    ]
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[37,854+0]..[39,927+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[37,854+10]..[39,927+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[37,854+10]..[39,927+2])
+          Pexp_constant PConst_string ("\nmodule type Sunderscore = sig type (_, 'a) t = int * 'a end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[37,854+12]..[39,927+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[44,1060+0]..[47,1152+23])
+    Pstr_modtype "S0" (testsuite/tests/typing-sigsubst/sigsubst.ml[44,1060+12]..[44,1060+14])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[44,1060+17]..[47,1152+23])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[44,1060+17]..[47,1152+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[45,1081+2]..[46,1120+31])
+              Psig_recmodule
+              [
+                "M" (testsuite/tests/typing-sigsubst/sigsubst.ml[45,1081+13]..[45,1081+14])
+                  module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[45,1081+17]..[45,1081+38])
+                    Pmty_signature
+                    [
+                      signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[45,1081+21]..[45,1081+34])
+                        Psig_type Rec
+                        [
+                          type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[45,1081+26]..[45,1081+27]) (testsuite/tests/typing-sigsubst/sigsubst.ml[45,1081+21]..[45,1081+34])
+                            ptype_params =
+                              []
+                            ptype_cstrs =
+                              []
+                            ptype_kind =
+                              Ptype_abstract
+                            ptype_private = Public
+                            ptype_manifest =
+                              Some
+                                core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[45,1081+30]..[45,1081+34])
+                                  Ptyp_constr "M2.t" (testsuite/tests/typing-sigsubst/sigsubst.ml[45,1081+30]..[45,1081+34])
+                                  []
+                        ]
+                    ]
+                "M2" (testsuite/tests/typing-sigsubst/sigsubst.ml[46,1120+6]..[46,1120+8])
+                  module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[46,1120+11]..[46,1120+31])
+                    Pmty_signature
+                    [
+                      signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[46,1120+15]..[46,1120+27])
+                        Psig_type Rec
+                        [
+                          type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[46,1120+20]..[46,1120+21]) (testsuite/tests/typing-sigsubst/sigsubst.ml[46,1120+15]..[46,1120+27])
+                            ptype_params =
+                              []
+                            ptype_cstrs =
+                              []
+                            ptype_kind =
+                              Ptype_abstract
+                            ptype_private = Public
+                            ptype_manifest =
+                              Some
+                                core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[46,1120+24]..[46,1120+27])
+                                  Ptyp_constr "int" (testsuite/tests/typing-sigsubst/sigsubst.ml[46,1120+24]..[46,1120+27])
+                                  []
+                        ]
+                    ]
+              ]
+          ]
+        [
+          Pwith_type "M.t" (testsuite/tests/typing-sigsubst/sigsubst.ml[47,1152+14]..[47,1152+17])
+            type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[47,1152+14]..[47,1152+17]) (testsuite/tests/typing-sigsubst/sigsubst.ml[47,1152+9]..[47,1152+23])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[47,1152+20]..[47,1152+23])
+                    Ptyp_constr "int" (testsuite/tests/typing-sigsubst/sigsubst.ml[47,1152+20]..[47,1152+23])
+                    []
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[48,1176+0]..[51,1282+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[48,1176+10]..[51,1282+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[48,1176+10]..[51,1282+2])
+          Pexp_constant PConst_string ("\nmodule type S0 =\n  sig module rec M : sig type t = int end and M2 : sig type t = int end end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[48,1176+12]..[51,1282+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[54,1288+0]..[58,1410+3])
+    Pstr_modtype "PrintableComparable" (testsuite/tests/typing-sigsubst/sigsubst.ml[54,1288+12]..[54,1288+31])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[54,1288+34]..[58,1410+3])
+        Pmty_signature
+        [
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[55,1326+2]..[55,1326+8])
+            Psig_type Rec
+            [
+              type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[55,1326+7]..[55,1326+8]) (testsuite/tests/typing-sigsubst/sigsubst.ml[55,1326+2]..[55,1326+8])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[56,1335+2]..[56,1335+36])
+            Psig_include
+            module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[56,1335+10]..[56,1335+36])
+              Pmty_with
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[56,1335+10]..[56,1335+19])
+                Pmty_ident "Printable" (testsuite/tests/typing-sigsubst/sigsubst.ml[56,1335+10]..[56,1335+19])
+              [
+                Pwith_typesubst "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[56,1335+30]..[56,1335+31])
+                  type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[56,1335+30]..[56,1335+31]) (testsuite/tests/typing-sigsubst/sigsubst.ml[56,1335+25]..[56,1335+36])
+                    ptype_params =
+                      []
+                    ptype_cstrs =
+                      []
+                    ptype_kind =
+                      Ptype_abstract
+                    ptype_private = Public
+                    ptype_manifest =
+                      Some
+                        core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[56,1335+35]..[56,1335+36])
+                          Ptyp_constr "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[56,1335+35]..[56,1335+36])
+                          []
+              ]
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[57,1372+2]..[57,1372+37])
+            Psig_include
+            module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[57,1372+10]..[57,1372+37])
+              Pmty_with
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[57,1372+10]..[57,1372+20])
+                Pmty_ident "Comparable" (testsuite/tests/typing-sigsubst/sigsubst.ml[57,1372+10]..[57,1372+20])
+              [
+                Pwith_typesubst "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[57,1372+31]..[57,1372+32])
+                  type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[57,1372+31]..[57,1372+32]) (testsuite/tests/typing-sigsubst/sigsubst.ml[57,1372+26]..[57,1372+37])
+                    ptype_params =
+                      []
+                    ptype_cstrs =
+                      []
+                    ptype_kind =
+                      Ptype_abstract
+                    ptype_private = Public
+                    ptype_manifest =
+                      Some
+                        core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[57,1372+36]..[57,1372+37])
+                          Ptyp_constr "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[57,1372+36]..[57,1372+37])
+                          []
+              ]
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[59,1414+0]..[62,1528+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[59,1414+10]..[62,1528+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[59,1414+10]..[62,1528+2])
+          Pexp_constant PConst_string ("\nmodule type PrintableComparable =\n  sig type t val print : t -> unit val compare : t -> t -> int end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[59,1414+12]..[62,1528+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[63,1532+0]..[66,1628+3])
+    Pstr_modtype "PrintableComparable" (testsuite/tests/typing-sigsubst/sigsubst.ml[63,1532+12]..[63,1532+31])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[63,1532+34]..[66,1628+3])
+        Pmty_signature
+        [
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[64,1570+2]..[64,1570+19])
+            Psig_include
+            module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[64,1570+10]..[64,1570+19])
+              Pmty_ident "Printable" (testsuite/tests/typing-sigsubst/sigsubst.ml[64,1570+10]..[64,1570+19])
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[65,1590+2]..[65,1590+37])
+            Psig_include
+            module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[65,1590+10]..[65,1590+37])
+              Pmty_with
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[65,1590+10]..[65,1590+20])
+                Pmty_ident "Comparable" (testsuite/tests/typing-sigsubst/sigsubst.ml[65,1590+10]..[65,1590+20])
+              [
+                Pwith_typesubst "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[65,1590+31]..[65,1590+32])
+                  type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[65,1590+31]..[65,1590+32]) (testsuite/tests/typing-sigsubst/sigsubst.ml[65,1590+26]..[65,1590+37])
+                    ptype_params =
+                      []
+                    ptype_cstrs =
+                      []
+                    ptype_kind =
+                      Ptype_abstract
+                    ptype_private = Public
+                    ptype_manifest =
+                      Some
+                        core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[65,1590+36]..[65,1590+37])
+                          Ptyp_constr "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[65,1590+36]..[65,1590+37])
+                          []
+              ]
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[67,1632+0]..[70,1746+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[67,1632+10]..[70,1746+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[67,1632+10]..[70,1746+2])
+          Pexp_constant PConst_string ("\nmodule type PrintableComparable =\n  sig type t val print : t -> unit val compare : t -> t -> int end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[67,1632+12]..[70,1746+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[71,1750+0]..[71,1750+57])
+    Pstr_modtype "ComparableInt" (testsuite/tests/typing-sigsubst/sigsubst.ml[71,1750+12]..[71,1750+25])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[71,1750+28]..[71,1750+57])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[71,1750+28]..[71,1750+38])
+          Pmty_ident "Comparable" (testsuite/tests/typing-sigsubst/sigsubst.ml[71,1750+28]..[71,1750+38])
+        [
+          Pwith_typesubst "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[71,1750+49]..[71,1750+50])
+            type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[71,1750+49]..[71,1750+50]) (testsuite/tests/typing-sigsubst/sigsubst.ml[71,1750+44]..[71,1750+57])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[71,1750+54]..[71,1750+57])
+                    Ptyp_constr "int" (testsuite/tests/typing-sigsubst/sigsubst.ml[71,1750+54]..[71,1750+57])
+                    []
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[72,1808+0]..[74,1889+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[72,1808+10]..[74,1889+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[72,1808+10]..[74,1889+2])
+          Pexp_constant PConst_string ("\nmodule type ComparableInt = sig val compare : int -> int -> int end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[72,1808+12]..[74,1889+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[75,1893+0]..[75,1893+45])
+    Pstr_modtype "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[75,1893+12]..[75,1893+13])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[75,1893+16]..[75,1893+45])
+        Pmty_signature
+        [
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[75,1893+20]..[75,1893+26])
+            Psig_type Rec
+            [
+              type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[75,1893+25]..[75,1893+26]) (testsuite/tests/typing-sigsubst/sigsubst.ml[75,1893+20]..[75,1893+26])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[75,1893+27]..[75,1893+41])
+            Psig_value
+            value_description "f" (testsuite/tests/typing-sigsubst/sigsubst.ml[75,1893+31]..[75,1893+32]) (testsuite/tests/typing-sigsubst/sigsubst.ml[75,1893+27]..[75,1893+41])
+              core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[75,1893+35]..[75,1893+41])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[75,1893+35]..[75,1893+36])
+                  Ptyp_constr "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[75,1893+35]..[75,1893+36])
+                  []
+                core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[75,1893+40]..[75,1893+41])
+                  Ptyp_constr "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[75,1893+40]..[75,1893+41])
+                  []
+              []
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[76,1939+0]..[78,1998+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[76,1939+10]..[78,1998+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[76,1939+10]..[78,1998+2])
+          Pexp_constant PConst_string ("\nmodule type S = sig type t val f : t -> t end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[76,1939+12]..[78,1998+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[79,2002+0]..[79,2002+37])
+    Pstr_modtype "S'" (testsuite/tests/typing-sigsubst/sigsubst.ml[79,2002+12]..[79,2002+14])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[79,2002+17]..[79,2002+37])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[79,2002+17]..[79,2002+18])
+          Pmty_ident "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[79,2002+17]..[79,2002+18])
+        [
+          Pwith_typesubst "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[79,2002+29]..[79,2002+30])
+            type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[79,2002+29]..[79,2002+30]) (testsuite/tests/typing-sigsubst/sigsubst.ml[79,2002+24]..[79,2002+37])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[79,2002+34]..[79,2002+37])
+                    Ptyp_constr "int" (testsuite/tests/typing-sigsubst/sigsubst.ml[79,2002+34]..[79,2002+37])
+                    []
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[80,2040+0]..[82,2097+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[80,2040+10]..[82,2097+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[80,2040+10]..[82,2097+2])
+          Pexp_constant PConst_string ("\nmodule type S' = sig val f : int -> int end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[80,2040+12]..[82,2097+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+0]..[84,2102+70])
+    Pstr_modtype "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+12]..[84,2102+13])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+16]..[84,2102+70])
+        Pmty_signature
+        [
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+20]..[84,2102+29])
+            Psig_type Rec
+            [
+              type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+28]..[84,2102+29]) (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+20]..[84,2102+29])
+                ptype_params =
+                  [
+                    core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+25]..[84,2102+27])
+                      Ptyp_var a
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+30]..[84,2102+66])
+            Psig_value
+            value_description "map" (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+34]..[84,2102+37]) (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+30]..[84,2102+66])
+              core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+40]..[84,2102+66])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+41]..[84,2102+49])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+41]..[84,2102+43])
+                    Ptyp_var a
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+47]..[84,2102+49])
+                    Ptyp_var b
+                core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+54]..[84,2102+66])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+54]..[84,2102+58])
+                    Ptyp_constr "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+57]..[84,2102+58])
+                    [
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+54]..[84,2102+56])
+                        Ptyp_var a
+                    ]
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+62]..[84,2102+66])
+                    Ptyp_constr "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+65]..[84,2102+66])
+                    [
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[84,2102+62]..[84,2102+64])
+                        Ptyp_var b
+                    ]
+              []
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[85,2173+0]..[85,2173+44])
+    Pstr_modtype "S1" (testsuite/tests/typing-sigsubst/sigsubst.ml[85,2173+12]..[85,2173+14])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[85,2173+17]..[85,2173+44])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[85,2173+17]..[85,2173+18])
+          Pmty_ident "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[85,2173+17]..[85,2173+18])
+        [
+          Pwith_typesubst "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[85,2173+32]..[85,2173+33])
+            type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[85,2173+32]..[85,2173+33]) (testsuite/tests/typing-sigsubst/sigsubst.ml[85,2173+24]..[85,2173+44])
+              ptype_params =
+                [
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[85,2173+29]..[85,2173+31])
+                    Ptyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[85,2173+37]..[85,2173+44])
+                    Ptyp_constr "list" (testsuite/tests/typing-sigsubst/sigsubst.ml[85,2173+40]..[85,2173+44])
+                    [
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[85,2173+37]..[85,2173+39])
+                        Ptyp_var a
+                    ]
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[86,2218+0]..[89,2370+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[86,2218+10]..[89,2370+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[86,2218+10]..[89,2370+2])
+          Pexp_constant PConst_string ("\nmodule type S = sig type 'a t val map : ('a -> 'b) -> 'a t -> 'b t end\nmodule type S1 = sig val map : ('a -> 'b) -> 'a list -> 'b list end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[86,2218+12]..[89,2370+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[90,2374+0]..[90,2374+55])
+    Pstr_modtype "S2" (testsuite/tests/typing-sigsubst/sigsubst.ml[90,2374+12]..[90,2374+14])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[90,2374+17]..[90,2374+55])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[90,2374+17]..[90,2374+18])
+          Pmty_ident "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[90,2374+17]..[90,2374+18])
+        [
+          Pwith_typesubst "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[90,2374+32]..[90,2374+33])
+            type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[90,2374+32]..[90,2374+33]) (testsuite/tests/typing-sigsubst/sigsubst.ml[90,2374+24]..[90,2374+55])
+              ptype_params =
+                [
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[90,2374+29]..[90,2374+31])
+                    Ptyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[90,2374+37]..[90,2374+55])
+                    Ptyp_constr "list" (testsuite/tests/typing-sigsubst/sigsubst.ml[90,2374+51]..[90,2374+55])
+                    [
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[90,2374+38]..[90,2374+49])
+                        Ptyp_tuple
+                        [
+                          core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[90,2374+38]..[90,2374+44])
+                            Ptyp_constr "string" (testsuite/tests/typing-sigsubst/sigsubst.ml[90,2374+38]..[90,2374+44])
+                            []
+                          core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[90,2374+47]..[90,2374+49])
+                            Ptyp_var a
+                        ]
+                    ]
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[91,2430+0]..[94,2535+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[91,2430+10]..[94,2535+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[91,2430+10]..[94,2535+2])
+          Pexp_constant PConst_string ("\nmodule type S2 =\n  sig val map : ('a -> 'b) -> (string * 'a) list -> (string * 'b) list end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[91,2430+12]..[94,2535+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[95,2539+0]..[95,2539+39])
+    Pstr_modtype "S3" (testsuite/tests/typing-sigsubst/sigsubst.ml[95,2539+12]..[95,2539+14])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[95,2539+17]..[95,2539+39])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[95,2539+17]..[95,2539+18])
+          Pmty_ident "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[95,2539+17]..[95,2539+18])
+        [
+          Pwith_typesubst "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[95,2539+31]..[95,2539+32])
+            type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[95,2539+31]..[95,2539+32]) (testsuite/tests/typing-sigsubst/sigsubst.ml[95,2539+24]..[95,2539+39])
+              ptype_params =
+                [
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[95,2539+29]..[95,2539+30])
+                    Ptyp_any
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[95,2539+36]..[95,2539+39])
+                    Ptyp_constr "int" (testsuite/tests/typing-sigsubst/sigsubst.ml[95,2539+36]..[95,2539+39])
+                    []
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[96,2579+0]..[98,2652+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[96,2579+10]..[98,2652+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[96,2579+10]..[98,2652+2])
+          Pexp_constant PConst_string ("\nmodule type S3 = sig val map : ('a -> 'b) -> int -> int end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[96,2579+12]..[98,2652+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[101,2658+0]..[102,2674+69])
+    Pstr_modtype "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[101,2658+12]..[101,2658+13])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[102,2674+2]..[102,2674+69])
+        Pmty_signature
+        [
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[102,2674+6]..[102,2674+42])
+            Psig_module "T" (testsuite/tests/typing-sigsubst/sigsubst.ml[102,2674+13]..[102,2674+14])
+            module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[102,2674+17]..[102,2674+42])
+              Pmty_signature
+              [
+                signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[102,2674+21]..[102,2674+29])
+                  Psig_type Rec
+                  [
+                    type_declaration "exp" (testsuite/tests/typing-sigsubst/sigsubst.ml[102,2674+26]..[102,2674+29]) (testsuite/tests/typing-sigsubst/sigsubst.ml[102,2674+21]..[102,2674+29])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[102,2674+30]..[102,2674+38])
+                  Psig_type Rec
+                  [
+                    type_declaration "arg" (testsuite/tests/typing-sigsubst/sigsubst.ml[102,2674+35]..[102,2674+38]) (testsuite/tests/typing-sigsubst/sigsubst.ml[102,2674+30]..[102,2674+38])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+              ]
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[102,2674+43]..[102,2674+65])
+            Psig_value
+            value_description "f" (testsuite/tests/typing-sigsubst/sigsubst.ml[102,2674+47]..[102,2674+48]) (testsuite/tests/typing-sigsubst/sigsubst.ml[102,2674+43]..[102,2674+65])
+              core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[102,2674+51]..[102,2674+65])
+                Ptyp_arrow
+                Nolabel
+                core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[102,2674+51]..[102,2674+56])
+                  Ptyp_constr "T.exp" (testsuite/tests/typing-sigsubst/sigsubst.ml[102,2674+51]..[102,2674+56])
+                  []
+                core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[102,2674+60]..[102,2674+65])
+                  Ptyp_constr "T.arg" (testsuite/tests/typing-sigsubst/sigsubst.ml[102,2674+60]..[102,2674+65])
+                  []
+              []
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[103,2744+0]..[103,2744+54])
+    Pstr_module
+    "M" (testsuite/tests/typing-sigsubst/sigsubst.ml[103,2744+7]..[103,2744+8])
+      module_expr (testsuite/tests/typing-sigsubst/sigsubst.ml[103,2744+11]..[103,2744+54])
+        Pmod_structure
+        [
+          structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[103,2744+18]..[103,2744+35])
+            Pstr_type Rec
+            [
+              type_declaration "exp" (testsuite/tests/typing-sigsubst/sigsubst.ml[103,2744+23]..[103,2744+26]) (testsuite/tests/typing-sigsubst/sigsubst.ml[103,2744+18]..[103,2744+35])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[103,2744+29]..[103,2744+35])
+                      Ptyp_constr "string" (testsuite/tests/typing-sigsubst/sigsubst.ml[103,2744+29]..[103,2744+35])
+                      []
+            ]
+          structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[103,2744+36]..[103,2744+50])
+            Pstr_type Rec
+            [
+              type_declaration "arg" (testsuite/tests/typing-sigsubst/sigsubst.ml[103,2744+41]..[103,2744+44]) (testsuite/tests/typing-sigsubst/sigsubst.ml[103,2744+36]..[103,2744+50])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[103,2744+47]..[103,2744+50])
+                      Ptyp_constr "int" (testsuite/tests/typing-sigsubst/sigsubst.ml[103,2744+47]..[103,2744+50])
+                      []
+            ]
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[104,2799+0]..[104,2799+37])
+    Pstr_modtype "S'" (testsuite/tests/typing-sigsubst/sigsubst.ml[104,2799+12]..[104,2799+14])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[104,2799+17]..[104,2799+37])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[104,2799+17]..[104,2799+18])
+          Pmty_ident "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[104,2799+17]..[104,2799+18])
+        [
+          Pwith_modsubst "T" (testsuite/tests/typing-sigsubst/sigsubst.ml[104,2799+31]..[104,2799+32]) = "M" (testsuite/tests/typing-sigsubst/sigsubst.ml[104,2799+36]..[104,2799+37])
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[105,2837+0]..[110,3036+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[105,2837+10]..[110,3036+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[105,2837+10]..[110,3036+2])
+          Pexp_constant PConst_string ("\nmodule type S =\n  sig module T : sig type exp type arg end val f : T.exp -> T.arg end\nmodule M : sig type exp = string type arg = int end\nmodule type S' = sig val f : M.exp -> M.arg end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[105,2837+12]..[110,3036+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[113,3042+0]..[113,3042+56])
+    Pstr_modtype "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[113,3042+12]..[113,3042+13])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[113,3042+16]..[113,3042+56])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[113,3042+16]..[113,3042+33])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[113,3042+20]..[113,3042+29])
+              Psig_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[113,3042+28]..[113,3042+29]) (testsuite/tests/typing-sigsubst/sigsubst.ml[113,3042+20]..[113,3042+29])
+                  ptype_params =
+                    [
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[113,3042+25]..[113,3042+27])
+                        Ptyp_var a
+                    ]
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+        [
+          Pwith_typesubst "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[113,3042+47]..[113,3042+48])
+            type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[113,3042+47]..[113,3042+48]) (testsuite/tests/typing-sigsubst/sigsubst.ml[113,3042+39]..[113,3042+56])
+              ptype_params =
+                [
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[113,3042+44]..[113,3042+46])
+                    Ptyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[113,3042+52]..[113,3042+56])
+                    Ptyp_constr "unit" (testsuite/tests/typing-sigsubst/sigsubst.ml[113,3042+52]..[113,3042+56])
+                    []
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[114,3099+0]..[116,3136+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[114,3099+10]..[116,3136+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[114,3099+10]..[116,3136+2])
+          Pexp_constant PConst_string ("\nmodule type S = sig end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[114,3099+12]..[116,3136+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[118,3141+0]..[121,3207+27])
+    Pstr_modtype "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[118,3141+12]..[118,3141+13])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[118,3141+16]..[121,3207+27])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[118,3141+16]..[121,3207+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[119,3161+2]..[119,3161+19])
+              Psig_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[119,3161+7]..[119,3161+8]) (testsuite/tests/typing-sigsubst/sigsubst.ml[119,3161+2]..[119,3161+19])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    Some
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[119,3161+11]..[119,3161+19])
+                        Ptyp_variant closed=Closed
+                        [
+                          Rtag "Foo" true
+                            []
+                        ]
+                        None
+              ]
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[120,3181+2]..[120,3181+25])
+              Psig_type Rec
+              [
+                type_declaration "s" (testsuite/tests/typing-sigsubst/sigsubst.ml[120,3181+7]..[120,3181+8]) (testsuite/tests/typing-sigsubst/sigsubst.ml[120,3181+2]..[120,3181+25])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Private
+                  ptype_manifest =
+                    Some
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[120,3181+19]..[120,3181+25])
+                        Ptyp_variant closed=Closed
+                        [
+                          Rinherit
+                            core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[120,3181+22]..[120,3181+23])
+                              Ptyp_constr "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[120,3181+22]..[120,3181+23])
+                              []
+                        ]
+                        Some
+                          []
+              ]
+          ]
+        [
+          Pwith_typesubst "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[121,3207+14]..[121,3207+15])
+            type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[121,3207+14]..[121,3207+15]) (testsuite/tests/typing-sigsubst/sigsubst.ml[121,3207+9]..[121,3207+27])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[121,3207+19]..[121,3207+27])
+                    Ptyp_variant closed=Closed
+                    [
+                      Rtag "Foo" true
+                        []
+                    ]
+                    None
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[122,3235+0]..[124,3299+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[122,3235+10]..[124,3299+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[122,3235+10]..[124,3299+2])
+          Pexp_constant PConst_string ("\nmodule type S = sig type s = private [< `Foo ] end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[122,3235+12]..[124,3299+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[126,3304+0]..[129,3352+22])
+    Pstr_modtype "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[126,3304+12]..[126,3304+13])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[126,3304+16]..[129,3352+22])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[126,3304+16]..[129,3352+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[127,3324+2]..[127,3324+13])
+              Psig_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[127,3324+7]..[127,3324+8]) (testsuite/tests/typing-sigsubst/sigsubst.ml[127,3324+2]..[127,3324+13])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_open
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[128,3338+2]..[128,3338+13])
+              Psig_typext
+              type_extension
+                ptyext_path = "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[128,3338+7]..[128,3338+8])
+                ptyext_params =
+                  []
+                ptyext_constructors =
+                  [
+                    extension_constructor (testsuite/tests/typing-sigsubst/sigsubst.ml[128,3338+12]..[128,3338+13])
+                      pext_name = "A"
+                      pext_kind =
+                        Pext_decl
+                          []
+                          None
+                  ]
+                ptyext_private = Public
+          ]
+        [
+          Pwith_typesubst "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[129,3352+14]..[129,3352+15])
+            type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[129,3352+14]..[129,3352+15]) (testsuite/tests/typing-sigsubst/sigsubst.ml[129,3352+9]..[129,3352+22])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[129,3352+19]..[129,3352+22])
+                    Ptyp_constr "exn" (testsuite/tests/typing-sigsubst/sigsubst.ml[129,3352+19]..[129,3352+22])
+                    []
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[130,3375+0]..[132,3426+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[130,3375+10]..[132,3426+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[130,3375+10]..[132,3426+2])
+          Pexp_constant PConst_string ("\nmodule type S = sig type exn += A end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[130,3375+12]..[132,3426+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[135,3496+0]..[135,3496+33])
+    Pstr_type Rec
+    [
+      type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[135,3496+8]..[135,3496+9]) (testsuite/tests/typing-sigsubst/sigsubst.ml[135,3496+0]..[135,3496+33])
+        ptype_params =
+          [
+            core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[135,3496+5]..[135,3496+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          [
+            <constraint> (testsuite/tests/typing-sigsubst/sigsubst.ml[135,3496+21]..[135,3496+33])
+              core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[135,3496+21]..[135,3496+23])
+                Ptyp_var a
+              core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[135,3496+26]..[135,3496+33])
+                Ptyp_constr "list" (testsuite/tests/typing-sigsubst/sigsubst.ml[135,3496+29]..[135,3496+33])
+                [
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[135,3496+26]..[135,3496+28])
+                    Ptyp_var b
+                ]
+          ]
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[136,3530+0]..[140,3638+27])
+    Pstr_modtype "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[136,3530+12]..[136,3530+13])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[136,3530+16]..[140,3638+27])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[136,3530+16]..[140,3638+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[137,3550+2]..[137,3550+36])
+              Psig_type Rec
+              [
+                type_declaration "t2" (testsuite/tests/typing-sigsubst/sigsubst.ml[137,3550+10]..[137,3550+12]) (testsuite/tests/typing-sigsubst/sigsubst.ml[137,3550+2]..[137,3550+36])
+                  ptype_params =
+                    [
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[137,3550+7]..[137,3550+9])
+                        Ptyp_var a
+                    ]
+                  ptype_cstrs =
+                    [
+                      <constraint> (testsuite/tests/typing-sigsubst/sigsubst.ml[137,3550+24]..[137,3550+36])
+                        core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[137,3550+24]..[137,3550+26])
+                          Ptyp_var a
+                        core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[137,3550+29]..[137,3550+36])
+                          Ptyp_constr "list" (testsuite/tests/typing-sigsubst/sigsubst.ml[137,3550+32]..[137,3550+36])
+                          [
+                            core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[137,3550+29]..[137,3550+31])
+                              Ptyp_var b
+                          ]
+                    ]
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[138,3587+2]..[138,3587+26])
+              Psig_type Rec
+              [
+                type_declaration "mylist" (testsuite/tests/typing-sigsubst/sigsubst.ml[138,3587+10]..[138,3587+16]) (testsuite/tests/typing-sigsubst/sigsubst.ml[138,3587+2]..[138,3587+26])
+                  ptype_params =
+                    [
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[138,3587+7]..[138,3587+9])
+                        Ptyp_var a
+                    ]
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    Some
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[138,3587+19]..[138,3587+26])
+                        Ptyp_constr "list" (testsuite/tests/typing-sigsubst/sigsubst.ml[138,3587+22]..[138,3587+26])
+                        [
+                          core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[138,3587+19]..[138,3587+21])
+                            Ptyp_var a
+                        ]
+              ]
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[139,3614+2]..[139,3614+23])
+              Psig_value
+              value_description "x" (testsuite/tests/typing-sigsubst/sigsubst.ml[139,3614+6]..[139,3614+7]) (testsuite/tests/typing-sigsubst/sigsubst.ml[139,3614+2]..[139,3614+23])
+                core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[139,3614+10]..[139,3614+23])
+                  Ptyp_constr "t2" (testsuite/tests/typing-sigsubst/sigsubst.ml[139,3614+21]..[139,3614+23])
+                  [
+                    core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[139,3614+10]..[139,3614+20])
+                      Ptyp_constr "mylist" (testsuite/tests/typing-sigsubst/sigsubst.ml[139,3614+14]..[139,3614+20])
+                      [
+                        core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[139,3614+10]..[139,3614+13])
+                          Ptyp_constr "int" (testsuite/tests/typing-sigsubst/sigsubst.ml[139,3614+10]..[139,3614+13])
+                          []
+                      ]
+                  ]
+                []
+          ]
+        [
+          Pwith_typesubst "t2" (testsuite/tests/typing-sigsubst/sigsubst.ml[140,3638+17]..[140,3638+19])
+            type_declaration "t2" (testsuite/tests/typing-sigsubst/sigsubst.ml[140,3638+17]..[140,3638+19]) (testsuite/tests/typing-sigsubst/sigsubst.ml[140,3638+9]..[140,3638+27])
+              ptype_params =
+                [
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[140,3638+14]..[140,3638+16])
+                    Ptyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[140,3638+23]..[140,3638+27])
+                    Ptyp_constr "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[140,3638+26]..[140,3638+27])
+                    [
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[140,3638+23]..[140,3638+25])
+                        Ptyp_var a
+                    ]
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[141,3666+0]..[144,3783+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[141,3666+10]..[144,3783+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[141,3666+10]..[144,3783+2])
+          Pexp_constant PConst_string ("\ntype 'a t constraint 'a = 'b list\nmodule type S = sig type 'a mylist = 'a list val x : int mylist t end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[141,3666+12]..[144,3783+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[147,3845+0]..[147,3845+33])
+    Pstr_type Rec
+    [
+      type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[147,3845+8]..[147,3845+9]) (testsuite/tests/typing-sigsubst/sigsubst.ml[147,3845+0]..[147,3845+33])
+        ptype_params =
+          [
+            core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[147,3845+5]..[147,3845+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          [
+            <constraint> (testsuite/tests/typing-sigsubst/sigsubst.ml[147,3845+21]..[147,3845+33])
+              core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[147,3845+21]..[147,3845+23])
+                Ptyp_var a
+              core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[147,3845+26]..[147,3845+33])
+                Ptyp_constr "list" (testsuite/tests/typing-sigsubst/sigsubst.ml[147,3845+29]..[147,3845+33])
+                [
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[147,3845+26]..[147,3845+28])
+                    Ptyp_var b
+                ]
+          ]
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[148,3879+0]..[152,3987+34])
+    Pstr_modtype "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[148,3879+12]..[148,3879+13])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[148,3879+16]..[152,3987+34])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[148,3879+16]..[152,3987+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[149,3899+2]..[149,3899+36])
+              Psig_type Rec
+              [
+                type_declaration "t2" (testsuite/tests/typing-sigsubst/sigsubst.ml[149,3899+10]..[149,3899+12]) (testsuite/tests/typing-sigsubst/sigsubst.ml[149,3899+2]..[149,3899+36])
+                  ptype_params =
+                    [
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[149,3899+7]..[149,3899+9])
+                        Ptyp_var a
+                    ]
+                  ptype_cstrs =
+                    [
+                      <constraint> (testsuite/tests/typing-sigsubst/sigsubst.ml[149,3899+24]..[149,3899+36])
+                        core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[149,3899+24]..[149,3899+26])
+                          Ptyp_var a
+                        core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[149,3899+29]..[149,3899+36])
+                          Ptyp_constr "list" (testsuite/tests/typing-sigsubst/sigsubst.ml[149,3899+32]..[149,3899+36])
+                          [
+                            core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[149,3899+29]..[149,3899+31])
+                              Ptyp_var b
+                          ]
+                    ]
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[150,3936+2]..[150,3936+26])
+              Psig_type Rec
+              [
+                type_declaration "mylist" (testsuite/tests/typing-sigsubst/sigsubst.ml[150,3936+10]..[150,3936+16]) (testsuite/tests/typing-sigsubst/sigsubst.ml[150,3936+2]..[150,3936+26])
+                  ptype_params =
+                    [
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[150,3936+7]..[150,3936+9])
+                        Ptyp_var a
+                    ]
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    Some
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[150,3936+19]..[150,3936+26])
+                        Ptyp_constr "list" (testsuite/tests/typing-sigsubst/sigsubst.ml[150,3936+22]..[150,3936+26])
+                        [
+                          core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[150,3936+19]..[150,3936+21])
+                            Ptyp_var a
+                        ]
+              ]
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[151,3963+2]..[151,3963+23])
+              Psig_value
+              value_description "x" (testsuite/tests/typing-sigsubst/sigsubst.ml[151,3963+6]..[151,3963+7]) (testsuite/tests/typing-sigsubst/sigsubst.ml[151,3963+2]..[151,3963+23])
+                core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[151,3963+10]..[151,3963+23])
+                  Ptyp_constr "t2" (testsuite/tests/typing-sigsubst/sigsubst.ml[151,3963+21]..[151,3963+23])
+                  [
+                    core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[151,3963+10]..[151,3963+20])
+                      Ptyp_constr "mylist" (testsuite/tests/typing-sigsubst/sigsubst.ml[151,3963+14]..[151,3963+20])
+                      [
+                        core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[151,3963+10]..[151,3963+13])
+                          Ptyp_constr "int" (testsuite/tests/typing-sigsubst/sigsubst.ml[151,3963+10]..[151,3963+13])
+                          []
+                      ]
+                  ]
+                []
+          ]
+        [
+          Pwith_typesubst "t2" (testsuite/tests/typing-sigsubst/sigsubst.ml[152,3987+17]..[152,3987+19])
+            type_declaration "t2" (testsuite/tests/typing-sigsubst/sigsubst.ml[152,3987+17]..[152,3987+19]) (testsuite/tests/typing-sigsubst/sigsubst.ml[152,3987+9]..[152,3987+34])
+              ptype_params =
+                [
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[152,3987+14]..[152,3987+16])
+                    Ptyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[152,3987+23]..[152,3987+34])
+                    Ptyp_tuple
+                    [
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[152,3987+23]..[152,3987+27])
+                        Ptyp_constr "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[152,3987+26]..[152,3987+27])
+                        [
+                          core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[152,3987+23]..[152,3987+25])
+                            Ptyp_var a
+                        ]
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[152,3987+30]..[152,3987+34])
+                        Ptyp_constr "bool" (testsuite/tests/typing-sigsubst/sigsubst.ml[152,3987+30]..[152,3987+34])
+                        []
+                    ]
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[153,4022+0]..[164,4444+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[153,4022+10]..[164,4444+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[153,4022+10]..[164,4444+2])
+          Pexp_constant PConst_string ("\ntype 'a t constraint 'a = 'b list\nLines 2-6, characters 16-34:\n2 | ................sig\n3 |   type 'a t2 constraint 'a = 'b list\n4 |   type 'a mylist = 'a list\n5 |   val x : int mylist t2\n6 | end with type 'a t2 := 'a t * bool\nError: Destructive substitutions are not supported for constrained\n       types (other than when replacing a type constructor with\n       a type constructor with the same arguments).\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[153,4022+12]..[164,4444+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[168,4562+0]..[174,4744+24])
+    Pstr_modtype "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[168,4562+12]..[168,4562+13])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[168,4562+16]..[174,4744+24])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[168,4562+16]..[174,4744+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[169,4582+2]..[169,4582+34])
+              Psig_module "M1" (testsuite/tests/typing-sigsubst/sigsubst.ml[169,4582+9]..[169,4582+11])
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[169,4582+14]..[169,4582+34])
+                Pmty_signature
+                [
+                  signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[169,4582+18]..[169,4582+30])
+                    Psig_type Rec
+                    [
+                      type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[169,4582+23]..[169,4582+24]) (testsuite/tests/typing-sigsubst/sigsubst.ml[169,4582+18]..[169,4582+30])
+                        ptype_params =
+                          []
+                        ptype_cstrs =
+                          []
+                        ptype_kind =
+                          Ptype_abstract
+                        ptype_private = Public
+                        ptype_manifest =
+                          Some
+                            core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[169,4582+27]..[169,4582+30])
+                              Ptyp_constr "int" (testsuite/tests/typing-sigsubst/sigsubst.ml[169,4582+27]..[169,4582+30])
+                              []
+                    ]
+                ]
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[170,4617+2]..[170,4617+16])
+              Psig_module "M2" (testsuite/tests/typing-sigsubst/sigsubst.ml[170,4617+9]..[170,4617+11])
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[170,4617+14]..[170,4617+16])
+                Pmty_alias "M1" (testsuite/tests/typing-sigsubst/sigsubst.ml[170,4617+14]..[170,4617+16])
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[171,4634+2]..[171,4634+35])
+              Psig_module "M3" (testsuite/tests/typing-sigsubst/sigsubst.ml[171,4634+9]..[171,4634+11])
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[171,4634+14]..[171,4634+35])
+                Pmty_signature
+                [
+                  signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[171,4634+18]..[171,4634+31])
+                    Psig_module "M" (testsuite/tests/typing-sigsubst/sigsubst.ml[171,4634+25]..[171,4634+26])
+                    module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[171,4634+29]..[171,4634+31])
+                      Pmty_alias "M2" (testsuite/tests/typing-sigsubst/sigsubst.ml[171,4634+29]..[171,4634+31])
+                ]
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[172,4670+2]..[172,4670+54])
+              Psig_module "F" (testsuite/tests/typing-sigsubst/sigsubst.ml[172,4670+9]..[172,4670+10])
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[172,4670+10]..[172,4670+54])
+                Pmty_functor "X" (testsuite/tests/typing-sigsubst/sigsubst.ml[172,4670+11]..[172,4670+12])
+                module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[172,4670+15]..[172,4670+36])
+                  Pmty_signature
+                  [
+                    signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[172,4670+19]..[172,4670+32])
+                      Psig_module "M" (testsuite/tests/typing-sigsubst/sigsubst.ml[172,4670+26]..[172,4670+27])
+                      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[172,4670+30]..[172,4670+32])
+                        Pmty_alias "M1" (testsuite/tests/typing-sigsubst/sigsubst.ml[172,4670+30]..[172,4670+32])
+                  ]
+                module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[172,4670+40]..[172,4670+54])
+                  Pmty_signature
+                  [
+                    signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[172,4670+44]..[172,4670+50])
+                      Psig_type Rec
+                      [
+                        type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[172,4670+49]..[172,4670+50]) (testsuite/tests/typing-sigsubst/sigsubst.ml[172,4670+44]..[172,4670+50])
+                          ptype_params =
+                            []
+                          ptype_cstrs =
+                            []
+                          ptype_kind =
+                            Ptype_abstract
+                          ptype_private = Public
+                          ptype_manifest =
+                            None
+                      ]
+                  ]
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[173,4725+2]..[173,4725+18])
+              Psig_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[173,4725+7]..[173,4725+8]) (testsuite/tests/typing-sigsubst/sigsubst.ml[173,4725+2]..[173,4725+18])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    Some
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[173,4725+11]..[173,4725+18])
+                        Ptyp_constr "F(M3).t" (testsuite/tests/typing-sigsubst/sigsubst.ml[173,4725+11]..[173,4725+18])
+                        []
+              ]
+          ]
+        [
+          Pwith_type "M2.t" (testsuite/tests/typing-sigsubst/sigsubst.ml[174,4744+14]..[174,4744+18])
+            type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[174,4744+14]..[174,4744+18]) (testsuite/tests/typing-sigsubst/sigsubst.ml[174,4744+9]..[174,4744+24])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[174,4744+21]..[174,4744+24])
+                    Ptyp_constr "int" (testsuite/tests/typing-sigsubst/sigsubst.ml[174,4744+21]..[174,4744+24])
+                    []
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[175,4769+0]..[184,4994+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[175,4769+10]..[184,4994+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[175,4769+10]..[184,4994+2])
+          Pexp_constant PConst_string ("\nmodule type S =\n  sig\n    module M1 : sig type t = int end\n    module M2 = M1\n    module M3 : sig module M = M2 end\n    module F : functor (X : sig module M = M1 end) -> sig type t end\n    type t = F(M3).t\n  end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[175,4769+12]..[184,4994+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[186,4999+0]..[186,4999+35])
+    Pstr_type Rec
+    [
+      type_declaration "eq" (testsuite/tests/typing-sigsubst/sigsubst.ml[186,4999+12]..[186,4999+14]) (testsuite/tests/typing-sigsubst/sigsubst.ml[186,4999+0]..[186,4999+35])
+        ptype_params =
+          [
+            core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[186,4999+6]..[186,4999+7])
+              Ptyp_any
+            core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[186,4999+9]..[186,4999+10])
+              Ptyp_any
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (testsuite/tests/typing-sigsubst/sigsubst.ml[186,4999+17]..[186,4999+35])
+                "Refl" (testsuite/tests/typing-sigsubst/sigsubst.ml[186,4999+17]..[186,4999+21])
+                []
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[186,4999+24]..[186,4999+35])
+                    Ptyp_constr "eq" (testsuite/tests/typing-sigsubst/sigsubst.ml[186,4999+33]..[186,4999+35])
+                    [
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[186,4999+25]..[186,4999+27])
+                        Ptyp_var a
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[186,4999+29]..[186,4999+31])
+                        Ptyp_var a
+                    ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[188,5036+0]..[201,5465+3])
+    Pstr_module
+    "Equal" (testsuite/tests/typing-sigsubst/sigsubst.ml[188,5036+7]..[188,5036+12])
+      module_expr (testsuite/tests/typing-sigsubst/sigsubst.ml[188,5036+13]..[201,5465+3])
+        Pmod_functor "M" (testsuite/tests/typing-sigsubst/sigsubst.ml[188,5036+14]..[188,5036+15])
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[188,5036+18]..[188,5036+33])
+          Pmty_ident "Set.OrderedType" (testsuite/tests/typing-sigsubst/sigsubst.ml[188,5036+18]..[188,5036+33])
+        module_expr (testsuite/tests/typing-sigsubst/sigsubst.ml[188,5036+35]..[201,5465+3])
+          Pmod_functor "N" (testsuite/tests/typing-sigsubst/sigsubst.ml[188,5036+36]..[188,5036+37])
+          module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[188,5036+40]..[188,5036+73])
+            Pmty_with
+            module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[188,5036+40]..[188,5036+55])
+              Pmty_ident "Set.OrderedType" (testsuite/tests/typing-sigsubst/sigsubst.ml[188,5036+40]..[188,5036+55])
+            [
+              Pwith_type "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[188,5036+66]..[188,5036+67])
+                type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[188,5036+66]..[188,5036+67]) (testsuite/tests/typing-sigsubst/sigsubst.ml[188,5036+61]..[188,5036+73])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    Some
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[188,5036+70]..[188,5036+73])
+                        Ptyp_constr "M.t" (testsuite/tests/typing-sigsubst/sigsubst.ml[188,5036+70]..[188,5036+73])
+                        []
+            ]
+          module_expr (testsuite/tests/typing-sigsubst/sigsubst.ml[188,5036+75]..[201,5465+3])
+            Pmod_constraint
+            module_expr (testsuite/tests/typing-sigsubst/sigsubst.ml[190,5162+6]..[201,5465+3])
+              Pmod_structure
+              [
+                structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[191,5175+2]..[191,5175+52])
+                  Pstr_type Rec
+                  [
+                    type_declaration "meq" (testsuite/tests/typing-sigsubst/sigsubst.ml[191,5175+7]..[191,5175+10]) (testsuite/tests/typing-sigsubst/sigsubst.ml[191,5175+2]..[191,5175+52])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_variant
+                          [
+                            (testsuite/tests/typing-sigsubst/sigsubst.ml[191,5175+13]..[191,5175+52])
+                              "Eq" (testsuite/tests/typing-sigsubst/sigsubst.ml[191,5175+13]..[191,5175+15])
+                              [
+                                core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[191,5175+19]..[191,5175+52])
+                                  Ptyp_constr "eq" (testsuite/tests/typing-sigsubst/sigsubst.ml[191,5175+50]..[191,5175+52])
+                                  [
+                                    core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[191,5175+20]..[191,5175+33])
+                                      Ptyp_constr "Set.Make(M).t" (testsuite/tests/typing-sigsubst/sigsubst.ml[191,5175+20]..[191,5175+33])
+                                      []
+                                    core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[191,5175+35]..[191,5175+48])
+                                      Ptyp_constr "Set.Make(M).t" (testsuite/tests/typing-sigsubst/sigsubst.ml[191,5175+35]..[191,5175+48])
+                                      []
+                                  ]
+                              ]
+                              None
+                          ]
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[192,5228+2]..[195,5328+5])
+                  Pstr_modtype "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[192,5228+14]..[192,5228+15])
+                    module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[192,5228+18]..[195,5328+5])
+                      Pmty_signature
+                      [
+                        signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[193,5250+4]..[193,5250+16])
+                          Psig_module "N" (testsuite/tests/typing-sigsubst/sigsubst.ml[193,5250+11]..[193,5250+12])
+                          module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[193,5250+15]..[193,5250+16])
+                            Pmty_alias "M" (testsuite/tests/typing-sigsubst/sigsubst.ml[193,5250+15]..[193,5250+16])
+                        signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[194,5267+4]..[194,5267+60])
+                          Psig_type Rec
+                          [
+                            type_declaration "neq" (testsuite/tests/typing-sigsubst/sigsubst.ml[194,5267+9]..[194,5267+12]) (testsuite/tests/typing-sigsubst/sigsubst.ml[194,5267+4]..[194,5267+60])
+                              ptype_params =
+                                []
+                              ptype_cstrs =
+                                []
+                              ptype_kind =
+                                Ptype_variant
+                                  [
+                                    (testsuite/tests/typing-sigsubst/sigsubst.ml[194,5267+21]..[194,5267+60])
+                                      "Eq" (testsuite/tests/typing-sigsubst/sigsubst.ml[194,5267+21]..[194,5267+23])
+                                      [
+                                        core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[194,5267+27]..[194,5267+60])
+                                          Ptyp_constr "eq" (testsuite/tests/typing-sigsubst/sigsubst.ml[194,5267+58]..[194,5267+60])
+                                          [
+                                            core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[194,5267+28]..[194,5267+41])
+                                              Ptyp_constr "Set.Make(M).t" (testsuite/tests/typing-sigsubst/sigsubst.ml[194,5267+28]..[194,5267+41])
+                                              []
+                                            core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[194,5267+43]..[194,5267+56])
+                                              Ptyp_constr "Set.Make(N).t" (testsuite/tests/typing-sigsubst/sigsubst.ml[194,5267+43]..[194,5267+56])
+                                              []
+                                          ]
+                                      ]
+                                      None
+                                  ]
+                              ptype_private = Public
+                              ptype_manifest =
+                                Some
+                                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[194,5267+15]..[194,5267+18])
+                                    Ptyp_constr "meq" (testsuite/tests/typing-sigsubst/sigsubst.ml[194,5267+15]..[194,5267+18])
+                                    []
+                          ]
+                      ]
+                structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[196,5334+2]..[196,5334+58])
+                  Pstr_modtype "T" (testsuite/tests/typing-sigsubst/sigsubst.ml[196,5334+14]..[196,5334+15])
+                    module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[196,5334+18]..[196,5334+58])
+                      Pmty_with
+                      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[196,5334+18]..[196,5334+39])
+                        Pmty_with
+                        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[196,5334+18]..[196,5334+19])
+                          Pmty_ident "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[196,5334+18]..[196,5334+19])
+                        [
+                          Pwith_type "N.t" (testsuite/tests/typing-sigsubst/sigsubst.ml[196,5334+30]..[196,5334+33])
+                            type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[196,5334+30]..[196,5334+33]) (testsuite/tests/typing-sigsubst/sigsubst.ml[196,5334+25]..[196,5334+39])
+                              ptype_params =
+                                []
+                              ptype_cstrs =
+                                []
+                              ptype_kind =
+                                Ptype_abstract
+                              ptype_private = Public
+                              ptype_manifest =
+                                Some
+                                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[196,5334+36]..[196,5334+39])
+                                    Ptyp_constr "M.t" (testsuite/tests/typing-sigsubst/sigsubst.ml[196,5334+36]..[196,5334+39])
+                                    []
+                        ]
+                      [
+                        Pwith_modsubst "N" (testsuite/tests/typing-sigsubst/sigsubst.ml[196,5334+52]..[196,5334+53]) = "N" (testsuite/tests/typing-sigsubst/sigsubst.ml[196,5334+57]..[196,5334+58])
+                      ]
+                structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[197,5395+2]..[197,5395+22])
+                  Pstr_recmodule
+                  [
+                    "T" (testsuite/tests/typing-sigsubst/sigsubst.ml[197,5395+13]..[197,5395+14])
+                      module_expr (testsuite/tests/typing-sigsubst/sigsubst.ml[197,5395+15]..[197,5395+22])
+                        Pmod_constraint
+                        module_expr (testsuite/tests/typing-sigsubst/sigsubst.ml[197,5395+21]..[197,5395+22])
+                          Pmod_ident "T" (testsuite/tests/typing-sigsubst/sigsubst.ml[197,5395+21]..[197,5395+22])
+                        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[197,5395+17]..[197,5395+18])
+                          Pmty_ident "T" (testsuite/tests/typing-sigsubst/sigsubst.ml[197,5395+17]..[197,5395+18])
+                  ]
+                structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[198,5418+2]..[200,5458+6])
+                  Pstr_value Nonrec
+                  [
+                    <def>
+                      pattern (testsuite/tests/typing-sigsubst/sigsubst.ml[198,5418+6]..[198,5418+8])
+                        Ppat_var "eq" (testsuite/tests/typing-sigsubst/sigsubst.ml[198,5418+6]..[198,5418+8])
+                      expression (testsuite/tests/typing-sigsubst/sigsubst.ml[199,5429+4]..[200,5458+6])
+                        Pexp_let Nonrec
+                        [
+                          <def>
+                            pattern (testsuite/tests/typing-sigsubst/sigsubst.ml[199,5429+8]..[199,5429+15])
+                              Ppat_construct "T.Eq" (testsuite/tests/typing-sigsubst/sigsubst.ml[199,5429+8]..[199,5429+12])
+                              Some
+                                []
+                                pattern (testsuite/tests/typing-sigsubst/sigsubst.ml[199,5429+13]..[199,5429+15])
+                                  Ppat_var "eq" (testsuite/tests/typing-sigsubst/sigsubst.ml[199,5429+13]..[199,5429+15])
+                            expression (testsuite/tests/typing-sigsubst/sigsubst.ml[199,5429+18]..[199,5429+25])
+                              Pexp_construct "Eq" (testsuite/tests/typing-sigsubst/sigsubst.ml[199,5429+18]..[199,5429+20])
+                              Some
+                                expression (testsuite/tests/typing-sigsubst/sigsubst.ml[199,5429+21]..[199,5429+25])
+                                  Pexp_construct "Refl" (testsuite/tests/typing-sigsubst/sigsubst.ml[199,5429+21]..[199,5429+25])
+                                  None
+                        ]
+                        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[200,5458+4]..[200,5458+6])
+                          Pexp_ident "eq" (testsuite/tests/typing-sigsubst/sigsubst.ml[200,5458+4]..[200,5458+6])
+                  ]
+              ]
+            module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[188,5036+77]..[190,5162+3])
+              Pmty_signature
+              [
+                signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[189,5117+2]..[189,5117+44])
+                  Psig_value
+                  value_description "eq" (testsuite/tests/typing-sigsubst/sigsubst.ml[189,5117+6]..[189,5117+8]) (testsuite/tests/typing-sigsubst/sigsubst.ml[189,5117+2]..[189,5117+44])
+                    core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[189,5117+11]..[189,5117+44])
+                      Ptyp_constr "eq" (testsuite/tests/typing-sigsubst/sigsubst.ml[189,5117+42]..[189,5117+44])
+                      [
+                        core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[189,5117+12]..[189,5117+25])
+                          Ptyp_constr "Set.Make(M).t" (testsuite/tests/typing-sigsubst/sigsubst.ml[189,5117+12]..[189,5117+25])
+                          []
+                        core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[189,5117+27]..[189,5117+40])
+                          Ptyp_constr "Set.Make(N).t" (testsuite/tests/typing-sigsubst/sigsubst.ml[189,5117+27]..[189,5117+40])
+                          []
+                      ]
+                    []
+              ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[202,5471+0]..[213,5944+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[202,5471+10]..[213,5944+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[202,5471+10]..[213,5944+2])
+          Pexp_constant PConst_string ("\ntype (_, _) eq = Refl : ('a, 'a) eq\nLine 11, characters 18-58:\n11 |   module type T = S with type N.t = M.t with module N := N;;\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError: In this `with' constraint, the new definition of N\n       does not match its original definition in the constrained signature:\n       Modules do not match:\n         sig type t = M.t val compare : t -> t -> int end\n       is not included in\n         (module M)\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[202,5471+12]..[213,5944+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[217,6087+0]..[221,6223+26])
+    Pstr_modtype "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[217,6087+12]..[217,6087+13])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[217,6087+16]..[221,6223+26])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[217,6087+16]..[221,6223+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[218,6107+2]..[218,6107+37])
+              Psig_module "M" (testsuite/tests/typing-sigsubst/sigsubst.ml[218,6107+9]..[218,6107+10])
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[218,6107+13]..[218,6107+37])
+                Pmty_signature
+                [
+                  signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[218,6107+17]..[218,6107+23])
+                    Psig_type Rec
+                    [
+                      type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[218,6107+22]..[218,6107+23]) (testsuite/tests/typing-sigsubst/sigsubst.ml[218,6107+17]..[218,6107+23])
+                        ptype_params =
+                          []
+                        ptype_cstrs =
+                          []
+                        ptype_kind =
+                          Ptype_abstract
+                        ptype_private = Public
+                        ptype_manifest =
+                          None
+                    ]
+                  signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[218,6107+24]..[218,6107+33])
+                    Psig_value
+                    value_description "x" (testsuite/tests/typing-sigsubst/sigsubst.ml[218,6107+28]..[218,6107+29]) (testsuite/tests/typing-sigsubst/sigsubst.ml[218,6107+24]..[218,6107+33])
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[218,6107+32]..[218,6107+33])
+                        Ptyp_constr "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[218,6107+32]..[218,6107+33])
+                        []
+                      []
+                ]
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[219,6145+2]..[219,6145+13])
+              Psig_value
+              value_description "y" (testsuite/tests/typing-sigsubst/sigsubst.ml[219,6145+6]..[219,6145+7]) (testsuite/tests/typing-sigsubst/sigsubst.ml[219,6145+2]..[219,6145+13])
+                core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[219,6145+10]..[219,6145+13])
+                  Ptyp_constr "M.t" (testsuite/tests/typing-sigsubst/sigsubst.ml[219,6145+10]..[219,6145+13])
+                  []
+                []
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[220,6159+2]..[220,6159+63])
+              Psig_module "A" (testsuite/tests/typing-sigsubst/sigsubst.ml[220,6159+9]..[220,6159+10])
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[220,6159+13]..[220,6159+63])
+                Pmty_signature
+                [
+                  signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[220,6159+17]..[220,6159+59])
+                    Psig_module "M" (testsuite/tests/typing-sigsubst/sigsubst.ml[220,6159+24]..[220,6159+25])
+                    module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[220,6159+28]..[220,6159+59])
+                      Pmty_signature
+                      [
+                        signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[220,6159+32]..[220,6159+38])
+                          Psig_type Rec
+                          [
+                            type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[220,6159+37]..[220,6159+38]) (testsuite/tests/typing-sigsubst/sigsubst.ml[220,6159+32]..[220,6159+38])
+                              ptype_params =
+                                []
+                              ptype_cstrs =
+                                []
+                              ptype_kind =
+                                Ptype_abstract
+                              ptype_private = Public
+                              ptype_manifest =
+                                None
+                          ]
+                        signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[220,6159+39]..[220,6159+55])
+                          Psig_value
+                          value_description "z" (testsuite/tests/typing-sigsubst/sigsubst.ml[220,6159+43]..[220,6159+44]) (testsuite/tests/typing-sigsubst/sigsubst.ml[220,6159+39]..[220,6159+55])
+                            core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[220,6159+47]..[220,6159+55])
+                              Ptyp_arrow
+                              Nolabel
+                              core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[220,6159+47]..[220,6159+48])
+                                Ptyp_constr "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[220,6159+47]..[220,6159+48])
+                                []
+                              core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[220,6159+52]..[220,6159+55])
+                                Ptyp_constr "M.t" (testsuite/tests/typing-sigsubst/sigsubst.ml[220,6159+52]..[220,6159+55])
+                                []
+                            []
+                      ]
+                ]
+          ]
+        [
+          Pwith_typesubst "M.t" (testsuite/tests/typing-sigsubst/sigsubst.ml[221,6223+14]..[221,6223+17])
+            type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[221,6223+14]..[221,6223+17]) (testsuite/tests/typing-sigsubst/sigsubst.ml[221,6223+9]..[221,6223+26])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[221,6223+21]..[221,6223+26])
+                    Ptyp_constr "float" (testsuite/tests/typing-sigsubst/sigsubst.ml[221,6223+21]..[221,6223+26])
+                    []
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[222,6250+0]..[229,6414+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[222,6250+10]..[229,6414+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[222,6250+10]..[229,6414+2])
+          Pexp_constant PConst_string ("\nmodule type S =\n  sig\n    module M : sig val x : float end\n    val y : float\n    module A : sig module M : sig type t val z : t -> float end end\n  end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[222,6250+12]..[229,6414+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[235,6655+0]..[241,6792+65])
+    Pstr_modtype "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[235,6655+12]..[235,6655+13])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[235,6655+16]..[241,6792+65])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[235,6655+16]..[241,6792+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[236,6675+2]..[236,6675+50])
+              Psig_modtype "S1" (testsuite/tests/typing-sigsubst/sigsubst.ml[236,6675+14]..[236,6675+16])
+                module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[236,6675+19]..[236,6675+50])
+                  Pmty_signature
+                  [
+                    signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[236,6675+23]..[236,6675+29])
+                      Psig_type Rec
+                      [
+                        type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[236,6675+28]..[236,6675+29]) (testsuite/tests/typing-sigsubst/sigsubst.ml[236,6675+23]..[236,6675+29])
+                          ptype_params =
+                            []
+                          ptype_cstrs =
+                            []
+                          ptype_kind =
+                            Ptype_abstract
+                          ptype_private = Public
+                          ptype_manifest =
+                            None
+                      ]
+                    signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[236,6675+30]..[236,6675+36])
+                      Psig_type Rec
+                      [
+                        type_declaration "a" (testsuite/tests/typing-sigsubst/sigsubst.ml[236,6675+35]..[236,6675+36]) (testsuite/tests/typing-sigsubst/sigsubst.ml[236,6675+30]..[236,6675+36])
+                          ptype_params =
+                            []
+                          ptype_cstrs =
+                            []
+                          ptype_kind =
+                            Ptype_abstract
+                          ptype_private = Public
+                          ptype_manifest =
+                            None
+                      ]
+                    signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[236,6675+37]..[236,6675+46])
+                      Psig_value
+                      value_description "x" (testsuite/tests/typing-sigsubst/sigsubst.ml[236,6675+41]..[236,6675+42]) (testsuite/tests/typing-sigsubst/sigsubst.ml[236,6675+37]..[236,6675+46])
+                        core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[236,6675+45]..[236,6675+46])
+                          Ptyp_constr "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[236,6675+45]..[236,6675+46])
+                          []
+                        []
+                  ]
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[237,6726+2]..[237,6726+16])
+              Psig_module "M1" (testsuite/tests/typing-sigsubst/sigsubst.ml[237,6726+9]..[237,6726+11])
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[237,6726+14]..[237,6726+16])
+                Pmty_ident "S1" (testsuite/tests/typing-sigsubst/sigsubst.ml[237,6726+14]..[237,6726+16])
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[238,6743+2]..[238,6743+15])
+              Psig_type Rec
+              [
+                type_declaration "a" (testsuite/tests/typing-sigsubst/sigsubst.ml[238,6743+7]..[238,6743+8]) (testsuite/tests/typing-sigsubst/sigsubst.ml[238,6743+2]..[238,6743+15])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    Some
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[238,6743+11]..[238,6743+15])
+                        Ptyp_constr "M1.t" (testsuite/tests/typing-sigsubst/sigsubst.ml[238,6743+11]..[238,6743+15])
+                        []
+              ]
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[239,6759+2]..[239,6759+16])
+              Psig_module "M2" (testsuite/tests/typing-sigsubst/sigsubst.ml[239,6759+9]..[239,6759+11])
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[239,6759+14]..[239,6759+16])
+                Pmty_ident "S1" (testsuite/tests/typing-sigsubst/sigsubst.ml[239,6759+14]..[239,6759+16])
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[240,6776+2]..[240,6776+15])
+              Psig_type Rec
+              [
+                type_declaration "b" (testsuite/tests/typing-sigsubst/sigsubst.ml[240,6776+7]..[240,6776+8]) (testsuite/tests/typing-sigsubst/sigsubst.ml[240,6776+2]..[240,6776+15])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    Some
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[240,6776+11]..[240,6776+15])
+                        Ptyp_constr "M2.t" (testsuite/tests/typing-sigsubst/sigsubst.ml[240,6776+11]..[240,6776+15])
+                        []
+              ]
+          ]
+        [
+          Pwith_type "M1.a" (testsuite/tests/typing-sigsubst/sigsubst.ml[241,6792+14]..[241,6792+18])
+            type_declaration "a" (testsuite/tests/typing-sigsubst/sigsubst.ml[241,6792+14]..[241,6792+18]) (testsuite/tests/typing-sigsubst/sigsubst.ml[241,6792+9]..[241,6792+24])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[241,6792+21]..[241,6792+24])
+                    Ptyp_constr "int" (testsuite/tests/typing-sigsubst/sigsubst.ml[241,6792+21]..[241,6792+24])
+                    []
+          Pwith_type "M2.a" (testsuite/tests/typing-sigsubst/sigsubst.ml[241,6792+34]..[241,6792+38])
+            type_declaration "a" (testsuite/tests/typing-sigsubst/sigsubst.ml[241,6792+34]..[241,6792+38]) (testsuite/tests/typing-sigsubst/sigsubst.ml[241,6792+29]..[241,6792+44])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[241,6792+41]..[241,6792+44])
+                    Ptyp_constr "int" (testsuite/tests/typing-sigsubst/sigsubst.ml[241,6792+41]..[241,6792+44])
+                    []
+          Pwith_typesubst "M1.t" (testsuite/tests/typing-sigsubst/sigsubst.ml[241,6792+54]..[241,6792+58])
+            type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[241,6792+54]..[241,6792+58]) (testsuite/tests/typing-sigsubst/sigsubst.ml[241,6792+49]..[241,6792+65])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[241,6792+62]..[241,6792+65])
+                    Ptyp_constr "int" (testsuite/tests/typing-sigsubst/sigsubst.ml[241,6792+62]..[241,6792+65])
+                    []
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[242,6860+0]..[251,7092+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[242,6860+10]..[251,7092+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[242,6860+10]..[251,7092+2])
+          Pexp_constant PConst_string ("\nmodule type S =\n  sig\n    module type S1 = sig type t type a val x : t end\n    module M1 : sig type a = int val x : int end\n    type a = int\n    module M2 : sig type t type a = int val x : t end\n    type b = M2.t\n  end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[242,6860+12]..[251,7092+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[255,7144+0]..[258,7207+26])
+    Pstr_modtype "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[255,7144+12]..[255,7144+13])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[255,7144+16]..[258,7207+26])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[255,7144+16]..[258,7207+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[256,7164+2]..[256,7164+27])
+              Psig_module "M" (testsuite/tests/typing-sigsubst/sigsubst.ml[256,7164+9]..[256,7164+10])
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[256,7164+13]..[256,7164+27])
+                Pmty_signature
+                [
+                  signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[256,7164+17]..[256,7164+23])
+                    Psig_type Rec
+                    [
+                      type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[256,7164+22]..[256,7164+23]) (testsuite/tests/typing-sigsubst/sigsubst.ml[256,7164+17]..[256,7164+23])
+                        ptype_params =
+                          []
+                        ptype_cstrs =
+                          []
+                        ptype_kind =
+                          Ptype_abstract
+                        ptype_private = Public
+                        ptype_manifest =
+                          None
+                    ]
+                ]
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[257,7192+2]..[257,7192+14])
+              Psig_module "A" (testsuite/tests/typing-sigsubst/sigsubst.ml[257,7192+9]..[257,7192+10])
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[257,7192+13]..[257,7192+14])
+                Pmty_alias "M" (testsuite/tests/typing-sigsubst/sigsubst.ml[257,7192+13]..[257,7192+14])
+          ]
+        [
+          Pwith_typesubst "M.t" (testsuite/tests/typing-sigsubst/sigsubst.ml[258,7207+14]..[258,7207+17])
+            type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[258,7207+14]..[258,7207+17]) (testsuite/tests/typing-sigsubst/sigsubst.ml[258,7207+9]..[258,7207+26])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[258,7207+21]..[258,7207+26])
+                    Ptyp_constr "float" (testsuite/tests/typing-sigsubst/sigsubst.ml[258,7207+21]..[258,7207+26])
+                    []
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[259,7234+0]..[267,7491+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[259,7234+10]..[267,7491+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[259,7234+10]..[267,7491+2])
+          Pexp_constant PConst_string ("\nLines 1-4, characters 16-26:\n1 | ................sig\n2 |   module M : sig type t end\n3 |   module A = M\n4 | end with type M.t := float\nError: This `with' constraint on M.t changes M, which is aliased\n       in the constrained signature (as A).\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[259,7234+12]..[267,7491+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[271,7552+0]..[275,7673+3])
+    Pstr_modtype "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[271,7552+12]..[271,7552+13])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[271,7552+16]..[275,7673+3])
+        Pmty_signature
+        [
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[272,7572+2]..[272,7572+34])
+            Psig_module "M" (testsuite/tests/typing-sigsubst/sigsubst.ml[272,7572+9]..[272,7572+10])
+            module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[272,7572+13]..[272,7572+34])
+              Pmty_signature
+              [
+                signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[272,7572+17]..[272,7572+23])
+                  Psig_type Rec
+                  [
+                    type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[272,7572+22]..[272,7572+23]) (testsuite/tests/typing-sigsubst/sigsubst.ml[272,7572+17]..[272,7572+23])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[272,7572+24]..[272,7572+30])
+                  Psig_type Rec
+                  [
+                    type_declaration "u" (testsuite/tests/typing-sigsubst/sigsubst.ml[272,7572+29]..[272,7572+30]) (testsuite/tests/typing-sigsubst/sigsubst.ml[272,7572+24]..[272,7572+30])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+              ]
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[273,7607+2]..[273,7607+47])
+            Psig_module "F" (testsuite/tests/typing-sigsubst/sigsubst.ml[273,7607+9]..[273,7607+10])
+            module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[273,7607+10]..[273,7607+47])
+              Pmty_functor "X" (testsuite/tests/typing-sigsubst/sigsubst.ml[273,7607+11]..[273,7607+12])
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[273,7607+15]..[273,7607+29])
+                Pmty_signature
+                [
+                  signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[273,7607+19]..[273,7607+25])
+                    Psig_type Rec
+                    [
+                      type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[273,7607+24]..[273,7607+25]) (testsuite/tests/typing-sigsubst/sigsubst.ml[273,7607+19]..[273,7607+25])
+                        ptype_params =
+                          []
+                        ptype_cstrs =
+                          []
+                        ptype_kind =
+                          Ptype_abstract
+                        ptype_private = Public
+                        ptype_manifest =
+                          None
+                    ]
+                ]
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[273,7607+33]..[273,7607+47])
+                Pmty_signature
+                [
+                  signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[273,7607+37]..[273,7607+43])
+                    Psig_type Rec
+                    [
+                      type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[273,7607+42]..[273,7607+43]) (testsuite/tests/typing-sigsubst/sigsubst.ml[273,7607+37]..[273,7607+43])
+                        ptype_params =
+                          []
+                        ptype_cstrs =
+                          []
+                        ptype_kind =
+                          Ptype_abstract
+                        ptype_private = Public
+                        ptype_manifest =
+                          None
+                    ]
+                ]
+          signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[274,7655+2]..[274,7655+17])
+            Psig_type Rec
+            [
+              type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[274,7655+7]..[274,7655+8]) (testsuite/tests/typing-sigsubst/sigsubst.ml[274,7655+2]..[274,7655+17])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[274,7655+11]..[274,7655+17])
+                      Ptyp_constr "F(M).t" (testsuite/tests/typing-sigsubst/sigsubst.ml[274,7655+11]..[274,7655+17])
+                      []
+            ]
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[276,7677+0]..[283,7837+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[276,7677+10]..[283,7837+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[276,7677+10]..[283,7837+2])
+          Pexp_constant PConst_string ("\nmodule type S =\n  sig\n    module M : sig type t type u end\n    module F : functor (X : sig type t end) -> sig type t end\n    type t = F(M).t\n  end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[276,7677+12]..[283,7837+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[286,7900+0]..[286,7900+41])
+    Pstr_modtype "S2" (testsuite/tests/typing-sigsubst/sigsubst.ml[286,7900+12]..[286,7900+14])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[286,7900+17]..[286,7900+41])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[286,7900+17]..[286,7900+18])
+          Pmty_ident "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[286,7900+17]..[286,7900+18])
+        [
+          Pwith_typesubst "M.t" (testsuite/tests/typing-sigsubst/sigsubst.ml[286,7900+29]..[286,7900+32])
+            type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[286,7900+29]..[286,7900+32]) (testsuite/tests/typing-sigsubst/sigsubst.ml[286,7900+24]..[286,7900+41])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[286,7900+36]..[286,7900+41])
+                    Ptyp_constr "float" (testsuite/tests/typing-sigsubst/sigsubst.ml[286,7900+36]..[286,7900+41])
+                    []
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[287,7942+0]..[298,8357+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[287,7942+10]..[298,8357+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[287,7942+10]..[298,8357+2])
+          Pexp_constant PConst_string ("\nLine 1, characters 17-41:\n1 | module type S2 = S with type M.t := float\n                     ^^^^^^^^^^^^^^^^^^^^^^^^\nError: This `with' constraint on M.t makes the applicative functor\n       type F(M).t ill-typed in the constrained signature:\n       Modules do not match:\n         sig type u = M.u end\n       is not included in\n         sig type t end\n       The type `t' is required but not provided\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[287,7942+12]..[298,8357+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[302,8481+0]..[302,8481+41])
+    Pstr_modtype "S2" (testsuite/tests/typing-sigsubst/sigsubst.ml[302,8481+12]..[302,8481+14])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[302,8481+17]..[302,8481+41])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[302,8481+17]..[302,8481+18])
+          Pmty_ident "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[302,8481+17]..[302,8481+18])
+        [
+          Pwith_typesubst "M.u" (testsuite/tests/typing-sigsubst/sigsubst.ml[302,8481+29]..[302,8481+32])
+            type_declaration "u" (testsuite/tests/typing-sigsubst/sigsubst.ml[302,8481+29]..[302,8481+32]) (testsuite/tests/typing-sigsubst/sigsubst.ml[302,8481+24]..[302,8481+41])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[302,8481+36]..[302,8481+41])
+                    Ptyp_constr "float" (testsuite/tests/typing-sigsubst/sigsubst.ml[302,8481+36]..[302,8481+41])
+                    []
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[303,8523+0]..[310,8677+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[303,8523+10]..[310,8677+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[303,8523+10]..[310,8677+2])
+          Pexp_constant PConst_string ("\nmodule type S2 =\n  sig\n    module M : sig type t end\n    module F : functor (X : sig type t end) -> sig type t end\n    type t = F(M).t\n  end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[303,8523+12]..[310,8677+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[315,8802+0]..[315,8802+55])
+    Pstr_module
+    "Id" (testsuite/tests/typing-sigsubst/sigsubst.ml[315,8802+7]..[315,8802+9])
+      module_expr (testsuite/tests/typing-sigsubst/sigsubst.ml[315,8802+9]..[315,8802+55])
+        Pmod_functor "X" (testsuite/tests/typing-sigsubst/sigsubst.ml[315,8802+10]..[315,8802+11])
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[315,8802+14]..[315,8802+28])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[315,8802+18]..[315,8802+24])
+              Psig_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[315,8802+23]..[315,8802+24]) (testsuite/tests/typing-sigsubst/sigsubst.ml[315,8802+18]..[315,8802+24])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+        module_expr (testsuite/tests/typing-sigsubst/sigsubst.ml[315,8802+32]..[315,8802+55])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[315,8802+39]..[315,8802+51])
+              Pstr_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[315,8802+44]..[315,8802+45]) (testsuite/tests/typing-sigsubst/sigsubst.ml[315,8802+39]..[315,8802+51])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    Some
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[315,8802+48]..[315,8802+51])
+                        Ptyp_constr "X.t" (testsuite/tests/typing-sigsubst/sigsubst.ml[315,8802+48]..[315,8802+51])
+                        []
+              ]
+          ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[316,8858+0]..[319,8953+25])
+    Pstr_modtype "S3" (testsuite/tests/typing-sigsubst/sigsubst.ml[316,8858+12]..[316,8858+14])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[316,8858+17]..[319,8953+25])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[316,8858+17]..[319,8953+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[317,8879+2]..[318,8927+25])
+              Psig_recmodule
+              [
+                "M" (testsuite/tests/typing-sigsubst/sigsubst.ml[317,8879+13]..[317,8879+14])
+                  module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[317,8879+17]..[317,8879+47])
+                    Pmty_signature
+                    [
+                      signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[317,8879+21]..[317,8879+43])
+                        Psig_type Rec
+                        [
+                          type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[317,8879+26]..[317,8879+27]) (testsuite/tests/typing-sigsubst/sigsubst.ml[317,8879+21]..[317,8879+43])
+                            ptype_params =
+                              []
+                            ptype_cstrs =
+                              []
+                            ptype_kind =
+                              Ptype_variant
+                                [
+                                  (testsuite/tests/typing-sigsubst/sigsubst.ml[317,8879+30]..[317,8879+43])
+                                    "A" (testsuite/tests/typing-sigsubst/sigsubst.ml[317,8879+30]..[317,8879+31])
+                                    [
+                                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[317,8879+35]..[317,8879+43])
+                                        Ptyp_constr "Id(M2).t" (testsuite/tests/typing-sigsubst/sigsubst.ml[317,8879+35]..[317,8879+43])
+                                        []
+                                    ]
+                                    None
+                                ]
+                            ptype_private = Public
+                            ptype_manifest =
+                              None
+                        ]
+                    ]
+                "M2" (testsuite/tests/typing-sigsubst/sigsubst.ml[318,8927+6]..[318,8927+8])
+                  module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[318,8927+11]..[318,8927+25])
+                    Pmty_signature
+                    [
+                      signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[318,8927+15]..[318,8927+21])
+                        Psig_type Rec
+                        [
+                          type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[318,8927+20]..[318,8927+21]) (testsuite/tests/typing-sigsubst/sigsubst.ml[318,8927+15]..[318,8927+21])
+                            ptype_params =
+                              []
+                            ptype_cstrs =
+                              []
+                            ptype_kind =
+                              Ptype_abstract
+                            ptype_private = Public
+                            ptype_manifest =
+                              None
+                        ]
+                    ]
+              ]
+          ]
+        [
+          Pwith_typesubst "M2.t" (testsuite/tests/typing-sigsubst/sigsubst.ml[319,8953+14]..[319,8953+18])
+            type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[319,8953+14]..[319,8953+18]) (testsuite/tests/typing-sigsubst/sigsubst.ml[319,8953+9]..[319,8953+25])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[319,8953+22]..[319,8953+25])
+                    Ptyp_constr "int" (testsuite/tests/typing-sigsubst/sigsubst.ml[319,8953+22]..[319,8953+25])
+                    []
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[320,8979+0]..[331,9472+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[320,8979+10]..[331,9472+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[320,8979+10]..[331,9472+2])
+          Pexp_constant PConst_string ("\nmodule Id : functor (X : sig type t end) -> sig type t = X.t end\nLines 2-5, characters 17-25:\n2 | .................sig\n3 |   module rec M : sig type t = A of Id(M2).t end\n4 |   and M2 : sig type t end\n5 | end with type M2.t := int\nError: This `with' constraint on M2.t makes the applicative functor\n       type Id(M2).t ill-typed in the constrained signature:\n       Modules do not match: sig end is not included in sig type t end\n       The type `t' is required but not provided\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[320,8979+12]..[331,9472+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[336,9523+0]..[336,9523+60])
+    Pstr_module
+    "A" (testsuite/tests/typing-sigsubst/sigsubst.ml[336,9523+7]..[336,9523+8])
+      module_expr (testsuite/tests/typing-sigsubst/sigsubst.ml[336,9523+11]..[336,9523+60])
+        Pmod_structure
+        [
+          structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[336,9523+18]..[336,9523+56])
+            Pstr_module
+            "P" (testsuite/tests/typing-sigsubst/sigsubst.ml[336,9523+25]..[336,9523+26])
+              module_expr (testsuite/tests/typing-sigsubst/sigsubst.ml[336,9523+29]..[336,9523+56])
+                Pmod_structure
+                [
+                  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[336,9523+36]..[336,9523+42])
+                    Pstr_type Rec
+                    [
+                      type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[336,9523+41]..[336,9523+42]) (testsuite/tests/typing-sigsubst/sigsubst.ml[336,9523+36]..[336,9523+42])
+                        ptype_params =
+                          []
+                        ptype_cstrs =
+                          []
+                        ptype_kind =
+                          Ptype_abstract
+                        ptype_private = Public
+                        ptype_manifest =
+                          None
+                    ]
+                  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[336,9523+43]..[336,9523+52])
+                    Pstr_value Nonrec
+                    [
+                      <def>
+                        pattern (testsuite/tests/typing-sigsubst/sigsubst.ml[336,9523+47]..[336,9523+48])
+                          Ppat_var "x" (testsuite/tests/typing-sigsubst/sigsubst.ml[336,9523+47]..[336,9523+48])
+                        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[336,9523+51]..[336,9523+52])
+                          Pexp_constant PConst_int (1,None)
+                    ]
+                ]
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[337,9584+0]..[346,9719+24])
+    Pstr_modtype "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[337,9584+12]..[337,9584+13])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[337,9584+16]..[346,9719+24])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[337,9584+16]..[346,9719+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[338,9604+2]..[344,9694+5])
+              Psig_module "M" (testsuite/tests/typing-sigsubst/sigsubst.ml[338,9604+9]..[338,9604+10])
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[338,9604+13]..[344,9694+5])
+                Pmty_signature
+                [
+                  signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[339,9621+4]..[343,9686+7])
+                    Psig_module "N" (testsuite/tests/typing-sigsubst/sigsubst.ml[339,9621+11]..[339,9621+12])
+                    module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[339,9621+15]..[343,9686+7])
+                      Pmty_signature
+                      [
+                        signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[340,9640+6]..[342,9676+9])
+                          Psig_module "P" (testsuite/tests/typing-sigsubst/sigsubst.ml[340,9640+13]..[340,9640+14])
+                          module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[340,9640+17]..[342,9676+9])
+                            Pmty_signature
+                            [
+                              signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[341,9661+8]..[341,9661+14])
+                                Psig_type Rec
+                                [
+                                  type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[341,9661+13]..[341,9661+14]) (testsuite/tests/typing-sigsubst/sigsubst.ml[341,9661+8]..[341,9661+14])
+                                    ptype_params =
+                                      []
+                                    ptype_cstrs =
+                                      []
+                                    ptype_kind =
+                                      Ptype_abstract
+                                    ptype_private = Public
+                                    ptype_manifest =
+                                      None
+                                ]
+                            ]
+                      ]
+                ]
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[345,9700+2]..[345,9700+18])
+              Psig_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[345,9700+7]..[345,9700+8]) (testsuite/tests/typing-sigsubst/sigsubst.ml[345,9700+2]..[345,9700+18])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    Some
+                      core_type (testsuite/tests/typing-sigsubst/sigsubst.ml[345,9700+11]..[345,9700+18])
+                        Ptyp_constr "M.N.P.t" (testsuite/tests/typing-sigsubst/sigsubst.ml[345,9700+11]..[345,9700+18])
+                        []
+              ]
+          ]
+        [
+          Pwith_modsubst "M.N" (testsuite/tests/typing-sigsubst/sigsubst.ml[346,9719+16]..[346,9719+19]) = "A" (testsuite/tests/typing-sigsubst/sigsubst.ml[346,9719+23]..[346,9719+24])
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[347,9744+0]..[350,9872+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[347,9744+10]..[350,9872+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[347,9744+10]..[350,9872+2])
+          Pexp_constant PConst_string ("\nmodule A : sig module P : sig type t val x : int end end\nmodule type S = sig module M : sig end type t = A.P.t end\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[347,9744+12]..[350,9872+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[354,9938+0]..[363,10073+24])
+    Pstr_modtype "S" (testsuite/tests/typing-sigsubst/sigsubst.ml[354,9938+12]..[354,9938+13])
+      module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[354,9938+16]..[363,10073+24])
+        Pmty_with
+        module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[354,9938+16]..[363,10073+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[355,9958+2]..[361,10048+5])
+              Psig_module "M" (testsuite/tests/typing-sigsubst/sigsubst.ml[355,9958+9]..[355,9958+10])
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[355,9958+13]..[361,10048+5])
+                Pmty_signature
+                [
+                  signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[356,9975+4]..[360,10040+7])
+                    Psig_module "N" (testsuite/tests/typing-sigsubst/sigsubst.ml[356,9975+11]..[356,9975+12])
+                    module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[356,9975+15]..[360,10040+7])
+                      Pmty_signature
+                      [
+                        signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[357,9994+6]..[359,10030+9])
+                          Psig_module "P" (testsuite/tests/typing-sigsubst/sigsubst.ml[357,9994+13]..[357,9994+14])
+                          module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[357,9994+17]..[359,10030+9])
+                            Pmty_signature
+                            [
+                              signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[358,10015+8]..[358,10015+14])
+                                Psig_type Rec
+                                [
+                                  type_declaration "t" (testsuite/tests/typing-sigsubst/sigsubst.ml[358,10015+13]..[358,10015+14]) (testsuite/tests/typing-sigsubst/sigsubst.ml[358,10015+8]..[358,10015+14])
+                                    ptype_params =
+                                      []
+                                    ptype_cstrs =
+                                      []
+                                    ptype_kind =
+                                      Ptype_abstract
+                                    ptype_private = Public
+                                    ptype_manifest =
+                                      None
+                                ]
+                            ]
+                      ]
+                ]
+            signature_item (testsuite/tests/typing-sigsubst/sigsubst.ml[362,10054+2]..[362,10054+18])
+              Psig_module "Alias" (testsuite/tests/typing-sigsubst/sigsubst.ml[362,10054+9]..[362,10054+14])
+              module_type (testsuite/tests/typing-sigsubst/sigsubst.ml[362,10054+17]..[362,10054+18])
+                Pmty_alias "M" (testsuite/tests/typing-sigsubst/sigsubst.ml[362,10054+17]..[362,10054+18])
+          ]
+        [
+          Pwith_modsubst "M.N" (testsuite/tests/typing-sigsubst/sigsubst.ml[363,10073+16]..[363,10073+19]) = "A" (testsuite/tests/typing-sigsubst/sigsubst.ml[363,10073+23]..[363,10073+24])
+        ]
+  structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[364,10098+0]..[378,10464+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-sigsubst/sigsubst.ml[364,10098+10]..[378,10464+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-sigsubst/sigsubst.ml[364,10098+10]..[378,10464+2])
+          Pexp_constant PConst_string ("\nLines 1-10, characters 16-24:\n 1 | ................sig\n 2 |   module M : sig\n 3 |     module N : sig\n 4 |       module P : sig\n 5 |         type t\n 6 |       end\n 7 |     end\n 8 |   end\n 9 |   module Alias = M\n10 | end with module M.N := A\nError: This `with' constraint on M.N changes M, which is aliased\n       in the constrained signature (as Alias).\n",(testsuite/tests/typing-sigsubst/sigsubst.ml[364,10098+12]..[378,10464+0]),Some "")
+    ]
+]
+

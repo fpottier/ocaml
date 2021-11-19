@@ -1,0 +1,244 @@
+[
+  signature_item (ocamltest/tsl_ast.mli[18,1144+0]..[21,1196+1])
+    Psig_type Rec
+    [
+      type_declaration "located" (ocamltest/tsl_ast.mli[18,1144+8]..[18,1144+15]) (ocamltest/tsl_ast.mli[18,1144+0]..[21,1196+1])
+        ptype_params =
+          [
+            core_type (ocamltest/tsl_ast.mli[18,1144+5]..[18,1144+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (ocamltest/tsl_ast.mli[19,1164+2]..[19,1164+12])
+                Immutable
+                "node" (ocamltest/tsl_ast.mli[19,1164+2]..[19,1164+6])                core_type (ocamltest/tsl_ast.mli[19,1164+9]..[19,1164+11])
+                  Ptyp_var a
+              (ocamltest/tsl_ast.mli[20,1177+2]..[20,1177+18])
+                Immutable
+                "loc" (ocamltest/tsl_ast.mli[20,1177+2]..[20,1177+5])                core_type (ocamltest/tsl_ast.mli[20,1177+8]..[20,1177+18])
+                  Ptyp_constr "Location.t" (ocamltest/tsl_ast.mli[20,1177+8]..[20,1177+18])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (ocamltest/tsl_ast.mli[23,1199+0]..[26,1378+29])
+    Psig_type Rec
+    [
+      type_declaration "environment_statement" (ocamltest/tsl_ast.mli[23,1199+5]..[23,1199+26]) (ocamltest/tsl_ast.mli[23,1199+0]..[26,1378+29])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (ocamltest/tsl_ast.mli[24,1228+2]..[24,1228+56])
+                "Assignment" (ocamltest/tsl_ast.mli[24,1228+4]..[24,1228+14])
+                [
+                  core_type (ocamltest/tsl_ast.mli[24,1228+18]..[24,1228+22])
+                    Ptyp_constr "bool" (ocamltest/tsl_ast.mli[24,1228+18]..[24,1228+22])
+                    []
+                  core_type (ocamltest/tsl_ast.mli[24,1228+25]..[24,1228+39])
+                    Ptyp_constr "located" (ocamltest/tsl_ast.mli[24,1228+32]..[24,1228+39])
+                    [
+                      core_type (ocamltest/tsl_ast.mli[24,1228+25]..[24,1228+31])
+                        Ptyp_constr "string" (ocamltest/tsl_ast.mli[24,1228+25]..[24,1228+31])
+                        []
+                    ]
+                  core_type (ocamltest/tsl_ast.mli[24,1228+42]..[24,1228+56])
+                    Ptyp_constr "located" (ocamltest/tsl_ast.mli[24,1228+49]..[24,1228+56])
+                    [
+                      core_type (ocamltest/tsl_ast.mli[24,1228+42]..[24,1228+48])
+                        Ptyp_constr "string" (ocamltest/tsl_ast.mli[24,1228+42]..[24,1228+48])
+                        []
+                    ]
+                ]
+                None
+              (ocamltest/tsl_ast.mli[25,1308+2]..[25,1308+45])
+                "Append" (ocamltest/tsl_ast.mli[25,1308+4]..[25,1308+10])
+                [
+                  core_type (ocamltest/tsl_ast.mli[25,1308+14]..[25,1308+28])
+                    Ptyp_constr "located" (ocamltest/tsl_ast.mli[25,1308+21]..[25,1308+28])
+                    [
+                      core_type (ocamltest/tsl_ast.mli[25,1308+14]..[25,1308+20])
+                        Ptyp_constr "string" (ocamltest/tsl_ast.mli[25,1308+14]..[25,1308+20])
+                        []
+                    ]
+                  core_type (ocamltest/tsl_ast.mli[25,1308+31]..[25,1308+45])
+                    Ptyp_constr "located" (ocamltest/tsl_ast.mli[25,1308+38]..[25,1308+45])
+                    [
+                      core_type (ocamltest/tsl_ast.mli[25,1308+31]..[25,1308+37])
+                        Ptyp_constr "string" (ocamltest/tsl_ast.mli[25,1308+31]..[25,1308+37])
+                        []
+                    ]
+                ]
+                None
+              (ocamltest/tsl_ast.mli[26,1378+2]..[26,1378+29])
+                "Include" (ocamltest/tsl_ast.mli[26,1378+4]..[26,1378+11])
+                [
+                  core_type (ocamltest/tsl_ast.mli[26,1378+15]..[26,1378+29])
+                    Ptyp_constr "located" (ocamltest/tsl_ast.mli[26,1378+22]..[26,1378+29])
+                    [
+                      core_type (ocamltest/tsl_ast.mli[26,1378+15]..[26,1378+21])
+                        Ptyp_constr "string" (ocamltest/tsl_ast.mli[26,1378+15]..[26,1378+21])
+                        []
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (ocamltest/tsl_ast.mli[28,1441+0]..[33,1592+23])
+    Psig_type Rec
+    [
+      type_declaration "tsl_item" (ocamltest/tsl_ast.mli[28,1441+5]..[28,1441+13]) (ocamltest/tsl_ast.mli[28,1441+0]..[33,1592+23])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (ocamltest/tsl_ast.mli[29,1457+2]..[29,1457+58])
+                "Environment_statement" (ocamltest/tsl_ast.mli[29,1457+4]..[29,1457+25])
+                [
+                  core_type (ocamltest/tsl_ast.mli[29,1457+29]..[29,1457+58])
+                    Ptyp_constr "located" (ocamltest/tsl_ast.mli[29,1457+51]..[29,1457+58])
+                    [
+                      core_type (ocamltest/tsl_ast.mli[29,1457+29]..[29,1457+50])
+                        Ptyp_constr "environment_statement" (ocamltest/tsl_ast.mli[29,1457+29]..[29,1457+50])
+                        []
+                    ]
+                ]
+                None
+              (ocamltest/tsl_ast.mli[30,1516+2]..[33,1592+23])
+                "Test" (ocamltest/tsl_ast.mli[30,1516+4]..[30,1516+8])
+                [
+                  core_type (ocamltest/tsl_ast.mli[31,1528+4]..[31,1528+7])
+                    Ptyp_constr "int" (ocamltest/tsl_ast.mli[31,1528+4]..[31,1528+7])
+                    []
+                  core_type (ocamltest/tsl_ast.mli[32,1555+4]..[32,1555+18])
+                    Ptyp_constr "located" (ocamltest/tsl_ast.mli[32,1555+11]..[32,1555+18])
+                    [
+                      core_type (ocamltest/tsl_ast.mli[32,1555+4]..[32,1555+10])
+                        Ptyp_constr "string" (ocamltest/tsl_ast.mli[32,1555+4]..[32,1555+10])
+                        []
+                    ]
+                  core_type (ocamltest/tsl_ast.mli[33,1592+4]..[33,1592+23])
+                    Ptyp_constr "list" (ocamltest/tsl_ast.mli[33,1592+19]..[33,1592+23])
+                    [
+                      core_type (ocamltest/tsl_ast.mli[33,1592+4]..[33,1592+18])
+                        Ptyp_constr "located" (ocamltest/tsl_ast.mli[33,1592+11]..[33,1592+18])
+                        [
+                          core_type (ocamltest/tsl_ast.mli[33,1592+4]..[33,1592+10])
+                            Ptyp_constr "string" (ocamltest/tsl_ast.mli[33,1592+4]..[33,1592+10])
+                            []
+                        ]
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (ocamltest/tsl_ast.mli[35,1645+0]..[35,1645+30])
+    Psig_type Rec
+    [
+      type_declaration "tsl_block" (ocamltest/tsl_ast.mli[35,1645+5]..[35,1645+14]) (ocamltest/tsl_ast.mli[35,1645+0]..[35,1645+30])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (ocamltest/tsl_ast.mli[35,1645+17]..[35,1645+30])
+              Ptyp_constr "list" (ocamltest/tsl_ast.mli[35,1645+26]..[35,1645+30])
+              [
+                core_type (ocamltest/tsl_ast.mli[35,1645+17]..[35,1645+25])
+                  Ptyp_constr "tsl_item" (ocamltest/tsl_ast.mli[35,1645+17]..[35,1645+25])
+                  []
+              ]
+    ]
+  signature_item (ocamltest/tsl_ast.mli[37,1677+0]..[37,1677+65])
+    Psig_value
+    value_description "make_identifier" (ocamltest/tsl_ast.mli[37,1677+4]..[37,1677+19]) (ocamltest/tsl_ast.mli[37,1677+0]..[37,1677+65])
+      core_type (ocamltest/tsl_ast.mli[37,1677+22]..[37,1677+65])
+        Ptyp_arrow
+        Optional "loc"
+        core_type (ocamltest/tsl_ast.mli[37,1677+27]..[37,1677+37])
+          Ptyp_constr "Location.t" (ocamltest/tsl_ast.mli[37,1677+27]..[37,1677+37])
+          []
+        core_type (ocamltest/tsl_ast.mli[37,1677+41]..[37,1677+65])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/tsl_ast.mli[37,1677+41]..[37,1677+47])
+            Ptyp_constr "string" (ocamltest/tsl_ast.mli[37,1677+41]..[37,1677+47])
+            []
+          core_type (ocamltest/tsl_ast.mli[37,1677+51]..[37,1677+65])
+            Ptyp_constr "located" (ocamltest/tsl_ast.mli[37,1677+58]..[37,1677+65])
+            [
+              core_type (ocamltest/tsl_ast.mli[37,1677+51]..[37,1677+57])
+                Ptyp_constr "string" (ocamltest/tsl_ast.mli[37,1677+51]..[37,1677+57])
+                []
+            ]
+      []
+  signature_item (ocamltest/tsl_ast.mli[38,1743+0]..[38,1743+61])
+    Psig_value
+    value_description "make_string" (ocamltest/tsl_ast.mli[38,1743+4]..[38,1743+15]) (ocamltest/tsl_ast.mli[38,1743+0]..[38,1743+61])
+      core_type (ocamltest/tsl_ast.mli[38,1743+18]..[38,1743+61])
+        Ptyp_arrow
+        Optional "loc"
+        core_type (ocamltest/tsl_ast.mli[38,1743+23]..[38,1743+33])
+          Ptyp_constr "Location.t" (ocamltest/tsl_ast.mli[38,1743+23]..[38,1743+33])
+          []
+        core_type (ocamltest/tsl_ast.mli[38,1743+37]..[38,1743+61])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/tsl_ast.mli[38,1743+37]..[38,1743+43])
+            Ptyp_constr "string" (ocamltest/tsl_ast.mli[38,1743+37]..[38,1743+43])
+            []
+          core_type (ocamltest/tsl_ast.mli[38,1743+47]..[38,1743+61])
+            Ptyp_constr "located" (ocamltest/tsl_ast.mli[38,1743+54]..[38,1743+61])
+            [
+              core_type (ocamltest/tsl_ast.mli[38,1743+47]..[38,1743+53])
+                Ptyp_constr "string" (ocamltest/tsl_ast.mli[38,1743+47]..[38,1743+53])
+                []
+            ]
+      []
+  signature_item (ocamltest/tsl_ast.mli[39,1805+0]..[40,1838+75])
+    Psig_value
+    value_description "make_environment_statement" (ocamltest/tsl_ast.mli[39,1805+4]..[39,1805+30]) (ocamltest/tsl_ast.mli[39,1805+0]..[40,1838+75])
+      core_type (ocamltest/tsl_ast.mli[40,1838+2]..[40,1838+75])
+        Ptyp_arrow
+        Optional "loc"
+        core_type (ocamltest/tsl_ast.mli[40,1838+7]..[40,1838+17])
+          Ptyp_constr "Location.t" (ocamltest/tsl_ast.mli[40,1838+7]..[40,1838+17])
+          []
+        core_type (ocamltest/tsl_ast.mli[40,1838+21]..[40,1838+75])
+          Ptyp_arrow
+          Nolabel
+          core_type (ocamltest/tsl_ast.mli[40,1838+21]..[40,1838+42])
+            Ptyp_constr "environment_statement" (ocamltest/tsl_ast.mli[40,1838+21]..[40,1838+42])
+            []
+          core_type (ocamltest/tsl_ast.mli[40,1838+46]..[40,1838+75])
+            Ptyp_constr "located" (ocamltest/tsl_ast.mli[40,1838+68]..[40,1838+75])
+            [
+              core_type (ocamltest/tsl_ast.mli[40,1838+46]..[40,1838+67])
+                Ptyp_constr "environment_statement" (ocamltest/tsl_ast.mli[40,1838+46]..[40,1838+67])
+                []
+            ]
+      []
+]
+

@@ -1,0 +1,1824 @@
+[
+  signature_item (typing/btype.mli[18,1117+0]..[18,1117+13])
+    Psig_open Fresh "Asttypes" (typing/btype.mli[18,1117+5]..[18,1117+13])
+  signature_item (typing/btype.mli[19,1131+0]..[19,1131+10])
+    Psig_open Fresh "Types" (typing/btype.mli[19,1131+5]..[19,1131+10])
+  signature_item (typing/btype.mli[23,1191+0]..[23,1191+49])
+    Psig_module "TypeSet" (typing/btype.mli[23,1191+7]..[23,1191+14])
+    module_type (typing/btype.mli[23,1191+18]..[23,1191+49])
+      Pmty_with
+      module_type (typing/btype.mli[23,1191+18]..[23,1191+23])
+        Pmty_ident "Set.S" (typing/btype.mli[23,1191+18]..[23,1191+23])
+      [
+        Pwith_type "elt" (typing/btype.mli[23,1191+34]..[23,1191+37])
+          type_declaration "elt" (typing/btype.mli[23,1191+34]..[23,1191+37]) (typing/btype.mli[23,1191+29]..[23,1191+49])
+            ptype_params =
+              []
+            ptype_cstrs =
+              []
+            ptype_kind =
+              Ptype_abstract
+            ptype_private = Public
+            ptype_manifest =
+              Some
+                core_type (typing/btype.mli[23,1191+40]..[23,1191+49])
+                  Ptyp_constr "type_expr" (typing/btype.mli[23,1191+40]..[23,1191+49])
+                  []
+      ]
+  signature_item (typing/btype.mli[24,1241+0]..[24,1241+49])
+    Psig_module "TypeMap" (typing/btype.mli[24,1241+7]..[24,1241+14])
+    module_type (typing/btype.mli[24,1241+18]..[24,1241+49])
+      Pmty_with
+      module_type (typing/btype.mli[24,1241+18]..[24,1241+23])
+        Pmty_ident "Map.S" (typing/btype.mli[24,1241+18]..[24,1241+23])
+      [
+        Pwith_type "key" (typing/btype.mli[24,1241+34]..[24,1241+37])
+          type_declaration "key" (typing/btype.mli[24,1241+34]..[24,1241+37]) (typing/btype.mli[24,1241+29]..[24,1241+49])
+            ptype_params =
+              []
+            ptype_cstrs =
+              []
+            ptype_kind =
+              Ptype_abstract
+            ptype_private = Public
+            ptype_manifest =
+              Some
+                core_type (typing/btype.mli[24,1241+40]..[24,1241+49])
+                  Ptyp_constr "type_expr" (typing/btype.mli[24,1241+40]..[24,1241+49])
+                  []
+      ]
+  signature_item (typing/btype.mli[25,1291+0]..[25,1291+53])
+    Psig_module "TypeHash" (typing/btype.mli[25,1291+7]..[25,1291+15])
+    module_type (typing/btype.mli[25,1291+18]..[25,1291+53])
+      Pmty_with
+      module_type (typing/btype.mli[25,1291+18]..[25,1291+27])
+        Pmty_ident "Hashtbl.S" (typing/btype.mli[25,1291+18]..[25,1291+27])
+      [
+        Pwith_type "key" (typing/btype.mli[25,1291+38]..[25,1291+41])
+          type_declaration "key" (typing/btype.mli[25,1291+38]..[25,1291+41]) (typing/btype.mli[25,1291+33]..[25,1291+53])
+            ptype_params =
+              []
+            ptype_cstrs =
+              []
+            ptype_kind =
+              Ptype_abstract
+            ptype_private = Public
+            ptype_manifest =
+              Some
+                core_type (typing/btype.mli[25,1291+44]..[25,1291+53])
+                  Ptyp_constr "type_expr" (typing/btype.mli[25,1291+44]..[25,1291+53])
+                  []
+      ]
+  signature_item (typing/btype.mli[29,1366+0]..[29,1366+22])
+    Psig_value
+    value_description "generic_level" (typing/btype.mli[29,1366+4]..[29,1366+17]) (typing/btype.mli[29,1366+0]..[29,1366+22])
+      core_type (typing/btype.mli[29,1366+19]..[29,1366+22])
+        Ptyp_constr "int" (typing/btype.mli[29,1366+19]..[29,1366+22])
+        []
+      []
+  signature_item (typing/btype.mli[31,1390+0]..[31,1390+41])
+    Psig_value
+    value_description "newty2" (typing/btype.mli[31,1390+4]..[31,1390+10]) (typing/btype.mli[31,1390+0]..[31,1390+41])
+      core_type (typing/btype.mli[31,1390+12]..[31,1390+41])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[31,1390+12]..[31,1390+15])
+          Ptyp_constr "int" (typing/btype.mli[31,1390+12]..[31,1390+15])
+          []
+        core_type (typing/btype.mli[31,1390+19]..[31,1390+41])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[31,1390+19]..[31,1390+28])
+            Ptyp_constr "type_desc" (typing/btype.mli[31,1390+19]..[31,1390+28])
+            []
+          core_type (typing/btype.mli[31,1390+32]..[31,1390+41])
+            Ptyp_constr "type_expr" (typing/btype.mli[31,1390+32]..[31,1390+41])
+            []
+      []
+  signature_item (typing/btype.mli[33,1460+0]..[33,1460+36])
+    Psig_value
+    value_description "newgenty" (typing/btype.mli[33,1460+4]..[33,1460+12]) (typing/btype.mli[33,1460+0]..[33,1460+36])
+      core_type (typing/btype.mli[33,1460+14]..[33,1460+36])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[33,1460+14]..[33,1460+23])
+          Ptyp_constr "type_desc" (typing/btype.mli[33,1460+14]..[33,1460+23])
+          []
+        core_type (typing/btype.mli[33,1460+27]..[33,1460+36])
+          Ptyp_constr "type_expr" (typing/btype.mli[33,1460+27]..[33,1460+36])
+          []
+      []
+  signature_item (typing/btype.mli[35,1533+0]..[35,1533+48])
+    Psig_value
+    value_description "newgenvar" (typing/btype.mli[35,1533+4]..[35,1533+13]) (typing/btype.mli[35,1533+0]..[35,1533+48])
+      core_type (typing/btype.mli[35,1533+15]..[35,1533+48])
+        Ptyp_arrow
+        Optional "name"
+        core_type (typing/btype.mli[35,1533+21]..[35,1533+27])
+          Ptyp_constr "string" (typing/btype.mli[35,1533+21]..[35,1533+27])
+          []
+        core_type (typing/btype.mli[35,1533+31]..[35,1533+48])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[35,1533+31]..[35,1533+35])
+            Ptyp_constr "unit" (typing/btype.mli[35,1533+31]..[35,1533+35])
+            []
+          core_type (typing/btype.mli[35,1533+39]..[35,1533+48])
+            Ptyp_constr "type_expr" (typing/btype.mli[35,1533+39]..[35,1533+48])
+            []
+      []
+  signature_item (typing/btype.mli[47,1846+0]..[47,1846+30])
+    Psig_value
+    value_description "is_Tvar" (typing/btype.mli[47,1846+4]..[47,1846+11]) (typing/btype.mli[47,1846+0]..[47,1846+30])
+      core_type (typing/btype.mli[47,1846+13]..[47,1846+30])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[47,1846+13]..[47,1846+22])
+          Ptyp_constr "type_expr" (typing/btype.mli[47,1846+13]..[47,1846+22])
+          []
+        core_type (typing/btype.mli[47,1846+26]..[47,1846+30])
+          Ptyp_constr "bool" (typing/btype.mli[47,1846+26]..[47,1846+30])
+          []
+      []
+  signature_item (typing/btype.mli[48,1877+0]..[48,1877+33])
+    Psig_value
+    value_description "is_Tunivar" (typing/btype.mli[48,1877+4]..[48,1877+14]) (typing/btype.mli[48,1877+0]..[48,1877+33])
+      core_type (typing/btype.mli[48,1877+16]..[48,1877+33])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[48,1877+16]..[48,1877+25])
+          Ptyp_constr "type_expr" (typing/btype.mli[48,1877+16]..[48,1877+25])
+          []
+        core_type (typing/btype.mli[48,1877+29]..[48,1877+33])
+          Ptyp_constr "bool" (typing/btype.mli[48,1877+29]..[48,1877+33])
+          []
+      []
+  signature_item (typing/btype.mli[49,1911+0]..[49,1911+33])
+    Psig_value
+    value_description "is_Tconstr" (typing/btype.mli[49,1911+4]..[49,1911+14]) (typing/btype.mli[49,1911+0]..[49,1911+33])
+      core_type (typing/btype.mli[49,1911+16]..[49,1911+33])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[49,1911+16]..[49,1911+25])
+          Ptyp_constr "type_expr" (typing/btype.mli[49,1911+16]..[49,1911+25])
+          []
+        core_type (typing/btype.mli[49,1911+29]..[49,1911+33])
+          Ptyp_constr "bool" (typing/btype.mli[49,1911+29]..[49,1911+33])
+          []
+      []
+  signature_item (typing/btype.mli[50,1945+0]..[50,1945+23])
+    Psig_value
+    value_description "dummy_method" (typing/btype.mli[50,1945+4]..[50,1945+16]) (typing/btype.mli[50,1945+0]..[50,1945+23])
+      core_type (typing/btype.mli[50,1945+18]..[50,1945+23])
+        Ptyp_constr "label" (typing/btype.mli[50,1945+18]..[50,1945+23])
+        []
+      []
+  signature_item (typing/btype.mli[52,1970+0]..[52,1970+32])
+    Psig_value
+    value_description "repr" (typing/btype.mli[52,1970+4]..[52,1970+8]) (typing/btype.mli[52,1970+0]..[52,1970+32])
+      core_type (typing/btype.mli[52,1970+10]..[52,1970+32])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[52,1970+10]..[52,1970+19])
+          Ptyp_constr "type_expr" (typing/btype.mli[52,1970+10]..[52,1970+19])
+          []
+        core_type (typing/btype.mli[52,1970+23]..[52,1970+32])
+          Ptyp_constr "type_expr" (typing/btype.mli[52,1970+23]..[52,1970+32])
+          []
+      []
+  signature_item (typing/btype.mli[55,2065+0]..[55,2065+45])
+    Psig_value
+    value_description "field_kind_repr" (typing/btype.mli[55,2065+4]..[55,2065+19]) (typing/btype.mli[55,2065+0]..[55,2065+45])
+      core_type (typing/btype.mli[55,2065+21]..[55,2065+45])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[55,2065+21]..[55,2065+31])
+          Ptyp_constr "field_kind" (typing/btype.mli[55,2065+21]..[55,2065+31])
+          []
+        core_type (typing/btype.mli[55,2065+35]..[55,2065+45])
+          Ptyp_constr "field_kind" (typing/btype.mli[55,2065+35]..[55,2065+45])
+          []
+      []
+  signature_item (typing/btype.mli[59,2198+0]..[59,2198+40])
+    Psig_value
+    value_description "commu_repr" (typing/btype.mli[59,2198+4]..[59,2198+14]) (typing/btype.mli[59,2198+0]..[59,2198+40])
+      core_type (typing/btype.mli[59,2198+16]..[59,2198+40])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[59,2198+16]..[59,2198+26])
+          Ptyp_constr "commutable" (typing/btype.mli[59,2198+16]..[59,2198+26])
+          []
+        core_type (typing/btype.mli[59,2198+30]..[59,2198+40])
+          Ptyp_constr "commutable" (typing/btype.mli[59,2198+30]..[59,2198+40])
+          []
+      []
+  signature_item (typing/btype.mli[64,2346+0]..[64,2346+34])
+    Psig_value
+    value_description "row_repr" (typing/btype.mli[64,2346+4]..[64,2346+12]) (typing/btype.mli[64,2346+0]..[64,2346+34])
+      core_type (typing/btype.mli[64,2346+14]..[64,2346+34])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[64,2346+14]..[64,2346+22])
+          Ptyp_constr "row_desc" (typing/btype.mli[64,2346+14]..[64,2346+22])
+          []
+        core_type (typing/btype.mli[64,2346+26]..[64,2346+34])
+          Ptyp_constr "row_desc" (typing/btype.mli[64,2346+26]..[64,2346+34])
+          []
+      []
+  signature_item (typing/btype.mli[66,2452+0]..[66,2452+42])
+    Psig_value
+    value_description "row_field_repr" (typing/btype.mli[66,2452+4]..[66,2452+18]) (typing/btype.mli[66,2452+0]..[66,2452+42])
+      core_type (typing/btype.mli[66,2452+20]..[66,2452+42])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[66,2452+20]..[66,2452+29])
+          Ptyp_constr "row_field" (typing/btype.mli[66,2452+20]..[66,2452+29])
+          []
+        core_type (typing/btype.mli[66,2452+33]..[66,2452+42])
+          Ptyp_constr "row_field" (typing/btype.mli[66,2452+33]..[66,2452+42])
+          []
+      []
+  signature_item (typing/btype.mli[67,2495+0]..[67,2495+45])
+    Psig_value
+    value_description "row_field" (typing/btype.mli[67,2495+4]..[67,2495+13]) (typing/btype.mli[67,2495+0]..[67,2495+45])
+      core_type (typing/btype.mli[67,2495+15]..[67,2495+45])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[67,2495+15]..[67,2495+20])
+          Ptyp_constr "label" (typing/btype.mli[67,2495+15]..[67,2495+20])
+          []
+        core_type (typing/btype.mli[67,2495+24]..[67,2495+45])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[67,2495+24]..[67,2495+32])
+            Ptyp_constr "row_desc" (typing/btype.mli[67,2495+24]..[67,2495+32])
+            []
+          core_type (typing/btype.mli[67,2495+36]..[67,2495+45])
+            Ptyp_constr "row_field" (typing/btype.mli[67,2495+36]..[67,2495+45])
+            []
+      []
+  signature_item (typing/btype.mli[69,2606+0]..[69,2606+35])
+    Psig_value
+    value_description "row_more" (typing/btype.mli[69,2606+4]..[69,2606+12]) (typing/btype.mli[69,2606+0]..[69,2606+35])
+      core_type (typing/btype.mli[69,2606+14]..[69,2606+35])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[69,2606+14]..[69,2606+22])
+          Ptyp_constr "row_desc" (typing/btype.mli[69,2606+14]..[69,2606+22])
+          []
+        core_type (typing/btype.mli[69,2606+26]..[69,2606+35])
+          Ptyp_constr "type_expr" (typing/btype.mli[69,2606+26]..[69,2606+35])
+          []
+      []
+  signature_item (typing/btype.mli[72,2698+0]..[72,2698+30])
+    Psig_value
+    value_description "is_fixed" (typing/btype.mli[72,2698+4]..[72,2698+12]) (typing/btype.mli[72,2698+0]..[72,2698+30])
+      core_type (typing/btype.mli[72,2698+14]..[72,2698+30])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[72,2698+14]..[72,2698+22])
+          Ptyp_constr "row_desc" (typing/btype.mli[72,2698+14]..[72,2698+22])
+          []
+        core_type (typing/btype.mli[72,2698+26]..[72,2698+30])
+          Ptyp_constr "bool" (typing/btype.mli[72,2698+26]..[72,2698+30])
+          []
+      []
+  signature_item (typing/btype.mli[75,2794+0]..[75,2794+31])
+    Psig_value
+    value_description "row_fixed" (typing/btype.mli[75,2794+4]..[75,2794+13]) (typing/btype.mli[75,2794+0]..[75,2794+31])
+      core_type (typing/btype.mli[75,2794+15]..[75,2794+31])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[75,2794+15]..[75,2794+23])
+          Ptyp_constr "row_desc" (typing/btype.mli[75,2794+15]..[75,2794+23])
+          []
+        core_type (typing/btype.mli[75,2794+27]..[75,2794+31])
+          Ptyp_constr "bool" (typing/btype.mli[75,2794+27]..[75,2794+31])
+          []
+      []
+  signature_item (typing/btype.mli[80,2949+0]..[80,2949+59])
+    Psig_value
+    value_description "fixed_explanation" (typing/btype.mli[80,2949+4]..[80,2949+21]) (typing/btype.mli[80,2949+0]..[80,2949+59])
+      core_type (typing/btype.mli[80,2949+23]..[80,2949+59])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[80,2949+23]..[80,2949+31])
+          Ptyp_constr "row_desc" (typing/btype.mli[80,2949+23]..[80,2949+31])
+          []
+        core_type (typing/btype.mli[80,2949+35]..[80,2949+59])
+          Ptyp_constr "option" (typing/btype.mli[80,2949+53]..[80,2949+59])
+          [
+            core_type (typing/btype.mli[80,2949+35]..[80,2949+52])
+              Ptyp_constr "fixed_explanation" (typing/btype.mli[80,2949+35]..[80,2949+52])
+              []
+          ]
+      []
+  signature_item (typing/btype.mli[83,3067+0]..[85,3151+29])
+    Psig_value
+    value_description "merge_fixed_explanation" (typing/btype.mli[83,3067+4]..[83,3067+27]) (typing/btype.mli[83,3067+0]..[85,3151+29])
+      core_type (typing/btype.mli[84,3096+2]..[85,3151+29])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[84,3096+2]..[84,3096+26])
+          Ptyp_constr "option" (typing/btype.mli[84,3096+20]..[84,3096+26])
+          [
+            core_type (typing/btype.mli[84,3096+2]..[84,3096+19])
+              Ptyp_constr "fixed_explanation" (typing/btype.mli[84,3096+2]..[84,3096+19])
+              []
+          ]
+        core_type (typing/btype.mli[84,3096+30]..[85,3151+29])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[84,3096+30]..[84,3096+54])
+            Ptyp_constr "option" (typing/btype.mli[84,3096+48]..[84,3096+54])
+            [
+              core_type (typing/btype.mli[84,3096+30]..[84,3096+47])
+                Ptyp_constr "fixed_explanation" (typing/btype.mli[84,3096+30]..[84,3096+47])
+                []
+            ]
+          core_type (typing/btype.mli[85,3151+5]..[85,3151+29])
+            Ptyp_constr "option" (typing/btype.mli[85,3151+23]..[85,3151+29])
+            [
+              core_type (typing/btype.mli[85,3151+5]..[85,3151+22])
+                Ptyp_constr "fixed_explanation" (typing/btype.mli[85,3151+5]..[85,3151+22])
+                []
+            ]
+      []
+  signature_item (typing/btype.mli[88,3227+0]..[88,3227+32])
+    Psig_value
+    value_description "static_row" (typing/btype.mli[88,3227+4]..[88,3227+14]) (typing/btype.mli[88,3227+0]..[88,3227+32])
+      core_type (typing/btype.mli[88,3227+16]..[88,3227+32])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[88,3227+16]..[88,3227+24])
+          Ptyp_constr "row_desc" (typing/btype.mli[88,3227+16]..[88,3227+24])
+          []
+        core_type (typing/btype.mli[88,3227+28]..[88,3227+32])
+          Ptyp_constr "bool" (typing/btype.mli[88,3227+28]..[88,3227+32])
+          []
+      []
+  signature_item (typing/btype.mli[90,3314+0]..[90,3314+30])
+    Psig_value
+    value_description "hash_variant" (typing/btype.mli[90,3314+4]..[90,3314+16]) (typing/btype.mli[90,3314+0]..[90,3314+30])
+      core_type (typing/btype.mli[90,3314+18]..[90,3314+30])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[90,3314+18]..[90,3314+23])
+          Ptyp_constr "label" (typing/btype.mli[90,3314+18]..[90,3314+23])
+          []
+        core_type (typing/btype.mli[90,3314+27]..[90,3314+30])
+          Ptyp_constr "int" (typing/btype.mli[90,3314+27]..[90,3314+30])
+          []
+      []
+  signature_item (typing/btype.mli[93,3391+0]..[93,3391+33])
+    Psig_value
+    value_description "proxy" (typing/btype.mli[93,3391+4]..[93,3391+9]) (typing/btype.mli[93,3391+0]..[93,3391+33])
+      core_type (typing/btype.mli[93,3391+11]..[93,3391+33])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[93,3391+11]..[93,3391+20])
+          Ptyp_constr "type_expr" (typing/btype.mli[93,3391+11]..[93,3391+20])
+          []
+        core_type (typing/btype.mli[93,3391+24]..[93,3391+33])
+          Ptyp_constr "type_expr" (typing/btype.mli[93,3391+24]..[93,3391+33])
+          []
+      []
+  signature_item (typing/btype.mli[98,3592+0]..[98,3592+39])
+    Psig_value
+    value_description "row_of_type" (typing/btype.mli[98,3592+4]..[98,3592+15]) (typing/btype.mli[98,3592+0]..[98,3592+39])
+      core_type (typing/btype.mli[98,3592+17]..[98,3592+39])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[98,3592+17]..[98,3592+26])
+          Ptyp_constr "type_expr" (typing/btype.mli[98,3592+17]..[98,3592+26])
+          []
+        core_type (typing/btype.mli[98,3592+30]..[98,3592+39])
+          Ptyp_constr "type_expr" (typing/btype.mli[98,3592+30]..[98,3592+39])
+          []
+      []
+  signature_item (typing/btype.mli[99,3632+0]..[99,3632+37])
+    Psig_value
+    value_description "has_constr_row" (typing/btype.mli[99,3632+4]..[99,3632+18]) (typing/btype.mli[99,3632+0]..[99,3632+37])
+      core_type (typing/btype.mli[99,3632+20]..[99,3632+37])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[99,3632+20]..[99,3632+29])
+          Ptyp_constr "type_expr" (typing/btype.mli[99,3632+20]..[99,3632+29])
+          []
+        core_type (typing/btype.mli[99,3632+33]..[99,3632+37])
+          Ptyp_constr "bool" (typing/btype.mli[99,3632+33]..[99,3632+37])
+          []
+      []
+  signature_item (typing/btype.mli[100,3670+0]..[100,3670+31])
+    Psig_value
+    value_description "is_row_name" (typing/btype.mli[100,3670+4]..[100,3670+15]) (typing/btype.mli[100,3670+0]..[100,3670+31])
+      core_type (typing/btype.mli[100,3670+17]..[100,3670+31])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[100,3670+17]..[100,3670+23])
+          Ptyp_constr "string" (typing/btype.mli[100,3670+17]..[100,3670+23])
+          []
+        core_type (typing/btype.mli[100,3670+27]..[100,3670+31])
+          Ptyp_constr "bool" (typing/btype.mli[100,3670+27]..[100,3670+31])
+          []
+      []
+  signature_item (typing/btype.mli[101,3702+0]..[101,3702+56])
+    Psig_value
+    value_description "is_constr_row" (typing/btype.mli[101,3702+4]..[101,3702+17]) (typing/btype.mli[101,3702+0]..[101,3702+56])
+      core_type (typing/btype.mli[101,3702+19]..[101,3702+56])
+        Ptyp_arrow
+        Labelled "allow_ident"
+        core_type (typing/btype.mli[101,3702+31]..[101,3702+35])
+          Ptyp_constr "bool" (typing/btype.mli[101,3702+31]..[101,3702+35])
+          []
+        core_type (typing/btype.mli[101,3702+39]..[101,3702+56])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[101,3702+39]..[101,3702+48])
+            Ptyp_constr "type_expr" (typing/btype.mli[101,3702+39]..[101,3702+48])
+            []
+          core_type (typing/btype.mli[101,3702+52]..[101,3702+56])
+            Ptyp_constr "bool" (typing/btype.mli[101,3702+52]..[101,3702+56])
+            []
+      []
+  signature_item (typing/btype.mli[104,3809+0]..[104,3809+53])
+    Psig_value
+    value_description "set_row_name" (typing/btype.mli[104,3809+4]..[104,3809+16]) (typing/btype.mli[104,3809+0]..[104,3809+53])
+      core_type (typing/btype.mli[104,3809+19]..[104,3809+53])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[104,3809+19]..[104,3809+35])
+          Ptyp_constr "type_declaration" (typing/btype.mli[104,3809+19]..[104,3809+35])
+          []
+        core_type (typing/btype.mli[104,3809+39]..[104,3809+53])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[104,3809+39]..[104,3809+45])
+            Ptyp_constr "Path.t" (typing/btype.mli[104,3809+39]..[104,3809+45])
+            []
+          core_type (typing/btype.mli[104,3809+49]..[104,3809+53])
+            Ptyp_constr "unit" (typing/btype.mli[104,3809+49]..[104,3809+53])
+            []
+      []
+  signature_item (typing/btype.mli[108,3906+0]..[108,3906+60])
+    Psig_value
+    value_description "iter_type_expr" (typing/btype.mli[108,3906+4]..[108,3906+18]) (typing/btype.mli[108,3906+0]..[108,3906+60])
+      core_type (typing/btype.mli[108,3906+20]..[108,3906+60])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[108,3906+21]..[108,3906+38])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[108,3906+21]..[108,3906+30])
+            Ptyp_constr "type_expr" (typing/btype.mli[108,3906+21]..[108,3906+30])
+            []
+          core_type (typing/btype.mli[108,3906+34]..[108,3906+38])
+            Ptyp_constr "unit" (typing/btype.mli[108,3906+34]..[108,3906+38])
+            []
+        core_type (typing/btype.mli[108,3906+43]..[108,3906+60])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[108,3906+43]..[108,3906+52])
+            Ptyp_constr "type_expr" (typing/btype.mli[108,3906+43]..[108,3906+52])
+            []
+          core_type (typing/btype.mli[108,3906+56]..[108,3906+60])
+            Ptyp_constr "unit" (typing/btype.mli[108,3906+56]..[108,3906+60])
+            []
+      []
+  signature_item (typing/btype.mli[110,4000+0]..[110,4000+68])
+    Psig_value
+    value_description "fold_type_expr" (typing/btype.mli[110,4000+4]..[110,4000+18]) (typing/btype.mli[110,4000+0]..[110,4000+68])
+      core_type (typing/btype.mli[110,4000+20]..[110,4000+68])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[110,4000+21]..[110,4000+42])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[110,4000+21]..[110,4000+23])
+            Ptyp_var a
+          core_type (typing/btype.mli[110,4000+27]..[110,4000+42])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/btype.mli[110,4000+27]..[110,4000+36])
+              Ptyp_constr "type_expr" (typing/btype.mli[110,4000+27]..[110,4000+36])
+              []
+            core_type (typing/btype.mli[110,4000+40]..[110,4000+42])
+              Ptyp_var a
+        core_type (typing/btype.mli[110,4000+47]..[110,4000+68])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[110,4000+47]..[110,4000+49])
+            Ptyp_var a
+          core_type (typing/btype.mli[110,4000+53]..[110,4000+68])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/btype.mli[110,4000+53]..[110,4000+62])
+              Ptyp_constr "type_expr" (typing/btype.mli[110,4000+53]..[110,4000+62])
+              []
+            core_type (typing/btype.mli[110,4000+66]..[110,4000+68])
+              Ptyp_var a
+      []
+  signature_item (typing/btype.mli[111,4069+0]..[111,4069+53])
+    Psig_value
+    value_description "iter_row" (typing/btype.mli[111,4069+4]..[111,4069+12]) (typing/btype.mli[111,4069+0]..[111,4069+53])
+      core_type (typing/btype.mli[111,4069+14]..[111,4069+53])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[111,4069+15]..[111,4069+32])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[111,4069+15]..[111,4069+24])
+            Ptyp_constr "type_expr" (typing/btype.mli[111,4069+15]..[111,4069+24])
+            []
+          core_type (typing/btype.mli[111,4069+28]..[111,4069+32])
+            Ptyp_constr "unit" (typing/btype.mli[111,4069+28]..[111,4069+32])
+            []
+        core_type (typing/btype.mli[111,4069+37]..[111,4069+53])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[111,4069+37]..[111,4069+45])
+            Ptyp_constr "row_desc" (typing/btype.mli[111,4069+37]..[111,4069+45])
+            []
+          core_type (typing/btype.mli[111,4069+49]..[111,4069+53])
+            Ptyp_constr "unit" (typing/btype.mli[111,4069+49]..[111,4069+53])
+            []
+      []
+  signature_item (typing/btype.mli[113,4165+0]..[113,4165+61])
+    Psig_value
+    value_description "fold_row" (typing/btype.mli[113,4165+4]..[113,4165+12]) (typing/btype.mli[113,4165+0]..[113,4165+61])
+      core_type (typing/btype.mli[113,4165+14]..[113,4165+61])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[113,4165+15]..[113,4165+36])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[113,4165+15]..[113,4165+17])
+            Ptyp_var a
+          core_type (typing/btype.mli[113,4165+21]..[113,4165+36])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/btype.mli[113,4165+21]..[113,4165+30])
+              Ptyp_constr "type_expr" (typing/btype.mli[113,4165+21]..[113,4165+30])
+              []
+            core_type (typing/btype.mli[113,4165+34]..[113,4165+36])
+              Ptyp_var a
+        core_type (typing/btype.mli[113,4165+41]..[113,4165+61])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[113,4165+41]..[113,4165+43])
+            Ptyp_var a
+          core_type (typing/btype.mli[113,4165+47]..[113,4165+61])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/btype.mli[113,4165+47]..[113,4165+55])
+              Ptyp_constr "row_desc" (typing/btype.mli[113,4165+47]..[113,4165+55])
+              []
+            core_type (typing/btype.mli[113,4165+59]..[113,4165+61])
+              Ptyp_var a
+      []
+  signature_item (typing/btype.mli[114,4227+0]..[114,4227+59])
+    Psig_value
+    value_description "iter_abbrev" (typing/btype.mli[114,4227+4]..[114,4227+15]) (typing/btype.mli[114,4227+0]..[114,4227+59])
+      core_type (typing/btype.mli[114,4227+17]..[114,4227+59])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[114,4227+18]..[114,4227+35])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[114,4227+18]..[114,4227+27])
+            Ptyp_constr "type_expr" (typing/btype.mli[114,4227+18]..[114,4227+27])
+            []
+          core_type (typing/btype.mli[114,4227+31]..[114,4227+35])
+            Ptyp_constr "unit" (typing/btype.mli[114,4227+31]..[114,4227+35])
+            []
+        core_type (typing/btype.mli[114,4227+40]..[114,4227+59])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[114,4227+40]..[114,4227+51])
+            Ptyp_constr "abbrev_memo" (typing/btype.mli[114,4227+40]..[114,4227+51])
+            []
+          core_type (typing/btype.mli[114,4227+55]..[114,4227+59])
+            Ptyp_constr "unit" (typing/btype.mli[114,4227+55]..[114,4227+59])
+            []
+      []
+  signature_item (typing/btype.mli[117,4345+0]..[133,5362+30])
+    Psig_type Rec
+    [
+      type_declaration "type_iterators" (typing/btype.mli[117,4345+5]..[117,4345+19]) (typing/btype.mli[117,4345+0]..[133,5362+30])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (typing/btype.mli[118,4367+4]..[118,4367+54])
+                Immutable
+                "it_signature" (typing/btype.mli[118,4367+4]..[118,4367+16])                core_type (typing/btype.mli[118,4367+18]..[118,4367+53])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/btype.mli[118,4367+18]..[118,4367+32])
+                    Ptyp_constr "type_iterators" (typing/btype.mli[118,4367+18]..[118,4367+32])
+                    []
+                  core_type (typing/btype.mli[118,4367+36]..[118,4367+53])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (typing/btype.mli[118,4367+36]..[118,4367+45])
+                      Ptyp_constr "signature" (typing/btype.mli[118,4367+36]..[118,4367+45])
+                      []
+                    core_type (typing/btype.mli[118,4367+49]..[118,4367+53])
+                      Ptyp_constr "unit" (typing/btype.mli[118,4367+49]..[118,4367+53])
+                      []
+              (typing/btype.mli[119,4422+4]..[119,4422+64])
+                Immutable
+                "it_signature_item" (typing/btype.mli[119,4422+4]..[119,4422+21])                core_type (typing/btype.mli[119,4422+23]..[119,4422+63])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/btype.mli[119,4422+23]..[119,4422+37])
+                    Ptyp_constr "type_iterators" (typing/btype.mli[119,4422+23]..[119,4422+37])
+                    []
+                  core_type (typing/btype.mli[119,4422+41]..[119,4422+63])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (typing/btype.mli[119,4422+41]..[119,4422+55])
+                      Ptyp_constr "signature_item" (typing/btype.mli[119,4422+41]..[119,4422+55])
+                      []
+                    core_type (typing/btype.mli[119,4422+59]..[119,4422+63])
+                      Ptyp_constr "unit" (typing/btype.mli[119,4422+59]..[119,4422+63])
+                      []
+              (typing/btype.mli[120,4487+4]..[120,4487+70])
+                Immutable
+                "it_value_description" (typing/btype.mli[120,4487+4]..[120,4487+24])                core_type (typing/btype.mli[120,4487+26]..[120,4487+69])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/btype.mli[120,4487+26]..[120,4487+40])
+                    Ptyp_constr "type_iterators" (typing/btype.mli[120,4487+26]..[120,4487+40])
+                    []
+                  core_type (typing/btype.mli[120,4487+44]..[120,4487+69])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (typing/btype.mli[120,4487+44]..[120,4487+61])
+                      Ptyp_constr "value_description" (typing/btype.mli[120,4487+44]..[120,4487+61])
+                      []
+                    core_type (typing/btype.mli[120,4487+65]..[120,4487+69])
+                      Ptyp_constr "unit" (typing/btype.mli[120,4487+65]..[120,4487+69])
+                      []
+              (typing/btype.mli[121,4558+4]..[121,4558+68])
+                Immutable
+                "it_type_declaration" (typing/btype.mli[121,4558+4]..[121,4558+23])                core_type (typing/btype.mli[121,4558+25]..[121,4558+67])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/btype.mli[121,4558+25]..[121,4558+39])
+                    Ptyp_constr "type_iterators" (typing/btype.mli[121,4558+25]..[121,4558+39])
+                    []
+                  core_type (typing/btype.mli[121,4558+43]..[121,4558+67])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (typing/btype.mli[121,4558+43]..[121,4558+59])
+                      Ptyp_constr "type_declaration" (typing/btype.mli[121,4558+43]..[121,4558+59])
+                      []
+                    core_type (typing/btype.mli[121,4558+63]..[121,4558+67])
+                      Ptyp_constr "unit" (typing/btype.mli[121,4558+63]..[121,4558+67])
+                      []
+              (typing/btype.mli[122,4627+4]..[122,4627+78])
+                Immutable
+                "it_extension_constructor" (typing/btype.mli[122,4627+4]..[122,4627+28])                core_type (typing/btype.mli[122,4627+30]..[122,4627+77])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/btype.mli[122,4627+30]..[122,4627+44])
+                    Ptyp_constr "type_iterators" (typing/btype.mli[122,4627+30]..[122,4627+44])
+                    []
+                  core_type (typing/btype.mli[122,4627+48]..[122,4627+77])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (typing/btype.mli[122,4627+48]..[122,4627+69])
+                      Ptyp_constr "extension_constructor" (typing/btype.mli[122,4627+48]..[122,4627+69])
+                      []
+                    core_type (typing/btype.mli[122,4627+73]..[122,4627+77])
+                      Ptyp_constr "unit" (typing/btype.mli[122,4627+73]..[122,4627+77])
+                      []
+              (typing/btype.mli[123,4706+4]..[123,4706+72])
+                Immutable
+                "it_module_declaration" (typing/btype.mli[123,4706+4]..[123,4706+25])                core_type (typing/btype.mli[123,4706+27]..[123,4706+71])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/btype.mli[123,4706+27]..[123,4706+41])
+                    Ptyp_constr "type_iterators" (typing/btype.mli[123,4706+27]..[123,4706+41])
+                    []
+                  core_type (typing/btype.mli[123,4706+45]..[123,4706+71])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (typing/btype.mli[123,4706+45]..[123,4706+63])
+                      Ptyp_constr "module_declaration" (typing/btype.mli[123,4706+45]..[123,4706+63])
+                      []
+                    core_type (typing/btype.mli[123,4706+67]..[123,4706+71])
+                      Ptyp_constr "unit" (typing/btype.mli[123,4706+67]..[123,4706+71])
+                      []
+              (typing/btype.mli[124,4779+4]..[124,4779+74])
+                Immutable
+                "it_modtype_declaration" (typing/btype.mli[124,4779+4]..[124,4779+26])                core_type (typing/btype.mli[124,4779+28]..[124,4779+73])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/btype.mli[124,4779+28]..[124,4779+42])
+                    Ptyp_constr "type_iterators" (typing/btype.mli[124,4779+28]..[124,4779+42])
+                    []
+                  core_type (typing/btype.mli[124,4779+46]..[124,4779+73])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (typing/btype.mli[124,4779+46]..[124,4779+65])
+                      Ptyp_constr "modtype_declaration" (typing/btype.mli[124,4779+46]..[124,4779+65])
+                      []
+                    core_type (typing/btype.mli[124,4779+69]..[124,4779+73])
+                      Ptyp_constr "unit" (typing/btype.mli[124,4779+69]..[124,4779+73])
+                      []
+              (typing/btype.mli[125,4854+4]..[125,4854+70])
+                Immutable
+                "it_class_declaration" (typing/btype.mli[125,4854+4]..[125,4854+24])                core_type (typing/btype.mli[125,4854+26]..[125,4854+69])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/btype.mli[125,4854+26]..[125,4854+40])
+                    Ptyp_constr "type_iterators" (typing/btype.mli[125,4854+26]..[125,4854+40])
+                    []
+                  core_type (typing/btype.mli[125,4854+44]..[125,4854+69])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (typing/btype.mli[125,4854+44]..[125,4854+61])
+                      Ptyp_constr "class_declaration" (typing/btype.mli[125,4854+44]..[125,4854+61])
+                      []
+                    core_type (typing/btype.mli[125,4854+65]..[125,4854+69])
+                      Ptyp_constr "unit" (typing/btype.mli[125,4854+65]..[125,4854+69])
+                      []
+              (typing/btype.mli[126,4925+4]..[126,4925+80])
+                Immutable
+                "it_class_type_declaration" (typing/btype.mli[126,4925+4]..[126,4925+29])                core_type (typing/btype.mli[126,4925+31]..[126,4925+79])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/btype.mli[126,4925+31]..[126,4925+45])
+                    Ptyp_constr "type_iterators" (typing/btype.mli[126,4925+31]..[126,4925+45])
+                    []
+                  core_type (typing/btype.mli[126,4925+49]..[126,4925+79])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (typing/btype.mli[126,4925+49]..[126,4925+71])
+                      Ptyp_constr "class_type_declaration" (typing/btype.mli[126,4925+49]..[126,4925+71])
+                      []
+                    core_type (typing/btype.mli[126,4925+75]..[126,4925+79])
+                      Ptyp_constr "unit" (typing/btype.mli[126,4925+75]..[126,4925+79])
+                      []
+              (typing/btype.mli[127,5006+4]..[127,5006+66])
+                Immutable
+                "it_functor_param" (typing/btype.mli[127,5006+4]..[127,5006+20])                core_type (typing/btype.mli[127,5006+22]..[127,5006+65])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/btype.mli[127,5006+22]..[127,5006+36])
+                    Ptyp_constr "type_iterators" (typing/btype.mli[127,5006+22]..[127,5006+36])
+                    []
+                  core_type (typing/btype.mli[127,5006+40]..[127,5006+65])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (typing/btype.mli[127,5006+40]..[127,5006+57])
+                      Ptyp_constr "functor_parameter" (typing/btype.mli[127,5006+40]..[127,5006+57])
+                      []
+                    core_type (typing/btype.mli[127,5006+61]..[127,5006+65])
+                      Ptyp_constr "unit" (typing/btype.mli[127,5006+61]..[127,5006+65])
+                      []
+              (typing/btype.mli[128,5073+4]..[128,5073+58])
+                Immutable
+                "it_module_type" (typing/btype.mli[128,5073+4]..[128,5073+18])                core_type (typing/btype.mli[128,5073+20]..[128,5073+57])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/btype.mli[128,5073+20]..[128,5073+34])
+                    Ptyp_constr "type_iterators" (typing/btype.mli[128,5073+20]..[128,5073+34])
+                    []
+                  core_type (typing/btype.mli[128,5073+38]..[128,5073+57])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (typing/btype.mli[128,5073+38]..[128,5073+49])
+                      Ptyp_constr "module_type" (typing/btype.mli[128,5073+38]..[128,5073+49])
+                      []
+                    core_type (typing/btype.mli[128,5073+53]..[128,5073+57])
+                      Ptyp_constr "unit" (typing/btype.mli[128,5073+53]..[128,5073+57])
+                      []
+              (typing/btype.mli[129,5132+4]..[129,5132+56])
+                Immutable
+                "it_class_type" (typing/btype.mli[129,5132+4]..[129,5132+17])                core_type (typing/btype.mli[129,5132+19]..[129,5132+55])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/btype.mli[129,5132+19]..[129,5132+33])
+                    Ptyp_constr "type_iterators" (typing/btype.mli[129,5132+19]..[129,5132+33])
+                    []
+                  core_type (typing/btype.mli[129,5132+37]..[129,5132+55])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (typing/btype.mli[129,5132+37]..[129,5132+47])
+                      Ptyp_constr "class_type" (typing/btype.mli[129,5132+37]..[129,5132+47])
+                      []
+                    core_type (typing/btype.mli[129,5132+51]..[129,5132+55])
+                      Ptyp_constr "unit" (typing/btype.mli[129,5132+51]..[129,5132+55])
+                      []
+              (typing/btype.mli[130,5189+4]..[130,5189+59])
+                Immutable
+                "it_type_kind" (typing/btype.mli[130,5189+4]..[130,5189+16])                core_type (typing/btype.mli[130,5189+18]..[130,5189+58])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/btype.mli[130,5189+18]..[130,5189+32])
+                    Ptyp_constr "type_iterators" (typing/btype.mli[130,5189+18]..[130,5189+32])
+                    []
+                  core_type (typing/btype.mli[130,5189+36]..[130,5189+58])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (typing/btype.mli[130,5189+36]..[130,5189+50])
+                      Ptyp_constr "type_decl_kind" (typing/btype.mli[130,5189+36]..[130,5189+50])
+                      []
+                    core_type (typing/btype.mli[130,5189+54]..[130,5189+58])
+                      Ptyp_constr "unit" (typing/btype.mli[130,5189+54]..[130,5189+58])
+                      []
+              (typing/btype.mli[131,5249+4]..[131,5249+57])
+                Immutable
+                "it_do_type_expr" (typing/btype.mli[131,5249+4]..[131,5249+19])                core_type (typing/btype.mli[131,5249+21]..[131,5249+56])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/btype.mli[131,5249+21]..[131,5249+35])
+                    Ptyp_constr "type_iterators" (typing/btype.mli[131,5249+21]..[131,5249+35])
+                    []
+                  core_type (typing/btype.mli[131,5249+39]..[131,5249+56])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (typing/btype.mli[131,5249+39]..[131,5249+48])
+                      Ptyp_constr "type_expr" (typing/btype.mli[131,5249+39]..[131,5249+48])
+                      []
+                    core_type (typing/btype.mli[131,5249+52]..[131,5249+56])
+                      Ptyp_constr "unit" (typing/btype.mli[131,5249+52]..[131,5249+56])
+                      []
+              (typing/btype.mli[132,5307+4]..[132,5307+54])
+                Immutable
+                "it_type_expr" (typing/btype.mli[132,5307+4]..[132,5307+16])                core_type (typing/btype.mli[132,5307+18]..[132,5307+53])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/btype.mli[132,5307+18]..[132,5307+32])
+                    Ptyp_constr "type_iterators" (typing/btype.mli[132,5307+18]..[132,5307+32])
+                    []
+                  core_type (typing/btype.mli[132,5307+36]..[132,5307+53])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (typing/btype.mli[132,5307+36]..[132,5307+45])
+                      Ptyp_constr "type_expr" (typing/btype.mli[132,5307+36]..[132,5307+45])
+                      []
+                    core_type (typing/btype.mli[132,5307+49]..[132,5307+53])
+                      Ptyp_constr "unit" (typing/btype.mli[132,5307+49]..[132,5307+53])
+                      []
+              (typing/btype.mli[133,5362+4]..[133,5362+28])
+                Immutable
+                "it_path" (typing/btype.mli[133,5362+4]..[133,5362+11])                core_type (typing/btype.mli[133,5362+13]..[133,5362+27])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/btype.mli[133,5362+13]..[133,5362+19])
+                    Ptyp_constr "Path.t" (typing/btype.mli[133,5362+13]..[133,5362+19])
+                    []
+                  core_type (typing/btype.mli[133,5362+23]..[133,5362+27])
+                    Ptyp_constr "unit" (typing/btype.mli[133,5362+23]..[133,5362+27])
+                    []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/btype.mli[134,5393+0]..[134,5393+34])
+    Psig_value
+    value_description "type_iterators" (typing/btype.mli[134,5393+4]..[134,5393+18]) (typing/btype.mli[134,5393+0]..[134,5393+34])
+      core_type (typing/btype.mli[134,5393+20]..[134,5393+34])
+        Ptyp_constr "type_iterators" (typing/btype.mli[134,5393+20]..[134,5393+34])
+        []
+      []
+  signature_item (typing/btype.mli[137,5543+0]..[137,5543+36])
+    Psig_value
+    value_description "unmark_iterators" (typing/btype.mli[137,5543+4]..[137,5543+20]) (typing/btype.mli[137,5543+0]..[137,5543+36])
+      core_type (typing/btype.mli[137,5543+22]..[137,5543+36])
+        Ptyp_constr "type_iterators" (typing/btype.mli[137,5543+22]..[137,5543+36])
+        []
+      []
+  signature_item (typing/btype.mli[140,5659+0]..[141,5679+74])
+    Psig_value
+    value_description "copy_type_desc" (typing/btype.mli[140,5659+4]..[140,5659+18]) (typing/btype.mli[140,5659+0]..[141,5679+74])
+      core_type (typing/btype.mli[141,5679+4]..[141,5679+74])
+        Ptyp_arrow
+        Optional "keep_names"
+        core_type (typing/btype.mli[141,5679+16]..[141,5679+20])
+          Ptyp_constr "bool" (typing/btype.mli[141,5679+16]..[141,5679+20])
+          []
+        core_type (typing/btype.mli[141,5679+24]..[141,5679+74])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[141,5679+25]..[141,5679+47])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/btype.mli[141,5679+25]..[141,5679+34])
+              Ptyp_constr "type_expr" (typing/btype.mli[141,5679+25]..[141,5679+34])
+              []
+            core_type (typing/btype.mli[141,5679+38]..[141,5679+47])
+              Ptyp_constr "type_expr" (typing/btype.mli[141,5679+38]..[141,5679+47])
+              []
+          core_type (typing/btype.mli[141,5679+52]..[141,5679+74])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/btype.mli[141,5679+52]..[141,5679+61])
+              Ptyp_constr "type_desc" (typing/btype.mli[141,5679+52]..[141,5679+61])
+              []
+            core_type (typing/btype.mli[141,5679+65]..[141,5679+74])
+              Ptyp_constr "type_desc" (typing/btype.mli[141,5679+65]..[141,5679+74])
+              []
+      []
+  signature_item (typing/btype.mli[143,5782+0]..[145,5828+53])
+    Psig_value
+    value_description "copy_row" (typing/btype.mli[143,5782+4]..[143,5782+12]) (typing/btype.mli[143,5782+0]..[145,5828+53])
+      core_type (typing/btype.mli[144,5796+4]..[145,5828+53])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[144,5796+5]..[144,5796+27])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[144,5796+5]..[144,5796+14])
+            Ptyp_constr "type_expr" (typing/btype.mli[144,5796+5]..[144,5796+14])
+            []
+          core_type (typing/btype.mli[144,5796+18]..[144,5796+27])
+            Ptyp_constr "type_expr" (typing/btype.mli[144,5796+18]..[144,5796+27])
+            []
+        core_type (typing/btype.mli[145,5828+4]..[145,5828+53])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[145,5828+4]..[145,5828+8])
+            Ptyp_constr "bool" (typing/btype.mli[145,5828+4]..[145,5828+8])
+            []
+          core_type (typing/btype.mli[145,5828+12]..[145,5828+53])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/btype.mli[145,5828+12]..[145,5828+20])
+              Ptyp_constr "row_desc" (typing/btype.mli[145,5828+12]..[145,5828+20])
+              []
+            core_type (typing/btype.mli[145,5828+24]..[145,5828+53])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/btype.mli[145,5828+24]..[145,5828+28])
+                Ptyp_constr "bool" (typing/btype.mli[145,5828+24]..[145,5828+28])
+                []
+              core_type (typing/btype.mli[145,5828+32]..[145,5828+53])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/btype.mli[145,5828+32]..[145,5828+41])
+                  Ptyp_constr "type_expr" (typing/btype.mli[145,5828+32]..[145,5828+41])
+                  []
+                core_type (typing/btype.mli[145,5828+45]..[145,5828+53])
+                  Ptyp_constr "row_desc" (typing/btype.mli[145,5828+45]..[145,5828+53])
+                  []
+      []
+  signature_item (typing/btype.mli[146,5882+0]..[146,5882+39])
+    Psig_value
+    value_description "copy_kind" (typing/btype.mli[146,5882+4]..[146,5882+13]) (typing/btype.mli[146,5882+0]..[146,5882+39])
+      core_type (typing/btype.mli[146,5882+15]..[146,5882+39])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[146,5882+15]..[146,5882+25])
+          Ptyp_constr "field_kind" (typing/btype.mli[146,5882+15]..[146,5882+25])
+          []
+        core_type (typing/btype.mli[146,5882+29]..[146,5882+39])
+          Ptyp_constr "field_kind" (typing/btype.mli[146,5882+29]..[146,5882+39])
+          []
+      []
+  signature_item (typing/btype.mli[148,5923+0]..[166,6615+3])
+    Psig_module "For_copy" (typing/btype.mli[148,5923+7]..[148,5923+15])
+    module_type (typing/btype.mli[148,5923+18]..[166,6615+3])
+      Pmty_signature
+      [
+        signature_item (typing/btype.mli[150,5946+2]..[150,5946+17])
+          Psig_type Rec
+          [
+            type_declaration "copy_scope" (typing/btype.mli[150,5946+7]..[150,5946+17]) (typing/btype.mli[150,5946+2]..[150,5946+17])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (typing/btype.mli[157,6222+2]..[157,6222+61])
+          Psig_value
+          value_description "save_desc" (typing/btype.mli[157,6222+6]..[157,6222+15]) (typing/btype.mli[157,6222+2]..[157,6222+61])
+            core_type (typing/btype.mli[157,6222+17]..[157,6222+61])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/btype.mli[157,6222+17]..[157,6222+27])
+                Ptyp_constr "copy_scope" (typing/btype.mli[157,6222+17]..[157,6222+27])
+                []
+              core_type (typing/btype.mli[157,6222+31]..[157,6222+61])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/btype.mli[157,6222+31]..[157,6222+40])
+                  Ptyp_constr "type_expr" (typing/btype.mli[157,6222+31]..[157,6222+40])
+                  []
+                core_type (typing/btype.mli[157,6222+44]..[157,6222+61])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (typing/btype.mli[157,6222+44]..[157,6222+53])
+                    Ptyp_constr "type_desc" (typing/btype.mli[157,6222+44]..[157,6222+53])
+                    []
+                  core_type (typing/btype.mli[157,6222+57]..[157,6222+61])
+                    Ptyp_constr "unit" (typing/btype.mli[157,6222+57]..[157,6222+61])
+                    []
+            []
+        signature_item (typing/btype.mli[160,6323+2]..[160,6323+59])
+          Psig_value
+          value_description "dup_kind" (typing/btype.mli[160,6323+6]..[160,6323+14]) (typing/btype.mli[160,6323+2]..[160,6323+59])
+            core_type (typing/btype.mli[160,6323+16]..[160,6323+59])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/btype.mli[160,6323+16]..[160,6323+26])
+                Ptyp_constr "copy_scope" (typing/btype.mli[160,6323+16]..[160,6323+26])
+                []
+              core_type (typing/btype.mli[160,6323+30]..[160,6323+59])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/btype.mli[160,6323+30]..[160,6323+51])
+                  Ptyp_constr "ref" (typing/btype.mli[160,6323+48]..[160,6323+51])
+                  [
+                    core_type (typing/btype.mli[160,6323+30]..[160,6323+47])
+                      Ptyp_constr "option" (typing/btype.mli[160,6323+41]..[160,6323+47])
+                      [
+                        core_type (typing/btype.mli[160,6323+30]..[160,6323+40])
+                          Ptyp_constr "field_kind" (typing/btype.mli[160,6323+30]..[160,6323+40])
+                          []
+                      ]
+                  ]
+                core_type (typing/btype.mli[160,6323+55]..[160,6323+59])
+                  Ptyp_constr "unit" (typing/btype.mli[160,6323+55]..[160,6323+59])
+                  []
+            []
+        signature_item (typing/btype.mli[163,6456+2]..[163,6456+42])
+          Psig_value
+          value_description "with_scope" (typing/btype.mli[163,6456+6]..[163,6456+16]) (typing/btype.mli[163,6456+2]..[163,6456+42])
+            core_type (typing/btype.mli[163,6456+18]..[163,6456+42])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/btype.mli[163,6456+19]..[163,6456+35])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/btype.mli[163,6456+19]..[163,6456+29])
+                  Ptyp_constr "copy_scope" (typing/btype.mli[163,6456+19]..[163,6456+29])
+                  []
+                core_type (typing/btype.mli[163,6456+33]..[163,6456+35])
+                  Ptyp_var a
+              core_type (typing/btype.mli[163,6456+40]..[163,6456+42])
+                Ptyp_var a
+            []
+      ]
+  signature_item (typing/btype.mli[168,6620+0]..[168,6620+21])
+    Psig_value
+    value_description "lowest_level" (typing/btype.mli[168,6620+4]..[168,6620+16]) (typing/btype.mli[168,6620+0]..[168,6620+21])
+      core_type (typing/btype.mli[168,6620+18]..[168,6620+21])
+        Ptyp_constr "int" (typing/btype.mli[168,6620+18]..[168,6620+21])
+        []
+      []
+  signature_item (typing/btype.mli[171,6694+0]..[171,6694+38])
+    Psig_value
+    value_description "not_marked_node" (typing/btype.mli[171,6694+4]..[171,6694+19]) (typing/btype.mli[171,6694+0]..[171,6694+38])
+      core_type (typing/btype.mli[171,6694+21]..[171,6694+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[171,6694+21]..[171,6694+30])
+          Ptyp_constr "type_expr" (typing/btype.mli[171,6694+21]..[171,6694+30])
+          []
+        core_type (typing/btype.mli[171,6694+34]..[171,6694+38])
+          Ptyp_constr "bool" (typing/btype.mli[171,6694+34]..[171,6694+38])
+          []
+      []
+  signature_item (typing/btype.mli[174,6793+0]..[174,6793+39])
+    Psig_value
+    value_description "logged_mark_node" (typing/btype.mli[174,6793+4]..[174,6793+20]) (typing/btype.mli[174,6793+0]..[174,6793+39])
+      core_type (typing/btype.mli[174,6793+22]..[174,6793+39])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[174,6793+22]..[174,6793+31])
+          Ptyp_constr "type_expr" (typing/btype.mli[174,6793+22]..[174,6793+31])
+          []
+        core_type (typing/btype.mli[174,6793+35]..[174,6793+39])
+          Ptyp_constr "unit" (typing/btype.mli[174,6793+35]..[174,6793+39])
+          []
+      []
+  signature_item (typing/btype.mli[177,6936+0]..[177,6936+43])
+    Psig_value
+    value_description "try_logged_mark_node" (typing/btype.mli[177,6936+4]..[177,6936+24]) (typing/btype.mli[177,6936+0]..[177,6936+43])
+      core_type (typing/btype.mli[177,6936+26]..[177,6936+43])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[177,6936+26]..[177,6936+35])
+          Ptyp_constr "type_expr" (typing/btype.mli[177,6936+26]..[177,6936+35])
+          []
+        core_type (typing/btype.mli[177,6936+39]..[177,6936+43])
+          Ptyp_constr "bool" (typing/btype.mli[177,6936+39]..[177,6936+43])
+          []
+      []
+  signature_item (typing/btype.mli[182,7143+0]..[182,7143+37])
+    Psig_value
+    value_description "flip_mark_node" (typing/btype.mli[182,7143+4]..[182,7143+18]) (typing/btype.mli[182,7143+0]..[182,7143+37])
+      core_type (typing/btype.mli[182,7143+20]..[182,7143+37])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[182,7143+20]..[182,7143+29])
+          Ptyp_constr "type_expr" (typing/btype.mli[182,7143+20]..[182,7143+29])
+          []
+        core_type (typing/btype.mli[182,7143+33]..[182,7143+37])
+          Ptyp_constr "unit" (typing/btype.mli[182,7143+33]..[182,7143+37])
+          []
+      []
+  signature_item (typing/btype.mli[186,7367+0]..[186,7367+36])
+    Psig_value
+    value_description "try_mark_node" (typing/btype.mli[186,7367+4]..[186,7367+17]) (typing/btype.mli[186,7367+0]..[186,7367+36])
+      core_type (typing/btype.mli[186,7367+19]..[186,7367+36])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[186,7367+19]..[186,7367+28])
+          Ptyp_constr "type_expr" (typing/btype.mli[186,7367+19]..[186,7367+28])
+          []
+        core_type (typing/btype.mli[186,7367+32]..[186,7367+36])
+          Ptyp_constr "bool" (typing/btype.mli[186,7367+32]..[186,7367+36])
+          []
+      []
+  signature_item (typing/btype.mli[192,7649+0]..[192,7649+32])
+    Psig_value
+    value_description "mark_type" (typing/btype.mli[192,7649+4]..[192,7649+13]) (typing/btype.mli[192,7649+0]..[192,7649+32])
+      core_type (typing/btype.mli[192,7649+15]..[192,7649+32])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[192,7649+15]..[192,7649+24])
+          Ptyp_constr "type_expr" (typing/btype.mli[192,7649+15]..[192,7649+24])
+          []
+        core_type (typing/btype.mli[192,7649+28]..[192,7649+32])
+          Ptyp_constr "unit" (typing/btype.mli[192,7649+28]..[192,7649+32])
+          []
+      []
+  signature_item (typing/btype.mli[194,7720+0]..[194,7720+39])
+    Psig_value
+    value_description "mark_type_params" (typing/btype.mli[194,7720+4]..[194,7720+20]) (typing/btype.mli[194,7720+0]..[194,7720+39])
+      core_type (typing/btype.mli[194,7720+22]..[194,7720+39])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[194,7720+22]..[194,7720+31])
+          Ptyp_constr "type_expr" (typing/btype.mli[194,7720+22]..[194,7720+31])
+          []
+        core_type (typing/btype.mli[194,7720+35]..[194,7720+39])
+          Ptyp_constr "unit" (typing/btype.mli[194,7720+35]..[194,7720+39])
+          []
+      []
+  signature_item (typing/btype.mli[197,7816+0]..[197,7816+34])
+    Psig_value
+    value_description "unmark_type" (typing/btype.mli[197,7816+4]..[197,7816+15]) (typing/btype.mli[197,7816+0]..[197,7816+34])
+      core_type (typing/btype.mli[197,7816+17]..[197,7816+34])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[197,7816+17]..[197,7816+26])
+          Ptyp_constr "type_expr" (typing/btype.mli[197,7816+17]..[197,7816+26])
+          []
+        core_type (typing/btype.mli[197,7816+30]..[197,7816+34])
+          Ptyp_constr "unit" (typing/btype.mli[197,7816+30]..[197,7816+34])
+          []
+      []
+  signature_item (typing/btype.mli[198,7851+0]..[198,7851+46])
+    Psig_value
+    value_description "unmark_type_decl" (typing/btype.mli[198,7851+4]..[198,7851+20]) (typing/btype.mli[198,7851+0]..[198,7851+46])
+      core_type (typing/btype.mli[198,7851+22]..[198,7851+46])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[198,7851+22]..[198,7851+38])
+          Ptyp_constr "type_declaration" (typing/btype.mli[198,7851+22]..[198,7851+38])
+          []
+        core_type (typing/btype.mli[198,7851+42]..[198,7851+46])
+          Ptyp_constr "unit" (typing/btype.mli[198,7851+42]..[198,7851+46])
+          []
+      []
+  signature_item (typing/btype.mli[199,7898+0]..[199,7898+63])
+    Psig_value
+    value_description "unmark_extension_constructor" (typing/btype.mli[199,7898+4]..[199,7898+32]) (typing/btype.mli[199,7898+0]..[199,7898+63])
+      core_type (typing/btype.mli[199,7898+34]..[199,7898+63])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[199,7898+34]..[199,7898+55])
+          Ptyp_constr "extension_constructor" (typing/btype.mli[199,7898+34]..[199,7898+55])
+          []
+        core_type (typing/btype.mli[199,7898+59]..[199,7898+63])
+          Ptyp_constr "unit" (typing/btype.mli[199,7898+59]..[199,7898+63])
+          []
+      []
+  signature_item (typing/btype.mli[200,7962+0]..[200,7962+41])
+    Psig_value
+    value_description "unmark_class_type" (typing/btype.mli[200,7962+4]..[200,7962+21]) (typing/btype.mli[200,7962+0]..[200,7962+41])
+      core_type (typing/btype.mli[200,7962+23]..[200,7962+41])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[200,7962+23]..[200,7962+33])
+          Ptyp_constr "class_type" (typing/btype.mli[200,7962+23]..[200,7962+33])
+          []
+        core_type (typing/btype.mli[200,7962+37]..[200,7962+41])
+          Ptyp_constr "unit" (typing/btype.mli[200,7962+37]..[200,7962+41])
+          []
+      []
+  signature_item (typing/btype.mli[201,8004+0]..[201,8004+51])
+    Psig_value
+    value_description "unmark_class_signature" (typing/btype.mli[201,8004+4]..[201,8004+26]) (typing/btype.mli[201,8004+0]..[201,8004+51])
+      core_type (typing/btype.mli[201,8004+28]..[201,8004+51])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[201,8004+28]..[201,8004+43])
+          Ptyp_constr "class_signature" (typing/btype.mli[201,8004+28]..[201,8004+43])
+          []
+        core_type (typing/btype.mli[201,8004+47]..[201,8004+51])
+          Ptyp_constr "unit" (typing/btype.mli[201,8004+47]..[201,8004+51])
+          []
+      []
+  signature_item (typing/btype.mli[206,8148+0]..[206,8148+74])
+    Psig_value
+    value_description "find_expans" (typing/btype.mli[206,8148+4]..[206,8148+15]) (typing/btype.mli[206,8148+0]..[206,8148+74])
+      core_type (typing/btype.mli[206,8148+17]..[206,8148+74])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[206,8148+17]..[206,8148+29])
+          Ptyp_constr "private_flag" (typing/btype.mli[206,8148+17]..[206,8148+29])
+          []
+        core_type (typing/btype.mli[206,8148+33]..[206,8148+74])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[206,8148+33]..[206,8148+39])
+            Ptyp_constr "Path.t" (typing/btype.mli[206,8148+33]..[206,8148+39])
+            []
+          core_type (typing/btype.mli[206,8148+43]..[206,8148+74])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/btype.mli[206,8148+43]..[206,8148+54])
+              Ptyp_constr "abbrev_memo" (typing/btype.mli[206,8148+43]..[206,8148+54])
+              []
+            core_type (typing/btype.mli[206,8148+58]..[206,8148+74])
+              Ptyp_constr "option" (typing/btype.mli[206,8148+68]..[206,8148+74])
+              [
+                core_type (typing/btype.mli[206,8148+58]..[206,8148+67])
+                  Ptyp_constr "type_expr" (typing/btype.mli[206,8148+58]..[206,8148+67])
+                  []
+              ]
+      []
+  signature_item (typing/btype.mli[208,8270+0]..[208,8270+32])
+    Psig_value
+    value_description "cleanup_abbrev" (typing/btype.mli[208,8270+4]..[208,8270+18]) (typing/btype.mli[208,8270+0]..[208,8270+32])
+      core_type (typing/btype.mli[208,8270+20]..[208,8270+32])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[208,8270+20]..[208,8270+24])
+          Ptyp_constr "unit" (typing/btype.mli[208,8270+20]..[208,8270+24])
+          []
+        core_type (typing/btype.mli[208,8270+28]..[208,8270+32])
+          Ptyp_constr "unit" (typing/btype.mli[208,8270+28]..[208,8270+32])
+          []
+      []
+  signature_item (typing/btype.mli[212,8475+0]..[214,8523+64])
+    Psig_value
+    value_description "memorize_abbrev" (typing/btype.mli[212,8475+4]..[212,8475+19]) (typing/btype.mli[212,8475+0]..[214,8523+64])
+      core_type (typing/btype.mli[213,8496+8]..[214,8523+64])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[213,8496+8]..[213,8496+23])
+          Ptyp_constr "ref" (typing/btype.mli[213,8496+20]..[213,8496+23])
+          [
+            core_type (typing/btype.mli[213,8496+8]..[213,8496+19])
+              Ptyp_constr "abbrev_memo" (typing/btype.mli[213,8496+8]..[213,8496+19])
+              []
+          ]
+        core_type (typing/btype.mli[214,8523+8]..[214,8523+64])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[214,8523+8]..[214,8523+20])
+            Ptyp_constr "private_flag" (typing/btype.mli[214,8523+8]..[214,8523+20])
+            []
+          core_type (typing/btype.mli[214,8523+24]..[214,8523+64])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/btype.mli[214,8523+24]..[214,8523+30])
+              Ptyp_constr "Path.t" (typing/btype.mli[214,8523+24]..[214,8523+30])
+              []
+            core_type (typing/btype.mli[214,8523+34]..[214,8523+64])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/btype.mli[214,8523+34]..[214,8523+43])
+                Ptyp_constr "type_expr" (typing/btype.mli[214,8523+34]..[214,8523+43])
+                []
+              core_type (typing/btype.mli[214,8523+47]..[214,8523+64])
+                Ptyp_arrow
+                Nolabel
+                core_type (typing/btype.mli[214,8523+47]..[214,8523+56])
+                  Ptyp_constr "type_expr" (typing/btype.mli[214,8523+47]..[214,8523+56])
+                  []
+                core_type (typing/btype.mli[214,8523+60]..[214,8523+64])
+                  Ptyp_constr "unit" (typing/btype.mli[214,8523+60]..[214,8523+64])
+                  []
+      []
+  signature_item (typing/btype.mli[216,8632+0]..[217,8651+41])
+    Psig_value
+    value_description "forget_abbrev" (typing/btype.mli[216,8632+4]..[216,8632+17]) (typing/btype.mli[216,8632+0]..[217,8651+41])
+      core_type (typing/btype.mli[217,8651+8]..[217,8651+41])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[217,8651+8]..[217,8651+23])
+          Ptyp_constr "ref" (typing/btype.mli[217,8651+20]..[217,8651+23])
+          [
+            core_type (typing/btype.mli[217,8651+8]..[217,8651+19])
+              Ptyp_constr "abbrev_memo" (typing/btype.mli[217,8651+8]..[217,8651+19])
+              []
+          ]
+        core_type (typing/btype.mli[217,8651+27]..[217,8651+41])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[217,8651+27]..[217,8651+33])
+            Ptyp_constr "Path.t" (typing/btype.mli[217,8651+27]..[217,8651+33])
+            []
+          core_type (typing/btype.mli[217,8651+37]..[217,8651+41])
+            Ptyp_constr "unit" (typing/btype.mli[217,8651+37]..[217,8651+41])
+            []
+      []
+  signature_item (typing/btype.mli[222,8780+0]..[222,8780+35])
+    Psig_value
+    value_description "is_optional" (typing/btype.mli[222,8780+4]..[222,8780+15]) (typing/btype.mli[222,8780+0]..[222,8780+35])
+      core_type (typing/btype.mli[222,8780+18]..[222,8780+35])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[222,8780+18]..[222,8780+27])
+          Ptyp_constr "arg_label" (typing/btype.mli[222,8780+18]..[222,8780+27])
+          []
+        core_type (typing/btype.mli[222,8780+31]..[222,8780+35])
+          Ptyp_constr "bool" (typing/btype.mli[222,8780+31]..[222,8780+35])
+          []
+      []
+  signature_item (typing/btype.mli[223,8816+0]..[223,8816+35])
+    Psig_value
+    value_description "label_name" (typing/btype.mli[223,8816+4]..[223,8816+14]) (typing/btype.mli[223,8816+0]..[223,8816+35])
+      core_type (typing/btype.mli[223,8816+17]..[223,8816+35])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[223,8816+17]..[223,8816+26])
+          Ptyp_constr "arg_label" (typing/btype.mli[223,8816+17]..[223,8816+26])
+          []
+        core_type (typing/btype.mli[223,8816+30]..[223,8816+35])
+          Ptyp_constr "label" (typing/btype.mli[223,8816+30]..[223,8816+35])
+          []
+      []
+  signature_item (typing/btype.mli[226,8930+0]..[226,8930+44])
+    Psig_value
+    value_description "prefixed_label_name" (typing/btype.mli[226,8930+4]..[226,8930+23]) (typing/btype.mli[226,8930+0]..[226,8930+44])
+      core_type (typing/btype.mli[226,8930+26]..[226,8930+44])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[226,8930+26]..[226,8930+35])
+          Ptyp_constr "arg_label" (typing/btype.mli[226,8930+26]..[226,8930+35])
+          []
+        core_type (typing/btype.mli[226,8930+39]..[226,8930+44])
+          Ptyp_constr "label" (typing/btype.mli[226,8930+39]..[226,8930+44])
+          []
+      []
+  signature_item (typing/btype.mli[228,8976+0]..[230,9034+58])
+    Psig_value
+    value_description "extract_label" (typing/btype.mli[228,8976+4]..[228,8976+17]) (typing/btype.mli[228,8976+0]..[230,9034+58])
+      core_type (typing/btype.mli[229,8996+4]..[230,9034+58])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[229,8996+4]..[229,8996+9])
+          Ptyp_constr "label" (typing/btype.mli[229,8996+4]..[229,8996+9])
+          []
+        core_type (typing/btype.mli[229,8996+13]..[230,9034+58])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[229,8996+13]..[229,8996+34])
+            Ptyp_constr "list" (typing/btype.mli[229,8996+30]..[229,8996+34])
+            [
+              core_type (typing/btype.mli[229,8996+14]..[229,8996+28])
+                Ptyp_tuple
+                [
+                  core_type (typing/btype.mli[229,8996+14]..[229,8996+23])
+                    Ptyp_constr "arg_label" (typing/btype.mli[229,8996+14]..[229,8996+23])
+                    []
+                  core_type (typing/btype.mli[229,8996+26]..[229,8996+28])
+                    Ptyp_var a
+                ]
+            ]
+          core_type (typing/btype.mli[230,9034+4]..[230,9034+58])
+            Ptyp_constr "option" (typing/btype.mli[230,9034+52]..[230,9034+58])
+            [
+              core_type (typing/btype.mli[230,9034+5]..[230,9034+50])
+                Ptyp_tuple
+                [
+                  core_type (typing/btype.mli[230,9034+5]..[230,9034+14])
+                    Ptyp_constr "arg_label" (typing/btype.mli[230,9034+5]..[230,9034+14])
+                    []
+                  core_type (typing/btype.mli[230,9034+17]..[230,9034+19])
+                    Ptyp_var a
+                  core_type (typing/btype.mli[230,9034+22]..[230,9034+26])
+                    Ptyp_constr "bool" (typing/btype.mli[230,9034+22]..[230,9034+26])
+                    []
+                  core_type (typing/btype.mli[230,9034+29]..[230,9034+50])
+                    Ptyp_constr "list" (typing/btype.mli[230,9034+46]..[230,9034+50])
+                    [
+                      core_type (typing/btype.mli[230,9034+30]..[230,9034+44])
+                        Ptyp_tuple
+                        [
+                          core_type (typing/btype.mli[230,9034+30]..[230,9034+39])
+                            Ptyp_constr "arg_label" (typing/btype.mli[230,9034+30]..[230,9034+39])
+                            []
+                          core_type (typing/btype.mli[230,9034+42]..[230,9034+44])
+                            Ptyp_var a
+                        ]
+                    ]
+                ]
+            ]
+      []
+  signature_item (typing/btype.mli[238,9264+0]..[238,9264+13])
+    Psig_type Rec
+    [
+      type_declaration "snapshot" (typing/btype.mli[238,9264+5]..[238,9264+13]) (typing/btype.mli[238,9264+0]..[238,9264+13])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/btype.mli[240,9320+0]..[240,9320+30])
+    Psig_value
+    value_description "snapshot" (typing/btype.mli[240,9320+4]..[240,9320+12]) (typing/btype.mli[240,9320+0]..[240,9320+30])
+      core_type (typing/btype.mli[240,9320+14]..[240,9320+30])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[240,9320+14]..[240,9320+18])
+          Ptyp_constr "unit" (typing/btype.mli[240,9320+14]..[240,9320+18])
+          []
+        core_type (typing/btype.mli[240,9320+22]..[240,9320+30])
+          Ptyp_constr "snapshot" (typing/btype.mli[240,9320+22]..[240,9320+30])
+          []
+      []
+  signature_item (typing/btype.mli[242,9419+0]..[242,9419+31])
+    Psig_value
+    value_description "backtrack" (typing/btype.mli[242,9419+4]..[242,9419+13]) (typing/btype.mli[242,9419+0]..[242,9419+31])
+      core_type (typing/btype.mli[242,9419+15]..[242,9419+31])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[242,9419+15]..[242,9419+23])
+          Ptyp_constr "snapshot" (typing/btype.mli[242,9419+15]..[242,9419+23])
+          []
+        core_type (typing/btype.mli[242,9419+27]..[242,9419+31])
+          Ptyp_constr "unit" (typing/btype.mli[242,9419+27]..[242,9419+31])
+          []
+      []
+  signature_item (typing/btype.mli[246,9626+0]..[246,9626+35])
+    Psig_value
+    value_description "undo_compress" (typing/btype.mli[246,9626+4]..[246,9626+17]) (typing/btype.mli[246,9626+0]..[246,9626+35])
+      core_type (typing/btype.mli[246,9626+19]..[246,9626+35])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[246,9626+19]..[246,9626+27])
+          Ptyp_constr "snapshot" (typing/btype.mli[246,9626+19]..[246,9626+27])
+          []
+        core_type (typing/btype.mli[246,9626+31]..[246,9626+35])
+          Ptyp_constr "unit" (typing/btype.mli[246,9626+31]..[246,9626+35])
+          []
+      []
+  signature_item (typing/btype.mli[252,9898+0]..[252,9898+45])
+    Psig_value
+    value_description "link_type" (typing/btype.mli[252,9898+4]..[252,9898+13]) (typing/btype.mli[252,9898+0]..[252,9898+45])
+      core_type (typing/btype.mli[252,9898+15]..[252,9898+45])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[252,9898+15]..[252,9898+24])
+          Ptyp_constr "type_expr" (typing/btype.mli[252,9898+15]..[252,9898+24])
+          []
+        core_type (typing/btype.mli[252,9898+28]..[252,9898+45])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[252,9898+28]..[252,9898+37])
+            Ptyp_constr "type_expr" (typing/btype.mli[252,9898+28]..[252,9898+37])
+            []
+          core_type (typing/btype.mli[252,9898+41]..[252,9898+45])
+            Ptyp_constr "unit" (typing/btype.mli[252,9898+41]..[252,9898+45])
+            []
+      []
+  signature_item (typing/btype.mli[255,10064+0]..[255,10064+49])
+    Psig_value
+    value_description "set_type_desc" (typing/btype.mli[255,10064+4]..[255,10064+17]) (typing/btype.mli[255,10064+0]..[255,10064+49])
+      core_type (typing/btype.mli[255,10064+19]..[255,10064+49])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[255,10064+19]..[255,10064+28])
+          Ptyp_constr "type_expr" (typing/btype.mli[255,10064+19]..[255,10064+28])
+          []
+        core_type (typing/btype.mli[255,10064+32]..[255,10064+49])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[255,10064+32]..[255,10064+41])
+            Ptyp_constr "type_desc" (typing/btype.mli[255,10064+32]..[255,10064+41])
+            []
+          core_type (typing/btype.mli[255,10064+45]..[255,10064+49])
+            Ptyp_constr "unit" (typing/btype.mli[255,10064+45]..[255,10064+49])
+            []
+      []
+  signature_item (typing/btype.mli[257,10173+0]..[257,10173+39])
+    Psig_value
+    value_description "set_level" (typing/btype.mli[257,10173+4]..[257,10173+13]) (typing/btype.mli[257,10173+0]..[257,10173+39])
+      core_type (typing/btype.mli[257,10173+15]..[257,10173+39])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[257,10173+15]..[257,10173+24])
+          Ptyp_constr "type_expr" (typing/btype.mli[257,10173+15]..[257,10173+24])
+          []
+        core_type (typing/btype.mli[257,10173+28]..[257,10173+39])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[257,10173+28]..[257,10173+31])
+            Ptyp_constr "int" (typing/btype.mli[257,10173+28]..[257,10173+31])
+            []
+          core_type (typing/btype.mli[257,10173+35]..[257,10173+39])
+            Ptyp_constr "unit" (typing/btype.mli[257,10173+35]..[257,10173+39])
+            []
+      []
+  signature_item (typing/btype.mli[258,10213+0]..[258,10213+39])
+    Psig_value
+    value_description "set_scope" (typing/btype.mli[258,10213+4]..[258,10213+13]) (typing/btype.mli[258,10213+0]..[258,10213+39])
+      core_type (typing/btype.mli[258,10213+15]..[258,10213+39])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[258,10213+15]..[258,10213+24])
+          Ptyp_constr "type_expr" (typing/btype.mli[258,10213+15]..[258,10213+24])
+          []
+        core_type (typing/btype.mli[258,10213+28]..[258,10213+39])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[258,10213+28]..[258,10213+31])
+            Ptyp_constr "int" (typing/btype.mli[258,10213+28]..[258,10213+31])
+            []
+          core_type (typing/btype.mli[258,10213+35]..[258,10213+39])
+            Ptyp_constr "unit" (typing/btype.mli[258,10213+35]..[258,10213+39])
+            []
+      []
+  signature_item (typing/btype.mli[259,10253+0]..[261,10311+44])
+    Psig_value
+    value_description "set_name" (typing/btype.mli[259,10253+4]..[259,10253+12]) (typing/btype.mli[259,10253+0]..[261,10311+44])
+      core_type (typing/btype.mli[260,10267+4]..[261,10311+44])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[260,10267+4]..[260,10267+40])
+          Ptyp_constr "ref" (typing/btype.mli[260,10267+37]..[260,10267+40])
+          [
+            core_type (typing/btype.mli[260,10267+4]..[260,10267+36])
+              Ptyp_constr "option" (typing/btype.mli[260,10267+30]..[260,10267+36])
+              [
+                core_type (typing/btype.mli[260,10267+5]..[260,10267+28])
+                  Ptyp_tuple
+                  [
+                    core_type (typing/btype.mli[260,10267+5]..[260,10267+11])
+                      Ptyp_constr "Path.t" (typing/btype.mli[260,10267+5]..[260,10267+11])
+                      []
+                    core_type (typing/btype.mli[260,10267+14]..[260,10267+28])
+                      Ptyp_constr "list" (typing/btype.mli[260,10267+24]..[260,10267+28])
+                      [
+                        core_type (typing/btype.mli[260,10267+14]..[260,10267+23])
+                          Ptyp_constr "type_expr" (typing/btype.mli[260,10267+14]..[260,10267+23])
+                          []
+                      ]
+                  ]
+              ]
+          ]
+        core_type (typing/btype.mli[261,10311+4]..[261,10311+44])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[261,10311+4]..[261,10311+36])
+            Ptyp_constr "option" (typing/btype.mli[261,10311+30]..[261,10311+36])
+            [
+              core_type (typing/btype.mli[261,10311+5]..[261,10311+28])
+                Ptyp_tuple
+                [
+                  core_type (typing/btype.mli[261,10311+5]..[261,10311+11])
+                    Ptyp_constr "Path.t" (typing/btype.mli[261,10311+5]..[261,10311+11])
+                    []
+                  core_type (typing/btype.mli[261,10311+14]..[261,10311+28])
+                    Ptyp_constr "list" (typing/btype.mli[261,10311+24]..[261,10311+28])
+                    [
+                      core_type (typing/btype.mli[261,10311+14]..[261,10311+23])
+                        Ptyp_constr "type_expr" (typing/btype.mli[261,10311+14]..[261,10311+23])
+                        []
+                    ]
+                ]
+            ]
+          core_type (typing/btype.mli[261,10311+40]..[261,10311+44])
+            Ptyp_constr "unit" (typing/btype.mli[261,10311+40]..[261,10311+44])
+            []
+      []
+  signature_item (typing/btype.mli[262,10356+0]..[262,10356+60])
+    Psig_value
+    value_description "set_row_field" (typing/btype.mli[262,10356+4]..[262,10356+17]) (typing/btype.mli[262,10356+0]..[262,10356+60])
+      core_type (typing/btype.mli[262,10356+19]..[262,10356+60])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[262,10356+19]..[262,10356+39])
+          Ptyp_constr "ref" (typing/btype.mli[262,10356+36]..[262,10356+39])
+          [
+            core_type (typing/btype.mli[262,10356+19]..[262,10356+35])
+              Ptyp_constr "option" (typing/btype.mli[262,10356+29]..[262,10356+35])
+              [
+                core_type (typing/btype.mli[262,10356+19]..[262,10356+28])
+                  Ptyp_constr "row_field" (typing/btype.mli[262,10356+19]..[262,10356+28])
+                  []
+              ]
+          ]
+        core_type (typing/btype.mli[262,10356+43]..[262,10356+60])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[262,10356+43]..[262,10356+52])
+            Ptyp_constr "row_field" (typing/btype.mli[262,10356+43]..[262,10356+52])
+            []
+          core_type (typing/btype.mli[262,10356+56]..[262,10356+60])
+            Ptyp_constr "unit" (typing/btype.mli[262,10356+56]..[262,10356+60])
+            []
+      []
+  signature_item (typing/btype.mli[263,10417+0]..[263,10417+57])
+    Psig_value
+    value_description "set_univar" (typing/btype.mli[263,10417+4]..[263,10417+14]) (typing/btype.mli[263,10417+0]..[263,10417+57])
+      core_type (typing/btype.mli[263,10417+16]..[263,10417+57])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[263,10417+16]..[263,10417+36])
+          Ptyp_constr "ref" (typing/btype.mli[263,10417+33]..[263,10417+36])
+          [
+            core_type (typing/btype.mli[263,10417+16]..[263,10417+32])
+              Ptyp_constr "option" (typing/btype.mli[263,10417+26]..[263,10417+32])
+              [
+                core_type (typing/btype.mli[263,10417+16]..[263,10417+25])
+                  Ptyp_constr "type_expr" (typing/btype.mli[263,10417+16]..[263,10417+25])
+                  []
+              ]
+          ]
+        core_type (typing/btype.mli[263,10417+40]..[263,10417+57])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[263,10417+40]..[263,10417+49])
+            Ptyp_constr "type_expr" (typing/btype.mli[263,10417+40]..[263,10417+49])
+            []
+          core_type (typing/btype.mli[263,10417+53]..[263,10417+57])
+            Ptyp_constr "unit" (typing/btype.mli[263,10417+53]..[263,10417+57])
+            []
+      []
+  signature_item (typing/btype.mli[264,10475+0]..[264,10475+57])
+    Psig_value
+    value_description "set_kind" (typing/btype.mli[264,10475+4]..[264,10475+12]) (typing/btype.mli[264,10475+0]..[264,10475+57])
+      core_type (typing/btype.mli[264,10475+14]..[264,10475+57])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[264,10475+14]..[264,10475+35])
+          Ptyp_constr "ref" (typing/btype.mli[264,10475+32]..[264,10475+35])
+          [
+            core_type (typing/btype.mli[264,10475+14]..[264,10475+31])
+              Ptyp_constr "option" (typing/btype.mli[264,10475+25]..[264,10475+31])
+              [
+                core_type (typing/btype.mli[264,10475+14]..[264,10475+24])
+                  Ptyp_constr "field_kind" (typing/btype.mli[264,10475+14]..[264,10475+24])
+                  []
+              ]
+          ]
+        core_type (typing/btype.mli[264,10475+39]..[264,10475+57])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[264,10475+39]..[264,10475+49])
+            Ptyp_constr "field_kind" (typing/btype.mli[264,10475+39]..[264,10475+49])
+            []
+          core_type (typing/btype.mli[264,10475+53]..[264,10475+57])
+            Ptyp_constr "unit" (typing/btype.mli[264,10475+53]..[264,10475+57])
+            []
+      []
+  signature_item (typing/btype.mli[265,10533+0]..[265,10533+51])
+    Psig_value
+    value_description "set_commu" (typing/btype.mli[265,10533+4]..[265,10533+13]) (typing/btype.mli[265,10533+0]..[265,10533+51])
+      core_type (typing/btype.mli[265,10533+15]..[265,10533+51])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[265,10533+15]..[265,10533+29])
+          Ptyp_constr "ref" (typing/btype.mli[265,10533+26]..[265,10533+29])
+          [
+            core_type (typing/btype.mli[265,10533+15]..[265,10533+25])
+              Ptyp_constr "commutable" (typing/btype.mli[265,10533+15]..[265,10533+25])
+              []
+          ]
+        core_type (typing/btype.mli[265,10533+33]..[265,10533+51])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[265,10533+33]..[265,10533+43])
+            Ptyp_constr "commutable" (typing/btype.mli[265,10533+33]..[265,10533+43])
+            []
+          core_type (typing/btype.mli[265,10533+47]..[265,10533+51])
+            Ptyp_constr "unit" (typing/btype.mli[265,10533+47]..[265,10533+51])
+            []
+      []
+  signature_item (typing/btype.mli[269,10671+0]..[269,10671+58])
+    Psig_value
+    value_description "print_raw" (typing/btype.mli[269,10671+4]..[269,10671+13]) (typing/btype.mli[269,10671+0]..[269,10671+58])
+      core_type (typing/btype.mli[269,10671+15]..[269,10671+58])
+        Ptyp_constr "ref" (typing/btype.mli[269,10671+55]..[269,10671+58])
+        [
+          core_type (typing/btype.mli[269,10671+16]..[269,10671+53])
+            Ptyp_arrow
+            Nolabel
+            core_type (typing/btype.mli[269,10671+16]..[269,10671+32])
+              Ptyp_constr "Format.formatter" (typing/btype.mli[269,10671+16]..[269,10671+32])
+              []
+            core_type (typing/btype.mli[269,10671+36]..[269,10671+53])
+              Ptyp_arrow
+              Nolabel
+              core_type (typing/btype.mli[269,10671+36]..[269,10671+45])
+                Ptyp_constr "type_expr" (typing/btype.mli[269,10671+36]..[269,10671+45])
+                []
+              core_type (typing/btype.mli[269,10671+49]..[269,10671+53])
+                Ptyp_constr "unit" (typing/btype.mli[269,10671+49]..[269,10671+53])
+                []
+        ]
+      []
+  signature_item (typing/btype.mli[271,10731+0]..[271,10731+72])
+    Psig_value
+    value_description "iter_type_expr_kind" (typing/btype.mli[271,10731+4]..[271,10731+23]) (typing/btype.mli[271,10731+0]..[271,10731+72])
+      core_type (typing/btype.mli[271,10731+25]..[271,10731+72])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[271,10731+26]..[271,10731+43])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[271,10731+26]..[271,10731+35])
+            Ptyp_constr "type_expr" (typing/btype.mli[271,10731+26]..[271,10731+35])
+            []
+          core_type (typing/btype.mli[271,10731+39]..[271,10731+43])
+            Ptyp_constr "unit" (typing/btype.mli[271,10731+39]..[271,10731+43])
+            []
+        core_type (typing/btype.mli[271,10731+49]..[271,10731+71])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[271,10731+49]..[271,10731+63])
+            Ptyp_constr "type_decl_kind" (typing/btype.mli[271,10731+49]..[271,10731+63])
+            []
+          core_type (typing/btype.mli[271,10731+67]..[271,10731+71])
+            Ptyp_constr "unit" (typing/btype.mli[271,10731+67]..[271,10731+71])
+            []
+      []
+  signature_item (typing/btype.mli[273,10805+0]..[274,10858+33])
+    Psig_value
+    value_description "iter_type_expr_cstr_args" (typing/btype.mli[273,10805+4]..[273,10805+28]) (typing/btype.mli[273,10805+0]..[274,10858+33])
+      core_type (typing/btype.mli[273,10805+30]..[274,10858+33])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[273,10805+31]..[273,10805+48])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[273,10805+31]..[273,10805+40])
+            Ptyp_constr "type_expr" (typing/btype.mli[273,10805+31]..[273,10805+40])
+            []
+          core_type (typing/btype.mli[273,10805+44]..[273,10805+48])
+            Ptyp_constr "unit" (typing/btype.mli[273,10805+44]..[273,10805+48])
+            []
+        core_type (typing/btype.mli[274,10858+3]..[274,10858+32])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[274,10858+3]..[274,10858+24])
+            Ptyp_constr "constructor_arguments" (typing/btype.mli[274,10858+3]..[274,10858+24])
+            []
+          core_type (typing/btype.mli[274,10858+28]..[274,10858+32])
+            Ptyp_constr "unit" (typing/btype.mli[274,10858+28]..[274,10858+32])
+            []
+      []
+  signature_item (typing/btype.mli[275,10892+0]..[276,10949+50])
+    Psig_value
+    value_description "map_type_expr_cstr_args" (typing/btype.mli[275,10892+4]..[275,10892+27]) (typing/btype.mli[275,10892+0]..[276,10949+50])
+      core_type (typing/btype.mli[275,10892+29]..[276,10949+50])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/btype.mli[275,10892+30]..[275,10892+52])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[275,10892+30]..[275,10892+39])
+            Ptyp_constr "type_expr" (typing/btype.mli[275,10892+30]..[275,10892+39])
+            []
+          core_type (typing/btype.mli[275,10892+43]..[275,10892+52])
+            Ptyp_constr "type_expr" (typing/btype.mli[275,10892+43]..[275,10892+52])
+            []
+        core_type (typing/btype.mli[276,10949+3]..[276,10949+49])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/btype.mli[276,10949+3]..[276,10949+24])
+            Ptyp_constr "constructor_arguments" (typing/btype.mli[276,10949+3]..[276,10949+24])
+            []
+          core_type (typing/btype.mli[276,10949+28]..[276,10949+49])
+            Ptyp_constr "constructor_arguments" (typing/btype.mli[276,10949+28]..[276,10949+49])
+            []
+      []
+]
+

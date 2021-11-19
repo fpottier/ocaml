@@ -1,0 +1,544 @@
+[
+  structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[5,24+0]..[11,123+3])
+    Pstr_module
+    "M1" (testsuite/tests/typing-modules/variants_errors_test.ml[5,24+7]..[5,24+9])
+      module_expr (testsuite/tests/typing-modules/variants_errors_test.ml[5,24+10]..[11,123+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-modules/variants_errors_test.ml[8,74+6]..[11,123+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[9,87+2]..[10,98+24])
+              Pstr_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/variants_errors_test.ml[9,87+7]..[9,87+8]) (testsuite/tests/typing-modules/variants_errors_test.ml[9,87+2]..[10,98+24])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_variant
+                      [
+                        (testsuite/tests/typing-modules/variants_errors_test.ml[10,98+4]..[10,98+24])
+                          "Foo" (testsuite/tests/typing-modules/variants_errors_test.ml[10,98+6]..[10,98+9])
+                          [
+                            core_type (testsuite/tests/typing-modules/variants_errors_test.ml[10,98+13]..[10,98+18])
+                              Ptyp_constr "float" (testsuite/tests/typing-modules/variants_errors_test.ml[10,98+13]..[10,98+18])
+                              []
+                            core_type (testsuite/tests/typing-modules/variants_errors_test.ml[10,98+21]..[10,98+24])
+                              Ptyp_constr "int" (testsuite/tests/typing-modules/variants_errors_test.ml[10,98+21]..[10,98+24])
+                              []
+                          ]
+                          None
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+        module_type (testsuite/tests/typing-modules/variants_errors_test.ml[5,24+12]..[8,74+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-modules/variants_errors_test.ml[6,40+2]..[7,51+22])
+              Psig_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/variants_errors_test.ml[6,40+7]..[6,40+8]) (testsuite/tests/typing-modules/variants_errors_test.ml[6,40+2]..[7,51+22])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_variant
+                      [
+                        (testsuite/tests/typing-modules/variants_errors_test.ml[7,51+4]..[7,51+22])
+                          "Foo" (testsuite/tests/typing-modules/variants_errors_test.ml[7,51+6]..[7,51+9])
+                          [
+                            core_type (testsuite/tests/typing-modules/variants_errors_test.ml[7,51+13]..[7,51+16])
+                              Ptyp_constr "int" (testsuite/tests/typing-modules/variants_errors_test.ml[7,51+13]..[7,51+16])
+                              []
+                            core_type (testsuite/tests/typing-modules/variants_errors_test.ml[7,51+19]..[7,51+22])
+                              Ptyp_constr "int" (testsuite/tests/typing-modules/variants_errors_test.ml[7,51+19]..[7,51+22])
+                              []
+                          ]
+                          None
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+  structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[12,129+0]..[32,697+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[12,129+9]..[32,697+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-modules/variants_errors_test.ml[12,129+9]..[32,697+2])
+          Pexp_constant PConst_string ("\nLines 4-7, characters 6-3:\n4 | ......struct\n5 |   type t =\n6 |     | Foo of float * int\n7 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig type t = Foo of float * int end\n       is not included in\n         sig type t = Foo of int * int end\n       Type declarations do not match:\n         type t = Foo of float * int\n       is not included in\n         type t = Foo of int * int\n       Constructors do not match:\n         Foo of float * int\n       is not compatible with:\n         Foo of int * int\n       The types are not equal.\n",(testsuite/tests/typing-modules/variants_errors_test.ml[12,129+11]..[32,697+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[34,704+0]..[40,797+3])
+    Pstr_module
+    "M2" (testsuite/tests/typing-modules/variants_errors_test.ml[34,704+7]..[34,704+9])
+      module_expr (testsuite/tests/typing-modules/variants_errors_test.ml[34,704+10]..[40,797+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-modules/variants_errors_test.ml[37,754+6]..[40,797+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[38,767+2]..[39,778+18])
+              Pstr_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/variants_errors_test.ml[38,767+7]..[38,767+8]) (testsuite/tests/typing-modules/variants_errors_test.ml[38,767+2]..[39,778+18])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_variant
+                      [
+                        (testsuite/tests/typing-modules/variants_errors_test.ml[39,778+4]..[39,778+18])
+                          "Foo" (testsuite/tests/typing-modules/variants_errors_test.ml[39,778+6]..[39,778+9])
+                          [
+                            core_type (testsuite/tests/typing-modules/variants_errors_test.ml[39,778+13]..[39,778+18])
+                              Ptyp_constr "float" (testsuite/tests/typing-modules/variants_errors_test.ml[39,778+13]..[39,778+18])
+                              []
+                          ]
+                          None
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+        module_type (testsuite/tests/typing-modules/variants_errors_test.ml[34,704+12]..[37,754+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-modules/variants_errors_test.ml[35,720+2]..[36,731+22])
+              Psig_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/variants_errors_test.ml[35,720+7]..[35,720+8]) (testsuite/tests/typing-modules/variants_errors_test.ml[35,720+2]..[36,731+22])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_variant
+                      [
+                        (testsuite/tests/typing-modules/variants_errors_test.ml[36,731+4]..[36,731+22])
+                          "Foo" (testsuite/tests/typing-modules/variants_errors_test.ml[36,731+6]..[36,731+9])
+                          [
+                            core_type (testsuite/tests/typing-modules/variants_errors_test.ml[36,731+13]..[36,731+16])
+                              Ptyp_constr "int" (testsuite/tests/typing-modules/variants_errors_test.ml[36,731+13]..[36,731+16])
+                              []
+                            core_type (testsuite/tests/typing-modules/variants_errors_test.ml[36,731+19]..[36,731+22])
+                              Ptyp_constr "int" (testsuite/tests/typing-modules/variants_errors_test.ml[36,731+19]..[36,731+22])
+                              []
+                          ]
+                          None
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+  structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[41,803+0]..[61,1351+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[41,803+9]..[61,1351+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-modules/variants_errors_test.ml[41,803+9]..[61,1351+2])
+          Pexp_constant PConst_string ("\nLines 4-7, characters 6-3:\n4 | ......struct\n5 |   type t =\n6 |     | Foo of float\n7 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig type t = Foo of float end\n       is not included in\n         sig type t = Foo of int * int end\n       Type declarations do not match:\n         type t = Foo of float\n       is not included in\n         type t = Foo of int * int\n       Constructors do not match:\n         Foo of float\n       is not compatible with:\n         Foo of int * int\n       They have different arities.\n",(testsuite/tests/typing-modules/variants_errors_test.ml[41,803+11]..[61,1351+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[63,1358+0]..[69,1475+3])
+    Pstr_module
+    "M3" (testsuite/tests/typing-modules/variants_errors_test.ml[63,1358+7]..[63,1358+9])
+      module_expr (testsuite/tests/typing-modules/variants_errors_test.ml[63,1358+10]..[69,1475+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-modules/variants_errors_test.ml[66,1417+6]..[69,1475+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[67,1430+2]..[68,1441+33])
+              Pstr_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/variants_errors_test.ml[67,1430+7]..[67,1430+8]) (testsuite/tests/typing-modules/variants_errors_test.ml[67,1430+2]..[68,1441+33])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_variant
+                      [
+                        (testsuite/tests/typing-modules/variants_errors_test.ml[68,1441+4]..[68,1441+33])
+                          "Foo" (testsuite/tests/typing-modules/variants_errors_test.ml[68,1441+6]..[68,1441+9])
+                          [
+                            (testsuite/tests/typing-modules/variants_errors_test.ml[68,1441+14]..[68,1441+24])
+                              Immutable
+                              "x" (testsuite/tests/typing-modules/variants_errors_test.ml[68,1441+14]..[68,1441+15])                              core_type (testsuite/tests/typing-modules/variants_errors_test.ml[68,1441+18]..[68,1441+23])
+                                Ptyp_constr "float" (testsuite/tests/typing-modules/variants_errors_test.ml[68,1441+18]..[68,1441+23])
+                                []
+                            (testsuite/tests/typing-modules/variants_errors_test.ml[68,1441+25]..[68,1441+32])
+                              Immutable
+                              "y" (testsuite/tests/typing-modules/variants_errors_test.ml[68,1441+25]..[68,1441+26])                              core_type (testsuite/tests/typing-modules/variants_errors_test.ml[68,1441+29]..[68,1441+32])
+                                Ptyp_constr "int" (testsuite/tests/typing-modules/variants_errors_test.ml[68,1441+29]..[68,1441+32])
+                                []
+                          ]
+                          None
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+        module_type (testsuite/tests/typing-modules/variants_errors_test.ml[63,1358+12]..[66,1417+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-modules/variants_errors_test.ml[64,1374+2]..[65,1385+31])
+              Psig_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/variants_errors_test.ml[64,1374+7]..[64,1374+8]) (testsuite/tests/typing-modules/variants_errors_test.ml[64,1374+2]..[65,1385+31])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_variant
+                      [
+                        (testsuite/tests/typing-modules/variants_errors_test.ml[65,1385+4]..[65,1385+31])
+                          "Foo" (testsuite/tests/typing-modules/variants_errors_test.ml[65,1385+6]..[65,1385+9])
+                          [
+                            (testsuite/tests/typing-modules/variants_errors_test.ml[65,1385+14]..[65,1385+22])
+                              Immutable
+                              "x" (testsuite/tests/typing-modules/variants_errors_test.ml[65,1385+14]..[65,1385+15])                              core_type (testsuite/tests/typing-modules/variants_errors_test.ml[65,1385+18]..[65,1385+21])
+                                Ptyp_constr "int" (testsuite/tests/typing-modules/variants_errors_test.ml[65,1385+18]..[65,1385+21])
+                                []
+                            (testsuite/tests/typing-modules/variants_errors_test.ml[65,1385+23]..[65,1385+30])
+                              Immutable
+                              "y" (testsuite/tests/typing-modules/variants_errors_test.ml[65,1385+23]..[65,1385+24])                              core_type (testsuite/tests/typing-modules/variants_errors_test.ml[65,1385+27]..[65,1385+30])
+                                Ptyp_constr "int" (testsuite/tests/typing-modules/variants_errors_test.ml[65,1385+27]..[65,1385+30])
+                                []
+                          ]
+                          None
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+  structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[70,1481+0]..[94,2227+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[70,1481+9]..[94,2227+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-modules/variants_errors_test.ml[70,1481+9]..[94,2227+2])
+          Pexp_constant PConst_string ("\nLines 4-7, characters 6-3:\n4 | ......struct\n5 |   type t =\n6 |     | Foo of {x : float; y : int}\n7 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig type t = Foo of { x : float; y : int; } end\n       is not included in\n         sig type t = Foo of { x : int; y : int; } end\n       Type declarations do not match:\n         type t = Foo of { x : float; y : int; }\n       is not included in\n         type t = Foo of { x : int; y : int; }\n       Constructors do not match:\n         Foo of { x : float; y : int; }\n       is not compatible with:\n         Foo of { x : int; y : int; }\n       Fields do not match:\n         x : float;\n       is not compatible with:\n         x : int;\n       The types are not equal.\n",(testsuite/tests/typing-modules/variants_errors_test.ml[70,1481+11]..[94,2227+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[96,2234+0]..[102,2336+3])
+    Pstr_module
+    "M4" (testsuite/tests/typing-modules/variants_errors_test.ml[96,2234+7]..[96,2234+9])
+      module_expr (testsuite/tests/typing-modules/variants_errors_test.ml[96,2234+10]..[102,2336+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-modules/variants_errors_test.ml[99,2293+6]..[102,2336+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[100,2306+2]..[101,2317+18])
+              Pstr_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/variants_errors_test.ml[100,2306+7]..[100,2306+8]) (testsuite/tests/typing-modules/variants_errors_test.ml[100,2306+2]..[101,2317+18])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_variant
+                      [
+                        (testsuite/tests/typing-modules/variants_errors_test.ml[101,2317+4]..[101,2317+18])
+                          "Foo" (testsuite/tests/typing-modules/variants_errors_test.ml[101,2317+6]..[101,2317+9])
+                          [
+                            core_type (testsuite/tests/typing-modules/variants_errors_test.ml[101,2317+13]..[101,2317+18])
+                              Ptyp_constr "float" (testsuite/tests/typing-modules/variants_errors_test.ml[101,2317+13]..[101,2317+18])
+                              []
+                          ]
+                          None
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+        module_type (testsuite/tests/typing-modules/variants_errors_test.ml[96,2234+12]..[99,2293+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-modules/variants_errors_test.ml[97,2250+2]..[98,2261+31])
+              Psig_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/variants_errors_test.ml[97,2250+7]..[97,2250+8]) (testsuite/tests/typing-modules/variants_errors_test.ml[97,2250+2]..[98,2261+31])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_variant
+                      [
+                        (testsuite/tests/typing-modules/variants_errors_test.ml[98,2261+4]..[98,2261+31])
+                          "Foo" (testsuite/tests/typing-modules/variants_errors_test.ml[98,2261+6]..[98,2261+9])
+                          [
+                            (testsuite/tests/typing-modules/variants_errors_test.ml[98,2261+14]..[98,2261+22])
+                              Immutable
+                              "x" (testsuite/tests/typing-modules/variants_errors_test.ml[98,2261+14]..[98,2261+15])                              core_type (testsuite/tests/typing-modules/variants_errors_test.ml[98,2261+18]..[98,2261+21])
+                                Ptyp_constr "int" (testsuite/tests/typing-modules/variants_errors_test.ml[98,2261+18]..[98,2261+21])
+                                []
+                            (testsuite/tests/typing-modules/variants_errors_test.ml[98,2261+23]..[98,2261+30])
+                              Immutable
+                              "y" (testsuite/tests/typing-modules/variants_errors_test.ml[98,2261+23]..[98,2261+24])                              core_type (testsuite/tests/typing-modules/variants_errors_test.ml[98,2261+27]..[98,2261+30])
+                                Ptyp_constr "int" (testsuite/tests/typing-modules/variants_errors_test.ml[98,2261+27]..[98,2261+30])
+                                []
+                          ]
+                          None
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+  structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[103,2342+0]..[123,2951+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[103,2342+9]..[123,2951+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-modules/variants_errors_test.ml[103,2342+9]..[123,2951+2])
+          Pexp_constant PConst_string ("\nLines 4-7, characters 6-3:\n4 | ......struct\n5 |   type t =\n6 |     | Foo of float\n7 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig type t = Foo of float end\n       is not included in\n         sig type t = Foo of { x : int; y : int; } end\n       Type declarations do not match:\n         type t = Foo of float\n       is not included in\n         type t = Foo of { x : int; y : int; }\n       Constructors do not match:\n         Foo of float\n       is not compatible with:\n         Foo of { x : int; y : int; }\n       The second uses inline records and the first doesn't.\n",(testsuite/tests/typing-modules/variants_errors_test.ml[103,2342+11]..[123,2951+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[125,2958+0]..[131,3056+3])
+    Pstr_module
+    "M5" (testsuite/tests/typing-modules/variants_errors_test.ml[125,2958+7]..[125,2958+9])
+      module_expr (testsuite/tests/typing-modules/variants_errors_test.ml[125,2958+10]..[131,3056+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-modules/variants_errors_test.ml[128,3013+6]..[131,3056+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[129,3026+2]..[130,3040+15])
+              Pstr_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/variants_errors_test.ml[129,3026+10]..[129,3026+11]) (testsuite/tests/typing-modules/variants_errors_test.ml[129,3026+2]..[130,3040+15])
+                  ptype_params =
+                    [
+                      core_type (testsuite/tests/typing-modules/variants_errors_test.ml[129,3026+7]..[129,3026+9])
+                        Ptyp_var a
+                    ]
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_variant
+                      [
+                        (testsuite/tests/typing-modules/variants_errors_test.ml[130,3040+4]..[130,3040+15])
+                          "Foo" (testsuite/tests/typing-modules/variants_errors_test.ml[130,3040+6]..[130,3040+9])
+                          [
+                            core_type (testsuite/tests/typing-modules/variants_errors_test.ml[130,3040+13]..[130,3040+15])
+                              Ptyp_var a
+                          ]
+                          None
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+        module_type (testsuite/tests/typing-modules/variants_errors_test.ml[125,2958+12]..[128,3013+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-modules/variants_errors_test.ml[126,2974+2]..[127,2988+24])
+              Psig_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/variants_errors_test.ml[126,2974+10]..[126,2974+11]) (testsuite/tests/typing-modules/variants_errors_test.ml[126,2974+2]..[127,2988+24])
+                  ptype_params =
+                    [
+                      core_type (testsuite/tests/typing-modules/variants_errors_test.ml[126,2974+7]..[126,2974+9])
+                        Ptyp_var a
+                    ]
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_variant
+                      [
+                        (testsuite/tests/typing-modules/variants_errors_test.ml[127,2988+4]..[127,2988+24])
+                          "Foo" (testsuite/tests/typing-modules/variants_errors_test.ml[127,2988+6]..[127,2988+9])
+                          [
+                            core_type (testsuite/tests/typing-modules/variants_errors_test.ml[127,2988+12]..[127,2988+15])
+                              Ptyp_constr "int" (testsuite/tests/typing-modules/variants_errors_test.ml[127,2988+12]..[127,2988+15])
+                              []
+                          ]
+                          Some
+                            core_type (testsuite/tests/typing-modules/variants_errors_test.ml[127,2988+19]..[127,2988+24])
+                              Ptyp_constr "t" (testsuite/tests/typing-modules/variants_errors_test.ml[127,2988+23]..[127,2988+24])
+                              [
+                                core_type (testsuite/tests/typing-modules/variants_errors_test.ml[127,2988+19]..[127,2988+22])
+                                  Ptyp_constr "int" (testsuite/tests/typing-modules/variants_errors_test.ml[127,2988+19]..[127,2988+22])
+                                  []
+                              ]
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+  structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[132,3062+0]..[152,3649+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[132,3062+9]..[152,3649+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-modules/variants_errors_test.ml[132,3062+9]..[152,3649+2])
+          Pexp_constant PConst_string ("\nLines 4-7, characters 6-3:\n4 | ......struct\n5 |   type 'a t =\n6 |     | Foo of 'a\n7 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig type 'a t = Foo of 'a end\n       is not included in\n         sig type 'a t = Foo : int -> int t end\n       Type declarations do not match:\n         type 'a t = Foo of 'a\n       is not included in\n         type 'a t = Foo : int -> int t\n       Constructors do not match:\n         Foo of 'a\n       is not compatible with:\n         Foo : int -> int t\n       The second has explicit return type and the first doesn't.\n",(testsuite/tests/typing-modules/variants_errors_test.ml[132,3062+11]..[152,3649+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[154,3656+0]..[158,3740+3])
+    Pstr_module
+    "M" (testsuite/tests/typing-modules/variants_errors_test.ml[154,3656+7]..[154,3656+8])
+      module_expr (testsuite/tests/typing-modules/variants_errors_test.ml[154,3656+9]..[158,3740+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-modules/variants_errors_test.ml[156,3699+6]..[158,3740+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[157,3712+2]..[157,3712+27])
+              Pstr_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/variants_errors_test.ml[157,3712+16]..[157,3712+17]) (testsuite/tests/typing-modules/variants_errors_test.ml[157,3712+2]..[157,3712+27])
+                  ptype_params =
+                    [
+                      core_type (testsuite/tests/typing-modules/variants_errors_test.ml[157,3712+8]..[157,3712+10])
+                        Ptyp_var a
+                      core_type (testsuite/tests/typing-modules/variants_errors_test.ml[157,3712+12]..[157,3712+14])
+                        Ptyp_var b
+                    ]
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_variant
+                      [
+                        (testsuite/tests/typing-modules/variants_errors_test.ml[157,3712+20]..[157,3712+27])
+                          "A" (testsuite/tests/typing-modules/variants_errors_test.ml[157,3712+20]..[157,3712+21])
+                          [
+                            core_type (testsuite/tests/typing-modules/variants_errors_test.ml[157,3712+25]..[157,3712+27])
+                              Ptyp_var b
+                          ]
+                          None
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+        module_type (testsuite/tests/typing-modules/variants_errors_test.ml[154,3656+11]..[156,3699+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-modules/variants_errors_test.ml[155,3671+2]..[155,3671+27])
+              Psig_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/variants_errors_test.ml[155,3671+16]..[155,3671+17]) (testsuite/tests/typing-modules/variants_errors_test.ml[155,3671+2]..[155,3671+27])
+                  ptype_params =
+                    [
+                      core_type (testsuite/tests/typing-modules/variants_errors_test.ml[155,3671+8]..[155,3671+10])
+                        Ptyp_var a
+                      core_type (testsuite/tests/typing-modules/variants_errors_test.ml[155,3671+12]..[155,3671+14])
+                        Ptyp_var b
+                    ]
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_variant
+                      [
+                        (testsuite/tests/typing-modules/variants_errors_test.ml[155,3671+20]..[155,3671+27])
+                          "A" (testsuite/tests/typing-modules/variants_errors_test.ml[155,3671+20]..[155,3671+21])
+                          [
+                            core_type (testsuite/tests/typing-modules/variants_errors_test.ml[155,3671+25]..[155,3671+27])
+                              Ptyp_var a
+                          ]
+                          None
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+  structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[159,3746+0]..[178,4279+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[159,3746+10]..[178,4279+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-modules/variants_errors_test.ml[159,3746+10]..[178,4279+2])
+          Pexp_constant PConst_string ("\nLines 3-5, characters 6-3:\n3 | ......struct\n4 |   type ('a, 'b) t = A of 'b\n5 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig type ('a, 'b) t = A of 'b end\n       is not included in\n         sig type ('a, 'b) t = A of 'a end\n       Type declarations do not match:\n         type ('a, 'b) t = A of 'b\n       is not included in\n         type ('a, 'b) t = A of 'a\n       Constructors do not match:\n         A of 'b\n       is not compatible with:\n         A of 'a\n       The types are not equal.\n",(testsuite/tests/typing-modules/variants_errors_test.ml[159,3746+12]..[178,4279+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[180,4286+0]..[184,4370+3])
+    Pstr_module
+    "M" (testsuite/tests/typing-modules/variants_errors_test.ml[180,4286+7]..[180,4286+8])
+      module_expr (testsuite/tests/typing-modules/variants_errors_test.ml[180,4286+9]..[184,4370+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-modules/variants_errors_test.ml[182,4329+6]..[184,4370+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[183,4342+2]..[183,4342+27])
+              Pstr_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/variants_errors_test.ml[183,4342+16]..[183,4342+17]) (testsuite/tests/typing-modules/variants_errors_test.ml[183,4342+2]..[183,4342+27])
+                  ptype_params =
+                    [
+                      core_type (testsuite/tests/typing-modules/variants_errors_test.ml[183,4342+8]..[183,4342+10])
+                        Ptyp_var b
+                      core_type (testsuite/tests/typing-modules/variants_errors_test.ml[183,4342+12]..[183,4342+14])
+                        Ptyp_var a
+                    ]
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_variant
+                      [
+                        (testsuite/tests/typing-modules/variants_errors_test.ml[183,4342+20]..[183,4342+27])
+                          "A" (testsuite/tests/typing-modules/variants_errors_test.ml[183,4342+20]..[183,4342+21])
+                          [
+                            core_type (testsuite/tests/typing-modules/variants_errors_test.ml[183,4342+25]..[183,4342+27])
+                              Ptyp_var a
+                          ]
+                          None
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+        module_type (testsuite/tests/typing-modules/variants_errors_test.ml[180,4286+11]..[182,4329+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-modules/variants_errors_test.ml[181,4301+2]..[181,4301+27])
+              Psig_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/variants_errors_test.ml[181,4301+16]..[181,4301+17]) (testsuite/tests/typing-modules/variants_errors_test.ml[181,4301+2]..[181,4301+27])
+                  ptype_params =
+                    [
+                      core_type (testsuite/tests/typing-modules/variants_errors_test.ml[181,4301+8]..[181,4301+10])
+                        Ptyp_var a
+                      core_type (testsuite/tests/typing-modules/variants_errors_test.ml[181,4301+12]..[181,4301+14])
+                        Ptyp_var b
+                    ]
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_variant
+                      [
+                        (testsuite/tests/typing-modules/variants_errors_test.ml[181,4301+20]..[181,4301+27])
+                          "A" (testsuite/tests/typing-modules/variants_errors_test.ml[181,4301+20]..[181,4301+21])
+                          [
+                            core_type (testsuite/tests/typing-modules/variants_errors_test.ml[181,4301+25]..[181,4301+27])
+                              Ptyp_var a
+                          ]
+                          None
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+  structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[185,4376+0]..[204,4909+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-modules/variants_errors_test.ml[185,4376+10]..[204,4909+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-modules/variants_errors_test.ml[185,4376+10]..[204,4909+2])
+          Pexp_constant PConst_string ("\nLines 3-5, characters 6-3:\n3 | ......struct\n4 |   type ('b, 'a) t = A of 'a\n5 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig type ('b, 'a) t = A of 'a end\n       is not included in\n         sig type ('a, 'b) t = A of 'a end\n       Type declarations do not match:\n         type ('b, 'a) t = A of 'a\n       is not included in\n         type ('a, 'b) t = A of 'a\n       Constructors do not match:\n         A of 'a\n       is not compatible with:\n         A of 'a\n       The types are not equal.\n",(testsuite/tests/typing-modules/variants_errors_test.ml[185,4376+12]..[204,4909+0]),Some "")
+    ]
+]
+

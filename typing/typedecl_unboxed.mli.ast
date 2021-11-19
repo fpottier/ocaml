@@ -1,0 +1,60 @@
+[
+  signature_item (typing/typedecl_unboxed.mli[17,1156+0]..[17,1156+10])
+    Psig_open Fresh "Types" (typing/typedecl_unboxed.mli[17,1156+5]..[17,1156+10])
+  signature_item (typing/typedecl_unboxed.mli[19,1168+0]..[22,1215+32])
+    Psig_type Rec
+    [
+      type_declaration "t" (typing/typedecl_unboxed.mli[19,1168+5]..[19,1168+6]) (typing/typedecl_unboxed.mli[19,1168+0]..[22,1215+32])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (typing/typedecl_unboxed.mli[20,1177+2]..[20,1177+15])
+                "Unavailable" (typing/typedecl_unboxed.mli[20,1177+4]..[20,1177+15])
+                []
+                None
+              (typing/typedecl_unboxed.mli[21,1193+2]..[21,1193+21])
+                "This" (typing/typedecl_unboxed.mli[21,1193+4]..[21,1193+8])
+                [
+                  core_type (typing/typedecl_unboxed.mli[21,1193+12]..[21,1193+21])
+                    Ptyp_constr "type_expr" (typing/typedecl_unboxed.mli[21,1193+12]..[21,1193+21])
+                    []
+                ]
+                None
+              (typing/typedecl_unboxed.mli[22,1215+2]..[22,1215+32])
+                "Only_on_64_bits" (typing/typedecl_unboxed.mli[22,1215+4]..[22,1215+19])
+                [
+                  core_type (typing/typedecl_unboxed.mli[22,1215+23]..[22,1215+32])
+                    Ptyp_constr "type_expr" (typing/typedecl_unboxed.mli[22,1215+23]..[22,1215+32])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (typing/typedecl_unboxed.mli[25,1270+0]..[25,1270+60])
+    Psig_value
+    value_description "get_unboxed_type_representation" (typing/typedecl_unboxed.mli[25,1270+4]..[25,1270+35]) (typing/typedecl_unboxed.mli[25,1270+0]..[25,1270+60])
+      core_type (typing/typedecl_unboxed.mli[25,1270+37]..[25,1270+60])
+        Ptyp_arrow
+        Nolabel
+        core_type (typing/typedecl_unboxed.mli[25,1270+37]..[25,1270+42])
+          Ptyp_constr "Env.t" (typing/typedecl_unboxed.mli[25,1270+37]..[25,1270+42])
+          []
+        core_type (typing/typedecl_unboxed.mli[25,1270+46]..[25,1270+60])
+          Ptyp_arrow
+          Nolabel
+          core_type (typing/typedecl_unboxed.mli[25,1270+46]..[25,1270+55])
+            Ptyp_constr "type_expr" (typing/typedecl_unboxed.mli[25,1270+46]..[25,1270+55])
+            []
+          core_type (typing/typedecl_unboxed.mli[25,1270+59]..[25,1270+60])
+            Ptyp_constr "t" (typing/typedecl_unboxed.mli[25,1270+59]..[25,1270+60])
+            []
+      []
+]
+

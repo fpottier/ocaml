@@ -1,0 +1,3660 @@
+[
+  structure_item (asmcomp/cmm.ml[16,1079+0]..[20,1130+9])
+    Pstr_type Rec
+    [
+      type_declaration "machtype_component" (asmcomp/cmm.ml[16,1079+5]..[16,1079+23]) (asmcomp/cmm.ml[16,1079+0]..[20,1130+9])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (asmcomp/cmm.ml[17,1105+2]..[17,1105+7])
+                "Val" (asmcomp/cmm.ml[17,1105+4]..[17,1105+7])
+                []
+                None
+              (asmcomp/cmm.ml[18,1113+2]..[18,1113+8])
+                "Addr" (asmcomp/cmm.ml[18,1113+4]..[18,1113+8])
+                []
+                None
+              (asmcomp/cmm.ml[19,1122+2]..[19,1122+7])
+                "Int" (asmcomp/cmm.ml[19,1122+4]..[19,1122+7])
+                []
+                None
+              (asmcomp/cmm.ml[20,1130+2]..[20,1130+9])
+                "Float" (asmcomp/cmm.ml[20,1130+4]..[20,1130+9])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (asmcomp/cmm.ml[22,1141+0]..[22,1141+40])
+    Pstr_type Rec
+    [
+      type_declaration "machtype" (asmcomp/cmm.ml[22,1141+5]..[22,1141+13]) (asmcomp/cmm.ml[22,1141+0]..[22,1141+40])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (asmcomp/cmm.ml[22,1141+16]..[22,1141+40])
+              Ptyp_constr "array" (asmcomp/cmm.ml[22,1141+35]..[22,1141+40])
+              [
+                core_type (asmcomp/cmm.ml[22,1141+16]..[22,1141+34])
+                  Ptyp_constr "machtype_component" (asmcomp/cmm.ml[22,1141+16]..[22,1141+34])
+                  []
+              ]
+    ]
+  structure_item (asmcomp/cmm.ml[24,1183+0]..[24,1183+48])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[24,1183+4]..[24,1183+12])
+          Ppat_var "typ_void" (asmcomp/cmm.ml[24,1183+4]..[24,1183+12])
+        expression (asmcomp/cmm.ml[24,1183+15]..[24,1183+48]) ghost
+          Pexp_constraint
+          expression (asmcomp/cmm.ml[24,1183+16]..[24,1183+20])
+            Pexp_array
+            []
+          core_type (asmcomp/cmm.ml[24,1183+23]..[24,1183+47])
+            Ptyp_constr "array" (asmcomp/cmm.ml[24,1183+42]..[24,1183+47])
+            [
+              core_type (asmcomp/cmm.ml[24,1183+23]..[24,1183+41])
+                Ptyp_constr "machtype_component" (asmcomp/cmm.ml[24,1183+23]..[24,1183+41])
+                []
+            ]
+    ]
+  structure_item (asmcomp/cmm.ml[25,1232+0]..[25,1232+21])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[25,1232+4]..[25,1232+11])
+          Ppat_var "typ_val" (asmcomp/cmm.ml[25,1232+4]..[25,1232+11])
+        expression (asmcomp/cmm.ml[25,1232+14]..[25,1232+21])
+          Pexp_array
+          [
+            expression (asmcomp/cmm.ml[25,1232+16]..[25,1232+19])
+              Pexp_construct "Val" (asmcomp/cmm.ml[25,1232+16]..[25,1232+19])
+              None
+          ]
+    ]
+  structure_item (asmcomp/cmm.ml[26,1254+0]..[26,1254+23])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[26,1254+4]..[26,1254+12])
+          Ppat_var "typ_addr" (asmcomp/cmm.ml[26,1254+4]..[26,1254+12])
+        expression (asmcomp/cmm.ml[26,1254+15]..[26,1254+23])
+          Pexp_array
+          [
+            expression (asmcomp/cmm.ml[26,1254+17]..[26,1254+21])
+              Pexp_construct "Addr" (asmcomp/cmm.ml[26,1254+17]..[26,1254+21])
+              None
+          ]
+    ]
+  structure_item (asmcomp/cmm.ml[27,1278+0]..[27,1278+21])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[27,1278+4]..[27,1278+11])
+          Ppat_var "typ_int" (asmcomp/cmm.ml[27,1278+4]..[27,1278+11])
+        expression (asmcomp/cmm.ml[27,1278+14]..[27,1278+21])
+          Pexp_array
+          [
+            expression (asmcomp/cmm.ml[27,1278+16]..[27,1278+19])
+              Pexp_construct "Int" (asmcomp/cmm.ml[27,1278+16]..[27,1278+19])
+              None
+          ]
+    ]
+  structure_item (asmcomp/cmm.ml[28,1300+0]..[28,1300+25])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[28,1300+4]..[28,1300+13])
+          Ppat_var "typ_float" (asmcomp/cmm.ml[28,1300+4]..[28,1300+13])
+        expression (asmcomp/cmm.ml[28,1300+16]..[28,1300+25])
+          Pexp_array
+          [
+            expression (asmcomp/cmm.ml[28,1300+18]..[28,1300+23])
+              Pexp_construct "Float" (asmcomp/cmm.ml[28,1300+18]..[28,1300+23])
+              None
+          ]
+    ]
+  structure_item (asmcomp/cmm.ml[30,1327+0]..[45,1787+2])
+    Pstr_attribute "ocaml.text"
+    [
+      structure_item (asmcomp/cmm.ml[30,1327+0]..[45,1787+2])
+        Pstr_eval
+        expression (asmcomp/cmm.ml[30,1327+0]..[45,1787+2])
+          Pexp_constant PConst_string(" [machtype_component]s are partially ordered as follows:\n\n      Addr     Float\n       ^\n       |\n      Val\n       ^\n       |\n      Int\n\n  In particular, [Addr] must be above [Val], to ensure that if there is\n  a join point between a code path yielding [Addr] and one yielding [Val]\n  then the result is treated as a derived pointer into the heap (i.e. [Addr]).\n  (Such a result may not be live across any call site or a fatal compiler\n  error will result.)\n",(asmcomp/cmm.ml[30,1327+0]..[45,1787+2]),None)
+    ]
+  structure_item (asmcomp/cmm.ml[47,1791+0]..[62,2192+16])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[47,1791+4]..[47,1791+17])
+          Ppat_var "lub_component" (asmcomp/cmm.ml[47,1791+4]..[47,1791+17])
+        expression (asmcomp/cmm.ml[47,1791+18]..[62,2192+16]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (asmcomp/cmm.ml[47,1791+18]..[47,1791+23])
+            Ppat_var "comp1" (asmcomp/cmm.ml[47,1791+18]..[47,1791+23])
+          expression (asmcomp/cmm.ml[47,1791+24]..[62,2192+16]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (asmcomp/cmm.ml[47,1791+24]..[47,1791+29])
+              Ppat_var "comp2" (asmcomp/cmm.ml[47,1791+24]..[47,1791+29])
+            expression (asmcomp/cmm.ml[48,1823+2]..[62,2192+16])
+              Pexp_match
+              expression (asmcomp/cmm.ml[48,1823+8]..[48,1823+20])
+                Pexp_tuple
+                [
+                  expression (asmcomp/cmm.ml[48,1823+8]..[48,1823+13])
+                    Pexp_ident "comp1" (asmcomp/cmm.ml[48,1823+8]..[48,1823+13])
+                  expression (asmcomp/cmm.ml[48,1823+15]..[48,1823+20])
+                    Pexp_ident "comp2" (asmcomp/cmm.ml[48,1823+15]..[48,1823+20])
+                ]
+              [
+                <case>
+                  pattern (asmcomp/cmm.ml[49,1849+4]..[49,1849+12])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[49,1849+4]..[49,1849+7])
+                        Ppat_construct "Int" (asmcomp/cmm.ml[49,1849+4]..[49,1849+7])
+                        None
+                      pattern (asmcomp/cmm.ml[49,1849+9]..[49,1849+12])
+                        Ppat_construct "Int" (asmcomp/cmm.ml[49,1849+9]..[49,1849+12])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[49,1849+16]..[49,1849+19])
+                    Pexp_construct "Int" (asmcomp/cmm.ml[49,1849+16]..[49,1849+19])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[50,1869+4]..[50,1869+12])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[50,1869+4]..[50,1869+7])
+                        Ppat_construct "Int" (asmcomp/cmm.ml[50,1869+4]..[50,1869+7])
+                        None
+                      pattern (asmcomp/cmm.ml[50,1869+9]..[50,1869+12])
+                        Ppat_construct "Val" (asmcomp/cmm.ml[50,1869+9]..[50,1869+12])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[50,1869+16]..[50,1869+19])
+                    Pexp_construct "Val" (asmcomp/cmm.ml[50,1869+16]..[50,1869+19])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[51,1889+4]..[51,1889+13])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[51,1889+4]..[51,1889+7])
+                        Ppat_construct "Int" (asmcomp/cmm.ml[51,1889+4]..[51,1889+7])
+                        None
+                      pattern (asmcomp/cmm.ml[51,1889+9]..[51,1889+13])
+                        Ppat_construct "Addr" (asmcomp/cmm.ml[51,1889+9]..[51,1889+13])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[51,1889+17]..[51,1889+21])
+                    Pexp_construct "Addr" (asmcomp/cmm.ml[51,1889+17]..[51,1889+21])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[52,1911+4]..[52,1911+12])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[52,1911+4]..[52,1911+7])
+                        Ppat_construct "Val" (asmcomp/cmm.ml[52,1911+4]..[52,1911+7])
+                        None
+                      pattern (asmcomp/cmm.ml[52,1911+9]..[52,1911+12])
+                        Ppat_construct "Int" (asmcomp/cmm.ml[52,1911+9]..[52,1911+12])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[52,1911+16]..[52,1911+19])
+                    Pexp_construct "Val" (asmcomp/cmm.ml[52,1911+16]..[52,1911+19])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[53,1931+4]..[53,1931+12])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[53,1931+4]..[53,1931+7])
+                        Ppat_construct "Val" (asmcomp/cmm.ml[53,1931+4]..[53,1931+7])
+                        None
+                      pattern (asmcomp/cmm.ml[53,1931+9]..[53,1931+12])
+                        Ppat_construct "Val" (asmcomp/cmm.ml[53,1931+9]..[53,1931+12])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[53,1931+16]..[53,1931+19])
+                    Pexp_construct "Val" (asmcomp/cmm.ml[53,1931+16]..[53,1931+19])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[54,1951+4]..[54,1951+13])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[54,1951+4]..[54,1951+7])
+                        Ppat_construct "Val" (asmcomp/cmm.ml[54,1951+4]..[54,1951+7])
+                        None
+                      pattern (asmcomp/cmm.ml[54,1951+9]..[54,1951+13])
+                        Ppat_construct "Addr" (asmcomp/cmm.ml[54,1951+9]..[54,1951+13])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[54,1951+17]..[54,1951+21])
+                    Pexp_construct "Addr" (asmcomp/cmm.ml[54,1951+17]..[54,1951+21])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[55,1973+4]..[55,1973+13])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[55,1973+4]..[55,1973+8])
+                        Ppat_construct "Addr" (asmcomp/cmm.ml[55,1973+4]..[55,1973+8])
+                        None
+                      pattern (asmcomp/cmm.ml[55,1973+10]..[55,1973+13])
+                        Ppat_construct "Int" (asmcomp/cmm.ml[55,1973+10]..[55,1973+13])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[55,1973+17]..[55,1973+21])
+                    Pexp_construct "Addr" (asmcomp/cmm.ml[55,1973+17]..[55,1973+21])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[56,1995+4]..[56,1995+14])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[56,1995+4]..[56,1995+8])
+                        Ppat_construct "Addr" (asmcomp/cmm.ml[56,1995+4]..[56,1995+8])
+                        None
+                      pattern (asmcomp/cmm.ml[56,1995+10]..[56,1995+14])
+                        Ppat_construct "Addr" (asmcomp/cmm.ml[56,1995+10]..[56,1995+14])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[56,1995+18]..[56,1995+22])
+                    Pexp_construct "Addr" (asmcomp/cmm.ml[56,1995+18]..[56,1995+22])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[57,2018+4]..[57,2018+13])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[57,2018+4]..[57,2018+8])
+                        Ppat_construct "Addr" (asmcomp/cmm.ml[57,2018+4]..[57,2018+8])
+                        None
+                      pattern (asmcomp/cmm.ml[57,2018+10]..[57,2018+13])
+                        Ppat_construct "Val" (asmcomp/cmm.ml[57,2018+10]..[57,2018+13])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[57,2018+17]..[57,2018+21])
+                    Pexp_construct "Addr" (asmcomp/cmm.ml[57,2018+17]..[57,2018+21])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[58,2040+4]..[58,2040+16])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[58,2040+4]..[58,2040+9])
+                        Ppat_construct "Float" (asmcomp/cmm.ml[58,2040+4]..[58,2040+9])
+                        None
+                      pattern (asmcomp/cmm.ml[58,2040+11]..[58,2040+16])
+                        Ppat_construct "Float" (asmcomp/cmm.ml[58,2040+11]..[58,2040+16])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[58,2040+20]..[58,2040+25])
+                    Pexp_construct "Float" (asmcomp/cmm.ml[58,2040+20]..[58,2040+25])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[59,2066+4]..[60,2096+29])
+                    Ppat_or
+                    pattern (asmcomp/cmm.ml[59,2066+4]..[59,2066+29])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[59,2066+4]..[59,2066+22])
+                          Ppat_or
+                          pattern (asmcomp/cmm.ml[59,2066+5]..[59,2066+15])
+                            Ppat_or
+                            pattern (asmcomp/cmm.ml[59,2066+5]..[59,2066+8])
+                              Ppat_construct "Int" (asmcomp/cmm.ml[59,2066+5]..[59,2066+8])
+                              None
+                            pattern (asmcomp/cmm.ml[59,2066+11]..[59,2066+15])
+                              Ppat_construct "Addr" (asmcomp/cmm.ml[59,2066+11]..[59,2066+15])
+                              None
+                          pattern (asmcomp/cmm.ml[59,2066+18]..[59,2066+21])
+                            Ppat_construct "Val" (asmcomp/cmm.ml[59,2066+18]..[59,2066+21])
+                            None
+                        pattern (asmcomp/cmm.ml[59,2066+24]..[59,2066+29])
+                          Ppat_construct "Float" (asmcomp/cmm.ml[59,2066+24]..[59,2066+29])
+                          None
+                      ]
+                    pattern (asmcomp/cmm.ml[60,2096+4]..[60,2096+29])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[60,2096+4]..[60,2096+9])
+                          Ppat_construct "Float" (asmcomp/cmm.ml[60,2096+4]..[60,2096+9])
+                          None
+                        pattern (asmcomp/cmm.ml[60,2096+11]..[60,2096+29])
+                          Ppat_or
+                          pattern (asmcomp/cmm.ml[60,2096+12]..[60,2096+22])
+                            Ppat_or
+                            pattern (asmcomp/cmm.ml[60,2096+12]..[60,2096+15])
+                              Ppat_construct "Int" (asmcomp/cmm.ml[60,2096+12]..[60,2096+15])
+                              None
+                            pattern (asmcomp/cmm.ml[60,2096+18]..[60,2096+22])
+                              Ppat_construct "Addr" (asmcomp/cmm.ml[60,2096+18]..[60,2096+22])
+                              None
+                          pattern (asmcomp/cmm.ml[60,2096+25]..[60,2096+28])
+                            Ppat_construct "Val" (asmcomp/cmm.ml[60,2096+25]..[60,2096+28])
+                            None
+                      ]
+                  expression (asmcomp/cmm.ml[62,2192+4]..[62,2192+16])
+                    Pexp_assert
+                    expression (asmcomp/cmm.ml[62,2192+11]..[62,2192+16])
+                      Pexp_construct "false" (asmcomp/cmm.ml[62,2192+11]..[62,2192+16])
+                      None
+              ]
+    ]
+  structure_item (asmcomp/cmm.ml[64,2210+0]..[78,2553+16])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[64,2210+4]..[64,2210+16])
+          Ppat_var "ge_component" (asmcomp/cmm.ml[64,2210+4]..[64,2210+16])
+        expression (asmcomp/cmm.ml[64,2210+17]..[78,2553+16]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (asmcomp/cmm.ml[64,2210+17]..[64,2210+22])
+            Ppat_var "comp1" (asmcomp/cmm.ml[64,2210+17]..[64,2210+22])
+          expression (asmcomp/cmm.ml[64,2210+23]..[78,2553+16]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (asmcomp/cmm.ml[64,2210+23]..[64,2210+28])
+              Ppat_var "comp2" (asmcomp/cmm.ml[64,2210+23]..[64,2210+28])
+            expression (asmcomp/cmm.ml[65,2241+2]..[78,2553+16])
+              Pexp_match
+              expression (asmcomp/cmm.ml[65,2241+8]..[65,2241+20])
+                Pexp_tuple
+                [
+                  expression (asmcomp/cmm.ml[65,2241+8]..[65,2241+13])
+                    Pexp_ident "comp1" (asmcomp/cmm.ml[65,2241+8]..[65,2241+13])
+                  expression (asmcomp/cmm.ml[65,2241+15]..[65,2241+20])
+                    Pexp_ident "comp2" (asmcomp/cmm.ml[65,2241+15]..[65,2241+20])
+                ]
+              [
+                <case>
+                  pattern (asmcomp/cmm.ml[66,2267+4]..[66,2267+12])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[66,2267+4]..[66,2267+7])
+                        Ppat_construct "Int" (asmcomp/cmm.ml[66,2267+4]..[66,2267+7])
+                        None
+                      pattern (asmcomp/cmm.ml[66,2267+9]..[66,2267+12])
+                        Ppat_construct "Int" (asmcomp/cmm.ml[66,2267+9]..[66,2267+12])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[66,2267+16]..[66,2267+20])
+                    Pexp_construct "true" (asmcomp/cmm.ml[66,2267+16]..[66,2267+20])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[67,2288+4]..[67,2288+13])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[67,2288+4]..[67,2288+7])
+                        Ppat_construct "Int" (asmcomp/cmm.ml[67,2288+4]..[67,2288+7])
+                        None
+                      pattern (asmcomp/cmm.ml[67,2288+9]..[67,2288+13])
+                        Ppat_construct "Addr" (asmcomp/cmm.ml[67,2288+9]..[67,2288+13])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[67,2288+17]..[67,2288+22])
+                    Pexp_construct "false" (asmcomp/cmm.ml[67,2288+17]..[67,2288+22])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[68,2311+4]..[68,2311+12])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[68,2311+4]..[68,2311+7])
+                        Ppat_construct "Int" (asmcomp/cmm.ml[68,2311+4]..[68,2311+7])
+                        None
+                      pattern (asmcomp/cmm.ml[68,2311+9]..[68,2311+12])
+                        Ppat_construct "Val" (asmcomp/cmm.ml[68,2311+9]..[68,2311+12])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[68,2311+16]..[68,2311+21])
+                    Pexp_construct "false" (asmcomp/cmm.ml[68,2311+16]..[68,2311+21])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[69,2333+4]..[69,2333+12])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[69,2333+4]..[69,2333+7])
+                        Ppat_construct "Val" (asmcomp/cmm.ml[69,2333+4]..[69,2333+7])
+                        None
+                      pattern (asmcomp/cmm.ml[69,2333+9]..[69,2333+12])
+                        Ppat_construct "Int" (asmcomp/cmm.ml[69,2333+9]..[69,2333+12])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[69,2333+16]..[69,2333+20])
+                    Pexp_construct "true" (asmcomp/cmm.ml[69,2333+16]..[69,2333+20])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[70,2354+4]..[70,2354+12])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[70,2354+4]..[70,2354+7])
+                        Ppat_construct "Val" (asmcomp/cmm.ml[70,2354+4]..[70,2354+7])
+                        None
+                      pattern (asmcomp/cmm.ml[70,2354+9]..[70,2354+12])
+                        Ppat_construct "Val" (asmcomp/cmm.ml[70,2354+9]..[70,2354+12])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[70,2354+16]..[70,2354+20])
+                    Pexp_construct "true" (asmcomp/cmm.ml[70,2354+16]..[70,2354+20])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[71,2375+4]..[71,2375+13])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[71,2375+4]..[71,2375+7])
+                        Ppat_construct "Val" (asmcomp/cmm.ml[71,2375+4]..[71,2375+7])
+                        None
+                      pattern (asmcomp/cmm.ml[71,2375+9]..[71,2375+13])
+                        Ppat_construct "Addr" (asmcomp/cmm.ml[71,2375+9]..[71,2375+13])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[71,2375+17]..[71,2375+22])
+                    Pexp_construct "false" (asmcomp/cmm.ml[71,2375+17]..[71,2375+22])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[72,2398+4]..[72,2398+13])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[72,2398+4]..[72,2398+8])
+                        Ppat_construct "Addr" (asmcomp/cmm.ml[72,2398+4]..[72,2398+8])
+                        None
+                      pattern (asmcomp/cmm.ml[72,2398+10]..[72,2398+13])
+                        Ppat_construct "Int" (asmcomp/cmm.ml[72,2398+10]..[72,2398+13])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[72,2398+17]..[72,2398+21])
+                    Pexp_construct "true" (asmcomp/cmm.ml[72,2398+17]..[72,2398+21])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[73,2420+4]..[73,2420+14])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[73,2420+4]..[73,2420+8])
+                        Ppat_construct "Addr" (asmcomp/cmm.ml[73,2420+4]..[73,2420+8])
+                        None
+                      pattern (asmcomp/cmm.ml[73,2420+10]..[73,2420+14])
+                        Ppat_construct "Addr" (asmcomp/cmm.ml[73,2420+10]..[73,2420+14])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[73,2420+18]..[73,2420+22])
+                    Pexp_construct "true" (asmcomp/cmm.ml[73,2420+18]..[73,2420+22])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[74,2443+4]..[74,2443+13])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[74,2443+4]..[74,2443+8])
+                        Ppat_construct "Addr" (asmcomp/cmm.ml[74,2443+4]..[74,2443+8])
+                        None
+                      pattern (asmcomp/cmm.ml[74,2443+10]..[74,2443+13])
+                        Ppat_construct "Val" (asmcomp/cmm.ml[74,2443+10]..[74,2443+13])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[74,2443+17]..[74,2443+21])
+                    Pexp_construct "true" (asmcomp/cmm.ml[74,2443+17]..[74,2443+21])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[75,2465+4]..[75,2465+16])
+                    Ppat_tuple
+                    [
+                      pattern (asmcomp/cmm.ml[75,2465+4]..[75,2465+9])
+                        Ppat_construct "Float" (asmcomp/cmm.ml[75,2465+4]..[75,2465+9])
+                        None
+                      pattern (asmcomp/cmm.ml[75,2465+11]..[75,2465+16])
+                        Ppat_construct "Float" (asmcomp/cmm.ml[75,2465+11]..[75,2465+16])
+                        None
+                    ]
+                  expression (asmcomp/cmm.ml[75,2465+20]..[75,2465+24])
+                    Pexp_construct "true" (asmcomp/cmm.ml[75,2465+20]..[75,2465+24])
+                    None
+                <case>
+                  pattern (asmcomp/cmm.ml[76,2490+4]..[77,2520+29])
+                    Ppat_or
+                    pattern (asmcomp/cmm.ml[76,2490+4]..[76,2490+29])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[76,2490+4]..[76,2490+22])
+                          Ppat_or
+                          pattern (asmcomp/cmm.ml[76,2490+5]..[76,2490+15])
+                            Ppat_or
+                            pattern (asmcomp/cmm.ml[76,2490+5]..[76,2490+8])
+                              Ppat_construct "Int" (asmcomp/cmm.ml[76,2490+5]..[76,2490+8])
+                              None
+                            pattern (asmcomp/cmm.ml[76,2490+11]..[76,2490+15])
+                              Ppat_construct "Addr" (asmcomp/cmm.ml[76,2490+11]..[76,2490+15])
+                              None
+                          pattern (asmcomp/cmm.ml[76,2490+18]..[76,2490+21])
+                            Ppat_construct "Val" (asmcomp/cmm.ml[76,2490+18]..[76,2490+21])
+                            None
+                        pattern (asmcomp/cmm.ml[76,2490+24]..[76,2490+29])
+                          Ppat_construct "Float" (asmcomp/cmm.ml[76,2490+24]..[76,2490+29])
+                          None
+                      ]
+                    pattern (asmcomp/cmm.ml[77,2520+4]..[77,2520+29])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[77,2520+4]..[77,2520+9])
+                          Ppat_construct "Float" (asmcomp/cmm.ml[77,2520+4]..[77,2520+9])
+                          None
+                        pattern (asmcomp/cmm.ml[77,2520+11]..[77,2520+29])
+                          Ppat_or
+                          pattern (asmcomp/cmm.ml[77,2520+12]..[77,2520+22])
+                            Ppat_or
+                            pattern (asmcomp/cmm.ml[77,2520+12]..[77,2520+15])
+                              Ppat_construct "Int" (asmcomp/cmm.ml[77,2520+12]..[77,2520+15])
+                              None
+                            pattern (asmcomp/cmm.ml[77,2520+18]..[77,2520+22])
+                              Ppat_construct "Addr" (asmcomp/cmm.ml[77,2520+18]..[77,2520+22])
+                              None
+                          pattern (asmcomp/cmm.ml[77,2520+25]..[77,2520+28])
+                            Ppat_construct "Val" (asmcomp/cmm.ml[77,2520+25]..[77,2520+28])
+                            None
+                      ]
+                  expression (asmcomp/cmm.ml[78,2553+4]..[78,2553+16])
+                    Pexp_assert
+                    expression (asmcomp/cmm.ml[78,2553+11]..[78,2553+16])
+                      Pexp_construct "false" (asmcomp/cmm.ml[78,2553+11]..[78,2553+16])
+                      None
+              ]
+    ]
+  structure_item (asmcomp/cmm.ml[80,2571+0]..[84,2617+10])
+    Pstr_type Rec
+    [
+      type_declaration "exttype" (asmcomp/cmm.ml[80,2571+5]..[80,2571+12]) (asmcomp/cmm.ml[80,2571+0]..[84,2617+10])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (asmcomp/cmm.ml[81,2586+2]..[81,2586+8])
+                "XInt" (asmcomp/cmm.ml[81,2586+4]..[81,2586+8])
+                []
+                None
+              (asmcomp/cmm.ml[82,2595+2]..[82,2595+10])
+                "XInt32" (asmcomp/cmm.ml[82,2595+4]..[82,2595+10])
+                []
+                None
+              (asmcomp/cmm.ml[83,2606+2]..[83,2606+10])
+                "XInt64" (asmcomp/cmm.ml[83,2606+4]..[83,2606+10])
+                []
+                None
+              (asmcomp/cmm.ml[84,2617+2]..[84,2617+10])
+                "XFloat" (asmcomp/cmm.ml[84,2617+4]..[84,2617+10])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (asmcomp/cmm.ml[86,2629+0]..[90,2771+23])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[86,2629+4]..[86,2629+23])
+          Ppat_var "machtype_of_exttype" (asmcomp/cmm.ml[86,2629+4]..[86,2629+23])
+        expression (asmcomp/cmm.ml[86,2629+26]..[90,2771+23])
+          Pexp_function
+          [
+            <case>
+              pattern (asmcomp/cmm.ml[87,2664+4]..[87,2664+8])
+                Ppat_construct "XInt" (asmcomp/cmm.ml[87,2664+4]..[87,2664+8])
+                None
+              expression (asmcomp/cmm.ml[87,2664+12]..[87,2664+19])
+                Pexp_ident "typ_int" (asmcomp/cmm.ml[87,2664+12]..[87,2664+19])
+            <case>
+              pattern (asmcomp/cmm.ml[88,2684+4]..[88,2684+10])
+                Ppat_construct "XInt32" (asmcomp/cmm.ml[88,2684+4]..[88,2684+10])
+                None
+              expression (asmcomp/cmm.ml[88,2684+14]..[88,2684+21])
+                Pexp_ident "typ_int" (asmcomp/cmm.ml[88,2684+14]..[88,2684+21])
+            <case>
+              pattern (asmcomp/cmm.ml[89,2706+4]..[89,2706+10])
+                Ppat_construct "XInt64" (asmcomp/cmm.ml[89,2706+4]..[89,2706+10])
+                None
+              expression (asmcomp/cmm.ml[89,2706+14]..[89,2706+64])
+                Pexp_ifthenelse
+                expression (asmcomp/cmm.ml[89,2706+17]..[89,2706+34])
+                  Pexp_apply
+                  expression (asmcomp/cmm.ml[89,2706+31]..[89,2706+32])
+                    Pexp_ident "=" (asmcomp/cmm.ml[89,2706+31]..[89,2706+32])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (asmcomp/cmm.ml[89,2706+17]..[89,2706+30])
+                        Pexp_ident "Arch.size_int" (asmcomp/cmm.ml[89,2706+17]..[89,2706+30])
+                    <arg>
+                    Nolabel
+                      expression (asmcomp/cmm.ml[89,2706+33]..[89,2706+34])
+                        Pexp_constant PConst_int (4,None)
+                  ]
+                expression (asmcomp/cmm.ml[89,2706+40]..[89,2706+51])
+                  Pexp_array
+                  [
+                    expression (asmcomp/cmm.ml[89,2706+42]..[89,2706+45])
+                      Pexp_construct "Int" (asmcomp/cmm.ml[89,2706+42]..[89,2706+45])
+                      None
+                    expression (asmcomp/cmm.ml[89,2706+46]..[89,2706+49])
+                      Pexp_construct "Int" (asmcomp/cmm.ml[89,2706+46]..[89,2706+49])
+                      None
+                  ]
+                Some
+                  expression (asmcomp/cmm.ml[89,2706+57]..[89,2706+64])
+                    Pexp_ident "typ_int" (asmcomp/cmm.ml[89,2706+57]..[89,2706+64])
+            <case>
+              pattern (asmcomp/cmm.ml[90,2771+4]..[90,2771+10])
+                Ppat_construct "XFloat" (asmcomp/cmm.ml[90,2771+4]..[90,2771+10])
+                None
+              expression (asmcomp/cmm.ml[90,2771+14]..[90,2771+23])
+                Pexp_ident "typ_float" (asmcomp/cmm.ml[90,2771+14]..[90,2771+23])
+          ]
+    ]
+  structure_item (asmcomp/cmm.ml[92,2796+0]..[93,2831+49])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[92,2796+4]..[92,2796+28])
+          Ppat_var "machtype_of_exttype_list" (asmcomp/cmm.ml[92,2796+4]..[92,2796+28])
+        expression (asmcomp/cmm.ml[92,2796+29]..[93,2831+49]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (asmcomp/cmm.ml[92,2796+29]..[92,2796+32])
+            Ppat_var "xtl" (asmcomp/cmm.ml[92,2796+29]..[92,2796+32])
+          expression (asmcomp/cmm.ml[93,2831+2]..[93,2831+49])
+            Pexp_apply
+            expression (asmcomp/cmm.ml[93,2831+2]..[93,2831+14])
+              Pexp_ident "Array.concat" (asmcomp/cmm.ml[93,2831+2]..[93,2831+14])
+            [
+              <arg>
+              Nolabel
+                expression (asmcomp/cmm.ml[93,2831+15]..[93,2831+49])
+                  Pexp_apply
+                  expression (asmcomp/cmm.ml[93,2831+16]..[93,2831+24])
+                    Pexp_ident "List.map" (asmcomp/cmm.ml[93,2831+16]..[93,2831+24])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (asmcomp/cmm.ml[93,2831+25]..[93,2831+44])
+                        Pexp_ident "machtype_of_exttype" (asmcomp/cmm.ml[93,2831+25]..[93,2831+44])
+                    <arg>
+                    Nolabel
+                      expression (asmcomp/cmm.ml[93,2831+45]..[93,2831+48])
+                        Pexp_ident "xtl" (asmcomp/cmm.ml[93,2831+45]..[93,2831+48])
+                  ]
+            ]
+    ]
+  structure_item (asmcomp/cmm.ml[95,2882+0]..[96,2936+37])
+    Pstr_type Rec
+    [
+      type_declaration "integer_comparison" (asmcomp/cmm.ml[95,2882+5]..[95,2882+23]) (asmcomp/cmm.ml[95,2882+0]..[96,2936+37])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (asmcomp/cmm.ml[96,2936+2]..[96,2936+7])
+                "Ceq" (asmcomp/cmm.ml[96,2936+4]..[96,2936+7])
+                []
+                None
+              (asmcomp/cmm.ml[96,2936+8]..[96,2936+13])
+                "Cne" (asmcomp/cmm.ml[96,2936+10]..[96,2936+13])
+                []
+                None
+              (asmcomp/cmm.ml[96,2936+14]..[96,2936+19])
+                "Clt" (asmcomp/cmm.ml[96,2936+16]..[96,2936+19])
+                []
+                None
+              (asmcomp/cmm.ml[96,2936+20]..[96,2936+25])
+                "Cgt" (asmcomp/cmm.ml[96,2936+22]..[96,2936+25])
+                []
+                None
+              (asmcomp/cmm.ml[96,2936+26]..[96,2936+31])
+                "Cle" (asmcomp/cmm.ml[96,2936+28]..[96,2936+31])
+                []
+                None
+              (asmcomp/cmm.ml[96,2936+32]..[96,2936+37])
+                "Cge" (asmcomp/cmm.ml[96,2936+34]..[96,2936+37])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (asmcomp/cmm.ml[95,2882+26]..[95,2882+51])
+              Ptyp_constr "Lambda.integer_comparison" (asmcomp/cmm.ml[95,2882+26]..[95,2882+51])
+              []
+    ]
+  structure_item (asmcomp/cmm.ml[98,2975+0]..[98,2975+64])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[98,2975+4]..[98,2975+29])
+          Ppat_var "negate_integer_comparison" (asmcomp/cmm.ml[98,2975+4]..[98,2975+29])
+        expression (asmcomp/cmm.ml[98,2975+32]..[98,2975+64])
+          Pexp_ident "Lambda.negate_integer_comparison" (asmcomp/cmm.ml[98,2975+32]..[98,2975+64])
+    ]
+  structure_item (asmcomp/cmm.ml[100,3041+0]..[100,3041+60])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[100,3041+4]..[100,3041+27])
+          Ppat_var "swap_integer_comparison" (asmcomp/cmm.ml[100,3041+4]..[100,3041+27])
+        expression (asmcomp/cmm.ml[100,3041+30]..[100,3041+60])
+          Pexp_ident "Lambda.swap_integer_comparison" (asmcomp/cmm.ml[100,3041+30]..[100,3041+60])
+    ]
+  structure_item (asmcomp/cmm.ml[104,3243+0]..[105,3293+76])
+    Pstr_type Rec
+    [
+      type_declaration "float_comparison" (asmcomp/cmm.ml[104,3243+5]..[104,3243+21]) (asmcomp/cmm.ml[104,3243+0]..[105,3293+76])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (asmcomp/cmm.ml[105,3293+2]..[105,3293+8])
+                "CFeq" (asmcomp/cmm.ml[105,3293+4]..[105,3293+8])
+                []
+                None
+              (asmcomp/cmm.ml[105,3293+9]..[105,3293+16])
+                "CFneq" (asmcomp/cmm.ml[105,3293+11]..[105,3293+16])
+                []
+                None
+              (asmcomp/cmm.ml[105,3293+17]..[105,3293+23])
+                "CFlt" (asmcomp/cmm.ml[105,3293+19]..[105,3293+23])
+                []
+                None
+              (asmcomp/cmm.ml[105,3293+24]..[105,3293+31])
+                "CFnlt" (asmcomp/cmm.ml[105,3293+26]..[105,3293+31])
+                []
+                None
+              (asmcomp/cmm.ml[105,3293+32]..[105,3293+38])
+                "CFgt" (asmcomp/cmm.ml[105,3293+34]..[105,3293+38])
+                []
+                None
+              (asmcomp/cmm.ml[105,3293+39]..[105,3293+46])
+                "CFngt" (asmcomp/cmm.ml[105,3293+41]..[105,3293+46])
+                []
+                None
+              (asmcomp/cmm.ml[105,3293+47]..[105,3293+53])
+                "CFle" (asmcomp/cmm.ml[105,3293+49]..[105,3293+53])
+                []
+                None
+              (asmcomp/cmm.ml[105,3293+54]..[105,3293+61])
+                "CFnle" (asmcomp/cmm.ml[105,3293+56]..[105,3293+61])
+                []
+                None
+              (asmcomp/cmm.ml[105,3293+62]..[105,3293+68])
+                "CFge" (asmcomp/cmm.ml[105,3293+64]..[105,3293+68])
+                []
+                None
+              (asmcomp/cmm.ml[105,3293+69]..[105,3293+76])
+                "CFnge" (asmcomp/cmm.ml[105,3293+71]..[105,3293+76])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (asmcomp/cmm.ml[104,3243+24]..[104,3243+47])
+              Ptyp_constr "Lambda.float_comparison" (asmcomp/cmm.ml[104,3243+24]..[104,3243+47])
+              []
+    ]
+  structure_item (asmcomp/cmm.ml[107,3371+0]..[107,3371+60])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[107,3371+4]..[107,3371+27])
+          Ppat_var "negate_float_comparison" (asmcomp/cmm.ml[107,3371+4]..[107,3371+27])
+        expression (asmcomp/cmm.ml[107,3371+30]..[107,3371+60])
+          Pexp_ident "Lambda.negate_float_comparison" (asmcomp/cmm.ml[107,3371+30]..[107,3371+60])
+    ]
+  structure_item (asmcomp/cmm.ml[109,3433+0]..[109,3433+56])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[109,3433+4]..[109,3433+25])
+          Ppat_var "swap_float_comparison" (asmcomp/cmm.ml[109,3433+4]..[109,3433+25])
+        expression (asmcomp/cmm.ml[109,3433+28]..[109,3433+56])
+          Pexp_ident "Lambda.swap_float_comparison" (asmcomp/cmm.ml[109,3433+28]..[109,3433+56])
+    ]
+  structure_item (asmcomp/cmm.ml[110,3490+0]..[110,3490+16])
+    Pstr_type Rec
+    [
+      type_declaration "label" (asmcomp/cmm.ml[110,3490+5]..[110,3490+10]) (asmcomp/cmm.ml[110,3490+0]..[110,3490+16])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (asmcomp/cmm.ml[110,3490+13]..[110,3490+16])
+              Ptyp_constr "int" (asmcomp/cmm.ml[110,3490+13]..[110,3490+16])
+              []
+    ]
+  structure_item (asmcomp/cmm.ml[112,3508+0]..[112,3508+19])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[112,3508+4]..[112,3508+14])
+          Ppat_var "init_label" (asmcomp/cmm.ml[112,3508+4]..[112,3508+14])
+        expression (asmcomp/cmm.ml[112,3508+17]..[112,3508+19])
+          Pexp_constant PConst_int (99,None)
+    ]
+  structure_item (asmcomp/cmm.ml[114,3529+0]..[114,3529+34])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[114,3529+4]..[114,3529+17])
+          Ppat_var "label_counter" (asmcomp/cmm.ml[114,3529+4]..[114,3529+17])
+        expression (asmcomp/cmm.ml[114,3529+20]..[114,3529+34])
+          Pexp_apply
+          expression (asmcomp/cmm.ml[114,3529+20]..[114,3529+23])
+            Pexp_ident "ref" (asmcomp/cmm.ml[114,3529+20]..[114,3529+23])
+          [
+            <arg>
+            Nolabel
+              expression (asmcomp/cmm.ml[114,3529+24]..[114,3529+34])
+                Pexp_ident "init_label" (asmcomp/cmm.ml[114,3529+24]..[114,3529+34])
+          ]
+    ]
+  structure_item (asmcomp/cmm.ml[116,3565+0]..[121,3726+20])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[116,3565+4]..[116,3565+13])
+          Ppat_var "set_label" (asmcomp/cmm.ml[116,3565+4]..[116,3565+13])
+        expression (asmcomp/cmm.ml[116,3565+14]..[121,3726+20]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (asmcomp/cmm.ml[116,3565+14]..[116,3565+15])
+            Ppat_var "l" (asmcomp/cmm.ml[116,3565+14]..[116,3565+15])
+          expression (asmcomp/cmm.ml[117,3583+2]..[121,3726+20])
+            Pexp_sequence
+            expression (asmcomp/cmm.ml[117,3583+2]..[120,3719+5])
+              Pexp_ifthenelse
+              expression (asmcomp/cmm.ml[117,3583+5]..[117,3583+25])
+                Pexp_apply
+                expression (asmcomp/cmm.ml[117,3583+8]..[117,3583+9])
+                  Pexp_ident "<" (asmcomp/cmm.ml[117,3583+8]..[117,3583+9])
+                [
+                  <arg>
+                  Nolabel
+                    expression (asmcomp/cmm.ml[117,3583+6]..[117,3583+7])
+                      Pexp_ident "l" (asmcomp/cmm.ml[117,3583+6]..[117,3583+7])
+                  <arg>
+                  Nolabel
+                    expression (asmcomp/cmm.ml[117,3583+10]..[117,3583+24])
+                      Pexp_apply
+                      expression (asmcomp/cmm.ml[117,3583+10]..[117,3583+11])
+                        Pexp_ident "!" (asmcomp/cmm.ml[117,3583+10]..[117,3583+11])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (asmcomp/cmm.ml[117,3583+11]..[117,3583+24])
+                            Pexp_ident "label_counter" (asmcomp/cmm.ml[117,3583+11]..[117,3583+24])
+                      ]
+                ]
+              expression (asmcomp/cmm.ml[117,3583+31]..[120,3719+5])
+                Pexp_apply
+                expression (asmcomp/cmm.ml[118,3620+4]..[118,3620+21])
+                  Pexp_ident "Misc.fatal_errorf" (asmcomp/cmm.ml[118,3620+4]..[118,3620+21])
+                [
+                  <arg>
+                  Nolabel
+                    expression (asmcomp/cmm.ml[118,3620+22]..[118,3620+72])
+                      Pexp_constant PConst_string("Cannot set label counter to %d, it must be >= %d",(asmcomp/cmm.ml[118,3620+23]..[118,3620+71]),None)
+                  <arg>
+                  Nolabel
+                    expression (asmcomp/cmm.ml[119,3693+6]..[119,3693+7])
+                      Pexp_ident "l" (asmcomp/cmm.ml[119,3693+6]..[119,3693+7])
+                  <arg>
+                  Nolabel
+                    expression (asmcomp/cmm.ml[119,3693+8]..[119,3693+22])
+                      Pexp_apply
+                      expression (asmcomp/cmm.ml[119,3693+8]..[119,3693+9])
+                        Pexp_ident "!" (asmcomp/cmm.ml[119,3693+8]..[119,3693+9])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (asmcomp/cmm.ml[119,3693+9]..[119,3693+22])
+                            Pexp_ident "label_counter" (asmcomp/cmm.ml[119,3693+9]..[119,3693+22])
+                      ]
+                  <arg>
+                  Nolabel
+                    expression (asmcomp/cmm.ml[119,3693+23]..[119,3693+25])
+                      Pexp_construct "()" (asmcomp/cmm.ml[119,3693+23]..[119,3693+25])
+                      None
+                ]
+              None
+            expression (asmcomp/cmm.ml[121,3726+2]..[121,3726+20])
+              Pexp_apply
+              expression (asmcomp/cmm.ml[121,3726+16]..[121,3726+18])
+                Pexp_ident ":=" (asmcomp/cmm.ml[121,3726+16]..[121,3726+18])
+              [
+                <arg>
+                Nolabel
+                  expression (asmcomp/cmm.ml[121,3726+2]..[121,3726+15])
+                    Pexp_ident "label_counter" (asmcomp/cmm.ml[121,3726+2]..[121,3726+15])
+                <arg>
+                Nolabel
+                  expression (asmcomp/cmm.ml[121,3726+19]..[121,3726+20])
+                    Pexp_ident "l" (asmcomp/cmm.ml[121,3726+19]..[121,3726+20])
+              ]
+    ]
+  structure_item (asmcomp/cmm.ml[123,3748+0]..[123,3748+33])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[123,3748+4]..[123,3748+13])
+          Ppat_var "cur_label" (asmcomp/cmm.ml[123,3748+4]..[123,3748+13])
+        expression (asmcomp/cmm.ml[123,3748+14]..[123,3748+33]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (asmcomp/cmm.ml[123,3748+14]..[123,3748+16])
+            Ppat_construct "()" (asmcomp/cmm.ml[123,3748+14]..[123,3748+16])
+            None
+          expression (asmcomp/cmm.ml[123,3748+19]..[123,3748+33])
+            Pexp_apply
+            expression (asmcomp/cmm.ml[123,3748+19]..[123,3748+20])
+              Pexp_ident "!" (asmcomp/cmm.ml[123,3748+19]..[123,3748+20])
+            [
+              <arg>
+              Nolabel
+                expression (asmcomp/cmm.ml[123,3748+20]..[123,3748+33])
+                  Pexp_ident "label_counter" (asmcomp/cmm.ml[123,3748+20]..[123,3748+33])
+            ]
+    ]
+  structure_item (asmcomp/cmm.ml[125,3783+0]..[125,3783+52])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[125,3783+4]..[125,3783+13])
+          Ppat_var "new_label" (asmcomp/cmm.ml[125,3783+4]..[125,3783+13])
+        expression (asmcomp/cmm.ml[125,3783+13]..[125,3783+52]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (asmcomp/cmm.ml[125,3783+13]..[125,3783+15])
+            Ppat_construct "()" (asmcomp/cmm.ml[125,3783+13]..[125,3783+15])
+            None
+          expression (asmcomp/cmm.ml[125,3783+18]..[125,3783+52])
+            Pexp_sequence
+            expression (asmcomp/cmm.ml[125,3783+18]..[125,3783+36])
+              Pexp_apply
+              expression (asmcomp/cmm.ml[125,3783+18]..[125,3783+22])
+                Pexp_ident "incr" (asmcomp/cmm.ml[125,3783+18]..[125,3783+22])
+              [
+                <arg>
+                Nolabel
+                  expression (asmcomp/cmm.ml[125,3783+23]..[125,3783+36])
+                    Pexp_ident "label_counter" (asmcomp/cmm.ml[125,3783+23]..[125,3783+36])
+              ]
+            expression (asmcomp/cmm.ml[125,3783+38]..[125,3783+52])
+              Pexp_apply
+              expression (asmcomp/cmm.ml[125,3783+38]..[125,3783+39])
+                Pexp_ident "!" (asmcomp/cmm.ml[125,3783+38]..[125,3783+39])
+              [
+                <arg>
+                Nolabel
+                  expression (asmcomp/cmm.ml[125,3783+39]..[125,3783+52])
+                    Pexp_ident "label_counter" (asmcomp/cmm.ml[125,3783+39]..[125,3783+52])
+              ]
+    ]
+  structure_item (asmcomp/cmm.ml[127,3837+0]..[127,3837+40])
+    Pstr_type Rec
+    [
+      type_declaration "rec_flag" (asmcomp/cmm.ml[127,3837+5]..[127,3837+13]) (asmcomp/cmm.ml[127,3837+0]..[127,3837+40])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (asmcomp/cmm.ml[127,3837+16]..[127,3837+28])
+                "Nonrecursive" (asmcomp/cmm.ml[127,3837+16]..[127,3837+28])
+                []
+                None
+              (asmcomp/cmm.ml[127,3837+29]..[127,3837+40])
+                "Recursive" (asmcomp/cmm.ml[127,3837+31]..[127,3837+40])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (asmcomp/cmm.ml[129,3879+0]..[136,4221+65])
+    Pstr_type Rec
+    [
+      type_declaration "phantom_defining_expr" (asmcomp/cmm.ml[129,3879+5]..[129,3879+26]) (asmcomp/cmm.ml[129,3879+0]..[136,4221+65])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (asmcomp/cmm.ml[130,3908+2]..[130,3908+37])
+                "Cphantom_const_int" (asmcomp/cmm.ml[130,3908+4]..[130,3908+22])
+                [
+                  core_type (asmcomp/cmm.ml[130,3908+26]..[130,3908+37])
+                    Ptyp_constr "Targetint.t" (asmcomp/cmm.ml[130,3908+26]..[130,3908+37])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[131,3946+2]..[131,3946+35])
+                "Cphantom_const_symbol" (asmcomp/cmm.ml[131,3946+4]..[131,3946+25])
+                [
+                  core_type (asmcomp/cmm.ml[131,3946+29]..[131,3946+35])
+                    Ptyp_constr "string" (asmcomp/cmm.ml[131,3946+29]..[131,3946+35])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[132,3982+2]..[132,3982+33])
+                "Cphantom_var" (asmcomp/cmm.ml[132,3982+4]..[132,3982+16])
+                [
+                  core_type (asmcomp/cmm.ml[132,3982+20]..[132,3982+33])
+                    Ptyp_constr "Backend_var.t" (asmcomp/cmm.ml[132,3982+20]..[132,3982+33])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[133,4016+2]..[133,4016+74])
+                "Cphantom_offset_var" (asmcomp/cmm.ml[133,4016+4]..[133,4016+23])
+                [
+                  (asmcomp/cmm.ml[133,4016+29]..[133,4016+49])
+                    Immutable
+                    "var" (asmcomp/cmm.ml[133,4016+29]..[133,4016+32])                    core_type (asmcomp/cmm.ml[133,4016+35]..[133,4016+48])
+                      Ptyp_constr "Backend_var.t" (asmcomp/cmm.ml[133,4016+35]..[133,4016+48])
+                      []
+                  (asmcomp/cmm.ml[133,4016+50]..[133,4016+72])
+                    Immutable
+                    "offset_in_words" (asmcomp/cmm.ml[133,4016+50]..[133,4016+65])                    core_type (asmcomp/cmm.ml[133,4016+68]..[133,4016+71])
+                      Ptyp_constr "int" (asmcomp/cmm.ml[133,4016+68]..[133,4016+71])
+                      []
+                ]
+                None
+              (asmcomp/cmm.ml[134,4091+2]..[134,4091+64])
+                "Cphantom_read_field" (asmcomp/cmm.ml[134,4091+4]..[134,4091+23])
+                [
+                  (asmcomp/cmm.ml[134,4091+29]..[134,4091+49])
+                    Immutable
+                    "var" (asmcomp/cmm.ml[134,4091+29]..[134,4091+32])                    core_type (asmcomp/cmm.ml[134,4091+35]..[134,4091+48])
+                      Ptyp_constr "Backend_var.t" (asmcomp/cmm.ml[134,4091+35]..[134,4091+48])
+                      []
+                  (asmcomp/cmm.ml[134,4091+50]..[134,4091+62])
+                    Immutable
+                    "field" (asmcomp/cmm.ml[134,4091+50]..[134,4091+55])                    core_type (asmcomp/cmm.ml[134,4091+58]..[134,4091+61])
+                      Ptyp_constr "int" (asmcomp/cmm.ml[134,4091+58]..[134,4091+61])
+                      []
+                ]
+                None
+              (asmcomp/cmm.ml[135,4156+2]..[135,4156+64])
+                "Cphantom_read_symbol_field" (asmcomp/cmm.ml[135,4156+4]..[135,4156+30])
+                [
+                  (asmcomp/cmm.ml[135,4156+36]..[135,4156+49])
+                    Immutable
+                    "sym" (asmcomp/cmm.ml[135,4156+36]..[135,4156+39])                    core_type (asmcomp/cmm.ml[135,4156+42]..[135,4156+48])
+                      Ptyp_constr "string" (asmcomp/cmm.ml[135,4156+42]..[135,4156+48])
+                      []
+                  (asmcomp/cmm.ml[135,4156+50]..[135,4156+62])
+                    Immutable
+                    "field" (asmcomp/cmm.ml[135,4156+50]..[135,4156+55])                    core_type (asmcomp/cmm.ml[135,4156+58]..[135,4156+61])
+                      Ptyp_constr "int" (asmcomp/cmm.ml[135,4156+58]..[135,4156+61])
+                      []
+                ]
+                None
+              (asmcomp/cmm.ml[136,4221+2]..[136,4221+65])
+                "Cphantom_block" (asmcomp/cmm.ml[136,4221+4]..[136,4221+18])
+                [
+                  (asmcomp/cmm.ml[136,4221+24]..[136,4221+34])
+                    Immutable
+                    "tag" (asmcomp/cmm.ml[136,4221+24]..[136,4221+27])                    core_type (asmcomp/cmm.ml[136,4221+30]..[136,4221+33])
+                      Ptyp_constr "int" (asmcomp/cmm.ml[136,4221+30]..[136,4221+33])
+                      []
+                  (asmcomp/cmm.ml[136,4221+35]..[136,4221+63])
+                    Immutable
+                    "fields" (asmcomp/cmm.ml[136,4221+35]..[136,4221+41])                    core_type (asmcomp/cmm.ml[136,4221+44]..[136,4221+62])
+                      Ptyp_constr "list" (asmcomp/cmm.ml[136,4221+58]..[136,4221+62])
+                      [
+                        core_type (asmcomp/cmm.ml[136,4221+44]..[136,4221+57])
+                          Ptyp_constr "Backend_var.t" (asmcomp/cmm.ml[136,4221+44]..[136,4221+57])
+                          []
+                      ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (asmcomp/cmm.ml[138,4288+0]..[168,5045+11])
+    Pstr_type Rec
+    [
+      type_declaration "memory_chunk" (asmcomp/cmm.ml[138,4288+5]..[138,4288+17]) (asmcomp/cmm.ml[138,4288+0]..[149,4474+12])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (asmcomp/cmm.ml[139,4308+4]..[139,4308+17])
+                "Byte_unsigned" (asmcomp/cmm.ml[139,4308+4]..[139,4308+17])
+                []
+                None
+              (asmcomp/cmm.ml[140,4326+2]..[140,4326+15])
+                "Byte_signed" (asmcomp/cmm.ml[140,4326+4]..[140,4326+15])
+                []
+                None
+              (asmcomp/cmm.ml[141,4342+2]..[141,4342+20])
+                "Sixteen_unsigned" (asmcomp/cmm.ml[141,4342+4]..[141,4342+20])
+                []
+                None
+              (asmcomp/cmm.ml[142,4363+2]..[142,4363+18])
+                "Sixteen_signed" (asmcomp/cmm.ml[142,4363+4]..[142,4363+18])
+                []
+                None
+              (asmcomp/cmm.ml[143,4382+2]..[143,4382+22])
+                "Thirtytwo_unsigned" (asmcomp/cmm.ml[143,4382+4]..[143,4382+22])
+                []
+                None
+              (asmcomp/cmm.ml[144,4405+2]..[144,4405+20])
+                "Thirtytwo_signed" (asmcomp/cmm.ml[144,4405+4]..[144,4405+20])
+                []
+                None
+              (asmcomp/cmm.ml[145,4426+2]..[145,4426+12])
+                "Word_int" (asmcomp/cmm.ml[145,4426+4]..[145,4426+12])
+                []
+                None
+              (asmcomp/cmm.ml[146,4439+2]..[146,4439+12])
+                "Word_val" (asmcomp/cmm.ml[146,4439+4]..[146,4439+12])
+                []
+                None
+              (asmcomp/cmm.ml[147,4452+2]..[147,4452+10])
+                "Single" (asmcomp/cmm.ml[147,4452+4]..[147,4452+10])
+                []
+                None
+              (asmcomp/cmm.ml[148,4463+2]..[148,4463+10])
+                "Double" (asmcomp/cmm.ml[148,4463+4]..[148,4463+10])
+                []
+                None
+              (asmcomp/cmm.ml[149,4474+2]..[149,4474+12])
+                "Double_u" (asmcomp/cmm.ml[149,4474+4]..[149,4474+12])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+      type_declaration "operation" (asmcomp/cmm.ml[151,4488+4]..[151,4488+13]) (asmcomp/cmm.ml[151,4488+0]..[168,5045+11])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (asmcomp/cmm.ml[152,4504+4]..[152,4504+22])
+                "Capply" (asmcomp/cmm.ml[152,4504+4]..[152,4504+10])
+                [
+                  core_type (asmcomp/cmm.ml[152,4504+14]..[152,4504+22])
+                    Ptyp_constr "machtype" (asmcomp/cmm.ml[152,4504+14]..[152,4504+22])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[153,4527+2]..[153,4527+55])
+                "Cextcall" (asmcomp/cmm.ml[153,4527+4]..[153,4527+12])
+                [
+                  core_type (asmcomp/cmm.ml[153,4527+16]..[153,4527+22])
+                    Ptyp_constr "string" (asmcomp/cmm.ml[153,4527+16]..[153,4527+22])
+                    []
+                  core_type (asmcomp/cmm.ml[153,4527+25]..[153,4527+33])
+                    Ptyp_constr "machtype" (asmcomp/cmm.ml[153,4527+25]..[153,4527+33])
+                    []
+                  core_type (asmcomp/cmm.ml[153,4527+36]..[153,4527+48])
+                    Ptyp_constr "list" (asmcomp/cmm.ml[153,4527+44]..[153,4527+48])
+                    [
+                      core_type (asmcomp/cmm.ml[153,4527+36]..[153,4527+43])
+                        Ptyp_constr "exttype" (asmcomp/cmm.ml[153,4527+36]..[153,4527+43])
+                        []
+                    ]
+                  core_type (asmcomp/cmm.ml[153,4527+51]..[153,4527+55])
+                    Ptyp_constr "bool" (asmcomp/cmm.ml[153,4527+51]..[153,4527+55])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[154,4583+2]..[154,4583+49])
+                "Cload" (asmcomp/cmm.ml[154,4583+4]..[154,4583+9])
+                [
+                  core_type (asmcomp/cmm.ml[154,4583+13]..[154,4583+25])
+                    Ptyp_constr "memory_chunk" (asmcomp/cmm.ml[154,4583+13]..[154,4583+25])
+                    []
+                  core_type (asmcomp/cmm.ml[154,4583+28]..[154,4583+49])
+                    Ptyp_constr "Asttypes.mutable_flag" (asmcomp/cmm.ml[154,4583+28]..[154,4583+49])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[155,4633+2]..[155,4633+10])
+                "Calloc" (asmcomp/cmm.ml[155,4633+4]..[155,4633+10])
+                []
+                None
+              (asmcomp/cmm.ml[156,4644+2]..[156,4644+64])
+                "Cstore" (asmcomp/cmm.ml[156,4644+4]..[156,4644+10])
+                [
+                  core_type (asmcomp/cmm.ml[156,4644+14]..[156,4644+26])
+                    Ptyp_constr "memory_chunk" (asmcomp/cmm.ml[156,4644+14]..[156,4644+26])
+                    []
+                  core_type (asmcomp/cmm.ml[156,4644+29]..[156,4644+64])
+                    Ptyp_constr "Lambda.initialization_or_assignment" (asmcomp/cmm.ml[156,4644+29]..[156,4644+64])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[157,4709+2]..[157,4709+9])
+                "Caddi" (asmcomp/cmm.ml[157,4709+4]..[157,4709+9])
+                []
+                None
+              (asmcomp/cmm.ml[157,4709+10]..[157,4709+17])
+                "Csubi" (asmcomp/cmm.ml[157,4709+12]..[157,4709+17])
+                []
+                None
+              (asmcomp/cmm.ml[157,4709+18]..[157,4709+25])
+                "Cmuli" (asmcomp/cmm.ml[157,4709+20]..[157,4709+25])
+                []
+                None
+              (asmcomp/cmm.ml[157,4709+26]..[157,4709+34])
+                "Cmulhi" (asmcomp/cmm.ml[157,4709+28]..[157,4709+34])
+                []
+                None
+              (asmcomp/cmm.ml[157,4709+35]..[157,4709+42])
+                "Cdivi" (asmcomp/cmm.ml[157,4709+37]..[157,4709+42])
+                []
+                None
+              (asmcomp/cmm.ml[157,4709+43]..[157,4709+50])
+                "Cmodi" (asmcomp/cmm.ml[157,4709+45]..[157,4709+50])
+                []
+                None
+              (asmcomp/cmm.ml[158,4760+2]..[158,4760+8])
+                "Cand" (asmcomp/cmm.ml[158,4760+4]..[158,4760+8])
+                []
+                None
+              (asmcomp/cmm.ml[158,4760+9]..[158,4760+14])
+                "Cor" (asmcomp/cmm.ml[158,4760+11]..[158,4760+14])
+                []
+                None
+              (asmcomp/cmm.ml[158,4760+15]..[158,4760+21])
+                "Cxor" (asmcomp/cmm.ml[158,4760+17]..[158,4760+21])
+                []
+                None
+              (asmcomp/cmm.ml[158,4760+22]..[158,4760+28])
+                "Clsl" (asmcomp/cmm.ml[158,4760+24]..[158,4760+28])
+                []
+                None
+              (asmcomp/cmm.ml[158,4760+29]..[158,4760+35])
+                "Clsr" (asmcomp/cmm.ml[158,4760+31]..[158,4760+35])
+                []
+                None
+              (asmcomp/cmm.ml[158,4760+36]..[158,4760+42])
+                "Casr" (asmcomp/cmm.ml[158,4760+38]..[158,4760+42])
+                []
+                None
+              (asmcomp/cmm.ml[159,4803+2]..[159,4803+31])
+                "Ccmpi" (asmcomp/cmm.ml[159,4803+4]..[159,4803+9])
+                [
+                  core_type (asmcomp/cmm.ml[159,4803+13]..[159,4803+31])
+                    Ptyp_constr "integer_comparison" (asmcomp/cmm.ml[159,4803+13]..[159,4803+31])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[160,4835+2]..[160,4835+9])
+                "Caddv" (asmcomp/cmm.ml[160,4835+4]..[160,4835+9])
+                []
+                None
+              (asmcomp/cmm.ml[160,4835+10]..[160,4835+17])
+                "Cadda" (asmcomp/cmm.ml[160,4835+12]..[160,4835+17])
+                []
+                None
+              (asmcomp/cmm.ml[161,4853+2]..[161,4853+31])
+                "Ccmpa" (asmcomp/cmm.ml[161,4853+4]..[161,4853+9])
+                [
+                  core_type (asmcomp/cmm.ml[161,4853+13]..[161,4853+31])
+                    Ptyp_constr "integer_comparison" (asmcomp/cmm.ml[161,4853+13]..[161,4853+31])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[162,4885+2]..[162,4885+9])
+                "Cnegf" (asmcomp/cmm.ml[162,4885+4]..[162,4885+9])
+                []
+                None
+              (asmcomp/cmm.ml[162,4885+10]..[162,4885+17])
+                "Cabsf" (asmcomp/cmm.ml[162,4885+12]..[162,4885+17])
+                []
+                None
+              (asmcomp/cmm.ml[163,4903+2]..[163,4903+9])
+                "Caddf" (asmcomp/cmm.ml[163,4903+4]..[163,4903+9])
+                []
+                None
+              (asmcomp/cmm.ml[163,4903+10]..[163,4903+17])
+                "Csubf" (asmcomp/cmm.ml[163,4903+12]..[163,4903+17])
+                []
+                None
+              (asmcomp/cmm.ml[163,4903+18]..[163,4903+25])
+                "Cmulf" (asmcomp/cmm.ml[163,4903+20]..[163,4903+25])
+                []
+                None
+              (asmcomp/cmm.ml[163,4903+26]..[163,4903+33])
+                "Cdivf" (asmcomp/cmm.ml[163,4903+28]..[163,4903+33])
+                []
+                None
+              (asmcomp/cmm.ml[164,4937+2]..[164,4937+15])
+                "Cfloatofint" (asmcomp/cmm.ml[164,4937+4]..[164,4937+15])
+                []
+                None
+              (asmcomp/cmm.ml[164,4937+16]..[164,4937+29])
+                "Cintoffloat" (asmcomp/cmm.ml[164,4937+18]..[164,4937+29])
+                []
+                None
+              (asmcomp/cmm.ml[165,4967+2]..[165,4967+29])
+                "Ccmpf" (asmcomp/cmm.ml[165,4967+4]..[165,4967+9])
+                [
+                  core_type (asmcomp/cmm.ml[165,4967+13]..[165,4967+29])
+                    Ptyp_constr "float_comparison" (asmcomp/cmm.ml[165,4967+13]..[165,4967+29])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[166,4997+2]..[166,4997+31])
+                "Craise" (asmcomp/cmm.ml[166,4997+4]..[166,4997+10])
+                [
+                  core_type (asmcomp/cmm.ml[166,4997+14]..[166,4997+31])
+                    Ptyp_constr "Lambda.raise_kind" (asmcomp/cmm.ml[166,4997+14]..[166,4997+31])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[167,5029+2]..[167,5029+15])
+                "Ccheckbound" (asmcomp/cmm.ml[167,5029+4]..[167,5029+15])
+                []
+                None
+              (asmcomp/cmm.ml[168,5045+2]..[168,5045+11])
+                "Copaque" (asmcomp/cmm.ml[168,5045+4]..[168,5045+11])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (asmcomp/cmm.ml[170,5058+0]..[196,6160+19])
+    Pstr_type Rec
+    [
+      type_declaration "expression" (asmcomp/cmm.ml[170,5058+5]..[170,5058+15]) (asmcomp/cmm.ml[170,5058+0]..[196,6160+19])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (asmcomp/cmm.ml[171,5076+4]..[171,5076+35])
+                "Cconst_int" (asmcomp/cmm.ml[171,5076+4]..[171,5076+14])
+                [
+                  core_type (asmcomp/cmm.ml[171,5076+18]..[171,5076+21])
+                    Ptyp_constr "int" (asmcomp/cmm.ml[171,5076+18]..[171,5076+21])
+                    []
+                  core_type (asmcomp/cmm.ml[171,5076+24]..[171,5076+35])
+                    Ptyp_constr "Debuginfo.t" (asmcomp/cmm.ml[171,5076+24]..[171,5076+35])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[172,5112+2]..[172,5112+44])
+                "Cconst_natint" (asmcomp/cmm.ml[172,5112+4]..[172,5112+17])
+                [
+                  core_type (asmcomp/cmm.ml[172,5112+21]..[172,5112+30])
+                    Ptyp_constr "nativeint" (asmcomp/cmm.ml[172,5112+21]..[172,5112+30])
+                    []
+                  core_type (asmcomp/cmm.ml[172,5112+33]..[172,5112+44])
+                    Ptyp_constr "Debuginfo.t" (asmcomp/cmm.ml[172,5112+33]..[172,5112+44])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[173,5157+2]..[173,5157+39])
+                "Cconst_float" (asmcomp/cmm.ml[173,5157+4]..[173,5157+16])
+                [
+                  core_type (asmcomp/cmm.ml[173,5157+20]..[173,5157+25])
+                    Ptyp_constr "float" (asmcomp/cmm.ml[173,5157+20]..[173,5157+25])
+                    []
+                  core_type (asmcomp/cmm.ml[173,5157+28]..[173,5157+39])
+                    Ptyp_constr "Debuginfo.t" (asmcomp/cmm.ml[173,5157+28]..[173,5157+39])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[174,5197+2]..[174,5197+41])
+                "Cconst_symbol" (asmcomp/cmm.ml[174,5197+4]..[174,5197+17])
+                [
+                  core_type (asmcomp/cmm.ml[174,5197+21]..[174,5197+27])
+                    Ptyp_constr "string" (asmcomp/cmm.ml[174,5197+21]..[174,5197+27])
+                    []
+                  core_type (asmcomp/cmm.ml[174,5197+30]..[174,5197+41])
+                    Ptyp_constr "Debuginfo.t" (asmcomp/cmm.ml[174,5197+30]..[174,5197+41])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[175,5239+2]..[175,5239+25])
+                "Cvar" (asmcomp/cmm.ml[175,5239+4]..[175,5239+8])
+                [
+                  core_type (asmcomp/cmm.ml[175,5239+12]..[175,5239+25])
+                    Ptyp_constr "Backend_var.t" (asmcomp/cmm.ml[175,5239+12]..[175,5239+25])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[176,5265+2]..[176,5265+67])
+                "Clet" (asmcomp/cmm.ml[176,5265+4]..[176,5265+8])
+                [
+                  core_type (asmcomp/cmm.ml[176,5265+12]..[176,5265+41])
+                    Ptyp_constr "Backend_var.With_provenance.t" (asmcomp/cmm.ml[176,5265+12]..[176,5265+41])
+                    []
+                  core_type (asmcomp/cmm.ml[176,5265+44]..[176,5265+54])
+                    Ptyp_constr "expression" (asmcomp/cmm.ml[176,5265+44]..[176,5265+54])
+                    []
+                  core_type (asmcomp/cmm.ml[176,5265+57]..[176,5265+67])
+                    Ptyp_constr "expression" (asmcomp/cmm.ml[176,5265+57]..[176,5265+67])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[177,5333+2]..[178,5390+41])
+                "Clet_mut" (asmcomp/cmm.ml[177,5333+4]..[177,5333+12])
+                [
+                  core_type (asmcomp/cmm.ml[177,5333+16]..[177,5333+45])
+                    Ptyp_constr "Backend_var.With_provenance.t" (asmcomp/cmm.ml[177,5333+16]..[177,5333+45])
+                    []
+                  core_type (asmcomp/cmm.ml[177,5333+48]..[177,5333+56])
+                    Ptyp_constr "machtype" (asmcomp/cmm.ml[177,5333+48]..[177,5333+56])
+                    []
+                  core_type (asmcomp/cmm.ml[178,5390+18]..[178,5390+28])
+                    Ptyp_constr "expression" (asmcomp/cmm.ml[178,5390+18]..[178,5390+28])
+                    []
+                  core_type (asmcomp/cmm.ml[178,5390+31]..[178,5390+41])
+                    Ptyp_constr "expression" (asmcomp/cmm.ml[178,5390+31]..[178,5390+41])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[179,5432+2]..[180,5482+49])
+                "Cphantom_let" (asmcomp/cmm.ml[179,5432+4]..[179,5432+16])
+                [
+                  core_type (asmcomp/cmm.ml[179,5432+20]..[179,5432+49])
+                    Ptyp_constr "Backend_var.With_provenance.t" (asmcomp/cmm.ml[179,5432+20]..[179,5432+49])
+                    []
+                  core_type (asmcomp/cmm.ml[180,5482+8]..[180,5482+36])
+                    Ptyp_constr "option" (asmcomp/cmm.ml[180,5482+30]..[180,5482+36])
+                    [
+                      core_type (asmcomp/cmm.ml[180,5482+8]..[180,5482+29])
+                        Ptyp_constr "phantom_defining_expr" (asmcomp/cmm.ml[180,5482+8]..[180,5482+29])
+                        []
+                    ]
+                  core_type (asmcomp/cmm.ml[180,5482+39]..[180,5482+49])
+                    Ptyp_constr "expression" (asmcomp/cmm.ml[180,5482+39]..[180,5482+49])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[181,5532+2]..[181,5532+41])
+                "Cassign" (asmcomp/cmm.ml[181,5532+4]..[181,5532+11])
+                [
+                  core_type (asmcomp/cmm.ml[181,5532+15]..[181,5532+28])
+                    Ptyp_constr "Backend_var.t" (asmcomp/cmm.ml[181,5532+15]..[181,5532+28])
+                    []
+                  core_type (asmcomp/cmm.ml[181,5532+31]..[181,5532+41])
+                    Ptyp_constr "expression" (asmcomp/cmm.ml[181,5532+31]..[181,5532+41])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[182,5574+2]..[182,5574+29])
+                "Ctuple" (asmcomp/cmm.ml[182,5574+4]..[182,5574+10])
+                [
+                  core_type (asmcomp/cmm.ml[182,5574+14]..[182,5574+29])
+                    Ptyp_constr "list" (asmcomp/cmm.ml[182,5574+25]..[182,5574+29])
+                    [
+                      core_type (asmcomp/cmm.ml[182,5574+14]..[182,5574+24])
+                        Ptyp_constr "expression" (asmcomp/cmm.ml[182,5574+14]..[182,5574+24])
+                        []
+                    ]
+                ]
+                None
+              (asmcomp/cmm.ml[183,5604+2]..[183,5604+52])
+                "Cop" (asmcomp/cmm.ml[183,5604+4]..[183,5604+7])
+                [
+                  core_type (asmcomp/cmm.ml[183,5604+11]..[183,5604+20])
+                    Ptyp_constr "operation" (asmcomp/cmm.ml[183,5604+11]..[183,5604+20])
+                    []
+                  core_type (asmcomp/cmm.ml[183,5604+23]..[183,5604+38])
+                    Ptyp_constr "list" (asmcomp/cmm.ml[183,5604+34]..[183,5604+38])
+                    [
+                      core_type (asmcomp/cmm.ml[183,5604+23]..[183,5604+33])
+                        Ptyp_constr "expression" (asmcomp/cmm.ml[183,5604+23]..[183,5604+33])
+                        []
+                    ]
+                  core_type (asmcomp/cmm.ml[183,5604+41]..[183,5604+52])
+                    Ptyp_constr "Debuginfo.t" (asmcomp/cmm.ml[183,5604+41]..[183,5604+52])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[184,5657+2]..[184,5657+40])
+                "Csequence" (asmcomp/cmm.ml[184,5657+4]..[184,5657+13])
+                [
+                  core_type (asmcomp/cmm.ml[184,5657+17]..[184,5657+27])
+                    Ptyp_constr "expression" (asmcomp/cmm.ml[184,5657+17]..[184,5657+27])
+                    []
+                  core_type (asmcomp/cmm.ml[184,5657+30]..[184,5657+40])
+                    Ptyp_constr "expression" (asmcomp/cmm.ml[184,5657+30]..[184,5657+40])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[185,5698+2]..[186,5755+46])
+                "Cifthenelse" (asmcomp/cmm.ml[185,5698+4]..[185,5698+15])
+                [
+                  core_type (asmcomp/cmm.ml[185,5698+19]..[185,5698+29])
+                    Ptyp_constr "expression" (asmcomp/cmm.ml[185,5698+19]..[185,5698+29])
+                    []
+                  core_type (asmcomp/cmm.ml[185,5698+32]..[185,5698+43])
+                    Ptyp_constr "Debuginfo.t" (asmcomp/cmm.ml[185,5698+32]..[185,5698+43])
+                    []
+                  core_type (asmcomp/cmm.ml[185,5698+46]..[185,5698+56])
+                    Ptyp_constr "expression" (asmcomp/cmm.ml[185,5698+46]..[185,5698+56])
+                    []
+                  core_type (asmcomp/cmm.ml[186,5755+8]..[186,5755+19])
+                    Ptyp_constr "Debuginfo.t" (asmcomp/cmm.ml[186,5755+8]..[186,5755+19])
+                    []
+                  core_type (asmcomp/cmm.ml[186,5755+22]..[186,5755+32])
+                    Ptyp_constr "expression" (asmcomp/cmm.ml[186,5755+22]..[186,5755+32])
+                    []
+                  core_type (asmcomp/cmm.ml[186,5755+35]..[186,5755+46])
+                    Ptyp_constr "Debuginfo.t" (asmcomp/cmm.ml[186,5755+35]..[186,5755+46])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[187,5802+2]..[188,5875+19])
+                "Cswitch" (asmcomp/cmm.ml[187,5802+4]..[187,5802+11])
+                [
+                  core_type (asmcomp/cmm.ml[187,5802+15]..[187,5802+25])
+                    Ptyp_constr "expression" (asmcomp/cmm.ml[187,5802+15]..[187,5802+25])
+                    []
+                  core_type (asmcomp/cmm.ml[187,5802+28]..[187,5802+37])
+                    Ptyp_constr "array" (asmcomp/cmm.ml[187,5802+32]..[187,5802+37])
+                    [
+                      core_type (asmcomp/cmm.ml[187,5802+28]..[187,5802+31])
+                        Ptyp_constr "int" (asmcomp/cmm.ml[187,5802+28]..[187,5802+31])
+                        []
+                    ]
+                  core_type (asmcomp/cmm.ml[187,5802+40]..[187,5802+72])
+                    Ptyp_constr "array" (asmcomp/cmm.ml[187,5802+67]..[187,5802+72])
+                    [
+                      core_type (asmcomp/cmm.ml[187,5802+41]..[187,5802+65])
+                        Ptyp_tuple
+                        [
+                          core_type (asmcomp/cmm.ml[187,5802+41]..[187,5802+51])
+                            Ptyp_constr "expression" (asmcomp/cmm.ml[187,5802+41]..[187,5802+51])
+                            []
+                          core_type (asmcomp/cmm.ml[187,5802+54]..[187,5802+65])
+                            Ptyp_constr "Debuginfo.t" (asmcomp/cmm.ml[187,5802+54]..[187,5802+65])
+                            []
+                        ]
+                    ]
+                  core_type (asmcomp/cmm.ml[188,5875+8]..[188,5875+19])
+                    Ptyp_constr "Debuginfo.t" (asmcomp/cmm.ml[188,5875+8]..[188,5875+19])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[189,5895+2]..[193,6032+20])
+                "Ccatch" (asmcomp/cmm.ml[189,5895+4]..[189,5895+10])
+                [
+                  core_type (asmcomp/cmm.ml[190,5909+6]..[190,5909+14])
+                    Ptyp_constr "rec_flag" (asmcomp/cmm.ml[190,5909+6]..[190,5909+14])
+                    []
+                  core_type (asmcomp/cmm.ml[191,5924+10]..[192,5989+42])
+                    Ptyp_constr "list" (asmcomp/cmm.ml[192,5989+38]..[192,5989+42])
+                    [
+                      core_type (asmcomp/cmm.ml[191,5924+11]..[192,5989+36])
+                        Ptyp_tuple
+                        [
+                          core_type (asmcomp/cmm.ml[191,5924+11]..[191,5924+14])
+                            Ptyp_constr "int" (asmcomp/cmm.ml[191,5924+11]..[191,5924+14])
+                            []
+                          core_type (asmcomp/cmm.ml[191,5924+17]..[191,5924+64])
+                            Ptyp_constr "list" (asmcomp/cmm.ml[191,5924+60]..[191,5924+64])
+                            [
+                              core_type (asmcomp/cmm.ml[191,5924+18]..[191,5924+58])
+                                Ptyp_tuple
+                                [
+                                  core_type (asmcomp/cmm.ml[191,5924+18]..[191,5924+47])
+                                    Ptyp_constr "Backend_var.With_provenance.t" (asmcomp/cmm.ml[191,5924+18]..[191,5924+47])
+                                    []
+                                  core_type (asmcomp/cmm.ml[191,5924+50]..[191,5924+58])
+                                    Ptyp_constr "machtype" (asmcomp/cmm.ml[191,5924+50]..[191,5924+58])
+                                    []
+                                ]
+                            ]
+                          core_type (asmcomp/cmm.ml[192,5989+12]..[192,5989+22])
+                            Ptyp_constr "expression" (asmcomp/cmm.ml[192,5989+12]..[192,5989+22])
+                            []
+                          core_type (asmcomp/cmm.ml[192,5989+25]..[192,5989+36])
+                            Ptyp_constr "Debuginfo.t" (asmcomp/cmm.ml[192,5989+25]..[192,5989+36])
+                            []
+                        ]
+                    ]
+                  core_type (asmcomp/cmm.ml[193,6032+10]..[193,6032+20])
+                    Ptyp_constr "expression" (asmcomp/cmm.ml[193,6032+10]..[193,6032+20])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[194,6053+2]..[194,6053+34])
+                "Cexit" (asmcomp/cmm.ml[194,6053+4]..[194,6053+9])
+                [
+                  core_type (asmcomp/cmm.ml[194,6053+13]..[194,6053+16])
+                    Ptyp_constr "int" (asmcomp/cmm.ml[194,6053+13]..[194,6053+16])
+                    []
+                  core_type (asmcomp/cmm.ml[194,6053+19]..[194,6053+34])
+                    Ptyp_constr "list" (asmcomp/cmm.ml[194,6053+30]..[194,6053+34])
+                    [
+                      core_type (asmcomp/cmm.ml[194,6053+19]..[194,6053+29])
+                        Ptyp_constr "expression" (asmcomp/cmm.ml[194,6053+19]..[194,6053+29])
+                        []
+                    ]
+                ]
+                None
+              (asmcomp/cmm.ml[195,6088+2]..[196,6160+19])
+                "Ctrywith" (asmcomp/cmm.ml[195,6088+4]..[195,6088+12])
+                [
+                  core_type (asmcomp/cmm.ml[195,6088+16]..[195,6088+26])
+                    Ptyp_constr "expression" (asmcomp/cmm.ml[195,6088+16]..[195,6088+26])
+                    []
+                  core_type (asmcomp/cmm.ml[195,6088+29]..[195,6088+58])
+                    Ptyp_constr "Backend_var.With_provenance.t" (asmcomp/cmm.ml[195,6088+29]..[195,6088+58])
+                    []
+                  core_type (asmcomp/cmm.ml[195,6088+61]..[195,6088+71])
+                    Ptyp_constr "expression" (asmcomp/cmm.ml[195,6088+61]..[195,6088+71])
+                    []
+                  core_type (asmcomp/cmm.ml[196,6160+8]..[196,6160+19])
+                    Ptyp_constr "Debuginfo.t" (asmcomp/cmm.ml[196,6160+8]..[196,6160+19])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (asmcomp/cmm.ml[198,6181+0]..[200,6224+10])
+    Pstr_type Rec
+    [
+      type_declaration "codegen_option" (asmcomp/cmm.ml[198,6181+5]..[198,6181+19]) (asmcomp/cmm.ml[198,6181+0]..[200,6224+10])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (asmcomp/cmm.ml[199,6203+2]..[199,6203+20])
+                "Reduce_code_size" (asmcomp/cmm.ml[199,6203+4]..[199,6203+20])
+                []
+                None
+              (asmcomp/cmm.ml[200,6224+2]..[200,6224+10])
+                "No_CSE" (asmcomp/cmm.ml[200,6224+4]..[200,6224+10])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (asmcomp/cmm.ml[202,6236+0]..[208,6436+3])
+    Pstr_type Rec
+    [
+      type_declaration "fundecl" (asmcomp/cmm.ml[202,6236+5]..[202,6236+12]) (asmcomp/cmm.ml[202,6236+0]..[208,6436+3])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (asmcomp/cmm.ml[203,6251+4]..[203,6251+21])
+                Immutable
+                "fun_name" (asmcomp/cmm.ml[203,6251+4]..[203,6251+12])                core_type (asmcomp/cmm.ml[203,6251+14]..[203,6251+20])
+                  Ptyp_constr "string" (asmcomp/cmm.ml[203,6251+14]..[203,6251+20])
+                  []
+              (asmcomp/cmm.ml[204,6273+4]..[204,6273+62])
+                Immutable
+                "fun_args" (asmcomp/cmm.ml[204,6273+4]..[204,6273+12])                core_type (asmcomp/cmm.ml[204,6273+14]..[204,6273+61])
+                  Ptyp_constr "list" (asmcomp/cmm.ml[204,6273+57]..[204,6273+61])
+                  [
+                    core_type (asmcomp/cmm.ml[204,6273+15]..[204,6273+55])
+                      Ptyp_tuple
+                      [
+                        core_type (asmcomp/cmm.ml[204,6273+15]..[204,6273+44])
+                          Ptyp_constr "Backend_var.With_provenance.t" (asmcomp/cmm.ml[204,6273+15]..[204,6273+44])
+                          []
+                        core_type (asmcomp/cmm.ml[204,6273+47]..[204,6273+55])
+                          Ptyp_constr "machtype" (asmcomp/cmm.ml[204,6273+47]..[204,6273+55])
+                          []
+                      ]
+                  ]
+              (asmcomp/cmm.ml[205,6336+4]..[205,6336+25])
+                Immutable
+                "fun_body" (asmcomp/cmm.ml[205,6336+4]..[205,6336+12])                core_type (asmcomp/cmm.ml[205,6336+14]..[205,6336+24])
+                  Ptyp_constr "expression" (asmcomp/cmm.ml[205,6336+14]..[205,6336+24])
+                  []
+              (asmcomp/cmm.ml[206,6362+4]..[206,6362+46])
+                Immutable
+                "fun_codegen_options" (asmcomp/cmm.ml[206,6362+4]..[206,6362+23])                core_type (asmcomp/cmm.ml[206,6362+26]..[206,6362+45])
+                  Ptyp_constr "list" (asmcomp/cmm.ml[206,6362+41]..[206,6362+45])
+                  [
+                    core_type (asmcomp/cmm.ml[206,6362+26]..[206,6362+40])
+                      Ptyp_constr "codegen_option" (asmcomp/cmm.ml[206,6362+26]..[206,6362+40])
+                      []
+                  ]
+              (asmcomp/cmm.ml[207,6409+4]..[207,6409+26])
+                Immutable
+                "fun_dbg" (asmcomp/cmm.ml[207,6409+4]..[207,6409+11])                core_type (asmcomp/cmm.ml[207,6409+14]..[207,6409+25])
+                  Ptyp_constr "Debuginfo.t" (asmcomp/cmm.ml[207,6409+14]..[207,6409+25])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (asmcomp/cmm.ml[210,6441+0]..[222,6708+17])
+    Pstr_type Rec
+    [
+      type_declaration "data_item" (asmcomp/cmm.ml[210,6441+5]..[210,6441+14]) (asmcomp/cmm.ml[210,6441+0]..[222,6708+17])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (asmcomp/cmm.ml[211,6458+4]..[211,6458+28])
+                "Cdefine_symbol" (asmcomp/cmm.ml[211,6458+4]..[211,6458+18])
+                [
+                  core_type (asmcomp/cmm.ml[211,6458+22]..[211,6458+28])
+                    Ptyp_constr "string" (asmcomp/cmm.ml[211,6458+22]..[211,6458+28])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[212,6487+2]..[212,6487+28])
+                "Cglobal_symbol" (asmcomp/cmm.ml[212,6487+4]..[212,6487+18])
+                [
+                  core_type (asmcomp/cmm.ml[212,6487+22]..[212,6487+28])
+                    Ptyp_constr "string" (asmcomp/cmm.ml[212,6487+22]..[212,6487+28])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[213,6516+2]..[213,6516+16])
+                "Cint8" (asmcomp/cmm.ml[213,6516+4]..[213,6516+9])
+                [
+                  core_type (asmcomp/cmm.ml[213,6516+13]..[213,6516+16])
+                    Ptyp_constr "int" (asmcomp/cmm.ml[213,6516+13]..[213,6516+16])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[214,6533+2]..[214,6533+17])
+                "Cint16" (asmcomp/cmm.ml[214,6533+4]..[214,6533+10])
+                [
+                  core_type (asmcomp/cmm.ml[214,6533+14]..[214,6533+17])
+                    Ptyp_constr "int" (asmcomp/cmm.ml[214,6533+14]..[214,6533+17])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[215,6551+2]..[215,6551+23])
+                "Cint32" (asmcomp/cmm.ml[215,6551+4]..[215,6551+10])
+                [
+                  core_type (asmcomp/cmm.ml[215,6551+14]..[215,6551+23])
+                    Ptyp_constr "nativeint" (asmcomp/cmm.ml[215,6551+14]..[215,6551+23])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[216,6575+2]..[216,6575+21])
+                "Cint" (asmcomp/cmm.ml[216,6575+4]..[216,6575+8])
+                [
+                  core_type (asmcomp/cmm.ml[216,6575+12]..[216,6575+21])
+                    Ptyp_constr "nativeint" (asmcomp/cmm.ml[216,6575+12]..[216,6575+21])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[217,6597+2]..[217,6597+20])
+                "Csingle" (asmcomp/cmm.ml[217,6597+4]..[217,6597+11])
+                [
+                  core_type (asmcomp/cmm.ml[217,6597+15]..[217,6597+20])
+                    Ptyp_constr "float" (asmcomp/cmm.ml[217,6597+15]..[217,6597+20])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[218,6618+2]..[218,6618+20])
+                "Cdouble" (asmcomp/cmm.ml[218,6618+4]..[218,6618+11])
+                [
+                  core_type (asmcomp/cmm.ml[218,6618+15]..[218,6618+20])
+                    Ptyp_constr "float" (asmcomp/cmm.ml[218,6618+15]..[218,6618+20])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[219,6639+2]..[219,6639+29])
+                "Csymbol_address" (asmcomp/cmm.ml[219,6639+4]..[219,6639+19])
+                [
+                  core_type (asmcomp/cmm.ml[219,6639+23]..[219,6639+29])
+                    Ptyp_constr "string" (asmcomp/cmm.ml[219,6639+23]..[219,6639+29])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[220,6669+2]..[220,6669+21])
+                "Cstring" (asmcomp/cmm.ml[220,6669+4]..[220,6669+11])
+                [
+                  core_type (asmcomp/cmm.ml[220,6669+15]..[220,6669+21])
+                    Ptyp_constr "string" (asmcomp/cmm.ml[220,6669+15]..[220,6669+21])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[221,6691+2]..[221,6691+16])
+                "Cskip" (asmcomp/cmm.ml[221,6691+4]..[221,6691+9])
+                [
+                  core_type (asmcomp/cmm.ml[221,6691+13]..[221,6691+16])
+                    Ptyp_constr "int" (asmcomp/cmm.ml[221,6691+13]..[221,6691+16])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[222,6708+2]..[222,6708+17])
+                "Calign" (asmcomp/cmm.ml[222,6708+4]..[222,6708+10])
+                [
+                  core_type (asmcomp/cmm.ml[222,6708+14]..[222,6708+17])
+                    Ptyp_constr "int" (asmcomp/cmm.ml[222,6708+14]..[222,6708+17])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (asmcomp/cmm.ml[224,6727+0]..[226,6766+27])
+    Pstr_type Rec
+    [
+      type_declaration "phrase" (asmcomp/cmm.ml[224,6727+5]..[224,6727+11]) (asmcomp/cmm.ml[224,6727+0]..[226,6766+27])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (asmcomp/cmm.ml[225,6741+4]..[225,6741+24])
+                "Cfunction" (asmcomp/cmm.ml[225,6741+4]..[225,6741+13])
+                [
+                  core_type (asmcomp/cmm.ml[225,6741+17]..[225,6741+24])
+                    Ptyp_constr "fundecl" (asmcomp/cmm.ml[225,6741+17]..[225,6741+24])
+                    []
+                ]
+                None
+              (asmcomp/cmm.ml[226,6766+2]..[226,6766+27])
+                "Cdata" (asmcomp/cmm.ml[226,6766+4]..[226,6766+9])
+                [
+                  core_type (asmcomp/cmm.ml[226,6766+13]..[226,6766+27])
+                    Ptyp_constr "list" (asmcomp/cmm.ml[226,6766+23]..[226,6766+27])
+                    [
+                      core_type (asmcomp/cmm.ml[226,6766+13]..[226,6766+22])
+                        Ptyp_constr "data_item" (asmcomp/cmm.ml[226,6766+13]..[226,6766+22])
+                        []
+                    ]
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (asmcomp/cmm.ml[228,6795+0]..[229,6830+45])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[228,6795+4]..[228,6795+10])
+          Ppat_var "ccatch" (asmcomp/cmm.ml[228,6795+4]..[228,6795+10])
+        expression (asmcomp/cmm.ml[228,6795+11]..[229,6830+45]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (asmcomp/cmm.ml[228,6795+11]..[228,6795+32])
+            Ppat_tuple
+            [
+              pattern (asmcomp/cmm.ml[228,6795+12]..[228,6795+13])
+                Ppat_var "i" (asmcomp/cmm.ml[228,6795+12]..[228,6795+13])
+              pattern (asmcomp/cmm.ml[228,6795+15]..[228,6795+18])
+                Ppat_var "ids" (asmcomp/cmm.ml[228,6795+15]..[228,6795+18])
+              pattern (asmcomp/cmm.ml[228,6795+20]..[228,6795+22])
+                Ppat_var "e1" (asmcomp/cmm.ml[228,6795+20]..[228,6795+22])
+              pattern (asmcomp/cmm.ml[228,6795+24]..[228,6795+26])
+                Ppat_var "e2" (asmcomp/cmm.ml[228,6795+24]..[228,6795+26])
+              pattern (asmcomp/cmm.ml[228,6795+28]..[228,6795+31])
+                Ppat_var "dbg" (asmcomp/cmm.ml[228,6795+28]..[228,6795+31])
+            ]
+          expression (asmcomp/cmm.ml[229,6830+2]..[229,6830+45])
+            Pexp_construct "Ccatch" (asmcomp/cmm.ml[229,6830+2]..[229,6830+8])
+            Some
+              expression (asmcomp/cmm.ml[229,6830+8]..[229,6830+45])
+                Pexp_tuple
+                [
+                  expression (asmcomp/cmm.ml[229,6830+9]..[229,6830+21])
+                    Pexp_construct "Nonrecursive" (asmcomp/cmm.ml[229,6830+9]..[229,6830+21])
+                    None
+                  expression (asmcomp/cmm.ml[229,6830+23]..[229,6830+40])
+                    Pexp_construct "::" (asmcomp/cmm.ml[229,6830+24]..[229,6830+40]) ghost
+                    Some
+                      expression (asmcomp/cmm.ml[229,6830+24]..[229,6830+40]) ghost
+                        Pexp_tuple
+                        [
+                          expression (asmcomp/cmm.ml[229,6830+24]..[229,6830+39])
+                            Pexp_tuple
+                            [
+                              expression (asmcomp/cmm.ml[229,6830+24]..[229,6830+25])
+                                Pexp_ident "i" (asmcomp/cmm.ml[229,6830+24]..[229,6830+25])
+                              expression (asmcomp/cmm.ml[229,6830+27]..[229,6830+30])
+                                Pexp_ident "ids" (asmcomp/cmm.ml[229,6830+27]..[229,6830+30])
+                              expression (asmcomp/cmm.ml[229,6830+32]..[229,6830+34])
+                                Pexp_ident "e2" (asmcomp/cmm.ml[229,6830+32]..[229,6830+34])
+                              expression (asmcomp/cmm.ml[229,6830+36]..[229,6830+39])
+                                Pexp_ident "dbg" (asmcomp/cmm.ml[229,6830+36]..[229,6830+39])
+                            ]
+                          expression (asmcomp/cmm.ml[229,6830+39]..[229,6830+40]) ghost
+                            Pexp_construct "[]" (asmcomp/cmm.ml[229,6830+39]..[229,6830+40]) ghost
+                            None
+                        ]
+                  expression (asmcomp/cmm.ml[229,6830+42]..[229,6830+44])
+                    Pexp_ident "e1" (asmcomp/cmm.ml[229,6830+42]..[229,6830+44])
+                ]
+    ]
+  structure_item (asmcomp/cmm.ml[231,6877+0]..[232,6892+29])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[231,6877+4]..[231,6877+9])
+          Ppat_var "reset" (asmcomp/cmm.ml[231,6877+4]..[231,6877+9])
+        expression (asmcomp/cmm.ml[231,6877+10]..[232,6892+29]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (asmcomp/cmm.ml[231,6877+10]..[231,6877+12])
+            Ppat_construct "()" (asmcomp/cmm.ml[231,6877+10]..[231,6877+12])
+            None
+          expression (asmcomp/cmm.ml[232,6892+2]..[232,6892+29])
+            Pexp_apply
+            expression (asmcomp/cmm.ml[232,6892+16]..[232,6892+18])
+              Pexp_ident ":=" (asmcomp/cmm.ml[232,6892+16]..[232,6892+18])
+            [
+              <arg>
+              Nolabel
+                expression (asmcomp/cmm.ml[232,6892+2]..[232,6892+15])
+                  Pexp_ident "label_counter" (asmcomp/cmm.ml[232,6892+2]..[232,6892+15])
+              <arg>
+              Nolabel
+                expression (asmcomp/cmm.ml[232,6892+19]..[232,6892+29])
+                  Pexp_ident "init_label" (asmcomp/cmm.ml[232,6892+19]..[232,6892+29])
+            ]
+    ]
+  structure_item (asmcomp/cmm.ml[234,6923+0]..[266,7676+11])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[234,6923+4]..[234,6923+21])
+          Ppat_var "iter_shallow_tail" (asmcomp/cmm.ml[234,6923+4]..[234,6923+21])
+        expression (asmcomp/cmm.ml[234,6923+22]..[266,7676+11]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (asmcomp/cmm.ml[234,6923+22]..[234,6923+23])
+            Ppat_var "f" (asmcomp/cmm.ml[234,6923+22]..[234,6923+23])
+          expression (asmcomp/cmm.ml[234,6923+26]..[266,7676+11])
+            Pexp_function
+            [
+              <case>
+                pattern (asmcomp/cmm.ml[235,6958+4]..[235,6958+74])
+                  Ppat_or
+                  pattern (asmcomp/cmm.ml[235,6958+4]..[235,6958+48])
+                    Ppat_or
+                    pattern (asmcomp/cmm.ml[235,6958+4]..[235,6958+20])
+                      Ppat_construct "Clet" (asmcomp/cmm.ml[235,6958+4]..[235,6958+8])
+                      Some
+                        []
+                        pattern (asmcomp/cmm.ml[235,6958+8]..[235,6958+20])
+                          Ppat_tuple
+                          [
+                            pattern (asmcomp/cmm.ml[235,6958+9]..[235,6958+10])
+                              Ppat_any
+                            pattern (asmcomp/cmm.ml[235,6958+12]..[235,6958+13])
+                              Ppat_any
+                            pattern (asmcomp/cmm.ml[235,6958+15]..[235,6958+19])
+                              Ppat_var "body" (asmcomp/cmm.ml[235,6958+15]..[235,6958+19])
+                          ]
+                    pattern (asmcomp/cmm.ml[235,6958+23]..[235,6958+48])
+                      Ppat_construct "Cphantom_let" (asmcomp/cmm.ml[235,6958+23]..[235,6958+35])
+                      Some
+                        []
+                        pattern (asmcomp/cmm.ml[235,6958+36]..[235,6958+48])
+                          Ppat_tuple
+                          [
+                            pattern (asmcomp/cmm.ml[235,6958+37]..[235,6958+38])
+                              Ppat_any
+                            pattern (asmcomp/cmm.ml[235,6958+40]..[235,6958+41])
+                              Ppat_any
+                            pattern (asmcomp/cmm.ml[235,6958+43]..[235,6958+47])
+                              Ppat_var "body" (asmcomp/cmm.ml[235,6958+43]..[235,6958+47])
+                          ]
+                  pattern (asmcomp/cmm.ml[235,6958+51]..[235,6958+74])
+                    Ppat_construct "Clet_mut" (asmcomp/cmm.ml[235,6958+51]..[235,6958+59])
+                    Some
+                      []
+                      pattern (asmcomp/cmm.ml[235,6958+59]..[235,6958+74])
+                        Ppat_tuple
+                        [
+                          pattern (asmcomp/cmm.ml[235,6958+60]..[235,6958+61])
+                            Ppat_any
+                          pattern (asmcomp/cmm.ml[235,6958+63]..[235,6958+64])
+                            Ppat_any
+                          pattern (asmcomp/cmm.ml[235,6958+66]..[235,6958+67])
+                            Ppat_any
+                          pattern (asmcomp/cmm.ml[235,6958+69]..[235,6958+73])
+                            Ppat_var "body" (asmcomp/cmm.ml[235,6958+69]..[235,6958+73])
+                        ]
+                expression (asmcomp/cmm.ml[236,7036+6]..[237,7050+10])
+                  Pexp_sequence
+                  expression (asmcomp/cmm.ml[236,7036+6]..[236,7036+12])
+                    Pexp_apply
+                    expression (asmcomp/cmm.ml[236,7036+6]..[236,7036+7])
+                      Pexp_ident "f" (asmcomp/cmm.ml[236,7036+6]..[236,7036+7])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (asmcomp/cmm.ml[236,7036+8]..[236,7036+12])
+                          Pexp_ident "body" (asmcomp/cmm.ml[236,7036+8]..[236,7036+12])
+                    ]
+                  expression (asmcomp/cmm.ml[237,7050+6]..[237,7050+10])
+                    Pexp_construct "true" (asmcomp/cmm.ml[237,7050+6]..[237,7050+10])
+                    None
+              <case>
+                pattern (asmcomp/cmm.ml[238,7061+4]..[238,7061+64])
+                  Ppat_construct "Cifthenelse" (asmcomp/cmm.ml[238,7061+4]..[238,7061+15])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[238,7061+15]..[238,7061+64])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[238,7061+16]..[238,7061+21])
+                          Ppat_var "_cond" (asmcomp/cmm.ml[238,7061+16]..[238,7061+21])
+                        pattern (asmcomp/cmm.ml[238,7061+23]..[238,7061+32])
+                          Ppat_var "_ifso_dbg" (asmcomp/cmm.ml[238,7061+23]..[238,7061+32])
+                        pattern (asmcomp/cmm.ml[238,7061+34]..[238,7061+38])
+                          Ppat_var "ifso" (asmcomp/cmm.ml[238,7061+34]..[238,7061+38])
+                        pattern (asmcomp/cmm.ml[238,7061+40]..[238,7061+50])
+                          Ppat_var "_ifnot_dbg" (asmcomp/cmm.ml[238,7061+40]..[238,7061+50])
+                        pattern (asmcomp/cmm.ml[238,7061+52]..[238,7061+57])
+                          Ppat_var "ifnot" (asmcomp/cmm.ml[238,7061+52]..[238,7061+57])
+                        pattern (asmcomp/cmm.ml[238,7061+59]..[238,7061+63])
+                          Ppat_var "_dbg" (asmcomp/cmm.ml[238,7061+59]..[238,7061+63])
+                      ]
+                expression (asmcomp/cmm.ml[239,7129+6]..[241,7158+10])
+                  Pexp_sequence
+                  expression (asmcomp/cmm.ml[239,7129+6]..[239,7129+12])
+                    Pexp_apply
+                    expression (asmcomp/cmm.ml[239,7129+6]..[239,7129+7])
+                      Pexp_ident "f" (asmcomp/cmm.ml[239,7129+6]..[239,7129+7])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (asmcomp/cmm.ml[239,7129+8]..[239,7129+12])
+                          Pexp_ident "ifso" (asmcomp/cmm.ml[239,7129+8]..[239,7129+12])
+                    ]
+                  expression (asmcomp/cmm.ml[240,7143+6]..[241,7158+10])
+                    Pexp_sequence
+                    expression (asmcomp/cmm.ml[240,7143+6]..[240,7143+13])
+                      Pexp_apply
+                      expression (asmcomp/cmm.ml[240,7143+6]..[240,7143+7])
+                        Pexp_ident "f" (asmcomp/cmm.ml[240,7143+6]..[240,7143+7])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (asmcomp/cmm.ml[240,7143+8]..[240,7143+13])
+                            Pexp_ident "ifnot" (asmcomp/cmm.ml[240,7143+8]..[240,7143+13])
+                      ]
+                    expression (asmcomp/cmm.ml[241,7158+6]..[241,7158+10])
+                      Pexp_construct "true" (asmcomp/cmm.ml[241,7158+6]..[241,7158+10])
+                      None
+              <case>
+                pattern (asmcomp/cmm.ml[242,7169+4]..[242,7169+22])
+                  Ppat_construct "Csequence" (asmcomp/cmm.ml[242,7169+4]..[242,7169+13])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[242,7169+13]..[242,7169+22])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[242,7169+14]..[242,7169+17])
+                          Ppat_var "_e1" (asmcomp/cmm.ml[242,7169+14]..[242,7169+17])
+                        pattern (asmcomp/cmm.ml[242,7169+19]..[242,7169+21])
+                          Ppat_var "e2" (asmcomp/cmm.ml[242,7169+19]..[242,7169+21])
+                      ]
+                expression (asmcomp/cmm.ml[243,7195+6]..[244,7207+10])
+                  Pexp_sequence
+                  expression (asmcomp/cmm.ml[243,7195+6]..[243,7195+10])
+                    Pexp_apply
+                    expression (asmcomp/cmm.ml[243,7195+6]..[243,7195+7])
+                      Pexp_ident "f" (asmcomp/cmm.ml[243,7195+6]..[243,7195+7])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (asmcomp/cmm.ml[243,7195+8]..[243,7195+10])
+                          Pexp_ident "e2" (asmcomp/cmm.ml[243,7195+8]..[243,7195+10])
+                    ]
+                  expression (asmcomp/cmm.ml[244,7207+6]..[244,7207+10])
+                    Pexp_construct "true" (asmcomp/cmm.ml[244,7207+6]..[244,7207+10])
+                    None
+              <case>
+                pattern (asmcomp/cmm.ml[245,7218+4]..[245,7218+32])
+                  Ppat_construct "Cswitch" (asmcomp/cmm.ml[245,7218+4]..[245,7218+11])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[245,7218+11]..[245,7218+32])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[245,7218+12]..[245,7218+14])
+                          Ppat_var "_e" (asmcomp/cmm.ml[245,7218+12]..[245,7218+14])
+                        pattern (asmcomp/cmm.ml[245,7218+16]..[245,7218+20])
+                          Ppat_var "_tbl" (asmcomp/cmm.ml[245,7218+16]..[245,7218+20])
+                        pattern (asmcomp/cmm.ml[245,7218+22]..[245,7218+24])
+                          Ppat_var "el" (asmcomp/cmm.ml[245,7218+22]..[245,7218+24])
+                        pattern (asmcomp/cmm.ml[245,7218+26]..[245,7218+31])
+                          Ppat_var "_dbg'" (asmcomp/cmm.ml[245,7218+26]..[245,7218+31])
+                      ]
+                expression (asmcomp/cmm.ml[246,7254+6]..[247,7298+10])
+                  Pexp_sequence
+                  expression (asmcomp/cmm.ml[246,7254+6]..[246,7254+42])
+                    Pexp_apply
+                    expression (asmcomp/cmm.ml[246,7254+6]..[246,7254+16])
+                      Pexp_ident "Array.iter" (asmcomp/cmm.ml[246,7254+6]..[246,7254+16])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (asmcomp/cmm.ml[246,7254+17]..[246,7254+39])
+                          Pexp_fun
+                          Nolabel
+                          None
+                          pattern (asmcomp/cmm.ml[246,7254+22]..[246,7254+31])
+                            Ppat_tuple
+                            [
+                              pattern (asmcomp/cmm.ml[246,7254+23]..[246,7254+24])
+                                Ppat_var "e" (asmcomp/cmm.ml[246,7254+23]..[246,7254+24])
+                              pattern (asmcomp/cmm.ml[246,7254+26]..[246,7254+30])
+                                Ppat_var "_dbg" (asmcomp/cmm.ml[246,7254+26]..[246,7254+30])
+                            ]
+                          expression (asmcomp/cmm.ml[246,7254+35]..[246,7254+38])
+                            Pexp_apply
+                            expression (asmcomp/cmm.ml[246,7254+35]..[246,7254+36])
+                              Pexp_ident "f" (asmcomp/cmm.ml[246,7254+35]..[246,7254+36])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (asmcomp/cmm.ml[246,7254+37]..[246,7254+38])
+                                  Pexp_ident "e" (asmcomp/cmm.ml[246,7254+37]..[246,7254+38])
+                            ]
+                      <arg>
+                      Nolabel
+                        expression (asmcomp/cmm.ml[246,7254+40]..[246,7254+42])
+                          Pexp_ident "el" (asmcomp/cmm.ml[246,7254+40]..[246,7254+42])
+                    ]
+                  expression (asmcomp/cmm.ml[247,7298+6]..[247,7298+10])
+                    Pexp_construct "true" (asmcomp/cmm.ml[247,7298+6]..[247,7298+10])
+                    None
+              <case>
+                pattern (asmcomp/cmm.ml[248,7309+4]..[248,7309+37])
+                  Ppat_construct "Ccatch" (asmcomp/cmm.ml[248,7309+4]..[248,7309+10])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[248,7309+10]..[248,7309+37])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[248,7309+11]..[248,7309+20])
+                          Ppat_var "_rec_flag" (asmcomp/cmm.ml[248,7309+11]..[248,7309+20])
+                        pattern (asmcomp/cmm.ml[248,7309+22]..[248,7309+30])
+                          Ppat_var "handlers" (asmcomp/cmm.ml[248,7309+22]..[248,7309+30])
+                        pattern (asmcomp/cmm.ml[248,7309+32]..[248,7309+36])
+                          Ppat_var "body" (asmcomp/cmm.ml[248,7309+32]..[248,7309+36])
+                      ]
+                expression (asmcomp/cmm.ml[249,7350+6]..[251,7419+10])
+                  Pexp_sequence
+                  expression (asmcomp/cmm.ml[249,7350+6]..[249,7350+53])
+                    Pexp_apply
+                    expression (asmcomp/cmm.ml[249,7350+6]..[249,7350+15])
+                      Pexp_ident "List.iter" (asmcomp/cmm.ml[249,7350+6]..[249,7350+15])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (asmcomp/cmm.ml[249,7350+16]..[249,7350+44])
+                          Pexp_fun
+                          Nolabel
+                          None
+                          pattern (asmcomp/cmm.ml[249,7350+21]..[249,7350+36])
+                            Ppat_tuple
+                            [
+                              pattern (asmcomp/cmm.ml[249,7350+22]..[249,7350+23])
+                                Ppat_any
+                              pattern (asmcomp/cmm.ml[249,7350+25]..[249,7350+26])
+                                Ppat_any
+                              pattern (asmcomp/cmm.ml[249,7350+28]..[249,7350+29])
+                                Ppat_var "h" (asmcomp/cmm.ml[249,7350+28]..[249,7350+29])
+                              pattern (asmcomp/cmm.ml[249,7350+31]..[249,7350+35])
+                                Ppat_var "_dbg" (asmcomp/cmm.ml[249,7350+31]..[249,7350+35])
+                            ]
+                          expression (asmcomp/cmm.ml[249,7350+40]..[249,7350+43])
+                            Pexp_apply
+                            expression (asmcomp/cmm.ml[249,7350+40]..[249,7350+41])
+                              Pexp_ident "f" (asmcomp/cmm.ml[249,7350+40]..[249,7350+41])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (asmcomp/cmm.ml[249,7350+42]..[249,7350+43])
+                                  Pexp_ident "h" (asmcomp/cmm.ml[249,7350+42]..[249,7350+43])
+                            ]
+                      <arg>
+                      Nolabel
+                        expression (asmcomp/cmm.ml[249,7350+45]..[249,7350+53])
+                          Pexp_ident "handlers" (asmcomp/cmm.ml[249,7350+45]..[249,7350+53])
+                    ]
+                  expression (asmcomp/cmm.ml[250,7405+6]..[251,7419+10])
+                    Pexp_sequence
+                    expression (asmcomp/cmm.ml[250,7405+6]..[250,7405+12])
+                      Pexp_apply
+                      expression (asmcomp/cmm.ml[250,7405+6]..[250,7405+7])
+                        Pexp_ident "f" (asmcomp/cmm.ml[250,7405+6]..[250,7405+7])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (asmcomp/cmm.ml[250,7405+8]..[250,7405+12])
+                            Pexp_ident "body" (asmcomp/cmm.ml[250,7405+8]..[250,7405+12])
+                      ]
+                    expression (asmcomp/cmm.ml[251,7419+6]..[251,7419+10])
+                      Pexp_construct "true" (asmcomp/cmm.ml[251,7419+6]..[251,7419+10])
+                      None
+              <case>
+                pattern (asmcomp/cmm.ml[252,7430+4]..[252,7430+31])
+                  Ppat_construct "Ctrywith" (asmcomp/cmm.ml[252,7430+4]..[252,7430+12])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[252,7430+12]..[252,7430+31])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[252,7430+13]..[252,7430+15])
+                          Ppat_var "e1" (asmcomp/cmm.ml[252,7430+13]..[252,7430+15])
+                        pattern (asmcomp/cmm.ml[252,7430+17]..[252,7430+20])
+                          Ppat_var "_id" (asmcomp/cmm.ml[252,7430+17]..[252,7430+20])
+                        pattern (asmcomp/cmm.ml[252,7430+22]..[252,7430+24])
+                          Ppat_var "e2" (asmcomp/cmm.ml[252,7430+22]..[252,7430+24])
+                        pattern (asmcomp/cmm.ml[252,7430+26]..[252,7430+30])
+                          Ppat_var "_dbg" (asmcomp/cmm.ml[252,7430+26]..[252,7430+30])
+                      ]
+                expression (asmcomp/cmm.ml[253,7465+6]..[255,7489+10])
+                  Pexp_sequence
+                  expression (asmcomp/cmm.ml[253,7465+6]..[253,7465+10])
+                    Pexp_apply
+                    expression (asmcomp/cmm.ml[253,7465+6]..[253,7465+7])
+                      Pexp_ident "f" (asmcomp/cmm.ml[253,7465+6]..[253,7465+7])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (asmcomp/cmm.ml[253,7465+8]..[253,7465+10])
+                          Pexp_ident "e1" (asmcomp/cmm.ml[253,7465+8]..[253,7465+10])
+                    ]
+                  expression (asmcomp/cmm.ml[254,7477+6]..[255,7489+10])
+                    Pexp_sequence
+                    expression (asmcomp/cmm.ml[254,7477+6]..[254,7477+10])
+                      Pexp_apply
+                      expression (asmcomp/cmm.ml[254,7477+6]..[254,7477+7])
+                        Pexp_ident "f" (asmcomp/cmm.ml[254,7477+6]..[254,7477+7])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (asmcomp/cmm.ml[254,7477+8]..[254,7477+10])
+                            Pexp_ident "e2" (asmcomp/cmm.ml[254,7477+8]..[254,7477+10])
+                      ]
+                    expression (asmcomp/cmm.ml[255,7489+6]..[255,7489+10])
+                      Pexp_construct "true" (asmcomp/cmm.ml[255,7489+6]..[255,7489+10])
+                      None
+              <case>
+                pattern (asmcomp/cmm.ml[256,7500+4]..[256,7500+34])
+                  Ppat_or
+                  pattern (asmcomp/cmm.ml[256,7500+4]..[256,7500+11])
+                    Ppat_construct "Cexit" (asmcomp/cmm.ml[256,7500+4]..[256,7500+9])
+                    Some
+                      []
+                      pattern (asmcomp/cmm.ml[256,7500+10]..[256,7500+11])
+                        Ppat_any
+                  pattern (asmcomp/cmm.ml[256,7500+14]..[256,7500+34])
+                    Ppat_construct "Cop" (asmcomp/cmm.ml[256,7500+14]..[256,7500+17])
+                    Some
+                      []
+                      pattern (asmcomp/cmm.ml[256,7500+18]..[256,7500+34])
+                        Ppat_tuple
+                        [
+                          pattern (asmcomp/cmm.ml[256,7500+19]..[256,7500+27])
+                            Ppat_construct "Craise" (asmcomp/cmm.ml[256,7500+19]..[256,7500+25])
+                            Some
+                              []
+                              pattern (asmcomp/cmm.ml[256,7500+26]..[256,7500+27])
+                                Ppat_any
+                          pattern (asmcomp/cmm.ml[256,7500+29]..[256,7500+30])
+                            Ppat_any
+                          pattern (asmcomp/cmm.ml[256,7500+32]..[256,7500+33])
+                            Ppat_any
+                        ]
+                expression (asmcomp/cmm.ml[257,7538+6]..[257,7538+10])
+                  Pexp_construct "true" (asmcomp/cmm.ml[257,7538+6]..[257,7538+10])
+                  None
+              <case>
+                pattern (asmcomp/cmm.ml[258,7549+4]..[265,7663+9])
+                  Ppat_or
+                  pattern (asmcomp/cmm.ml[258,7549+4]..[264,7650+12])
+                    Ppat_or
+                    pattern (asmcomp/cmm.ml[258,7549+4]..[263,7636+13])
+                      Ppat_or
+                      pattern (asmcomp/cmm.ml[258,7549+4]..[262,7625+10])
+                        Ppat_or
+                        pattern (asmcomp/cmm.ml[258,7549+4]..[261,7605+19])
+                          Ppat_or
+                          pattern (asmcomp/cmm.ml[258,7549+4]..[260,7586+18])
+                            Ppat_or
+                            pattern (asmcomp/cmm.ml[258,7549+4]..[259,7566+19])
+                              Ppat_or
+                              pattern (asmcomp/cmm.ml[258,7549+4]..[258,7549+16])
+                                Ppat_construct "Cconst_int" (asmcomp/cmm.ml[258,7549+4]..[258,7549+14])
+                                Some
+                                  []
+                                  pattern (asmcomp/cmm.ml[258,7549+15]..[258,7549+16])
+                                    Ppat_any
+                              pattern (asmcomp/cmm.ml[259,7566+4]..[259,7566+19])
+                                Ppat_construct "Cconst_natint" (asmcomp/cmm.ml[259,7566+4]..[259,7566+17])
+                                Some
+                                  []
+                                  pattern (asmcomp/cmm.ml[259,7566+18]..[259,7566+19])
+                                    Ppat_any
+                            pattern (asmcomp/cmm.ml[260,7586+4]..[260,7586+18])
+                              Ppat_construct "Cconst_float" (asmcomp/cmm.ml[260,7586+4]..[260,7586+16])
+                              Some
+                                []
+                                pattern (asmcomp/cmm.ml[260,7586+17]..[260,7586+18])
+                                  Ppat_any
+                          pattern (asmcomp/cmm.ml[261,7605+4]..[261,7605+19])
+                            Ppat_construct "Cconst_symbol" (asmcomp/cmm.ml[261,7605+4]..[261,7605+17])
+                            Some
+                              []
+                              pattern (asmcomp/cmm.ml[261,7605+18]..[261,7605+19])
+                                Ppat_any
+                        pattern (asmcomp/cmm.ml[262,7625+4]..[262,7625+10])
+                          Ppat_construct "Cvar" (asmcomp/cmm.ml[262,7625+4]..[262,7625+8])
+                          Some
+                            []
+                            pattern (asmcomp/cmm.ml[262,7625+9]..[262,7625+10])
+                              Ppat_any
+                      pattern (asmcomp/cmm.ml[263,7636+4]..[263,7636+13])
+                        Ppat_construct "Cassign" (asmcomp/cmm.ml[263,7636+4]..[263,7636+11])
+                        Some
+                          []
+                          pattern (asmcomp/cmm.ml[263,7636+12]..[263,7636+13])
+                            Ppat_any
+                    pattern (asmcomp/cmm.ml[264,7650+4]..[264,7650+12])
+                      Ppat_construct "Ctuple" (asmcomp/cmm.ml[264,7650+4]..[264,7650+10])
+                      Some
+                        []
+                        pattern (asmcomp/cmm.ml[264,7650+11]..[264,7650+12])
+                          Ppat_any
+                  pattern (asmcomp/cmm.ml[265,7663+4]..[265,7663+9])
+                    Ppat_construct "Cop" (asmcomp/cmm.ml[265,7663+4]..[265,7663+7])
+                    Some
+                      []
+                      pattern (asmcomp/cmm.ml[265,7663+8]..[265,7663+9])
+                        Ppat_any
+                expression (asmcomp/cmm.ml[266,7676+6]..[266,7676+11])
+                  Pexp_construct "false" (asmcomp/cmm.ml[266,7676+6]..[266,7676+11])
+                  None
+            ]
+    ]
+  structure_item (asmcomp/cmm.ml[268,7689+0]..[302,8784+9])
+    Pstr_value Rec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[268,7689+8]..[268,7689+16])
+          Ppat_var "map_tail" (asmcomp/cmm.ml[268,7689+8]..[268,7689+16])
+        expression (asmcomp/cmm.ml[268,7689+17]..[302,8784+9]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (asmcomp/cmm.ml[268,7689+17]..[268,7689+18])
+            Ppat_var "f" (asmcomp/cmm.ml[268,7689+17]..[268,7689+18])
+          expression (asmcomp/cmm.ml[268,7689+21]..[302,8784+9])
+            Pexp_function
+            [
+              <case>
+                pattern (asmcomp/cmm.ml[269,7719+4]..[269,7719+23])
+                  Ppat_construct "Clet" (asmcomp/cmm.ml[269,7719+4]..[269,7719+8])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[269,7719+8]..[269,7719+23])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[269,7719+9]..[269,7719+11])
+                          Ppat_var "id" (asmcomp/cmm.ml[269,7719+9]..[269,7719+11])
+                        pattern (asmcomp/cmm.ml[269,7719+13]..[269,7719+16])
+                          Ppat_var "exp" (asmcomp/cmm.ml[269,7719+13]..[269,7719+16])
+                        pattern (asmcomp/cmm.ml[269,7719+18]..[269,7719+22])
+                          Ppat_var "body" (asmcomp/cmm.ml[269,7719+18]..[269,7719+22])
+                      ]
+                expression (asmcomp/cmm.ml[270,7746+6]..[270,7746+36])
+                  Pexp_construct "Clet" (asmcomp/cmm.ml[270,7746+6]..[270,7746+10])
+                  Some
+                    expression (asmcomp/cmm.ml[270,7746+10]..[270,7746+36])
+                      Pexp_tuple
+                      [
+                        expression (asmcomp/cmm.ml[270,7746+11]..[270,7746+13])
+                          Pexp_ident "id" (asmcomp/cmm.ml[270,7746+11]..[270,7746+13])
+                        expression (asmcomp/cmm.ml[270,7746+15]..[270,7746+18])
+                          Pexp_ident "exp" (asmcomp/cmm.ml[270,7746+15]..[270,7746+18])
+                        expression (asmcomp/cmm.ml[270,7746+20]..[270,7746+35])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[270,7746+20]..[270,7746+28])
+                            Pexp_ident "map_tail" (asmcomp/cmm.ml[270,7746+20]..[270,7746+28])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[270,7746+29]..[270,7746+30])
+                                Pexp_ident "f" (asmcomp/cmm.ml[270,7746+29]..[270,7746+30])
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[270,7746+31]..[270,7746+35])
+                                Pexp_ident "body" (asmcomp/cmm.ml[270,7746+31]..[270,7746+35])
+                          ]
+                      ]
+              <case>
+                pattern (asmcomp/cmm.ml[271,7783+4]..[271,7783+33])
+                  Ppat_construct "Clet_mut" (asmcomp/cmm.ml[271,7783+4]..[271,7783+12])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[271,7783+12]..[271,7783+33])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[271,7783+13]..[271,7783+15])
+                          Ppat_var "id" (asmcomp/cmm.ml[271,7783+13]..[271,7783+15])
+                        pattern (asmcomp/cmm.ml[271,7783+17]..[271,7783+21])
+                          Ppat_var "kind" (asmcomp/cmm.ml[271,7783+17]..[271,7783+21])
+                        pattern (asmcomp/cmm.ml[271,7783+23]..[271,7783+26])
+                          Ppat_var "exp" (asmcomp/cmm.ml[271,7783+23]..[271,7783+26])
+                        pattern (asmcomp/cmm.ml[271,7783+28]..[271,7783+32])
+                          Ppat_var "body" (asmcomp/cmm.ml[271,7783+28]..[271,7783+32])
+                      ]
+                expression (asmcomp/cmm.ml[272,7820+6]..[272,7820+46])
+                  Pexp_construct "Clet_mut" (asmcomp/cmm.ml[272,7820+6]..[272,7820+14])
+                  Some
+                    expression (asmcomp/cmm.ml[272,7820+14]..[272,7820+46])
+                      Pexp_tuple
+                      [
+                        expression (asmcomp/cmm.ml[272,7820+15]..[272,7820+17])
+                          Pexp_ident "id" (asmcomp/cmm.ml[272,7820+15]..[272,7820+17])
+                        expression (asmcomp/cmm.ml[272,7820+19]..[272,7820+23])
+                          Pexp_ident "kind" (asmcomp/cmm.ml[272,7820+19]..[272,7820+23])
+                        expression (asmcomp/cmm.ml[272,7820+25]..[272,7820+28])
+                          Pexp_ident "exp" (asmcomp/cmm.ml[272,7820+25]..[272,7820+28])
+                        expression (asmcomp/cmm.ml[272,7820+30]..[272,7820+45])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[272,7820+30]..[272,7820+38])
+                            Pexp_ident "map_tail" (asmcomp/cmm.ml[272,7820+30]..[272,7820+38])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[272,7820+39]..[272,7820+40])
+                                Pexp_ident "f" (asmcomp/cmm.ml[272,7820+39]..[272,7820+40])
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[272,7820+41]..[272,7820+45])
+                                Pexp_ident "body" (asmcomp/cmm.ml[272,7820+41]..[272,7820+45])
+                          ]
+                      ]
+              <case>
+                pattern (asmcomp/cmm.ml[273,7867+4]..[273,7867+31])
+                  Ppat_construct "Cphantom_let" (asmcomp/cmm.ml[273,7867+4]..[273,7867+16])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[273,7867+16]..[273,7867+31])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[273,7867+17]..[273,7867+19])
+                          Ppat_var "id" (asmcomp/cmm.ml[273,7867+17]..[273,7867+19])
+                        pattern (asmcomp/cmm.ml[273,7867+21]..[273,7867+24])
+                          Ppat_var "exp" (asmcomp/cmm.ml[273,7867+21]..[273,7867+24])
+                        pattern (asmcomp/cmm.ml[273,7867+26]..[273,7867+30])
+                          Ppat_var "body" (asmcomp/cmm.ml[273,7867+26]..[273,7867+30])
+                      ]
+                expression (asmcomp/cmm.ml[274,7902+6]..[274,7902+45])
+                  Pexp_construct "Cphantom_let" (asmcomp/cmm.ml[274,7902+6]..[274,7902+18])
+                  Some
+                    expression (asmcomp/cmm.ml[274,7902+19]..[274,7902+45])
+                      Pexp_tuple
+                      [
+                        expression (asmcomp/cmm.ml[274,7902+20]..[274,7902+22])
+                          Pexp_ident "id" (asmcomp/cmm.ml[274,7902+20]..[274,7902+22])
+                        expression (asmcomp/cmm.ml[274,7902+24]..[274,7902+27])
+                          Pexp_ident "exp" (asmcomp/cmm.ml[274,7902+24]..[274,7902+27])
+                        expression (asmcomp/cmm.ml[274,7902+29]..[274,7902+44])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[274,7902+29]..[274,7902+37])
+                            Pexp_ident "map_tail" (asmcomp/cmm.ml[274,7902+29]..[274,7902+37])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[274,7902+38]..[274,7902+39])
+                                Pexp_ident "f" (asmcomp/cmm.ml[274,7902+38]..[274,7902+39])
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[274,7902+40]..[274,7902+44])
+                                Pexp_ident "body" (asmcomp/cmm.ml[274,7902+40]..[274,7902+44])
+                          ]
+                      ]
+              <case>
+                pattern (asmcomp/cmm.ml[275,7948+4]..[275,7948+60])
+                  Ppat_construct "Cifthenelse" (asmcomp/cmm.ml[275,7948+4]..[275,7948+15])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[275,7948+15]..[275,7948+60])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[275,7948+16]..[275,7948+20])
+                          Ppat_var "cond" (asmcomp/cmm.ml[275,7948+16]..[275,7948+20])
+                        pattern (asmcomp/cmm.ml[275,7948+22]..[275,7948+30])
+                          Ppat_var "ifso_dbg" (asmcomp/cmm.ml[275,7948+22]..[275,7948+30])
+                        pattern (asmcomp/cmm.ml[275,7948+32]..[275,7948+36])
+                          Ppat_var "ifso" (asmcomp/cmm.ml[275,7948+32]..[275,7948+36])
+                        pattern (asmcomp/cmm.ml[275,7948+38]..[275,7948+47])
+                          Ppat_var "ifnot_dbg" (asmcomp/cmm.ml[275,7948+38]..[275,7948+47])
+                        pattern (asmcomp/cmm.ml[275,7948+49]..[275,7948+54])
+                          Ppat_var "ifnot" (asmcomp/cmm.ml[275,7948+49]..[275,7948+54])
+                        pattern (asmcomp/cmm.ml[275,7948+56]..[275,7948+59])
+                          Ppat_var "dbg" (asmcomp/cmm.ml[275,7948+56]..[275,7948+59])
+                      ]
+                expression (asmcomp/cmm.ml[276,8012+6]..[282,8146+9])
+                  Pexp_construct "Cifthenelse" (asmcomp/cmm.ml[276,8012+6]..[276,8012+17])
+                  Some
+                    expression (asmcomp/cmm.ml[277,8030+8]..[282,8146+9])
+                      Pexp_tuple
+                      [
+                        expression (asmcomp/cmm.ml[278,8040+10]..[278,8040+14])
+                          Pexp_ident "cond" (asmcomp/cmm.ml[278,8040+10]..[278,8040+14])
+                        expression (asmcomp/cmm.ml[279,8056+10]..[279,8056+18])
+                          Pexp_ident "ifso_dbg" (asmcomp/cmm.ml[279,8056+10]..[279,8056+18])
+                        expression (asmcomp/cmm.ml[279,8056+20]..[279,8056+35])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[279,8056+20]..[279,8056+28])
+                            Pexp_ident "map_tail" (asmcomp/cmm.ml[279,8056+20]..[279,8056+28])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[279,8056+29]..[279,8056+30])
+                                Pexp_ident "f" (asmcomp/cmm.ml[279,8056+29]..[279,8056+30])
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[279,8056+31]..[279,8056+35])
+                                Pexp_ident "ifso" (asmcomp/cmm.ml[279,8056+31]..[279,8056+35])
+                          ]
+                        expression (asmcomp/cmm.ml[280,8093+10]..[280,8093+19])
+                          Pexp_ident "ifnot_dbg" (asmcomp/cmm.ml[280,8093+10]..[280,8093+19])
+                        expression (asmcomp/cmm.ml[280,8093+21]..[280,8093+37])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[280,8093+21]..[280,8093+29])
+                            Pexp_ident "map_tail" (asmcomp/cmm.ml[280,8093+21]..[280,8093+29])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[280,8093+30]..[280,8093+31])
+                                Pexp_ident "f" (asmcomp/cmm.ml[280,8093+30]..[280,8093+31])
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[280,8093+32]..[280,8093+37])
+                                Pexp_ident "ifnot" (asmcomp/cmm.ml[280,8093+32]..[280,8093+37])
+                          ]
+                        expression (asmcomp/cmm.ml[281,8132+10]..[281,8132+13])
+                          Pexp_ident "dbg" (asmcomp/cmm.ml[281,8132+10]..[281,8132+13])
+                      ]
+              <case>
+                pattern (asmcomp/cmm.ml[283,8156+4]..[283,8156+21])
+                  Ppat_construct "Csequence" (asmcomp/cmm.ml[283,8156+4]..[283,8156+13])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[283,8156+13]..[283,8156+21])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[283,8156+14]..[283,8156+16])
+                          Ppat_var "e1" (asmcomp/cmm.ml[283,8156+14]..[283,8156+16])
+                        pattern (asmcomp/cmm.ml[283,8156+18]..[283,8156+20])
+                          Ppat_var "e2" (asmcomp/cmm.ml[283,8156+18]..[283,8156+20])
+                      ]
+                expression (asmcomp/cmm.ml[284,8181+6]..[284,8181+34])
+                  Pexp_construct "Csequence" (asmcomp/cmm.ml[284,8181+6]..[284,8181+15])
+                  Some
+                    expression (asmcomp/cmm.ml[284,8181+15]..[284,8181+34])
+                      Pexp_tuple
+                      [
+                        expression (asmcomp/cmm.ml[284,8181+16]..[284,8181+18])
+                          Pexp_ident "e1" (asmcomp/cmm.ml[284,8181+16]..[284,8181+18])
+                        expression (asmcomp/cmm.ml[284,8181+20]..[284,8181+33])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[284,8181+20]..[284,8181+28])
+                            Pexp_ident "map_tail" (asmcomp/cmm.ml[284,8181+20]..[284,8181+28])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[284,8181+29]..[284,8181+30])
+                                Pexp_ident "f" (asmcomp/cmm.ml[284,8181+29]..[284,8181+30])
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[284,8181+31]..[284,8181+33])
+                                Pexp_ident "e2" (asmcomp/cmm.ml[284,8181+31]..[284,8181+33])
+                          ]
+                      ]
+              <case>
+                pattern (asmcomp/cmm.ml[285,8216+4]..[285,8216+29])
+                  Ppat_construct "Cswitch" (asmcomp/cmm.ml[285,8216+4]..[285,8216+11])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[285,8216+11]..[285,8216+29])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[285,8216+12]..[285,8216+13])
+                          Ppat_var "e" (asmcomp/cmm.ml[285,8216+12]..[285,8216+13])
+                        pattern (asmcomp/cmm.ml[285,8216+15]..[285,8216+18])
+                          Ppat_var "tbl" (asmcomp/cmm.ml[285,8216+15]..[285,8216+18])
+                        pattern (asmcomp/cmm.ml[285,8216+20]..[285,8216+22])
+                          Ppat_var "el" (asmcomp/cmm.ml[285,8216+20]..[285,8216+22])
+                        pattern (asmcomp/cmm.ml[285,8216+24]..[285,8216+28])
+                          Ppat_var "dbg'" (asmcomp/cmm.ml[285,8216+24]..[285,8216+28])
+                      ]
+                expression (asmcomp/cmm.ml[286,8249+6]..[286,8249+77])
+                  Pexp_construct "Cswitch" (asmcomp/cmm.ml[286,8249+6]..[286,8249+13])
+                  Some
+                    expression (asmcomp/cmm.ml[286,8249+13]..[286,8249+77])
+                      Pexp_tuple
+                      [
+                        expression (asmcomp/cmm.ml[286,8249+14]..[286,8249+15])
+                          Pexp_ident "e" (asmcomp/cmm.ml[286,8249+14]..[286,8249+15])
+                        expression (asmcomp/cmm.ml[286,8249+17]..[286,8249+20])
+                          Pexp_ident "tbl" (asmcomp/cmm.ml[286,8249+17]..[286,8249+20])
+                        expression (asmcomp/cmm.ml[286,8249+22]..[286,8249+70])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[286,8249+22]..[286,8249+31])
+                            Pexp_ident "Array.map" (asmcomp/cmm.ml[286,8249+22]..[286,8249+31])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[286,8249+32]..[286,8249+67])
+                                Pexp_fun
+                                Nolabel
+                                None
+                                pattern (asmcomp/cmm.ml[286,8249+37]..[286,8249+45])
+                                  Ppat_tuple
+                                  [
+                                    pattern (asmcomp/cmm.ml[286,8249+38]..[286,8249+39])
+                                      Ppat_var "e" (asmcomp/cmm.ml[286,8249+38]..[286,8249+39])
+                                    pattern (asmcomp/cmm.ml[286,8249+41]..[286,8249+44])
+                                      Ppat_var "dbg" (asmcomp/cmm.ml[286,8249+41]..[286,8249+44])
+                                  ]
+                                expression (asmcomp/cmm.ml[286,8249+49]..[286,8249+66])
+                                  Pexp_tuple
+                                  [
+                                    expression (asmcomp/cmm.ml[286,8249+49]..[286,8249+61])
+                                      Pexp_apply
+                                      expression (asmcomp/cmm.ml[286,8249+49]..[286,8249+57])
+                                        Pexp_ident "map_tail" (asmcomp/cmm.ml[286,8249+49]..[286,8249+57])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (asmcomp/cmm.ml[286,8249+58]..[286,8249+59])
+                                            Pexp_ident "f" (asmcomp/cmm.ml[286,8249+58]..[286,8249+59])
+                                        <arg>
+                                        Nolabel
+                                          expression (asmcomp/cmm.ml[286,8249+60]..[286,8249+61])
+                                            Pexp_ident "e" (asmcomp/cmm.ml[286,8249+60]..[286,8249+61])
+                                      ]
+                                    expression (asmcomp/cmm.ml[286,8249+63]..[286,8249+66])
+                                      Pexp_ident "dbg" (asmcomp/cmm.ml[286,8249+63]..[286,8249+66])
+                                  ]
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[286,8249+68]..[286,8249+70])
+                                Pexp_ident "el" (asmcomp/cmm.ml[286,8249+68]..[286,8249+70])
+                          ]
+                        expression (asmcomp/cmm.ml[286,8249+72]..[286,8249+76])
+                          Pexp_ident "dbg'" (asmcomp/cmm.ml[286,8249+72]..[286,8249+76])
+                      ]
+              <case>
+                pattern (asmcomp/cmm.ml[287,8327+4]..[287,8327+36])
+                  Ppat_construct "Ccatch" (asmcomp/cmm.ml[287,8327+4]..[287,8327+10])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[287,8327+10]..[287,8327+36])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[287,8327+11]..[287,8327+19])
+                          Ppat_var "rec_flag" (asmcomp/cmm.ml[287,8327+11]..[287,8327+19])
+                        pattern (asmcomp/cmm.ml[287,8327+21]..[287,8327+29])
+                          Ppat_var "handlers" (asmcomp/cmm.ml[287,8327+21]..[287,8327+29])
+                        pattern (asmcomp/cmm.ml[287,8327+31]..[287,8327+35])
+                          Ppat_var "body" (asmcomp/cmm.ml[287,8327+31]..[287,8327+35])
+                      ]
+                expression (asmcomp/cmm.ml[288,8367+6]..[289,8445+64])
+                  Pexp_let Nonrec
+                  [
+                    <def>
+                      pattern (asmcomp/cmm.ml[288,8367+10]..[288,8367+15])
+                        Ppat_var "map_h" (asmcomp/cmm.ml[288,8367+10]..[288,8367+15])
+                      expression (asmcomp/cmm.ml[288,8367+16]..[288,8367+74]) ghost
+                        Pexp_fun
+                        Nolabel
+                        None
+                        pattern (asmcomp/cmm.ml[288,8367+16]..[288,8367+38])
+                          Ppat_tuple
+                          [
+                            pattern (asmcomp/cmm.ml[288,8367+17]..[288,8367+18])
+                              Ppat_var "n" (asmcomp/cmm.ml[288,8367+17]..[288,8367+18])
+                            pattern (asmcomp/cmm.ml[288,8367+20]..[288,8367+23])
+                              Ppat_var "ids" (asmcomp/cmm.ml[288,8367+20]..[288,8367+23])
+                            pattern (asmcomp/cmm.ml[288,8367+25]..[288,8367+32])
+                              Ppat_var "handler" (asmcomp/cmm.ml[288,8367+25]..[288,8367+32])
+                            pattern (asmcomp/cmm.ml[288,8367+34]..[288,8367+37])
+                              Ppat_var "dbg" (asmcomp/cmm.ml[288,8367+34]..[288,8367+37])
+                          ]
+                        expression (asmcomp/cmm.ml[288,8367+41]..[288,8367+74])
+                          Pexp_tuple
+                          [
+                            expression (asmcomp/cmm.ml[288,8367+42]..[288,8367+43])
+                              Pexp_ident "n" (asmcomp/cmm.ml[288,8367+42]..[288,8367+43])
+                            expression (asmcomp/cmm.ml[288,8367+45]..[288,8367+48])
+                              Pexp_ident "ids" (asmcomp/cmm.ml[288,8367+45]..[288,8367+48])
+                            expression (asmcomp/cmm.ml[288,8367+50]..[288,8367+68])
+                              Pexp_apply
+                              expression (asmcomp/cmm.ml[288,8367+50]..[288,8367+58])
+                                Pexp_ident "map_tail" (asmcomp/cmm.ml[288,8367+50]..[288,8367+58])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (asmcomp/cmm.ml[288,8367+59]..[288,8367+60])
+                                    Pexp_ident "f" (asmcomp/cmm.ml[288,8367+59]..[288,8367+60])
+                                <arg>
+                                Nolabel
+                                  expression (asmcomp/cmm.ml[288,8367+61]..[288,8367+68])
+                                    Pexp_ident "handler" (asmcomp/cmm.ml[288,8367+61]..[288,8367+68])
+                              ]
+                            expression (asmcomp/cmm.ml[288,8367+70]..[288,8367+73])
+                              Pexp_ident "dbg" (asmcomp/cmm.ml[288,8367+70]..[288,8367+73])
+                          ]
+                  ]
+                  expression (asmcomp/cmm.ml[289,8445+6]..[289,8445+64])
+                    Pexp_construct "Ccatch" (asmcomp/cmm.ml[289,8445+6]..[289,8445+12])
+                    Some
+                      expression (asmcomp/cmm.ml[289,8445+12]..[289,8445+64])
+                        Pexp_tuple
+                        [
+                          expression (asmcomp/cmm.ml[289,8445+13]..[289,8445+21])
+                            Pexp_ident "rec_flag" (asmcomp/cmm.ml[289,8445+13]..[289,8445+21])
+                          expression (asmcomp/cmm.ml[289,8445+23]..[289,8445+46])
+                            Pexp_apply
+                            expression (asmcomp/cmm.ml[289,8445+23]..[289,8445+31])
+                              Pexp_ident "List.map" (asmcomp/cmm.ml[289,8445+23]..[289,8445+31])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (asmcomp/cmm.ml[289,8445+32]..[289,8445+37])
+                                  Pexp_ident "map_h" (asmcomp/cmm.ml[289,8445+32]..[289,8445+37])
+                              <arg>
+                              Nolabel
+                                expression (asmcomp/cmm.ml[289,8445+38]..[289,8445+46])
+                                  Pexp_ident "handlers" (asmcomp/cmm.ml[289,8445+38]..[289,8445+46])
+                            ]
+                          expression (asmcomp/cmm.ml[289,8445+48]..[289,8445+63])
+                            Pexp_apply
+                            expression (asmcomp/cmm.ml[289,8445+48]..[289,8445+56])
+                              Pexp_ident "map_tail" (asmcomp/cmm.ml[289,8445+48]..[289,8445+56])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (asmcomp/cmm.ml[289,8445+57]..[289,8445+58])
+                                  Pexp_ident "f" (asmcomp/cmm.ml[289,8445+57]..[289,8445+58])
+                              <arg>
+                              Nolabel
+                                expression (asmcomp/cmm.ml[289,8445+59]..[289,8445+63])
+                                  Pexp_ident "body" (asmcomp/cmm.ml[289,8445+59]..[289,8445+63])
+                            ]
+                        ]
+              <case>
+                pattern (asmcomp/cmm.ml[290,8510+4]..[290,8510+29])
+                  Ppat_construct "Ctrywith" (asmcomp/cmm.ml[290,8510+4]..[290,8510+12])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[290,8510+12]..[290,8510+29])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[290,8510+13]..[290,8510+15])
+                          Ppat_var "e1" (asmcomp/cmm.ml[290,8510+13]..[290,8510+15])
+                        pattern (asmcomp/cmm.ml[290,8510+17]..[290,8510+19])
+                          Ppat_var "id" (asmcomp/cmm.ml[290,8510+17]..[290,8510+19])
+                        pattern (asmcomp/cmm.ml[290,8510+21]..[290,8510+23])
+                          Ppat_var "e2" (asmcomp/cmm.ml[290,8510+21]..[290,8510+23])
+                        pattern (asmcomp/cmm.ml[290,8510+25]..[290,8510+28])
+                          Ppat_var "dbg" (asmcomp/cmm.ml[290,8510+25]..[290,8510+28])
+                      ]
+                expression (asmcomp/cmm.ml[291,8543+6]..[291,8543+53])
+                  Pexp_construct "Ctrywith" (asmcomp/cmm.ml[291,8543+6]..[291,8543+14])
+                  Some
+                    expression (asmcomp/cmm.ml[291,8543+14]..[291,8543+53])
+                      Pexp_tuple
+                      [
+                        expression (asmcomp/cmm.ml[291,8543+15]..[291,8543+28])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[291,8543+15]..[291,8543+23])
+                            Pexp_ident "map_tail" (asmcomp/cmm.ml[291,8543+15]..[291,8543+23])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[291,8543+24]..[291,8543+25])
+                                Pexp_ident "f" (asmcomp/cmm.ml[291,8543+24]..[291,8543+25])
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[291,8543+26]..[291,8543+28])
+                                Pexp_ident "e1" (asmcomp/cmm.ml[291,8543+26]..[291,8543+28])
+                          ]
+                        expression (asmcomp/cmm.ml[291,8543+30]..[291,8543+32])
+                          Pexp_ident "id" (asmcomp/cmm.ml[291,8543+30]..[291,8543+32])
+                        expression (asmcomp/cmm.ml[291,8543+34]..[291,8543+47])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[291,8543+34]..[291,8543+42])
+                            Pexp_ident "map_tail" (asmcomp/cmm.ml[291,8543+34]..[291,8543+42])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[291,8543+43]..[291,8543+44])
+                                Pexp_ident "f" (asmcomp/cmm.ml[291,8543+43]..[291,8543+44])
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[291,8543+45]..[291,8543+47])
+                                Pexp_ident "e2" (asmcomp/cmm.ml[291,8543+45]..[291,8543+47])
+                          ]
+                        expression (asmcomp/cmm.ml[291,8543+49]..[291,8543+52])
+                          Pexp_ident "dbg" (asmcomp/cmm.ml[291,8543+49]..[291,8543+52])
+                      ]
+              <case>
+                pattern (asmcomp/cmm.ml[292,8597+4]..[292,8597+41])
+                  Ppat_alias "cmm" (asmcomp/cmm.ml[292,8597+38]..[292,8597+41])
+                  pattern (asmcomp/cmm.ml[292,8597+4]..[292,8597+34])
+                    Ppat_or
+                    pattern (asmcomp/cmm.ml[292,8597+4]..[292,8597+11])
+                      Ppat_construct "Cexit" (asmcomp/cmm.ml[292,8597+4]..[292,8597+9])
+                      Some
+                        []
+                        pattern (asmcomp/cmm.ml[292,8597+10]..[292,8597+11])
+                          Ppat_any
+                    pattern (asmcomp/cmm.ml[292,8597+14]..[292,8597+34])
+                      Ppat_construct "Cop" (asmcomp/cmm.ml[292,8597+14]..[292,8597+17])
+                      Some
+                        []
+                        pattern (asmcomp/cmm.ml[292,8597+18]..[292,8597+34])
+                          Ppat_tuple
+                          [
+                            pattern (asmcomp/cmm.ml[292,8597+19]..[292,8597+27])
+                              Ppat_construct "Craise" (asmcomp/cmm.ml[292,8597+19]..[292,8597+25])
+                              Some
+                                []
+                                pattern (asmcomp/cmm.ml[292,8597+26]..[292,8597+27])
+                                  Ppat_any
+                            pattern (asmcomp/cmm.ml[292,8597+29]..[292,8597+30])
+                              Ppat_any
+                            pattern (asmcomp/cmm.ml[292,8597+32]..[292,8597+33])
+                              Ppat_any
+                          ]
+                expression (asmcomp/cmm.ml[293,8642+6]..[293,8642+9])
+                  Pexp_ident "cmm" (asmcomp/cmm.ml[293,8642+6]..[293,8642+9])
+              <case>
+                pattern (asmcomp/cmm.ml[294,8652+4]..[301,8766+14])
+                  Ppat_alias "c" (asmcomp/cmm.ml[301,8766+13]..[301,8766+14])
+                  pattern (asmcomp/cmm.ml[294,8652+4]..[301,8766+9])
+                    Ppat_or
+                    pattern (asmcomp/cmm.ml[294,8652+4]..[300,8753+12])
+                      Ppat_or
+                      pattern (asmcomp/cmm.ml[294,8652+4]..[299,8739+13])
+                        Ppat_or
+                        pattern (asmcomp/cmm.ml[294,8652+4]..[298,8728+10])
+                          Ppat_or
+                          pattern (asmcomp/cmm.ml[294,8652+4]..[297,8708+19])
+                            Ppat_or
+                            pattern (asmcomp/cmm.ml[294,8652+4]..[296,8689+18])
+                              Ppat_or
+                              pattern (asmcomp/cmm.ml[294,8652+4]..[295,8669+19])
+                                Ppat_or
+                                pattern (asmcomp/cmm.ml[294,8652+4]..[294,8652+16])
+                                  Ppat_construct "Cconst_int" (asmcomp/cmm.ml[294,8652+4]..[294,8652+14])
+                                  Some
+                                    []
+                                    pattern (asmcomp/cmm.ml[294,8652+15]..[294,8652+16])
+                                      Ppat_any
+                                pattern (asmcomp/cmm.ml[295,8669+4]..[295,8669+19])
+                                  Ppat_construct "Cconst_natint" (asmcomp/cmm.ml[295,8669+4]..[295,8669+17])
+                                  Some
+                                    []
+                                    pattern (asmcomp/cmm.ml[295,8669+18]..[295,8669+19])
+                                      Ppat_any
+                              pattern (asmcomp/cmm.ml[296,8689+4]..[296,8689+18])
+                                Ppat_construct "Cconst_float" (asmcomp/cmm.ml[296,8689+4]..[296,8689+16])
+                                Some
+                                  []
+                                  pattern (asmcomp/cmm.ml[296,8689+17]..[296,8689+18])
+                                    Ppat_any
+                            pattern (asmcomp/cmm.ml[297,8708+4]..[297,8708+19])
+                              Ppat_construct "Cconst_symbol" (asmcomp/cmm.ml[297,8708+4]..[297,8708+17])
+                              Some
+                                []
+                                pattern (asmcomp/cmm.ml[297,8708+18]..[297,8708+19])
+                                  Ppat_any
+                          pattern (asmcomp/cmm.ml[298,8728+4]..[298,8728+10])
+                            Ppat_construct "Cvar" (asmcomp/cmm.ml[298,8728+4]..[298,8728+8])
+                            Some
+                              []
+                              pattern (asmcomp/cmm.ml[298,8728+9]..[298,8728+10])
+                                Ppat_any
+                        pattern (asmcomp/cmm.ml[299,8739+4]..[299,8739+13])
+                          Ppat_construct "Cassign" (asmcomp/cmm.ml[299,8739+4]..[299,8739+11])
+                          Some
+                            []
+                            pattern (asmcomp/cmm.ml[299,8739+12]..[299,8739+13])
+                              Ppat_any
+                      pattern (asmcomp/cmm.ml[300,8753+4]..[300,8753+12])
+                        Ppat_construct "Ctuple" (asmcomp/cmm.ml[300,8753+4]..[300,8753+10])
+                        Some
+                          []
+                          pattern (asmcomp/cmm.ml[300,8753+11]..[300,8753+12])
+                            Ppat_any
+                    pattern (asmcomp/cmm.ml[301,8766+4]..[301,8766+9])
+                      Ppat_construct "Cop" (asmcomp/cmm.ml[301,8766+4]..[301,8766+7])
+                      Some
+                        []
+                        pattern (asmcomp/cmm.ml[301,8766+8]..[301,8766+9])
+                          Ppat_any
+                expression (asmcomp/cmm.ml[302,8784+6]..[302,8784+9])
+                  Pexp_apply
+                  expression (asmcomp/cmm.ml[302,8784+6]..[302,8784+7])
+                    Pexp_ident "f" (asmcomp/cmm.ml[302,8784+6]..[302,8784+7])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (asmcomp/cmm.ml[302,8784+8]..[302,8784+9])
+                        Pexp_ident "c" (asmcomp/cmm.ml[302,8784+8]..[302,8784+9])
+                  ]
+            ]
+    ]
+  structure_item (asmcomp/cmm.ml[304,8795+0]..[336,9821+7])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (asmcomp/cmm.ml[304,8795+4]..[304,8795+15])
+          Ppat_var "map_shallow" (asmcomp/cmm.ml[304,8795+4]..[304,8795+15])
+        expression (asmcomp/cmm.ml[304,8795+16]..[336,9821+7]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (asmcomp/cmm.ml[304,8795+16]..[304,8795+17])
+            Ppat_var "f" (asmcomp/cmm.ml[304,8795+16]..[304,8795+17])
+          expression (asmcomp/cmm.ml[304,8795+20]..[336,9821+7])
+            Pexp_function
+            [
+              <case>
+                pattern (asmcomp/cmm.ml[305,8824+4]..[305,8824+21])
+                  Ppat_construct "Clet" (asmcomp/cmm.ml[305,8824+4]..[305,8824+8])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[305,8824+9]..[305,8824+21])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[305,8824+10]..[305,8824+12])
+                          Ppat_var "id" (asmcomp/cmm.ml[305,8824+10]..[305,8824+12])
+                        pattern (asmcomp/cmm.ml[305,8824+14]..[305,8824+16])
+                          Ppat_var "e1" (asmcomp/cmm.ml[305,8824+14]..[305,8824+16])
+                        pattern (asmcomp/cmm.ml[305,8824+18]..[305,8824+20])
+                          Ppat_var "e2" (asmcomp/cmm.ml[305,8824+18]..[305,8824+20])
+                      ]
+                expression (asmcomp/cmm.ml[306,8849+6]..[306,8849+27])
+                  Pexp_construct "Clet" (asmcomp/cmm.ml[306,8849+6]..[306,8849+10])
+                  Some
+                    expression (asmcomp/cmm.ml[306,8849+11]..[306,8849+27])
+                      Pexp_tuple
+                      [
+                        expression (asmcomp/cmm.ml[306,8849+12]..[306,8849+14])
+                          Pexp_ident "id" (asmcomp/cmm.ml[306,8849+12]..[306,8849+14])
+                        expression (asmcomp/cmm.ml[306,8849+16]..[306,8849+20])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[306,8849+16]..[306,8849+17])
+                            Pexp_ident "f" (asmcomp/cmm.ml[306,8849+16]..[306,8849+17])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[306,8849+18]..[306,8849+20])
+                                Pexp_ident "e1" (asmcomp/cmm.ml[306,8849+18]..[306,8849+20])
+                          ]
+                        expression (asmcomp/cmm.ml[306,8849+22]..[306,8849+26])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[306,8849+22]..[306,8849+23])
+                            Pexp_ident "f" (asmcomp/cmm.ml[306,8849+22]..[306,8849+23])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[306,8849+24]..[306,8849+26])
+                                Pexp_ident "e2" (asmcomp/cmm.ml[306,8849+24]..[306,8849+26])
+                          ]
+                      ]
+              <case>
+                pattern (asmcomp/cmm.ml[307,8877+4]..[307,8877+31])
+                  Ppat_construct "Clet_mut" (asmcomp/cmm.ml[307,8877+4]..[307,8877+12])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[307,8877+13]..[307,8877+31])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[307,8877+14]..[307,8877+16])
+                          Ppat_var "id" (asmcomp/cmm.ml[307,8877+14]..[307,8877+16])
+                        pattern (asmcomp/cmm.ml[307,8877+18]..[307,8877+22])
+                          Ppat_var "kind" (asmcomp/cmm.ml[307,8877+18]..[307,8877+22])
+                        pattern (asmcomp/cmm.ml[307,8877+24]..[307,8877+26])
+                          Ppat_var "e1" (asmcomp/cmm.ml[307,8877+24]..[307,8877+26])
+                        pattern (asmcomp/cmm.ml[307,8877+28]..[307,8877+30])
+                          Ppat_var "e2" (asmcomp/cmm.ml[307,8877+28]..[307,8877+30])
+                      ]
+                expression (asmcomp/cmm.ml[308,8912+6]..[308,8912+37])
+                  Pexp_construct "Clet_mut" (asmcomp/cmm.ml[308,8912+6]..[308,8912+14])
+                  Some
+                    expression (asmcomp/cmm.ml[308,8912+15]..[308,8912+37])
+                      Pexp_tuple
+                      [
+                        expression (asmcomp/cmm.ml[308,8912+16]..[308,8912+18])
+                          Pexp_ident "id" (asmcomp/cmm.ml[308,8912+16]..[308,8912+18])
+                        expression (asmcomp/cmm.ml[308,8912+20]..[308,8912+24])
+                          Pexp_ident "kind" (asmcomp/cmm.ml[308,8912+20]..[308,8912+24])
+                        expression (asmcomp/cmm.ml[308,8912+26]..[308,8912+30])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[308,8912+26]..[308,8912+27])
+                            Pexp_ident "f" (asmcomp/cmm.ml[308,8912+26]..[308,8912+27])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[308,8912+28]..[308,8912+30])
+                                Pexp_ident "e1" (asmcomp/cmm.ml[308,8912+28]..[308,8912+30])
+                          ]
+                        expression (asmcomp/cmm.ml[308,8912+32]..[308,8912+36])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[308,8912+32]..[308,8912+33])
+                            Pexp_ident "f" (asmcomp/cmm.ml[308,8912+32]..[308,8912+33])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[308,8912+34]..[308,8912+36])
+                                Pexp_ident "e2" (asmcomp/cmm.ml[308,8912+34]..[308,8912+36])
+                          ]
+                      ]
+              <case>
+                pattern (asmcomp/cmm.ml[309,8950+4]..[309,8950+28])
+                  Ppat_construct "Cphantom_let" (asmcomp/cmm.ml[309,8950+4]..[309,8950+16])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[309,8950+17]..[309,8950+28])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[309,8950+18]..[309,8950+20])
+                          Ppat_var "id" (asmcomp/cmm.ml[309,8950+18]..[309,8950+20])
+                        pattern (asmcomp/cmm.ml[309,8950+22]..[309,8950+24])
+                          Ppat_var "de" (asmcomp/cmm.ml[309,8950+22]..[309,8950+24])
+                        pattern (asmcomp/cmm.ml[309,8950+26]..[309,8950+27])
+                          Ppat_var "e" (asmcomp/cmm.ml[309,8950+26]..[309,8950+27])
+                      ]
+                expression (asmcomp/cmm.ml[310,8982+6]..[310,8982+32])
+                  Pexp_construct "Cphantom_let" (asmcomp/cmm.ml[310,8982+6]..[310,8982+18])
+                  Some
+                    expression (asmcomp/cmm.ml[310,8982+19]..[310,8982+32])
+                      Pexp_tuple
+                      [
+                        expression (asmcomp/cmm.ml[310,8982+20]..[310,8982+22])
+                          Pexp_ident "id" (asmcomp/cmm.ml[310,8982+20]..[310,8982+22])
+                        expression (asmcomp/cmm.ml[310,8982+24]..[310,8982+26])
+                          Pexp_ident "de" (asmcomp/cmm.ml[310,8982+24]..[310,8982+26])
+                        expression (asmcomp/cmm.ml[310,8982+28]..[310,8982+31])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[310,8982+28]..[310,8982+29])
+                            Pexp_ident "f" (asmcomp/cmm.ml[310,8982+28]..[310,8982+29])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[310,8982+30]..[310,8982+31])
+                                Pexp_ident "e" (asmcomp/cmm.ml[310,8982+30]..[310,8982+31])
+                          ]
+                      ]
+              <case>
+                pattern (asmcomp/cmm.ml[311,9015+4]..[311,9015+19])
+                  Ppat_construct "Cassign" (asmcomp/cmm.ml[311,9015+4]..[311,9015+11])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[311,9015+12]..[311,9015+19])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[311,9015+13]..[311,9015+15])
+                          Ppat_var "id" (asmcomp/cmm.ml[311,9015+13]..[311,9015+15])
+                        pattern (asmcomp/cmm.ml[311,9015+17]..[311,9015+18])
+                          Ppat_var "e" (asmcomp/cmm.ml[311,9015+17]..[311,9015+18])
+                      ]
+                expression (asmcomp/cmm.ml[312,9038+6]..[312,9038+23])
+                  Pexp_construct "Cassign" (asmcomp/cmm.ml[312,9038+6]..[312,9038+13])
+                  Some
+                    expression (asmcomp/cmm.ml[312,9038+14]..[312,9038+23])
+                      Pexp_tuple
+                      [
+                        expression (asmcomp/cmm.ml[312,9038+15]..[312,9038+17])
+                          Pexp_ident "id" (asmcomp/cmm.ml[312,9038+15]..[312,9038+17])
+                        expression (asmcomp/cmm.ml[312,9038+19]..[312,9038+22])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[312,9038+19]..[312,9038+20])
+                            Pexp_ident "f" (asmcomp/cmm.ml[312,9038+19]..[312,9038+20])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[312,9038+21]..[312,9038+22])
+                                Pexp_ident "e" (asmcomp/cmm.ml[312,9038+21]..[312,9038+22])
+                          ]
+                      ]
+              <case>
+                pattern (asmcomp/cmm.ml[313,9062+4]..[313,9062+13])
+                  Ppat_construct "Ctuple" (asmcomp/cmm.ml[313,9062+4]..[313,9062+10])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[313,9062+11]..[313,9062+13])
+                      Ppat_var "el" (asmcomp/cmm.ml[313,9062+11]..[313,9062+13])
+                expression (asmcomp/cmm.ml[314,9079+6]..[314,9079+28])
+                  Pexp_construct "Ctuple" (asmcomp/cmm.ml[314,9079+6]..[314,9079+12])
+                  Some
+                    expression (asmcomp/cmm.ml[314,9079+13]..[314,9079+28])
+                      Pexp_apply
+                      expression (asmcomp/cmm.ml[314,9079+14]..[314,9079+22])
+                        Pexp_ident "List.map" (asmcomp/cmm.ml[314,9079+14]..[314,9079+22])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (asmcomp/cmm.ml[314,9079+23]..[314,9079+24])
+                            Pexp_ident "f" (asmcomp/cmm.ml[314,9079+23]..[314,9079+24])
+                        <arg>
+                        Nolabel
+                          expression (asmcomp/cmm.ml[314,9079+25]..[314,9079+27])
+                            Pexp_ident "el" (asmcomp/cmm.ml[314,9079+25]..[314,9079+27])
+                      ]
+              <case>
+                pattern (asmcomp/cmm.ml[315,9108+4]..[315,9108+21])
+                  Ppat_construct "Cop" (asmcomp/cmm.ml[315,9108+4]..[315,9108+7])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[315,9108+8]..[315,9108+21])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[315,9108+9]..[315,9108+11])
+                          Ppat_var "op" (asmcomp/cmm.ml[315,9108+9]..[315,9108+11])
+                        pattern (asmcomp/cmm.ml[315,9108+13]..[315,9108+15])
+                          Ppat_var "el" (asmcomp/cmm.ml[315,9108+13]..[315,9108+15])
+                        pattern (asmcomp/cmm.ml[315,9108+17]..[315,9108+20])
+                          Ppat_var "dbg" (asmcomp/cmm.ml[315,9108+17]..[315,9108+20])
+                      ]
+                expression (asmcomp/cmm.ml[316,9133+6]..[316,9133+34])
+                  Pexp_construct "Cop" (asmcomp/cmm.ml[316,9133+6]..[316,9133+9])
+                  Some
+                    expression (asmcomp/cmm.ml[316,9133+10]..[316,9133+34])
+                      Pexp_tuple
+                      [
+                        expression (asmcomp/cmm.ml[316,9133+11]..[316,9133+13])
+                          Pexp_ident "op" (asmcomp/cmm.ml[316,9133+11]..[316,9133+13])
+                        expression (asmcomp/cmm.ml[316,9133+15]..[316,9133+28])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[316,9133+15]..[316,9133+23])
+                            Pexp_ident "List.map" (asmcomp/cmm.ml[316,9133+15]..[316,9133+23])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[316,9133+24]..[316,9133+25])
+                                Pexp_ident "f" (asmcomp/cmm.ml[316,9133+24]..[316,9133+25])
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[316,9133+26]..[316,9133+28])
+                                Pexp_ident "el" (asmcomp/cmm.ml[316,9133+26]..[316,9133+28])
+                          ]
+                        expression (asmcomp/cmm.ml[316,9133+30]..[316,9133+33])
+                          Pexp_ident "dbg" (asmcomp/cmm.ml[316,9133+30]..[316,9133+33])
+                      ]
+              <case>
+                pattern (asmcomp/cmm.ml[317,9168+4]..[317,9168+22])
+                  Ppat_construct "Csequence" (asmcomp/cmm.ml[317,9168+4]..[317,9168+13])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[317,9168+14]..[317,9168+22])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[317,9168+15]..[317,9168+17])
+                          Ppat_var "e1" (asmcomp/cmm.ml[317,9168+15]..[317,9168+17])
+                        pattern (asmcomp/cmm.ml[317,9168+19]..[317,9168+21])
+                          Ppat_var "e2" (asmcomp/cmm.ml[317,9168+19]..[317,9168+21])
+                      ]
+                expression (asmcomp/cmm.ml[318,9194+6]..[318,9194+28])
+                  Pexp_construct "Csequence" (asmcomp/cmm.ml[318,9194+6]..[318,9194+15])
+                  Some
+                    expression (asmcomp/cmm.ml[318,9194+16]..[318,9194+28])
+                      Pexp_tuple
+                      [
+                        expression (asmcomp/cmm.ml[318,9194+17]..[318,9194+21])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[318,9194+17]..[318,9194+18])
+                            Pexp_ident "f" (asmcomp/cmm.ml[318,9194+17]..[318,9194+18])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[318,9194+19]..[318,9194+21])
+                                Pexp_ident "e1" (asmcomp/cmm.ml[318,9194+19]..[318,9194+21])
+                          ]
+                        expression (asmcomp/cmm.ml[318,9194+23]..[318,9194+27])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[318,9194+23]..[318,9194+24])
+                            Pexp_ident "f" (asmcomp/cmm.ml[318,9194+23]..[318,9194+24])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[318,9194+25]..[318,9194+27])
+                                Pexp_ident "e2" (asmcomp/cmm.ml[318,9194+25]..[318,9194+27])
+                          ]
+                      ]
+              <case>
+                pattern (asmcomp/cmm.ml[319,9223+4]..[319,9223+60])
+                  Ppat_construct "Cifthenelse" (asmcomp/cmm.ml[319,9223+4]..[319,9223+15])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[319,9223+15]..[319,9223+60])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[319,9223+16]..[319,9223+20])
+                          Ppat_var "cond" (asmcomp/cmm.ml[319,9223+16]..[319,9223+20])
+                        pattern (asmcomp/cmm.ml[319,9223+22]..[319,9223+30])
+                          Ppat_var "ifso_dbg" (asmcomp/cmm.ml[319,9223+22]..[319,9223+30])
+                        pattern (asmcomp/cmm.ml[319,9223+32]..[319,9223+36])
+                          Ppat_var "ifso" (asmcomp/cmm.ml[319,9223+32]..[319,9223+36])
+                        pattern (asmcomp/cmm.ml[319,9223+38]..[319,9223+47])
+                          Ppat_var "ifnot_dbg" (asmcomp/cmm.ml[319,9223+38]..[319,9223+47])
+                        pattern (asmcomp/cmm.ml[319,9223+49]..[319,9223+54])
+                          Ppat_var "ifnot" (asmcomp/cmm.ml[319,9223+49]..[319,9223+54])
+                        pattern (asmcomp/cmm.ml[319,9223+56]..[319,9223+59])
+                          Ppat_var "dbg" (asmcomp/cmm.ml[319,9223+56]..[319,9223+59])
+                      ]
+                expression (asmcomp/cmm.ml[320,9287+6]..[320,9287+68])
+                  Pexp_construct "Cifthenelse" (asmcomp/cmm.ml[320,9287+6]..[320,9287+17])
+                  Some
+                    expression (asmcomp/cmm.ml[320,9287+17]..[320,9287+68])
+                      Pexp_tuple
+                      [
+                        expression (asmcomp/cmm.ml[320,9287+18]..[320,9287+24])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[320,9287+18]..[320,9287+19])
+                            Pexp_ident "f" (asmcomp/cmm.ml[320,9287+18]..[320,9287+19])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[320,9287+20]..[320,9287+24])
+                                Pexp_ident "cond" (asmcomp/cmm.ml[320,9287+20]..[320,9287+24])
+                          ]
+                        expression (asmcomp/cmm.ml[320,9287+26]..[320,9287+34])
+                          Pexp_ident "ifso_dbg" (asmcomp/cmm.ml[320,9287+26]..[320,9287+34])
+                        expression (asmcomp/cmm.ml[320,9287+36]..[320,9287+42])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[320,9287+36]..[320,9287+37])
+                            Pexp_ident "f" (asmcomp/cmm.ml[320,9287+36]..[320,9287+37])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[320,9287+38]..[320,9287+42])
+                                Pexp_ident "ifso" (asmcomp/cmm.ml[320,9287+38]..[320,9287+42])
+                          ]
+                        expression (asmcomp/cmm.ml[320,9287+44]..[320,9287+53])
+                          Pexp_ident "ifnot_dbg" (asmcomp/cmm.ml[320,9287+44]..[320,9287+53])
+                        expression (asmcomp/cmm.ml[320,9287+55]..[320,9287+62])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[320,9287+55]..[320,9287+56])
+                            Pexp_ident "f" (asmcomp/cmm.ml[320,9287+55]..[320,9287+56])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[320,9287+57]..[320,9287+62])
+                                Pexp_ident "ifnot" (asmcomp/cmm.ml[320,9287+57]..[320,9287+62])
+                          ]
+                        expression (asmcomp/cmm.ml[320,9287+64]..[320,9287+67])
+                          Pexp_ident "dbg" (asmcomp/cmm.ml[320,9287+64]..[320,9287+67])
+                      ]
+              <case>
+                pattern (asmcomp/cmm.ml[321,9356+4]..[321,9356+28])
+                  Ppat_construct "Cswitch" (asmcomp/cmm.ml[321,9356+4]..[321,9356+11])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[321,9356+12]..[321,9356+28])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[321,9356+13]..[321,9356+14])
+                          Ppat_var "e" (asmcomp/cmm.ml[321,9356+13]..[321,9356+14])
+                        pattern (asmcomp/cmm.ml[321,9356+16]..[321,9356+18])
+                          Ppat_var "ia" (asmcomp/cmm.ml[321,9356+16]..[321,9356+18])
+                        pattern (asmcomp/cmm.ml[321,9356+20]..[321,9356+22])
+                          Ppat_var "ea" (asmcomp/cmm.ml[321,9356+20]..[321,9356+22])
+                        pattern (asmcomp/cmm.ml[321,9356+24]..[321,9356+27])
+                          Ppat_var "dbg" (asmcomp/cmm.ml[321,9356+24]..[321,9356+27])
+                      ]
+                expression (asmcomp/cmm.ml[322,9388+6]..[322,9388+67])
+                  Pexp_construct "Cswitch" (asmcomp/cmm.ml[322,9388+6]..[322,9388+13])
+                  Some
+                    expression (asmcomp/cmm.ml[322,9388+14]..[322,9388+67])
+                      Pexp_tuple
+                      [
+                        expression (asmcomp/cmm.ml[322,9388+15]..[322,9388+16])
+                          Pexp_ident "e" (asmcomp/cmm.ml[322,9388+15]..[322,9388+16])
+                        expression (asmcomp/cmm.ml[322,9388+18]..[322,9388+20])
+                          Pexp_ident "ia" (asmcomp/cmm.ml[322,9388+18]..[322,9388+20])
+                        expression (asmcomp/cmm.ml[322,9388+22]..[322,9388+61])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[322,9388+22]..[322,9388+31])
+                            Pexp_ident "Array.map" (asmcomp/cmm.ml[322,9388+22]..[322,9388+31])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[322,9388+32]..[322,9388+58])
+                                Pexp_fun
+                                Nolabel
+                                None
+                                pattern (asmcomp/cmm.ml[322,9388+37]..[322,9388+45])
+                                  Ppat_tuple
+                                  [
+                                    pattern (asmcomp/cmm.ml[322,9388+38]..[322,9388+39])
+                                      Ppat_var "e" (asmcomp/cmm.ml[322,9388+38]..[322,9388+39])
+                                    pattern (asmcomp/cmm.ml[322,9388+41]..[322,9388+44])
+                                      Ppat_var "dbg" (asmcomp/cmm.ml[322,9388+41]..[322,9388+44])
+                                  ]
+                                expression (asmcomp/cmm.ml[322,9388+49]..[322,9388+57])
+                                  Pexp_tuple
+                                  [
+                                    expression (asmcomp/cmm.ml[322,9388+49]..[322,9388+52])
+                                      Pexp_apply
+                                      expression (asmcomp/cmm.ml[322,9388+49]..[322,9388+50])
+                                        Pexp_ident "f" (asmcomp/cmm.ml[322,9388+49]..[322,9388+50])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (asmcomp/cmm.ml[322,9388+51]..[322,9388+52])
+                                            Pexp_ident "e" (asmcomp/cmm.ml[322,9388+51]..[322,9388+52])
+                                      ]
+                                    expression (asmcomp/cmm.ml[322,9388+54]..[322,9388+57])
+                                      Pexp_ident "dbg" (asmcomp/cmm.ml[322,9388+54]..[322,9388+57])
+                                  ]
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[322,9388+59]..[322,9388+61])
+                                Pexp_ident "ea" (asmcomp/cmm.ml[322,9388+59]..[322,9388+61])
+                          ]
+                        expression (asmcomp/cmm.ml[322,9388+63]..[322,9388+66])
+                          Pexp_ident "dbg" (asmcomp/cmm.ml[322,9388+63]..[322,9388+66])
+                      ]
+              <case>
+                pattern (asmcomp/cmm.ml[323,9456+4]..[323,9456+25])
+                  Ppat_construct "Ccatch" (asmcomp/cmm.ml[323,9456+4]..[323,9456+10])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[323,9456+11]..[323,9456+25])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[323,9456+12]..[323,9456+14])
+                          Ppat_var "rf" (asmcomp/cmm.ml[323,9456+12]..[323,9456+14])
+                        pattern (asmcomp/cmm.ml[323,9456+16]..[323,9456+18])
+                          Ppat_var "hl" (asmcomp/cmm.ml[323,9456+16]..[323,9456+18])
+                        pattern (asmcomp/cmm.ml[323,9456+20]..[323,9456+24])
+                          Ppat_var "body" (asmcomp/cmm.ml[323,9456+20]..[323,9456+24])
+                      ]
+                expression (asmcomp/cmm.ml[324,9485+6]..[325,9554+44])
+                  Pexp_let Nonrec
+                  [
+                    <def>
+                      pattern (asmcomp/cmm.ml[324,9485+10]..[324,9485+15])
+                        Ppat_var "map_h" (asmcomp/cmm.ml[324,9485+10]..[324,9485+15])
+                      expression (asmcomp/cmm.ml[324,9485+16]..[324,9485+65]) ghost
+                        Pexp_fun
+                        Nolabel
+                        None
+                        pattern (asmcomp/cmm.ml[324,9485+16]..[324,9485+38])
+                          Ppat_tuple
+                          [
+                            pattern (asmcomp/cmm.ml[324,9485+17]..[324,9485+18])
+                              Ppat_var "n" (asmcomp/cmm.ml[324,9485+17]..[324,9485+18])
+                            pattern (asmcomp/cmm.ml[324,9485+20]..[324,9485+23])
+                              Ppat_var "ids" (asmcomp/cmm.ml[324,9485+20]..[324,9485+23])
+                            pattern (asmcomp/cmm.ml[324,9485+25]..[324,9485+32])
+                              Ppat_var "handler" (asmcomp/cmm.ml[324,9485+25]..[324,9485+32])
+                            pattern (asmcomp/cmm.ml[324,9485+34]..[324,9485+37])
+                              Ppat_var "dbg" (asmcomp/cmm.ml[324,9485+34]..[324,9485+37])
+                          ]
+                        expression (asmcomp/cmm.ml[324,9485+41]..[324,9485+65])
+                          Pexp_tuple
+                          [
+                            expression (asmcomp/cmm.ml[324,9485+42]..[324,9485+43])
+                              Pexp_ident "n" (asmcomp/cmm.ml[324,9485+42]..[324,9485+43])
+                            expression (asmcomp/cmm.ml[324,9485+45]..[324,9485+48])
+                              Pexp_ident "ids" (asmcomp/cmm.ml[324,9485+45]..[324,9485+48])
+                            expression (asmcomp/cmm.ml[324,9485+50]..[324,9485+59])
+                              Pexp_apply
+                              expression (asmcomp/cmm.ml[324,9485+50]..[324,9485+51])
+                                Pexp_ident "f" (asmcomp/cmm.ml[324,9485+50]..[324,9485+51])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (asmcomp/cmm.ml[324,9485+52]..[324,9485+59])
+                                    Pexp_ident "handler" (asmcomp/cmm.ml[324,9485+52]..[324,9485+59])
+                              ]
+                            expression (asmcomp/cmm.ml[324,9485+61]..[324,9485+64])
+                              Pexp_ident "dbg" (asmcomp/cmm.ml[324,9485+61]..[324,9485+64])
+                          ]
+                  ]
+                  expression (asmcomp/cmm.ml[325,9554+6]..[325,9554+44])
+                    Pexp_construct "Ccatch" (asmcomp/cmm.ml[325,9554+6]..[325,9554+12])
+                    Some
+                      expression (asmcomp/cmm.ml[325,9554+13]..[325,9554+44])
+                        Pexp_tuple
+                        [
+                          expression (asmcomp/cmm.ml[325,9554+14]..[325,9554+16])
+                            Pexp_ident "rf" (asmcomp/cmm.ml[325,9554+14]..[325,9554+16])
+                          expression (asmcomp/cmm.ml[325,9554+18]..[325,9554+35])
+                            Pexp_apply
+                            expression (asmcomp/cmm.ml[325,9554+18]..[325,9554+26])
+                              Pexp_ident "List.map" (asmcomp/cmm.ml[325,9554+18]..[325,9554+26])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (asmcomp/cmm.ml[325,9554+27]..[325,9554+32])
+                                  Pexp_ident "map_h" (asmcomp/cmm.ml[325,9554+27]..[325,9554+32])
+                              <arg>
+                              Nolabel
+                                expression (asmcomp/cmm.ml[325,9554+33]..[325,9554+35])
+                                  Pexp_ident "hl" (asmcomp/cmm.ml[325,9554+33]..[325,9554+35])
+                            ]
+                          expression (asmcomp/cmm.ml[325,9554+37]..[325,9554+43])
+                            Pexp_apply
+                            expression (asmcomp/cmm.ml[325,9554+37]..[325,9554+38])
+                              Pexp_ident "f" (asmcomp/cmm.ml[325,9554+37]..[325,9554+38])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (asmcomp/cmm.ml[325,9554+39]..[325,9554+43])
+                                  Pexp_ident "body" (asmcomp/cmm.ml[325,9554+39]..[325,9554+43])
+                            ]
+                        ]
+              <case>
+                pattern (asmcomp/cmm.ml[326,9599+4]..[326,9599+17])
+                  Ppat_construct "Cexit" (asmcomp/cmm.ml[326,9599+4]..[326,9599+9])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[326,9599+10]..[326,9599+17])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[326,9599+11]..[326,9599+12])
+                          Ppat_var "n" (asmcomp/cmm.ml[326,9599+11]..[326,9599+12])
+                        pattern (asmcomp/cmm.ml[326,9599+14]..[326,9599+16])
+                          Ppat_var "el" (asmcomp/cmm.ml[326,9599+14]..[326,9599+16])
+                      ]
+                expression (asmcomp/cmm.ml[327,9620+6]..[327,9620+30])
+                  Pexp_construct "Cexit" (asmcomp/cmm.ml[327,9620+6]..[327,9620+11])
+                  Some
+                    expression (asmcomp/cmm.ml[327,9620+12]..[327,9620+30])
+                      Pexp_tuple
+                      [
+                        expression (asmcomp/cmm.ml[327,9620+13]..[327,9620+14])
+                          Pexp_ident "n" (asmcomp/cmm.ml[327,9620+13]..[327,9620+14])
+                        expression (asmcomp/cmm.ml[327,9620+16]..[327,9620+29])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[327,9620+16]..[327,9620+24])
+                            Pexp_ident "List.map" (asmcomp/cmm.ml[327,9620+16]..[327,9620+24])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[327,9620+25]..[327,9620+26])
+                                Pexp_ident "f" (asmcomp/cmm.ml[327,9620+25]..[327,9620+26])
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[327,9620+27]..[327,9620+29])
+                                Pexp_ident "el" (asmcomp/cmm.ml[327,9620+27]..[327,9620+29])
+                          ]
+                      ]
+              <case>
+                pattern (asmcomp/cmm.ml[328,9651+4]..[328,9651+30])
+                  Ppat_construct "Ctrywith" (asmcomp/cmm.ml[328,9651+4]..[328,9651+12])
+                  Some
+                    []
+                    pattern (asmcomp/cmm.ml[328,9651+13]..[328,9651+30])
+                      Ppat_tuple
+                      [
+                        pattern (asmcomp/cmm.ml[328,9651+14]..[328,9651+16])
+                          Ppat_var "e1" (asmcomp/cmm.ml[328,9651+14]..[328,9651+16])
+                        pattern (asmcomp/cmm.ml[328,9651+18]..[328,9651+20])
+                          Ppat_var "id" (asmcomp/cmm.ml[328,9651+18]..[328,9651+20])
+                        pattern (asmcomp/cmm.ml[328,9651+22]..[328,9651+24])
+                          Ppat_var "e2" (asmcomp/cmm.ml[328,9651+22]..[328,9651+24])
+                        pattern (asmcomp/cmm.ml[328,9651+26]..[328,9651+29])
+                          Ppat_var "dbg" (asmcomp/cmm.ml[328,9651+26]..[328,9651+29])
+                      ]
+                expression (asmcomp/cmm.ml[329,9685+6]..[329,9685+36])
+                  Pexp_construct "Ctrywith" (asmcomp/cmm.ml[329,9685+6]..[329,9685+14])
+                  Some
+                    expression (asmcomp/cmm.ml[329,9685+15]..[329,9685+36])
+                      Pexp_tuple
+                      [
+                        expression (asmcomp/cmm.ml[329,9685+16]..[329,9685+20])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[329,9685+16]..[329,9685+17])
+                            Pexp_ident "f" (asmcomp/cmm.ml[329,9685+16]..[329,9685+17])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[329,9685+18]..[329,9685+20])
+                                Pexp_ident "e1" (asmcomp/cmm.ml[329,9685+18]..[329,9685+20])
+                          ]
+                        expression (asmcomp/cmm.ml[329,9685+22]..[329,9685+24])
+                          Pexp_ident "id" (asmcomp/cmm.ml[329,9685+22]..[329,9685+24])
+                        expression (asmcomp/cmm.ml[329,9685+26]..[329,9685+30])
+                          Pexp_apply
+                          expression (asmcomp/cmm.ml[329,9685+26]..[329,9685+27])
+                            Pexp_ident "f" (asmcomp/cmm.ml[329,9685+26]..[329,9685+27])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (asmcomp/cmm.ml[329,9685+28]..[329,9685+30])
+                                Pexp_ident "e2" (asmcomp/cmm.ml[329,9685+28]..[329,9685+30])
+                          ]
+                        expression (asmcomp/cmm.ml[329,9685+32]..[329,9685+35])
+                          Pexp_ident "dbg" (asmcomp/cmm.ml[329,9685+32]..[329,9685+35])
+                      ]
+              <case>
+                pattern (asmcomp/cmm.ml[330,9722+4]..[335,9809+8])
+                  Ppat_alias "c" (asmcomp/cmm.ml[335,9809+7]..[335,9809+8])
+                  pattern (asmcomp/cmm.ml[330,9722+4]..[334,9798+10])
+                    Ppat_or
+                    pattern (asmcomp/cmm.ml[330,9722+4]..[333,9778+19])
+                      Ppat_or
+                      pattern (asmcomp/cmm.ml[330,9722+4]..[332,9759+18])
+                        Ppat_or
+                        pattern (asmcomp/cmm.ml[330,9722+4]..[331,9739+19])
+                          Ppat_or
+                          pattern (asmcomp/cmm.ml[330,9722+4]..[330,9722+16])
+                            Ppat_construct "Cconst_int" (asmcomp/cmm.ml[330,9722+4]..[330,9722+14])
+                            Some
+                              []
+                              pattern (asmcomp/cmm.ml[330,9722+15]..[330,9722+16])
+                                Ppat_any
+                          pattern (asmcomp/cmm.ml[331,9739+4]..[331,9739+19])
+                            Ppat_construct "Cconst_natint" (asmcomp/cmm.ml[331,9739+4]..[331,9739+17])
+                            Some
+                              []
+                              pattern (asmcomp/cmm.ml[331,9739+18]..[331,9739+19])
+                                Ppat_any
+                        pattern (asmcomp/cmm.ml[332,9759+4]..[332,9759+18])
+                          Ppat_construct "Cconst_float" (asmcomp/cmm.ml[332,9759+4]..[332,9759+16])
+                          Some
+                            []
+                            pattern (asmcomp/cmm.ml[332,9759+17]..[332,9759+18])
+                              Ppat_any
+                      pattern (asmcomp/cmm.ml[333,9778+4]..[333,9778+19])
+                        Ppat_construct "Cconst_symbol" (asmcomp/cmm.ml[333,9778+4]..[333,9778+17])
+                        Some
+                          []
+                          pattern (asmcomp/cmm.ml[333,9778+18]..[333,9778+19])
+                            Ppat_any
+                    pattern (asmcomp/cmm.ml[334,9798+4]..[334,9798+10])
+                      Ppat_construct "Cvar" (asmcomp/cmm.ml[334,9798+4]..[334,9798+8])
+                      Some
+                        []
+                        pattern (asmcomp/cmm.ml[334,9798+9]..[334,9798+10])
+                          Ppat_any
+                expression (asmcomp/cmm.ml[336,9821+6]..[336,9821+7])
+                  Pexp_ident "c" (asmcomp/cmm.ml[336,9821+6]..[336,9821+7])
+            ]
+    ]
+]
+

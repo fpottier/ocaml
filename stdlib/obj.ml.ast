@@ -1,0 +1,2574 @@
+[
+  structure_item (stdlib/obj.ml[18,1135+0]..[18,1135+6])
+    Pstr_type Rec
+    [
+      type_declaration "t" (stdlib/obj.ml[18,1135+5]..[18,1135+6]) (stdlib/obj.ml[18,1135+0]..[18,1135+6])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (stdlib/obj.ml[20,1143+0]..[20,1143+25])
+    Pstr_type Rec
+    [
+      type_declaration "raw_data" (stdlib/obj.ml[20,1143+5]..[20,1143+13]) (stdlib/obj.ml[20,1143+0]..[20,1143+25])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (stdlib/obj.ml[20,1143+16]..[20,1143+25])
+              Ptyp_constr "nativeint" (stdlib/obj.ml[20,1143+16]..[20,1143+25])
+              []
+    ]
+  structure_item (stdlib/obj.ml[22,1170+0]..[22,1170+37])
+    Pstr_primitive
+    value_description "repr" (stdlib/obj.ml[22,1170+9]..[22,1170+13]) (stdlib/obj.ml[22,1170+0]..[22,1170+37])
+      core_type (stdlib/obj.ml[22,1170+16]..[22,1170+23])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[22,1170+16]..[22,1170+18])
+          Ptyp_var a
+        core_type (stdlib/obj.ml[22,1170+22]..[22,1170+23])
+          Ptyp_constr "t" (stdlib/obj.ml[22,1170+22]..[22,1170+23])
+          []
+      [
+        "%identity"
+      ]
+  structure_item (stdlib/obj.ml[23,1208+0]..[23,1208+36])
+    Pstr_primitive
+    value_description "obj" (stdlib/obj.ml[23,1208+9]..[23,1208+12]) (stdlib/obj.ml[23,1208+0]..[23,1208+36])
+      core_type (stdlib/obj.ml[23,1208+15]..[23,1208+22])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[23,1208+15]..[23,1208+16])
+          Ptyp_constr "t" (stdlib/obj.ml[23,1208+15]..[23,1208+16])
+          []
+        core_type (stdlib/obj.ml[23,1208+20]..[23,1208+22])
+          Ptyp_var a
+      [
+        "%identity"
+      ]
+  structure_item (stdlib/obj.ml[24,1245+0]..[24,1245+39])
+    Pstr_primitive
+    value_description "magic" (stdlib/obj.ml[24,1245+9]..[24,1245+14]) (stdlib/obj.ml[24,1245+0]..[24,1245+39])
+      core_type (stdlib/obj.ml[24,1245+17]..[24,1245+25])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[24,1245+17]..[24,1245+19])
+          Ptyp_var a
+        core_type (stdlib/obj.ml[24,1245+23]..[24,1245+25])
+          Ptyp_var b
+      [
+        "%identity"
+      ]
+  structure_item (stdlib/obj.ml[25,1285+0]..[25,1285+43])
+    Pstr_primitive
+    value_description "is_int" (stdlib/obj.ml[25,1285+9]..[25,1285+15]) (stdlib/obj.ml[25,1285+0]..[25,1285+43])
+      core_type (stdlib/obj.ml[25,1285+18]..[25,1285+27])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[25,1285+18]..[25,1285+19])
+          Ptyp_constr "t" (stdlib/obj.ml[25,1285+18]..[25,1285+19])
+          []
+        core_type (stdlib/obj.ml[25,1285+23]..[25,1285+27])
+          Ptyp_constr "bool" (stdlib/obj.ml[25,1285+23]..[25,1285+27])
+          []
+      [
+        "%obj_is_int"
+      ]
+  structure_item (stdlib/obj.ml[26,1329+0]..[26,1329+48])
+    Pstr_value Nonrec
+    [
+      <def>
+          attribute "inline"
+            [
+              structure_item (stdlib/obj.ml[26,1329+13]..[26,1329+19])
+                Pstr_eval
+                expression (stdlib/obj.ml[26,1329+13]..[26,1329+19])
+                  Pexp_ident "always" (stdlib/obj.ml[26,1329+13]..[26,1329+19])
+            ]
+        pattern (stdlib/obj.ml[26,1329+21]..[26,1329+29])
+          Ppat_var "is_block" (stdlib/obj.ml[26,1329+21]..[26,1329+29])
+        expression (stdlib/obj.ml[26,1329+30]..[26,1329+48]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (stdlib/obj.ml[26,1329+30]..[26,1329+31])
+            Ppat_var "a" (stdlib/obj.ml[26,1329+30]..[26,1329+31])
+          expression (stdlib/obj.ml[26,1329+34]..[26,1329+48])
+            Pexp_apply
+            expression (stdlib/obj.ml[26,1329+34]..[26,1329+37])
+              Pexp_ident "not" (stdlib/obj.ml[26,1329+34]..[26,1329+37])
+            [
+              <arg>
+              Nolabel
+                expression (stdlib/obj.ml[26,1329+38]..[26,1329+48])
+                  Pexp_apply
+                  expression (stdlib/obj.ml[26,1329+39]..[26,1329+45])
+                    Pexp_ident "is_int" (stdlib/obj.ml[26,1329+39]..[26,1329+45])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (stdlib/obj.ml[26,1329+46]..[26,1329+47])
+                        Pexp_ident "a" (stdlib/obj.ml[26,1329+46]..[26,1329+47])
+                  ]
+            ]
+    ]
+  structure_item (stdlib/obj.ml[27,1378+0]..[27,1378+52])
+    Pstr_primitive
+    value_description "tag" (stdlib/obj.ml[27,1378+9]..[27,1378+12]) (stdlib/obj.ml[27,1378+0]..[27,1378+52])
+      attribute "noalloc"
+        []
+      core_type (stdlib/obj.ml[27,1378+15]..[27,1378+23])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[27,1378+15]..[27,1378+16])
+          Ptyp_constr "t" (stdlib/obj.ml[27,1378+15]..[27,1378+16])
+          []
+        core_type (stdlib/obj.ml[27,1378+20]..[27,1378+23])
+          Ptyp_constr "int" (stdlib/obj.ml[27,1378+20]..[27,1378+23])
+          []
+      [
+        "caml_obj_tag"
+      ]
+  structure_item (stdlib/obj.ml[28,1431+0]..[28,1431+56])
+    Pstr_primitive
+    value_description "set_tag" (stdlib/obj.ml[28,1431+9]..[28,1431+16]) (stdlib/obj.ml[28,1431+0]..[28,1431+56])
+      core_type (stdlib/obj.ml[28,1431+19]..[28,1431+35])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[28,1431+19]..[28,1431+20])
+          Ptyp_constr "t" (stdlib/obj.ml[28,1431+19]..[28,1431+20])
+          []
+        core_type (stdlib/obj.ml[28,1431+24]..[28,1431+35])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/obj.ml[28,1431+24]..[28,1431+27])
+            Ptyp_constr "int" (stdlib/obj.ml[28,1431+24]..[28,1431+27])
+            []
+          core_type (stdlib/obj.ml[28,1431+31]..[28,1431+35])
+            Ptyp_constr "unit" (stdlib/obj.ml[28,1431+31]..[28,1431+35])
+            []
+      [
+        "caml_obj_set_tag"
+      ]
+  structure_item (stdlib/obj.ml[29,1488+0]..[29,1488+38])
+    Pstr_primitive
+    value_description "size" (stdlib/obj.ml[29,1488+9]..[29,1488+13]) (stdlib/obj.ml[29,1488+0]..[29,1488+38])
+      core_type (stdlib/obj.ml[29,1488+16]..[29,1488+24])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[29,1488+16]..[29,1488+17])
+          Ptyp_constr "t" (stdlib/obj.ml[29,1488+16]..[29,1488+17])
+          []
+        core_type (stdlib/obj.ml[29,1488+21]..[29,1488+24])
+          Ptyp_constr "int" (stdlib/obj.ml[29,1488+21]..[29,1488+24])
+          []
+      [
+        "%obj_size"
+      ]
+  structure_item (stdlib/obj.ml[30,1527+0]..[30,1527+64])
+    Pstr_primitive
+    value_description "reachable_words" (stdlib/obj.ml[30,1527+9]..[30,1527+24]) (stdlib/obj.ml[30,1527+0]..[30,1527+64])
+      core_type (stdlib/obj.ml[30,1527+27]..[30,1527+35])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[30,1527+27]..[30,1527+28])
+          Ptyp_constr "t" (stdlib/obj.ml[30,1527+27]..[30,1527+28])
+          []
+        core_type (stdlib/obj.ml[30,1527+32]..[30,1527+35])
+          Ptyp_constr "int" (stdlib/obj.ml[30,1527+32]..[30,1527+35])
+          []
+      [
+        "caml_obj_reachable_words"
+      ]
+  structure_item (stdlib/obj.ml[31,1592+0]..[31,1592+45])
+    Pstr_primitive
+    value_description "field" (stdlib/obj.ml[31,1592+9]..[31,1592+14]) (stdlib/obj.ml[31,1592+0]..[31,1592+45])
+      core_type (stdlib/obj.ml[31,1592+17]..[31,1592+30])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[31,1592+17]..[31,1592+18])
+          Ptyp_constr "t" (stdlib/obj.ml[31,1592+17]..[31,1592+18])
+          []
+        core_type (stdlib/obj.ml[31,1592+22]..[31,1592+30])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/obj.ml[31,1592+22]..[31,1592+25])
+            Ptyp_constr "int" (stdlib/obj.ml[31,1592+22]..[31,1592+25])
+            []
+          core_type (stdlib/obj.ml[31,1592+29]..[31,1592+30])
+            Ptyp_constr "t" (stdlib/obj.ml[31,1592+29]..[31,1592+30])
+            []
+      [
+        "%obj_field"
+      ]
+  structure_item (stdlib/obj.ml[32,1638+0]..[32,1638+61])
+    Pstr_primitive
+    value_description "set_field" (stdlib/obj.ml[32,1638+9]..[32,1638+18]) (stdlib/obj.ml[32,1638+0]..[32,1638+61])
+      core_type (stdlib/obj.ml[32,1638+21]..[32,1638+42])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[32,1638+21]..[32,1638+22])
+          Ptyp_constr "t" (stdlib/obj.ml[32,1638+21]..[32,1638+22])
+          []
+        core_type (stdlib/obj.ml[32,1638+26]..[32,1638+42])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/obj.ml[32,1638+26]..[32,1638+29])
+            Ptyp_constr "int" (stdlib/obj.ml[32,1638+26]..[32,1638+29])
+            []
+          core_type (stdlib/obj.ml[32,1638+33]..[32,1638+42])
+            Ptyp_arrow
+            Nolabel
+            core_type (stdlib/obj.ml[32,1638+33]..[32,1638+34])
+              Ptyp_constr "t" (stdlib/obj.ml[32,1638+33]..[32,1638+34])
+              []
+            core_type (stdlib/obj.ml[32,1638+38]..[32,1638+42])
+              Ptyp_constr "unit" (stdlib/obj.ml[32,1638+38]..[32,1638+42])
+              []
+      [
+        "%obj_set_field"
+      ]
+  structure_item (stdlib/obj.ml[33,1700+0]..[33,1700+76])
+    Pstr_primitive
+    value_description "floatarray_get" (stdlib/obj.ml[33,1700+9]..[33,1700+23]) (stdlib/obj.ml[33,1700+0]..[33,1700+76])
+      core_type (stdlib/obj.ml[33,1700+26]..[33,1700+52])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[33,1700+26]..[33,1700+36])
+          Ptyp_constr "floatarray" (stdlib/obj.ml[33,1700+26]..[33,1700+36])
+          []
+        core_type (stdlib/obj.ml[33,1700+40]..[33,1700+52])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/obj.ml[33,1700+40]..[33,1700+43])
+            Ptyp_constr "int" (stdlib/obj.ml[33,1700+40]..[33,1700+43])
+            []
+          core_type (stdlib/obj.ml[33,1700+47]..[33,1700+52])
+            Ptyp_constr "float" (stdlib/obj.ml[33,1700+47]..[33,1700+52])
+            []
+      [
+        "caml_floatarray_get"
+      ]
+  structure_item (stdlib/obj.ml[34,1777+0]..[35,1803+62])
+    Pstr_primitive
+    value_description "floatarray_set" (stdlib/obj.ml[34,1777+9]..[34,1777+23]) (stdlib/obj.ml[34,1777+0]..[35,1803+62])
+      core_type (stdlib/obj.ml[35,1803+4]..[35,1803+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[35,1803+4]..[35,1803+14])
+          Ptyp_constr "floatarray" (stdlib/obj.ml[35,1803+4]..[35,1803+14])
+          []
+        core_type (stdlib/obj.ml[35,1803+18]..[35,1803+38])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/obj.ml[35,1803+18]..[35,1803+21])
+            Ptyp_constr "int" (stdlib/obj.ml[35,1803+18]..[35,1803+21])
+            []
+          core_type (stdlib/obj.ml[35,1803+25]..[35,1803+38])
+            Ptyp_arrow
+            Nolabel
+            core_type (stdlib/obj.ml[35,1803+25]..[35,1803+30])
+              Ptyp_constr "float" (stdlib/obj.ml[35,1803+25]..[35,1803+30])
+              []
+            core_type (stdlib/obj.ml[35,1803+34]..[35,1803+38])
+              Ptyp_constr "unit" (stdlib/obj.ml[35,1803+34]..[35,1803+38])
+              []
+      [
+        "caml_floatarray_set"
+      ]
+  structure_item (stdlib/obj.ml[36,1866+0]..[36,1866+77])
+    Pstr_value Nonrec
+    [
+      <def>
+          attribute "inline"
+            [
+              structure_item (stdlib/obj.ml[36,1866+13]..[36,1866+19])
+                Pstr_eval
+                expression (stdlib/obj.ml[36,1866+13]..[36,1866+19])
+                  Pexp_ident "always" (stdlib/obj.ml[36,1866+13]..[36,1866+19])
+            ]
+        pattern (stdlib/obj.ml[36,1866+21]..[36,1866+33])
+          Ppat_var "double_field" (stdlib/obj.ml[36,1866+21]..[36,1866+33])
+        expression (stdlib/obj.ml[36,1866+34]..[36,1866+77]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (stdlib/obj.ml[36,1866+34]..[36,1866+35])
+            Ppat_var "x" (stdlib/obj.ml[36,1866+34]..[36,1866+35])
+          expression (stdlib/obj.ml[36,1866+36]..[36,1866+77]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (stdlib/obj.ml[36,1866+36]..[36,1866+37])
+              Ppat_var "i" (stdlib/obj.ml[36,1866+36]..[36,1866+37])
+            expression (stdlib/obj.ml[36,1866+40]..[36,1866+77])
+              Pexp_apply
+              expression (stdlib/obj.ml[36,1866+40]..[36,1866+54])
+                Pexp_ident "floatarray_get" (stdlib/obj.ml[36,1866+40]..[36,1866+54])
+              [
+                <arg>
+                Nolabel
+                  expression (stdlib/obj.ml[36,1866+55]..[36,1866+75]) ghost
+                    Pexp_constraint
+                    expression (stdlib/obj.ml[36,1866+56]..[36,1866+61])
+                      Pexp_apply
+                      expression (stdlib/obj.ml[36,1866+56]..[36,1866+59])
+                        Pexp_ident "obj" (stdlib/obj.ml[36,1866+56]..[36,1866+59])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (stdlib/obj.ml[36,1866+60]..[36,1866+61])
+                            Pexp_ident "x" (stdlib/obj.ml[36,1866+60]..[36,1866+61])
+                      ]
+                    core_type (stdlib/obj.ml[36,1866+64]..[36,1866+74])
+                      Ptyp_constr "floatarray" (stdlib/obj.ml[36,1866+64]..[36,1866+74])
+                      []
+                <arg>
+                Nolabel
+                  expression (stdlib/obj.ml[36,1866+76]..[36,1866+77])
+                    Pexp_ident "i" (stdlib/obj.ml[36,1866+76]..[36,1866+77])
+              ]
+    ]
+  structure_item (stdlib/obj.ml[37,1944+0]..[38,1990+41])
+    Pstr_value Nonrec
+    [
+      <def>
+          attribute "inline"
+            [
+              structure_item (stdlib/obj.ml[37,1944+13]..[37,1944+19])
+                Pstr_eval
+                expression (stdlib/obj.ml[37,1944+13]..[37,1944+19])
+                  Pexp_ident "always" (stdlib/obj.ml[37,1944+13]..[37,1944+19])
+            ]
+        pattern (stdlib/obj.ml[37,1944+21]..[37,1944+37])
+          Ppat_var "set_double_field" (stdlib/obj.ml[37,1944+21]..[37,1944+37])
+        expression (stdlib/obj.ml[37,1944+38]..[38,1990+41]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (stdlib/obj.ml[37,1944+38]..[37,1944+39])
+            Ppat_var "x" (stdlib/obj.ml[37,1944+38]..[37,1944+39])
+          expression (stdlib/obj.ml[37,1944+40]..[38,1990+41]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (stdlib/obj.ml[37,1944+40]..[37,1944+41])
+              Ppat_var "i" (stdlib/obj.ml[37,1944+40]..[37,1944+41])
+            expression (stdlib/obj.ml[37,1944+42]..[38,1990+41]) ghost
+              Pexp_fun
+              Nolabel
+              None
+              pattern (stdlib/obj.ml[37,1944+42]..[37,1944+43])
+                Ppat_var "v" (stdlib/obj.ml[37,1944+42]..[37,1944+43])
+              expression (stdlib/obj.ml[38,1990+2]..[38,1990+41])
+                Pexp_apply
+                expression (stdlib/obj.ml[38,1990+2]..[38,1990+16])
+                  Pexp_ident "floatarray_set" (stdlib/obj.ml[38,1990+2]..[38,1990+16])
+                [
+                  <arg>
+                  Nolabel
+                    expression (stdlib/obj.ml[38,1990+17]..[38,1990+37]) ghost
+                      Pexp_constraint
+                      expression (stdlib/obj.ml[38,1990+18]..[38,1990+23])
+                        Pexp_apply
+                        expression (stdlib/obj.ml[38,1990+18]..[38,1990+21])
+                          Pexp_ident "obj" (stdlib/obj.ml[38,1990+18]..[38,1990+21])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[38,1990+22]..[38,1990+23])
+                              Pexp_ident "x" (stdlib/obj.ml[38,1990+22]..[38,1990+23])
+                        ]
+                      core_type (stdlib/obj.ml[38,1990+26]..[38,1990+36])
+                        Ptyp_constr "floatarray" (stdlib/obj.ml[38,1990+26]..[38,1990+36])
+                        []
+                  <arg>
+                  Nolabel
+                    expression (stdlib/obj.ml[38,1990+38]..[38,1990+39])
+                      Pexp_ident "i" (stdlib/obj.ml[38,1990+38]..[38,1990+39])
+                  <arg>
+                  Nolabel
+                    expression (stdlib/obj.ml[38,1990+40]..[38,1990+41])
+                      Pexp_ident "v" (stdlib/obj.ml[38,1990+40]..[38,1990+41])
+                ]
+    ]
+  structure_item (stdlib/obj.ml[39,2032+0]..[39,2032+64])
+    Pstr_primitive
+    value_description "raw_field" (stdlib/obj.ml[39,2032+9]..[39,2032+18]) (stdlib/obj.ml[39,2032+0]..[39,2032+64])
+      core_type (stdlib/obj.ml[39,2032+21]..[39,2032+41])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[39,2032+21]..[39,2032+22])
+          Ptyp_constr "t" (stdlib/obj.ml[39,2032+21]..[39,2032+22])
+          []
+        core_type (stdlib/obj.ml[39,2032+26]..[39,2032+41])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/obj.ml[39,2032+26]..[39,2032+29])
+            Ptyp_constr "int" (stdlib/obj.ml[39,2032+26]..[39,2032+29])
+            []
+          core_type (stdlib/obj.ml[39,2032+33]..[39,2032+41])
+            Ptyp_constr "raw_data" (stdlib/obj.ml[39,2032+33]..[39,2032+41])
+            []
+      [
+        "caml_obj_raw_field"
+      ]
+  structure_item (stdlib/obj.ml[40,2097+0]..[41,2151+68])
+    Pstr_primitive
+    value_description "set_raw_field" (stdlib/obj.ml[40,2097+9]..[40,2097+22]) (stdlib/obj.ml[40,2097+0]..[41,2151+68])
+      core_type (stdlib/obj.ml[40,2097+25]..[40,2097+53])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[40,2097+25]..[40,2097+26])
+          Ptyp_constr "t" (stdlib/obj.ml[40,2097+25]..[40,2097+26])
+          []
+        core_type (stdlib/obj.ml[40,2097+30]..[40,2097+53])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/obj.ml[40,2097+30]..[40,2097+33])
+            Ptyp_constr "int" (stdlib/obj.ml[40,2097+30]..[40,2097+33])
+            []
+          core_type (stdlib/obj.ml[40,2097+37]..[40,2097+53])
+            Ptyp_arrow
+            Nolabel
+            core_type (stdlib/obj.ml[40,2097+37]..[40,2097+45])
+              Ptyp_constr "raw_data" (stdlib/obj.ml[40,2097+37]..[40,2097+45])
+              []
+            core_type (stdlib/obj.ml[40,2097+49]..[40,2097+53])
+              Ptyp_constr "unit" (stdlib/obj.ml[40,2097+49]..[40,2097+53])
+              []
+      [
+        "caml_obj_set_raw_field"
+      ]
+  structure_item (stdlib/obj.ml[43,2221+0]..[43,2221+55])
+    Pstr_primitive
+    value_description "new_block" (stdlib/obj.ml[43,2221+9]..[43,2221+18]) (stdlib/obj.ml[43,2221+0]..[43,2221+55])
+      core_type (stdlib/obj.ml[43,2221+21]..[43,2221+36])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[43,2221+21]..[43,2221+24])
+          Ptyp_constr "int" (stdlib/obj.ml[43,2221+21]..[43,2221+24])
+          []
+        core_type (stdlib/obj.ml[43,2221+28]..[43,2221+36])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/obj.ml[43,2221+28]..[43,2221+31])
+            Ptyp_constr "int" (stdlib/obj.ml[43,2221+28]..[43,2221+31])
+            []
+          core_type (stdlib/obj.ml[43,2221+35]..[43,2221+36])
+            Ptyp_constr "t" (stdlib/obj.ml[43,2221+35]..[43,2221+36])
+            []
+      [
+        "caml_obj_block"
+      ]
+  structure_item (stdlib/obj.ml[44,2277+0]..[44,2277+38])
+    Pstr_primitive
+    value_description "dup" (stdlib/obj.ml[44,2277+9]..[44,2277+12]) (stdlib/obj.ml[44,2277+0]..[44,2277+38])
+      core_type (stdlib/obj.ml[44,2277+15]..[44,2277+21])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[44,2277+15]..[44,2277+16])
+          Ptyp_constr "t" (stdlib/obj.ml[44,2277+15]..[44,2277+16])
+          []
+        core_type (stdlib/obj.ml[44,2277+20]..[44,2277+21])
+          Ptyp_constr "t" (stdlib/obj.ml[44,2277+20]..[44,2277+21])
+          []
+      [
+        "caml_obj_dup"
+      ]
+  structure_item (stdlib/obj.ml[45,2316+0]..[45,2316+58])
+    Pstr_primitive
+    value_description "truncate" (stdlib/obj.ml[45,2316+9]..[45,2316+17]) (stdlib/obj.ml[45,2316+0]..[45,2316+58])
+      core_type (stdlib/obj.ml[45,2316+20]..[45,2316+36])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[45,2316+20]..[45,2316+21])
+          Ptyp_constr "t" (stdlib/obj.ml[45,2316+20]..[45,2316+21])
+          []
+        core_type (stdlib/obj.ml[45,2316+25]..[45,2316+36])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/obj.ml[45,2316+25]..[45,2316+28])
+            Ptyp_constr "int" (stdlib/obj.ml[45,2316+25]..[45,2316+28])
+            []
+          core_type (stdlib/obj.ml[45,2316+32]..[45,2316+36])
+            Ptyp_constr "unit" (stdlib/obj.ml[45,2316+32]..[45,2316+36])
+            []
+      [
+        "caml_obj_truncate"
+      ]
+  structure_item (stdlib/obj.ml[46,2375+0]..[46,2375+63])
+    Pstr_primitive
+    value_description "add_offset" (stdlib/obj.ml[46,2375+9]..[46,2375+19]) (stdlib/obj.ml[46,2375+0]..[46,2375+63])
+      core_type (stdlib/obj.ml[46,2375+22]..[46,2375+39])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[46,2375+22]..[46,2375+23])
+          Ptyp_constr "t" (stdlib/obj.ml[46,2375+22]..[46,2375+23])
+          []
+        core_type (stdlib/obj.ml[46,2375+27]..[46,2375+39])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/obj.ml[46,2375+27]..[46,2375+34])
+            Ptyp_constr "Int32.t" (stdlib/obj.ml[46,2375+27]..[46,2375+34])
+            []
+          core_type (stdlib/obj.ml[46,2375+38]..[46,2375+39])
+            Ptyp_constr "t" (stdlib/obj.ml[46,2375+38]..[46,2375+39])
+            []
+      [
+        "caml_obj_add_offset"
+      ]
+  structure_item (stdlib/obj.ml[47,2439+0]..[47,2439+55])
+    Pstr_primitive
+    value_description "with_tag" (stdlib/obj.ml[47,2439+9]..[47,2439+17]) (stdlib/obj.ml[47,2439+0]..[47,2439+55])
+      core_type (stdlib/obj.ml[47,2439+20]..[47,2439+33])
+        Ptyp_arrow
+        Nolabel
+        core_type (stdlib/obj.ml[47,2439+20]..[47,2439+23])
+          Ptyp_constr "int" (stdlib/obj.ml[47,2439+20]..[47,2439+23])
+          []
+        core_type (stdlib/obj.ml[47,2439+27]..[47,2439+33])
+          Ptyp_arrow
+          Nolabel
+          core_type (stdlib/obj.ml[47,2439+27]..[47,2439+28])
+            Ptyp_constr "t" (stdlib/obj.ml[47,2439+27]..[47,2439+28])
+            []
+          core_type (stdlib/obj.ml[47,2439+32]..[47,2439+33])
+            Ptyp_constr "t" (stdlib/obj.ml[47,2439+32]..[47,2439+33])
+            []
+      [
+        "caml_obj_with_tag"
+      ]
+  structure_item (stdlib/obj.ml[49,2496+0]..[50,2520+25])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[49,2496+4]..[49,2496+11])
+          Ppat_var "marshal" (stdlib/obj.ml[49,2496+4]..[49,2496+11])
+        expression (stdlib/obj.ml[49,2496+12]..[50,2520+25]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (stdlib/obj.ml[49,2496+12]..[49,2496+21])
+            Ppat_constraint
+            pattern (stdlib/obj.ml[49,2496+13]..[49,2496+16])
+              Ppat_var "obj" (stdlib/obj.ml[49,2496+13]..[49,2496+16])
+            core_type (stdlib/obj.ml[49,2496+19]..[49,2496+20])
+              Ptyp_constr "t" (stdlib/obj.ml[49,2496+19]..[49,2496+20])
+              []
+          expression (stdlib/obj.ml[50,2520+2]..[50,2520+25])
+            Pexp_apply
+            expression (stdlib/obj.ml[50,2520+2]..[50,2520+18])
+              Pexp_ident "Marshal.to_bytes" (stdlib/obj.ml[50,2520+2]..[50,2520+18])
+            [
+              <arg>
+              Nolabel
+                expression (stdlib/obj.ml[50,2520+19]..[50,2520+22])
+                  Pexp_ident "obj" (stdlib/obj.ml[50,2520+19]..[50,2520+22])
+              <arg>
+              Nolabel
+                expression (stdlib/obj.ml[50,2520+23]..[50,2520+25])
+                  Pexp_construct "[]" (stdlib/obj.ml[50,2520+23]..[50,2520+25])
+                  None
+            ]
+    ]
+  structure_item (stdlib/obj.ml[51,2546+0]..[52,2570+64])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[51,2546+4]..[51,2546+13])
+          Ppat_var "unmarshal" (stdlib/obj.ml[51,2546+4]..[51,2546+13])
+        expression (stdlib/obj.ml[51,2546+14]..[52,2570+64]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (stdlib/obj.ml[51,2546+14]..[51,2546+17])
+            Ppat_var "str" (stdlib/obj.ml[51,2546+14]..[51,2546+17])
+          expression (stdlib/obj.ml[51,2546+18]..[52,2570+64]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (stdlib/obj.ml[51,2546+18]..[51,2546+21])
+              Ppat_var "pos" (stdlib/obj.ml[51,2546+18]..[51,2546+21])
+            expression (stdlib/obj.ml[52,2570+2]..[52,2570+64])
+              Pexp_tuple
+              [
+                expression (stdlib/obj.ml[52,2570+3]..[52,2570+29])
+                  Pexp_apply
+                  expression (stdlib/obj.ml[52,2570+3]..[52,2570+21])
+                    Pexp_ident "Marshal.from_bytes" (stdlib/obj.ml[52,2570+3]..[52,2570+21])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (stdlib/obj.ml[52,2570+22]..[52,2570+25])
+                        Pexp_ident "str" (stdlib/obj.ml[52,2570+22]..[52,2570+25])
+                    <arg>
+                    Nolabel
+                      expression (stdlib/obj.ml[52,2570+26]..[52,2570+29])
+                        Pexp_ident "pos" (stdlib/obj.ml[52,2570+26]..[52,2570+29])
+                  ]
+                expression (stdlib/obj.ml[52,2570+31]..[52,2570+63])
+                  Pexp_apply
+                  expression (stdlib/obj.ml[52,2570+35]..[52,2570+36])
+                    Pexp_ident "+" (stdlib/obj.ml[52,2570+35]..[52,2570+36])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (stdlib/obj.ml[52,2570+31]..[52,2570+34])
+                        Pexp_ident "pos" (stdlib/obj.ml[52,2570+31]..[52,2570+34])
+                    <arg>
+                    Nolabel
+                      expression (stdlib/obj.ml[52,2570+37]..[52,2570+63])
+                        Pexp_apply
+                        expression (stdlib/obj.ml[52,2570+37]..[52,2570+55])
+                          Pexp_ident "Marshal.total_size" (stdlib/obj.ml[52,2570+37]..[52,2570+55])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[52,2570+56]..[52,2570+59])
+                              Pexp_ident "str" (stdlib/obj.ml[52,2570+56]..[52,2570+59])
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[52,2570+60]..[52,2570+63])
+                              Pexp_ident "pos" (stdlib/obj.ml[52,2570+60]..[52,2570+63])
+                        ]
+                  ]
+              ]
+    ]
+  structure_item (stdlib/obj.ml[54,2636+0]..[54,2636+42])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[54,2636+4]..[54,2636+38])
+          Ppat_var "first_non_constant_constructor_tag" (stdlib/obj.ml[54,2636+4]..[54,2636+38])
+        expression (stdlib/obj.ml[54,2636+41]..[54,2636+42])
+          Pexp_constant PConst_int (0,None)
+    ]
+  structure_item (stdlib/obj.ml[55,2679+0]..[55,2679+43])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[55,2679+4]..[55,2679+37])
+          Ppat_var "last_non_constant_constructor_tag" (stdlib/obj.ml[55,2679+4]..[55,2679+37])
+        expression (stdlib/obj.ml[55,2679+40]..[55,2679+43])
+          Pexp_constant PConst_int (245,None)
+    ]
+  structure_item (stdlib/obj.ml[57,2724+0]..[57,2724+18])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[57,2724+4]..[57,2724+12])
+          Ppat_var "lazy_tag" (stdlib/obj.ml[57,2724+4]..[57,2724+12])
+        expression (stdlib/obj.ml[57,2724+15]..[57,2724+18])
+          Pexp_constant PConst_int (246,None)
+    ]
+  structure_item (stdlib/obj.ml[58,2743+0]..[58,2743+21])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[58,2743+4]..[58,2743+15])
+          Ppat_var "closure_tag" (stdlib/obj.ml[58,2743+4]..[58,2743+15])
+        expression (stdlib/obj.ml[58,2743+18]..[58,2743+21])
+          Pexp_constant PConst_int (247,None)
+    ]
+  structure_item (stdlib/obj.ml[59,2765+0]..[59,2765+20])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[59,2765+4]..[59,2765+14])
+          Ppat_var "object_tag" (stdlib/obj.ml[59,2765+4]..[59,2765+14])
+        expression (stdlib/obj.ml[59,2765+17]..[59,2765+20])
+          Pexp_constant PConst_int (248,None)
+    ]
+  structure_item (stdlib/obj.ml[60,2786+0]..[60,2786+19])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[60,2786+4]..[60,2786+13])
+          Ppat_var "infix_tag" (stdlib/obj.ml[60,2786+4]..[60,2786+13])
+        expression (stdlib/obj.ml[60,2786+16]..[60,2786+19])
+          Pexp_constant PConst_int (249,None)
+    ]
+  structure_item (stdlib/obj.ml[61,2806+0]..[61,2806+21])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[61,2806+4]..[61,2806+15])
+          Ppat_var "forward_tag" (stdlib/obj.ml[61,2806+4]..[61,2806+15])
+        expression (stdlib/obj.ml[61,2806+18]..[61,2806+21])
+          Pexp_constant PConst_int (250,None)
+    ]
+  structure_item (stdlib/obj.ml[63,2829+0]..[63,2829+21])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[63,2829+4]..[63,2829+15])
+          Ppat_var "no_scan_tag" (stdlib/obj.ml[63,2829+4]..[63,2829+15])
+        expression (stdlib/obj.ml[63,2829+18]..[63,2829+21])
+          Pexp_constant PConst_int (251,None)
+    ]
+  structure_item (stdlib/obj.ml[65,2852+0]..[65,2852+22])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[65,2852+4]..[65,2852+16])
+          Ppat_var "abstract_tag" (stdlib/obj.ml[65,2852+4]..[65,2852+16])
+        expression (stdlib/obj.ml[65,2852+19]..[65,2852+22])
+          Pexp_constant PConst_int (251,None)
+    ]
+  structure_item (stdlib/obj.ml[66,2875+0]..[66,2875+20])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[66,2875+4]..[66,2875+14])
+          Ppat_var "string_tag" (stdlib/obj.ml[66,2875+4]..[66,2875+14])
+        expression (stdlib/obj.ml[66,2875+17]..[66,2875+20])
+          Pexp_constant PConst_int (252,None)
+    ]
+  structure_item (stdlib/obj.ml[67,2896+0]..[67,2896+20])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[67,2896+4]..[67,2896+14])
+          Ppat_var "double_tag" (stdlib/obj.ml[67,2896+4]..[67,2896+14])
+        expression (stdlib/obj.ml[67,2896+17]..[67,2896+20])
+          Pexp_constant PConst_int (253,None)
+    ]
+  structure_item (stdlib/obj.ml[68,2917+0]..[68,2917+26])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[68,2917+4]..[68,2917+20])
+          Ppat_var "double_array_tag" (stdlib/obj.ml[68,2917+4]..[68,2917+20])
+        expression (stdlib/obj.ml[68,2917+23]..[68,2917+26])
+          Pexp_constant PConst_int (254,None)
+    ]
+  structure_item (stdlib/obj.ml[69,2944+0]..[69,2944+20])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[69,2944+4]..[69,2944+14])
+          Ppat_var "custom_tag" (stdlib/obj.ml[69,2944+4]..[69,2944+14])
+        expression (stdlib/obj.ml[69,2944+17]..[69,2944+20])
+          Pexp_constant PConst_int (255,None)
+    ]
+  structure_item (stdlib/obj.ml[70,2965+0]..[70,2965+26])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[70,2965+4]..[70,2965+13])
+          Ppat_var "final_tag" (stdlib/obj.ml[70,2965+4]..[70,2965+13])
+        expression (stdlib/obj.ml[70,2965+16]..[70,2965+26])
+          Pexp_ident "custom_tag" (stdlib/obj.ml[70,2965+16]..[70,2965+26])
+    ]
+  structure_item (stdlib/obj.ml[73,2994+0]..[73,2994+18])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[73,2994+4]..[73,2994+11])
+          Ppat_var "int_tag" (stdlib/obj.ml[73,2994+4]..[73,2994+11])
+        expression (stdlib/obj.ml[73,2994+14]..[73,2994+18])
+          Pexp_constant PConst_int (1000,None)
+    ]
+  structure_item (stdlib/obj.ml[74,3013+0]..[74,3013+26])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[74,3013+4]..[74,3013+19])
+          Ppat_var "out_of_heap_tag" (stdlib/obj.ml[74,3013+4]..[74,3013+19])
+        expression (stdlib/obj.ml[74,3013+22]..[74,3013+26])
+          Pexp_constant PConst_int (1001,None)
+    ]
+  structure_item (stdlib/obj.ml[75,3040+0]..[75,3040+24])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[75,3040+4]..[75,3040+17])
+          Ppat_var "unaligned_tag" (stdlib/obj.ml[75,3040+4]..[75,3040+17])
+        expression (stdlib/obj.ml[75,3040+20]..[75,3040+24])
+          Pexp_constant PConst_int (1002,None)
+    ]
+  structure_item (stdlib/obj.ml[77,3066+0]..[102,3798+3])
+    Pstr_module
+    "Closure" (stdlib/obj.ml[77,3066+7]..[77,3066+14])
+      module_expr (stdlib/obj.ml[77,3066+17]..[102,3798+3])
+        Pmod_structure
+        [
+          structure_item (stdlib/obj.ml[78,3090+2]..[81,3142+3])
+            Pstr_type Rec
+            [
+              type_declaration "info" (stdlib/obj.ml[78,3090+7]..[78,3090+11]) (stdlib/obj.ml[78,3090+2]..[81,3142+3])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_record
+                    [
+                      (stdlib/obj.ml[79,3106+4]..[79,3106+15])
+                        Immutable
+                        "arity" (stdlib/obj.ml[79,3106+4]..[79,3106+9])                        core_type (stdlib/obj.ml[79,3106+11]..[79,3106+14])
+                          Ptyp_constr "int" (stdlib/obj.ml[79,3106+11]..[79,3106+14])
+                          []
+                      (stdlib/obj.ml[80,3122+4]..[80,3122+19])
+                        Immutable
+                        "start_env" (stdlib/obj.ml[80,3122+4]..[80,3122+13])                        core_type (stdlib/obj.ml[80,3122+15]..[80,3122+18])
+                          Ptyp_constr "int" (stdlib/obj.ml[80,3122+15]..[80,3122+18])
+                          []
+                    ]
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          structure_item (stdlib/obj.ml[83,3147+2]..[96,3623+24])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (stdlib/obj.ml[83,3147+6]..[83,3147+17])
+                  Ppat_var "info_of_raw" (stdlib/obj.ml[83,3147+6]..[83,3147+17])
+                expression (stdlib/obj.ml[83,3147+18]..[96,3623+24]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (stdlib/obj.ml[83,3147+18]..[83,3147+36])
+                    Ppat_constraint
+                    pattern (stdlib/obj.ml[83,3147+19]..[83,3147+23])
+                      Ppat_var "info" (stdlib/obj.ml[83,3147+19]..[83,3147+23])
+                    core_type (stdlib/obj.ml[83,3147+26]..[83,3147+35])
+                      Ptyp_constr "nativeint" (stdlib/obj.ml[83,3147+26]..[83,3147+35])
+                      []
+                  expression (stdlib/obj.ml[84,3186+4]..[96,3623+24])
+                    Pexp_open Fresh
+                    module_expr (stdlib/obj.ml[84,3186+13]..[84,3186+22])
+                      Pmod_ident "Nativeint" (stdlib/obj.ml[84,3186+13]..[84,3186+22])
+                    expression (stdlib/obj.ml[85,3212+4]..[96,3623+24])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (stdlib/obj.ml[85,3212+8]..[85,3212+13])
+                            Ppat_var "arity" (stdlib/obj.ml[85,3212+8]..[85,3212+13])
+                          expression (stdlib/obj.ml[87,3278+6]..[90,3359+36])
+                            Pexp_ifthenelse
+                            expression (stdlib/obj.ml[87,3278+9]..[87,3278+27])
+                              Pexp_apply
+                              expression (stdlib/obj.ml[87,3278+23]..[87,3278+24])
+                                Pexp_ident "=" (stdlib/obj.ml[87,3278+23]..[87,3278+24])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (stdlib/obj.ml[87,3278+9]..[87,3278+22])
+                                    Pexp_ident "Sys.word_size" (stdlib/obj.ml[87,3278+9]..[87,3278+22])
+                                <arg>
+                                Nolabel
+                                  expression (stdlib/obj.ml[87,3278+25]..[87,3278+27])
+                                    Pexp_constant PConst_int (64,None)
+                              ]
+                            expression (stdlib/obj.ml[88,3311+8]..[88,3311+36])
+                              Pexp_apply
+                              expression (stdlib/obj.ml[88,3311+8]..[88,3311+14])
+                                Pexp_ident "to_int" (stdlib/obj.ml[88,3311+8]..[88,3311+14])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (stdlib/obj.ml[88,3311+15]..[88,3311+36])
+                                    Pexp_apply
+                                    expression (stdlib/obj.ml[88,3311+16]..[88,3311+27])
+                                      Pexp_ident "shift_right" (stdlib/obj.ml[88,3311+16]..[88,3311+27])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (stdlib/obj.ml[88,3311+28]..[88,3311+32])
+                                          Pexp_ident "info" (stdlib/obj.ml[88,3311+28]..[88,3311+32])
+                                      <arg>
+                                      Nolabel
+                                        expression (stdlib/obj.ml[88,3311+33]..[88,3311+35])
+                                          Pexp_constant PConst_int (56,None)
+                                    ]
+                              ]
+                            Some
+                              expression (stdlib/obj.ml[90,3359+8]..[90,3359+36])
+                                Pexp_apply
+                                expression (stdlib/obj.ml[90,3359+8]..[90,3359+14])
+                                  Pexp_ident "to_int" (stdlib/obj.ml[90,3359+8]..[90,3359+14])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (stdlib/obj.ml[90,3359+15]..[90,3359+36])
+                                      Pexp_apply
+                                      expression (stdlib/obj.ml[90,3359+16]..[90,3359+27])
+                                        Pexp_ident "shift_right" (stdlib/obj.ml[90,3359+16]..[90,3359+27])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (stdlib/obj.ml[90,3359+28]..[90,3359+32])
+                                            Pexp_ident "info" (stdlib/obj.ml[90,3359+28]..[90,3359+32])
+                                        <arg>
+                                        Nolabel
+                                          expression (stdlib/obj.ml[90,3359+33]..[90,3359+35])
+                                            Pexp_constant PConst_int (24,None)
+                                      ]
+                                ]
+                      ]
+                      expression (stdlib/obj.ml[92,3403+4]..[96,3623+24])
+                        Pexp_let Nonrec
+                        [
+                          <def>
+                            pattern (stdlib/obj.ml[92,3403+8]..[92,3403+17])
+                              Ppat_var "start_env" (stdlib/obj.ml[92,3403+8]..[92,3403+17])
+                            expression (stdlib/obj.ml[95,3563+6]..[95,3563+56])
+                              Pexp_apply
+                              expression (stdlib/obj.ml[95,3563+6]..[95,3563+12])
+                                Pexp_ident "to_int" (stdlib/obj.ml[95,3563+6]..[95,3563+12])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (stdlib/obj.ml[95,3563+13]..[95,3563+56])
+                                    Pexp_apply
+                                    expression (stdlib/obj.ml[95,3563+14]..[95,3563+33])
+                                      Pexp_ident "shift_right_logical" (stdlib/obj.ml[95,3563+14]..[95,3563+33])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (stdlib/obj.ml[95,3563+34]..[95,3563+53])
+                                          Pexp_apply
+                                          expression (stdlib/obj.ml[95,3563+35]..[95,3563+45])
+                                            Pexp_ident "shift_left" (stdlib/obj.ml[95,3563+35]..[95,3563+45])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (stdlib/obj.ml[95,3563+46]..[95,3563+50])
+                                                Pexp_ident "info" (stdlib/obj.ml[95,3563+46]..[95,3563+50])
+                                            <arg>
+                                            Nolabel
+                                              expression (stdlib/obj.ml[95,3563+51]..[95,3563+52])
+                                                Pexp_constant PConst_int (8,None)
+                                          ]
+                                      <arg>
+                                      Nolabel
+                                        expression (stdlib/obj.ml[95,3563+54]..[95,3563+55])
+                                          Pexp_constant PConst_int (9,None)
+                                    ]
+                              ]
+                        ]
+                        expression (stdlib/obj.ml[96,3623+4]..[96,3623+24])
+                          Pexp_record
+                          [
+                            "arity" (stdlib/obj.ml[96,3623+6]..[96,3623+11])
+                              expression (stdlib/obj.ml[96,3623+6]..[96,3623+11]) ghost
+                                Pexp_ident "arity" (stdlib/obj.ml[96,3623+6]..[96,3623+11]) ghost
+                            "start_env" (stdlib/obj.ml[96,3623+13]..[96,3623+22])
+                              expression (stdlib/obj.ml[96,3623+13]..[96,3623+22]) ghost
+                                Pexp_ident "start_env" (stdlib/obj.ml[96,3623+13]..[96,3623+22]) ghost
+                          ]
+                          None
+            ]
+          structure_item (stdlib/obj.ml[99,3705+2]..[101,3764+33])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (stdlib/obj.ml[99,3705+6]..[99,3705+10])
+                  Ppat_var "info" (stdlib/obj.ml[99,3705+6]..[99,3705+10])
+                expression (stdlib/obj.ml[99,3705+11]..[101,3764+33]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (stdlib/obj.ml[99,3705+11]..[99,3705+20])
+                    Ppat_constraint
+                    pattern (stdlib/obj.ml[99,3705+12]..[99,3705+15])
+                      Ppat_var "obj" (stdlib/obj.ml[99,3705+12]..[99,3705+15])
+                    core_type (stdlib/obj.ml[99,3705+18]..[99,3705+19])
+                      Ptyp_constr "t" (stdlib/obj.ml[99,3705+18]..[99,3705+19])
+                      []
+                  expression (stdlib/obj.ml[100,3728+4]..[101,3764+33])
+                    Pexp_sequence
+                    expression (stdlib/obj.ml[100,3728+4]..[100,3728+34])
+                      Pexp_assert
+                      expression (stdlib/obj.ml[100,3728+11]..[100,3728+34])
+                        Pexp_apply
+                        expression (stdlib/obj.ml[100,3728+20]..[100,3728+21])
+                          Pexp_ident "=" (stdlib/obj.ml[100,3728+20]..[100,3728+21])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[100,3728+12]..[100,3728+19])
+                              Pexp_apply
+                              expression (stdlib/obj.ml[100,3728+12]..[100,3728+15])
+                                Pexp_ident "tag" (stdlib/obj.ml[100,3728+12]..[100,3728+15])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (stdlib/obj.ml[100,3728+16]..[100,3728+19])
+                                    Pexp_ident "obj" (stdlib/obj.ml[100,3728+16]..[100,3728+19])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[100,3728+22]..[100,3728+33])
+                              Pexp_ident "closure_tag" (stdlib/obj.ml[100,3728+22]..[100,3728+33])
+                        ]
+                    expression (stdlib/obj.ml[101,3764+4]..[101,3764+33])
+                      Pexp_apply
+                      expression (stdlib/obj.ml[101,3764+4]..[101,3764+15])
+                        Pexp_ident "info_of_raw" (stdlib/obj.ml[101,3764+4]..[101,3764+15])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (stdlib/obj.ml[101,3764+16]..[101,3764+33])
+                            Pexp_apply
+                            expression (stdlib/obj.ml[101,3764+17]..[101,3764+26])
+                              Pexp_ident "raw_field" (stdlib/obj.ml[101,3764+17]..[101,3764+26])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (stdlib/obj.ml[101,3764+27]..[101,3764+30])
+                                  Pexp_ident "obj" (stdlib/obj.ml[101,3764+27]..[101,3764+30])
+                              <arg>
+                              Nolabel
+                                expression (stdlib/obj.ml[101,3764+31]..[101,3764+32])
+                                  Pexp_constant PConst_int (1,None)
+                            ]
+                      ]
+            ]
+        ]
+  structure_item (stdlib/obj.ml[104,3803+0]..[125,4435+3])
+    Pstr_module
+    "Extension_constructor" (stdlib/obj.ml[104,3803+7]..[104,3803+28])
+      module_expr (stdlib/obj.ml[105,3834+0]..[125,4435+3])
+        Pmod_structure
+        [
+          structure_item (stdlib/obj.ml[106,3841+2]..[106,3841+32])
+            Pstr_type Rec
+            [
+              type_declaration "t" (stdlib/obj.ml[106,3841+7]..[106,3841+8]) (stdlib/obj.ml[106,3841+2]..[106,3841+32])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (stdlib/obj.ml[106,3841+11]..[106,3841+32])
+                      Ptyp_constr "extension_constructor" (stdlib/obj.ml[106,3841+11]..[106,3841+32])
+                      []
+            ]
+          structure_item (stdlib/obj.ml[107,3874+2]..[118,4223+50])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (stdlib/obj.ml[107,3874+6]..[107,3874+12])
+                  Ppat_var "of_val" (stdlib/obj.ml[107,3874+6]..[107,3874+12])
+                expression (stdlib/obj.ml[107,3874+13]..[118,4223+50]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (stdlib/obj.ml[107,3874+13]..[107,3874+14])
+                    Ppat_var "x" (stdlib/obj.ml[107,3874+13]..[107,3874+14])
+                  expression (stdlib/obj.ml[108,3891+4]..[118,4223+50])
+                    Pexp_let Nonrec
+                    [
+                      <def>
+                        pattern (stdlib/obj.ml[108,3891+8]..[108,3891+9])
+                          Ppat_var "x" (stdlib/obj.ml[108,3891+8]..[108,3891+9])
+                        expression (stdlib/obj.ml[108,3891+12]..[108,3891+18])
+                          Pexp_apply
+                          expression (stdlib/obj.ml[108,3891+12]..[108,3891+16])
+                            Pexp_ident "repr" (stdlib/obj.ml[108,3891+12]..[108,3891+16])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (stdlib/obj.ml[108,3891+17]..[108,3891+18])
+                                Pexp_ident "x" (stdlib/obj.ml[108,3891+17]..[108,3891+18])
+                          ]
+                    ]
+                    expression (stdlib/obj.ml[109,3913+4]..[118,4223+50])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (stdlib/obj.ml[109,3913+8]..[109,3913+12])
+                            Ppat_var "slot" (stdlib/obj.ml[109,3913+8]..[109,3913+12])
+                          expression (stdlib/obj.ml[110,3928+6]..[111,4007+12])
+                            Pexp_ifthenelse
+                            expression (stdlib/obj.ml[110,3928+9]..[110,3928+63])
+                              Pexp_apply
+                              expression (stdlib/obj.ml[110,3928+22]..[110,3928+24])
+                                Pexp_ident "&&" (stdlib/obj.ml[110,3928+22]..[110,3928+24])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (stdlib/obj.ml[110,3928+9]..[110,3928+21])
+                                    Pexp_apply
+                                    expression (stdlib/obj.ml[110,3928+10]..[110,3928+18])
+                                      Pexp_ident "is_block" (stdlib/obj.ml[110,3928+10]..[110,3928+18])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (stdlib/obj.ml[110,3928+19]..[110,3928+20])
+                                          Pexp_ident "x" (stdlib/obj.ml[110,3928+19]..[110,3928+20])
+                                    ]
+                                <arg>
+                                Nolabel
+                                  expression (stdlib/obj.ml[110,3928+25]..[110,3928+63])
+                                    Pexp_apply
+                                    expression (stdlib/obj.ml[110,3928+47]..[110,3928+49])
+                                      Pexp_ident "&&" (stdlib/obj.ml[110,3928+47]..[110,3928+49])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (stdlib/obj.ml[110,3928+25]..[110,3928+46])
+                                          Pexp_apply
+                                          expression (stdlib/obj.ml[110,3928+33]..[110,3928+35])
+                                            Pexp_ident "<>" (stdlib/obj.ml[110,3928+33]..[110,3928+35])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (stdlib/obj.ml[110,3928+25]..[110,3928+32])
+                                                Pexp_apply
+                                                expression (stdlib/obj.ml[110,3928+26]..[110,3928+29])
+                                                  Pexp_ident "tag" (stdlib/obj.ml[110,3928+26]..[110,3928+29])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (stdlib/obj.ml[110,3928+30]..[110,3928+31])
+                                                      Pexp_ident "x" (stdlib/obj.ml[110,3928+30]..[110,3928+31])
+                                                ]
+                                            <arg>
+                                            Nolabel
+                                              expression (stdlib/obj.ml[110,3928+36]..[110,3928+46])
+                                                Pexp_ident "object_tag" (stdlib/obj.ml[110,3928+36]..[110,3928+46])
+                                          ]
+                                      <arg>
+                                      Nolabel
+                                        expression (stdlib/obj.ml[110,3928+50]..[110,3928+63])
+                                          Pexp_apply
+                                          expression (stdlib/obj.ml[110,3928+59]..[110,3928+61])
+                                            Pexp_ident ">=" (stdlib/obj.ml[110,3928+59]..[110,3928+61])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (stdlib/obj.ml[110,3928+50]..[110,3928+58])
+                                                Pexp_apply
+                                                expression (stdlib/obj.ml[110,3928+51]..[110,3928+55])
+                                                  Pexp_ident "size" (stdlib/obj.ml[110,3928+51]..[110,3928+55])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (stdlib/obj.ml[110,3928+56]..[110,3928+57])
+                                                      Pexp_ident "x" (stdlib/obj.ml[110,3928+56]..[110,3928+57])
+                                                ]
+                                            <arg>
+                                            Nolabel
+                                              expression (stdlib/obj.ml[110,3928+62]..[110,3928+63])
+                                                Pexp_constant PConst_int (1,None)
+                                          ]
+                                    ]
+                              ]
+                            expression (stdlib/obj.ml[110,3928+69]..[110,3928+78])
+                              Pexp_apply
+                              expression (stdlib/obj.ml[110,3928+69]..[110,3928+74])
+                                Pexp_ident "field" (stdlib/obj.ml[110,3928+69]..[110,3928+74])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (stdlib/obj.ml[110,3928+75]..[110,3928+76])
+                                    Pexp_ident "x" (stdlib/obj.ml[110,3928+75]..[110,3928+76])
+                                <arg>
+                                Nolabel
+                                  expression (stdlib/obj.ml[110,3928+77]..[110,3928+78])
+                                    Pexp_constant PConst_int (0,None)
+                              ]
+                            Some
+                              expression (stdlib/obj.ml[111,4007+11]..[111,4007+12])
+                                Pexp_ident "x" (stdlib/obj.ml[111,4007+11]..[111,4007+12])
+                      ]
+                      expression (stdlib/obj.ml[113,4027+4]..[118,4223+50])
+                        Pexp_let Nonrec
+                        [
+                          <def>
+                            pattern (stdlib/obj.ml[113,4027+8]..[113,4027+12])
+                              Ppat_var "name" (stdlib/obj.ml[113,4027+8]..[113,4027+12])
+                            expression (stdlib/obj.ml[114,4042+6]..[115,4112+50])
+                              Pexp_ifthenelse
+                              expression (stdlib/obj.ml[114,4042+9]..[114,4042+51])
+                                Pexp_apply
+                                expression (stdlib/obj.ml[114,4042+25]..[114,4042+27])
+                                  Pexp_ident "&&" (stdlib/obj.ml[114,4042+25]..[114,4042+27])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (stdlib/obj.ml[114,4042+9]..[114,4042+24])
+                                      Pexp_apply
+                                      expression (stdlib/obj.ml[114,4042+10]..[114,4042+18])
+                                        Pexp_ident "is_block" (stdlib/obj.ml[114,4042+10]..[114,4042+18])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (stdlib/obj.ml[114,4042+19]..[114,4042+23])
+                                            Pexp_ident "slot" (stdlib/obj.ml[114,4042+19]..[114,4042+23])
+                                      ]
+                                  <arg>
+                                  Nolabel
+                                    expression (stdlib/obj.ml[114,4042+28]..[114,4042+51])
+                                      Pexp_apply
+                                      expression (stdlib/obj.ml[114,4042+39]..[114,4042+40])
+                                        Pexp_ident "=" (stdlib/obj.ml[114,4042+39]..[114,4042+40])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (stdlib/obj.ml[114,4042+28]..[114,4042+38])
+                                            Pexp_apply
+                                            expression (stdlib/obj.ml[114,4042+29]..[114,4042+32])
+                                              Pexp_ident "tag" (stdlib/obj.ml[114,4042+29]..[114,4042+32])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (stdlib/obj.ml[114,4042+33]..[114,4042+37])
+                                                  Pexp_ident "slot" (stdlib/obj.ml[114,4042+33]..[114,4042+37])
+                                            ]
+                                        <arg>
+                                        Nolabel
+                                          expression (stdlib/obj.ml[114,4042+41]..[114,4042+51])
+                                            Pexp_ident "object_tag" (stdlib/obj.ml[114,4042+41]..[114,4042+51])
+                                      ]
+                                ]
+                              expression (stdlib/obj.ml[114,4042+57]..[114,4042+69])
+                                Pexp_apply
+                                expression (stdlib/obj.ml[114,4042+57]..[114,4042+62])
+                                  Pexp_ident "field" (stdlib/obj.ml[114,4042+57]..[114,4042+62])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (stdlib/obj.ml[114,4042+63]..[114,4042+67])
+                                      Pexp_ident "slot" (stdlib/obj.ml[114,4042+63]..[114,4042+67])
+                                  <arg>
+                                  Nolabel
+                                    expression (stdlib/obj.ml[114,4042+68]..[114,4042+69])
+                                      Pexp_constant PConst_int (0,None)
+                                ]
+                              Some
+                                expression (stdlib/obj.ml[115,4112+11]..[115,4112+50])
+                                  Pexp_apply
+                                  expression (stdlib/obj.ml[115,4112+11]..[115,4112+22])
+                                    Pexp_ident "invalid_arg" (stdlib/obj.ml[115,4112+11]..[115,4112+22])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (stdlib/obj.ml[115,4112+23]..[115,4112+50])
+                                        Pexp_constant PConst_string("Obj.extension_constructor",(stdlib/obj.ml[115,4112+24]..[115,4112+49]),None)
+                                  ]
+                        ]
+                        expression (stdlib/obj.ml[117,4170+6]..[118,4223+50])
+                          Pexp_ifthenelse
+                          expression (stdlib/obj.ml[117,4170+9]..[117,4170+32])
+                            Pexp_apply
+                            expression (stdlib/obj.ml[117,4170+20]..[117,4170+21])
+                              Pexp_ident "=" (stdlib/obj.ml[117,4170+20]..[117,4170+21])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (stdlib/obj.ml[117,4170+9]..[117,4170+19])
+                                  Pexp_apply
+                                  expression (stdlib/obj.ml[117,4170+10]..[117,4170+13])
+                                    Pexp_ident "tag" (stdlib/obj.ml[117,4170+10]..[117,4170+13])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (stdlib/obj.ml[117,4170+14]..[117,4170+18])
+                                        Pexp_ident "name" (stdlib/obj.ml[117,4170+14]..[117,4170+18])
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (stdlib/obj.ml[117,4170+22]..[117,4170+32])
+                                  Pexp_ident "string_tag" (stdlib/obj.ml[117,4170+22]..[117,4170+32])
+                            ]
+                          expression (stdlib/obj.ml[117,4170+38]..[117,4170+52]) ghost
+                            Pexp_constraint
+                            expression (stdlib/obj.ml[117,4170+39]..[117,4170+47])
+                              Pexp_apply
+                              expression (stdlib/obj.ml[117,4170+39]..[117,4170+42])
+                                Pexp_ident "obj" (stdlib/obj.ml[117,4170+39]..[117,4170+42])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (stdlib/obj.ml[117,4170+43]..[117,4170+47])
+                                    Pexp_ident "slot" (stdlib/obj.ml[117,4170+43]..[117,4170+47])
+                              ]
+                            core_type (stdlib/obj.ml[117,4170+50]..[117,4170+51])
+                              Ptyp_constr "t" (stdlib/obj.ml[117,4170+50]..[117,4170+51])
+                              []
+                          Some
+                            expression (stdlib/obj.ml[118,4223+11]..[118,4223+50])
+                              Pexp_apply
+                              expression (stdlib/obj.ml[118,4223+11]..[118,4223+22])
+                                Pexp_ident "invalid_arg" (stdlib/obj.ml[118,4223+11]..[118,4223+22])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (stdlib/obj.ml[118,4223+23]..[118,4223+50])
+                                    Pexp_constant PConst_string("Obj.extension_constructor",(stdlib/obj.ml[118,4223+24]..[118,4223+49]),None)
+                              ]
+            ]
+          structure_item (stdlib/obj.ml[120,4275+2]..[121,4316+40])
+            Pstr_value Nonrec
+            [
+              <def>
+                  attribute "inline"
+                    [
+                      structure_item (stdlib/obj.ml[120,4275+15]..[120,4275+21])
+                        Pstr_eval
+                        expression (stdlib/obj.ml[120,4275+15]..[120,4275+21])
+                          Pexp_ident "always" (stdlib/obj.ml[120,4275+15]..[120,4275+21])
+                    ]
+                pattern (stdlib/obj.ml[120,4275+23]..[120,4275+27])
+                  Ppat_var "name" (stdlib/obj.ml[120,4275+23]..[120,4275+27])
+                expression (stdlib/obj.ml[120,4275+28]..[121,4316+40]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (stdlib/obj.ml[120,4275+28]..[120,4275+38])
+                    Ppat_constraint
+                    pattern (stdlib/obj.ml[120,4275+29]..[120,4275+33])
+                      Ppat_var "slot" (stdlib/obj.ml[120,4275+29]..[120,4275+33])
+                    core_type (stdlib/obj.ml[120,4275+36]..[120,4275+37])
+                      Ptyp_constr "t" (stdlib/obj.ml[120,4275+36]..[120,4275+37])
+                      []
+                  expression (stdlib/obj.ml[121,4316+4]..[121,4316+40]) ghost
+                    Pexp_constraint
+                    expression (stdlib/obj.ml[121,4316+5]..[121,4316+30])
+                      Pexp_apply
+                      expression (stdlib/obj.ml[121,4316+5]..[121,4316+8])
+                        Pexp_ident "obj" (stdlib/obj.ml[121,4316+5]..[121,4316+8])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (stdlib/obj.ml[121,4316+9]..[121,4316+30])
+                            Pexp_apply
+                            expression (stdlib/obj.ml[121,4316+10]..[121,4316+15])
+                              Pexp_ident "field" (stdlib/obj.ml[121,4316+10]..[121,4316+15])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (stdlib/obj.ml[121,4316+16]..[121,4316+27])
+                                  Pexp_apply
+                                  expression (stdlib/obj.ml[121,4316+17]..[121,4316+21])
+                                    Pexp_ident "repr" (stdlib/obj.ml[121,4316+17]..[121,4316+21])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (stdlib/obj.ml[121,4316+22]..[121,4316+26])
+                                        Pexp_ident "slot" (stdlib/obj.ml[121,4316+22]..[121,4316+26])
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (stdlib/obj.ml[121,4316+28]..[121,4316+29])
+                                  Pexp_constant PConst_int (0,None)
+                            ]
+                      ]
+                    core_type (stdlib/obj.ml[121,4316+33]..[121,4316+39])
+                      Ptyp_constr "string" (stdlib/obj.ml[121,4316+33]..[121,4316+39])
+                      []
+            ]
+          structure_item (stdlib/obj.ml[123,4358+2]..[124,4397+37])
+            Pstr_value Nonrec
+            [
+              <def>
+                  attribute "inline"
+                    [
+                      structure_item (stdlib/obj.ml[123,4358+15]..[123,4358+21])
+                        Pstr_eval
+                        expression (stdlib/obj.ml[123,4358+15]..[123,4358+21])
+                          Pexp_ident "always" (stdlib/obj.ml[123,4358+15]..[123,4358+21])
+                    ]
+                pattern (stdlib/obj.ml[123,4358+23]..[123,4358+25])
+                  Ppat_var "id" (stdlib/obj.ml[123,4358+23]..[123,4358+25])
+                expression (stdlib/obj.ml[123,4358+26]..[124,4397+37]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (stdlib/obj.ml[123,4358+26]..[123,4358+36])
+                    Ppat_constraint
+                    pattern (stdlib/obj.ml[123,4358+27]..[123,4358+31])
+                      Ppat_var "slot" (stdlib/obj.ml[123,4358+27]..[123,4358+31])
+                    core_type (stdlib/obj.ml[123,4358+34]..[123,4358+35])
+                      Ptyp_constr "t" (stdlib/obj.ml[123,4358+34]..[123,4358+35])
+                      []
+                  expression (stdlib/obj.ml[124,4397+4]..[124,4397+37]) ghost
+                    Pexp_constraint
+                    expression (stdlib/obj.ml[124,4397+5]..[124,4397+30])
+                      Pexp_apply
+                      expression (stdlib/obj.ml[124,4397+5]..[124,4397+8])
+                        Pexp_ident "obj" (stdlib/obj.ml[124,4397+5]..[124,4397+8])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (stdlib/obj.ml[124,4397+9]..[124,4397+30])
+                            Pexp_apply
+                            expression (stdlib/obj.ml[124,4397+10]..[124,4397+15])
+                              Pexp_ident "field" (stdlib/obj.ml[124,4397+10]..[124,4397+15])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (stdlib/obj.ml[124,4397+16]..[124,4397+27])
+                                  Pexp_apply
+                                  expression (stdlib/obj.ml[124,4397+17]..[124,4397+21])
+                                    Pexp_ident "repr" (stdlib/obj.ml[124,4397+17]..[124,4397+21])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (stdlib/obj.ml[124,4397+22]..[124,4397+26])
+                                        Pexp_ident "slot" (stdlib/obj.ml[124,4397+22]..[124,4397+26])
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (stdlib/obj.ml[124,4397+28]..[124,4397+29])
+                                  Pexp_constant PConst_int (1,None)
+                            ]
+                      ]
+                    core_type (stdlib/obj.ml[124,4397+33]..[124,4397+36])
+                      Ptyp_constr "int" (stdlib/obj.ml[124,4397+33]..[124,4397+36])
+                      []
+            ]
+        ]
+  structure_item (stdlib/obj.ml[127,4440+0]..[127,4440+56])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[127,4440+4]..[127,4440+25])
+          Ppat_var "extension_constructor" (stdlib/obj.ml[127,4440+4]..[127,4440+25])
+        expression (stdlib/obj.ml[127,4440+28]..[127,4440+56])
+          Pexp_ident "Extension_constructor.of_val" (stdlib/obj.ml[127,4440+28]..[127,4440+56])
+    ]
+  structure_item (stdlib/obj.ml[128,4497+0]..[128,4497+47])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[128,4497+4]..[128,4497+18])
+          Ppat_var "extension_name" (stdlib/obj.ml[128,4497+4]..[128,4497+18])
+        expression (stdlib/obj.ml[128,4497+21]..[128,4497+47])
+          Pexp_ident "Extension_constructor.name" (stdlib/obj.ml[128,4497+21]..[128,4497+47])
+    ]
+  structure_item (stdlib/obj.ml[129,4545+0]..[129,4545+43])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (stdlib/obj.ml[129,4545+4]..[129,4545+16])
+          Ppat_var "extension_id" (stdlib/obj.ml[129,4545+4]..[129,4545+16])
+        expression (stdlib/obj.ml[129,4545+19]..[129,4545+43])
+          Pexp_ident "Extension_constructor.id" (stdlib/obj.ml[129,4545+19]..[129,4545+43])
+    ]
+  structure_item (stdlib/obj.ml[131,4590+0]..[193,6634+3])
+    Pstr_module
+    "Ephemeron" (stdlib/obj.ml[131,4590+7]..[131,4590+16])
+      module_expr (stdlib/obj.ml[131,4590+19]..[193,6634+3])
+        Pmod_structure
+        [
+          structure_item (stdlib/obj.ml[132,4616+2]..[132,4616+16])
+            Pstr_type Rec
+            [
+              type_declaration "obj_t" (stdlib/obj.ml[132,4616+7]..[132,4616+12]) (stdlib/obj.ml[132,4616+2]..[132,4616+16])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (stdlib/obj.ml[132,4616+15]..[132,4616+16])
+                      Ptyp_constr "t" (stdlib/obj.ml[132,4616+15]..[132,4616+16])
+                      []
+            ]
+          structure_item (stdlib/obj.ml[134,4634+2]..[134,4634+8])
+            Pstr_type Rec
+            [
+              type_declaration "t" (stdlib/obj.ml[134,4634+7]..[134,4634+8]) (stdlib/obj.ml[134,4634+2]..[134,4634+8])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (stdlib/obj.ml[134,4634+9]..[134,4634+25])
+                      Pstr_eval
+                      expression (stdlib/obj.ml[134,4634+9]..[134,4634+25])
+                        Pexp_constant PConst_string(" ephemeron ",(stdlib/obj.ml[134,4634+9]..[134,4634+25]),None)
+                  ]
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          structure_item (stdlib/obj.ml[137,4701+2]..[137,4701+27])
+            Pstr_value Nonrec
+            [
+              <def>
+                  attribute "ocaml.doc"
+                    [
+                      structure_item (stdlib/obj.ml[136,4661+3]..[136,4661+39])
+                        Pstr_eval
+                        expression (stdlib/obj.ml[136,4661+3]..[136,4661+39])
+                          Pexp_constant PConst_string(" To change in sync with weak.h ",(stdlib/obj.ml[136,4661+3]..[136,4661+39]),None)
+                    ]
+                pattern (stdlib/obj.ml[137,4701+6]..[137,4701+23])
+                  Ppat_var "additional_values" (stdlib/obj.ml[137,4701+6]..[137,4701+23])
+                expression (stdlib/obj.ml[137,4701+26]..[137,4701+27])
+                  Pexp_constant PConst_int (2,None)
+            ]
+          structure_item (stdlib/obj.ml[138,4729+2]..[138,4729+64])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (stdlib/obj.ml[138,4729+6]..[138,4729+21])
+                  Ppat_var "max_ephe_length" (stdlib/obj.ml[138,4729+6]..[138,4729+21])
+                expression (stdlib/obj.ml[138,4729+24]..[138,4729+64])
+                  Pexp_apply
+                  expression (stdlib/obj.ml[138,4729+45]..[138,4729+46])
+                    Pexp_ident "-" (stdlib/obj.ml[138,4729+45]..[138,4729+46])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (stdlib/obj.ml[138,4729+24]..[138,4729+44])
+                        Pexp_ident "Sys.max_array_length" (stdlib/obj.ml[138,4729+24]..[138,4729+44])
+                    <arg>
+                    Nolabel
+                      expression (stdlib/obj.ml[138,4729+47]..[138,4729+64])
+                        Pexp_ident "additional_values" (stdlib/obj.ml[138,4729+47]..[138,4729+64])
+                  ]
+            ]
+          structure_item (stdlib/obj.ml[140,4795+2]..[140,4795+49])
+            Pstr_primitive
+            value_description "create" (stdlib/obj.ml[140,4795+11]..[140,4795+17]) (stdlib/obj.ml[140,4795+2]..[140,4795+49])
+              core_type (stdlib/obj.ml[140,4795+20]..[140,4795+28])
+                Ptyp_arrow
+                Nolabel
+                core_type (stdlib/obj.ml[140,4795+20]..[140,4795+23])
+                  Ptyp_constr "int" (stdlib/obj.ml[140,4795+20]..[140,4795+23])
+                  []
+                core_type (stdlib/obj.ml[140,4795+27]..[140,4795+28])
+                  Ptyp_constr "t" (stdlib/obj.ml[140,4795+27]..[140,4795+28])
+                  []
+              [
+                "caml_ephe_create"
+              ]
+          structure_item (stdlib/obj.ml[141,4847+2]..[144,4955+12])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (stdlib/obj.ml[141,4847+6]..[141,4847+12])
+                  Ppat_var "create" (stdlib/obj.ml[141,4847+6]..[141,4847+12])
+                expression (stdlib/obj.ml[141,4847+13]..[144,4955+12]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (stdlib/obj.ml[141,4847+13]..[141,4847+14])
+                    Ppat_var "l" (stdlib/obj.ml[141,4847+13]..[141,4847+14])
+                  expression (stdlib/obj.ml[142,4864+4]..[144,4955+12])
+                    Pexp_sequence
+                    expression (stdlib/obj.ml[142,4864+4]..[143,4913+40])
+                      Pexp_ifthenelse
+                      expression (stdlib/obj.ml[142,4864+7]..[142,4864+43])
+                        Pexp_apply
+                        expression (stdlib/obj.ml[142,4864+7]..[142,4864+10])
+                          Pexp_ident "not" (stdlib/obj.ml[142,4864+7]..[142,4864+10])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[142,4864+11]..[142,4864+43])
+                              Pexp_apply
+                              expression (stdlib/obj.ml[142,4864+19]..[142,4864+21])
+                                Pexp_ident "&&" (stdlib/obj.ml[142,4864+19]..[142,4864+21])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (stdlib/obj.ml[142,4864+12]..[142,4864+18])
+                                    Pexp_apply
+                                    expression (stdlib/obj.ml[142,4864+14]..[142,4864+16])
+                                      Pexp_ident "<=" (stdlib/obj.ml[142,4864+14]..[142,4864+16])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (stdlib/obj.ml[142,4864+12]..[142,4864+13])
+                                          Pexp_constant PConst_int (0,None)
+                                      <arg>
+                                      Nolabel
+                                        expression (stdlib/obj.ml[142,4864+17]..[142,4864+18])
+                                          Pexp_ident "l" (stdlib/obj.ml[142,4864+17]..[142,4864+18])
+                                    ]
+                                <arg>
+                                Nolabel
+                                  expression (stdlib/obj.ml[142,4864+22]..[142,4864+42])
+                                    Pexp_apply
+                                    expression (stdlib/obj.ml[142,4864+24]..[142,4864+26])
+                                      Pexp_ident "<=" (stdlib/obj.ml[142,4864+24]..[142,4864+26])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (stdlib/obj.ml[142,4864+22]..[142,4864+23])
+                                          Pexp_ident "l" (stdlib/obj.ml[142,4864+22]..[142,4864+23])
+                                      <arg>
+                                      Nolabel
+                                        expression (stdlib/obj.ml[142,4864+27]..[142,4864+42])
+                                          Pexp_ident "max_ephe_length" (stdlib/obj.ml[142,4864+27]..[142,4864+42])
+                                    ]
+                              ]
+                        ]
+                      expression (stdlib/obj.ml[143,4913+6]..[143,4913+40])
+                        Pexp_apply
+                        expression (stdlib/obj.ml[143,4913+6]..[143,4913+17])
+                          Pexp_ident "invalid_arg" (stdlib/obj.ml[143,4913+6]..[143,4913+17])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[143,4913+18]..[143,4913+40])
+                              Pexp_constant PConst_string("Obj.Ephemeron.create",(stdlib/obj.ml[143,4913+19]..[143,4913+39]),None)
+                        ]
+                      None
+                    expression (stdlib/obj.ml[144,4955+4]..[144,4955+12])
+                      Pexp_apply
+                      expression (stdlib/obj.ml[144,4955+4]..[144,4955+10])
+                        Pexp_ident "create" (stdlib/obj.ml[144,4955+4]..[144,4955+10])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (stdlib/obj.ml[144,4955+11]..[144,4955+12])
+                            Pexp_ident "l" (stdlib/obj.ml[144,4955+11]..[144,4955+12])
+                      ]
+            ]
+          structure_item (stdlib/obj.ml[146,4969+2]..[146,4969+49])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (stdlib/obj.ml[146,4969+6]..[146,4969+12])
+                  Ppat_var "length" (stdlib/obj.ml[146,4969+6]..[146,4969+12])
+                expression (stdlib/obj.ml[146,4969+13]..[146,4969+49]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (stdlib/obj.ml[146,4969+13]..[146,4969+14])
+                    Ppat_var "x" (stdlib/obj.ml[146,4969+13]..[146,4969+14])
+                  expression (stdlib/obj.ml[146,4969+17]..[146,4969+49])
+                    Pexp_apply
+                    expression (stdlib/obj.ml[146,4969+30]..[146,4969+31])
+                      Pexp_ident "-" (stdlib/obj.ml[146,4969+30]..[146,4969+31])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (stdlib/obj.ml[146,4969+17]..[146,4969+29])
+                          Pexp_apply
+                          expression (stdlib/obj.ml[146,4969+17]..[146,4969+21])
+                            Pexp_ident "size" (stdlib/obj.ml[146,4969+17]..[146,4969+21])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (stdlib/obj.ml[146,4969+21]..[146,4969+29])
+                                Pexp_apply
+                                expression (stdlib/obj.ml[146,4969+22]..[146,4969+26])
+                                  Pexp_ident "repr" (stdlib/obj.ml[146,4969+22]..[146,4969+26])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (stdlib/obj.ml[146,4969+27]..[146,4969+28])
+                                      Pexp_ident "x" (stdlib/obj.ml[146,4969+27]..[146,4969+28])
+                                ]
+                          ]
+                      <arg>
+                      Nolabel
+                        expression (stdlib/obj.ml[146,4969+32]..[146,4969+49])
+                          Pexp_ident "additional_values" (stdlib/obj.ml[146,4969+32]..[146,4969+49])
+                    ]
+            ]
+          structure_item (stdlib/obj.ml[148,5020+2]..[150,5101+21])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (stdlib/obj.ml[148,5020+6]..[148,5020+29])
+                  Ppat_var "raise_if_invalid_offset" (stdlib/obj.ml[148,5020+6]..[148,5020+29])
+                expression (stdlib/obj.ml[148,5020+30]..[150,5101+21]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (stdlib/obj.ml[148,5020+30]..[148,5020+31])
+                    Ppat_var "e" (stdlib/obj.ml[148,5020+30]..[148,5020+31])
+                  expression (stdlib/obj.ml[148,5020+32]..[150,5101+21]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (stdlib/obj.ml[148,5020+32]..[148,5020+33])
+                      Ppat_var "o" (stdlib/obj.ml[148,5020+32]..[148,5020+33])
+                    expression (stdlib/obj.ml[148,5020+34]..[150,5101+21]) ghost
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (stdlib/obj.ml[148,5020+34]..[148,5020+37])
+                        Ppat_var "msg" (stdlib/obj.ml[148,5020+34]..[148,5020+37])
+                      expression (stdlib/obj.ml[149,5060+4]..[150,5101+21])
+                        Pexp_ifthenelse
+                        expression (stdlib/obj.ml[149,5060+7]..[149,5060+35])
+                          Pexp_apply
+                          expression (stdlib/obj.ml[149,5060+7]..[149,5060+10])
+                            Pexp_ident "not" (stdlib/obj.ml[149,5060+7]..[149,5060+10])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (stdlib/obj.ml[149,5060+11]..[149,5060+35])
+                                Pexp_apply
+                                expression (stdlib/obj.ml[149,5060+19]..[149,5060+21])
+                                  Pexp_ident "&&" (stdlib/obj.ml[149,5060+19]..[149,5060+21])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (stdlib/obj.ml[149,5060+12]..[149,5060+18])
+                                      Pexp_apply
+                                      expression (stdlib/obj.ml[149,5060+14]..[149,5060+16])
+                                        Pexp_ident "<=" (stdlib/obj.ml[149,5060+14]..[149,5060+16])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (stdlib/obj.ml[149,5060+12]..[149,5060+13])
+                                            Pexp_constant PConst_int (0,None)
+                                        <arg>
+                                        Nolabel
+                                          expression (stdlib/obj.ml[149,5060+17]..[149,5060+18])
+                                            Pexp_ident "o" (stdlib/obj.ml[149,5060+17]..[149,5060+18])
+                                      ]
+                                  <arg>
+                                  Nolabel
+                                    expression (stdlib/obj.ml[149,5060+22]..[149,5060+34])
+                                      Pexp_apply
+                                      expression (stdlib/obj.ml[149,5060+24]..[149,5060+25])
+                                        Pexp_ident "<" (stdlib/obj.ml[149,5060+24]..[149,5060+25])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (stdlib/obj.ml[149,5060+22]..[149,5060+23])
+                                            Pexp_ident "o" (stdlib/obj.ml[149,5060+22]..[149,5060+23])
+                                        <arg>
+                                        Nolabel
+                                          expression (stdlib/obj.ml[149,5060+26]..[149,5060+34])
+                                            Pexp_apply
+                                            expression (stdlib/obj.ml[149,5060+26]..[149,5060+32])
+                                              Pexp_ident "length" (stdlib/obj.ml[149,5060+26]..[149,5060+32])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (stdlib/obj.ml[149,5060+33]..[149,5060+34])
+                                                  Pexp_ident "e" (stdlib/obj.ml[149,5060+33]..[149,5060+34])
+                                            ]
+                                      ]
+                                ]
+                          ]
+                        expression (stdlib/obj.ml[150,5101+6]..[150,5101+21])
+                          Pexp_apply
+                          expression (stdlib/obj.ml[150,5101+6]..[150,5101+17])
+                            Pexp_ident "invalid_arg" (stdlib/obj.ml[150,5101+6]..[150,5101+17])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (stdlib/obj.ml[150,5101+18]..[150,5101+21])
+                                Pexp_ident "msg" (stdlib/obj.ml[150,5101+18]..[150,5101+21])
+                          ]
+                        None
+            ]
+          structure_item (stdlib/obj.ml[152,5124+2]..[152,5124+66])
+            Pstr_primitive
+            value_description "get_key" (stdlib/obj.ml[152,5124+11]..[152,5124+18]) (stdlib/obj.ml[152,5124+2]..[152,5124+66])
+              core_type (stdlib/obj.ml[152,5124+20]..[152,5124+44])
+                Ptyp_arrow
+                Nolabel
+                core_type (stdlib/obj.ml[152,5124+20]..[152,5124+21])
+                  Ptyp_constr "t" (stdlib/obj.ml[152,5124+20]..[152,5124+21])
+                  []
+                core_type (stdlib/obj.ml[152,5124+25]..[152,5124+44])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (stdlib/obj.ml[152,5124+25]..[152,5124+28])
+                    Ptyp_constr "int" (stdlib/obj.ml[152,5124+25]..[152,5124+28])
+                    []
+                  core_type (stdlib/obj.ml[152,5124+32]..[152,5124+44])
+                    Ptyp_constr "option" (stdlib/obj.ml[152,5124+38]..[152,5124+44])
+                    [
+                      core_type (stdlib/obj.ml[152,5124+32]..[152,5124+37])
+                        Ptyp_constr "obj_t" (stdlib/obj.ml[152,5124+32]..[152,5124+37])
+                        []
+                    ]
+              [
+                "caml_ephe_get_key"
+              ]
+          structure_item (stdlib/obj.ml[153,5191+2]..[155,5268+15])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (stdlib/obj.ml[153,5191+6]..[153,5191+13])
+                  Ppat_var "get_key" (stdlib/obj.ml[153,5191+6]..[153,5191+13])
+                expression (stdlib/obj.ml[153,5191+14]..[155,5268+15]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (stdlib/obj.ml[153,5191+14]..[153,5191+15])
+                    Ppat_var "e" (stdlib/obj.ml[153,5191+14]..[153,5191+15])
+                  expression (stdlib/obj.ml[153,5191+16]..[155,5268+15]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (stdlib/obj.ml[153,5191+16]..[153,5191+17])
+                      Ppat_var "o" (stdlib/obj.ml[153,5191+16]..[153,5191+17])
+                    expression (stdlib/obj.ml[154,5211+4]..[155,5268+15])
+                      Pexp_sequence
+                      expression (stdlib/obj.ml[154,5211+4]..[154,5211+55])
+                        Pexp_apply
+                        expression (stdlib/obj.ml[154,5211+4]..[154,5211+27])
+                          Pexp_ident "raise_if_invalid_offset" (stdlib/obj.ml[154,5211+4]..[154,5211+27])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[154,5211+28]..[154,5211+29])
+                              Pexp_ident "e" (stdlib/obj.ml[154,5211+28]..[154,5211+29])
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[154,5211+30]..[154,5211+31])
+                              Pexp_ident "o" (stdlib/obj.ml[154,5211+30]..[154,5211+31])
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[154,5211+32]..[154,5211+55])
+                              Pexp_constant PConst_string("Obj.Ephemeron.get_key",(stdlib/obj.ml[154,5211+33]..[154,5211+54]),None)
+                        ]
+                      expression (stdlib/obj.ml[155,5268+4]..[155,5268+15])
+                        Pexp_apply
+                        expression (stdlib/obj.ml[155,5268+4]..[155,5268+11])
+                          Pexp_ident "get_key" (stdlib/obj.ml[155,5268+4]..[155,5268+11])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[155,5268+12]..[155,5268+13])
+                              Pexp_ident "e" (stdlib/obj.ml[155,5268+12]..[155,5268+13])
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[155,5268+14]..[155,5268+15])
+                              Pexp_ident "o" (stdlib/obj.ml[155,5268+14]..[155,5268+15])
+                        ]
+            ]
+          structure_item (stdlib/obj.ml[157,5285+2]..[157,5285+76])
+            Pstr_primitive
+            value_description "get_key_copy" (stdlib/obj.ml[157,5285+11]..[157,5285+23]) (stdlib/obj.ml[157,5285+2]..[157,5285+76])
+              core_type (stdlib/obj.ml[157,5285+25]..[157,5285+49])
+                Ptyp_arrow
+                Nolabel
+                core_type (stdlib/obj.ml[157,5285+25]..[157,5285+26])
+                  Ptyp_constr "t" (stdlib/obj.ml[157,5285+25]..[157,5285+26])
+                  []
+                core_type (stdlib/obj.ml[157,5285+30]..[157,5285+49])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (stdlib/obj.ml[157,5285+30]..[157,5285+33])
+                    Ptyp_constr "int" (stdlib/obj.ml[157,5285+30]..[157,5285+33])
+                    []
+                  core_type (stdlib/obj.ml[157,5285+37]..[157,5285+49])
+                    Ptyp_constr "option" (stdlib/obj.ml[157,5285+43]..[157,5285+49])
+                    [
+                      core_type (stdlib/obj.ml[157,5285+37]..[157,5285+42])
+                        Ptyp_constr "obj_t" (stdlib/obj.ml[157,5285+37]..[157,5285+42])
+                        []
+                    ]
+              [
+                "caml_ephe_get_key_copy"
+              ]
+          structure_item (stdlib/obj.ml[158,5362+2]..[160,5449+20])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (stdlib/obj.ml[158,5362+6]..[158,5362+18])
+                  Ppat_var "get_key_copy" (stdlib/obj.ml[158,5362+6]..[158,5362+18])
+                expression (stdlib/obj.ml[158,5362+19]..[160,5449+20]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (stdlib/obj.ml[158,5362+19]..[158,5362+20])
+                    Ppat_var "e" (stdlib/obj.ml[158,5362+19]..[158,5362+20])
+                  expression (stdlib/obj.ml[158,5362+21]..[160,5449+20]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (stdlib/obj.ml[158,5362+21]..[158,5362+22])
+                      Ppat_var "o" (stdlib/obj.ml[158,5362+21]..[158,5362+22])
+                    expression (stdlib/obj.ml[159,5387+4]..[160,5449+20])
+                      Pexp_sequence
+                      expression (stdlib/obj.ml[159,5387+4]..[159,5387+60])
+                        Pexp_apply
+                        expression (stdlib/obj.ml[159,5387+4]..[159,5387+27])
+                          Pexp_ident "raise_if_invalid_offset" (stdlib/obj.ml[159,5387+4]..[159,5387+27])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[159,5387+28]..[159,5387+29])
+                              Pexp_ident "e" (stdlib/obj.ml[159,5387+28]..[159,5387+29])
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[159,5387+30]..[159,5387+31])
+                              Pexp_ident "o" (stdlib/obj.ml[159,5387+30]..[159,5387+31])
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[159,5387+32]..[159,5387+60])
+                              Pexp_constant PConst_string("Obj.Ephemeron.get_key_copy",(stdlib/obj.ml[159,5387+33]..[159,5387+59]),None)
+                        ]
+                      expression (stdlib/obj.ml[160,5449+4]..[160,5449+20])
+                        Pexp_apply
+                        expression (stdlib/obj.ml[160,5449+4]..[160,5449+16])
+                          Pexp_ident "get_key_copy" (stdlib/obj.ml[160,5449+4]..[160,5449+16])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[160,5449+17]..[160,5449+18])
+                              Pexp_ident "e" (stdlib/obj.ml[160,5449+17]..[160,5449+18])
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[160,5449+19]..[160,5449+20])
+                              Pexp_ident "o" (stdlib/obj.ml[160,5449+19]..[160,5449+20])
+                        ]
+            ]
+          structure_item (stdlib/obj.ml[162,5471+2]..[162,5471+67])
+            Pstr_primitive
+            value_description "set_key" (stdlib/obj.ml[162,5471+11]..[162,5471+18]) (stdlib/obj.ml[162,5471+2]..[162,5471+67])
+              core_type (stdlib/obj.ml[162,5471+20]..[162,5471+45])
+                Ptyp_arrow
+                Nolabel
+                core_type (stdlib/obj.ml[162,5471+20]..[162,5471+21])
+                  Ptyp_constr "t" (stdlib/obj.ml[162,5471+20]..[162,5471+21])
+                  []
+                core_type (stdlib/obj.ml[162,5471+25]..[162,5471+45])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (stdlib/obj.ml[162,5471+25]..[162,5471+28])
+                    Ptyp_constr "int" (stdlib/obj.ml[162,5471+25]..[162,5471+28])
+                    []
+                  core_type (stdlib/obj.ml[162,5471+32]..[162,5471+45])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (stdlib/obj.ml[162,5471+32]..[162,5471+37])
+                      Ptyp_constr "obj_t" (stdlib/obj.ml[162,5471+32]..[162,5471+37])
+                      []
+                    core_type (stdlib/obj.ml[162,5471+41]..[162,5471+45])
+                      Ptyp_constr "unit" (stdlib/obj.ml[162,5471+41]..[162,5471+45])
+                      []
+              [
+                "caml_ephe_set_key"
+              ]
+          structure_item (stdlib/obj.ml[163,5539+2]..[165,5618+17])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (stdlib/obj.ml[163,5539+6]..[163,5539+13])
+                  Ppat_var "set_key" (stdlib/obj.ml[163,5539+6]..[163,5539+13])
+                expression (stdlib/obj.ml[163,5539+14]..[165,5618+17]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (stdlib/obj.ml[163,5539+14]..[163,5539+15])
+                    Ppat_var "e" (stdlib/obj.ml[163,5539+14]..[163,5539+15])
+                  expression (stdlib/obj.ml[163,5539+16]..[165,5618+17]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (stdlib/obj.ml[163,5539+16]..[163,5539+17])
+                      Ppat_var "o" (stdlib/obj.ml[163,5539+16]..[163,5539+17])
+                    expression (stdlib/obj.ml[163,5539+18]..[165,5618+17]) ghost
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (stdlib/obj.ml[163,5539+18]..[163,5539+19])
+                        Ppat_var "x" (stdlib/obj.ml[163,5539+18]..[163,5539+19])
+                      expression (stdlib/obj.ml[164,5561+4]..[165,5618+17])
+                        Pexp_sequence
+                        expression (stdlib/obj.ml[164,5561+4]..[164,5561+55])
+                          Pexp_apply
+                          expression (stdlib/obj.ml[164,5561+4]..[164,5561+27])
+                            Pexp_ident "raise_if_invalid_offset" (stdlib/obj.ml[164,5561+4]..[164,5561+27])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (stdlib/obj.ml[164,5561+28]..[164,5561+29])
+                                Pexp_ident "e" (stdlib/obj.ml[164,5561+28]..[164,5561+29])
+                            <arg>
+                            Nolabel
+                              expression (stdlib/obj.ml[164,5561+30]..[164,5561+31])
+                                Pexp_ident "o" (stdlib/obj.ml[164,5561+30]..[164,5561+31])
+                            <arg>
+                            Nolabel
+                              expression (stdlib/obj.ml[164,5561+32]..[164,5561+55])
+                                Pexp_constant PConst_string("Obj.Ephemeron.set_key",(stdlib/obj.ml[164,5561+33]..[164,5561+54]),None)
+                          ]
+                        expression (stdlib/obj.ml[165,5618+4]..[165,5618+17])
+                          Pexp_apply
+                          expression (stdlib/obj.ml[165,5618+4]..[165,5618+11])
+                            Pexp_ident "set_key" (stdlib/obj.ml[165,5618+4]..[165,5618+11])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (stdlib/obj.ml[165,5618+12]..[165,5618+13])
+                                Pexp_ident "e" (stdlib/obj.ml[165,5618+12]..[165,5618+13])
+                            <arg>
+                            Nolabel
+                              expression (stdlib/obj.ml[165,5618+14]..[165,5618+15])
+                                Pexp_ident "o" (stdlib/obj.ml[165,5618+14]..[165,5618+15])
+                            <arg>
+                            Nolabel
+                              expression (stdlib/obj.ml[165,5618+16]..[165,5618+17])
+                                Pexp_ident "x" (stdlib/obj.ml[165,5618+16]..[165,5618+17])
+                          ]
+            ]
+          structure_item (stdlib/obj.ml[167,5637+2]..[167,5637+62])
+            Pstr_primitive
+            value_description "unset_key" (stdlib/obj.ml[167,5637+11]..[167,5637+20]) (stdlib/obj.ml[167,5637+2]..[167,5637+62])
+              core_type (stdlib/obj.ml[167,5637+22]..[167,5637+38])
+                Ptyp_arrow
+                Nolabel
+                core_type (stdlib/obj.ml[167,5637+22]..[167,5637+23])
+                  Ptyp_constr "t" (stdlib/obj.ml[167,5637+22]..[167,5637+23])
+                  []
+                core_type (stdlib/obj.ml[167,5637+27]..[167,5637+38])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (stdlib/obj.ml[167,5637+27]..[167,5637+30])
+                    Ptyp_constr "int" (stdlib/obj.ml[167,5637+27]..[167,5637+30])
+                    []
+                  core_type (stdlib/obj.ml[167,5637+34]..[167,5637+38])
+                    Ptyp_constr "unit" (stdlib/obj.ml[167,5637+34]..[167,5637+38])
+                    []
+              [
+                "caml_ephe_unset_key"
+              ]
+          structure_item (stdlib/obj.ml[168,5700+2]..[170,5781+17])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (stdlib/obj.ml[168,5700+6]..[168,5700+15])
+                  Ppat_var "unset_key" (stdlib/obj.ml[168,5700+6]..[168,5700+15])
+                expression (stdlib/obj.ml[168,5700+16]..[170,5781+17]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (stdlib/obj.ml[168,5700+16]..[168,5700+17])
+                    Ppat_var "e" (stdlib/obj.ml[168,5700+16]..[168,5700+17])
+                  expression (stdlib/obj.ml[168,5700+18]..[170,5781+17]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (stdlib/obj.ml[168,5700+18]..[168,5700+19])
+                      Ppat_var "o" (stdlib/obj.ml[168,5700+18]..[168,5700+19])
+                    expression (stdlib/obj.ml[169,5722+4]..[170,5781+17])
+                      Pexp_sequence
+                      expression (stdlib/obj.ml[169,5722+4]..[169,5722+57])
+                        Pexp_apply
+                        expression (stdlib/obj.ml[169,5722+4]..[169,5722+27])
+                          Pexp_ident "raise_if_invalid_offset" (stdlib/obj.ml[169,5722+4]..[169,5722+27])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[169,5722+28]..[169,5722+29])
+                              Pexp_ident "e" (stdlib/obj.ml[169,5722+28]..[169,5722+29])
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[169,5722+30]..[169,5722+31])
+                              Pexp_ident "o" (stdlib/obj.ml[169,5722+30]..[169,5722+31])
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[169,5722+32]..[169,5722+57])
+                              Pexp_constant PConst_string("Obj.Ephemeron.unset_key",(stdlib/obj.ml[169,5722+33]..[169,5722+56]),None)
+                        ]
+                      expression (stdlib/obj.ml[170,5781+4]..[170,5781+17])
+                        Pexp_apply
+                        expression (stdlib/obj.ml[170,5781+4]..[170,5781+13])
+                          Pexp_ident "unset_key" (stdlib/obj.ml[170,5781+4]..[170,5781+13])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[170,5781+14]..[170,5781+15])
+                              Pexp_ident "e" (stdlib/obj.ml[170,5781+14]..[170,5781+15])
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[170,5781+16]..[170,5781+17])
+                              Pexp_ident "o" (stdlib/obj.ml[170,5781+16]..[170,5781+17])
+                        ]
+            ]
+          structure_item (stdlib/obj.ml[172,5800+2]..[172,5800+62])
+            Pstr_primitive
+            value_description "check_key" (stdlib/obj.ml[172,5800+11]..[172,5800+20]) (stdlib/obj.ml[172,5800+2]..[172,5800+62])
+              core_type (stdlib/obj.ml[172,5800+22]..[172,5800+38])
+                Ptyp_arrow
+                Nolabel
+                core_type (stdlib/obj.ml[172,5800+22]..[172,5800+23])
+                  Ptyp_constr "t" (stdlib/obj.ml[172,5800+22]..[172,5800+23])
+                  []
+                core_type (stdlib/obj.ml[172,5800+27]..[172,5800+38])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (stdlib/obj.ml[172,5800+27]..[172,5800+30])
+                    Ptyp_constr "int" (stdlib/obj.ml[172,5800+27]..[172,5800+30])
+                    []
+                  core_type (stdlib/obj.ml[172,5800+34]..[172,5800+38])
+                    Ptyp_constr "bool" (stdlib/obj.ml[172,5800+34]..[172,5800+38])
+                    []
+              [
+                "caml_ephe_check_key"
+              ]
+          structure_item (stdlib/obj.ml[173,5863+2]..[175,5944+17])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (stdlib/obj.ml[173,5863+6]..[173,5863+15])
+                  Ppat_var "check_key" (stdlib/obj.ml[173,5863+6]..[173,5863+15])
+                expression (stdlib/obj.ml[173,5863+16]..[175,5944+17]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (stdlib/obj.ml[173,5863+16]..[173,5863+17])
+                    Ppat_var "e" (stdlib/obj.ml[173,5863+16]..[173,5863+17])
+                  expression (stdlib/obj.ml[173,5863+18]..[175,5944+17]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (stdlib/obj.ml[173,5863+18]..[173,5863+19])
+                      Ppat_var "o" (stdlib/obj.ml[173,5863+18]..[173,5863+19])
+                    expression (stdlib/obj.ml[174,5885+4]..[175,5944+17])
+                      Pexp_sequence
+                      expression (stdlib/obj.ml[174,5885+4]..[174,5885+57])
+                        Pexp_apply
+                        expression (stdlib/obj.ml[174,5885+4]..[174,5885+27])
+                          Pexp_ident "raise_if_invalid_offset" (stdlib/obj.ml[174,5885+4]..[174,5885+27])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[174,5885+28]..[174,5885+29])
+                              Pexp_ident "e" (stdlib/obj.ml[174,5885+28]..[174,5885+29])
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[174,5885+30]..[174,5885+31])
+                              Pexp_ident "o" (stdlib/obj.ml[174,5885+30]..[174,5885+31])
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[174,5885+32]..[174,5885+57])
+                              Pexp_constant PConst_string("Obj.Ephemeron.check_key",(stdlib/obj.ml[174,5885+33]..[174,5885+56]),None)
+                        ]
+                      expression (stdlib/obj.ml[175,5944+4]..[175,5944+17])
+                        Pexp_apply
+                        expression (stdlib/obj.ml[175,5944+4]..[175,5944+13])
+                          Pexp_ident "check_key" (stdlib/obj.ml[175,5944+4]..[175,5944+13])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[175,5944+14]..[175,5944+15])
+                              Pexp_ident "e" (stdlib/obj.ml[175,5944+14]..[175,5944+15])
+                          <arg>
+                          Nolabel
+                            expression (stdlib/obj.ml[175,5944+16]..[175,5944+17])
+                              Pexp_ident "o" (stdlib/obj.ml[175,5944+16]..[175,5944+17])
+                        ]
+            ]
+          structure_item (stdlib/obj.ml[177,5963+2]..[178,6021+26])
+            Pstr_primitive
+            value_description "blit_key" (stdlib/obj.ml[177,5963+11]..[177,5963+19]) (stdlib/obj.ml[177,5963+2]..[178,6021+26])
+              core_type (stdlib/obj.ml[177,5963+22]..[177,5963+57])
+                Ptyp_arrow
+                Nolabel
+                core_type (stdlib/obj.ml[177,5963+22]..[177,5963+23])
+                  Ptyp_constr "t" (stdlib/obj.ml[177,5963+22]..[177,5963+23])
+                  []
+                core_type (stdlib/obj.ml[177,5963+27]..[177,5963+57])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (stdlib/obj.ml[177,5963+27]..[177,5963+30])
+                    Ptyp_constr "int" (stdlib/obj.ml[177,5963+27]..[177,5963+30])
+                    []
+                  core_type (stdlib/obj.ml[177,5963+34]..[177,5963+57])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (stdlib/obj.ml[177,5963+34]..[177,5963+35])
+                      Ptyp_constr "t" (stdlib/obj.ml[177,5963+34]..[177,5963+35])
+                      []
+                    core_type (stdlib/obj.ml[177,5963+39]..[177,5963+57])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (stdlib/obj.ml[177,5963+39]..[177,5963+42])
+                        Ptyp_constr "int" (stdlib/obj.ml[177,5963+39]..[177,5963+42])
+                        []
+                      core_type (stdlib/obj.ml[177,5963+46]..[177,5963+57])
+                        Ptyp_arrow
+                        Nolabel
+                        core_type (stdlib/obj.ml[177,5963+46]..[177,5963+49])
+                          Ptyp_constr "int" (stdlib/obj.ml[177,5963+46]..[177,5963+49])
+                          []
+                        core_type (stdlib/obj.ml[177,5963+53]..[177,5963+57])
+                          Ptyp_constr "unit" (stdlib/obj.ml[177,5963+53]..[177,5963+57])
+                          []
+              [
+                "caml_ephe_blit_key"
+              ]
+          structure_item (stdlib/obj.ml[180,6049+2]..[184,6210+46])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (stdlib/obj.ml[180,6049+6]..[180,6049+14])
+                  Ppat_var "blit_key" (stdlib/obj.ml[180,6049+6]..[180,6049+14])
+                expression (stdlib/obj.ml[180,6049+15]..[184,6210+46]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (stdlib/obj.ml[180,6049+15]..[180,6049+17])
+                    Ppat_var "e1" (stdlib/obj.ml[180,6049+15]..[180,6049+17])
+                  expression (stdlib/obj.ml[180,6049+18]..[184,6210+46]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (stdlib/obj.ml[180,6049+18]..[180,6049+20])
+                      Ppat_var "o1" (stdlib/obj.ml[180,6049+18]..[180,6049+20])
+                    expression (stdlib/obj.ml[180,6049+21]..[184,6210+46]) ghost
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (stdlib/obj.ml[180,6049+21]..[180,6049+23])
+                        Ppat_var "e2" (stdlib/obj.ml[180,6049+21]..[180,6049+23])
+                      expression (stdlib/obj.ml[180,6049+24]..[184,6210+46]) ghost
+                        Pexp_fun
+                        Nolabel
+                        None
+                        pattern (stdlib/obj.ml[180,6049+24]..[180,6049+26])
+                          Ppat_var "o2" (stdlib/obj.ml[180,6049+24]..[180,6049+26])
+                        expression (stdlib/obj.ml[180,6049+27]..[184,6210+46]) ghost
+                          Pexp_fun
+                          Nolabel
+                          None
+                          pattern (stdlib/obj.ml[180,6049+27]..[180,6049+28])
+                            Ppat_var "l" (stdlib/obj.ml[180,6049+27]..[180,6049+28])
+                          expression (stdlib/obj.ml[181,6080+4]..[184,6210+46])
+                            Pexp_ifthenelse
+                            expression (stdlib/obj.ml[181,6080+7]..[182,6125+38])
+                              Pexp_apply
+                              expression (stdlib/obj.ml[181,6080+13]..[181,6080+15])
+                                Pexp_ident "||" (stdlib/obj.ml[181,6080+13]..[181,6080+15])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (stdlib/obj.ml[181,6080+7]..[181,6080+12])
+                                    Pexp_apply
+                                    expression (stdlib/obj.ml[181,6080+9]..[181,6080+10])
+                                      Pexp_ident "<" (stdlib/obj.ml[181,6080+9]..[181,6080+10])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (stdlib/obj.ml[181,6080+7]..[181,6080+8])
+                                          Pexp_ident "l" (stdlib/obj.ml[181,6080+7]..[181,6080+8])
+                                      <arg>
+                                      Nolabel
+                                        expression (stdlib/obj.ml[181,6080+11]..[181,6080+12])
+                                          Pexp_constant PConst_int (0,None)
+                                    ]
+                                <arg>
+                                Nolabel
+                                  expression (stdlib/obj.ml[181,6080+16]..[182,6125+38])
+                                    Pexp_apply
+                                    expression (stdlib/obj.ml[181,6080+23]..[181,6080+25])
+                                      Pexp_ident "||" (stdlib/obj.ml[181,6080+23]..[181,6080+25])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (stdlib/obj.ml[181,6080+16]..[181,6080+22])
+                                          Pexp_apply
+                                          expression (stdlib/obj.ml[181,6080+19]..[181,6080+20])
+                                            Pexp_ident "<" (stdlib/obj.ml[181,6080+19]..[181,6080+20])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (stdlib/obj.ml[181,6080+16]..[181,6080+18])
+                                                Pexp_ident "o1" (stdlib/obj.ml[181,6080+16]..[181,6080+18])
+                                            <arg>
+                                            Nolabel
+                                              expression (stdlib/obj.ml[181,6080+21]..[181,6080+22])
+                                                Pexp_constant PConst_int (0,None)
+                                          ]
+                                      <arg>
+                                      Nolabel
+                                        expression (stdlib/obj.ml[181,6080+26]..[182,6125+38])
+                                          Pexp_apply
+                                          expression (stdlib/obj.ml[182,6125+7]..[182,6125+9])
+                                            Pexp_ident "||" (stdlib/obj.ml[182,6125+7]..[182,6125+9])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (stdlib/obj.ml[181,6080+26]..[181,6080+44])
+                                                Pexp_apply
+                                                expression (stdlib/obj.ml[181,6080+29]..[181,6080+30])
+                                                  Pexp_ident ">" (stdlib/obj.ml[181,6080+29]..[181,6080+30])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (stdlib/obj.ml[181,6080+26]..[181,6080+28])
+                                                      Pexp_ident "o1" (stdlib/obj.ml[181,6080+26]..[181,6080+28])
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (stdlib/obj.ml[181,6080+31]..[181,6080+44])
+                                                      Pexp_apply
+                                                      expression (stdlib/obj.ml[181,6080+41]..[181,6080+42])
+                                                        Pexp_ident "-" (stdlib/obj.ml[181,6080+41]..[181,6080+42])
+                                                      [
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (stdlib/obj.ml[181,6080+31]..[181,6080+40])
+                                                            Pexp_apply
+                                                            expression (stdlib/obj.ml[181,6080+31]..[181,6080+37])
+                                                              Pexp_ident "length" (stdlib/obj.ml[181,6080+31]..[181,6080+37])
+                                                            [
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (stdlib/obj.ml[181,6080+38]..[181,6080+40])
+                                                                  Pexp_ident "e1" (stdlib/obj.ml[181,6080+38]..[181,6080+40])
+                                                            ]
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (stdlib/obj.ml[181,6080+43]..[181,6080+44])
+                                                            Pexp_ident "l" (stdlib/obj.ml[181,6080+43]..[181,6080+44])
+                                                      ]
+                                                ]
+                                            <arg>
+                                            Nolabel
+                                              expression (stdlib/obj.ml[182,6125+10]..[182,6125+38])
+                                                Pexp_apply
+                                                expression (stdlib/obj.ml[182,6125+17]..[182,6125+19])
+                                                  Pexp_ident "||" (stdlib/obj.ml[182,6125+17]..[182,6125+19])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (stdlib/obj.ml[182,6125+10]..[182,6125+16])
+                                                      Pexp_apply
+                                                      expression (stdlib/obj.ml[182,6125+13]..[182,6125+14])
+                                                        Pexp_ident "<" (stdlib/obj.ml[182,6125+13]..[182,6125+14])
+                                                      [
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (stdlib/obj.ml[182,6125+10]..[182,6125+12])
+                                                            Pexp_ident "o2" (stdlib/obj.ml[182,6125+10]..[182,6125+12])
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (stdlib/obj.ml[182,6125+15]..[182,6125+16])
+                                                            Pexp_constant PConst_int (0,None)
+                                                      ]
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (stdlib/obj.ml[182,6125+20]..[182,6125+38])
+                                                      Pexp_apply
+                                                      expression (stdlib/obj.ml[182,6125+23]..[182,6125+24])
+                                                        Pexp_ident ">" (stdlib/obj.ml[182,6125+23]..[182,6125+24])
+                                                      [
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (stdlib/obj.ml[182,6125+20]..[182,6125+22])
+                                                            Pexp_ident "o2" (stdlib/obj.ml[182,6125+20]..[182,6125+22])
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (stdlib/obj.ml[182,6125+25]..[182,6125+38])
+                                                            Pexp_apply
+                                                            expression (stdlib/obj.ml[182,6125+35]..[182,6125+36])
+                                                              Pexp_ident "-" (stdlib/obj.ml[182,6125+35]..[182,6125+36])
+                                                            [
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (stdlib/obj.ml[182,6125+25]..[182,6125+34])
+                                                                  Pexp_apply
+                                                                  expression (stdlib/obj.ml[182,6125+25]..[182,6125+31])
+                                                                    Pexp_ident "length" (stdlib/obj.ml[182,6125+25]..[182,6125+31])
+                                                                  [
+                                                                    <arg>
+                                                                    Nolabel
+                                                                      expression (stdlib/obj.ml[182,6125+32]..[182,6125+34])
+Pexp_ident "e2" (stdlib/obj.ml[182,6125+32]..[182,6125+34])
+                                                                  ]
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (stdlib/obj.ml[182,6125+37]..[182,6125+38])
+                                                                  Pexp_ident "l" (stdlib/obj.ml[182,6125+37]..[182,6125+38])
+                                                            ]
+                                                      ]
+                                                ]
+                                          ]
+                                    ]
+                              ]
+                            expression (stdlib/obj.ml[183,6164+9]..[183,6164+45])
+                              Pexp_apply
+                              expression (stdlib/obj.ml[183,6164+9]..[183,6164+20])
+                                Pexp_ident "invalid_arg" (stdlib/obj.ml[183,6164+9]..[183,6164+20])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (stdlib/obj.ml[183,6164+21]..[183,6164+45])
+                                    Pexp_constant PConst_string("Obj.Ephemeron.blit_key",(stdlib/obj.ml[183,6164+22]..[183,6164+44]),None)
+                              ]
+                            Some
+                              expression (stdlib/obj.ml[184,6210+9]..[184,6210+46])
+                                Pexp_ifthenelse
+                                expression (stdlib/obj.ml[184,6210+12]..[184,6210+18])
+                                  Pexp_apply
+                                  expression (stdlib/obj.ml[184,6210+14]..[184,6210+16])
+                                    Pexp_ident "<>" (stdlib/obj.ml[184,6210+14]..[184,6210+16])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (stdlib/obj.ml[184,6210+12]..[184,6210+13])
+                                        Pexp_ident "l" (stdlib/obj.ml[184,6210+12]..[184,6210+13])
+                                    <arg>
+                                    Nolabel
+                                      expression (stdlib/obj.ml[184,6210+17]..[184,6210+18])
+                                        Pexp_constant PConst_int (0,None)
+                                  ]
+                                expression (stdlib/obj.ml[184,6210+24]..[184,6210+46])
+                                  Pexp_apply
+                                  expression (stdlib/obj.ml[184,6210+24]..[184,6210+32])
+                                    Pexp_ident "blit_key" (stdlib/obj.ml[184,6210+24]..[184,6210+32])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (stdlib/obj.ml[184,6210+33]..[184,6210+35])
+                                        Pexp_ident "e1" (stdlib/obj.ml[184,6210+33]..[184,6210+35])
+                                    <arg>
+                                    Nolabel
+                                      expression (stdlib/obj.ml[184,6210+36]..[184,6210+38])
+                                        Pexp_ident "o1" (stdlib/obj.ml[184,6210+36]..[184,6210+38])
+                                    <arg>
+                                    Nolabel
+                                      expression (stdlib/obj.ml[184,6210+39]..[184,6210+41])
+                                        Pexp_ident "e2" (stdlib/obj.ml[184,6210+39]..[184,6210+41])
+                                    <arg>
+                                    Nolabel
+                                      expression (stdlib/obj.ml[184,6210+42]..[184,6210+44])
+                                        Pexp_ident "o2" (stdlib/obj.ml[184,6210+42]..[184,6210+44])
+                                    <arg>
+                                    Nolabel
+                                      expression (stdlib/obj.ml[184,6210+45]..[184,6210+46])
+                                        Pexp_ident "l" (stdlib/obj.ml[184,6210+45]..[184,6210+46])
+                                  ]
+                                None
+            ]
+          structure_item (stdlib/obj.ml[186,6258+2]..[186,6258+61])
+            Pstr_primitive
+            value_description "get_data" (stdlib/obj.ml[186,6258+11]..[186,6258+19]) (stdlib/obj.ml[186,6258+2]..[186,6258+61])
+              core_type (stdlib/obj.ml[186,6258+21]..[186,6258+38])
+                Ptyp_arrow
+                Nolabel
+                core_type (stdlib/obj.ml[186,6258+21]..[186,6258+22])
+                  Ptyp_constr "t" (stdlib/obj.ml[186,6258+21]..[186,6258+22])
+                  []
+                core_type (stdlib/obj.ml[186,6258+26]..[186,6258+38])
+                  Ptyp_constr "option" (stdlib/obj.ml[186,6258+32]..[186,6258+38])
+                  [
+                    core_type (stdlib/obj.ml[186,6258+26]..[186,6258+31])
+                      Ptyp_constr "obj_t" (stdlib/obj.ml[186,6258+26]..[186,6258+31])
+                      []
+                  ]
+              [
+                "caml_ephe_get_data"
+              ]
+          structure_item (stdlib/obj.ml[187,6320+2]..[187,6320+71])
+            Pstr_primitive
+            value_description "get_data_copy" (stdlib/obj.ml[187,6320+11]..[187,6320+24]) (stdlib/obj.ml[187,6320+2]..[187,6320+71])
+              core_type (stdlib/obj.ml[187,6320+26]..[187,6320+43])
+                Ptyp_arrow
+                Nolabel
+                core_type (stdlib/obj.ml[187,6320+26]..[187,6320+27])
+                  Ptyp_constr "t" (stdlib/obj.ml[187,6320+26]..[187,6320+27])
+                  []
+                core_type (stdlib/obj.ml[187,6320+31]..[187,6320+43])
+                  Ptyp_constr "option" (stdlib/obj.ml[187,6320+37]..[187,6320+43])
+                  [
+                    core_type (stdlib/obj.ml[187,6320+31]..[187,6320+36])
+                      Ptyp_constr "obj_t" (stdlib/obj.ml[187,6320+31]..[187,6320+36])
+                      []
+                  ]
+              [
+                "caml_ephe_get_data_copy"
+              ]
+          structure_item (stdlib/obj.ml[188,6392+2]..[188,6392+62])
+            Pstr_primitive
+            value_description "set_data" (stdlib/obj.ml[188,6392+11]..[188,6392+19]) (stdlib/obj.ml[188,6392+2]..[188,6392+62])
+              core_type (stdlib/obj.ml[188,6392+21]..[188,6392+39])
+                Ptyp_arrow
+                Nolabel
+                core_type (stdlib/obj.ml[188,6392+21]..[188,6392+22])
+                  Ptyp_constr "t" (stdlib/obj.ml[188,6392+21]..[188,6392+22])
+                  []
+                core_type (stdlib/obj.ml[188,6392+26]..[188,6392+39])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (stdlib/obj.ml[188,6392+26]..[188,6392+31])
+                    Ptyp_constr "obj_t" (stdlib/obj.ml[188,6392+26]..[188,6392+31])
+                    []
+                  core_type (stdlib/obj.ml[188,6392+35]..[188,6392+39])
+                    Ptyp_constr "unit" (stdlib/obj.ml[188,6392+35]..[188,6392+39])
+                    []
+              [
+                "caml_ephe_set_data"
+              ]
+          structure_item (stdlib/obj.ml[189,6455+2]..[189,6455+57])
+            Pstr_primitive
+            value_description "unset_data" (stdlib/obj.ml[189,6455+11]..[189,6455+21]) (stdlib/obj.ml[189,6455+2]..[189,6455+57])
+              core_type (stdlib/obj.ml[189,6455+23]..[189,6455+32])
+                Ptyp_arrow
+                Nolabel
+                core_type (stdlib/obj.ml[189,6455+23]..[189,6455+24])
+                  Ptyp_constr "t" (stdlib/obj.ml[189,6455+23]..[189,6455+24])
+                  []
+                core_type (stdlib/obj.ml[189,6455+28]..[189,6455+32])
+                  Ptyp_constr "unit" (stdlib/obj.ml[189,6455+28]..[189,6455+32])
+                  []
+              [
+                "caml_ephe_unset_data"
+              ]
+          structure_item (stdlib/obj.ml[190,6513+2]..[190,6513+57])
+            Pstr_primitive
+            value_description "check_data" (stdlib/obj.ml[190,6513+11]..[190,6513+21]) (stdlib/obj.ml[190,6513+2]..[190,6513+57])
+              core_type (stdlib/obj.ml[190,6513+23]..[190,6513+32])
+                Ptyp_arrow
+                Nolabel
+                core_type (stdlib/obj.ml[190,6513+23]..[190,6513+24])
+                  Ptyp_constr "t" (stdlib/obj.ml[190,6513+23]..[190,6513+24])
+                  []
+                core_type (stdlib/obj.ml[190,6513+28]..[190,6513+32])
+                  Ptyp_constr "bool" (stdlib/obj.ml[190,6513+28]..[190,6513+32])
+                  []
+              [
+                "caml_ephe_check_data"
+              ]
+          structure_item (stdlib/obj.ml[191,6571+2]..[191,6571+61])
+            Pstr_primitive
+            value_description "blit_data" (stdlib/obj.ml[191,6571+11]..[191,6571+20]) (stdlib/obj.ml[191,6571+2]..[191,6571+61])
+              core_type (stdlib/obj.ml[191,6571+23]..[191,6571+37])
+                Ptyp_arrow
+                Nolabel
+                core_type (stdlib/obj.ml[191,6571+23]..[191,6571+24])
+                  Ptyp_constr "t" (stdlib/obj.ml[191,6571+23]..[191,6571+24])
+                  []
+                core_type (stdlib/obj.ml[191,6571+28]..[191,6571+37])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (stdlib/obj.ml[191,6571+28]..[191,6571+29])
+                    Ptyp_constr "t" (stdlib/obj.ml[191,6571+28]..[191,6571+29])
+                    []
+                  core_type (stdlib/obj.ml[191,6571+33]..[191,6571+37])
+                    Ptyp_constr "unit" (stdlib/obj.ml[191,6571+33]..[191,6571+37])
+                    []
+              [
+                "caml_ephe_blit_data"
+              ]
+        ]
+]
+

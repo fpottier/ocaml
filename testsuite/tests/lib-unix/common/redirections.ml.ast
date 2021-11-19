@@ -1,0 +1,2000 @@
+[
+  structure_item (testsuite/tests/lib-unix/common/redirections.ml[35,797+0]..[41,1035+26])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/common/redirections.ml[35,797+4]..[35,797+7])
+          Ppat_var "cat" (testsuite/tests/lib-unix/common/redirections.ml[35,797+4]..[35,797+7])
+        expression (testsuite/tests/lib-unix/common/redirections.ml[35,797+8]..[41,1035+26]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-unix/common/redirections.ml[35,797+8]..[35,797+12])
+            Ppat_var "file" (testsuite/tests/lib-unix/common/redirections.ml[35,797+8]..[35,797+12])
+          expression (testsuite/tests/lib-unix/common/redirections.ml[36,812+2]..[41,1035+26])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (testsuite/tests/lib-unix/common/redirections.ml[36,812+6]..[36,812+8])
+                  Ppat_var "fd" (testsuite/tests/lib-unix/common/redirections.ml[36,812+6]..[36,812+8])
+                expression (testsuite/tests/lib-unix/common/redirections.ml[36,812+11]..[36,812+47])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[36,812+11]..[36,812+24])
+                    Pexp_ident "Unix.openfile" (testsuite/tests/lib-unix/common/redirections.ml[36,812+11]..[36,812+24])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[36,812+25]..[36,812+29])
+                        Pexp_ident "file" (testsuite/tests/lib-unix/common/redirections.ml[36,812+25]..[36,812+29])
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[36,812+30]..[36,812+45])
+                        Pexp_construct "::" (testsuite/tests/lib-unix/common/redirections.ml[36,812+31]..[36,812+45]) ghost
+                        Some
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[36,812+31]..[36,812+45]) ghost
+                            Pexp_tuple
+                            [
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[36,812+31]..[36,812+44])
+                                Pexp_construct "Unix.O_RDONLY" (testsuite/tests/lib-unix/common/redirections.ml[36,812+31]..[36,812+44])
+                                None
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[36,812+44]..[36,812+45]) ghost
+                                Pexp_construct "[]" (testsuite/tests/lib-unix/common/redirections.ml[36,812+44]..[36,812+45]) ghost
+                                None
+                            ]
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[36,812+46]..[36,812+47])
+                        Pexp_constant PConst_int (0,None)
+                  ]
+            ]
+            expression (testsuite/tests/lib-unix/common/redirections.ml[37,863+2]..[41,1035+26])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (testsuite/tests/lib-unix/common/redirections.ml[37,863+6]..[37,863+9])
+                    Ppat_var "buf" (testsuite/tests/lib-unix/common/redirections.ml[37,863+6]..[37,863+9])
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[37,863+12]..[37,863+29])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[37,863+12]..[37,863+24])
+                      Pexp_ident "Bytes.create" (testsuite/tests/lib-unix/common/redirections.ml[37,863+12]..[37,863+24])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[37,863+25]..[37,863+29])
+                          Pexp_constant PConst_int (1024,None)
+                    ]
+              ]
+              expression (testsuite/tests/lib-unix/common/redirections.ml[38,896+2]..[41,1035+26])
+                Pexp_let Rec
+                [
+                  <def>
+                    pattern (testsuite/tests/lib-unix/common/redirections.ml[38,896+10]..[38,896+13])
+                      Ppat_var "cat" (testsuite/tests/lib-unix/common/redirections.ml[38,896+10]..[38,896+13])
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[38,896+14]..[40,968+66]) ghost
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (testsuite/tests/lib-unix/common/redirections.ml[38,896+14]..[38,896+16])
+                        Ppat_construct "()" (testsuite/tests/lib-unix/common/redirections.ml[38,896+14]..[38,896+16])
+                        None
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[39,915+4]..[40,968+66])
+                        Pexp_let Nonrec
+                        [
+                          <def>
+                            pattern (testsuite/tests/lib-unix/common/redirections.ml[39,915+8]..[39,915+9])
+                              Ppat_var "n" (testsuite/tests/lib-unix/common/redirections.ml[39,915+8]..[39,915+9])
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[39,915+12]..[39,915+49])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[39,915+12]..[39,915+21])
+                                Pexp_ident "Unix.read" (testsuite/tests/lib-unix/common/redirections.ml[39,915+12]..[39,915+21])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[39,915+22]..[39,915+24])
+                                    Pexp_ident "fd" (testsuite/tests/lib-unix/common/redirections.ml[39,915+22]..[39,915+24])
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[39,915+25]..[39,915+28])
+                                    Pexp_ident "buf" (testsuite/tests/lib-unix/common/redirections.ml[39,915+25]..[39,915+28])
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[39,915+29]..[39,915+30])
+                                    Pexp_constant PConst_int (0,None)
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[39,915+31]..[39,915+49])
+                                    Pexp_apply
+                                    expression (testsuite/tests/lib-unix/common/redirections.ml[39,915+32]..[39,915+44])
+                                      Pexp_ident "Bytes.length" (testsuite/tests/lib-unix/common/redirections.ml[39,915+32]..[39,915+44])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-unix/common/redirections.ml[39,915+45]..[39,915+48])
+                                          Pexp_ident "buf" (testsuite/tests/lib-unix/common/redirections.ml[39,915+45]..[39,915+48])
+                                    ]
+                              ]
+                        ]
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[40,968+4]..[40,968+66])
+                          Pexp_ifthenelse
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[40,968+7]..[40,968+12])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[40,968+9]..[40,968+10])
+                              Pexp_ident ">" (testsuite/tests/lib-unix/common/redirections.ml[40,968+9]..[40,968+10])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[40,968+7]..[40,968+8])
+                                  Pexp_ident "n" (testsuite/tests/lib-unix/common/redirections.ml[40,968+7]..[40,968+8])
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[40,968+11]..[40,968+12])
+                                  Pexp_constant PConst_int (0,None)
+                            ]
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[40,968+18]..[40,968+66])
+                            Pexp_sequence
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[40,968+19]..[40,968+57])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[40,968+19]..[40,968+25])
+                                Pexp_ident "ignore" (testsuite/tests/lib-unix/common/redirections.ml[40,968+19]..[40,968+25])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[40,968+25]..[40,968+57])
+                                    Pexp_apply
+                                    expression (testsuite/tests/lib-unix/common/redirections.ml[40,968+26]..[40,968+36])
+                                      Pexp_ident "Unix.write" (testsuite/tests/lib-unix/common/redirections.ml[40,968+26]..[40,968+36])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-unix/common/redirections.ml[40,968+37]..[40,968+48])
+                                          Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[40,968+37]..[40,968+48])
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-unix/common/redirections.ml[40,968+49]..[40,968+52])
+                                          Pexp_ident "buf" (testsuite/tests/lib-unix/common/redirections.ml[40,968+49]..[40,968+52])
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-unix/common/redirections.ml[40,968+53]..[40,968+54])
+                                          Pexp_constant PConst_int (0,None)
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-unix/common/redirections.ml[40,968+55]..[40,968+56])
+                                          Pexp_ident "n" (testsuite/tests/lib-unix/common/redirections.ml[40,968+55]..[40,968+56])
+                                    ]
+                              ]
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[40,968+59]..[40,968+65])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[40,968+59]..[40,968+62])
+                                Pexp_ident "cat" (testsuite/tests/lib-unix/common/redirections.ml[40,968+59]..[40,968+62])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[40,968+63]..[40,968+65])
+                                    Pexp_construct "()" (testsuite/tests/lib-unix/common/redirections.ml[40,968+63]..[40,968+65])
+                                    None
+                              ]
+                          None
+                ]
+                expression (testsuite/tests/lib-unix/common/redirections.ml[41,1035+5]..[41,1035+26])
+                  Pexp_sequence
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[41,1035+5]..[41,1035+11])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[41,1035+5]..[41,1035+8])
+                      Pexp_ident "cat" (testsuite/tests/lib-unix/common/redirections.ml[41,1035+5]..[41,1035+8])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[41,1035+9]..[41,1035+11])
+                          Pexp_construct "()" (testsuite/tests/lib-unix/common/redirections.ml[41,1035+9]..[41,1035+11])
+                          None
+                    ]
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[41,1035+13]..[41,1035+26])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[41,1035+13]..[41,1035+23])
+                      Pexp_ident "Unix.close" (testsuite/tests/lib-unix/common/redirections.ml[41,1035+13]..[41,1035+23])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[41,1035+24]..[41,1035+26])
+                          Pexp_ident "fd" (testsuite/tests/lib-unix/common/redirections.ml[41,1035+24]..[41,1035+26])
+                    ]
+    ]
+  structure_item (testsuite/tests/lib-unix/common/redirections.ml[43,1063+0]..[44,1080+60])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/common/redirections.ml[43,1063+4]..[43,1063+7])
+          Ppat_var "out" (testsuite/tests/lib-unix/common/redirections.ml[43,1063+4]..[43,1063+7])
+        expression (testsuite/tests/lib-unix/common/redirections.ml[43,1063+8]..[44,1080+60]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-unix/common/redirections.ml[43,1063+8]..[43,1063+10])
+            Ppat_var "fd" (testsuite/tests/lib-unix/common/redirections.ml[43,1063+8]..[43,1063+10])
+          expression (testsuite/tests/lib-unix/common/redirections.ml[43,1063+11]..[44,1080+60]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/lib-unix/common/redirections.ml[43,1063+11]..[43,1063+14])
+              Ppat_var "txt" (testsuite/tests/lib-unix/common/redirections.ml[43,1063+11]..[43,1063+14])
+            expression (testsuite/tests/lib-unix/common/redirections.ml[44,1080+2]..[44,1080+60])
+              Pexp_apply
+              expression (testsuite/tests/lib-unix/common/redirections.ml[44,1080+2]..[44,1080+8])
+                Pexp_ident "ignore" (testsuite/tests/lib-unix/common/redirections.ml[44,1080+2]..[44,1080+8])
+              [
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[44,1080+9]..[44,1080+60])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[44,1080+10]..[44,1080+30])
+                      Pexp_ident "Unix.write_substring" (testsuite/tests/lib-unix/common/redirections.ml[44,1080+10]..[44,1080+30])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[44,1080+31]..[44,1080+33])
+                          Pexp_ident "fd" (testsuite/tests/lib-unix/common/redirections.ml[44,1080+31]..[44,1080+33])
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[44,1080+34]..[44,1080+37])
+                          Pexp_ident "txt" (testsuite/tests/lib-unix/common/redirections.ml[44,1080+34]..[44,1080+37])
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[44,1080+38]..[44,1080+39])
+                          Pexp_constant PConst_int (0,None)
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[44,1080+40]..[44,1080+59])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[44,1080+41]..[44,1080+54])
+                            Pexp_ident "String.length" (testsuite/tests/lib-unix/common/redirections.ml[44,1080+41]..[44,1080+54])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[44,1080+55]..[44,1080+58])
+                                Pexp_ident "txt" (testsuite/tests/lib-unix/common/redirections.ml[44,1080+55]..[44,1080+58])
+                          ]
+                    ]
+              ]
+    ]
+  structure_item (testsuite/tests/lib-unix/common/redirections.ml[46,1142+0]..[47,1153+59])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/common/redirections.ml[46,1142+4]..[46,1142+8])
+          Ppat_var "refl" (testsuite/tests/lib-unix/common/redirections.ml[46,1142+4]..[46,1142+8])
+        expression (testsuite/tests/lib-unix/common/redirections.ml[47,1153+2]..[47,1153+59])
+          Pexp_apply
+          expression (testsuite/tests/lib-unix/common/redirections.ml[47,1153+2]..[47,1153+17])
+            Pexp_ident "Filename.concat" (testsuite/tests/lib-unix/common/redirections.ml[47,1153+2]..[47,1153+17])
+          [
+            <arg>
+            Nolabel
+              expression (testsuite/tests/lib-unix/common/redirections.ml[47,1153+18]..[47,1153+43])
+                Pexp_ident "Filename.current_dir_name" (testsuite/tests/lib-unix/common/redirections.ml[47,1153+18]..[47,1153+43])
+            <arg>
+            Nolabel
+              expression (testsuite/tests/lib-unix/common/redirections.ml[47,1153+44]..[47,1153+59])
+                Pexp_constant PConst_string("reflector.exe",(testsuite/tests/lib-unix/common/redirections.ml[47,1153+45]..[47,1153+58]),None)
+          ]
+    ]
+  structure_item (testsuite/tests/lib-unix/common/redirections.ml[49,1214+0]..[75,2157+27])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/common/redirections.ml[49,1214+4]..[49,1214+22])
+          Ppat_var "test_createprocess" (testsuite/tests/lib-unix/common/redirections.ml[49,1214+4]..[49,1214+22])
+        expression (testsuite/tests/lib-unix/common/redirections.ml[49,1214+23]..[75,2157+27]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-unix/common/redirections.ml[49,1214+23]..[49,1214+32])
+            Ppat_var "systemenv" (testsuite/tests/lib-unix/common/redirections.ml[49,1214+23]..[49,1214+32])
+          expression (testsuite/tests/lib-unix/common/redirections.ml[50,1249+2]..[75,2157+27])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (testsuite/tests/lib-unix/common/redirections.ml[50,1249+6]..[50,1249+11])
+                  Ppat_var "f_out" (testsuite/tests/lib-unix/common/redirections.ml[50,1249+6]..[50,1249+11])
+                expression (testsuite/tests/lib-unix/common/redirections.ml[51,1263+4]..[51,1263+77])
+                  Pexp_open Fresh
+                  module_expr (testsuite/tests/lib-unix/common/redirections.ml[51,1263+4]..[51,1263+8])
+                    Pmod_ident "Unix" (testsuite/tests/lib-unix/common/redirections.ml[51,1263+4]..[51,1263+8])
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[51,1263+10]..[51,1263+76])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[51,1263+10]..[51,1263+18])
+                      Pexp_ident "openfile" (testsuite/tests/lib-unix/common/redirections.ml[51,1263+10]..[51,1263+18])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[51,1263+19]..[51,1263+33])
+                          Pexp_constant PConst_string("./tmpout.txt",(testsuite/tests/lib-unix/common/redirections.ml[51,1263+20]..[51,1263+32]),None)
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[51,1263+34]..[51,1263+70])
+                          Pexp_construct "::" (testsuite/tests/lib-unix/common/redirections.ml[51,1263+35]..[51,1263+70]) ghost
+                          Some
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[51,1263+35]..[51,1263+70]) ghost
+                              Pexp_tuple
+                              [
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[51,1263+35]..[51,1263+43])
+                                  Pexp_construct "O_WRONLY" (testsuite/tests/lib-unix/common/redirections.ml[51,1263+35]..[51,1263+43])
+                                  None
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[51,1263+44]..[51,1263+70]) ghost
+                                  Pexp_construct "::" (testsuite/tests/lib-unix/common/redirections.ml[51,1263+44]..[51,1263+70]) ghost
+                                  Some
+                                    expression (testsuite/tests/lib-unix/common/redirections.ml[51,1263+44]..[51,1263+70]) ghost
+                                      Pexp_tuple
+                                      [
+                                        expression (testsuite/tests/lib-unix/common/redirections.ml[51,1263+44]..[51,1263+51])
+                                          Pexp_construct "O_TRUNC" (testsuite/tests/lib-unix/common/redirections.ml[51,1263+44]..[51,1263+51])
+                                          None
+                                        expression (testsuite/tests/lib-unix/common/redirections.ml[51,1263+52]..[51,1263+70]) ghost
+                                          Pexp_construct "::" (testsuite/tests/lib-unix/common/redirections.ml[51,1263+52]..[51,1263+70]) ghost
+                                          Some
+                                            expression (testsuite/tests/lib-unix/common/redirections.ml[51,1263+52]..[51,1263+70]) ghost
+                                              Pexp_tuple
+                                              [
+                                                expression (testsuite/tests/lib-unix/common/redirections.ml[51,1263+52]..[51,1263+59])
+                                                  Pexp_construct "O_CREAT" (testsuite/tests/lib-unix/common/redirections.ml[51,1263+52]..[51,1263+59])
+                                                  None
+                                                expression (testsuite/tests/lib-unix/common/redirections.ml[51,1263+60]..[51,1263+70]) ghost
+                                                  Pexp_construct "::" (testsuite/tests/lib-unix/common/redirections.ml[51,1263+60]..[51,1263+70]) ghost
+                                                  Some
+                                                    expression (testsuite/tests/lib-unix/common/redirections.ml[51,1263+60]..[51,1263+70]) ghost
+                                                      Pexp_tuple
+                                                      [
+                                                        expression (testsuite/tests/lib-unix/common/redirections.ml[51,1263+60]..[51,1263+69])
+                                                          Pexp_construct "O_CLOEXEC" (testsuite/tests/lib-unix/common/redirections.ml[51,1263+60]..[51,1263+69])
+                                                          None
+                                                        expression (testsuite/tests/lib-unix/common/redirections.ml[51,1263+69]..[51,1263+70]) ghost
+                                                          Pexp_construct "[]" (testsuite/tests/lib-unix/common/redirections.ml[51,1263+69]..[51,1263+70]) ghost
+                                                          None
+                                                      ]
+                                              ]
+                                      ]
+                              ]
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[51,1263+71]..[51,1263+76])
+                          Pexp_constant PConst_int (0o600,None)
+                    ]
+            ]
+            expression (testsuite/tests/lib-unix/common/redirections.ml[52,1344+2]..[75,2157+27])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (testsuite/tests/lib-unix/common/redirections.ml[52,1344+6]..[52,1344+11])
+                    Ppat_var "f_err" (testsuite/tests/lib-unix/common/redirections.ml[52,1344+6]..[52,1344+11])
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[53,1358+4]..[53,1358+77])
+                    Pexp_open Fresh
+                    module_expr (testsuite/tests/lib-unix/common/redirections.ml[53,1358+4]..[53,1358+8])
+                      Pmod_ident "Unix" (testsuite/tests/lib-unix/common/redirections.ml[53,1358+4]..[53,1358+8])
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[53,1358+10]..[53,1358+76])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[53,1358+10]..[53,1358+18])
+                        Pexp_ident "openfile" (testsuite/tests/lib-unix/common/redirections.ml[53,1358+10]..[53,1358+18])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[53,1358+19]..[53,1358+33])
+                            Pexp_constant PConst_string("./tmperr.txt",(testsuite/tests/lib-unix/common/redirections.ml[53,1358+20]..[53,1358+32]),None)
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[53,1358+34]..[53,1358+70])
+                            Pexp_construct "::" (testsuite/tests/lib-unix/common/redirections.ml[53,1358+35]..[53,1358+70]) ghost
+                            Some
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[53,1358+35]..[53,1358+70]) ghost
+                                Pexp_tuple
+                                [
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[53,1358+35]..[53,1358+43])
+                                    Pexp_construct "O_WRONLY" (testsuite/tests/lib-unix/common/redirections.ml[53,1358+35]..[53,1358+43])
+                                    None
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[53,1358+44]..[53,1358+70]) ghost
+                                    Pexp_construct "::" (testsuite/tests/lib-unix/common/redirections.ml[53,1358+44]..[53,1358+70]) ghost
+                                    Some
+                                      expression (testsuite/tests/lib-unix/common/redirections.ml[53,1358+44]..[53,1358+70]) ghost
+                                        Pexp_tuple
+                                        [
+                                          expression (testsuite/tests/lib-unix/common/redirections.ml[53,1358+44]..[53,1358+51])
+                                            Pexp_construct "O_TRUNC" (testsuite/tests/lib-unix/common/redirections.ml[53,1358+44]..[53,1358+51])
+                                            None
+                                          expression (testsuite/tests/lib-unix/common/redirections.ml[53,1358+52]..[53,1358+70]) ghost
+                                            Pexp_construct "::" (testsuite/tests/lib-unix/common/redirections.ml[53,1358+52]..[53,1358+70]) ghost
+                                            Some
+                                              expression (testsuite/tests/lib-unix/common/redirections.ml[53,1358+52]..[53,1358+70]) ghost
+                                                Pexp_tuple
+                                                [
+                                                  expression (testsuite/tests/lib-unix/common/redirections.ml[53,1358+52]..[53,1358+59])
+                                                    Pexp_construct "O_CREAT" (testsuite/tests/lib-unix/common/redirections.ml[53,1358+52]..[53,1358+59])
+                                                    None
+                                                  expression (testsuite/tests/lib-unix/common/redirections.ml[53,1358+60]..[53,1358+70]) ghost
+                                                    Pexp_construct "::" (testsuite/tests/lib-unix/common/redirections.ml[53,1358+60]..[53,1358+70]) ghost
+                                                    Some
+                                                      expression (testsuite/tests/lib-unix/common/redirections.ml[53,1358+60]..[53,1358+70]) ghost
+                                                        Pexp_tuple
+                                                        [
+                                                          expression (testsuite/tests/lib-unix/common/redirections.ml[53,1358+60]..[53,1358+69])
+                                                            Pexp_construct "O_CLOEXEC" (testsuite/tests/lib-unix/common/redirections.ml[53,1358+60]..[53,1358+69])
+                                                            None
+                                                          expression (testsuite/tests/lib-unix/common/redirections.ml[53,1358+69]..[53,1358+70]) ghost
+                                                            Pexp_construct "[]" (testsuite/tests/lib-unix/common/redirections.ml[53,1358+69]..[53,1358+70]) ghost
+                                                            None
+                                                        ]
+                                                ]
+                                        ]
+                                ]
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[53,1358+71]..[53,1358+76])
+                            Pexp_constant PConst_int (0o600,None)
+                      ]
+              ]
+              expression (testsuite/tests/lib-unix/common/redirections.ml[54,1439+2]..[75,2157+27])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (testsuite/tests/lib-unix/common/redirections.ml[54,1439+6]..[54,1439+26])
+                      Ppat_tuple
+                      [
+                        pattern (testsuite/tests/lib-unix/common/redirections.ml[54,1439+7]..[54,1439+13])
+                          Ppat_var "p_exit" (testsuite/tests/lib-unix/common/redirections.ml[54,1439+7]..[54,1439+13])
+                        pattern (testsuite/tests/lib-unix/common/redirections.ml[54,1439+15]..[54,1439+25])
+                          Ppat_var "p_entrance" (testsuite/tests/lib-unix/common/redirections.ml[54,1439+15]..[54,1439+25])
+                      ]
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[55,1468+4]..[55,1468+30])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[55,1468+4]..[55,1468+13])
+                        Pexp_ident "Unix.pipe" (testsuite/tests/lib-unix/common/redirections.ml[55,1468+4]..[55,1468+13])
+                      [
+                        <arg>
+                        Labelled "cloexec"
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[55,1468+23]..[55,1468+27])
+                            Pexp_construct "true" (testsuite/tests/lib-unix/common/redirections.ml[55,1468+23]..[55,1468+27])
+                            None
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[55,1468+28]..[55,1468+30])
+                            Pexp_construct "()" (testsuite/tests/lib-unix/common/redirections.ml[55,1468+28]..[55,1468+30])
+                            None
+                      ]
+                ]
+                expression (testsuite/tests/lib-unix/common/redirections.ml[56,1502+2]..[75,2157+27])
+                  Pexp_let Nonrec
+                  [
+                    <def>
+                      pattern (testsuite/tests/lib-unix/common/redirections.ml[56,1502+6]..[56,1502+9])
+                        Ppat_var "pid" (testsuite/tests/lib-unix/common/redirections.ml[56,1502+6]..[56,1502+9])
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[57,1514+4]..[62,1693+25])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[57,1514+4]..[57,1514+27])
+                          Pexp_ident "Unix.create_process_env" (testsuite/tests/lib-unix/common/redirections.ml[57,1514+4]..[57,1514+27])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[58,1542+7]..[58,1542+11])
+                              Pexp_ident "refl" (testsuite/tests/lib-unix/common/redirections.ml[58,1542+7]..[58,1542+11])
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[59,1554+7]..[60,1633+9])
+                              Pexp_array
+                              [
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[59,1554+10]..[59,1554+14])
+                                  Pexp_ident "refl" (testsuite/tests/lib-unix/common/redirections.ml[59,1554+10]..[59,1554+14])
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[59,1554+16]..[59,1554+22])
+                                  Pexp_constant PConst_string("-i2o",(testsuite/tests/lib-unix/common/redirections.ml[59,1554+17]..[59,1554+21]),None)
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[59,1554+24]..[59,1554+30])
+                                  Pexp_constant PConst_string("-i2e",(testsuite/tests/lib-unix/common/redirections.ml[59,1554+25]..[59,1554+29]),None)
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[59,1554+32]..[59,1554+36])
+                                  Pexp_constant PConst_string("-o",(testsuite/tests/lib-unix/common/redirections.ml[59,1554+33]..[59,1554+35]),None)
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[59,1554+38]..[59,1554+43])
+                                  Pexp_constant PConst_string("123",(testsuite/tests/lib-unix/common/redirections.ml[59,1554+39]..[59,1554+42]),None)
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[59,1554+45]..[59,1554+49])
+                                  Pexp_constant PConst_string("-e",(testsuite/tests/lib-unix/common/redirections.ml[59,1554+46]..[59,1554+48]),None)
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[59,1554+51]..[59,1554+56])
+                                  Pexp_constant PConst_string("456",(testsuite/tests/lib-unix/common/redirections.ml[59,1554+52]..[59,1554+55]),None)
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[59,1554+58]..[59,1554+64])
+                                  Pexp_constant PConst_string("-i2o",(testsuite/tests/lib-unix/common/redirections.ml[59,1554+59]..[59,1554+63]),None)
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[59,1554+66]..[59,1554+70])
+                                  Pexp_constant PConst_string("-v",(testsuite/tests/lib-unix/common/redirections.ml[59,1554+67]..[59,1554+69]),None)
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[59,1554+72]..[59,1554+78])
+                                  Pexp_constant PConst_string("XVAR",(testsuite/tests/lib-unix/common/redirections.ml[59,1554+73]..[59,1554+77]),None)
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[61,1643+7]..[61,1643+49])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[61,1643+8]..[61,1643+20])
+                                Pexp_ident "Array.append" (testsuite/tests/lib-unix/common/redirections.ml[61,1643+8]..[61,1643+20])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[61,1643+21]..[61,1643+38])
+                                    Pexp_array
+                                    [
+                                      expression (testsuite/tests/lib-unix/common/redirections.ml[61,1643+24]..[61,1643+35])
+                                        Pexp_constant PConst_string("XVAR=xvar",(testsuite/tests/lib-unix/common/redirections.ml[61,1643+25]..[61,1643+34]),None)
+                                    ]
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[61,1643+39]..[61,1643+48])
+                                    Pexp_ident "systemenv" (testsuite/tests/lib-unix/common/redirections.ml[61,1643+39]..[61,1643+48])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[62,1693+7]..[62,1693+13])
+                              Pexp_ident "p_exit" (testsuite/tests/lib-unix/common/redirections.ml[62,1693+7]..[62,1693+13])
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[62,1693+14]..[62,1693+19])
+                              Pexp_ident "f_out" (testsuite/tests/lib-unix/common/redirections.ml[62,1693+14]..[62,1693+19])
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[62,1693+20]..[62,1693+25])
+                              Pexp_ident "f_err" (testsuite/tests/lib-unix/common/redirections.ml[62,1693+20]..[62,1693+25])
+                        ]
+                  ]
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[63,1722+2]..[75,2157+27])
+                    Pexp_sequence
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[63,1722+2]..[63,1722+25])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[63,1722+2]..[63,1722+5])
+                        Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[63,1722+2]..[63,1722+5])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[63,1722+6]..[63,1722+16])
+                            Pexp_ident "p_entrance" (testsuite/tests/lib-unix/common/redirections.ml[63,1722+6]..[63,1722+16])
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[63,1722+17]..[63,1722+25])
+                            Pexp_constant PConst_string("aaaa\n",(testsuite/tests/lib-unix/common/redirections.ml[63,1722+18]..[63,1722+24]),None)
+                      ]
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[64,1749+2]..[75,2157+27])
+                      Pexp_sequence
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[64,1749+2]..[64,1749+25])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[64,1749+2]..[64,1749+5])
+                          Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[64,1749+2]..[64,1749+5])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[64,1749+6]..[64,1749+16])
+                              Pexp_ident "p_entrance" (testsuite/tests/lib-unix/common/redirections.ml[64,1749+6]..[64,1749+16])
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[64,1749+17]..[64,1749+25])
+                              Pexp_constant PConst_string("bbbb\n",(testsuite/tests/lib-unix/common/redirections.ml[64,1749+18]..[64,1749+24]),None)
+                        ]
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[65,1776+2]..[75,2157+27])
+                        Pexp_sequence
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[65,1776+2]..[65,1776+23])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[65,1776+2]..[65,1776+12])
+                            Pexp_ident "Unix.close" (testsuite/tests/lib-unix/common/redirections.ml[65,1776+2]..[65,1776+12])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[65,1776+13]..[65,1776+23])
+                                Pexp_ident "p_entrance" (testsuite/tests/lib-unix/common/redirections.ml[65,1776+13]..[65,1776+23])
+                          ]
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[66,1801+2]..[75,2157+27])
+                          Pexp_let Nonrec
+                          [
+                            <def>
+                              pattern (testsuite/tests/lib-unix/common/redirections.ml[66,1801+6]..[66,1801+17])
+                                Ppat_tuple
+                                [
+                                  pattern (testsuite/tests/lib-unix/common/redirections.ml[66,1801+7]..[66,1801+8])
+                                    Ppat_any
+                                  pattern (testsuite/tests/lib-unix/common/redirections.ml[66,1801+10]..[66,1801+16])
+                                    Ppat_var "status" (testsuite/tests/lib-unix/common/redirections.ml[66,1801+10]..[66,1801+16])
+                                ]
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[66,1801+20]..[66,1801+39])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[66,1801+20]..[66,1801+32])
+                                  Pexp_ident "Unix.waitpid" (testsuite/tests/lib-unix/common/redirections.ml[66,1801+20]..[66,1801+32])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-unix/common/redirections.ml[66,1801+33]..[66,1801+35])
+                                      Pexp_construct "[]" (testsuite/tests/lib-unix/common/redirections.ml[66,1801+33]..[66,1801+35])
+                                      None
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-unix/common/redirections.ml[66,1801+36]..[66,1801+39])
+                                      Pexp_ident "pid" (testsuite/tests/lib-unix/common/redirections.ml[66,1801+36]..[66,1801+39])
+                                ]
+                          ]
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[67,1844+2]..[75,2157+27])
+                            Pexp_sequence
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[67,1844+2]..[67,1844+19])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[67,1844+2]..[67,1844+12])
+                                Pexp_ident "Unix.close" (testsuite/tests/lib-unix/common/redirections.ml[67,1844+2]..[67,1844+12])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[67,1844+13]..[67,1844+19])
+                                    Pexp_ident "p_exit" (testsuite/tests/lib-unix/common/redirections.ml[67,1844+13]..[67,1844+19])
+                              ]
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[67,1844+21]..[75,2157+27])
+                              Pexp_sequence
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[67,1844+21]..[67,1844+37])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[67,1844+21]..[67,1844+31])
+                                  Pexp_ident "Unix.close" (testsuite/tests/lib-unix/common/redirections.ml[67,1844+21]..[67,1844+31])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-unix/common/redirections.ml[67,1844+32]..[67,1844+37])
+                                      Pexp_ident "f_out" (testsuite/tests/lib-unix/common/redirections.ml[67,1844+32]..[67,1844+37])
+                                ]
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[67,1844+39]..[75,2157+27])
+                                Pexp_sequence
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[67,1844+39]..[67,1844+55])
+                                  Pexp_apply
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[67,1844+39]..[67,1844+49])
+                                    Pexp_ident "Unix.close" (testsuite/tests/lib-unix/common/redirections.ml[67,1844+39]..[67,1844+49])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-unix/common/redirections.ml[67,1844+50]..[67,1844+55])
+                                        Pexp_ident "f_err" (testsuite/tests/lib-unix/common/redirections.ml[67,1844+50]..[67,1844+55])
+                                  ]
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[68,1901+2]..[75,2157+27])
+                                  Pexp_sequence
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[68,1901+2]..[69,1936+58])
+                                    Pexp_ifthenelse
+                                    expression (testsuite/tests/lib-unix/common/redirections.ml[68,1901+5]..[68,1901+29])
+                                      Pexp_apply
+                                      expression (testsuite/tests/lib-unix/common/redirections.ml[68,1901+12]..[68,1901+14])
+                                        Pexp_ident "<>" (testsuite/tests/lib-unix/common/redirections.ml[68,1901+12]..[68,1901+14])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-unix/common/redirections.ml[68,1901+5]..[68,1901+11])
+                                            Pexp_ident "status" (testsuite/tests/lib-unix/common/redirections.ml[68,1901+5]..[68,1901+11])
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-unix/common/redirections.ml[68,1901+15]..[68,1901+29])
+                                            Pexp_construct "Unix.WEXITED" (testsuite/tests/lib-unix/common/redirections.ml[68,1901+15]..[68,1901+27])
+                                            Some
+                                              expression (testsuite/tests/lib-unix/common/redirections.ml[68,1901+28]..[68,1901+29])
+                                                Pexp_constant PConst_int (0,None)
+                                      ]
+                                    expression (testsuite/tests/lib-unix/common/redirections.ml[69,1936+4]..[69,1936+58])
+                                      Pexp_apply
+                                      expression (testsuite/tests/lib-unix/common/redirections.ml[69,1936+4]..[69,1936+7])
+                                        Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[69,1936+4]..[69,1936+7])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-unix/common/redirections.ml[69,1936+8]..[69,1936+19])
+                                            Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[69,1936+8]..[69,1936+19])
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-unix/common/redirections.ml[69,1936+20]..[69,1936+58])
+                                            Pexp_constant PConst_string("!!! reflector exited with an error\n",(testsuite/tests/lib-unix/common/redirections.ml[69,1936+21]..[69,1936+57]),None)
+                                      ]
+                                    None
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[70,1996+2]..[75,2157+27])
+                                    Pexp_sequence
+                                    expression (testsuite/tests/lib-unix/common/redirections.ml[70,1996+2]..[70,1996+42])
+                                      Pexp_apply
+                                      expression (testsuite/tests/lib-unix/common/redirections.ml[70,1996+2]..[70,1996+5])
+                                        Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[70,1996+2]..[70,1996+5])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-unix/common/redirections.ml[70,1996+6]..[70,1996+17])
+                                            Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[70,1996+6]..[70,1996+17])
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-unix/common/redirections.ml[70,1996+18]..[70,1996+42])
+                                            Pexp_constant PConst_string("---- File tmpout.txt\n",(testsuite/tests/lib-unix/common/redirections.ml[70,1996+19]..[70,1996+41]),None)
+                                      ]
+                                    expression (testsuite/tests/lib-unix/common/redirections.ml[71,2040+2]..[75,2157+27])
+                                      Pexp_sequence
+                                      expression (testsuite/tests/lib-unix/common/redirections.ml[71,2040+2]..[71,2040+20])
+                                        Pexp_apply
+                                        expression (testsuite/tests/lib-unix/common/redirections.ml[71,2040+2]..[71,2040+5])
+                                          Pexp_ident "cat" (testsuite/tests/lib-unix/common/redirections.ml[71,2040+2]..[71,2040+5])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/lib-unix/common/redirections.ml[71,2040+6]..[71,2040+20])
+                                              Pexp_constant PConst_string("./tmpout.txt",(testsuite/tests/lib-unix/common/redirections.ml[71,2040+7]..[71,2040+19]),None)
+                                        ]
+                                      expression (testsuite/tests/lib-unix/common/redirections.ml[72,2062+2]..[75,2157+27])
+                                        Pexp_sequence
+                                        expression (testsuite/tests/lib-unix/common/redirections.ml[72,2062+2]..[72,2062+42])
+                                          Pexp_apply
+                                          expression (testsuite/tests/lib-unix/common/redirections.ml[72,2062+2]..[72,2062+5])
+                                            Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[72,2062+2]..[72,2062+5])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (testsuite/tests/lib-unix/common/redirections.ml[72,2062+6]..[72,2062+17])
+                                                Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[72,2062+6]..[72,2062+17])
+                                            <arg>
+                                            Nolabel
+                                              expression (testsuite/tests/lib-unix/common/redirections.ml[72,2062+18]..[72,2062+42])
+                                                Pexp_constant PConst_string("---- File tmperr.txt\n",(testsuite/tests/lib-unix/common/redirections.ml[72,2062+19]..[72,2062+41]),None)
+                                          ]
+                                        expression (testsuite/tests/lib-unix/common/redirections.ml[73,2106+2]..[75,2157+27])
+                                          Pexp_sequence
+                                          expression (testsuite/tests/lib-unix/common/redirections.ml[73,2106+2]..[73,2106+20])
+                                            Pexp_apply
+                                            expression (testsuite/tests/lib-unix/common/redirections.ml[73,2106+2]..[73,2106+5])
+                                              Pexp_ident "cat" (testsuite/tests/lib-unix/common/redirections.ml[73,2106+2]..[73,2106+5])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/lib-unix/common/redirections.ml[73,2106+6]..[73,2106+20])
+                                                  Pexp_constant PConst_string("./tmperr.txt",(testsuite/tests/lib-unix/common/redirections.ml[73,2106+7]..[73,2106+19]),None)
+                                            ]
+                                          expression (testsuite/tests/lib-unix/common/redirections.ml[74,2128+2]..[75,2157+27])
+                                            Pexp_sequence
+                                            expression (testsuite/tests/lib-unix/common/redirections.ml[74,2128+2]..[74,2128+27])
+                                              Pexp_apply
+                                              expression (testsuite/tests/lib-unix/common/redirections.ml[74,2128+2]..[74,2128+12])
+                                                Pexp_ident "Sys.remove" (testsuite/tests/lib-unix/common/redirections.ml[74,2128+2]..[74,2128+12])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/lib-unix/common/redirections.ml[74,2128+13]..[74,2128+27])
+                                                    Pexp_constant PConst_string("./tmpout.txt",(testsuite/tests/lib-unix/common/redirections.ml[74,2128+14]..[74,2128+26]),None)
+                                              ]
+                                            expression (testsuite/tests/lib-unix/common/redirections.ml[75,2157+2]..[75,2157+27])
+                                              Pexp_apply
+                                              expression (testsuite/tests/lib-unix/common/redirections.ml[75,2157+2]..[75,2157+12])
+                                                Pexp_ident "Sys.remove" (testsuite/tests/lib-unix/common/redirections.ml[75,2157+2]..[75,2157+12])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/lib-unix/common/redirections.ml[75,2157+13]..[75,2157+27])
+                                                    Pexp_constant PConst_string("./tmperr.txt",(testsuite/tests/lib-unix/common/redirections.ml[75,2157+14]..[75,2157+26]),None)
+                                              ]
+    ]
+  structure_item (testsuite/tests/lib-unix/common/redirections.ml[77,2186+0]..[85,2474+58])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/common/redirections.ml[77,2186+4]..[77,2186+17])
+          Ppat_var "test_2ampsup1" (testsuite/tests/lib-unix/common/redirections.ml[77,2186+4]..[77,2186+17])
+        expression (testsuite/tests/lib-unix/common/redirections.ml[77,2186+18]..[85,2474+58]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-unix/common/redirections.ml[77,2186+18]..[77,2186+20])
+            Ppat_construct "()" (testsuite/tests/lib-unix/common/redirections.ml[77,2186+18]..[77,2186+20])
+            None
+          expression (testsuite/tests/lib-unix/common/redirections.ml[78,2249+2]..[85,2474+58])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (testsuite/tests/lib-unix/common/redirections.ml[78,2249+6]..[78,2249+9])
+                  Ppat_var "pid" (testsuite/tests/lib-unix/common/redirections.ml[78,2249+6]..[78,2249+9])
+                expression (testsuite/tests/lib-unix/common/redirections.ml[79,2261+4]..[82,2352+40])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[79,2261+4]..[79,2261+23])
+                    Pexp_ident "Unix.create_process" (testsuite/tests/lib-unix/common/redirections.ml[79,2261+4]..[79,2261+23])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[80,2285+6]..[80,2285+10])
+                        Pexp_ident "refl" (testsuite/tests/lib-unix/common/redirections.ml[80,2285+6]..[80,2285+10])
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[81,2296+6]..[81,2296+55])
+                        Pexp_array
+                        [
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[81,2296+9]..[81,2296+13])
+                            Pexp_ident "refl" (testsuite/tests/lib-unix/common/redirections.ml[81,2296+9]..[81,2296+13])
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[81,2296+15]..[81,2296+19])
+                            Pexp_constant PConst_string("-o",(testsuite/tests/lib-unix/common/redirections.ml[81,2296+16]..[81,2296+18]),None)
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[81,2296+21]..[81,2296+26])
+                            Pexp_constant PConst_string("123",(testsuite/tests/lib-unix/common/redirections.ml[81,2296+22]..[81,2296+25]),None)
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[81,2296+28]..[81,2296+32])
+                            Pexp_constant PConst_string("-e",(testsuite/tests/lib-unix/common/redirections.ml[81,2296+29]..[81,2296+31]),None)
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[81,2296+34]..[81,2296+39])
+                            Pexp_constant PConst_string("456",(testsuite/tests/lib-unix/common/redirections.ml[81,2296+35]..[81,2296+38]),None)
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[81,2296+41]..[81,2296+45])
+                            Pexp_constant PConst_string("-o",(testsuite/tests/lib-unix/common/redirections.ml[81,2296+42]..[81,2296+44]),None)
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[81,2296+47]..[81,2296+52])
+                            Pexp_constant PConst_string("789",(testsuite/tests/lib-unix/common/redirections.ml[81,2296+48]..[81,2296+51]),None)
+                        ]
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[82,2352+6]..[82,2352+16])
+                        Pexp_ident "Unix.stdin" (testsuite/tests/lib-unix/common/redirections.ml[82,2352+6]..[82,2352+16])
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[82,2352+17]..[82,2352+28])
+                        Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[82,2352+17]..[82,2352+28])
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[82,2352+29]..[82,2352+40])
+                        Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[82,2352+29]..[82,2352+40])
+                  ]
+            ]
+            expression (testsuite/tests/lib-unix/common/redirections.ml[83,2396+2]..[85,2474+58])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (testsuite/tests/lib-unix/common/redirections.ml[83,2396+6]..[83,2396+17])
+                    Ppat_tuple
+                    [
+                      pattern (testsuite/tests/lib-unix/common/redirections.ml[83,2396+7]..[83,2396+8])
+                        Ppat_any
+                      pattern (testsuite/tests/lib-unix/common/redirections.ml[83,2396+10]..[83,2396+16])
+                        Ppat_var "status" (testsuite/tests/lib-unix/common/redirections.ml[83,2396+10]..[83,2396+16])
+                    ]
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[83,2396+20]..[83,2396+39])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[83,2396+20]..[83,2396+32])
+                      Pexp_ident "Unix.waitpid" (testsuite/tests/lib-unix/common/redirections.ml[83,2396+20]..[83,2396+32])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[83,2396+33]..[83,2396+35])
+                          Pexp_construct "[]" (testsuite/tests/lib-unix/common/redirections.ml[83,2396+33]..[83,2396+35])
+                          None
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[83,2396+36]..[83,2396+39])
+                          Pexp_ident "pid" (testsuite/tests/lib-unix/common/redirections.ml[83,2396+36]..[83,2396+39])
+                    ]
+              ]
+              expression (testsuite/tests/lib-unix/common/redirections.ml[84,2439+2]..[85,2474+58])
+                Pexp_ifthenelse
+                expression (testsuite/tests/lib-unix/common/redirections.ml[84,2439+5]..[84,2439+29])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[84,2439+12]..[84,2439+14])
+                    Pexp_ident "<>" (testsuite/tests/lib-unix/common/redirections.ml[84,2439+12]..[84,2439+14])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[84,2439+5]..[84,2439+11])
+                        Pexp_ident "status" (testsuite/tests/lib-unix/common/redirections.ml[84,2439+5]..[84,2439+11])
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[84,2439+15]..[84,2439+29])
+                        Pexp_construct "Unix.WEXITED" (testsuite/tests/lib-unix/common/redirections.ml[84,2439+15]..[84,2439+27])
+                        Some
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[84,2439+28]..[84,2439+29])
+                            Pexp_constant PConst_int (0,None)
+                  ]
+                expression (testsuite/tests/lib-unix/common/redirections.ml[85,2474+4]..[85,2474+58])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[85,2474+4]..[85,2474+7])
+                    Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[85,2474+4]..[85,2474+7])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[85,2474+8]..[85,2474+19])
+                        Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[85,2474+8]..[85,2474+19])
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[85,2474+20]..[85,2474+58])
+                        Pexp_constant PConst_string("!!! reflector exited with an error\n",(testsuite/tests/lib-unix/common/redirections.ml[85,2474+21]..[85,2474+57]),None)
+                  ]
+                None
+    ]
+  structure_item (testsuite/tests/lib-unix/common/redirections.ml[87,2534+0]..[97,2906+58])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/common/redirections.ml[87,2534+4]..[87,2534+15])
+          Ppat_var "test_swap12" (testsuite/tests/lib-unix/common/redirections.ml[87,2534+4]..[87,2534+15])
+        expression (testsuite/tests/lib-unix/common/redirections.ml[87,2534+16]..[97,2906+58]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-unix/common/redirections.ml[87,2534+16]..[87,2534+18])
+            Ppat_construct "()" (testsuite/tests/lib-unix/common/redirections.ml[87,2534+16]..[87,2534+18])
+            None
+          expression (testsuite/tests/lib-unix/common/redirections.ml[90,2707+2]..[97,2906+58])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (testsuite/tests/lib-unix/common/redirections.ml[90,2707+6]..[90,2707+9])
+                  Ppat_var "pid" (testsuite/tests/lib-unix/common/redirections.ml[90,2707+6]..[90,2707+9])
+                expression (testsuite/tests/lib-unix/common/redirections.ml[91,2719+4]..[94,2784+40])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[91,2719+4]..[91,2719+23])
+                    Pexp_ident "Unix.create_process" (testsuite/tests/lib-unix/common/redirections.ml[91,2719+4]..[91,2719+23])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[92,2743+6]..[92,2743+10])
+                        Pexp_ident "refl" (testsuite/tests/lib-unix/common/redirections.ml[92,2743+6]..[92,2743+10])
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[93,2754+6]..[93,2754+29])
+                        Pexp_array
+                        [
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[93,2754+9]..[93,2754+13])
+                            Pexp_ident "refl" (testsuite/tests/lib-unix/common/redirections.ml[93,2754+9]..[93,2754+13])
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[93,2754+15]..[93,2754+19])
+                            Pexp_constant PConst_string("-e",(testsuite/tests/lib-unix/common/redirections.ml[93,2754+16]..[93,2754+18]),None)
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[93,2754+21]..[93,2754+26])
+                            Pexp_constant PConst_string("123",(testsuite/tests/lib-unix/common/redirections.ml[93,2754+22]..[93,2754+25]),None)
+                        ]
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[94,2784+6]..[94,2784+16])
+                        Pexp_ident "Unix.stdin" (testsuite/tests/lib-unix/common/redirections.ml[94,2784+6]..[94,2784+16])
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[94,2784+17]..[94,2784+28])
+                        Pexp_ident "Unix.stderr" (testsuite/tests/lib-unix/common/redirections.ml[94,2784+17]..[94,2784+28])
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[94,2784+29]..[94,2784+40])
+                        Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[94,2784+29]..[94,2784+40])
+                  ]
+            ]
+            expression (testsuite/tests/lib-unix/common/redirections.ml[95,2828+2]..[97,2906+58])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (testsuite/tests/lib-unix/common/redirections.ml[95,2828+6]..[95,2828+17])
+                    Ppat_tuple
+                    [
+                      pattern (testsuite/tests/lib-unix/common/redirections.ml[95,2828+7]..[95,2828+8])
+                        Ppat_any
+                      pattern (testsuite/tests/lib-unix/common/redirections.ml[95,2828+10]..[95,2828+16])
+                        Ppat_var "status" (testsuite/tests/lib-unix/common/redirections.ml[95,2828+10]..[95,2828+16])
+                    ]
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[95,2828+20]..[95,2828+39])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[95,2828+20]..[95,2828+32])
+                      Pexp_ident "Unix.waitpid" (testsuite/tests/lib-unix/common/redirections.ml[95,2828+20]..[95,2828+32])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[95,2828+33]..[95,2828+35])
+                          Pexp_construct "[]" (testsuite/tests/lib-unix/common/redirections.ml[95,2828+33]..[95,2828+35])
+                          None
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[95,2828+36]..[95,2828+39])
+                          Pexp_ident "pid" (testsuite/tests/lib-unix/common/redirections.ml[95,2828+36]..[95,2828+39])
+                    ]
+              ]
+              expression (testsuite/tests/lib-unix/common/redirections.ml[96,2871+2]..[97,2906+58])
+                Pexp_ifthenelse
+                expression (testsuite/tests/lib-unix/common/redirections.ml[96,2871+5]..[96,2871+29])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[96,2871+12]..[96,2871+14])
+                    Pexp_ident "<>" (testsuite/tests/lib-unix/common/redirections.ml[96,2871+12]..[96,2871+14])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[96,2871+5]..[96,2871+11])
+                        Pexp_ident "status" (testsuite/tests/lib-unix/common/redirections.ml[96,2871+5]..[96,2871+11])
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[96,2871+15]..[96,2871+29])
+                        Pexp_construct "Unix.WEXITED" (testsuite/tests/lib-unix/common/redirections.ml[96,2871+15]..[96,2871+27])
+                        Some
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[96,2871+28]..[96,2871+29])
+                            Pexp_constant PConst_int (0,None)
+                  ]
+                expression (testsuite/tests/lib-unix/common/redirections.ml[97,2906+4]..[97,2906+58])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[97,2906+4]..[97,2906+7])
+                    Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[97,2906+4]..[97,2906+7])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[97,2906+8]..[97,2906+19])
+                        Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[97,2906+8]..[97,2906+19])
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[97,2906+20]..[97,2906+58])
+                        Pexp_constant PConst_string("!!! reflector exited with an error\n",(testsuite/tests/lib-unix/common/redirections.ml[97,2906+21]..[97,2906+57]),None)
+                  ]
+                None
+    ]
+  structure_item (testsuite/tests/lib-unix/common/redirections.ml[99,2966+0]..[113,3450+27])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/common/redirections.ml[99,2966+4]..[99,2966+17])
+          Ppat_var "test_12tofile" (testsuite/tests/lib-unix/common/redirections.ml[99,2966+4]..[99,2966+17])
+        expression (testsuite/tests/lib-unix/common/redirections.ml[99,2966+18]..[113,3450+27]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-unix/common/redirections.ml[99,2966+18]..[99,2966+20])
+            Ppat_construct "()" (testsuite/tests/lib-unix/common/redirections.ml[99,2966+18]..[99,2966+20])
+            None
+          expression (testsuite/tests/lib-unix/common/redirections.ml[100,3009+2]..[113,3450+27])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (testsuite/tests/lib-unix/common/redirections.ml[100,3009+6]..[100,3009+7])
+                  Ppat_var "f" (testsuite/tests/lib-unix/common/redirections.ml[100,3009+6]..[100,3009+7])
+                expression (testsuite/tests/lib-unix/common/redirections.ml[101,3019+4]..[101,3019+77])
+                  Pexp_open Fresh
+                  module_expr (testsuite/tests/lib-unix/common/redirections.ml[101,3019+4]..[101,3019+8])
+                    Pmod_ident "Unix" (testsuite/tests/lib-unix/common/redirections.ml[101,3019+4]..[101,3019+8])
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[101,3019+10]..[101,3019+76])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[101,3019+10]..[101,3019+18])
+                      Pexp_ident "openfile" (testsuite/tests/lib-unix/common/redirections.ml[101,3019+10]..[101,3019+18])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[101,3019+19]..[101,3019+33])
+                          Pexp_constant PConst_string("./tmpout.txt",(testsuite/tests/lib-unix/common/redirections.ml[101,3019+20]..[101,3019+32]),None)
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[101,3019+34]..[101,3019+70])
+                          Pexp_construct "::" (testsuite/tests/lib-unix/common/redirections.ml[101,3019+35]..[101,3019+70]) ghost
+                          Some
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[101,3019+35]..[101,3019+70]) ghost
+                              Pexp_tuple
+                              [
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[101,3019+35]..[101,3019+43])
+                                  Pexp_construct "O_WRONLY" (testsuite/tests/lib-unix/common/redirections.ml[101,3019+35]..[101,3019+43])
+                                  None
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[101,3019+44]..[101,3019+70]) ghost
+                                  Pexp_construct "::" (testsuite/tests/lib-unix/common/redirections.ml[101,3019+44]..[101,3019+70]) ghost
+                                  Some
+                                    expression (testsuite/tests/lib-unix/common/redirections.ml[101,3019+44]..[101,3019+70]) ghost
+                                      Pexp_tuple
+                                      [
+                                        expression (testsuite/tests/lib-unix/common/redirections.ml[101,3019+44]..[101,3019+51])
+                                          Pexp_construct "O_TRUNC" (testsuite/tests/lib-unix/common/redirections.ml[101,3019+44]..[101,3019+51])
+                                          None
+                                        expression (testsuite/tests/lib-unix/common/redirections.ml[101,3019+52]..[101,3019+70]) ghost
+                                          Pexp_construct "::" (testsuite/tests/lib-unix/common/redirections.ml[101,3019+52]..[101,3019+70]) ghost
+                                          Some
+                                            expression (testsuite/tests/lib-unix/common/redirections.ml[101,3019+52]..[101,3019+70]) ghost
+                                              Pexp_tuple
+                                              [
+                                                expression (testsuite/tests/lib-unix/common/redirections.ml[101,3019+52]..[101,3019+59])
+                                                  Pexp_construct "O_CREAT" (testsuite/tests/lib-unix/common/redirections.ml[101,3019+52]..[101,3019+59])
+                                                  None
+                                                expression (testsuite/tests/lib-unix/common/redirections.ml[101,3019+60]..[101,3019+70]) ghost
+                                                  Pexp_construct "::" (testsuite/tests/lib-unix/common/redirections.ml[101,3019+60]..[101,3019+70]) ghost
+                                                  Some
+                                                    expression (testsuite/tests/lib-unix/common/redirections.ml[101,3019+60]..[101,3019+70]) ghost
+                                                      Pexp_tuple
+                                                      [
+                                                        expression (testsuite/tests/lib-unix/common/redirections.ml[101,3019+60]..[101,3019+69])
+                                                          Pexp_construct "O_CLOEXEC" (testsuite/tests/lib-unix/common/redirections.ml[101,3019+60]..[101,3019+69])
+                                                          None
+                                                        expression (testsuite/tests/lib-unix/common/redirections.ml[101,3019+69]..[101,3019+70]) ghost
+                                                          Pexp_construct "[]" (testsuite/tests/lib-unix/common/redirections.ml[101,3019+69]..[101,3019+70]) ghost
+                                                          None
+                                                      ]
+                                              ]
+                                      ]
+                              ]
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[101,3019+71]..[101,3019+76])
+                          Pexp_constant PConst_int (0o600,None)
+                    ]
+            ]
+            expression (testsuite/tests/lib-unix/common/redirections.ml[102,3100+2]..[113,3450+27])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (testsuite/tests/lib-unix/common/redirections.ml[102,3100+6]..[102,3100+9])
+                    Ppat_var "pid" (testsuite/tests/lib-unix/common/redirections.ml[102,3100+6]..[102,3100+9])
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[103,3112+4]..[106,3205+21])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[103,3112+4]..[103,3112+23])
+                      Pexp_ident "Unix.create_process" (testsuite/tests/lib-unix/common/redirections.ml[103,3112+4]..[103,3112+23])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[104,3136+7]..[104,3136+11])
+                          Pexp_ident "refl" (testsuite/tests/lib-unix/common/redirections.ml[104,3136+7]..[104,3136+11])
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[105,3148+7]..[105,3148+56])
+                          Pexp_array
+                          [
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[105,3148+10]..[105,3148+14])
+                              Pexp_ident "refl" (testsuite/tests/lib-unix/common/redirections.ml[105,3148+10]..[105,3148+14])
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[105,3148+16]..[105,3148+20])
+                              Pexp_constant PConst_string("-o",(testsuite/tests/lib-unix/common/redirections.ml[105,3148+17]..[105,3148+19]),None)
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[105,3148+22]..[105,3148+27])
+                              Pexp_constant PConst_string("123",(testsuite/tests/lib-unix/common/redirections.ml[105,3148+23]..[105,3148+26]),None)
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[105,3148+29]..[105,3148+33])
+                              Pexp_constant PConst_string("-e",(testsuite/tests/lib-unix/common/redirections.ml[105,3148+30]..[105,3148+32]),None)
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[105,3148+35]..[105,3148+40])
+                              Pexp_constant PConst_string("456",(testsuite/tests/lib-unix/common/redirections.ml[105,3148+36]..[105,3148+39]),None)
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[105,3148+42]..[105,3148+46])
+                              Pexp_constant PConst_string("-o",(testsuite/tests/lib-unix/common/redirections.ml[105,3148+43]..[105,3148+45]),None)
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[105,3148+48]..[105,3148+53])
+                              Pexp_constant PConst_string("789",(testsuite/tests/lib-unix/common/redirections.ml[105,3148+49]..[105,3148+52]),None)
+                          ]
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[106,3205+7]..[106,3205+17])
+                          Pexp_ident "Unix.stdin" (testsuite/tests/lib-unix/common/redirections.ml[106,3205+7]..[106,3205+17])
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[106,3205+18]..[106,3205+19])
+                          Pexp_ident "f" (testsuite/tests/lib-unix/common/redirections.ml[106,3205+18]..[106,3205+19])
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[106,3205+20]..[106,3205+21])
+                          Pexp_ident "f" (testsuite/tests/lib-unix/common/redirections.ml[106,3205+20]..[106,3205+21])
+                    ]
+              ]
+              expression (testsuite/tests/lib-unix/common/redirections.ml[107,3230+2]..[113,3450+27])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (testsuite/tests/lib-unix/common/redirections.ml[107,3230+6]..[107,3230+17])
+                      Ppat_tuple
+                      [
+                        pattern (testsuite/tests/lib-unix/common/redirections.ml[107,3230+7]..[107,3230+8])
+                          Ppat_any
+                        pattern (testsuite/tests/lib-unix/common/redirections.ml[107,3230+10]..[107,3230+16])
+                          Ppat_var "status" (testsuite/tests/lib-unix/common/redirections.ml[107,3230+10]..[107,3230+16])
+                      ]
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[107,3230+20]..[107,3230+39])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[107,3230+20]..[107,3230+32])
+                        Pexp_ident "Unix.waitpid" (testsuite/tests/lib-unix/common/redirections.ml[107,3230+20]..[107,3230+32])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[107,3230+33]..[107,3230+35])
+                            Pexp_construct "[]" (testsuite/tests/lib-unix/common/redirections.ml[107,3230+33]..[107,3230+35])
+                            None
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[107,3230+36]..[107,3230+39])
+                            Pexp_ident "pid" (testsuite/tests/lib-unix/common/redirections.ml[107,3230+36]..[107,3230+39])
+                      ]
+                ]
+                expression (testsuite/tests/lib-unix/common/redirections.ml[108,3273+2]..[113,3450+27])
+                  Pexp_sequence
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[108,3273+2]..[108,3273+14])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[108,3273+2]..[108,3273+12])
+                      Pexp_ident "Unix.close" (testsuite/tests/lib-unix/common/redirections.ml[108,3273+2]..[108,3273+12])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[108,3273+13]..[108,3273+14])
+                          Pexp_ident "f" (testsuite/tests/lib-unix/common/redirections.ml[108,3273+13]..[108,3273+14])
+                    ]
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[109,3289+2]..[113,3450+27])
+                    Pexp_sequence
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[109,3289+2]..[110,3324+58])
+                      Pexp_ifthenelse
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[109,3289+5]..[109,3289+29])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[109,3289+12]..[109,3289+14])
+                          Pexp_ident "<>" (testsuite/tests/lib-unix/common/redirections.ml[109,3289+12]..[109,3289+14])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[109,3289+5]..[109,3289+11])
+                              Pexp_ident "status" (testsuite/tests/lib-unix/common/redirections.ml[109,3289+5]..[109,3289+11])
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[109,3289+15]..[109,3289+29])
+                              Pexp_construct "Unix.WEXITED" (testsuite/tests/lib-unix/common/redirections.ml[109,3289+15]..[109,3289+27])
+                              Some
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[109,3289+28]..[109,3289+29])
+                                  Pexp_constant PConst_int (0,None)
+                        ]
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[110,3324+4]..[110,3324+58])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[110,3324+4]..[110,3324+7])
+                          Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[110,3324+4]..[110,3324+7])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[110,3324+8]..[110,3324+19])
+                              Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[110,3324+8]..[110,3324+19])
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[110,3324+20]..[110,3324+58])
+                              Pexp_constant PConst_string("!!! reflector exited with an error\n",(testsuite/tests/lib-unix/common/redirections.ml[110,3324+21]..[110,3324+57]),None)
+                        ]
+                      None
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[111,3384+2]..[113,3450+27])
+                      Pexp_sequence
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[111,3384+2]..[111,3384+42])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[111,3384+2]..[111,3384+5])
+                          Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[111,3384+2]..[111,3384+5])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[111,3384+6]..[111,3384+17])
+                              Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[111,3384+6]..[111,3384+17])
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[111,3384+18]..[111,3384+42])
+                              Pexp_constant PConst_string("---- File tmpout.txt\n",(testsuite/tests/lib-unix/common/redirections.ml[111,3384+19]..[111,3384+41]),None)
+                        ]
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[112,3428+2]..[113,3450+27])
+                        Pexp_sequence
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[112,3428+2]..[112,3428+20])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[112,3428+2]..[112,3428+5])
+                            Pexp_ident "cat" (testsuite/tests/lib-unix/common/redirections.ml[112,3428+2]..[112,3428+5])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[112,3428+6]..[112,3428+20])
+                                Pexp_constant PConst_string("./tmpout.txt",(testsuite/tests/lib-unix/common/redirections.ml[112,3428+7]..[112,3428+19]),None)
+                          ]
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[113,3450+2]..[113,3450+27])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[113,3450+2]..[113,3450+12])
+                            Pexp_ident "Sys.remove" (testsuite/tests/lib-unix/common/redirections.ml[113,3450+2]..[113,3450+12])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[113,3450+13]..[113,3450+27])
+                                Pexp_constant PConst_string("./tmpout.txt",(testsuite/tests/lib-unix/common/redirections.ml[113,3450+14]..[113,3450+26]),None)
+                          ]
+    ]
+  structure_item (testsuite/tests/lib-unix/common/redirections.ml[115,3479+0]..[121,3732+58])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/common/redirections.ml[115,3479+4]..[115,3479+24])
+          Ppat_var "test_open_process_in" (testsuite/tests/lib-unix/common/redirections.ml[115,3479+4]..[115,3479+24])
+        expression (testsuite/tests/lib-unix/common/redirections.ml[115,3479+25]..[121,3732+58]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-unix/common/redirections.ml[115,3479+25]..[115,3479+27])
+            Ppat_construct "()" (testsuite/tests/lib-unix/common/redirections.ml[115,3479+25]..[115,3479+27])
+            None
+          expression (testsuite/tests/lib-unix/common/redirections.ml[116,3509+2]..[121,3732+58])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (testsuite/tests/lib-unix/common/redirections.ml[116,3509+6]..[116,3509+8])
+                  Ppat_var "ic" (testsuite/tests/lib-unix/common/redirections.ml[116,3509+6]..[116,3509+8])
+                expression (testsuite/tests/lib-unix/common/redirections.ml[116,3509+11]..[116,3509+57])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[116,3509+11]..[116,3509+31])
+                    Pexp_ident "Unix.open_process_in" (testsuite/tests/lib-unix/common/redirections.ml[116,3509+11]..[116,3509+31])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[116,3509+32]..[116,3509+57])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[116,3509+38]..[116,3509+39])
+                          Pexp_ident "^" (testsuite/tests/lib-unix/common/redirections.ml[116,3509+38]..[116,3509+39])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[116,3509+33]..[116,3509+37])
+                              Pexp_ident "refl" (testsuite/tests/lib-unix/common/redirections.ml[116,3509+33]..[116,3509+37])
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[116,3509+40]..[116,3509+56])
+                              Pexp_constant PConst_string(" -o 123 -o 456",(testsuite/tests/lib-unix/common/redirections.ml[116,3509+41]..[116,3509+55]),None)
+                        ]
+                  ]
+            ]
+            expression (testsuite/tests/lib-unix/common/redirections.ml[117,3570+2]..[121,3732+58])
+              Pexp_sequence
+              expression (testsuite/tests/lib-unix/common/redirections.ml[117,3570+2]..[117,3570+40])
+                Pexp_apply
+                expression (testsuite/tests/lib-unix/common/redirections.ml[117,3570+2]..[117,3570+5])
+                  Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[117,3570+2]..[117,3570+5])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[117,3570+6]..[117,3570+17])
+                      Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[117,3570+6]..[117,3570+17])
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[117,3570+18]..[117,3570+40])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[117,3570+33]..[117,3570+34])
+                        Pexp_ident "^" (testsuite/tests/lib-unix/common/redirections.ml[117,3570+33]..[117,3570+34])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[117,3570+19]..[117,3570+32])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[117,3570+19]..[117,3570+29])
+                              Pexp_ident "input_line" (testsuite/tests/lib-unix/common/redirections.ml[117,3570+19]..[117,3570+29])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[117,3570+30]..[117,3570+32])
+                                  Pexp_ident "ic" (testsuite/tests/lib-unix/common/redirections.ml[117,3570+30]..[117,3570+32])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[117,3570+35]..[117,3570+39])
+                            Pexp_constant PConst_string("\n",(testsuite/tests/lib-unix/common/redirections.ml[117,3570+36]..[117,3570+38]),None)
+                      ]
+                ]
+              expression (testsuite/tests/lib-unix/common/redirections.ml[118,3612+2]..[121,3732+58])
+                Pexp_sequence
+                expression (testsuite/tests/lib-unix/common/redirections.ml[118,3612+2]..[118,3612+40])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[118,3612+2]..[118,3612+5])
+                    Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[118,3612+2]..[118,3612+5])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[118,3612+6]..[118,3612+17])
+                        Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[118,3612+6]..[118,3612+17])
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[118,3612+18]..[118,3612+40])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[118,3612+33]..[118,3612+34])
+                          Pexp_ident "^" (testsuite/tests/lib-unix/common/redirections.ml[118,3612+33]..[118,3612+34])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[118,3612+19]..[118,3612+32])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[118,3612+19]..[118,3612+29])
+                                Pexp_ident "input_line" (testsuite/tests/lib-unix/common/redirections.ml[118,3612+19]..[118,3612+29])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[118,3612+30]..[118,3612+32])
+                                    Pexp_ident "ic" (testsuite/tests/lib-unix/common/redirections.ml[118,3612+30]..[118,3612+32])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[118,3612+35]..[118,3612+39])
+                              Pexp_constant PConst_string("\n",(testsuite/tests/lib-unix/common/redirections.ml[118,3612+36]..[118,3612+38]),None)
+                        ]
+                  ]
+                expression (testsuite/tests/lib-unix/common/redirections.ml[119,3654+2]..[121,3732+58])
+                  Pexp_let Nonrec
+                  [
+                    <def>
+                      pattern (testsuite/tests/lib-unix/common/redirections.ml[119,3654+6]..[119,3654+12])
+                        Ppat_var "status" (testsuite/tests/lib-unix/common/redirections.ml[119,3654+6]..[119,3654+12])
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[119,3654+15]..[119,3654+39])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[119,3654+15]..[119,3654+36])
+                          Pexp_ident "Unix.close_process_in" (testsuite/tests/lib-unix/common/redirections.ml[119,3654+15]..[119,3654+36])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[119,3654+37]..[119,3654+39])
+                              Pexp_ident "ic" (testsuite/tests/lib-unix/common/redirections.ml[119,3654+37]..[119,3654+39])
+                        ]
+                  ]
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[120,3697+2]..[121,3732+58])
+                    Pexp_ifthenelse
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[120,3697+5]..[120,3697+29])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[120,3697+12]..[120,3697+14])
+                        Pexp_ident "<>" (testsuite/tests/lib-unix/common/redirections.ml[120,3697+12]..[120,3697+14])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[120,3697+5]..[120,3697+11])
+                            Pexp_ident "status" (testsuite/tests/lib-unix/common/redirections.ml[120,3697+5]..[120,3697+11])
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[120,3697+15]..[120,3697+29])
+                            Pexp_construct "Unix.WEXITED" (testsuite/tests/lib-unix/common/redirections.ml[120,3697+15]..[120,3697+27])
+                            Some
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[120,3697+28]..[120,3697+29])
+                                Pexp_constant PConst_int (0,None)
+                      ]
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[121,3732+4]..[121,3732+58])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[121,3732+4]..[121,3732+7])
+                        Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[121,3732+4]..[121,3732+7])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[121,3732+8]..[121,3732+19])
+                            Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[121,3732+8]..[121,3732+19])
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[121,3732+20]..[121,3732+58])
+                            Pexp_constant PConst_string("!!! reflector exited with an error\n",(testsuite/tests/lib-unix/common/redirections.ml[121,3732+21]..[121,3732+57]),None)
+                      ]
+                    None
+    ]
+  structure_item (testsuite/tests/lib-unix/common/redirections.ml[123,3792+0]..[128,4012+58])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/common/redirections.ml[123,3792+4]..[123,3792+25])
+          Ppat_var "test_open_process_out" (testsuite/tests/lib-unix/common/redirections.ml[123,3792+4]..[123,3792+25])
+        expression (testsuite/tests/lib-unix/common/redirections.ml[123,3792+26]..[128,4012+58]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-unix/common/redirections.ml[123,3792+26]..[123,3792+28])
+            Ppat_construct "()" (testsuite/tests/lib-unix/common/redirections.ml[123,3792+26]..[123,3792+28])
+            None
+          expression (testsuite/tests/lib-unix/common/redirections.ml[124,3823+2]..[128,4012+58])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (testsuite/tests/lib-unix/common/redirections.ml[124,3823+6]..[124,3823+8])
+                  Ppat_var "oc" (testsuite/tests/lib-unix/common/redirections.ml[124,3823+6]..[124,3823+8])
+                expression (testsuite/tests/lib-unix/common/redirections.ml[124,3823+11]..[124,3823+59])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[124,3823+11]..[124,3823+32])
+                    Pexp_ident "Unix.open_process_out" (testsuite/tests/lib-unix/common/redirections.ml[124,3823+11]..[124,3823+32])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[124,3823+33]..[124,3823+59])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[124,3823+39]..[124,3823+40])
+                          Pexp_ident "^" (testsuite/tests/lib-unix/common/redirections.ml[124,3823+39]..[124,3823+40])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[124,3823+34]..[124,3823+38])
+                              Pexp_ident "refl" (testsuite/tests/lib-unix/common/redirections.ml[124,3823+34]..[124,3823+38])
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[124,3823+41]..[124,3823+58])
+                              Pexp_constant PConst_string(" -i2o -i2o -i2o",(testsuite/tests/lib-unix/common/redirections.ml[124,3823+42]..[124,3823+57]),None)
+                        ]
+                  ]
+            ]
+            expression (testsuite/tests/lib-unix/common/redirections.ml[125,3886+2]..[128,4012+58])
+              Pexp_sequence
+              expression (testsuite/tests/lib-unix/common/redirections.ml[125,3886+2]..[125,3886+31])
+                Pexp_apply
+                expression (testsuite/tests/lib-unix/common/redirections.ml[125,3886+2]..[125,3886+15])
+                  Pexp_ident "output_string" (testsuite/tests/lib-unix/common/redirections.ml[125,3886+2]..[125,3886+15])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[125,3886+16]..[125,3886+18])
+                      Pexp_ident "oc" (testsuite/tests/lib-unix/common/redirections.ml[125,3886+16]..[125,3886+18])
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[125,3886+19]..[125,3886+31])
+                      Pexp_constant PConst_string("aa\nbbbb\n",(testsuite/tests/lib-unix/common/redirections.ml[125,3886+20]..[125,3886+30]),None)
+                ]
+              expression (testsuite/tests/lib-unix/common/redirections.ml[125,3886+33]..[128,4012+58])
+                Pexp_sequence
+                expression (testsuite/tests/lib-unix/common/redirections.ml[125,3886+33]..[125,3886+45])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[125,3886+33]..[125,3886+42])
+                    Pexp_ident "close_out" (testsuite/tests/lib-unix/common/redirections.ml[125,3886+33]..[125,3886+42])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[125,3886+43]..[125,3886+45])
+                        Pexp_ident "oc" (testsuite/tests/lib-unix/common/redirections.ml[125,3886+43]..[125,3886+45])
+                  ]
+                expression (testsuite/tests/lib-unix/common/redirections.ml[126,3933+2]..[128,4012+58])
+                  Pexp_let Nonrec
+                  [
+                    <def>
+                      pattern (testsuite/tests/lib-unix/common/redirections.ml[126,3933+6]..[126,3933+12])
+                        Ppat_var "status" (testsuite/tests/lib-unix/common/redirections.ml[126,3933+6]..[126,3933+12])
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[126,3933+15]..[126,3933+40])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[126,3933+15]..[126,3933+37])
+                          Pexp_ident "Unix.close_process_out" (testsuite/tests/lib-unix/common/redirections.ml[126,3933+15]..[126,3933+37])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[126,3933+38]..[126,3933+40])
+                              Pexp_ident "oc" (testsuite/tests/lib-unix/common/redirections.ml[126,3933+38]..[126,3933+40])
+                        ]
+                  ]
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[127,3977+2]..[128,4012+58])
+                    Pexp_ifthenelse
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[127,3977+5]..[127,3977+29])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[127,3977+12]..[127,3977+14])
+                        Pexp_ident "<>" (testsuite/tests/lib-unix/common/redirections.ml[127,3977+12]..[127,3977+14])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[127,3977+5]..[127,3977+11])
+                            Pexp_ident "status" (testsuite/tests/lib-unix/common/redirections.ml[127,3977+5]..[127,3977+11])
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[127,3977+15]..[127,3977+29])
+                            Pexp_construct "Unix.WEXITED" (testsuite/tests/lib-unix/common/redirections.ml[127,3977+15]..[127,3977+27])
+                            Some
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[127,3977+28]..[127,3977+29])
+                                Pexp_constant PConst_int (0,None)
+                      ]
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[128,4012+4]..[128,4012+58])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[128,4012+4]..[128,4012+7])
+                        Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[128,4012+4]..[128,4012+7])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[128,4012+8]..[128,4012+19])
+                            Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[128,4012+8]..[128,4012+19])
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[128,4012+20]..[128,4012+58])
+                            Pexp_constant PConst_string("!!! reflector exited with an error\n",(testsuite/tests/lib-unix/common/redirections.ml[128,4012+21]..[128,4012+57]),None)
+                      ]
+                    None
+    ]
+  structure_item (testsuite/tests/lib-unix/common/redirections.ml[130,4072+0]..[144,4533+58])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/common/redirections.ml[130,4072+4]..[130,4072+26])
+          Ppat_var "test_open_process_full" (testsuite/tests/lib-unix/common/redirections.ml[130,4072+4]..[130,4072+26])
+        expression (testsuite/tests/lib-unix/common/redirections.ml[130,4072+27]..[144,4533+58]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-unix/common/redirections.ml[130,4072+27]..[130,4072+36])
+            Ppat_var "systemenv" (testsuite/tests/lib-unix/common/redirections.ml[130,4072+27]..[130,4072+36])
+          expression (testsuite/tests/lib-unix/common/redirections.ml[131,4111+2]..[144,4533+58])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (testsuite/tests/lib-unix/common/redirections.ml[131,4111+6]..[131,4111+24])
+                  Ppat_alias "res" (testsuite/tests/lib-unix/common/redirections.ml[131,4111+20]..[131,4111+23])
+                  pattern (testsuite/tests/lib-unix/common/redirections.ml[131,4111+7]..[131,4111+16])
+                    Ppat_tuple
+                    [
+                      pattern (testsuite/tests/lib-unix/common/redirections.ml[131,4111+8]..[131,4111+9])
+                        Ppat_var "o" (testsuite/tests/lib-unix/common/redirections.ml[131,4111+8]..[131,4111+9])
+                      pattern (testsuite/tests/lib-unix/common/redirections.ml[131,4111+11]..[131,4111+12])
+                        Ppat_var "i" (testsuite/tests/lib-unix/common/redirections.ml[131,4111+11]..[131,4111+12])
+                      pattern (testsuite/tests/lib-unix/common/redirections.ml[131,4111+14]..[131,4111+15])
+                        Ppat_var "e" (testsuite/tests/lib-unix/common/redirections.ml[131,4111+14]..[131,4111+15])
+                    ]
+                expression (testsuite/tests/lib-unix/common/redirections.ml[132,4138+4]..[134,4215+46])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[132,4138+4]..[132,4138+26])
+                    Pexp_ident "Unix.open_process_full" (testsuite/tests/lib-unix/common/redirections.ml[132,4138+4]..[132,4138+26])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[133,4165+6]..[133,4165+49])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[133,4165+12]..[133,4165+13])
+                          Pexp_ident "^" (testsuite/tests/lib-unix/common/redirections.ml[133,4165+12]..[133,4165+13])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[133,4165+7]..[133,4165+11])
+                              Pexp_ident "refl" (testsuite/tests/lib-unix/common/redirections.ml[133,4165+7]..[133,4165+11])
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[133,4165+14]..[133,4165+48])
+                              Pexp_constant PConst_string(" -o 123 -i2o -e 456 -i2e -v XVAR",(testsuite/tests/lib-unix/common/redirections.ml[133,4165+15]..[133,4165+47]),None)
+                        ]
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[134,4215+6]..[134,4215+46])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[134,4215+7]..[134,4215+19])
+                          Pexp_ident "Array.append" (testsuite/tests/lib-unix/common/redirections.ml[134,4215+7]..[134,4215+19])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[134,4215+20]..[134,4215+35])
+                              Pexp_array
+                              [
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[134,4215+22]..[134,4215+33])
+                                  Pexp_constant PConst_string("XVAR=xvar",(testsuite/tests/lib-unix/common/redirections.ml[134,4215+23]..[134,4215+32]),None)
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[134,4215+36]..[134,4215+45])
+                              Pexp_ident "systemenv" (testsuite/tests/lib-unix/common/redirections.ml[134,4215+36]..[134,4215+45])
+                        ]
+                  ]
+            ]
+            expression (testsuite/tests/lib-unix/common/redirections.ml[135,4265+2]..[144,4533+58])
+              Pexp_sequence
+              expression (testsuite/tests/lib-unix/common/redirections.ml[135,4265+2]..[135,4265+30])
+                Pexp_apply
+                expression (testsuite/tests/lib-unix/common/redirections.ml[135,4265+2]..[135,4265+15])
+                  Pexp_ident "output_string" (testsuite/tests/lib-unix/common/redirections.ml[135,4265+2]..[135,4265+15])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[135,4265+16]..[135,4265+17])
+                      Pexp_ident "i" (testsuite/tests/lib-unix/common/redirections.ml[135,4265+16]..[135,4265+17])
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[135,4265+18]..[135,4265+30])
+                      Pexp_constant PConst_string("aa\nbbbb\n",(testsuite/tests/lib-unix/common/redirections.ml[135,4265+19]..[135,4265+29]),None)
+                ]
+              expression (testsuite/tests/lib-unix/common/redirections.ml[135,4265+32]..[144,4533+58])
+                Pexp_sequence
+                expression (testsuite/tests/lib-unix/common/redirections.ml[135,4265+32]..[135,4265+43])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[135,4265+32]..[135,4265+41])
+                    Pexp_ident "close_out" (testsuite/tests/lib-unix/common/redirections.ml[135,4265+32]..[135,4265+41])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[135,4265+42]..[135,4265+43])
+                        Pexp_ident "i" (testsuite/tests/lib-unix/common/redirections.ml[135,4265+42]..[135,4265+43])
+                  ]
+                expression (testsuite/tests/lib-unix/common/redirections.ml[136,4310+2]..[144,4533+58])
+                  Pexp_sequence
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[136,4310+2]..[138,4373+6])
+                    Pexp_for Up
+                    pattern (testsuite/tests/lib-unix/common/redirections.ml[136,4310+6]..[136,4310+8])
+                      Ppat_var "_i" (testsuite/tests/lib-unix/common/redirections.ml[136,4310+6]..[136,4310+8])
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[136,4310+11]..[136,4310+12])
+                      Pexp_constant PConst_int (1,None)
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[136,4310+16]..[136,4310+17])
+                      Pexp_constant PConst_int (3,None)
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[137,4331+4]..[137,4331+41])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[137,4331+4]..[137,4331+7])
+                        Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[137,4331+4]..[137,4331+7])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[137,4331+8]..[137,4331+19])
+                            Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[137,4331+8]..[137,4331+19])
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[137,4331+20]..[137,4331+41])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[137,4331+34]..[137,4331+35])
+                              Pexp_ident "^" (testsuite/tests/lib-unix/common/redirections.ml[137,4331+34]..[137,4331+35])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[137,4331+21]..[137,4331+33])
+                                  Pexp_apply
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[137,4331+21]..[137,4331+31])
+                                    Pexp_ident "input_line" (testsuite/tests/lib-unix/common/redirections.ml[137,4331+21]..[137,4331+31])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-unix/common/redirections.ml[137,4331+32]..[137,4331+33])
+                                        Pexp_ident "o" (testsuite/tests/lib-unix/common/redirections.ml[137,4331+32]..[137,4331+33])
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[137,4331+36]..[137,4331+40])
+                                  Pexp_constant PConst_string("\n",(testsuite/tests/lib-unix/common/redirections.ml[137,4331+37]..[137,4331+39]),None)
+                            ]
+                      ]
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[139,4381+2]..[144,4533+58])
+                    Pexp_sequence
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[139,4381+2]..[141,4444+6])
+                      Pexp_for Up
+                      pattern (testsuite/tests/lib-unix/common/redirections.ml[139,4381+6]..[139,4381+8])
+                        Ppat_var "_i" (testsuite/tests/lib-unix/common/redirections.ml[139,4381+6]..[139,4381+8])
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[139,4381+11]..[139,4381+12])
+                        Pexp_constant PConst_int (1,None)
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[139,4381+16]..[139,4381+17])
+                        Pexp_constant PConst_int (2,None)
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[140,4402+4]..[140,4402+41])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[140,4402+4]..[140,4402+7])
+                          Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[140,4402+4]..[140,4402+7])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[140,4402+8]..[140,4402+19])
+                              Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[140,4402+8]..[140,4402+19])
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[140,4402+20]..[140,4402+41])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[140,4402+34]..[140,4402+35])
+                                Pexp_ident "^" (testsuite/tests/lib-unix/common/redirections.ml[140,4402+34]..[140,4402+35])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[140,4402+21]..[140,4402+33])
+                                    Pexp_apply
+                                    expression (testsuite/tests/lib-unix/common/redirections.ml[140,4402+21]..[140,4402+31])
+                                      Pexp_ident "input_line" (testsuite/tests/lib-unix/common/redirections.ml[140,4402+21]..[140,4402+31])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-unix/common/redirections.ml[140,4402+32]..[140,4402+33])
+                                          Pexp_ident "e" (testsuite/tests/lib-unix/common/redirections.ml[140,4402+32]..[140,4402+33])
+                                    ]
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[140,4402+36]..[140,4402+40])
+                                    Pexp_constant PConst_string("\n",(testsuite/tests/lib-unix/common/redirections.ml[140,4402+37]..[140,4402+39]),None)
+                              ]
+                        ]
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[142,4452+2]..[144,4533+58])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (testsuite/tests/lib-unix/common/redirections.ml[142,4452+6]..[142,4452+12])
+                            Ppat_var "status" (testsuite/tests/lib-unix/common/redirections.ml[142,4452+6]..[142,4452+12])
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[142,4452+15]..[142,4452+42])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[142,4452+15]..[142,4452+38])
+                              Pexp_ident "Unix.close_process_full" (testsuite/tests/lib-unix/common/redirections.ml[142,4452+15]..[142,4452+38])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[142,4452+39]..[142,4452+42])
+                                  Pexp_ident "res" (testsuite/tests/lib-unix/common/redirections.ml[142,4452+39]..[142,4452+42])
+                            ]
+                      ]
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[143,4498+2]..[144,4533+58])
+                        Pexp_ifthenelse
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[143,4498+5]..[143,4498+29])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[143,4498+12]..[143,4498+14])
+                            Pexp_ident "<>" (testsuite/tests/lib-unix/common/redirections.ml[143,4498+12]..[143,4498+14])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[143,4498+5]..[143,4498+11])
+                                Pexp_ident "status" (testsuite/tests/lib-unix/common/redirections.ml[143,4498+5]..[143,4498+11])
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[143,4498+15]..[143,4498+29])
+                                Pexp_construct "Unix.WEXITED" (testsuite/tests/lib-unix/common/redirections.ml[143,4498+15]..[143,4498+27])
+                                Some
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[143,4498+28]..[143,4498+29])
+                                    Pexp_constant PConst_int (0,None)
+                          ]
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[144,4533+4]..[144,4533+58])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[144,4533+4]..[144,4533+7])
+                            Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[144,4533+4]..[144,4533+7])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[144,4533+8]..[144,4533+19])
+                                Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[144,4533+8]..[144,4533+19])
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[144,4533+20]..[144,4533+58])
+                                Pexp_constant PConst_string("!!! reflector exited with an error\n",(testsuite/tests/lib-unix/common/redirections.ml[144,4533+21]..[144,4533+57]),None)
+                          ]
+                        None
+    ]
+  structure_item (testsuite/tests/lib-unix/common/redirections.ml[146,4593+0]..[165,5313+28])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-unix/common/redirections.ml[146,4593+4]..[146,4593+5])
+          Ppat_any
+        expression (testsuite/tests/lib-unix/common/redirections.ml[147,4601+2]..[165,5313+28])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (testsuite/tests/lib-unix/common/redirections.ml[147,4601+6]..[147,4601+9])
+                Ppat_var "env" (testsuite/tests/lib-unix/common/redirections.ml[147,4601+6]..[147,4601+9])
+              expression (testsuite/tests/lib-unix/common/redirections.ml[147,4601+12]..[147,4601+30])
+                Pexp_apply
+                expression (testsuite/tests/lib-unix/common/redirections.ml[147,4601+12]..[147,4601+28])
+                  Pexp_ident "Unix.environment" (testsuite/tests/lib-unix/common/redirections.ml[147,4601+12]..[147,4601+28])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[147,4601+28]..[147,4601+30])
+                      Pexp_construct "()" (testsuite/tests/lib-unix/common/redirections.ml[147,4601+28]..[147,4601+30])
+                      None
+                ]
+          ]
+          expression (testsuite/tests/lib-unix/common/redirections.ml[152,4849+2]..[165,5313+28])
+            Pexp_sequence
+            expression (testsuite/tests/lib-unix/common/redirections.ml[152,4849+2]..[152,4849+39])
+              Pexp_apply
+              expression (testsuite/tests/lib-unix/common/redirections.ml[152,4849+2]..[152,4849+5])
+                Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[152,4849+2]..[152,4849+5])
+              [
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[152,4849+6]..[152,4849+17])
+                    Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[152,4849+6]..[152,4849+17])
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[152,4849+18]..[152,4849+39])
+                    Pexp_constant PConst_string("** create_process\n",(testsuite/tests/lib-unix/common/redirections.ml[152,4849+19]..[152,4849+38]),None)
+              ]
+            expression (testsuite/tests/lib-unix/common/redirections.ml[153,4890+2]..[165,5313+28])
+              Pexp_sequence
+              expression (testsuite/tests/lib-unix/common/redirections.ml[153,4890+2]..[153,4890+24])
+                Pexp_apply
+                expression (testsuite/tests/lib-unix/common/redirections.ml[153,4890+2]..[153,4890+20])
+                  Pexp_ident "test_createprocess" (testsuite/tests/lib-unix/common/redirections.ml[153,4890+2]..[153,4890+20])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[153,4890+21]..[153,4890+24])
+                      Pexp_ident "env" (testsuite/tests/lib-unix/common/redirections.ml[153,4890+21]..[153,4890+24])
+                ]
+              expression (testsuite/tests/lib-unix/common/redirections.ml[154,4916+2]..[165,5313+28])
+                Pexp_sequence
+                expression (testsuite/tests/lib-unix/common/redirections.ml[154,4916+2]..[154,4916+56])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[154,4916+2]..[154,4916+5])
+                    Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[154,4916+2]..[154,4916+5])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[154,4916+6]..[154,4916+17])
+                        Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[154,4916+6]..[154,4916+17])
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[154,4916+18]..[154,4916+56])
+                        Pexp_constant PConst_string("** create_process 2>&1 redirection\n",(testsuite/tests/lib-unix/common/redirections.ml[154,4916+19]..[154,4916+55]),None)
+                  ]
+                expression (testsuite/tests/lib-unix/common/redirections.ml[155,4974+2]..[165,5313+28])
+                  Pexp_sequence
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[155,4974+2]..[155,4974+17])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[155,4974+2]..[155,4974+15])
+                      Pexp_ident "test_2ampsup1" (testsuite/tests/lib-unix/common/redirections.ml[155,4974+2]..[155,4974+15])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[155,4974+15]..[155,4974+17])
+                          Pexp_construct "()" (testsuite/tests/lib-unix/common/redirections.ml[155,4974+15]..[155,4974+17])
+                          None
+                    ]
+                  expression (testsuite/tests/lib-unix/common/redirections.ml[156,4993+2]..[165,5313+28])
+                    Pexp_sequence
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[156,4993+2]..[156,4993+48])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[156,4993+2]..[156,4993+5])
+                        Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[156,4993+2]..[156,4993+5])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[156,4993+6]..[156,4993+17])
+                            Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[156,4993+6]..[156,4993+17])
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[156,4993+18]..[156,4993+48])
+                            Pexp_constant PConst_string("** create_process swap 1-2\n",(testsuite/tests/lib-unix/common/redirections.ml[156,4993+19]..[156,4993+47]),None)
+                      ]
+                    expression (testsuite/tests/lib-unix/common/redirections.ml[157,5043+2]..[165,5313+28])
+                      Pexp_sequence
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[157,5043+2]..[157,5043+15])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[157,5043+2]..[157,5043+13])
+                          Pexp_ident "test_swap12" (testsuite/tests/lib-unix/common/redirections.ml[157,5043+2]..[157,5043+13])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[157,5043+13]..[157,5043+15])
+                              Pexp_construct "()" (testsuite/tests/lib-unix/common/redirections.ml[157,5043+13]..[157,5043+15])
+                              None
+                        ]
+                      expression (testsuite/tests/lib-unix/common/redirections.ml[158,5060+2]..[165,5313+28])
+                        Pexp_sequence
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[158,5060+2]..[158,5060+50])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[158,5060+2]..[158,5060+5])
+                            Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[158,5060+2]..[158,5060+5])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[158,5060+6]..[158,5060+17])
+                                Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[158,5060+6]..[158,5060+17])
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[158,5060+18]..[158,5060+50])
+                                Pexp_constant PConst_string("** create_process >file 2>&1\n",(testsuite/tests/lib-unix/common/redirections.ml[158,5060+19]..[158,5060+49]),None)
+                          ]
+                        expression (testsuite/tests/lib-unix/common/redirections.ml[159,5112+2]..[165,5313+28])
+                          Pexp_sequence
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[159,5112+2]..[159,5112+17])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[159,5112+2]..[159,5112+15])
+                              Pexp_ident "test_12tofile" (testsuite/tests/lib-unix/common/redirections.ml[159,5112+2]..[159,5112+15])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[159,5112+15]..[159,5112+17])
+                                  Pexp_construct "()" (testsuite/tests/lib-unix/common/redirections.ml[159,5112+15]..[159,5112+17])
+                                  None
+                            ]
+                          expression (testsuite/tests/lib-unix/common/redirections.ml[160,5131+2]..[165,5313+28])
+                            Pexp_sequence
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[160,5131+2]..[160,5131+40])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[160,5131+2]..[160,5131+5])
+                                Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[160,5131+2]..[160,5131+5])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[160,5131+6]..[160,5131+17])
+                                    Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[160,5131+6]..[160,5131+17])
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[160,5131+18]..[160,5131+40])
+                                    Pexp_constant PConst_string("** open_process_in\n",(testsuite/tests/lib-unix/common/redirections.ml[160,5131+19]..[160,5131+39]),None)
+                              ]
+                            expression (testsuite/tests/lib-unix/common/redirections.ml[161,5173+2]..[165,5313+28])
+                              Pexp_sequence
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[161,5173+2]..[161,5173+24])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[161,5173+2]..[161,5173+22])
+                                  Pexp_ident "test_open_process_in" (testsuite/tests/lib-unix/common/redirections.ml[161,5173+2]..[161,5173+22])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-unix/common/redirections.ml[161,5173+22]..[161,5173+24])
+                                      Pexp_construct "()" (testsuite/tests/lib-unix/common/redirections.ml[161,5173+22]..[161,5173+24])
+                                      None
+                                ]
+                              expression (testsuite/tests/lib-unix/common/redirections.ml[162,5199+2]..[165,5313+28])
+                                Pexp_sequence
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[162,5199+2]..[162,5199+41])
+                                  Pexp_apply
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[162,5199+2]..[162,5199+5])
+                                    Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[162,5199+2]..[162,5199+5])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-unix/common/redirections.ml[162,5199+6]..[162,5199+17])
+                                        Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[162,5199+6]..[162,5199+17])
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-unix/common/redirections.ml[162,5199+18]..[162,5199+41])
+                                        Pexp_constant PConst_string("** open_process_out\n",(testsuite/tests/lib-unix/common/redirections.ml[162,5199+19]..[162,5199+40]),None)
+                                  ]
+                                expression (testsuite/tests/lib-unix/common/redirections.ml[163,5242+2]..[165,5313+28])
+                                  Pexp_sequence
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[163,5242+2]..[163,5242+25])
+                                    Pexp_apply
+                                    expression (testsuite/tests/lib-unix/common/redirections.ml[163,5242+2]..[163,5242+23])
+                                      Pexp_ident "test_open_process_out" (testsuite/tests/lib-unix/common/redirections.ml[163,5242+2]..[163,5242+23])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-unix/common/redirections.ml[163,5242+23]..[163,5242+25])
+                                          Pexp_construct "()" (testsuite/tests/lib-unix/common/redirections.ml[163,5242+23]..[163,5242+25])
+                                          None
+                                    ]
+                                  expression (testsuite/tests/lib-unix/common/redirections.ml[164,5269+2]..[165,5313+28])
+                                    Pexp_sequence
+                                    expression (testsuite/tests/lib-unix/common/redirections.ml[164,5269+2]..[164,5269+42])
+                                      Pexp_apply
+                                      expression (testsuite/tests/lib-unix/common/redirections.ml[164,5269+2]..[164,5269+5])
+                                        Pexp_ident "out" (testsuite/tests/lib-unix/common/redirections.ml[164,5269+2]..[164,5269+5])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-unix/common/redirections.ml[164,5269+6]..[164,5269+17])
+                                            Pexp_ident "Unix.stdout" (testsuite/tests/lib-unix/common/redirections.ml[164,5269+6]..[164,5269+17])
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-unix/common/redirections.ml[164,5269+18]..[164,5269+42])
+                                            Pexp_constant PConst_string("** open_process_full\n",(testsuite/tests/lib-unix/common/redirections.ml[164,5269+19]..[164,5269+41]),None)
+                                      ]
+                                    expression (testsuite/tests/lib-unix/common/redirections.ml[165,5313+2]..[165,5313+28])
+                                      Pexp_apply
+                                      expression (testsuite/tests/lib-unix/common/redirections.ml[165,5313+2]..[165,5313+24])
+                                        Pexp_ident "test_open_process_full" (testsuite/tests/lib-unix/common/redirections.ml[165,5313+2]..[165,5313+24])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-unix/common/redirections.ml[165,5313+25]..[165,5313+28])
+                                            Pexp_ident "env" (testsuite/tests/lib-unix/common/redirections.ml[165,5313+25]..[165,5313+28])
+                                      ]
+    ]
+]
+

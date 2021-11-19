@@ -1,0 +1,1619 @@
+[
+  structure_item (testsuite/tests/lib-random/chi2.ml[9,220+0]..[28,876+49])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-random/chi2.ml[9,220+4]..[9,220+13])
+          Ppat_var "chisquare" (testsuite/tests/lib-random/chi2.ml[9,220+4]..[9,220+13])
+        expression (testsuite/tests/lib-random/chi2.ml[9,220+14]..[28,876+49]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-random/chi2.ml[9,220+14]..[9,220+15])
+            Ppat_var "n" (testsuite/tests/lib-random/chi2.ml[9,220+14]..[9,220+15])
+          expression (testsuite/tests/lib-random/chi2.ml[9,220+16]..[28,876+49]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/lib-random/chi2.ml[9,220+16]..[9,220+17])
+              Ppat_var "f" (testsuite/tests/lib-random/chi2.ml[9,220+16]..[9,220+17])
+            expression (testsuite/tests/lib-random/chi2.ml[10,240+2]..[28,876+49])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (testsuite/tests/lib-random/chi2.ml[10,240+6]..[10,240+7])
+                    Ppat_var "r" (testsuite/tests/lib-random/chi2.ml[10,240+6]..[10,240+7])
+                  expression (testsuite/tests/lib-random/chi2.ml[10,240+10]..[10,240+13])
+                    Pexp_constant PConst_int (256,None)
+              ]
+              expression (testsuite/tests/lib-random/chi2.ml[11,257+2]..[28,876+49])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (testsuite/tests/lib-random/chi2.ml[11,257+6]..[11,257+10])
+                      Ppat_var "freq" (testsuite/tests/lib-random/chi2.ml[11,257+6]..[11,257+10])
+                    expression (testsuite/tests/lib-random/chi2.ml[11,257+13]..[11,257+27])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-random/chi2.ml[11,257+13]..[11,257+23])
+                        Pexp_ident "Array.make" (testsuite/tests/lib-random/chi2.ml[11,257+13]..[11,257+23])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-random/chi2.ml[11,257+24]..[11,257+25])
+                            Pexp_ident "r" (testsuite/tests/lib-random/chi2.ml[11,257+24]..[11,257+25])
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-random/chi2.ml[11,257+26]..[11,257+27])
+                            Pexp_constant PConst_int (0,None)
+                      ]
+                ]
+                expression (testsuite/tests/lib-random/chi2.ml[12,288+2]..[28,876+49])
+                  Pexp_sequence
+                  expression (testsuite/tests/lib-random/chi2.ml[12,288+2]..[15,371+6])
+                    Pexp_for Up
+                    pattern (testsuite/tests/lib-random/chi2.ml[12,288+6]..[12,288+7])
+                      Ppat_var "i" (testsuite/tests/lib-random/chi2.ml[12,288+6]..[12,288+7])
+                    expression (testsuite/tests/lib-random/chi2.ml[12,288+10]..[12,288+11])
+                      Pexp_constant PConst_int (0,None)
+                    expression (testsuite/tests/lib-random/chi2.ml[12,288+15]..[12,288+20])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-random/chi2.ml[12,288+17]..[12,288+18])
+                        Pexp_ident "-" (testsuite/tests/lib-random/chi2.ml[12,288+17]..[12,288+18])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-random/chi2.ml[12,288+15]..[12,288+16])
+                            Pexp_ident "n" (testsuite/tests/lib-random/chi2.ml[12,288+15]..[12,288+16])
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-random/chi2.ml[12,288+19]..[12,288+20])
+                            Pexp_constant PConst_int (1,None)
+                      ]
+                    expression (testsuite/tests/lib-random/chi2.ml[13,312+4]..[14,342+28])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (testsuite/tests/lib-random/chi2.ml[13,312+8]..[13,312+9])
+                            Ppat_var "t" (testsuite/tests/lib-random/chi2.ml[13,312+8]..[13,312+9])
+                          expression (testsuite/tests/lib-random/chi2.ml[13,312+12]..[13,312+26])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-random/chi2.ml[13,312+17]..[13,312+21])
+                              Pexp_ident "land" (testsuite/tests/lib-random/chi2.ml[13,312+17]..[13,312+21])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-random/chi2.ml[13,312+12]..[13,312+16])
+                                  Pexp_apply
+                                  expression (testsuite/tests/lib-random/chi2.ml[13,312+12]..[13,312+13])
+                                    Pexp_ident "f" (testsuite/tests/lib-random/chi2.ml[13,312+12]..[13,312+13])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-random/chi2.ml[13,312+14]..[13,312+16])
+                                        Pexp_construct "()" (testsuite/tests/lib-random/chi2.ml[13,312+14]..[13,312+16])
+                                        None
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-random/chi2.ml[13,312+22]..[13,312+26])
+                                  Pexp_constant PConst_int (0xFF,None)
+                            ]
+                      ]
+                      expression (testsuite/tests/lib-random/chi2.ml[14,342+4]..[14,342+28])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-random/chi2.ml[14,342+4]..[14,342+28]) ghost
+                          Pexp_ident "Array.set" (testsuite/tests/lib-random/chi2.ml[14,342+4]..[14,342+28]) ghost
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-random/chi2.ml[14,342+4]..[14,342+8])
+                              Pexp_ident "freq" (testsuite/tests/lib-random/chi2.ml[14,342+4]..[14,342+8])
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-random/chi2.ml[14,342+10]..[14,342+11])
+                              Pexp_ident "t" (testsuite/tests/lib-random/chi2.ml[14,342+10]..[14,342+11])
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-random/chi2.ml[14,342+16]..[14,342+28])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-random/chi2.ml[14,342+25]..[14,342+26])
+                                Pexp_ident "+" (testsuite/tests/lib-random/chi2.ml[14,342+25]..[14,342+26])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-random/chi2.ml[14,342+16]..[14,342+24])
+                                    Pexp_apply
+                                    expression (testsuite/tests/lib-random/chi2.ml[14,342+16]..[14,342+24]) ghost
+                                      Pexp_ident "Array.get" (testsuite/tests/lib-random/chi2.ml[14,342+16]..[14,342+24]) ghost
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-random/chi2.ml[14,342+16]..[14,342+20])
+                                          Pexp_ident "freq" (testsuite/tests/lib-random/chi2.ml[14,342+16]..[14,342+20])
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-random/chi2.ml[14,342+22]..[14,342+23])
+                                          Pexp_ident "t" (testsuite/tests/lib-random/chi2.ml[14,342+22]..[14,342+23])
+                                    ]
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-random/chi2.ml[14,342+27]..[14,342+28])
+                                    Pexp_constant PConst_int (1,None)
+                              ]
+                        ]
+                  expression (testsuite/tests/lib-random/chi2.ml[16,379+2]..[28,876+49])
+                    Pexp_let Nonrec
+                    [
+                      <def>
+                        pattern (testsuite/tests/lib-random/chi2.ml[16,379+6]..[16,379+14])
+                          Ppat_var "expected" (testsuite/tests/lib-random/chi2.ml[16,379+6]..[16,379+14])
+                        expression (testsuite/tests/lib-random/chi2.ml[16,379+17]..[16,379+35])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-random/chi2.ml[16,379+25]..[16,379+27])
+                            Pexp_ident "/." (testsuite/tests/lib-random/chi2.ml[16,379+25]..[16,379+27])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-random/chi2.ml[16,379+17]..[16,379+24])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-random/chi2.ml[16,379+17]..[16,379+22])
+                                  Pexp_ident "float" (testsuite/tests/lib-random/chi2.ml[16,379+17]..[16,379+22])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-random/chi2.ml[16,379+23]..[16,379+24])
+                                      Pexp_ident "n" (testsuite/tests/lib-random/chi2.ml[16,379+23]..[16,379+24])
+                                ]
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-random/chi2.ml[16,379+28]..[16,379+35])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-random/chi2.ml[16,379+28]..[16,379+33])
+                                  Pexp_ident "float" (testsuite/tests/lib-random/chi2.ml[16,379+28]..[16,379+33])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-random/chi2.ml[16,379+34]..[16,379+35])
+                                      Pexp_ident "r" (testsuite/tests/lib-random/chi2.ml[16,379+34]..[16,379+35])
+                                ]
+                          ]
+                    ]
+                    expression (testsuite/tests/lib-random/chi2.ml[17,418+2]..[28,876+49])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (testsuite/tests/lib-random/chi2.ml[17,418+6]..[17,418+7])
+                            Ppat_var "t" (testsuite/tests/lib-random/chi2.ml[17,418+6]..[17,418+7])
+                          expression (testsuite/tests/lib-random/chi2.ml[18,428+4]..[20,510+14])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-random/chi2.ml[18,428+4]..[18,428+19])
+                              Pexp_ident "Array.fold_left" (testsuite/tests/lib-random/chi2.ml[18,428+4]..[18,428+19])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-random/chi2.ml[19,448+6]..[19,448+61])
+                                  Pexp_fun
+                                  Nolabel
+                                  None
+                                  pattern (testsuite/tests/lib-random/chi2.ml[19,448+11]..[19,448+12])
+                                    Ppat_var "s" (testsuite/tests/lib-random/chi2.ml[19,448+11]..[19,448+12])
+                                  expression (testsuite/tests/lib-random/chi2.ml[19,448+13]..[19,448+60]) ghost
+                                    Pexp_fun
+                                    Nolabel
+                                    None
+                                    pattern (testsuite/tests/lib-random/chi2.ml[19,448+13]..[19,448+14])
+                                      Ppat_var "x" (testsuite/tests/lib-random/chi2.ml[19,448+13]..[19,448+14])
+                                    expression (testsuite/tests/lib-random/chi2.ml[19,448+18]..[19,448+60])
+                                      Pexp_let Nonrec
+                                      [
+                                        <def>
+                                          pattern (testsuite/tests/lib-random/chi2.ml[19,448+22]..[19,448+23])
+                                            Ppat_var "d" (testsuite/tests/lib-random/chi2.ml[19,448+22]..[19,448+23])
+                                          expression (testsuite/tests/lib-random/chi2.ml[19,448+26]..[19,448+45])
+                                            Pexp_apply
+                                            expression (testsuite/tests/lib-random/chi2.ml[19,448+34]..[19,448+36])
+                                              Pexp_ident "-." (testsuite/tests/lib-random/chi2.ml[19,448+34]..[19,448+36])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/lib-random/chi2.ml[19,448+26]..[19,448+33])
+                                                  Pexp_apply
+                                                  expression (testsuite/tests/lib-random/chi2.ml[19,448+26]..[19,448+31])
+                                                    Pexp_ident "float" (testsuite/tests/lib-random/chi2.ml[19,448+26]..[19,448+31])
+                                                  [
+                                                    <arg>
+                                                    Nolabel
+                                                      expression (testsuite/tests/lib-random/chi2.ml[19,448+32]..[19,448+33])
+                                                        Pexp_ident "x" (testsuite/tests/lib-random/chi2.ml[19,448+32]..[19,448+33])
+                                                  ]
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/lib-random/chi2.ml[19,448+37]..[19,448+45])
+                                                  Pexp_ident "expected" (testsuite/tests/lib-random/chi2.ml[19,448+37]..[19,448+45])
+                                            ]
+                                      ]
+                                      expression (testsuite/tests/lib-random/chi2.ml[19,448+49]..[19,448+60])
+                                        Pexp_apply
+                                        expression (testsuite/tests/lib-random/chi2.ml[19,448+56]..[19,448+58])
+                                          Pexp_ident "+." (testsuite/tests/lib-random/chi2.ml[19,448+56]..[19,448+58])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/lib-random/chi2.ml[19,448+49]..[19,448+55])
+                                              Pexp_apply
+                                              expression (testsuite/tests/lib-random/chi2.ml[19,448+51]..[19,448+53])
+                                                Pexp_ident "*." (testsuite/tests/lib-random/chi2.ml[19,448+51]..[19,448+53])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/lib-random/chi2.ml[19,448+49]..[19,448+50])
+                                                    Pexp_ident "d" (testsuite/tests/lib-random/chi2.ml[19,448+49]..[19,448+50])
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/lib-random/chi2.ml[19,448+54]..[19,448+55])
+                                                    Pexp_ident "d" (testsuite/tests/lib-random/chi2.ml[19,448+54]..[19,448+55])
+                                              ]
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/lib-random/chi2.ml[19,448+59]..[19,448+60])
+                                              Pexp_ident "s" (testsuite/tests/lib-random/chi2.ml[19,448+59]..[19,448+60])
+                                        ]
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-random/chi2.ml[20,510+6]..[20,510+9])
+                                  Pexp_constant PConst_float (0.0,None)
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-random/chi2.ml[20,510+10]..[20,510+14])
+                                  Pexp_ident "freq" (testsuite/tests/lib-random/chi2.ml[20,510+10]..[20,510+14])
+                            ]
+                      ]
+                      expression (testsuite/tests/lib-random/chi2.ml[21,528+2]..[28,876+49])
+                        Pexp_let Nonrec
+                        [
+                          <def>
+                            pattern (testsuite/tests/lib-random/chi2.ml[21,528+6]..[21,528+10])
+                              Ppat_var "chi2" (testsuite/tests/lib-random/chi2.ml[21,528+6]..[21,528+10])
+                            expression (testsuite/tests/lib-random/chi2.ml[21,528+13]..[21,528+26])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-random/chi2.ml[21,528+15]..[21,528+17])
+                                Pexp_ident "/." (testsuite/tests/lib-random/chi2.ml[21,528+15]..[21,528+17])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-random/chi2.ml[21,528+13]..[21,528+14])
+                                    Pexp_ident "t" (testsuite/tests/lib-random/chi2.ml[21,528+13]..[21,528+14])
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-random/chi2.ml[21,528+18]..[21,528+26])
+                                    Pexp_ident "expected" (testsuite/tests/lib-random/chi2.ml[21,528+18]..[21,528+26])
+                              ]
+                        ]
+                        expression (testsuite/tests/lib-random/chi2.ml[22,558+2]..[28,876+49])
+                          Pexp_let Nonrec
+                          [
+                            <def>
+                              pattern (testsuite/tests/lib-random/chi2.ml[22,558+6]..[22,558+13])
+                                Ppat_var "degfree" (testsuite/tests/lib-random/chi2.ml[22,558+6]..[22,558+13])
+                              expression (testsuite/tests/lib-random/chi2.ml[22,558+16]..[22,558+30])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-random/chi2.ml[22,558+24]..[22,558+26])
+                                  Pexp_ident "-." (testsuite/tests/lib-random/chi2.ml[22,558+24]..[22,558+26])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-random/chi2.ml[22,558+16]..[22,558+23])
+                                      Pexp_apply
+                                      expression (testsuite/tests/lib-random/chi2.ml[22,558+16]..[22,558+21])
+                                        Pexp_ident "float" (testsuite/tests/lib-random/chi2.ml[22,558+16]..[22,558+21])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-random/chi2.ml[22,558+22]..[22,558+23])
+                                            Pexp_ident "r" (testsuite/tests/lib-random/chi2.ml[22,558+22]..[22,558+23])
+                                      ]
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-random/chi2.ml[22,558+27]..[22,558+30])
+                                      Pexp_constant PConst_float (1.0,None)
+                                ]
+                          ]
+                          expression (testsuite/tests/lib-random/chi2.ml[28,876+2]..[28,876+49])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-random/chi2.ml[28,876+7]..[28,876+9])
+                              Pexp_ident "<=" (testsuite/tests/lib-random/chi2.ml[28,876+7]..[28,876+9])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-random/chi2.ml[28,876+2]..[28,876+6])
+                                  Pexp_ident "chi2" (testsuite/tests/lib-random/chi2.ml[28,876+2]..[28,876+6])
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-random/chi2.ml[28,876+10]..[28,876+49])
+                                  Pexp_apply
+                                  expression (testsuite/tests/lib-random/chi2.ml[28,876+18]..[28,876+20])
+                                    Pexp_ident "+." (testsuite/tests/lib-random/chi2.ml[28,876+18]..[28,876+20])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-random/chi2.ml[28,876+10]..[28,876+17])
+                                        Pexp_ident "degfree" (testsuite/tests/lib-random/chi2.ml[28,876+10]..[28,876+17])
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-random/chi2.ml[28,876+21]..[28,876+49])
+                                        Pexp_apply
+                                        expression (testsuite/tests/lib-random/chi2.ml[28,876+25]..[28,876+27])
+                                          Pexp_ident "*." (testsuite/tests/lib-random/chi2.ml[28,876+25]..[28,876+27])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/lib-random/chi2.ml[28,876+21]..[28,876+24])
+                                              Pexp_constant PConst_float (4.0,None)
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/lib-random/chi2.ml[28,876+28]..[28,876+49])
+                                              Pexp_apply
+                                              expression (testsuite/tests/lib-random/chi2.ml[28,876+28]..[28,876+32])
+                                                Pexp_ident "sqrt" (testsuite/tests/lib-random/chi2.ml[28,876+28]..[28,876+32])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/lib-random/chi2.ml[28,876+33]..[28,876+49])
+                                                    Pexp_apply
+                                                    expression (testsuite/tests/lib-random/chi2.ml[28,876+38]..[28,876+40])
+                                                      Pexp_ident "*." (testsuite/tests/lib-random/chi2.ml[28,876+38]..[28,876+40])
+                                                    [
+                                                      <arg>
+                                                      Nolabel
+                                                        expression (testsuite/tests/lib-random/chi2.ml[28,876+34]..[28,876+37])
+                                                          Pexp_constant PConst_float (2.0,None)
+                                                      <arg>
+                                                      Nolabel
+                                                        expression (testsuite/tests/lib-random/chi2.ml[28,876+41]..[28,876+48])
+                                                          Pexp_ident "degfree" (testsuite/tests/lib-random/chi2.ml[28,876+41]..[28,876+48])
+                                                    ]
+                                              ]
+                                        ]
+                                  ]
+                            ]
+    ]
+  structure_item (testsuite/tests/lib-random/chi2.ml[30,927+0]..[32,976+53])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-random/chi2.ml[30,927+4]..[30,927+8])
+          Ppat_var "test" (testsuite/tests/lib-random/chi2.ml[30,927+4]..[30,927+8])
+        expression (testsuite/tests/lib-random/chi2.ml[30,927+9]..[32,976+53]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (testsuite/tests/lib-random/chi2.ml[30,927+9]..[30,927+13])
+            Ppat_var "name" (testsuite/tests/lib-random/chi2.ml[30,927+9]..[30,927+13])
+          expression (testsuite/tests/lib-random/chi2.ml[30,927+14]..[32,976+53]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (testsuite/tests/lib-random/chi2.ml[30,927+14]..[30,927+15])
+              Ppat_var "f" (testsuite/tests/lib-random/chi2.ml[30,927+14]..[30,927+15])
+            expression (testsuite/tests/lib-random/chi2.ml[31,945+2]..[32,976+53])
+              Pexp_ifthenelse
+              expression (testsuite/tests/lib-random/chi2.ml[31,945+5]..[31,945+30])
+                Pexp_apply
+                expression (testsuite/tests/lib-random/chi2.ml[31,945+5]..[31,945+8])
+                  Pexp_ident "not" (testsuite/tests/lib-random/chi2.ml[31,945+5]..[31,945+8])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-random/chi2.ml[31,945+9]..[31,945+30])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-random/chi2.ml[31,945+10]..[31,945+19])
+                        Pexp_ident "chisquare" (testsuite/tests/lib-random/chi2.ml[31,945+10]..[31,945+19])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-random/chi2.ml[31,945+20]..[31,945+27])
+                            Pexp_constant PConst_int (100_000,None)
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-random/chi2.ml[31,945+28]..[31,945+29])
+                            Pexp_ident "f" (testsuite/tests/lib-random/chi2.ml[31,945+28]..[31,945+29])
+                      ]
+                ]
+              expression (testsuite/tests/lib-random/chi2.ml[32,976+7]..[32,976+53])
+                Pexp_apply
+                expression (testsuite/tests/lib-random/chi2.ml[32,976+7]..[32,976+20])
+                  Pexp_ident "Printf.printf" (testsuite/tests/lib-random/chi2.ml[32,976+7]..[32,976+20])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-random/chi2.ml[32,976+21]..[32,976+48])
+                      Pexp_constant PConst_string("%s: suspicious result\n%!",(testsuite/tests/lib-random/chi2.ml[32,976+22]..[32,976+47]),None)
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-random/chi2.ml[32,976+49]..[32,976+53])
+                      Pexp_ident "name" (testsuite/tests/lib-random/chi2.ml[32,976+49]..[32,976+53])
+                ]
+              None
+    ]
+  structure_item (testsuite/tests/lib-random/chi2.ml[34,1031+0]..[88,3477+5])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (testsuite/tests/lib-random/chi2.ml[34,1031+4]..[34,1031+5])
+          Ppat_any
+        expression (testsuite/tests/lib-random/chi2.ml[35,1039+2]..[88,3477+5])
+          Pexp_sequence
+          expression (testsuite/tests/lib-random/chi2.ml[35,1039+2]..[36,1071+18])
+            Pexp_apply
+            expression (testsuite/tests/lib-random/chi2.ml[35,1039+2]..[35,1039+6])
+              Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[35,1039+2]..[35,1039+6])
+            [
+              <arg>
+              Nolabel
+                expression (testsuite/tests/lib-random/chi2.ml[35,1039+7]..[35,1039+31])
+                  Pexp_constant PConst_string("Random.bits (bits 0-7)",(testsuite/tests/lib-random/chi2.ml[35,1039+8]..[35,1039+30]),None)
+              <arg>
+              Nolabel
+                expression (testsuite/tests/lib-random/chi2.ml[36,1071+7]..[36,1071+18])
+                  Pexp_ident "Random.bits" (testsuite/tests/lib-random/chi2.ml[36,1071+7]..[36,1071+18])
+            ]
+          expression (testsuite/tests/lib-random/chi2.ml[37,1091+2]..[88,3477+5])
+            Pexp_sequence
+            expression (testsuite/tests/lib-random/chi2.ml[37,1091+2]..[38,1125+39])
+              Pexp_apply
+              expression (testsuite/tests/lib-random/chi2.ml[37,1091+2]..[37,1091+6])
+                Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[37,1091+2]..[37,1091+6])
+              [
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-random/chi2.ml[37,1091+7]..[37,1091+33])
+                    Pexp_constant PConst_string("Random.bits (bits 12-19)",(testsuite/tests/lib-random/chi2.ml[37,1091+8]..[37,1091+32]),None)
+                <arg>
+                Nolabel
+                  expression (testsuite/tests/lib-random/chi2.ml[38,1125+7]..[38,1125+39])
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (testsuite/tests/lib-random/chi2.ml[38,1125+12]..[38,1125+14])
+                      Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[38,1125+12]..[38,1125+14])
+                      None
+                    expression (testsuite/tests/lib-random/chi2.ml[38,1125+18]..[38,1125+38])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-random/chi2.ml[38,1125+32]..[38,1125+35])
+                        Pexp_ident "lsr" (testsuite/tests/lib-random/chi2.ml[38,1125+32]..[38,1125+35])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-random/chi2.ml[38,1125+18]..[38,1125+31])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-random/chi2.ml[38,1125+18]..[38,1125+29])
+                              Pexp_ident "Random.bits" (testsuite/tests/lib-random/chi2.ml[38,1125+18]..[38,1125+29])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-random/chi2.ml[38,1125+29]..[38,1125+31])
+                                  Pexp_construct "()" (testsuite/tests/lib-random/chi2.ml[38,1125+29]..[38,1125+31])
+                                  None
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-random/chi2.ml[38,1125+36]..[38,1125+38])
+                            Pexp_constant PConst_int (12,None)
+                      ]
+              ]
+            expression (testsuite/tests/lib-random/chi2.ml[39,1166+2]..[88,3477+5])
+              Pexp_sequence
+              expression (testsuite/tests/lib-random/chi2.ml[39,1166+2]..[40,1200+39])
+                Pexp_apply
+                expression (testsuite/tests/lib-random/chi2.ml[39,1166+2]..[39,1166+6])
+                  Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[39,1166+2]..[39,1166+6])
+                [
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-random/chi2.ml[39,1166+7]..[39,1166+33])
+                      Pexp_constant PConst_string("Random.bits (bits 22-29)",(testsuite/tests/lib-random/chi2.ml[39,1166+8]..[39,1166+32]),None)
+                  <arg>
+                  Nolabel
+                    expression (testsuite/tests/lib-random/chi2.ml[40,1200+7]..[40,1200+39])
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (testsuite/tests/lib-random/chi2.ml[40,1200+12]..[40,1200+14])
+                        Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[40,1200+12]..[40,1200+14])
+                        None
+                      expression (testsuite/tests/lib-random/chi2.ml[40,1200+18]..[40,1200+38])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-random/chi2.ml[40,1200+32]..[40,1200+35])
+                          Pexp_ident "lsr" (testsuite/tests/lib-random/chi2.ml[40,1200+32]..[40,1200+35])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-random/chi2.ml[40,1200+18]..[40,1200+31])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-random/chi2.ml[40,1200+18]..[40,1200+29])
+                                Pexp_ident "Random.bits" (testsuite/tests/lib-random/chi2.ml[40,1200+18]..[40,1200+29])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-random/chi2.ml[40,1200+29]..[40,1200+31])
+                                    Pexp_construct "()" (testsuite/tests/lib-random/chi2.ml[40,1200+29]..[40,1200+31])
+                                    None
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-random/chi2.ml[40,1200+36]..[40,1200+38])
+                              Pexp_constant PConst_int (22,None)
+                        ]
+                ]
+              expression (testsuite/tests/lib-random/chi2.ml[41,1241+2]..[88,3477+5])
+                Pexp_sequence
+                expression (testsuite/tests/lib-random/chi2.ml[41,1241+2]..[42,1277+40])
+                  Pexp_apply
+                  expression (testsuite/tests/lib-random/chi2.ml[41,1241+2]..[41,1241+6])
+                    Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[41,1241+2]..[41,1241+6])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-random/chi2.ml[41,1241+7]..[41,1241+35])
+                        Pexp_constant PConst_string("Random.int 2^26 (bits 0-7)",(testsuite/tests/lib-random/chi2.ml[41,1241+8]..[41,1241+34]),None)
+                    <arg>
+                    Nolabel
+                      expression (testsuite/tests/lib-random/chi2.ml[42,1277+7]..[42,1277+40])
+                        Pexp_fun
+                        Nolabel
+                        None
+                        pattern (testsuite/tests/lib-random/chi2.ml[42,1277+12]..[42,1277+14])
+                          Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[42,1277+12]..[42,1277+14])
+                          None
+                        expression (testsuite/tests/lib-random/chi2.ml[42,1277+18]..[42,1277+39])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-random/chi2.ml[42,1277+18]..[42,1277+28])
+                            Pexp_ident "Random.int" (testsuite/tests/lib-random/chi2.ml[42,1277+18]..[42,1277+28])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-random/chi2.ml[42,1277+29]..[42,1277+39])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-random/chi2.ml[42,1277+32]..[42,1277+35])
+                                  Pexp_ident "lsl" (testsuite/tests/lib-random/chi2.ml[42,1277+32]..[42,1277+35])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-random/chi2.ml[42,1277+30]..[42,1277+31])
+                                      Pexp_constant PConst_int (1,None)
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-random/chi2.ml[42,1277+36]..[42,1277+38])
+                                      Pexp_constant PConst_int (26,None)
+                                ]
+                          ]
+                  ]
+                expression (testsuite/tests/lib-random/chi2.ml[43,1319+2]..[88,3477+5])
+                  Pexp_sequence
+                  expression (testsuite/tests/lib-random/chi2.ml[43,1319+2]..[44,1357+47])
+                    Pexp_apply
+                    expression (testsuite/tests/lib-random/chi2.ml[43,1319+2]..[43,1319+6])
+                      Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[43,1319+2]..[43,1319+6])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-random/chi2.ml[43,1319+7]..[43,1319+37])
+                          Pexp_constant PConst_string("Random.int 2^26 (bits 18-25)",(testsuite/tests/lib-random/chi2.ml[43,1319+8]..[43,1319+36]),None)
+                      <arg>
+                      Nolabel
+                        expression (testsuite/tests/lib-random/chi2.ml[44,1357+7]..[44,1357+47])
+                          Pexp_fun
+                          Nolabel
+                          None
+                          pattern (testsuite/tests/lib-random/chi2.ml[44,1357+12]..[44,1357+14])
+                            Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[44,1357+12]..[44,1357+14])
+                            None
+                          expression (testsuite/tests/lib-random/chi2.ml[44,1357+18]..[44,1357+46])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-random/chi2.ml[44,1357+40]..[44,1357+43])
+                              Pexp_ident "lsr" (testsuite/tests/lib-random/chi2.ml[44,1357+40]..[44,1357+43])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-random/chi2.ml[44,1357+18]..[44,1357+39])
+                                  Pexp_apply
+                                  expression (testsuite/tests/lib-random/chi2.ml[44,1357+18]..[44,1357+28])
+                                    Pexp_ident "Random.int" (testsuite/tests/lib-random/chi2.ml[44,1357+18]..[44,1357+28])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-random/chi2.ml[44,1357+29]..[44,1357+39])
+                                        Pexp_apply
+                                        expression (testsuite/tests/lib-random/chi2.ml[44,1357+32]..[44,1357+35])
+                                          Pexp_ident "lsl" (testsuite/tests/lib-random/chi2.ml[44,1357+32]..[44,1357+35])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/lib-random/chi2.ml[44,1357+30]..[44,1357+31])
+                                              Pexp_constant PConst_int (1,None)
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/lib-random/chi2.ml[44,1357+36]..[44,1357+38])
+                                              Pexp_constant PConst_int (26,None)
+                                        ]
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-random/chi2.ml[44,1357+44]..[44,1357+46])
+                                  Pexp_constant PConst_int (18,None)
+                            ]
+                    ]
+                  expression (testsuite/tests/lib-random/chi2.ml[45,1406+2]..[88,3477+5])
+                    Pexp_sequence
+                    expression (testsuite/tests/lib-random/chi2.ml[45,1406+2]..[46,1440+53])
+                      Pexp_apply
+                      expression (testsuite/tests/lib-random/chi2.ml[45,1406+2]..[45,1406+6])
+                        Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[45,1406+2]..[45,1406+6])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-random/chi2.ml[45,1406+7]..[45,1406+33])
+                            Pexp_constant PConst_string("Random.int (256 * p) / p",(testsuite/tests/lib-random/chi2.ml[45,1406+8]..[45,1406+32]),None)
+                        <arg>
+                        Nolabel
+                          expression (testsuite/tests/lib-random/chi2.ml[46,1440+7]..[46,1440+53])
+                            Pexp_fun
+                            Nolabel
+                            None
+                            pattern (testsuite/tests/lib-random/chi2.ml[46,1440+12]..[46,1440+14])
+                              Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[46,1440+12]..[46,1440+14])
+                              None
+                            expression (testsuite/tests/lib-random/chi2.ml[46,1440+18]..[46,1440+52])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-random/chi2.ml[46,1440+44]..[46,1440+45])
+                                Pexp_ident "/" (testsuite/tests/lib-random/chi2.ml[46,1440+44]..[46,1440+45])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-random/chi2.ml[46,1440+18]..[46,1440+43])
+                                    Pexp_apply
+                                    expression (testsuite/tests/lib-random/chi2.ml[46,1440+18]..[46,1440+28])
+                                      Pexp_ident "Random.int" (testsuite/tests/lib-random/chi2.ml[46,1440+18]..[46,1440+28])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-random/chi2.ml[46,1440+29]..[46,1440+43])
+                                          Pexp_apply
+                                          expression (testsuite/tests/lib-random/chi2.ml[46,1440+34]..[46,1440+35])
+                                            Pexp_ident "*" (testsuite/tests/lib-random/chi2.ml[46,1440+34]..[46,1440+35])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (testsuite/tests/lib-random/chi2.ml[46,1440+30]..[46,1440+33])
+                                                Pexp_constant PConst_int (256,None)
+                                            <arg>
+                                            Nolabel
+                                              expression (testsuite/tests/lib-random/chi2.ml[46,1440+36]..[46,1440+42])
+                                                Pexp_constant PConst_int (853187,None)
+                                          ]
+                                    ]
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-random/chi2.ml[46,1440+46]..[46,1440+52])
+                                    Pexp_constant PConst_int (853187,None)
+                              ]
+                      ]
+                    expression (testsuite/tests/lib-random/chi2.ml[47,1495+2]..[88,3477+5])
+                      Pexp_sequence
+                      expression (testsuite/tests/lib-random/chi2.ml[47,1495+2]..[48,1536+59])
+                        Pexp_apply
+                        expression (testsuite/tests/lib-random/chi2.ml[47,1495+2]..[47,1495+6])
+                          Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[47,1495+2]..[47,1495+6])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-random/chi2.ml[47,1495+7]..[47,1495+40])
+                              Pexp_constant PConst_string("Random.float 1.0 (first 8 bits)",(testsuite/tests/lib-random/chi2.ml[47,1495+8]..[47,1495+39]),None)
+                          <arg>
+                          Nolabel
+                            expression (testsuite/tests/lib-random/chi2.ml[48,1536+7]..[48,1536+59])
+                              Pexp_fun
+                              Nolabel
+                              None
+                              pattern (testsuite/tests/lib-random/chi2.ml[48,1536+12]..[48,1536+14])
+                                Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[48,1536+12]..[48,1536+14])
+                                None
+                              expression (testsuite/tests/lib-random/chi2.ml[48,1536+18]..[48,1536+58])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-random/chi2.ml[48,1536+18]..[48,1536+30])
+                                  Pexp_ident "int_of_float" (testsuite/tests/lib-random/chi2.ml[48,1536+18]..[48,1536+30])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-random/chi2.ml[48,1536+31]..[48,1536+58])
+                                      Pexp_apply
+                                      expression (testsuite/tests/lib-random/chi2.ml[48,1536+49]..[48,1536+51])
+                                        Pexp_ident "*." (testsuite/tests/lib-random/chi2.ml[48,1536+49]..[48,1536+51])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-random/chi2.ml[48,1536+32]..[48,1536+48])
+                                            Pexp_apply
+                                            expression (testsuite/tests/lib-random/chi2.ml[48,1536+32]..[48,1536+44])
+                                              Pexp_ident "Random.float" (testsuite/tests/lib-random/chi2.ml[48,1536+32]..[48,1536+44])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/lib-random/chi2.ml[48,1536+45]..[48,1536+48])
+                                                  Pexp_constant PConst_float (1.0,None)
+                                            ]
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-random/chi2.ml[48,1536+52]..[48,1536+57])
+                                            Pexp_constant PConst_float (256.0,None)
+                                      ]
+                                ]
+                        ]
+                      expression (testsuite/tests/lib-random/chi2.ml[49,1597+2]..[88,3477+5])
+                        Pexp_sequence
+                        expression (testsuite/tests/lib-random/chi2.ml[49,1597+2]..[50,1637+61])
+                          Pexp_apply
+                          expression (testsuite/tests/lib-random/chi2.ml[49,1597+2]..[49,1597+6])
+                            Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[49,1597+2]..[49,1597+6])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-random/chi2.ml[49,1597+7]..[49,1597+39])
+                                Pexp_constant PConst_string("Random.float 1.0 (next 8 bits)",(testsuite/tests/lib-random/chi2.ml[49,1597+8]..[49,1597+38]),None)
+                            <arg>
+                            Nolabel
+                              expression (testsuite/tests/lib-random/chi2.ml[50,1637+7]..[50,1637+61])
+                                Pexp_fun
+                                Nolabel
+                                None
+                                pattern (testsuite/tests/lib-random/chi2.ml[50,1637+12]..[50,1637+14])
+                                  Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[50,1637+12]..[50,1637+14])
+                                  None
+                                expression (testsuite/tests/lib-random/chi2.ml[50,1637+18]..[50,1637+60])
+                                  Pexp_apply
+                                  expression (testsuite/tests/lib-random/chi2.ml[50,1637+18]..[50,1637+30])
+                                    Pexp_ident "int_of_float" (testsuite/tests/lib-random/chi2.ml[50,1637+18]..[50,1637+30])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-random/chi2.ml[50,1637+31]..[50,1637+60])
+                                        Pexp_apply
+                                        expression (testsuite/tests/lib-random/chi2.ml[50,1637+49]..[50,1637+51])
+                                          Pexp_ident "*." (testsuite/tests/lib-random/chi2.ml[50,1637+49]..[50,1637+51])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/lib-random/chi2.ml[50,1637+32]..[50,1637+48])
+                                              Pexp_apply
+                                              expression (testsuite/tests/lib-random/chi2.ml[50,1637+32]..[50,1637+44])
+                                                Pexp_ident "Random.float" (testsuite/tests/lib-random/chi2.ml[50,1637+32]..[50,1637+44])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/lib-random/chi2.ml[50,1637+45]..[50,1637+48])
+                                                    Pexp_constant PConst_float (1.0,None)
+                                              ]
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/lib-random/chi2.ml[50,1637+52]..[50,1637+59])
+                                              Pexp_constant PConst_float (65536.0,None)
+                                        ]
+                                  ]
+                          ]
+                        expression (testsuite/tests/lib-random/chi2.ml[51,1700+2]..[88,3477+5])
+                          Pexp_sequence
+                          expression (testsuite/tests/lib-random/chi2.ml[51,1700+2]..[52,1738+58])
+                            Pexp_apply
+                            expression (testsuite/tests/lib-random/chi2.ml[51,1700+2]..[51,1700+6])
+                              Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[51,1700+2]..[51,1700+6])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-random/chi2.ml[51,1700+7]..[51,1700+37])
+                                  Pexp_constant PConst_string("Random.int32 2^30 (bits 0-7)",(testsuite/tests/lib-random/chi2.ml[51,1700+8]..[51,1700+36]),None)
+                              <arg>
+                              Nolabel
+                                expression (testsuite/tests/lib-random/chi2.ml[52,1738+7]..[52,1738+58])
+                                  Pexp_fun
+                                  Nolabel
+                                  None
+                                  pattern (testsuite/tests/lib-random/chi2.ml[52,1738+12]..[52,1738+14])
+                                    Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[52,1738+12]..[52,1738+14])
+                                    None
+                                  expression (testsuite/tests/lib-random/chi2.ml[52,1738+18]..[52,1738+57])
+                                    Pexp_apply
+                                    expression (testsuite/tests/lib-random/chi2.ml[52,1738+18]..[52,1738+30])
+                                      Pexp_ident "Int32.to_int" (testsuite/tests/lib-random/chi2.ml[52,1738+18]..[52,1738+30])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-random/chi2.ml[52,1738+31]..[52,1738+57])
+                                          Pexp_apply
+                                          expression (testsuite/tests/lib-random/chi2.ml[52,1738+32]..[52,1738+44])
+                                            Pexp_ident "Random.int32" (testsuite/tests/lib-random/chi2.ml[52,1738+32]..[52,1738+44])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (testsuite/tests/lib-random/chi2.ml[52,1738+45]..[52,1738+56])
+                                                Pexp_constant PConst_int (0x40000000,Some l)
+                                          ]
+                                    ]
+                            ]
+                          expression (testsuite/tests/lib-random/chi2.ml[53,1798+2]..[88,3477+5])
+                            Pexp_sequence
+                            expression (testsuite/tests/lib-random/chi2.ml[53,1798+2]..[54,1838+77])
+                              Pexp_apply
+                              expression (testsuite/tests/lib-random/chi2.ml[53,1798+2]..[53,1798+6])
+                                Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[53,1798+2]..[53,1798+6])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-random/chi2.ml[53,1798+7]..[53,1798+39])
+                                    Pexp_constant PConst_string("Random.int32 2^30 (bits 20-27)",(testsuite/tests/lib-random/chi2.ml[53,1798+8]..[53,1798+38]),None)
+                                <arg>
+                                Nolabel
+                                  expression (testsuite/tests/lib-random/chi2.ml[54,1838+7]..[54,1838+77])
+                                    Pexp_fun
+                                    Nolabel
+                                    None
+                                    pattern (testsuite/tests/lib-random/chi2.ml[54,1838+12]..[54,1838+14])
+                                      Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[54,1838+12]..[54,1838+14])
+                                      None
+                                    expression (testsuite/tests/lib-random/chi2.ml[54,1838+18]..[54,1838+76])
+                                      Pexp_open Fresh
+                                      module_expr (testsuite/tests/lib-random/chi2.ml[54,1838+18]..[54,1838+23])
+                                        Pmod_ident "Int32" (testsuite/tests/lib-random/chi2.ml[54,1838+18]..[54,1838+23])
+                                      expression (testsuite/tests/lib-random/chi2.ml[54,1838+25]..[54,1838+75])
+                                        Pexp_apply
+                                        expression (testsuite/tests/lib-random/chi2.ml[54,1838+25]..[54,1838+31])
+                                          Pexp_ident "to_int" (testsuite/tests/lib-random/chi2.ml[54,1838+25]..[54,1838+31])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/lib-random/chi2.ml[54,1838+32]..[54,1838+75])
+                                              Pexp_apply
+                                              expression (testsuite/tests/lib-random/chi2.ml[54,1838+33]..[54,1838+44])
+                                                Pexp_ident "shift_right" (testsuite/tests/lib-random/chi2.ml[54,1838+33]..[54,1838+44])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/lib-random/chi2.ml[54,1838+45]..[54,1838+71])
+                                                    Pexp_apply
+                                                    expression (testsuite/tests/lib-random/chi2.ml[54,1838+46]..[54,1838+58])
+                                                      Pexp_ident "Random.int32" (testsuite/tests/lib-random/chi2.ml[54,1838+46]..[54,1838+58])
+                                                    [
+                                                      <arg>
+                                                      Nolabel
+                                                        expression (testsuite/tests/lib-random/chi2.ml[54,1838+59]..[54,1838+70])
+                                                          Pexp_constant PConst_int (0x40000000,Some l)
+                                                    ]
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/lib-random/chi2.ml[54,1838+72]..[54,1838+74])
+                                                    Pexp_constant PConst_int (20,None)
+                                              ]
+                                        ]
+                              ]
+                            expression (testsuite/tests/lib-random/chi2.ml[55,1917+2]..[88,3477+5])
+                              Pexp_sequence
+                              expression (testsuite/tests/lib-random/chi2.ml[55,1917+2]..[57,1981+69])
+                                Pexp_apply
+                                expression (testsuite/tests/lib-random/chi2.ml[55,1917+2]..[55,1917+6])
+                                  Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[55,1917+2]..[55,1917+6])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-random/chi2.ml[55,1917+7]..[55,1917+35])
+                                      Pexp_constant PConst_string("Random.int32 (256 * p) / p",(testsuite/tests/lib-random/chi2.ml[55,1917+8]..[55,1917+34]),None)
+                                  <arg>
+                                  Nolabel
+                                    expression (testsuite/tests/lib-random/chi2.ml[56,1953+7]..[57,1981+69])
+                                      Pexp_let Nonrec
+                                      [
+                                        <def>
+                                          pattern (testsuite/tests/lib-random/chi2.ml[56,1953+12]..[56,1953+13])
+                                            Ppat_var "p" (testsuite/tests/lib-random/chi2.ml[56,1953+12]..[56,1953+13])
+                                          expression (testsuite/tests/lib-random/chi2.ml[56,1953+16]..[56,1953+24])
+                                            Pexp_constant PConst_int (7048673,Some l)
+                                      ]
+                                      expression (testsuite/tests/lib-random/chi2.ml[57,1981+8]..[57,1981+68])
+                                        Pexp_fun
+                                        Nolabel
+                                        None
+                                        pattern (testsuite/tests/lib-random/chi2.ml[57,1981+12]..[57,1981+14])
+                                          Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[57,1981+12]..[57,1981+14])
+                                          None
+                                        expression (testsuite/tests/lib-random/chi2.ml[57,1981+18]..[57,1981+68])
+                                          Pexp_open Fresh
+                                          module_expr (testsuite/tests/lib-random/chi2.ml[57,1981+18]..[57,1981+23])
+                                            Pmod_ident "Int32" (testsuite/tests/lib-random/chi2.ml[57,1981+18]..[57,1981+23])
+                                          expression (testsuite/tests/lib-random/chi2.ml[57,1981+25]..[57,1981+67])
+                                            Pexp_apply
+                                            expression (testsuite/tests/lib-random/chi2.ml[57,1981+25]..[57,1981+31])
+                                              Pexp_ident "to_int" (testsuite/tests/lib-random/chi2.ml[57,1981+25]..[57,1981+31])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/lib-random/chi2.ml[57,1981+32]..[57,1981+67])
+                                                  Pexp_apply
+                                                  expression (testsuite/tests/lib-random/chi2.ml[57,1981+33]..[57,1981+36])
+                                                    Pexp_ident "div" (testsuite/tests/lib-random/chi2.ml[57,1981+33]..[57,1981+36])
+                                                  [
+                                                    <arg>
+                                                    Nolabel
+                                                      expression (testsuite/tests/lib-random/chi2.ml[57,1981+37]..[57,1981+64])
+                                                        Pexp_apply
+                                                        expression (testsuite/tests/lib-random/chi2.ml[57,1981+38]..[57,1981+50])
+                                                          Pexp_ident "Random.int32" (testsuite/tests/lib-random/chi2.ml[57,1981+38]..[57,1981+50])
+                                                        [
+                                                          <arg>
+                                                          Nolabel
+                                                            expression (testsuite/tests/lib-random/chi2.ml[57,1981+51]..[57,1981+63])
+                                                              Pexp_apply
+                                                              expression (testsuite/tests/lib-random/chi2.ml[57,1981+52]..[57,1981+55])
+                                                                Pexp_ident "mul" (testsuite/tests/lib-random/chi2.ml[57,1981+52]..[57,1981+55])
+                                                              [
+                                                                <arg>
+                                                                Nolabel
+                                                                  expression (testsuite/tests/lib-random/chi2.ml[57,1981+56]..[57,1981+60])
+                                                                    Pexp_constant PConst_int (256,Some l)
+                                                                <arg>
+                                                                Nolabel
+                                                                  expression (testsuite/tests/lib-random/chi2.ml[57,1981+61]..[57,1981+62])
+                                                                    Pexp_ident "p" (testsuite/tests/lib-random/chi2.ml[57,1981+61]..[57,1981+62])
+                                                              ]
+                                                        ]
+                                                    <arg>
+                                                    Nolabel
+                                                      expression (testsuite/tests/lib-random/chi2.ml[57,1981+65]..[57,1981+66])
+                                                        Pexp_ident "p" (testsuite/tests/lib-random/chi2.ml[57,1981+65]..[57,1981+66])
+                                                  ]
+                                            ]
+                                ]
+                              expression (testsuite/tests/lib-random/chi2.ml[58,2052+2]..[88,3477+5])
+                                Pexp_sequence
+                                expression (testsuite/tests/lib-random/chi2.ml[58,2052+2]..[59,2090+66])
+                                  Pexp_apply
+                                  expression (testsuite/tests/lib-random/chi2.ml[58,2052+2]..[58,2052+6])
+                                    Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[58,2052+2]..[58,2052+6])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-random/chi2.ml[58,2052+7]..[58,2052+37])
+                                        Pexp_constant PConst_string("Random.int64 2^60 (bits 0-7)",(testsuite/tests/lib-random/chi2.ml[58,2052+8]..[58,2052+36]),None)
+                                    <arg>
+                                    Nolabel
+                                      expression (testsuite/tests/lib-random/chi2.ml[59,2090+7]..[59,2090+66])
+                                        Pexp_fun
+                                        Nolabel
+                                        None
+                                        pattern (testsuite/tests/lib-random/chi2.ml[59,2090+12]..[59,2090+14])
+                                          Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[59,2090+12]..[59,2090+14])
+                                          None
+                                        expression (testsuite/tests/lib-random/chi2.ml[59,2090+18]..[59,2090+65])
+                                          Pexp_apply
+                                          expression (testsuite/tests/lib-random/chi2.ml[59,2090+18]..[59,2090+30])
+                                            Pexp_ident "Int64.to_int" (testsuite/tests/lib-random/chi2.ml[59,2090+18]..[59,2090+30])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (testsuite/tests/lib-random/chi2.ml[59,2090+31]..[59,2090+65])
+                                                Pexp_apply
+                                                expression (testsuite/tests/lib-random/chi2.ml[59,2090+32]..[59,2090+44])
+                                                  Pexp_ident "Random.int64" (testsuite/tests/lib-random/chi2.ml[59,2090+32]..[59,2090+44])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (testsuite/tests/lib-random/chi2.ml[59,2090+45]..[59,2090+64])
+                                                      Pexp_constant PConst_int (0x1000000000000000,Some L)
+                                                ]
+                                          ]
+                                  ]
+                                expression (testsuite/tests/lib-random/chi2.ml[60,2158+2]..[88,3477+5])
+                                  Pexp_sequence
+                                  expression (testsuite/tests/lib-random/chi2.ml[60,2158+2]..[62,2278+50])
+                                    Pexp_apply
+                                    expression (testsuite/tests/lib-random/chi2.ml[60,2158+2]..[60,2158+6])
+                                      Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[60,2158+2]..[60,2158+6])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-random/chi2.ml[60,2158+7]..[60,2158+39])
+                                          Pexp_constant PConst_string("Random.int64 2^60 (bits 30-37)",(testsuite/tests/lib-random/chi2.ml[60,2158+8]..[60,2158+38]),None)
+                                      <arg>
+                                      Nolabel
+                                        expression (testsuite/tests/lib-random/chi2.ml[61,2198+7]..[62,2278+50])
+                                          Pexp_fun
+                                          Nolabel
+                                          None
+                                          pattern (testsuite/tests/lib-random/chi2.ml[61,2198+12]..[61,2198+14])
+                                            Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[61,2198+12]..[61,2198+14])
+                                            None
+                                          expression (testsuite/tests/lib-random/chi2.ml[61,2198+18]..[62,2278+49])
+                                            Pexp_open Fresh
+                                            module_expr (testsuite/tests/lib-random/chi2.ml[61,2198+18]..[61,2198+23])
+                                              Pmod_ident "Int64" (testsuite/tests/lib-random/chi2.ml[61,2198+18]..[61,2198+23])
+                                            expression (testsuite/tests/lib-random/chi2.ml[61,2198+25]..[62,2278+48])
+                                              Pexp_apply
+                                              expression (testsuite/tests/lib-random/chi2.ml[61,2198+25]..[61,2198+31])
+                                                Pexp_ident "to_int" (testsuite/tests/lib-random/chi2.ml[61,2198+25]..[61,2198+31])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/lib-random/chi2.ml[61,2198+32]..[62,2278+48])
+                                                    Pexp_apply
+                                                    expression (testsuite/tests/lib-random/chi2.ml[61,2198+33]..[61,2198+44])
+                                                      Pexp_ident "shift_right" (testsuite/tests/lib-random/chi2.ml[61,2198+33]..[61,2198+44])
+                                                    [
+                                                      <arg>
+                                                      Nolabel
+                                                        expression (testsuite/tests/lib-random/chi2.ml[61,2198+45]..[61,2198+79])
+                                                          Pexp_apply
+                                                          expression (testsuite/tests/lib-random/chi2.ml[61,2198+46]..[61,2198+58])
+                                                            Pexp_ident "Random.int64" (testsuite/tests/lib-random/chi2.ml[61,2198+46]..[61,2198+58])
+                                                          [
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (testsuite/tests/lib-random/chi2.ml[61,2198+59]..[61,2198+78])
+                                                                Pexp_constant PConst_int (0x1000000000000000,Some L)
+                                                          ]
+                                                      <arg>
+                                                      Nolabel
+                                                        expression (testsuite/tests/lib-random/chi2.ml[62,2278+45]..[62,2278+47])
+                                                          Pexp_constant PConst_int (30,None)
+                                                    ]
+                                              ]
+                                    ]
+                                  expression (testsuite/tests/lib-random/chi2.ml[63,2330+2]..[88,3477+5])
+                                    Pexp_sequence
+                                    expression (testsuite/tests/lib-random/chi2.ml[63,2330+2]..[65,2450+50])
+                                      Pexp_apply
+                                      expression (testsuite/tests/lib-random/chi2.ml[63,2330+2]..[63,2330+6])
+                                        Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[63,2330+2]..[63,2330+6])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-random/chi2.ml[63,2330+7]..[63,2330+39])
+                                            Pexp_constant PConst_string("Random.int64 2^60 (bits 52-59)",(testsuite/tests/lib-random/chi2.ml[63,2330+8]..[63,2330+38]),None)
+                                        <arg>
+                                        Nolabel
+                                          expression (testsuite/tests/lib-random/chi2.ml[64,2370+7]..[65,2450+50])
+                                            Pexp_fun
+                                            Nolabel
+                                            None
+                                            pattern (testsuite/tests/lib-random/chi2.ml[64,2370+12]..[64,2370+14])
+                                              Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[64,2370+12]..[64,2370+14])
+                                              None
+                                            expression (testsuite/tests/lib-random/chi2.ml[64,2370+18]..[65,2450+49])
+                                              Pexp_open Fresh
+                                              module_expr (testsuite/tests/lib-random/chi2.ml[64,2370+18]..[64,2370+23])
+                                                Pmod_ident "Int64" (testsuite/tests/lib-random/chi2.ml[64,2370+18]..[64,2370+23])
+                                              expression (testsuite/tests/lib-random/chi2.ml[64,2370+25]..[65,2450+48])
+                                                Pexp_apply
+                                                expression (testsuite/tests/lib-random/chi2.ml[64,2370+25]..[64,2370+31])
+                                                  Pexp_ident "to_int" (testsuite/tests/lib-random/chi2.ml[64,2370+25]..[64,2370+31])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (testsuite/tests/lib-random/chi2.ml[64,2370+32]..[65,2450+48])
+                                                      Pexp_apply
+                                                      expression (testsuite/tests/lib-random/chi2.ml[64,2370+33]..[64,2370+44])
+                                                        Pexp_ident "shift_right" (testsuite/tests/lib-random/chi2.ml[64,2370+33]..[64,2370+44])
+                                                      [
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (testsuite/tests/lib-random/chi2.ml[64,2370+45]..[64,2370+79])
+                                                            Pexp_apply
+                                                            expression (testsuite/tests/lib-random/chi2.ml[64,2370+46]..[64,2370+58])
+                                                              Pexp_ident "Random.int64" (testsuite/tests/lib-random/chi2.ml[64,2370+46]..[64,2370+58])
+                                                            [
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (testsuite/tests/lib-random/chi2.ml[64,2370+59]..[64,2370+78])
+                                                                  Pexp_constant PConst_int (0x1000000000000000,Some L)
+                                                            ]
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (testsuite/tests/lib-random/chi2.ml[65,2450+45]..[65,2450+47])
+                                                            Pexp_constant PConst_int (52,None)
+                                                      ]
+                                                ]
+                                      ]
+                                    expression (testsuite/tests/lib-random/chi2.ml[66,2502+2]..[88,3477+5])
+                                      Pexp_sequence
+                                      expression (testsuite/tests/lib-random/chi2.ml[66,2502+2]..[68,2576+69])
+                                        Pexp_apply
+                                        expression (testsuite/tests/lib-random/chi2.ml[66,2502+2]..[66,2502+6])
+                                          Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[66,2502+2]..[66,2502+6])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/lib-random/chi2.ml[66,2502+7]..[66,2502+35])
+                                              Pexp_constant PConst_string("Random.int64 (256 * p) / p",(testsuite/tests/lib-random/chi2.ml[66,2502+8]..[66,2502+34]),None)
+                                          <arg>
+                                          Nolabel
+                                            expression (testsuite/tests/lib-random/chi2.ml[67,2538+7]..[68,2576+69])
+                                              Pexp_let Nonrec
+                                              [
+                                                <def>
+                                                  pattern (testsuite/tests/lib-random/chi2.ml[67,2538+12]..[67,2538+13])
+                                                    Ppat_var "p" (testsuite/tests/lib-random/chi2.ml[67,2538+12]..[67,2538+13])
+                                                  expression (testsuite/tests/lib-random/chi2.ml[67,2538+16]..[67,2538+34])
+                                                    Pexp_constant PConst_int (16430454264262693,Some L)
+                                              ]
+                                              expression (testsuite/tests/lib-random/chi2.ml[68,2576+8]..[68,2576+68])
+                                                Pexp_fun
+                                                Nolabel
+                                                None
+                                                pattern (testsuite/tests/lib-random/chi2.ml[68,2576+12]..[68,2576+14])
+                                                  Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[68,2576+12]..[68,2576+14])
+                                                  None
+                                                expression (testsuite/tests/lib-random/chi2.ml[68,2576+18]..[68,2576+68])
+                                                  Pexp_open Fresh
+                                                  module_expr (testsuite/tests/lib-random/chi2.ml[68,2576+18]..[68,2576+23])
+                                                    Pmod_ident "Int64" (testsuite/tests/lib-random/chi2.ml[68,2576+18]..[68,2576+23])
+                                                  expression (testsuite/tests/lib-random/chi2.ml[68,2576+25]..[68,2576+67])
+                                                    Pexp_apply
+                                                    expression (testsuite/tests/lib-random/chi2.ml[68,2576+25]..[68,2576+31])
+                                                      Pexp_ident "to_int" (testsuite/tests/lib-random/chi2.ml[68,2576+25]..[68,2576+31])
+                                                    [
+                                                      <arg>
+                                                      Nolabel
+                                                        expression (testsuite/tests/lib-random/chi2.ml[68,2576+32]..[68,2576+67])
+                                                          Pexp_apply
+                                                          expression (testsuite/tests/lib-random/chi2.ml[68,2576+33]..[68,2576+36])
+                                                            Pexp_ident "div" (testsuite/tests/lib-random/chi2.ml[68,2576+33]..[68,2576+36])
+                                                          [
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (testsuite/tests/lib-random/chi2.ml[68,2576+37]..[68,2576+64])
+                                                                Pexp_apply
+                                                                expression (testsuite/tests/lib-random/chi2.ml[68,2576+38]..[68,2576+50])
+                                                                  Pexp_ident "Random.int64" (testsuite/tests/lib-random/chi2.ml[68,2576+38]..[68,2576+50])
+                                                                [
+                                                                  <arg>
+                                                                  Nolabel
+                                                                    expression (testsuite/tests/lib-random/chi2.ml[68,2576+51]..[68,2576+63])
+                                                                      Pexp_apply
+                                                                      expression (testsuite/tests/lib-random/chi2.ml[68,2576+52]..[68,2576+55])
+Pexp_ident "mul" (testsuite/tests/lib-random/chi2.ml[68,2576+52]..[68,2576+55])
+                                                                      [
+<arg>
+Nolabel
+  expression (testsuite/tests/lib-random/chi2.ml[68,2576+56]..[68,2576+60])
+    Pexp_constant PConst_int (256,Some L)
+<arg>
+Nolabel
+  expression (testsuite/tests/lib-random/chi2.ml[68,2576+61]..[68,2576+62])
+    Pexp_ident "p" (testsuite/tests/lib-random/chi2.ml[68,2576+61]..[68,2576+62])
+                                                                      ]
+                                                                ]
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (testsuite/tests/lib-random/chi2.ml[68,2576+65]..[68,2576+66])
+                                                                Pexp_ident "p" (testsuite/tests/lib-random/chi2.ml[68,2576+65]..[68,2576+66])
+                                                          ]
+                                                    ]
+                                        ]
+                                      expression (testsuite/tests/lib-random/chi2.ml[69,2647+2]..[88,3477+5])
+                                        Pexp_sequence
+                                        expression (testsuite/tests/lib-random/chi2.ml[69,2647+2]..[77,2996+5])
+                                          Pexp_ifthenelse
+                                          expression (testsuite/tests/lib-random/chi2.ml[69,2647+5]..[69,2647+23])
+                                            Pexp_apply
+                                            expression (testsuite/tests/lib-random/chi2.ml[69,2647+18]..[69,2647+20])
+                                              Pexp_ident ">=" (testsuite/tests/lib-random/chi2.ml[69,2647+18]..[69,2647+20])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/lib-random/chi2.ml[69,2647+5]..[69,2647+17])
+                                                  Pexp_ident "Sys.int_size" (testsuite/tests/lib-random/chi2.ml[69,2647+5]..[69,2647+17])
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/lib-random/chi2.ml[69,2647+21]..[69,2647+23])
+                                                  Pexp_constant PConst_int (32,None)
+                                            ]
+                                          expression (testsuite/tests/lib-random/chi2.ml[69,2647+29]..[77,2996+5])
+                                            Pexp_sequence
+                                            expression (testsuite/tests/lib-random/chi2.ml[70,2682+4]..[71,2725+47])
+                                              Pexp_apply
+                                              expression (testsuite/tests/lib-random/chi2.ml[70,2682+4]..[70,2682+8])
+                                                Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[70,2682+4]..[70,2682+8])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/lib-random/chi2.ml[70,2682+9]..[70,2682+42])
+                                                    Pexp_constant PConst_string("Random.full_int 2^30 (bits 0-7)",(testsuite/tests/lib-random/chi2.ml[70,2682+10]..[70,2682+41]),None)
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/lib-random/chi2.ml[71,2725+9]..[71,2725+47])
+                                                    Pexp_fun
+                                                    Nolabel
+                                                    None
+                                                    pattern (testsuite/tests/lib-random/chi2.ml[71,2725+14]..[71,2725+16])
+                                                      Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[71,2725+14]..[71,2725+16])
+                                                      None
+                                                    expression (testsuite/tests/lib-random/chi2.ml[71,2725+20]..[71,2725+46])
+                                                      Pexp_apply
+                                                      expression (testsuite/tests/lib-random/chi2.ml[71,2725+20]..[71,2725+35])
+                                                        Pexp_ident "Random.full_int" (testsuite/tests/lib-random/chi2.ml[71,2725+20]..[71,2725+35])
+                                                      [
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (testsuite/tests/lib-random/chi2.ml[71,2725+36]..[71,2725+46])
+                                                            Pexp_apply
+                                                            expression (testsuite/tests/lib-random/chi2.ml[71,2725+39]..[71,2725+42])
+                                                              Pexp_ident "lsl" (testsuite/tests/lib-random/chi2.ml[71,2725+39]..[71,2725+42])
+                                                            [
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (testsuite/tests/lib-random/chi2.ml[71,2725+37]..[71,2725+38])
+                                                                  Pexp_constant PConst_int (1,None)
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (testsuite/tests/lib-random/chi2.ml[71,2725+43]..[71,2725+45])
+                                                                  Pexp_constant PConst_int (30,None)
+                                                            ]
+                                                      ]
+                                              ]
+                                            expression (testsuite/tests/lib-random/chi2.ml[72,2774+4]..[76,2945+50])
+                                              Pexp_sequence
+                                              expression (testsuite/tests/lib-random/chi2.ml[72,2774+4]..[73,2819+54])
+                                                Pexp_apply
+                                                expression (testsuite/tests/lib-random/chi2.ml[72,2774+4]..[72,2774+8])
+                                                  Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[72,2774+4]..[72,2774+8])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (testsuite/tests/lib-random/chi2.ml[72,2774+9]..[72,2774+44])
+                                                      Pexp_constant PConst_string("Random.full_int 2^30 (bits 22-29)",(testsuite/tests/lib-random/chi2.ml[72,2774+10]..[72,2774+43]),None)
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (testsuite/tests/lib-random/chi2.ml[73,2819+9]..[73,2819+54])
+                                                      Pexp_fun
+                                                      Nolabel
+                                                      None
+                                                      pattern (testsuite/tests/lib-random/chi2.ml[73,2819+14]..[73,2819+16])
+                                                        Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[73,2819+14]..[73,2819+16])
+                                                        None
+                                                      expression (testsuite/tests/lib-random/chi2.ml[73,2819+20]..[73,2819+53])
+                                                        Pexp_apply
+                                                        expression (testsuite/tests/lib-random/chi2.ml[73,2819+47]..[73,2819+50])
+                                                          Pexp_ident "lsr" (testsuite/tests/lib-random/chi2.ml[73,2819+47]..[73,2819+50])
+                                                        [
+                                                          <arg>
+                                                          Nolabel
+                                                            expression (testsuite/tests/lib-random/chi2.ml[73,2819+20]..[73,2819+46])
+                                                              Pexp_apply
+                                                              expression (testsuite/tests/lib-random/chi2.ml[73,2819+20]..[73,2819+35])
+                                                                Pexp_ident "Random.full_int" (testsuite/tests/lib-random/chi2.ml[73,2819+20]..[73,2819+35])
+                                                              [
+                                                                <arg>
+                                                                Nolabel
+                                                                  expression (testsuite/tests/lib-random/chi2.ml[73,2819+36]..[73,2819+46])
+                                                                    Pexp_apply
+                                                                    expression (testsuite/tests/lib-random/chi2.ml[73,2819+39]..[73,2819+42])
+                                                                      Pexp_ident "lsl" (testsuite/tests/lib-random/chi2.ml[73,2819+39]..[73,2819+42])
+                                                                    [
+                                                                      <arg>
+                                                                      Nolabel
+expression (testsuite/tests/lib-random/chi2.ml[73,2819+37]..[73,2819+38])
+  Pexp_constant PConst_int (1,None)
+                                                                      <arg>
+                                                                      Nolabel
+expression (testsuite/tests/lib-random/chi2.ml[73,2819+43]..[73,2819+45])
+  Pexp_constant PConst_int (30,None)
+                                                                    ]
+                                                              ]
+                                                          <arg>
+                                                          Nolabel
+                                                            expression (testsuite/tests/lib-random/chi2.ml[73,2819+51]..[73,2819+53])
+                                                              Pexp_constant PConst_int (22,None)
+                                                        ]
+                                                ]
+                                              expression (testsuite/tests/lib-random/chi2.ml[74,2875+4]..[76,2945+50])
+                                                Pexp_apply
+                                                expression (testsuite/tests/lib-random/chi2.ml[74,2875+4]..[74,2875+8])
+                                                  Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[74,2875+4]..[74,2875+8])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (testsuite/tests/lib-random/chi2.ml[74,2875+9]..[74,2875+40])
+                                                      Pexp_constant PConst_string("Random.full_int (256 * p) / p",(testsuite/tests/lib-random/chi2.ml[74,2875+10]..[74,2875+39]),None)
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (testsuite/tests/lib-random/chi2.ml[75,2916+9]..[76,2945+50])
+                                                      Pexp_let Nonrec
+                                                      [
+                                                        <def>
+                                                          pattern (testsuite/tests/lib-random/chi2.ml[75,2916+14]..[75,2916+15])
+                                                            Ppat_var "p" (testsuite/tests/lib-random/chi2.ml[75,2916+14]..[75,2916+15])
+                                                          expression (testsuite/tests/lib-random/chi2.ml[75,2916+18]..[75,2916+25])
+                                                            Pexp_constant PConst_int (7992689,None)
+                                                      ]
+                                                      expression (testsuite/tests/lib-random/chi2.ml[76,2945+10]..[76,2945+49])
+                                                        Pexp_fun
+                                                        Nolabel
+                                                        None
+                                                        pattern (testsuite/tests/lib-random/chi2.ml[76,2945+14]..[76,2945+16])
+                                                          Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[76,2945+14]..[76,2945+16])
+                                                          None
+                                                        expression (testsuite/tests/lib-random/chi2.ml[76,2945+20]..[76,2945+49])
+                                                          Pexp_apply
+                                                          expression (testsuite/tests/lib-random/chi2.ml[76,2945+46]..[76,2945+47])
+                                                            Pexp_ident "/" (testsuite/tests/lib-random/chi2.ml[76,2945+46]..[76,2945+47])
+                                                          [
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (testsuite/tests/lib-random/chi2.ml[76,2945+20]..[76,2945+45])
+                                                                Pexp_apply
+                                                                expression (testsuite/tests/lib-random/chi2.ml[76,2945+20]..[76,2945+35])
+                                                                  Pexp_ident "Random.full_int" (testsuite/tests/lib-random/chi2.ml[76,2945+20]..[76,2945+35])
+                                                                [
+                                                                  <arg>
+                                                                  Nolabel
+                                                                    expression (testsuite/tests/lib-random/chi2.ml[76,2945+36]..[76,2945+45])
+                                                                      Pexp_apply
+                                                                      expression (testsuite/tests/lib-random/chi2.ml[76,2945+41]..[76,2945+42])
+Pexp_ident "*" (testsuite/tests/lib-random/chi2.ml[76,2945+41]..[76,2945+42])
+                                                                      [
+<arg>
+Nolabel
+  expression (testsuite/tests/lib-random/chi2.ml[76,2945+37]..[76,2945+40])
+    Pexp_constant PConst_int (256,None)
+<arg>
+Nolabel
+  expression (testsuite/tests/lib-random/chi2.ml[76,2945+43]..[76,2945+44])
+    Pexp_ident "p" (testsuite/tests/lib-random/chi2.ml[76,2945+43]..[76,2945+44])
+                                                                      ]
+                                                                ]
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (testsuite/tests/lib-random/chi2.ml[76,2945+48]..[76,2945+49])
+                                                                Pexp_ident "p" (testsuite/tests/lib-random/chi2.ml[76,2945+48]..[76,2945+49])
+                                                          ]
+                                                ]
+                                          None
+                                        expression (testsuite/tests/lib-random/chi2.ml[78,3003+2]..[88,3477+5])
+                                          Pexp_ifthenelse
+                                          expression (testsuite/tests/lib-random/chi2.ml[78,3003+5]..[78,3003+23])
+                                            Pexp_apply
+                                            expression (testsuite/tests/lib-random/chi2.ml[78,3003+18]..[78,3003+20])
+                                              Pexp_ident ">=" (testsuite/tests/lib-random/chi2.ml[78,3003+18]..[78,3003+20])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/lib-random/chi2.ml[78,3003+5]..[78,3003+17])
+                                                  Pexp_ident "Sys.int_size" (testsuite/tests/lib-random/chi2.ml[78,3003+5]..[78,3003+17])
+                                              <arg>
+                                              Nolabel
+                                                expression (testsuite/tests/lib-random/chi2.ml[78,3003+21]..[78,3003+23])
+                                                  Pexp_constant PConst_int (63,None)
+                                            ]
+                                          expression (testsuite/tests/lib-random/chi2.ml[78,3003+29]..[88,3477+5])
+                                            Pexp_sequence
+                                            expression (testsuite/tests/lib-random/chi2.ml[79,3038+4]..[80,3081+47])
+                                              Pexp_apply
+                                              expression (testsuite/tests/lib-random/chi2.ml[79,3038+4]..[79,3038+8])
+                                                Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[79,3038+4]..[79,3038+8])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/lib-random/chi2.ml[79,3038+9]..[79,3038+42])
+                                                    Pexp_constant PConst_string("Random.full_int 2^60 (bits 0-7)",(testsuite/tests/lib-random/chi2.ml[79,3038+10]..[79,3038+41]),None)
+                                                <arg>
+                                                Nolabel
+                                                  expression (testsuite/tests/lib-random/chi2.ml[80,3081+9]..[80,3081+47])
+                                                    Pexp_fun
+                                                    Nolabel
+                                                    None
+                                                    pattern (testsuite/tests/lib-random/chi2.ml[80,3081+14]..[80,3081+16])
+                                                      Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[80,3081+14]..[80,3081+16])
+                                                      None
+                                                    expression (testsuite/tests/lib-random/chi2.ml[80,3081+20]..[80,3081+46])
+                                                      Pexp_apply
+                                                      expression (testsuite/tests/lib-random/chi2.ml[80,3081+20]..[80,3081+35])
+                                                        Pexp_ident "Random.full_int" (testsuite/tests/lib-random/chi2.ml[80,3081+20]..[80,3081+35])
+                                                      [
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (testsuite/tests/lib-random/chi2.ml[80,3081+36]..[80,3081+46])
+                                                            Pexp_apply
+                                                            expression (testsuite/tests/lib-random/chi2.ml[80,3081+39]..[80,3081+42])
+                                                              Pexp_ident "lsl" (testsuite/tests/lib-random/chi2.ml[80,3081+39]..[80,3081+42])
+                                                            [
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (testsuite/tests/lib-random/chi2.ml[80,3081+37]..[80,3081+38])
+                                                                  Pexp_constant PConst_int (1,None)
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (testsuite/tests/lib-random/chi2.ml[80,3081+43]..[80,3081+45])
+                                                                  Pexp_constant PConst_int (60,None)
+                                                            ]
+                                                      ]
+                                              ]
+                                            expression (testsuite/tests/lib-random/chi2.ml[81,3130+4]..[87,3426+50])
+                                              Pexp_sequence
+                                              expression (testsuite/tests/lib-random/chi2.ml[81,3130+4]..[82,3175+54])
+                                                Pexp_apply
+                                                expression (testsuite/tests/lib-random/chi2.ml[81,3130+4]..[81,3130+8])
+                                                  Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[81,3130+4]..[81,3130+8])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (testsuite/tests/lib-random/chi2.ml[81,3130+9]..[81,3130+44])
+                                                      Pexp_constant PConst_string("Random.full_int 2^60 (bits 30-37)",(testsuite/tests/lib-random/chi2.ml[81,3130+10]..[81,3130+43]),None)
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (testsuite/tests/lib-random/chi2.ml[82,3175+9]..[82,3175+54])
+                                                      Pexp_fun
+                                                      Nolabel
+                                                      None
+                                                      pattern (testsuite/tests/lib-random/chi2.ml[82,3175+14]..[82,3175+16])
+                                                        Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[82,3175+14]..[82,3175+16])
+                                                        None
+                                                      expression (testsuite/tests/lib-random/chi2.ml[82,3175+20]..[82,3175+53])
+                                                        Pexp_apply
+                                                        expression (testsuite/tests/lib-random/chi2.ml[82,3175+47]..[82,3175+50])
+                                                          Pexp_ident "lsr" (testsuite/tests/lib-random/chi2.ml[82,3175+47]..[82,3175+50])
+                                                        [
+                                                          <arg>
+                                                          Nolabel
+                                                            expression (testsuite/tests/lib-random/chi2.ml[82,3175+20]..[82,3175+46])
+                                                              Pexp_apply
+                                                              expression (testsuite/tests/lib-random/chi2.ml[82,3175+20]..[82,3175+35])
+                                                                Pexp_ident "Random.full_int" (testsuite/tests/lib-random/chi2.ml[82,3175+20]..[82,3175+35])
+                                                              [
+                                                                <arg>
+                                                                Nolabel
+                                                                  expression (testsuite/tests/lib-random/chi2.ml[82,3175+36]..[82,3175+46])
+                                                                    Pexp_apply
+                                                                    expression (testsuite/tests/lib-random/chi2.ml[82,3175+39]..[82,3175+42])
+                                                                      Pexp_ident "lsl" (testsuite/tests/lib-random/chi2.ml[82,3175+39]..[82,3175+42])
+                                                                    [
+                                                                      <arg>
+                                                                      Nolabel
+expression (testsuite/tests/lib-random/chi2.ml[82,3175+37]..[82,3175+38])
+  Pexp_constant PConst_int (1,None)
+                                                                      <arg>
+                                                                      Nolabel
+expression (testsuite/tests/lib-random/chi2.ml[82,3175+43]..[82,3175+45])
+  Pexp_constant PConst_int (60,None)
+                                                                    ]
+                                                              ]
+                                                          <arg>
+                                                          Nolabel
+                                                            expression (testsuite/tests/lib-random/chi2.ml[82,3175+51]..[82,3175+53])
+                                                              Pexp_constant PConst_int (30,None)
+                                                        ]
+                                                ]
+                                              expression (testsuite/tests/lib-random/chi2.ml[83,3231+4]..[87,3426+50])
+                                                Pexp_sequence
+                                                expression (testsuite/tests/lib-random/chi2.ml[83,3231+4]..[84,3276+54])
+                                                  Pexp_apply
+                                                  expression (testsuite/tests/lib-random/chi2.ml[83,3231+4]..[83,3231+8])
+                                                    Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[83,3231+4]..[83,3231+8])
+                                                  [
+                                                    <arg>
+                                                    Nolabel
+                                                      expression (testsuite/tests/lib-random/chi2.ml[83,3231+9]..[83,3231+44])
+                                                        Pexp_constant PConst_string("Random.full_int 2^60 (bits 52-59)",(testsuite/tests/lib-random/chi2.ml[83,3231+10]..[83,3231+43]),None)
+                                                    <arg>
+                                                    Nolabel
+                                                      expression (testsuite/tests/lib-random/chi2.ml[84,3276+9]..[84,3276+54])
+                                                        Pexp_fun
+                                                        Nolabel
+                                                        None
+                                                        pattern (testsuite/tests/lib-random/chi2.ml[84,3276+14]..[84,3276+16])
+                                                          Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[84,3276+14]..[84,3276+16])
+                                                          None
+                                                        expression (testsuite/tests/lib-random/chi2.ml[84,3276+20]..[84,3276+53])
+                                                          Pexp_apply
+                                                          expression (testsuite/tests/lib-random/chi2.ml[84,3276+47]..[84,3276+50])
+                                                            Pexp_ident "lsr" (testsuite/tests/lib-random/chi2.ml[84,3276+47]..[84,3276+50])
+                                                          [
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (testsuite/tests/lib-random/chi2.ml[84,3276+20]..[84,3276+46])
+                                                                Pexp_apply
+                                                                expression (testsuite/tests/lib-random/chi2.ml[84,3276+20]..[84,3276+35])
+                                                                  Pexp_ident "Random.full_int" (testsuite/tests/lib-random/chi2.ml[84,3276+20]..[84,3276+35])
+                                                                [
+                                                                  <arg>
+                                                                  Nolabel
+                                                                    expression (testsuite/tests/lib-random/chi2.ml[84,3276+36]..[84,3276+46])
+                                                                      Pexp_apply
+                                                                      expression (testsuite/tests/lib-random/chi2.ml[84,3276+39]..[84,3276+42])
+Pexp_ident "lsl" (testsuite/tests/lib-random/chi2.ml[84,3276+39]..[84,3276+42])
+                                                                      [
+<arg>
+Nolabel
+  expression (testsuite/tests/lib-random/chi2.ml[84,3276+37]..[84,3276+38])
+    Pexp_constant PConst_int (1,None)
+<arg>
+Nolabel
+  expression (testsuite/tests/lib-random/chi2.ml[84,3276+43]..[84,3276+45])
+    Pexp_constant PConst_int (60,None)
+                                                                      ]
+                                                                ]
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (testsuite/tests/lib-random/chi2.ml[84,3276+51]..[84,3276+53])
+                                                                Pexp_constant PConst_int (52,None)
+                                                          ]
+                                                  ]
+                                                expression (testsuite/tests/lib-random/chi2.ml[85,3332+4]..[87,3426+50])
+                                                  Pexp_apply
+                                                  expression (testsuite/tests/lib-random/chi2.ml[85,3332+4]..[85,3332+8])
+                                                    Pexp_ident "test" (testsuite/tests/lib-random/chi2.ml[85,3332+4]..[85,3332+8])
+                                                  [
+                                                    <arg>
+                                                    Nolabel
+                                                      expression (testsuite/tests/lib-random/chi2.ml[85,3332+9]..[85,3332+40])
+                                                        Pexp_constant PConst_string("Random.full_int (256 * P) / P",(testsuite/tests/lib-random/chi2.ml[85,3332+10]..[85,3332+39]),None)
+                                                    <arg>
+                                                    Nolabel
+                                                      expression (testsuite/tests/lib-random/chi2.ml[86,3373+9]..[87,3426+50])
+                                                        Pexp_let Nonrec
+                                                        [
+                                                          <def>
+                                                            pattern (testsuite/tests/lib-random/chi2.ml[86,3373+14]..[86,3373+15])
+                                                              Ppat_var "p" (testsuite/tests/lib-random/chi2.ml[86,3373+14]..[86,3373+15])
+                                                            expression (testsuite/tests/lib-random/chi2.ml[86,3373+18]..[86,3373+49])
+                                                              Pexp_apply
+                                                              expression (testsuite/tests/lib-random/chi2.ml[86,3373+18]..[86,3373+30])
+                                                                Pexp_ident "Int64.to_int" (testsuite/tests/lib-random/chi2.ml[86,3373+18]..[86,3373+30])
+                                                              [
+                                                                <arg>
+                                                                Nolabel
+                                                                  expression (testsuite/tests/lib-random/chi2.ml[86,3373+31]..[86,3373+49])
+                                                                    Pexp_constant PConst_int (17766642568158577,Some L)
+                                                              ]
+                                                        ]
+                                                        expression (testsuite/tests/lib-random/chi2.ml[87,3426+10]..[87,3426+49])
+                                                          Pexp_fun
+                                                          Nolabel
+                                                          None
+                                                          pattern (testsuite/tests/lib-random/chi2.ml[87,3426+14]..[87,3426+16])
+                                                            Ppat_construct "()" (testsuite/tests/lib-random/chi2.ml[87,3426+14]..[87,3426+16])
+                                                            None
+                                                          expression (testsuite/tests/lib-random/chi2.ml[87,3426+20]..[87,3426+49])
+                                                            Pexp_apply
+                                                            expression (testsuite/tests/lib-random/chi2.ml[87,3426+46]..[87,3426+47])
+                                                              Pexp_ident "/" (testsuite/tests/lib-random/chi2.ml[87,3426+46]..[87,3426+47])
+                                                            [
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (testsuite/tests/lib-random/chi2.ml[87,3426+20]..[87,3426+45])
+                                                                  Pexp_apply
+                                                                  expression (testsuite/tests/lib-random/chi2.ml[87,3426+20]..[87,3426+35])
+                                                                    Pexp_ident "Random.full_int" (testsuite/tests/lib-random/chi2.ml[87,3426+20]..[87,3426+35])
+                                                                  [
+                                                                    <arg>
+                                                                    Nolabel
+                                                                      expression (testsuite/tests/lib-random/chi2.ml[87,3426+36]..[87,3426+45])
+Pexp_apply
+expression (testsuite/tests/lib-random/chi2.ml[87,3426+41]..[87,3426+42])
+  Pexp_ident "*" (testsuite/tests/lib-random/chi2.ml[87,3426+41]..[87,3426+42])
+[
+  <arg>
+  Nolabel
+    expression (testsuite/tests/lib-random/chi2.ml[87,3426+37]..[87,3426+40])
+      Pexp_constant PConst_int (256,None)
+  <arg>
+  Nolabel
+    expression (testsuite/tests/lib-random/chi2.ml[87,3426+43]..[87,3426+44])
+      Pexp_ident "p" (testsuite/tests/lib-random/chi2.ml[87,3426+43]..[87,3426+44])
+]
+                                                                  ]
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (testsuite/tests/lib-random/chi2.ml[87,3426+48]..[87,3426+49])
+                                                                  Pexp_ident "p" (testsuite/tests/lib-random/chi2.ml[87,3426+48]..[87,3426+49])
+                                                            ]
+                                                  ]
+                                          None
+    ]
+]
+

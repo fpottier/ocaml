@@ -1,0 +1,456 @@
+[
+  structure_item (testsuite/tests/typing-modules/records_errors_test.ml[5,22+0]..[11,311+3])
+    Pstr_module
+    "M1" (testsuite/tests/typing-modules/records_errors_test.ml[5,22+7]..[5,22+9])
+      module_expr (testsuite/tests/typing-modules/records_errors_test.ml[5,22+10]..[11,311+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-modules/records_errors_test.ml[8,166+6]..[11,311+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-modules/records_errors_test.ml[9,179+2]..[10,244+66])
+              Pstr_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/records_errors_test.ml[9,179+7]..[9,179+8]) (testsuite/tests/typing-modules/records_errors_test.ml[9,179+2]..[10,244+66])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_record
+                      [
+                        (testsuite/tests/typing-modules/records_errors_test.ml[9,179+12]..[9,179+64])
+                          Immutable
+                          "f0" (testsuite/tests/typing-modules/records_errors_test.ml[9,179+12]..[9,179+14])                          core_type (testsuite/tests/typing-modules/records_errors_test.ml[9,179+17]..[9,179+63])
+                            Ptyp_tuple
+                            [
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[9,179+17]..[9,179+21])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[9,179+17]..[9,179+21])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[9,179+24]..[9,179+28])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[9,179+24]..[9,179+28])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[9,179+31]..[9,179+35])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[9,179+31]..[9,179+35])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[9,179+38]..[9,179+43])
+                                Ptyp_constr "float" (testsuite/tests/typing-modules/records_errors_test.ml[9,179+38]..[9,179+43])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[9,179+45]..[9,179+49])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[9,179+45]..[9,179+49])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[9,179+52]..[9,179+56])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[9,179+52]..[9,179+56])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[9,179+59]..[9,179+63])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[9,179+59]..[9,179+63])
+                                []
+                            ]
+                        (testsuite/tests/typing-modules/records_errors_test.ml[10,244+12]..[10,244+65])
+                          Immutable
+                          "f1" (testsuite/tests/typing-modules/records_errors_test.ml[10,244+12]..[10,244+14])                          core_type (testsuite/tests/typing-modules/records_errors_test.ml[10,244+17]..[10,244+65])
+                            Ptyp_tuple
+                            [
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[10,244+17]..[10,244+21])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[10,244+17]..[10,244+21])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[10,244+24]..[10,244+28])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[10,244+24]..[10,244+28])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[10,244+31]..[10,244+35])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[10,244+31]..[10,244+35])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[10,244+38]..[10,244+44])
+                                Ptyp_constr "string" (testsuite/tests/typing-modules/records_errors_test.ml[10,244+38]..[10,244+44])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[10,244+47]..[10,244+51])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[10,244+47]..[10,244+51])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[10,244+54]..[10,244+58])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[10,244+54]..[10,244+58])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[10,244+61]..[10,244+65])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[10,244+61]..[10,244+65])
+                                []
+                            ]
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+        module_type (testsuite/tests/typing-modules/records_errors_test.ml[5,22+12]..[8,166+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-modules/records_errors_test.ml[6,38+2]..[7,102+63])
+              Psig_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/records_errors_test.ml[6,38+7]..[6,38+8]) (testsuite/tests/typing-modules/records_errors_test.ml[6,38+2]..[7,102+63])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_record
+                      [
+                        (testsuite/tests/typing-modules/records_errors_test.ml[6,38+12]..[6,38+63])
+                          Immutable
+                          "f0" (testsuite/tests/typing-modules/records_errors_test.ml[6,38+12]..[6,38+14])                          core_type (testsuite/tests/typing-modules/records_errors_test.ml[6,38+17]..[6,38+62])
+                            Ptyp_tuple
+                            [
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[6,38+17]..[6,38+21])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[6,38+17]..[6,38+21])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[6,38+24]..[6,38+28])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[6,38+24]..[6,38+28])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[6,38+31]..[6,38+35])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[6,38+31]..[6,38+35])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[6,38+38]..[6,38+41])
+                                Ptyp_constr "int" (testsuite/tests/typing-modules/records_errors_test.ml[6,38+38]..[6,38+41])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[6,38+44]..[6,38+48])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[6,38+44]..[6,38+48])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[6,38+51]..[6,38+55])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[6,38+51]..[6,38+55])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[6,38+58]..[6,38+62])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[6,38+58]..[6,38+62])
+                                []
+                            ]
+                        (testsuite/tests/typing-modules/records_errors_test.ml[7,102+12]..[7,102+62])
+                          Immutable
+                          "f1" (testsuite/tests/typing-modules/records_errors_test.ml[7,102+12]..[7,102+14])                          core_type (testsuite/tests/typing-modules/records_errors_test.ml[7,102+17]..[7,102+62])
+                            Ptyp_tuple
+                            [
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[7,102+17]..[7,102+21])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[7,102+17]..[7,102+21])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[7,102+24]..[7,102+28])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[7,102+24]..[7,102+28])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[7,102+31]..[7,102+35])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[7,102+31]..[7,102+35])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[7,102+38]..[7,102+41])
+                                Ptyp_constr "int" (testsuite/tests/typing-modules/records_errors_test.ml[7,102+38]..[7,102+41])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[7,102+44]..[7,102+48])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[7,102+44]..[7,102+48])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[7,102+51]..[7,102+55])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[7,102+51]..[7,102+55])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[7,102+58]..[7,102+62])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[7,102+58]..[7,102+62])
+                                []
+                            ]
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+  structure_item (testsuite/tests/typing-modules/records_errors_test.ml[12,317+0]..[48,1591+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-modules/records_errors_test.ml[12,317+9]..[48,1591+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-modules/records_errors_test.ml[12,317+9]..[48,1591+2])
+          Pexp_constant PConst_string ("\nLines 4-7, characters 6-3:\n4 | ......struct\n5 |   type t = {f0 : unit * unit * unit * float* unit * unit * unit;\n6 |             f1 : unit * unit * unit * string * unit * unit * unit}\n7 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig\n           type t = {\n             f0 : unit * unit * unit * float * unit * unit * unit;\n             f1 : unit * unit * unit * string * unit * unit * unit;\n           }\n         end\n       is not included in\n         sig\n           type t = {\n             f0 : unit * unit * unit * int * unit * unit * unit;\n             f1 : unit * unit * unit * int * unit * unit * unit;\n           }\n         end\n       Type declarations do not match:\n         type t = {\n           f0 : unit * unit * unit * float * unit * unit * unit;\n           f1 : unit * unit * unit * string * unit * unit * unit;\n         }\n       is not included in\n         type t = {\n           f0 : unit * unit * unit * int * unit * unit * unit;\n           f1 : unit * unit * unit * int * unit * unit * unit;\n         }\n       Fields do not match:\n         f0 : unit * unit * unit * float * unit * unit * unit;\n       is not compatible with:\n         f0 : unit * unit * unit * int * unit * unit * unit;\n       The types are not equal.\n",(testsuite/tests/typing-modules/records_errors_test.ml[12,317+11]..[48,1591+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-modules/records_errors_test.ml[51,1599+0]..[57,1896+3])
+    Pstr_module
+    "M2" (testsuite/tests/typing-modules/records_errors_test.ml[51,1599+7]..[51,1599+9])
+      module_expr (testsuite/tests/typing-modules/records_errors_test.ml[51,1599+10]..[57,1896+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-modules/records_errors_test.ml[54,1751+6]..[57,1896+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+2]..[56,1829+66])
+              Pstr_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+7]..[55,1764+8]) (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+2]..[56,1829+66])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_record
+                      [
+                        (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+12]..[55,1764+64])
+                          Immutable
+                          "f0" (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+12]..[55,1764+14])                          core_type (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+17]..[55,1764+63])
+                            Ptyp_tuple
+                            [
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+17]..[55,1764+21])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+17]..[55,1764+21])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+24]..[55,1764+28])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+24]..[55,1764+28])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+31]..[55,1764+35])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+31]..[55,1764+35])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+38]..[55,1764+43])
+                                Ptyp_constr "float" (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+38]..[55,1764+43])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+45]..[55,1764+49])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+45]..[55,1764+49])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+52]..[55,1764+56])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+52]..[55,1764+56])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+59]..[55,1764+63])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[55,1764+59]..[55,1764+63])
+                                []
+                            ]
+                        (testsuite/tests/typing-modules/records_errors_test.ml[56,1829+12]..[56,1829+65])
+                          Immutable
+                          "f1" (testsuite/tests/typing-modules/records_errors_test.ml[56,1829+12]..[56,1829+14])                          core_type (testsuite/tests/typing-modules/records_errors_test.ml[56,1829+17]..[56,1829+65])
+                            Ptyp_tuple
+                            [
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[56,1829+17]..[56,1829+21])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[56,1829+17]..[56,1829+21])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[56,1829+24]..[56,1829+28])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[56,1829+24]..[56,1829+28])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[56,1829+31]..[56,1829+35])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[56,1829+31]..[56,1829+35])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[56,1829+38]..[56,1829+44])
+                                Ptyp_constr "string" (testsuite/tests/typing-modules/records_errors_test.ml[56,1829+38]..[56,1829+44])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[56,1829+47]..[56,1829+51])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[56,1829+47]..[56,1829+51])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[56,1829+54]..[56,1829+58])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[56,1829+54]..[56,1829+58])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[56,1829+61]..[56,1829+65])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[56,1829+61]..[56,1829+65])
+                                []
+                            ]
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+        module_type (testsuite/tests/typing-modules/records_errors_test.ml[51,1599+12]..[54,1751+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+2]..[53,1687+63])
+              Psig_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+7]..[52,1615+8]) (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+2]..[53,1687+63])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_record
+                      [
+                        (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+12]..[52,1615+71])
+                          Mutable
+                          "f0" (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+20]..[52,1615+22])                          core_type (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+25]..[52,1615+70])
+                            Ptyp_tuple
+                            [
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+25]..[52,1615+29])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+25]..[52,1615+29])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+32]..[52,1615+36])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+32]..[52,1615+36])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+39]..[52,1615+43])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+39]..[52,1615+43])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+46]..[52,1615+49])
+                                Ptyp_constr "int" (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+46]..[52,1615+49])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+52]..[52,1615+56])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+52]..[52,1615+56])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+59]..[52,1615+63])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+59]..[52,1615+63])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+66]..[52,1615+70])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[52,1615+66]..[52,1615+70])
+                                []
+                            ]
+                        (testsuite/tests/typing-modules/records_errors_test.ml[53,1687+12]..[53,1687+62])
+                          Immutable
+                          "f1" (testsuite/tests/typing-modules/records_errors_test.ml[53,1687+12]..[53,1687+14])                          core_type (testsuite/tests/typing-modules/records_errors_test.ml[53,1687+17]..[53,1687+62])
+                            Ptyp_tuple
+                            [
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[53,1687+17]..[53,1687+21])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[53,1687+17]..[53,1687+21])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[53,1687+24]..[53,1687+28])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[53,1687+24]..[53,1687+28])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[53,1687+31]..[53,1687+35])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[53,1687+31]..[53,1687+35])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[53,1687+38]..[53,1687+41])
+                                Ptyp_constr "int" (testsuite/tests/typing-modules/records_errors_test.ml[53,1687+38]..[53,1687+41])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[53,1687+44]..[53,1687+48])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[53,1687+44]..[53,1687+48])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[53,1687+51]..[53,1687+55])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[53,1687+51]..[53,1687+55])
+                                []
+                              core_type (testsuite/tests/typing-modules/records_errors_test.ml[53,1687+58]..[53,1687+62])
+                                Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[53,1687+58]..[53,1687+62])
+                                []
+                            ]
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+  structure_item (testsuite/tests/typing-modules/records_errors_test.ml[58,1902+0]..[94,3219+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-modules/records_errors_test.ml[58,1902+9]..[94,3219+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-modules/records_errors_test.ml[58,1902+9]..[94,3219+2])
+          Pexp_constant PConst_string ("\nLines 4-7, characters 6-3:\n4 | ......struct\n5 |   type t = {f0 : unit * unit * unit * float* unit * unit * unit;\n6 |             f1 : unit * unit * unit * string * unit * unit * unit}\n7 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig\n           type t = {\n             f0 : unit * unit * unit * float * unit * unit * unit;\n             f1 : unit * unit * unit * string * unit * unit * unit;\n           }\n         end\n       is not included in\n         sig\n           type t = {\n             mutable f0 : unit * unit * unit * int * unit * unit * unit;\n             f1 : unit * unit * unit * int * unit * unit * unit;\n           }\n         end\n       Type declarations do not match:\n         type t = {\n           f0 : unit * unit * unit * float * unit * unit * unit;\n           f1 : unit * unit * unit * string * unit * unit * unit;\n         }\n       is not included in\n         type t = {\n           mutable f0 : unit * unit * unit * int * unit * unit * unit;\n           f1 : unit * unit * unit * int * unit * unit * unit;\n         }\n       Fields do not match:\n         f0 : unit * unit * unit * float * unit * unit * unit;\n       is not compatible with:\n         mutable f0 : unit * unit * unit * int * unit * unit * unit;\n       The second is mutable and the first is not.\n",(testsuite/tests/typing-modules/records_errors_test.ml[58,1902+11]..[94,3219+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-modules/records_errors_test.ml[96,3226+0]..[100,3301+3])
+    Pstr_module
+    "M3" (testsuite/tests/typing-modules/records_errors_test.ml[96,3226+7]..[96,3226+9])
+      module_expr (testsuite/tests/typing-modules/records_errors_test.ml[96,3226+10]..[100,3301+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-modules/records_errors_test.ml[98,3265+6]..[100,3301+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-modules/records_errors_test.ml[99,3278+2]..[99,3278+22])
+              Pstr_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/records_errors_test.ml[99,3278+7]..[99,3278+8]) (testsuite/tests/typing-modules/records_errors_test.ml[99,3278+2]..[99,3278+22])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_record
+                      [
+                        (testsuite/tests/typing-modules/records_errors_test.ml[99,3278+12]..[99,3278+21])
+                          Immutable
+                          "f1" (testsuite/tests/typing-modules/records_errors_test.ml[99,3278+12]..[99,3278+14])                          core_type (testsuite/tests/typing-modules/records_errors_test.ml[99,3278+17]..[99,3278+21])
+                            Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[99,3278+17]..[99,3278+21])
+                            []
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+        module_type (testsuite/tests/typing-modules/records_errors_test.ml[96,3226+12]..[98,3265+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-modules/records_errors_test.ml[97,3242+2]..[97,3242+22])
+              Psig_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/records_errors_test.ml[97,3242+7]..[97,3242+8]) (testsuite/tests/typing-modules/records_errors_test.ml[97,3242+2]..[97,3242+22])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_record
+                      [
+                        (testsuite/tests/typing-modules/records_errors_test.ml[97,3242+12]..[97,3242+21])
+                          Immutable
+                          "f0" (testsuite/tests/typing-modules/records_errors_test.ml[97,3242+12]..[97,3242+14])                          core_type (testsuite/tests/typing-modules/records_errors_test.ml[97,3242+17]..[97,3242+21])
+                            Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[97,3242+17]..[97,3242+21])
+                            []
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+  structure_item (testsuite/tests/typing-modules/records_errors_test.ml[101,3307+0]..[116,3751+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-modules/records_errors_test.ml[101,3307+9]..[116,3751+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-modules/records_errors_test.ml[101,3307+9]..[116,3751+2])
+          Pexp_constant PConst_string ("\nLines 3-5, characters 6-3:\n3 | ......struct\n4 |   type t = {f1 : unit}\n5 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig type t = { f1 : unit; } end\n       is not included in\n         sig type t = { f0 : unit; } end\n       Type declarations do not match:\n         type t = { f1 : unit; }\n       is not included in\n         type t = { f0 : unit; }\n       Fields number 1 have different names, f1 and f0.\n",(testsuite/tests/typing-modules/records_errors_test.ml[101,3307+11]..[116,3751+0]),Some "")
+    ]
+  structure_item (testsuite/tests/typing-modules/records_errors_test.ml[118,3758+0]..[122,3844+3])
+    Pstr_module
+    "M4" (testsuite/tests/typing-modules/records_errors_test.ml[118,3758+7]..[118,3758+9])
+      module_expr (testsuite/tests/typing-modules/records_errors_test.ml[118,3758+10]..[122,3844+3])
+        Pmod_constraint
+        module_expr (testsuite/tests/typing-modules/records_errors_test.ml[120,3808+6]..[122,3844+3])
+          Pmod_structure
+          [
+            structure_item (testsuite/tests/typing-modules/records_errors_test.ml[121,3821+2]..[121,3821+22])
+              Pstr_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/records_errors_test.ml[121,3821+7]..[121,3821+8]) (testsuite/tests/typing-modules/records_errors_test.ml[121,3821+2]..[121,3821+22])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_record
+                      [
+                        (testsuite/tests/typing-modules/records_errors_test.ml[121,3821+12]..[121,3821+21])
+                          Immutable
+                          "f0" (testsuite/tests/typing-modules/records_errors_test.ml[121,3821+12]..[121,3821+14])                          core_type (testsuite/tests/typing-modules/records_errors_test.ml[121,3821+17]..[121,3821+21])
+                            Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[121,3821+17]..[121,3821+21])
+                            []
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+        module_type (testsuite/tests/typing-modules/records_errors_test.ml[118,3758+12]..[120,3808+3])
+          Pmty_signature
+          [
+            signature_item (testsuite/tests/typing-modules/records_errors_test.ml[119,3774+2]..[119,3774+33])
+              Psig_type Rec
+              [
+                type_declaration "t" (testsuite/tests/typing-modules/records_errors_test.ml[119,3774+7]..[119,3774+8]) (testsuite/tests/typing-modules/records_errors_test.ml[119,3774+2]..[119,3774+33])
+                  ptype_params =
+                    []
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_record
+                      [
+                        (testsuite/tests/typing-modules/records_errors_test.ml[119,3774+12]..[119,3774+22])
+                          Immutable
+                          "f0" (testsuite/tests/typing-modules/records_errors_test.ml[119,3774+12]..[119,3774+14])                          core_type (testsuite/tests/typing-modules/records_errors_test.ml[119,3774+17]..[119,3774+21])
+                            Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[119,3774+17]..[119,3774+21])
+                            []
+                        (testsuite/tests/typing-modules/records_errors_test.ml[119,3774+23]..[119,3774+32])
+                          Immutable
+                          "f1" (testsuite/tests/typing-modules/records_errors_test.ml[119,3774+23]..[119,3774+25])                          core_type (testsuite/tests/typing-modules/records_errors_test.ml[119,3774+28]..[119,3774+32])
+                            Ptyp_constr "unit" (testsuite/tests/typing-modules/records_errors_test.ml[119,3774+28]..[119,3774+32])
+                            []
+                      ]
+                  ptype_private = Public
+                  ptype_manifest =
+                    None
+              ]
+          ]
+  structure_item (testsuite/tests/typing-modules/records_errors_test.ml[123,3850+0]..[138,4323+3])
+    Pstr_extension "expect"
+    [
+      structure_item (testsuite/tests/typing-modules/records_errors_test.ml[123,3850+9]..[138,4323+2])
+        Pstr_eval
+        expression (testsuite/tests/typing-modules/records_errors_test.ml[123,3850+9]..[138,4323+2])
+          Pexp_constant PConst_string ("\nLines 3-5, characters 6-3:\n3 | ......struct\n4 |   type t = {f0 : unit}\n5 | end..\nError: Signature mismatch:\n       Modules do not match:\n         sig type t = { f0 : unit; } end\n       is not included in\n         sig type t = { f0 : unit; f1 : unit; } end\n       Type declarations do not match:\n         type t = { f0 : unit; }\n       is not included in\n         type t = { f0 : unit; f1 : unit; }\n       The field f1 is only present in the second declaration.\n",(testsuite/tests/typing-modules/records_errors_test.ml[123,3850+11]..[138,4323+0]),Some "")
+    ]
+]
+

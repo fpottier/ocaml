@@ -1,0 +1,2289 @@
+[
+  structure_item (toplevel/byte/topmain.ml[19,1097+0]..[19,1097+10])
+    Pstr_open Fresh
+    module_expr (toplevel/byte/topmain.ml[19,1097+5]..[19,1097+10])
+      Pmod_ident "Trace" (toplevel/byte/topmain.ml[19,1097+5]..[19,1097+10])
+  structure_item (toplevel/byte/topmain.ml[21,1109+0]..[21,1109+76])
+    Pstr_primitive
+    value_description "current_environment" (toplevel/byte/topmain.ml[21,1109+9]..[21,1109+28]) (toplevel/byte/topmain.ml[21,1109+0]..[21,1109+76])
+      core_type (toplevel/byte/topmain.ml[21,1109+30]..[21,1109+43])
+        Ptyp_arrow
+        Nolabel
+        core_type (toplevel/byte/topmain.ml[21,1109+30]..[21,1109+34])
+          Ptyp_constr "unit" (toplevel/byte/topmain.ml[21,1109+30]..[21,1109+34])
+          []
+        core_type (toplevel/byte/topmain.ml[21,1109+38]..[21,1109+43])
+          Ptyp_constr "Obj.t" (toplevel/byte/topmain.ml[21,1109+38]..[21,1109+43])
+          []
+      [
+        "caml_get_current_environment"
+      ]
+  structure_item (toplevel/byte/topmain.ml[23,1187+0]..[25,1233+73])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[23,1187+4]..[23,1187+24])
+          Ppat_var "tracing_function_ptr" (toplevel/byte/topmain.ml[23,1187+4]..[23,1187+24])
+        expression (toplevel/byte/topmain.ml[24,1214+2]..[25,1233+73])
+          Pexp_apply
+          expression (toplevel/byte/topmain.ml[24,1214+2]..[24,1214+18])
+            Pexp_ident "get_code_pointer" (toplevel/byte/topmain.ml[24,1214+2]..[24,1214+18])
+          [
+            <arg>
+            Nolabel
+              expression (toplevel/byte/topmain.ml[25,1233+4]..[25,1233+73])
+                Pexp_apply
+                expression (toplevel/byte/topmain.ml[25,1233+5]..[25,1233+13])
+                  Pexp_ident "Obj.repr" (toplevel/byte/topmain.ml[25,1233+5]..[25,1233+13])
+                [
+                  <arg>
+                  Nolabel
+                    expression (toplevel/byte/topmain.ml[25,1233+14]..[25,1233+72])
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (toplevel/byte/topmain.ml[25,1233+19]..[25,1233+22])
+                        Ppat_var "arg" (toplevel/byte/topmain.ml[25,1233+19]..[25,1233+22])
+                      expression (toplevel/byte/topmain.ml[25,1233+26]..[25,1233+71])
+                        Pexp_apply
+                        expression (toplevel/byte/topmain.ml[25,1233+26]..[25,1233+43])
+                          Pexp_ident "Trace.print_trace" (toplevel/byte/topmain.ml[25,1233+26]..[25,1233+43])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (toplevel/byte/topmain.ml[25,1233+44]..[25,1233+67])
+                              Pexp_apply
+                              expression (toplevel/byte/topmain.ml[25,1233+45]..[25,1233+64])
+                                Pexp_ident "current_environment" (toplevel/byte/topmain.ml[25,1233+45]..[25,1233+64])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/byte/topmain.ml[25,1233+64]..[25,1233+66])
+                                    Pexp_construct "()" (toplevel/byte/topmain.ml[25,1233+64]..[25,1233+66])
+                                    None
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (toplevel/byte/topmain.ml[25,1233+68]..[25,1233+71])
+                              Pexp_ident "arg" (toplevel/byte/topmain.ml[25,1233+68]..[25,1233+71])
+                        ]
+                ]
+          ]
+    ]
+  structure_item (toplevel/byte/topmain.ml[27,1308+0]..[68,3073+69])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[27,1308+4]..[27,1308+13])
+          Ppat_var "dir_trace" (toplevel/byte/topmain.ml[27,1308+4]..[27,1308+13])
+        expression (toplevel/byte/topmain.ml[27,1308+14]..[68,3073+69]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (toplevel/byte/topmain.ml[27,1308+14]..[27,1308+17])
+            Ppat_var "ppf" (toplevel/byte/topmain.ml[27,1308+14]..[27,1308+17])
+          expression (toplevel/byte/topmain.ml[27,1308+18]..[68,3073+69]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (toplevel/byte/topmain.ml[27,1308+18]..[27,1308+21])
+              Ppat_var "lid" (toplevel/byte/topmain.ml[27,1308+18]..[27,1308+21])
+            expression (toplevel/byte/topmain.ml[28,1332+2]..[68,3073+69])
+              Pexp_match
+              expression (toplevel/byte/topmain.ml[28,1332+8]..[28,1332+58])
+                Pexp_apply
+                expression (toplevel/byte/topmain.ml[28,1332+8]..[28,1332+30])
+                  Pexp_ident "Env.find_value_by_name" (toplevel/byte/topmain.ml[28,1332+8]..[28,1332+30])
+                [
+                  <arg>
+                  Nolabel
+                    expression (toplevel/byte/topmain.ml[28,1332+31]..[28,1332+34])
+                      Pexp_ident "lid" (toplevel/byte/topmain.ml[28,1332+31]..[28,1332+34])
+                  <arg>
+                  Nolabel
+                    expression (toplevel/byte/topmain.ml[28,1332+35]..[28,1332+58])
+                      Pexp_apply
+                      expression (toplevel/byte/topmain.ml[28,1332+35]..[28,1332+36])
+                        Pexp_ident "!" (toplevel/byte/topmain.ml[28,1332+35]..[28,1332+36])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[28,1332+36]..[28,1332+58])
+                            Pexp_ident "Topcommon.toplevel_env" (toplevel/byte/topmain.ml[28,1332+36]..[28,1332+58])
+                      ]
+                ]
+              [
+                <case>
+                  pattern (toplevel/byte/topmain.ml[29,1396+4]..[29,1396+16])
+                    Ppat_tuple
+                    [
+                      pattern (toplevel/byte/topmain.ml[29,1396+5]..[29,1396+9])
+                        Ppat_var "path" (toplevel/byte/topmain.ml[29,1396+5]..[29,1396+9])
+                      pattern (toplevel/byte/topmain.ml[29,1396+11]..[29,1396+15])
+                        Ppat_var "desc" (toplevel/byte/topmain.ml[29,1396+11]..[29,1396+15])
+                    ]
+                  expression (toplevel/byte/topmain.ml[29,1396+20]..[66,3038+7])
+                    Pexp_match
+                    expression (toplevel/byte/topmain.ml[31,1463+12]..[31,1463+25])
+                      Pexp_field
+                      expression (toplevel/byte/topmain.ml[31,1463+12]..[31,1463+16])
+                        Pexp_ident "desc" (toplevel/byte/topmain.ml[31,1463+12]..[31,1463+16])
+                      "val_kind" (toplevel/byte/topmain.ml[31,1463+17]..[31,1463+25])
+                    [
+                      <case>
+                        pattern (toplevel/byte/topmain.ml[32,1494+8]..[32,1494+18])
+                          Ppat_construct "Val_prim" (toplevel/byte/topmain.ml[32,1494+8]..[32,1494+16])
+                          Some
+                            []
+                            pattern (toplevel/byte/topmain.ml[32,1494+17]..[32,1494+18])
+                              Ppat_any
+                        expression (toplevel/byte/topmain.ml[33,1516+10]..[35,1610+32])
+                          Pexp_apply
+                          expression (toplevel/byte/topmain.ml[33,1516+10]..[33,1516+24])
+                            Pexp_ident "Format.fprintf" (toplevel/byte/topmain.ml[33,1516+10]..[33,1516+24])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (toplevel/byte/topmain.ml[33,1516+25]..[33,1516+28])
+                                Pexp_ident "ppf" (toplevel/byte/topmain.ml[33,1516+25]..[33,1516+28])
+                            <arg>
+                            Nolabel
+                              expression (toplevel/byte/topmain.ml[34,1545+12]..[34,1545+64])
+                                Pexp_constant PConst_string("%a is an external function and cannot be traced.@.",(toplevel/byte/topmain.ml[34,1545+13]..[34,1545+63]),None)
+                            <arg>
+                            Nolabel
+                              expression (toplevel/byte/topmain.ml[35,1610+10]..[35,1610+28])
+                                Pexp_ident "Printtyp.longident" (toplevel/byte/topmain.ml[35,1610+10]..[35,1610+28])
+                            <arg>
+                            Nolabel
+                              expression (toplevel/byte/topmain.ml[35,1610+29]..[35,1610+32])
+                                Pexp_ident "lid" (toplevel/byte/topmain.ml[35,1610+29]..[35,1610+32])
+                          ]
+                      <case>
+                        pattern (toplevel/byte/topmain.ml[36,1643+8]..[36,1643+9])
+                          Ppat_any
+                        expression (toplevel/byte/topmain.ml[37,1656+10]..[65,2958+79])
+                          Pexp_let Nonrec
+                          [
+                            <def>
+                              pattern (toplevel/byte/topmain.ml[37,1656+14]..[37,1656+18])
+                                Ppat_var "clos" (toplevel/byte/topmain.ml[37,1656+14]..[37,1656+18])
+                              expression (toplevel/byte/topmain.ml[37,1656+21]..[37,1656+73])
+                                Pexp_apply
+                                expression (toplevel/byte/topmain.ml[37,1656+21]..[37,1656+44])
+                                  Pexp_ident "Toploop.eval_value_path" (toplevel/byte/topmain.ml[37,1656+21]..[37,1656+44])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (toplevel/byte/topmain.ml[37,1656+45]..[37,1656+68])
+                                      Pexp_apply
+                                      expression (toplevel/byte/topmain.ml[37,1656+45]..[37,1656+46])
+                                        Pexp_ident "!" (toplevel/byte/topmain.ml[37,1656+45]..[37,1656+46])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (toplevel/byte/topmain.ml[37,1656+46]..[37,1656+68])
+                                            Pexp_ident "Topcommon.toplevel_env" (toplevel/byte/topmain.ml[37,1656+46]..[37,1656+68])
+                                      ]
+                                  <arg>
+                                  Nolabel
+                                    expression (toplevel/byte/topmain.ml[37,1656+69]..[37,1656+73])
+                                      Pexp_ident "path" (toplevel/byte/topmain.ml[37,1656+69]..[37,1656+73])
+                                ]
+                          ]
+                          expression (toplevel/byte/topmain.ml[39,1785+10]..[65,2958+79])
+                            Pexp_ifthenelse
+                            expression (toplevel/byte/topmain.ml[39,1785+13]..[43,1995+56])
+                              Pexp_apply
+                              expression (toplevel/byte/topmain.ml[40,1816+10]..[40,1816+12])
+                                Pexp_ident "&&" (toplevel/byte/topmain.ml[40,1816+10]..[40,1816+12])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/byte/topmain.ml[39,1785+13]..[39,1785+30])
+                                    Pexp_apply
+                                    expression (toplevel/byte/topmain.ml[39,1785+13]..[39,1785+25])
+                                      Pexp_ident "Obj.is_block" (toplevel/byte/topmain.ml[39,1785+13]..[39,1785+25])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (toplevel/byte/topmain.ml[39,1785+26]..[39,1785+30])
+                                          Pexp_ident "clos" (toplevel/byte/topmain.ml[39,1785+26]..[39,1785+30])
+                                    ]
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/byte/topmain.ml[40,1816+13]..[43,1995+56])
+                                    Pexp_apply
+                                    expression (toplevel/byte/topmain.ml[41,1894+10]..[41,1894+12])
+                                      Pexp_ident "&&" (toplevel/byte/topmain.ml[41,1894+10]..[41,1894+12])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (toplevel/byte/topmain.ml[40,1816+13]..[40,1816+77])
+                                          Pexp_apply
+                                          expression (toplevel/byte/topmain.ml[40,1816+45]..[40,1816+47])
+                                            Pexp_ident "||" (toplevel/byte/topmain.ml[40,1816+45]..[40,1816+47])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (toplevel/byte/topmain.ml[40,1816+14]..[40,1816+44])
+                                                Pexp_apply
+                                                expression (toplevel/byte/topmain.ml[40,1816+27]..[40,1816+28])
+                                                  Pexp_ident "=" (toplevel/byte/topmain.ml[40,1816+27]..[40,1816+28])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (toplevel/byte/topmain.ml[40,1816+14]..[40,1816+26])
+                                                      Pexp_apply
+                                                      expression (toplevel/byte/topmain.ml[40,1816+14]..[40,1816+21])
+                                                        Pexp_ident "Obj.tag" (toplevel/byte/topmain.ml[40,1816+14]..[40,1816+21])
+                                                      [
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (toplevel/byte/topmain.ml[40,1816+22]..[40,1816+26])
+                                                            Pexp_ident "clos" (toplevel/byte/topmain.ml[40,1816+22]..[40,1816+26])
+                                                      ]
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (toplevel/byte/topmain.ml[40,1816+29]..[40,1816+44])
+                                                      Pexp_ident "Obj.closure_tag" (toplevel/byte/topmain.ml[40,1816+29]..[40,1816+44])
+                                                ]
+                                            <arg>
+                                            Nolabel
+                                              expression (toplevel/byte/topmain.ml[40,1816+48]..[40,1816+76])
+                                                Pexp_apply
+                                                expression (toplevel/byte/topmain.ml[40,1816+61]..[40,1816+62])
+                                                  Pexp_ident "=" (toplevel/byte/topmain.ml[40,1816+61]..[40,1816+62])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (toplevel/byte/topmain.ml[40,1816+48]..[40,1816+60])
+                                                      Pexp_apply
+                                                      expression (toplevel/byte/topmain.ml[40,1816+48]..[40,1816+55])
+                                                        Pexp_ident "Obj.tag" (toplevel/byte/topmain.ml[40,1816+48]..[40,1816+55])
+                                                      [
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (toplevel/byte/topmain.ml[40,1816+56]..[40,1816+60])
+                                                            Pexp_ident "clos" (toplevel/byte/topmain.ml[40,1816+56]..[40,1816+60])
+                                                      ]
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (toplevel/byte/topmain.ml[40,1816+63]..[40,1816+76])
+                                                      Pexp_ident "Obj.infix_tag" (toplevel/byte/topmain.ml[40,1816+63]..[40,1816+76])
+                                                ]
+                                          ]
+                                      <arg>
+                                      Nolabel
+                                        expression (toplevel/byte/topmain.ml[41,1894+13]..[43,1995+56])
+                                          Pexp_match
+                                          expression (toplevel/byte/topmain.ml[42,1914+16]..[42,1914+80])
+                                            Pexp_open Fresh
+                                            module_expr (toplevel/byte/topmain.ml[42,1914+16]..[42,1914+21])
+                                              Pmod_ident "Ctype" (toplevel/byte/topmain.ml[42,1914+16]..[42,1914+21])
+                                            expression (toplevel/byte/topmain.ml[42,1914+23]..[42,1914+79])
+                                              Pexp_apply
+                                              expression (toplevel/byte/topmain.ml[42,1914+23]..[42,1914+27])
+                                                Pexp_ident "repr" (toplevel/byte/topmain.ml[42,1914+23]..[42,1914+27])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (toplevel/byte/topmain.ml[42,1914+28]..[42,1914+79])
+                                                    Pexp_apply
+                                                    expression (toplevel/byte/topmain.ml[42,1914+29]..[42,1914+40])
+                                                      Pexp_ident "expand_head" (toplevel/byte/topmain.ml[42,1914+29]..[42,1914+40])
+                                                    [
+                                                      <arg>
+                                                      Nolabel
+                                                        expression (toplevel/byte/topmain.ml[42,1914+41]..[42,1914+64])
+                                                          Pexp_apply
+                                                          expression (toplevel/byte/topmain.ml[42,1914+41]..[42,1914+42])
+                                                            Pexp_ident "!" (toplevel/byte/topmain.ml[42,1914+41]..[42,1914+42])
+                                                          [
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (toplevel/byte/topmain.ml[42,1914+42]..[42,1914+64])
+                                                                Pexp_ident "Topcommon.toplevel_env" (toplevel/byte/topmain.ml[42,1914+42]..[42,1914+64])
+                                                          ]
+                                                      <arg>
+                                                      Nolabel
+                                                        expression (toplevel/byte/topmain.ml[42,1914+65]..[42,1914+78])
+                                                          Pexp_field
+                                                          expression (toplevel/byte/topmain.ml[42,1914+65]..[42,1914+69])
+                                                            Pexp_ident "desc" (toplevel/byte/topmain.ml[42,1914+65]..[42,1914+69])
+                                                          "val_type" (toplevel/byte/topmain.ml[42,1914+70]..[42,1914+78])
+                                                    ]
+                                              ]
+                                          [
+                                            <case>
+                                              pattern (toplevel/byte/topmain.ml[43,1995+19]..[43,1995+34])
+                                                Ppat_record Closed
+                                                [
+                                                  "desc" (toplevel/byte/topmain.ml[43,1995+20]..[43,1995+24])
+                                                    pattern (toplevel/byte/topmain.ml[43,1995+25]..[43,1995+33])
+                                                      Ppat_construct "Tarrow" (toplevel/byte/topmain.ml[43,1995+25]..[43,1995+31])
+                                                      Some
+                                                        []
+                                                        pattern (toplevel/byte/topmain.ml[43,1995+32]..[43,1995+33])
+                                                          Ppat_any
+                                                ]
+                                              expression (toplevel/byte/topmain.ml[43,1995+38]..[43,1995+42])
+                                                Pexp_construct "true" (toplevel/byte/topmain.ml[43,1995+38]..[43,1995+42])
+                                                None
+                                            <case>
+                                              pattern (toplevel/byte/topmain.ml[43,1995+45]..[43,1995+46])
+                                                Ppat_any
+                                              expression (toplevel/byte/topmain.ml[43,1995+50]..[43,1995+55])
+                                                Pexp_construct "false" (toplevel/byte/topmain.ml[43,1995+50]..[43,1995+55])
+                                                None
+                                          ]
+                                    ]
+                              ]
+                            expression (toplevel/byte/topmain.ml[44,2052+15]..[64,2939+13])
+                              Pexp_match
+                              expression (toplevel/byte/topmain.ml[45,2073+16]..[45,2073+30])
+                                Pexp_apply
+                                expression (toplevel/byte/topmain.ml[45,2073+16]..[45,2073+25])
+                                  Pexp_ident "is_traced" (toplevel/byte/topmain.ml[45,2073+16]..[45,2073+25])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (toplevel/byte/topmain.ml[45,2073+26]..[45,2073+30])
+                                      Pexp_ident "clos" (toplevel/byte/topmain.ml[45,2073+26]..[45,2073+30])
+                                ]
+                              [
+                                <case>
+                                  pattern (toplevel/byte/topmain.ml[46,2109+12]..[46,2109+22])
+                                    Ppat_construct "Some" (toplevel/byte/topmain.ml[46,2109+12]..[46,2109+16])
+                                    Some
+                                      []
+                                      pattern (toplevel/byte/topmain.ml[46,2109+17]..[46,2109+22])
+                                        Ppat_var "opath" (toplevel/byte/topmain.ml[46,2109+17]..[46,2109+22])
+                                  expression (toplevel/byte/topmain.ml[47,2135+14]..[49,2247+33])
+                                    Pexp_apply
+                                    expression (toplevel/byte/topmain.ml[47,2135+14]..[47,2135+28])
+                                      Pexp_ident "Format.fprintf" (toplevel/byte/topmain.ml[47,2135+14]..[47,2135+28])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (toplevel/byte/topmain.ml[47,2135+29]..[47,2135+32])
+                                          Pexp_ident "ppf" (toplevel/byte/topmain.ml[47,2135+29]..[47,2135+32])
+                                      <arg>
+                                      Nolabel
+                                        expression (toplevel/byte/topmain.ml[47,2135+33]..[47,2135+78])
+                                          Pexp_constant PConst_string("%a is already traced (under the name %a).@.",(toplevel/byte/topmain.ml[47,2135+34]..[47,2135+77]),None)
+                                      <arg>
+                                      Nolabel
+                                        expression (toplevel/byte/topmain.ml[48,2214+14]..[48,2214+27])
+                                          Pexp_ident "Printtyp.path" (toplevel/byte/topmain.ml[48,2214+14]..[48,2214+27])
+                                      <arg>
+                                      Nolabel
+                                        expression (toplevel/byte/topmain.ml[48,2214+28]..[48,2214+32])
+                                          Pexp_ident "path" (toplevel/byte/topmain.ml[48,2214+28]..[48,2214+32])
+                                      <arg>
+                                      Nolabel
+                                        expression (toplevel/byte/topmain.ml[49,2247+14]..[49,2247+27])
+                                          Pexp_ident "Printtyp.path" (toplevel/byte/topmain.ml[49,2247+14]..[49,2247+27])
+                                      <arg>
+                                      Nolabel
+                                        expression (toplevel/byte/topmain.ml[49,2247+28]..[49,2247+33])
+                                          Pexp_ident "opath" (toplevel/byte/topmain.ml[49,2247+28]..[49,2247+33])
+                                    ]
+                                <case>
+                                  pattern (toplevel/byte/topmain.ml[50,2281+12]..[50,2281+16])
+                                    Ppat_construct "None" (toplevel/byte/topmain.ml[50,2281+12]..[50,2281+16])
+                                    None
+                                  expression (toplevel/byte/topmain.ml[52,2348+14]..[63,2861+77])
+                                    Pexp_sequence
+                                    expression (toplevel/byte/topmain.ml[52,2348+14]..[59,2648+36])
+                                      Pexp_apply
+                                      expression (toplevel/byte/topmain.ml[52,2348+31]..[52,2348+33])
+                                        Pexp_ident ":=" (toplevel/byte/topmain.ml[52,2348+31]..[52,2348+33])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (toplevel/byte/topmain.ml[52,2348+14]..[52,2348+30])
+                                            Pexp_ident "traced_functions" (toplevel/byte/topmain.ml[52,2348+14]..[52,2348+30])
+                                        <arg>
+                                        Nolabel
+                                          expression (toplevel/byte/topmain.ml[53,2382+16]..[59,2648+36])
+                                            Pexp_construct "::" (toplevel/byte/topmain.ml[59,2648+16]..[59,2648+18])
+                                            Some
+                                              expression (toplevel/byte/topmain.ml[53,2382+16]..[59,2648+36]) ghost
+                                                Pexp_tuple
+                                                [
+                                                  expression (toplevel/byte/topmain.ml[53,2382+16]..[58,2578+69])
+                                                    Pexp_record
+                                                    [
+                                                      "path" (toplevel/byte/topmain.ml[53,2382+18]..[53,2382+22])
+                                                        expression (toplevel/byte/topmain.ml[53,2382+25]..[53,2382+29])
+                                                          Pexp_ident "path" (toplevel/byte/topmain.ml[53,2382+25]..[53,2382+29])
+                                                      "closure" (toplevel/byte/topmain.ml[54,2413+18]..[54,2413+25])
+                                                        expression (toplevel/byte/topmain.ml[54,2413+28]..[54,2413+32])
+                                                          Pexp_ident "clos" (toplevel/byte/topmain.ml[54,2413+28]..[54,2413+32])
+                                                      "actual_code" (toplevel/byte/topmain.ml[55,2447+18]..[55,2447+29])
+                                                        expression (toplevel/byte/topmain.ml[55,2447+32]..[55,2447+53])
+                                                          Pexp_apply
+                                                          expression (toplevel/byte/topmain.ml[55,2447+32]..[55,2447+48])
+                                                            Pexp_ident "get_code_pointer" (toplevel/byte/topmain.ml[55,2447+32]..[55,2447+48])
+                                                          [
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (toplevel/byte/topmain.ml[55,2447+49]..[55,2447+53])
+                                                                Pexp_ident "clos" (toplevel/byte/topmain.ml[55,2447+49]..[55,2447+53])
+                                                          ]
+                                                      "instrumented_fun" (toplevel/byte/topmain.ml[56,2502+18]..[56,2502+34])
+                                                        expression (toplevel/byte/topmain.ml[57,2539+20]..[58,2578+67])
+                                                          Pexp_apply
+                                                          expression (toplevel/byte/topmain.ml[57,2539+20]..[57,2539+38])
+                                                            Pexp_ident "instrument_closure" (toplevel/byte/topmain.ml[57,2539+20]..[57,2539+38])
+                                                          [
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (toplevel/byte/topmain.ml[58,2578+22]..[58,2578+45])
+                                                                Pexp_apply
+                                                                expression (toplevel/byte/topmain.ml[58,2578+22]..[58,2578+23])
+                                                                  Pexp_ident "!" (toplevel/byte/topmain.ml[58,2578+22]..[58,2578+23])
+                                                                [
+                                                                  <arg>
+                                                                  Nolabel
+                                                                    expression (toplevel/byte/topmain.ml[58,2578+23]..[58,2578+45])
+                                                                      Pexp_ident "Topcommon.toplevel_env" (toplevel/byte/topmain.ml[58,2578+23]..[58,2578+45])
+                                                                ]
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (toplevel/byte/topmain.ml[58,2578+46]..[58,2578+49])
+                                                                Pexp_ident "lid" (toplevel/byte/topmain.ml[58,2578+46]..[58,2578+49])
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (toplevel/byte/topmain.ml[58,2578+50]..[58,2578+53])
+                                                                Pexp_ident "ppf" (toplevel/byte/topmain.ml[58,2578+50]..[58,2578+53])
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (toplevel/byte/topmain.ml[58,2578+54]..[58,2578+67])
+                                                                Pexp_field
+                                                                expression (toplevel/byte/topmain.ml[58,2578+54]..[58,2578+58])
+                                                                  Pexp_ident "desc" (toplevel/byte/topmain.ml[58,2578+54]..[58,2578+58])
+                                                                "val_type" (toplevel/byte/topmain.ml[58,2578+59]..[58,2578+67])
+                                                          ]
+                                                    ]
+                                                    None
+                                                  expression (toplevel/byte/topmain.ml[59,2648+19]..[59,2648+36])
+                                                    Pexp_apply
+                                                    expression (toplevel/byte/topmain.ml[59,2648+19]..[59,2648+20])
+                                                      Pexp_ident "!" (toplevel/byte/topmain.ml[59,2648+19]..[59,2648+20])
+                                                    [
+                                                      <arg>
+                                                      Nolabel
+                                                        expression (toplevel/byte/topmain.ml[59,2648+20]..[59,2648+36])
+                                                          Pexp_ident "traced_functions" (toplevel/byte/topmain.ml[59,2648+20]..[59,2648+36])
+                                                    ]
+                                                ]
+                                      ]
+                                    expression (toplevel/byte/topmain.ml[62,2803+14]..[63,2861+77])
+                                      Pexp_sequence
+                                      expression (toplevel/byte/topmain.ml[62,2803+14]..[62,2803+56])
+                                        Pexp_apply
+                                        expression (toplevel/byte/topmain.ml[62,2803+14]..[62,2803+30])
+                                          Pexp_ident "set_code_pointer" (toplevel/byte/topmain.ml[62,2803+14]..[62,2803+30])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (toplevel/byte/topmain.ml[62,2803+31]..[62,2803+35])
+                                              Pexp_ident "clos" (toplevel/byte/topmain.ml[62,2803+31]..[62,2803+35])
+                                          <arg>
+                                          Nolabel
+                                            expression (toplevel/byte/topmain.ml[62,2803+36]..[62,2803+56])
+                                              Pexp_ident "tracing_function_ptr" (toplevel/byte/topmain.ml[62,2803+36]..[62,2803+56])
+                                        ]
+                                      expression (toplevel/byte/topmain.ml[63,2861+14]..[63,2861+77])
+                                        Pexp_apply
+                                        expression (toplevel/byte/topmain.ml[63,2861+14]..[63,2861+28])
+                                          Pexp_ident "Format.fprintf" (toplevel/byte/topmain.ml[63,2861+14]..[63,2861+28])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (toplevel/byte/topmain.ml[63,2861+29]..[63,2861+32])
+                                              Pexp_ident "ppf" (toplevel/byte/topmain.ml[63,2861+29]..[63,2861+32])
+                                          <arg>
+                                          Nolabel
+                                            expression (toplevel/byte/topmain.ml[63,2861+33]..[63,2861+54])
+                                              Pexp_constant PConst_string("%a is now traced.@.",(toplevel/byte/topmain.ml[63,2861+34]..[63,2861+53]),None)
+                                          <arg>
+                                          Nolabel
+                                            expression (toplevel/byte/topmain.ml[63,2861+55]..[63,2861+73])
+                                              Pexp_ident "Printtyp.longident" (toplevel/byte/topmain.ml[63,2861+55]..[63,2861+73])
+                                          <arg>
+                                          Nolabel
+                                            expression (toplevel/byte/topmain.ml[63,2861+74]..[63,2861+77])
+                                              Pexp_ident "lid" (toplevel/byte/topmain.ml[63,2861+74]..[63,2861+77])
+                                        ]
+                              ]
+                            Some
+                              expression (toplevel/byte/topmain.ml[65,2958+12]..[65,2958+79])
+                                Pexp_apply
+                                expression (toplevel/byte/topmain.ml[65,2958+12]..[65,2958+26])
+                                  Pexp_ident "Format.fprintf" (toplevel/byte/topmain.ml[65,2958+12]..[65,2958+26])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (toplevel/byte/topmain.ml[65,2958+27]..[65,2958+30])
+                                      Pexp_ident "ppf" (toplevel/byte/topmain.ml[65,2958+27]..[65,2958+30])
+                                  <arg>
+                                  Nolabel
+                                    expression (toplevel/byte/topmain.ml[65,2958+31]..[65,2958+56])
+                                      Pexp_constant PConst_string("%a is not a function.@.",(toplevel/byte/topmain.ml[65,2958+32]..[65,2958+55]),None)
+                                  <arg>
+                                  Nolabel
+                                    expression (toplevel/byte/topmain.ml[65,2958+57]..[65,2958+75])
+                                      Pexp_ident "Printtyp.longident" (toplevel/byte/topmain.ml[65,2958+57]..[65,2958+75])
+                                  <arg>
+                                  Nolabel
+                                    expression (toplevel/byte/topmain.ml[65,2958+76]..[65,2958+79])
+                                      Pexp_ident "lid" (toplevel/byte/topmain.ml[65,2958+76]..[65,2958+79])
+                                ]
+                    ]
+                <case>
+                  pattern (toplevel/byte/topmain.ml[67,3046+4]..[67,3046+23])
+                    Ppat_exception
+                    pattern (toplevel/byte/topmain.ml[67,3046+14]..[67,3046+23])
+                      Ppat_construct "Not_found" (toplevel/byte/topmain.ml[67,3046+14]..[67,3046+23])
+                      None
+                  expression (toplevel/byte/topmain.ml[68,3073+6]..[68,3073+69])
+                    Pexp_apply
+                    expression (toplevel/byte/topmain.ml[68,3073+6]..[68,3073+20])
+                      Pexp_ident "Format.fprintf" (toplevel/byte/topmain.ml[68,3073+6]..[68,3073+20])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[68,3073+21]..[68,3073+24])
+                          Pexp_ident "ppf" (toplevel/byte/topmain.ml[68,3073+21]..[68,3073+24])
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[68,3073+25]..[68,3073+46])
+                          Pexp_constant PConst_string("Unbound value %a.@.",(toplevel/byte/topmain.ml[68,3073+26]..[68,3073+45]),None)
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[68,3073+47]..[68,3073+65])
+                          Pexp_ident "Printtyp.longident" (toplevel/byte/topmain.ml[68,3073+47]..[68,3073+65])
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[68,3073+66]..[68,3073+69])
+                          Pexp_ident "lid" (toplevel/byte/topmain.ml[68,3073+66]..[68,3073+69])
+                    ]
+              ]
+    ]
+  structure_item (toplevel/byte/topmain.ml[70,3144+0]..[86,3739+69])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[70,3144+4]..[70,3144+15])
+          Ppat_var "dir_untrace" (toplevel/byte/topmain.ml[70,3144+4]..[70,3144+15])
+        expression (toplevel/byte/topmain.ml[70,3144+16]..[86,3739+69]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (toplevel/byte/topmain.ml[70,3144+16]..[70,3144+19])
+            Ppat_var "ppf" (toplevel/byte/topmain.ml[70,3144+16]..[70,3144+19])
+          expression (toplevel/byte/topmain.ml[70,3144+20]..[86,3739+69]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (toplevel/byte/topmain.ml[70,3144+20]..[70,3144+23])
+              Ppat_var "lid" (toplevel/byte/topmain.ml[70,3144+20]..[70,3144+23])
+            expression (toplevel/byte/topmain.ml[71,3170+2]..[86,3739+69])
+              Pexp_match
+              expression (toplevel/byte/topmain.ml[71,3170+8]..[71,3170+58])
+                Pexp_apply
+                expression (toplevel/byte/topmain.ml[71,3170+8]..[71,3170+30])
+                  Pexp_ident "Env.find_value_by_name" (toplevel/byte/topmain.ml[71,3170+8]..[71,3170+30])
+                [
+                  <arg>
+                  Nolabel
+                    expression (toplevel/byte/topmain.ml[71,3170+31]..[71,3170+34])
+                      Pexp_ident "lid" (toplevel/byte/topmain.ml[71,3170+31]..[71,3170+34])
+                  <arg>
+                  Nolabel
+                    expression (toplevel/byte/topmain.ml[71,3170+35]..[71,3170+58])
+                      Pexp_apply
+                      expression (toplevel/byte/topmain.ml[71,3170+35]..[71,3170+36])
+                        Pexp_ident "!" (toplevel/byte/topmain.ml[71,3170+35]..[71,3170+36])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[71,3170+36]..[71,3170+58])
+                            Pexp_ident "Topcommon.toplevel_env" (toplevel/byte/topmain.ml[71,3170+36]..[71,3170+58])
+                      ]
+                ]
+              [
+                <case>
+                  pattern (toplevel/byte/topmain.ml[72,3234+4]..[72,3234+17])
+                    Ppat_tuple
+                    [
+                      pattern (toplevel/byte/topmain.ml[72,3234+5]..[72,3234+9])
+                        Ppat_var "path" (toplevel/byte/topmain.ml[72,3234+5]..[72,3234+9])
+                      pattern (toplevel/byte/topmain.ml[72,3234+11]..[72,3234+16])
+                        Ppat_var "_desc" (toplevel/byte/topmain.ml[72,3234+11]..[72,3234+16])
+                    ]
+                  expression (toplevel/byte/topmain.ml[73,3255+6]..[84,3661+50])
+                    Pexp_let Rec
+                    [
+                      <def>
+                        pattern (toplevel/byte/topmain.ml[73,3255+14]..[73,3255+20])
+                          Ppat_var "remove" (toplevel/byte/topmain.ml[73,3255+14]..[73,3255+20])
+                        expression (toplevel/byte/topmain.ml[73,3255+23]..[83,3623+34])
+                          Pexp_function
+                          [
+                            <case>
+                              pattern (toplevel/byte/topmain.ml[74,3287+8]..[74,3287+10])
+                                Ppat_construct "[]" (toplevel/byte/topmain.ml[74,3287+8]..[74,3287+10])
+                                None
+                              expression (toplevel/byte/topmain.ml[75,3301+10]..[76,3377+12])
+                                Pexp_sequence
+                                expression (toplevel/byte/topmain.ml[75,3301+10]..[75,3301+74])
+                                  Pexp_apply
+                                  expression (toplevel/byte/topmain.ml[75,3301+10]..[75,3301+24])
+                                    Pexp_ident "Format.fprintf" (toplevel/byte/topmain.ml[75,3301+10]..[75,3301+24])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/byte/topmain.ml[75,3301+25]..[75,3301+28])
+                                        Pexp_ident "ppf" (toplevel/byte/topmain.ml[75,3301+25]..[75,3301+28])
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/byte/topmain.ml[75,3301+29]..[75,3301+51])
+                                        Pexp_constant PConst_string("%a was not traced.@.",(toplevel/byte/topmain.ml[75,3301+30]..[75,3301+50]),None)
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/byte/topmain.ml[75,3301+52]..[75,3301+70])
+                                        Pexp_ident "Printtyp.longident" (toplevel/byte/topmain.ml[75,3301+52]..[75,3301+70])
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/byte/topmain.ml[75,3301+71]..[75,3301+74])
+                                        Pexp_ident "lid" (toplevel/byte/topmain.ml[75,3301+71]..[75,3301+74])
+                                  ]
+                                expression (toplevel/byte/topmain.ml[76,3377+10]..[76,3377+12])
+                                  Pexp_construct "[]" (toplevel/byte/topmain.ml[76,3377+10]..[76,3377+12])
+                                  None
+                            <case>
+                              pattern (toplevel/byte/topmain.ml[77,3390+8]..[77,3390+16])
+                                Ppat_construct "::" (toplevel/byte/topmain.ml[77,3390+10]..[77,3390+12])
+                                Some
+                                  []
+                                  pattern (toplevel/byte/topmain.ml[77,3390+8]..[77,3390+16]) ghost
+                                    Ppat_tuple
+                                    [
+                                      pattern (toplevel/byte/topmain.ml[77,3390+8]..[77,3390+9])
+                                        Ppat_var "f" (toplevel/byte/topmain.ml[77,3390+8]..[77,3390+9])
+                                      pattern (toplevel/byte/topmain.ml[77,3390+13]..[77,3390+16])
+                                        Ppat_var "rem" (toplevel/byte/topmain.ml[77,3390+13]..[77,3390+16])
+                                    ]
+                              expression (toplevel/byte/topmain.ml[78,3410+10]..[83,3623+34])
+                                Pexp_ifthenelse
+                                expression (toplevel/byte/topmain.ml[78,3410+13]..[78,3410+34])
+                                  Pexp_apply
+                                  expression (toplevel/byte/topmain.ml[78,3410+13]..[78,3410+22])
+                                    Pexp_ident "Path.same" (toplevel/byte/topmain.ml[78,3410+13]..[78,3410+22])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/byte/topmain.ml[78,3410+23]..[78,3410+29])
+                                        Pexp_field
+                                        expression (toplevel/byte/topmain.ml[78,3410+23]..[78,3410+24])
+                                          Pexp_ident "f" (toplevel/byte/topmain.ml[78,3410+23]..[78,3410+24])
+                                        "path" (toplevel/byte/topmain.ml[78,3410+25]..[78,3410+29])
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/byte/topmain.ml[78,3410+30]..[78,3410+34])
+                                        Pexp_ident "path" (toplevel/byte/topmain.ml[78,3410+30]..[78,3410+34])
+                                  ]
+                                expression (toplevel/byte/topmain.ml[78,3410+40]..[83,3623+13])
+                                  Pexp_sequence
+                                  expression (toplevel/byte/topmain.ml[79,3456+12]..[79,3456+52])
+                                    Pexp_apply
+                                    expression (toplevel/byte/topmain.ml[79,3456+12]..[79,3456+28])
+                                      Pexp_ident "set_code_pointer" (toplevel/byte/topmain.ml[79,3456+12]..[79,3456+28])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (toplevel/byte/topmain.ml[79,3456+29]..[79,3456+38])
+                                          Pexp_field
+                                          expression (toplevel/byte/topmain.ml[79,3456+29]..[79,3456+30])
+                                            Pexp_ident "f" (toplevel/byte/topmain.ml[79,3456+29]..[79,3456+30])
+                                          "closure" (toplevel/byte/topmain.ml[79,3456+31]..[79,3456+38])
+                                      <arg>
+                                      Nolabel
+                                        expression (toplevel/byte/topmain.ml[79,3456+39]..[79,3456+52])
+                                          Pexp_field
+                                          expression (toplevel/byte/topmain.ml[79,3456+39]..[79,3456+40])
+                                            Pexp_ident "f" (toplevel/byte/topmain.ml[79,3456+39]..[79,3456+40])
+                                          "actual_code" (toplevel/byte/topmain.ml[79,3456+41]..[79,3456+52])
+                                    ]
+                                  expression (toplevel/byte/topmain.ml[80,3510+12]..[82,3607+15])
+                                    Pexp_sequence
+                                    expression (toplevel/byte/topmain.ml[80,3510+12]..[81,3569+36])
+                                      Pexp_apply
+                                      expression (toplevel/byte/topmain.ml[80,3510+12]..[80,3510+26])
+                                        Pexp_ident "Format.fprintf" (toplevel/byte/topmain.ml[80,3510+12]..[80,3510+26])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (toplevel/byte/topmain.ml[80,3510+27]..[80,3510+30])
+                                            Pexp_ident "ppf" (toplevel/byte/topmain.ml[80,3510+27]..[80,3510+30])
+                                        <arg>
+                                        Nolabel
+                                          expression (toplevel/byte/topmain.ml[80,3510+31]..[80,3510+58])
+                                            Pexp_constant PConst_string("%a is no longer traced.@.",(toplevel/byte/topmain.ml[80,3510+32]..[80,3510+57]),None)
+                                        <arg>
+                                        Nolabel
+                                          expression (toplevel/byte/topmain.ml[81,3569+14]..[81,3569+32])
+                                            Pexp_ident "Printtyp.longident" (toplevel/byte/topmain.ml[81,3569+14]..[81,3569+32])
+                                        <arg>
+                                        Nolabel
+                                          expression (toplevel/byte/topmain.ml[81,3569+33]..[81,3569+36])
+                                            Pexp_ident "lid" (toplevel/byte/topmain.ml[81,3569+33]..[81,3569+36])
+                                      ]
+                                    expression (toplevel/byte/topmain.ml[82,3607+12]..[82,3607+15])
+                                      Pexp_ident "rem" (toplevel/byte/topmain.ml[82,3607+12]..[82,3607+15])
+                                Some
+                                  expression (toplevel/byte/topmain.ml[83,3623+19]..[83,3623+34])
+                                    Pexp_construct "::" (toplevel/byte/topmain.ml[83,3623+21]..[83,3623+23])
+                                    Some
+                                      expression (toplevel/byte/topmain.ml[83,3623+19]..[83,3623+34]) ghost
+                                        Pexp_tuple
+                                        [
+                                          expression (toplevel/byte/topmain.ml[83,3623+19]..[83,3623+20])
+                                            Pexp_ident "f" (toplevel/byte/topmain.ml[83,3623+19]..[83,3623+20])
+                                          expression (toplevel/byte/topmain.ml[83,3623+24]..[83,3623+34])
+                                            Pexp_apply
+                                            expression (toplevel/byte/topmain.ml[83,3623+24]..[83,3623+30])
+                                              Pexp_ident "remove" (toplevel/byte/topmain.ml[83,3623+24]..[83,3623+30])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (toplevel/byte/topmain.ml[83,3623+31]..[83,3623+34])
+                                                  Pexp_ident "rem" (toplevel/byte/topmain.ml[83,3623+31]..[83,3623+34])
+                                            ]
+                                        ]
+                          ]
+                    ]
+                    expression (toplevel/byte/topmain.ml[84,3661+6]..[84,3661+50])
+                      Pexp_apply
+                      expression (toplevel/byte/topmain.ml[84,3661+23]..[84,3661+25])
+                        Pexp_ident ":=" (toplevel/byte/topmain.ml[84,3661+23]..[84,3661+25])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[84,3661+6]..[84,3661+22])
+                            Pexp_ident "traced_functions" (toplevel/byte/topmain.ml[84,3661+6]..[84,3661+22])
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[84,3661+26]..[84,3661+50])
+                            Pexp_apply
+                            expression (toplevel/byte/topmain.ml[84,3661+26]..[84,3661+32])
+                              Pexp_ident "remove" (toplevel/byte/topmain.ml[84,3661+26]..[84,3661+32])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (toplevel/byte/topmain.ml[84,3661+33]..[84,3661+50])
+                                  Pexp_apply
+                                  expression (toplevel/byte/topmain.ml[84,3661+33]..[84,3661+34])
+                                    Pexp_ident "!" (toplevel/byte/topmain.ml[84,3661+33]..[84,3661+34])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/byte/topmain.ml[84,3661+34]..[84,3661+50])
+                                        Pexp_ident "traced_functions" (toplevel/byte/topmain.ml[84,3661+34]..[84,3661+50])
+                                  ]
+                            ]
+                      ]
+                <case>
+                  pattern (toplevel/byte/topmain.ml[85,3712+4]..[85,3712+23])
+                    Ppat_exception
+                    pattern (toplevel/byte/topmain.ml[85,3712+14]..[85,3712+23])
+                      Ppat_construct "Not_found" (toplevel/byte/topmain.ml[85,3712+14]..[85,3712+23])
+                      None
+                  expression (toplevel/byte/topmain.ml[86,3739+6]..[86,3739+69])
+                    Pexp_apply
+                    expression (toplevel/byte/topmain.ml[86,3739+6]..[86,3739+20])
+                      Pexp_ident "Format.fprintf" (toplevel/byte/topmain.ml[86,3739+6]..[86,3739+20])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[86,3739+21]..[86,3739+24])
+                          Pexp_ident "ppf" (toplevel/byte/topmain.ml[86,3739+21]..[86,3739+24])
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[86,3739+25]..[86,3739+46])
+                          Pexp_constant PConst_string("Unbound value %a.@.",(toplevel/byte/topmain.ml[86,3739+26]..[86,3739+45]),None)
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[86,3739+47]..[86,3739+65])
+                          Pexp_ident "Printtyp.longident" (toplevel/byte/topmain.ml[86,3739+47]..[86,3739+65])
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[86,3739+66]..[86,3739+69])
+                          Pexp_ident "lid" (toplevel/byte/topmain.ml[86,3739+66]..[86,3739+69])
+                    ]
+              ]
+    ]
+  structure_item (toplevel/byte/topmain.ml[88,3810+0]..[94,4011+24])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[88,3810+4]..[88,3810+19])
+          Ppat_var "dir_untrace_all" (toplevel/byte/topmain.ml[88,3810+4]..[88,3810+19])
+        expression (toplevel/byte/topmain.ml[88,3810+20]..[94,4011+24]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (toplevel/byte/topmain.ml[88,3810+20]..[88,3810+23])
+            Ppat_var "ppf" (toplevel/byte/topmain.ml[88,3810+20]..[88,3810+23])
+          expression (toplevel/byte/topmain.ml[88,3810+24]..[94,4011+24]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (toplevel/byte/topmain.ml[88,3810+24]..[88,3810+26])
+              Ppat_construct "()" (toplevel/byte/topmain.ml[88,3810+24]..[88,3810+26])
+              None
+            expression (toplevel/byte/topmain.ml[89,3839+2]..[94,4011+24])
+              Pexp_sequence
+              expression (toplevel/byte/topmain.ml[89,3839+2]..[93,3988+21])
+                Pexp_apply
+                expression (toplevel/byte/topmain.ml[89,3839+2]..[89,3839+11])
+                  Pexp_ident "List.iter" (toplevel/byte/topmain.ml[89,3839+2]..[89,3839+11])
+                [
+                  <arg>
+                  Nolabel
+                    expression (toplevel/byte/topmain.ml[90,3851+4]..[92,3913+74])
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (toplevel/byte/topmain.ml[90,3851+9]..[90,3851+10])
+                        Ppat_var "f" (toplevel/byte/topmain.ml[90,3851+9]..[90,3851+10])
+                      expression (toplevel/byte/topmain.ml[91,3865+6]..[92,3913+73])
+                        Pexp_sequence
+                        expression (toplevel/byte/topmain.ml[91,3865+6]..[91,3865+46])
+                          Pexp_apply
+                          expression (toplevel/byte/topmain.ml[91,3865+6]..[91,3865+22])
+                            Pexp_ident "set_code_pointer" (toplevel/byte/topmain.ml[91,3865+6]..[91,3865+22])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (toplevel/byte/topmain.ml[91,3865+23]..[91,3865+32])
+                                Pexp_field
+                                expression (toplevel/byte/topmain.ml[91,3865+23]..[91,3865+24])
+                                  Pexp_ident "f" (toplevel/byte/topmain.ml[91,3865+23]..[91,3865+24])
+                                "closure" (toplevel/byte/topmain.ml[91,3865+25]..[91,3865+32])
+                            <arg>
+                            Nolabel
+                              expression (toplevel/byte/topmain.ml[91,3865+33]..[91,3865+46])
+                                Pexp_field
+                                expression (toplevel/byte/topmain.ml[91,3865+33]..[91,3865+34])
+                                  Pexp_ident "f" (toplevel/byte/topmain.ml[91,3865+33]..[91,3865+34])
+                                "actual_code" (toplevel/byte/topmain.ml[91,3865+35]..[91,3865+46])
+                          ]
+                        expression (toplevel/byte/topmain.ml[92,3913+6]..[92,3913+73])
+                          Pexp_apply
+                          expression (toplevel/byte/topmain.ml[92,3913+6]..[92,3913+20])
+                            Pexp_ident "Format.fprintf" (toplevel/byte/topmain.ml[92,3913+6]..[92,3913+20])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (toplevel/byte/topmain.ml[92,3913+21]..[92,3913+24])
+                                Pexp_ident "ppf" (toplevel/byte/topmain.ml[92,3913+21]..[92,3913+24])
+                            <arg>
+                            Nolabel
+                              expression (toplevel/byte/topmain.ml[92,3913+25]..[92,3913+52])
+                                Pexp_constant PConst_string("%a is no longer traced.@.",(toplevel/byte/topmain.ml[92,3913+26]..[92,3913+51]),None)
+                            <arg>
+                            Nolabel
+                              expression (toplevel/byte/topmain.ml[92,3913+53]..[92,3913+66])
+                                Pexp_ident "Printtyp.path" (toplevel/byte/topmain.ml[92,3913+53]..[92,3913+66])
+                            <arg>
+                            Nolabel
+                              expression (toplevel/byte/topmain.ml[92,3913+67]..[92,3913+73])
+                                Pexp_field
+                                expression (toplevel/byte/topmain.ml[92,3913+67]..[92,3913+68])
+                                  Pexp_ident "f" (toplevel/byte/topmain.ml[92,3913+67]..[92,3913+68])
+                                "path" (toplevel/byte/topmain.ml[92,3913+69]..[92,3913+73])
+                          ]
+                  <arg>
+                  Nolabel
+                    expression (toplevel/byte/topmain.ml[93,3988+4]..[93,3988+21])
+                      Pexp_apply
+                      expression (toplevel/byte/topmain.ml[93,3988+4]..[93,3988+5])
+                        Pexp_ident "!" (toplevel/byte/topmain.ml[93,3988+4]..[93,3988+5])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[93,3988+5]..[93,3988+21])
+                            Pexp_ident "traced_functions" (toplevel/byte/topmain.ml[93,3988+5]..[93,3988+21])
+                      ]
+                ]
+              expression (toplevel/byte/topmain.ml[94,4011+2]..[94,4011+24])
+                Pexp_apply
+                expression (toplevel/byte/topmain.ml[94,4011+19]..[94,4011+21])
+                  Pexp_ident ":=" (toplevel/byte/topmain.ml[94,4011+19]..[94,4011+21])
+                [
+                  <arg>
+                  Nolabel
+                    expression (toplevel/byte/topmain.ml[94,4011+2]..[94,4011+18])
+                      Pexp_ident "traced_functions" (toplevel/byte/topmain.ml[94,4011+2]..[94,4011+18])
+                  <arg>
+                  Nolabel
+                    expression (toplevel/byte/topmain.ml[94,4011+22]..[94,4011+24])
+                      Pexp_construct "[]" (toplevel/byte/topmain.ml[94,4011+22]..[94,4011+24])
+                      None
+                ]
+    ]
+  structure_item (toplevel/byte/topmain.ml[96,4037+0]..[102,4266+5])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[96,4037+4]..[96,4037+5])
+          Ppat_any
+        expression (toplevel/byte/topmain.ml[96,4037+8]..[102,4266+5])
+          Pexp_apply
+          expression (toplevel/byte/topmain.ml[96,4037+8]..[96,4037+31])
+            Pexp_ident "Topcommon.add_directive" (toplevel/byte/topmain.ml[96,4037+8]..[96,4037+31])
+          [
+            <arg>
+            Nolabel
+              expression (toplevel/byte/topmain.ml[96,4037+32]..[96,4037+39])
+                Pexp_constant PConst_string("trace",(toplevel/byte/topmain.ml[96,4037+33]..[96,4037+38]),None)
+            <arg>
+            Nolabel
+              expression (toplevel/byte/topmain.ml[97,4077+4]..[97,4077+54])
+                Pexp_construct "Directive_ident" (toplevel/byte/topmain.ml[97,4077+5]..[97,4077+20])
+                Some
+                  expression (toplevel/byte/topmain.ml[97,4077+21]..[97,4077+53])
+                    Pexp_apply
+                    expression (toplevel/byte/topmain.ml[97,4077+22]..[97,4077+31])
+                      Pexp_ident "dir_trace" (toplevel/byte/topmain.ml[97,4077+22]..[97,4077+31])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[97,4077+32]..[97,4077+52])
+                          Pexp_ident "Format.std_formatter" (toplevel/byte/topmain.ml[97,4077+32]..[97,4077+52])
+                    ]
+            <arg>
+            Nolabel
+              expression (toplevel/byte/topmain.ml[98,4132+4]..[102,4266+5])
+                Pexp_record
+                [
+                  "section" (toplevel/byte/topmain.ml[99,4138+6]..[99,4138+13])
+                    expression (toplevel/byte/topmain.ml[99,4138+16]..[99,4138+37])
+                      Pexp_ident "Topdirs.section_trace" (toplevel/byte/topmain.ml[99,4138+16]..[99,4138+37])
+                  "doc" (toplevel/byte/topmain.ml[100,4177+6]..[100,4177+9])
+                    expression (toplevel/byte/topmain.ml[100,4177+12]..[101,4218+46])
+                      Pexp_constant PConst_string("All calls to the function named function-name will be traced.",(toplevel/byte/topmain.ml[100,4177+13]..[101,4218+45]),None)
+                ]
+                None
+          ]
+    ]
+  structure_item (toplevel/byte/topmain.ml[104,4273+0]..[109,4465+5])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[104,4273+4]..[104,4273+5])
+          Ppat_any
+        expression (toplevel/byte/topmain.ml[104,4273+8]..[109,4465+5])
+          Pexp_apply
+          expression (toplevel/byte/topmain.ml[104,4273+8]..[104,4273+31])
+            Pexp_ident "Topcommon.add_directive" (toplevel/byte/topmain.ml[104,4273+8]..[104,4273+31])
+          [
+            <arg>
+            Nolabel
+              expression (toplevel/byte/topmain.ml[104,4273+32]..[104,4273+41])
+                Pexp_constant PConst_string("untrace",(toplevel/byte/topmain.ml[104,4273+33]..[104,4273+40]),None)
+            <arg>
+            Nolabel
+              expression (toplevel/byte/topmain.ml[105,4315+4]..[105,4315+56])
+                Pexp_construct "Directive_ident" (toplevel/byte/topmain.ml[105,4315+5]..[105,4315+20])
+                Some
+                  expression (toplevel/byte/topmain.ml[105,4315+21]..[105,4315+55])
+                    Pexp_apply
+                    expression (toplevel/byte/topmain.ml[105,4315+22]..[105,4315+33])
+                      Pexp_ident "dir_untrace" (toplevel/byte/topmain.ml[105,4315+22]..[105,4315+33])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[105,4315+34]..[105,4315+54])
+                          Pexp_ident "Format.std_formatter" (toplevel/byte/topmain.ml[105,4315+34]..[105,4315+54])
+                    ]
+            <arg>
+            Nolabel
+              expression (toplevel/byte/topmain.ml[106,4372+4]..[109,4465+5])
+                Pexp_record
+                [
+                  "section" (toplevel/byte/topmain.ml[107,4378+6]..[107,4378+13])
+                    expression (toplevel/byte/topmain.ml[107,4378+16]..[107,4378+37])
+                      Pexp_ident "Topdirs.section_trace" (toplevel/byte/topmain.ml[107,4378+16]..[107,4378+37])
+                  "doc" (toplevel/byte/topmain.ml[108,4417+6]..[108,4417+9])
+                    expression (toplevel/byte/topmain.ml[108,4417+12]..[108,4417+46])
+                      Pexp_constant PConst_string("Stop tracing the given function.",(toplevel/byte/topmain.ml[108,4417+13]..[108,4417+45]),None)
+                ]
+                None
+          ]
+    ]
+  structure_item (toplevel/byte/topmain.ml[111,4472+0]..[116,4680+5])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[111,4472+4]..[111,4472+5])
+          Ppat_any
+        expression (toplevel/byte/topmain.ml[111,4472+8]..[116,4680+5])
+          Pexp_apply
+          expression (toplevel/byte/topmain.ml[111,4472+8]..[111,4472+31])
+            Pexp_ident "Topcommon.add_directive" (toplevel/byte/topmain.ml[111,4472+8]..[111,4472+31])
+          [
+            <arg>
+            Nolabel
+              expression (toplevel/byte/topmain.ml[111,4472+32]..[111,4472+45])
+                Pexp_constant PConst_string("untrace_all",(toplevel/byte/topmain.ml[111,4472+33]..[111,4472+44]),None)
+            <arg>
+            Nolabel
+              expression (toplevel/byte/topmain.ml[112,4518+4]..[112,4518+59])
+                Pexp_construct "Directive_none" (toplevel/byte/topmain.ml[112,4518+5]..[112,4518+19])
+                Some
+                  expression (toplevel/byte/topmain.ml[112,4518+20]..[112,4518+58])
+                    Pexp_apply
+                    expression (toplevel/byte/topmain.ml[112,4518+21]..[112,4518+36])
+                      Pexp_ident "dir_untrace_all" (toplevel/byte/topmain.ml[112,4518+21]..[112,4518+36])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[112,4518+37]..[112,4518+57])
+                          Pexp_ident "Format.std_formatter" (toplevel/byte/topmain.ml[112,4518+37]..[112,4518+57])
+                    ]
+            <arg>
+            Nolabel
+              expression (toplevel/byte/topmain.ml[113,4578+4]..[116,4680+5])
+                Pexp_record
+                [
+                  "section" (toplevel/byte/topmain.ml[114,4584+6]..[114,4584+13])
+                    expression (toplevel/byte/topmain.ml[114,4584+16]..[114,4584+37])
+                      Pexp_ident "Topdirs.section_trace" (toplevel/byte/topmain.ml[114,4584+16]..[114,4584+37])
+                  "doc" (toplevel/byte/topmain.ml[115,4623+6]..[115,4623+9])
+                    expression (toplevel/byte/topmain.ml[115,4623+12]..[115,4623+55])
+                      Pexp_constant PConst_string("Stop tracing all functions traced so far.",(toplevel/byte/topmain.ml[115,4623+13]..[115,4623+54]),None)
+                ]
+                None
+          ]
+    ]
+  structure_item (toplevel/byte/topmain.ml[122,4700+0]..[122,4700+28])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[122,4700+4]..[122,4700+19])
+          Ppat_var "preload_objects" (toplevel/byte/topmain.ml[122,4700+4]..[122,4700+19])
+        expression (toplevel/byte/topmain.ml[122,4700+22]..[122,4700+28])
+          Pexp_apply
+          expression (toplevel/byte/topmain.ml[122,4700+22]..[122,4700+25])
+            Pexp_ident "ref" (toplevel/byte/topmain.ml[122,4700+22]..[122,4700+25])
+          [
+            <arg>
+            Nolabel
+              expression (toplevel/byte/topmain.ml[122,4700+26]..[122,4700+28])
+                Pexp_construct "[]" (toplevel/byte/topmain.ml[122,4700+26]..[122,4700+28])
+                None
+          ]
+    ]
+  structure_item (toplevel/byte/topmain.ml[125,4780+0]..[125,4780+33])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[125,4780+4]..[125,4780+25])
+          Ppat_var "first_nonexpanded_pos" (toplevel/byte/topmain.ml[125,4780+4]..[125,4780+25])
+        expression (toplevel/byte/topmain.ml[125,4780+28]..[125,4780+33])
+          Pexp_apply
+          expression (toplevel/byte/topmain.ml[125,4780+28]..[125,4780+31])
+            Pexp_ident "ref" (toplevel/byte/topmain.ml[125,4780+28]..[125,4780+31])
+          [
+            <arg>
+            Nolabel
+              expression (toplevel/byte/topmain.ml[125,4780+32]..[125,4780+33])
+                Pexp_constant PConst_int (0,None)
+          ]
+    ]
+  structure_item (toplevel/byte/topmain.ml[127,4815+0]..[127,4815+32])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[127,4815+4]..[127,4815+11])
+          Ppat_var "current" (toplevel/byte/topmain.ml[127,4815+4]..[127,4815+11])
+        expression (toplevel/byte/topmain.ml[127,4815+14]..[127,4815+32])
+          Pexp_apply
+          expression (toplevel/byte/topmain.ml[127,4815+14]..[127,4815+17])
+            Pexp_ident "ref" (toplevel/byte/topmain.ml[127,4815+14]..[127,4815+17])
+          [
+            <arg>
+            Nolabel
+              expression (toplevel/byte/topmain.ml[127,4815+18]..[127,4815+32])
+                Pexp_apply
+                expression (toplevel/byte/topmain.ml[127,4815+19]..[127,4815+20])
+                  Pexp_ident "!" (toplevel/byte/topmain.ml[127,4815+19]..[127,4815+20])
+                [
+                  <arg>
+                  Nolabel
+                    expression (toplevel/byte/topmain.ml[127,4815+20]..[127,4815+31])
+                      Pexp_ident "Arg.current" (toplevel/byte/topmain.ml[127,4815+20]..[127,4815+31])
+                ]
+          ]
+    ]
+  structure_item (toplevel/byte/topmain.ml[129,4849+0]..[129,4849+23])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[129,4849+4]..[129,4849+8])
+          Ppat_var "argv" (toplevel/byte/topmain.ml[129,4849+4]..[129,4849+8])
+        expression (toplevel/byte/topmain.ml[129,4849+11]..[129,4849+23])
+          Pexp_apply
+          expression (toplevel/byte/topmain.ml[129,4849+11]..[129,4849+14])
+            Pexp_ident "ref" (toplevel/byte/topmain.ml[129,4849+11]..[129,4849+14])
+          [
+            <arg>
+            Nolabel
+              expression (toplevel/byte/topmain.ml[129,4849+15]..[129,4849+23])
+                Pexp_ident "Sys.argv" (toplevel/byte/topmain.ml[129,4849+15]..[129,4849+23])
+          ]
+    ]
+  structure_item (toplevel/byte/topmain.ml[132,4930+0]..[132,4930+50])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[132,4930+4]..[132,4930+15])
+          Ppat_var "is_expanded" (toplevel/byte/topmain.ml[132,4930+4]..[132,4930+15])
+        expression (toplevel/byte/topmain.ml[132,4930+16]..[132,4930+50]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (toplevel/byte/topmain.ml[132,4930+16]..[132,4930+19])
+            Ppat_var "pos" (toplevel/byte/topmain.ml[132,4930+16]..[132,4930+19])
+          expression (toplevel/byte/topmain.ml[132,4930+22]..[132,4930+50])
+            Pexp_apply
+            expression (toplevel/byte/topmain.ml[132,4930+26]..[132,4930+27])
+              Pexp_ident "<" (toplevel/byte/topmain.ml[132,4930+26]..[132,4930+27])
+            [
+              <arg>
+              Nolabel
+                expression (toplevel/byte/topmain.ml[132,4930+22]..[132,4930+25])
+                  Pexp_ident "pos" (toplevel/byte/topmain.ml[132,4930+22]..[132,4930+25])
+              <arg>
+              Nolabel
+                expression (toplevel/byte/topmain.ml[132,4930+28]..[132,4930+50])
+                  Pexp_apply
+                  expression (toplevel/byte/topmain.ml[132,4930+28]..[132,4930+29])
+                    Pexp_ident "!" (toplevel/byte/topmain.ml[132,4930+28]..[132,4930+29])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (toplevel/byte/topmain.ml[132,4930+29]..[132,4930+50])
+                        Pexp_ident "first_nonexpanded_pos" (toplevel/byte/topmain.ml[132,4930+29]..[132,4930+50])
+                  ]
+            ]
+    ]
+  structure_item (toplevel/byte/topmain.ml[134,4982+0]..[140,5173+42])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[134,4982+4]..[134,4982+19])
+          Ppat_var "expand_position" (toplevel/byte/topmain.ml[134,4982+4]..[134,4982+19])
+        expression (toplevel/byte/topmain.ml[134,4982+20]..[140,5173+42]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (toplevel/byte/topmain.ml[134,4982+20]..[134,4982+23])
+            Ppat_var "pos" (toplevel/byte/topmain.ml[134,4982+20]..[134,4982+23])
+          expression (toplevel/byte/topmain.ml[134,4982+24]..[140,5173+42]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (toplevel/byte/topmain.ml[134,4982+24]..[134,4982+27])
+              Ppat_var "len" (toplevel/byte/topmain.ml[134,4982+24]..[134,4982+27])
+            expression (toplevel/byte/topmain.ml[135,5012+2]..[140,5173+42])
+              Pexp_ifthenelse
+              expression (toplevel/byte/topmain.ml[135,5012+5]..[135,5012+33])
+                Pexp_apply
+                expression (toplevel/byte/topmain.ml[135,5012+9]..[135,5012+10])
+                  Pexp_ident "<" (toplevel/byte/topmain.ml[135,5012+9]..[135,5012+10])
+                [
+                  <arg>
+                  Nolabel
+                    expression (toplevel/byte/topmain.ml[135,5012+5]..[135,5012+8])
+                      Pexp_ident "pos" (toplevel/byte/topmain.ml[135,5012+5]..[135,5012+8])
+                  <arg>
+                  Nolabel
+                    expression (toplevel/byte/topmain.ml[135,5012+11]..[135,5012+33])
+                      Pexp_apply
+                      expression (toplevel/byte/topmain.ml[135,5012+11]..[135,5012+12])
+                        Pexp_ident "!" (toplevel/byte/topmain.ml[135,5012+11]..[135,5012+12])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[135,5012+12]..[135,5012+33])
+                            Pexp_ident "first_nonexpanded_pos" (toplevel/byte/topmain.ml[135,5012+12]..[135,5012+33])
+                      ]
+                ]
+              expression (toplevel/byte/topmain.ml[137,5080+4]..[137,5080+57])
+                Pexp_apply
+                expression (toplevel/byte/topmain.ml[137,5080+26]..[137,5080+28])
+                  Pexp_ident ":=" (toplevel/byte/topmain.ml[137,5080+26]..[137,5080+28])
+                [
+                  <arg>
+                  Nolabel
+                    expression (toplevel/byte/topmain.ml[137,5080+4]..[137,5080+25])
+                      Pexp_ident "first_nonexpanded_pos" (toplevel/byte/topmain.ml[137,5080+4]..[137,5080+25])
+                  <arg>
+                  Nolabel
+                    expression (toplevel/byte/topmain.ml[137,5080+29]..[137,5080+57])
+                      Pexp_apply
+                      expression (toplevel/byte/topmain.ml[137,5080+52]..[137,5080+53])
+                        Pexp_ident "+" (toplevel/byte/topmain.ml[137,5080+52]..[137,5080+53])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[137,5080+29]..[137,5080+51])
+                            Pexp_apply
+                            expression (toplevel/byte/topmain.ml[137,5080+29]..[137,5080+30])
+                              Pexp_ident "!" (toplevel/byte/topmain.ml[137,5080+29]..[137,5080+30])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (toplevel/byte/topmain.ml[137,5080+30]..[137,5080+51])
+                                  Pexp_ident "first_nonexpanded_pos" (toplevel/byte/topmain.ml[137,5080+30]..[137,5080+51])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[137,5080+54]..[137,5080+57])
+                            Pexp_ident "len" (toplevel/byte/topmain.ml[137,5080+54]..[137,5080+57])
+                      ]
+                ]
+              Some
+                expression (toplevel/byte/topmain.ml[140,5173+4]..[140,5173+42])
+                  Pexp_apply
+                  expression (toplevel/byte/topmain.ml[140,5173+26]..[140,5173+28])
+                    Pexp_ident ":=" (toplevel/byte/topmain.ml[140,5173+26]..[140,5173+28])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (toplevel/byte/topmain.ml[140,5173+4]..[140,5173+25])
+                        Pexp_ident "first_nonexpanded_pos" (toplevel/byte/topmain.ml[140,5173+4]..[140,5173+25])
+                    <arg>
+                    Nolabel
+                      expression (toplevel/byte/topmain.ml[140,5173+29]..[140,5173+42])
+                        Pexp_apply
+                        expression (toplevel/byte/topmain.ml[140,5173+39]..[140,5173+40])
+                          Pexp_ident "+" (toplevel/byte/topmain.ml[140,5173+39]..[140,5173+40])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (toplevel/byte/topmain.ml[140,5173+29]..[140,5173+38])
+                              Pexp_apply
+                              expression (toplevel/byte/topmain.ml[140,5173+33]..[140,5173+34])
+                                Pexp_ident "+" (toplevel/byte/topmain.ml[140,5173+33]..[140,5173+34])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/byte/topmain.ml[140,5173+29]..[140,5173+32])
+                                    Pexp_ident "pos" (toplevel/byte/topmain.ml[140,5173+29]..[140,5173+32])
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/byte/topmain.ml[140,5173+35]..[140,5173+38])
+                                    Pexp_ident "len" (toplevel/byte/topmain.ml[140,5173+35]..[140,5173+38])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (toplevel/byte/topmain.ml[140,5173+41]..[140,5173+42])
+                              Pexp_constant PConst_int (2,None)
+                        ]
+                  ]
+    ]
+  structure_item (toplevel/byte/topmain.ml[142,5217+0]..[157,5636+11])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[142,5217+4]..[142,5217+11])
+          Ppat_var "prepare" (toplevel/byte/topmain.ml[142,5217+4]..[142,5217+11])
+        expression (toplevel/byte/topmain.ml[142,5217+12]..[157,5636+11]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (toplevel/byte/topmain.ml[142,5217+12]..[142,5217+15])
+            Ppat_var "ppf" (toplevel/byte/topmain.ml[142,5217+12]..[142,5217+15])
+          expression (toplevel/byte/topmain.ml[143,5235+2]..[157,5636+11])
+            Pexp_sequence
+            expression (toplevel/byte/topmain.ml[143,5235+2]..[143,5235+24])
+              Pexp_apply
+              expression (toplevel/byte/topmain.ml[143,5235+2]..[143,5235+21])
+                Pexp_ident "Topcommon.set_paths" (toplevel/byte/topmain.ml[143,5235+2]..[143,5235+21])
+              [
+                <arg>
+                Nolabel
+                  expression (toplevel/byte/topmain.ml[143,5235+22]..[143,5235+24])
+                    Pexp_construct "()" (toplevel/byte/topmain.ml[143,5235+22]..[143,5235+24])
+                    None
+              ]
+            expression (toplevel/byte/topmain.ml[144,5261+2]..[157,5636+11])
+              Pexp_try
+              expression (toplevel/byte/topmain.ml[145,5267+4]..[152,5479+7])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (toplevel/byte/topmain.ml[145,5267+8]..[145,5267+11])
+                      Ppat_var "res" (toplevel/byte/topmain.ml[145,5267+8]..[145,5267+11])
+                    expression (toplevel/byte/topmain.ml[146,5281+6]..[149,5372+56])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (toplevel/byte/topmain.ml[146,5281+10]..[146,5281+17])
+                            Ppat_var "objects" (toplevel/byte/topmain.ml[146,5281+10]..[146,5281+17])
+                          expression (toplevel/byte/topmain.ml[147,5301+8]..[147,5301+61])
+                            Pexp_apply
+                            expression (toplevel/byte/topmain.ml[147,5301+8]..[147,5301+16])
+                              Pexp_ident "List.rev" (toplevel/byte/topmain.ml[147,5301+8]..[147,5301+16])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (toplevel/byte/topmain.ml[147,5301+17]..[147,5301+61])
+                                  Pexp_apply
+                                  expression (toplevel/byte/topmain.ml[147,5301+35]..[147,5301+36])
+                                    Pexp_ident "@" (toplevel/byte/topmain.ml[147,5301+35]..[147,5301+36])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/byte/topmain.ml[147,5301+18]..[147,5301+34])
+                                        Pexp_apply
+                                        expression (toplevel/byte/topmain.ml[147,5301+18]..[147,5301+19])
+                                          Pexp_ident "!" (toplevel/byte/topmain.ml[147,5301+18]..[147,5301+19])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (toplevel/byte/topmain.ml[147,5301+19]..[147,5301+34])
+                                              Pexp_ident "preload_objects" (toplevel/byte/topmain.ml[147,5301+19]..[147,5301+34])
+                                        ]
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/byte/topmain.ml[147,5301+37]..[147,5301+60])
+                                        Pexp_apply
+                                        expression (toplevel/byte/topmain.ml[147,5301+37]..[147,5301+38])
+                                          Pexp_ident "!" (toplevel/byte/topmain.ml[147,5301+37]..[147,5301+38])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (toplevel/byte/topmain.ml[147,5301+38]..[147,5301+60])
+                                              Pexp_ident "Compenv.first_objfiles" (toplevel/byte/topmain.ml[147,5301+38]..[147,5301+60])
+                                        ]
+                                  ]
+                            ]
+                      ]
+                      expression (toplevel/byte/topmain.ml[149,5372+6]..[149,5372+56])
+                        Pexp_apply
+                        expression (toplevel/byte/topmain.ml[149,5372+6]..[149,5372+18])
+                          Pexp_ident "List.for_all" (toplevel/byte/topmain.ml[149,5372+6]..[149,5372+18])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (toplevel/byte/topmain.ml[149,5372+19]..[149,5372+48])
+                              Pexp_apply
+                              expression (toplevel/byte/topmain.ml[149,5372+20]..[149,5372+37])
+                                Pexp_ident "Topeval.load_file" (toplevel/byte/topmain.ml[149,5372+20]..[149,5372+37])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/byte/topmain.ml[149,5372+38]..[149,5372+43])
+                                    Pexp_construct "false" (toplevel/byte/topmain.ml[149,5372+38]..[149,5372+43])
+                                    None
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/byte/topmain.ml[149,5372+44]..[149,5372+47])
+                                    Pexp_ident "ppf" (toplevel/byte/topmain.ml[149,5372+44]..[149,5372+47])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (toplevel/byte/topmain.ml[149,5372+49]..[149,5372+56])
+                              Pexp_ident "objects" (toplevel/byte/topmain.ml[149,5372+49]..[149,5372+56])
+                        ]
+                ]
+                expression (toplevel/byte/topmain.ml[151,5436+4]..[152,5479+7])
+                  Pexp_sequence
+                  expression (toplevel/byte/topmain.ml[151,5436+4]..[151,5436+41])
+                    Pexp_apply
+                    expression (toplevel/byte/topmain.ml[151,5436+4]..[151,5436+23])
+                      Pexp_ident "Topcommon.run_hooks" (toplevel/byte/topmain.ml[151,5436+4]..[151,5436+23])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[151,5436+24]..[151,5436+41])
+                          Pexp_construct "Topcommon.Startup" (toplevel/byte/topmain.ml[151,5436+24]..[151,5436+41])
+                          None
+                    ]
+                  expression (toplevel/byte/topmain.ml[152,5479+4]..[152,5479+7])
+                    Pexp_ident "res" (toplevel/byte/topmain.ml[152,5479+4]..[152,5479+7])
+              [
+                <case>
+                  pattern (toplevel/byte/topmain.ml[153,5487+7]..[153,5487+8])
+                    Ppat_var "x" (toplevel/byte/topmain.ml[153,5487+7]..[153,5487+8])
+                  expression (toplevel/byte/topmain.ml[154,5499+4]..[157,5636+11])
+                    Pexp_try
+                    expression (toplevel/byte/topmain.ml[154,5499+8]..[154,5499+46])
+                      Pexp_sequence
+                      expression (toplevel/byte/topmain.ml[154,5499+8]..[154,5499+39])
+                        Pexp_apply
+                        expression (toplevel/byte/topmain.ml[154,5499+8]..[154,5499+33])
+                          Pexp_ident "Location.report_exception" (toplevel/byte/topmain.ml[154,5499+8]..[154,5499+33])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (toplevel/byte/topmain.ml[154,5499+34]..[154,5499+37])
+                              Pexp_ident "ppf" (toplevel/byte/topmain.ml[154,5499+34]..[154,5499+37])
+                          <arg>
+                          Nolabel
+                            expression (toplevel/byte/topmain.ml[154,5499+38]..[154,5499+39])
+                              Pexp_ident "x" (toplevel/byte/topmain.ml[154,5499+38]..[154,5499+39])
+                        ]
+                      expression (toplevel/byte/topmain.ml[154,5499+41]..[154,5499+46])
+                        Pexp_construct "false" (toplevel/byte/topmain.ml[154,5499+41]..[154,5499+46])
+                        None
+                    [
+                      <case>
+                        pattern (toplevel/byte/topmain.ml[155,5546+9]..[155,5546+10])
+                          Ppat_var "x" (toplevel/byte/topmain.ml[155,5546+9]..[155,5546+10])
+                        expression (toplevel/byte/topmain.ml[156,5560+6]..[157,5636+11])
+                          Pexp_sequence
+                          expression (toplevel/byte/topmain.ml[156,5560+6]..[156,5560+74])
+                            Pexp_apply
+                            expression (toplevel/byte/topmain.ml[156,5560+6]..[156,5560+20])
+                              Pexp_ident "Format.fprintf" (toplevel/byte/topmain.ml[156,5560+6]..[156,5560+20])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (toplevel/byte/topmain.ml[156,5560+21]..[156,5560+24])
+                                  Pexp_ident "ppf" (toplevel/byte/topmain.ml[156,5560+21]..[156,5560+24])
+                              <arg>
+                              Nolabel
+                                expression (toplevel/byte/topmain.ml[156,5560+25]..[156,5560+51])
+                                  Pexp_constant PConst_string("Uncaught exception: %s\n",(toplevel/byte/topmain.ml[156,5560+26]..[156,5560+50]),None)
+                              <arg>
+                              Nolabel
+                                expression (toplevel/byte/topmain.ml[156,5560+52]..[156,5560+74])
+                                  Pexp_apply
+                                  expression (toplevel/byte/topmain.ml[156,5560+53]..[156,5560+71])
+                                    Pexp_ident "Printexc.to_string" (toplevel/byte/topmain.ml[156,5560+53]..[156,5560+71])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/byte/topmain.ml[156,5560+72]..[156,5560+73])
+                                        Pexp_ident "x" (toplevel/byte/topmain.ml[156,5560+72]..[156,5560+73])
+                                  ]
+                            ]
+                          expression (toplevel/byte/topmain.ml[157,5636+6]..[157,5636+11])
+                            Pexp_construct "false" (toplevel/byte/topmain.ml[157,5636+6]..[157,5636+11])
+                            None
+                    ]
+              ]
+    ]
+  structure_item (toplevel/byte/topmain.ml[160,5723+0]..[182,6753+7])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[160,5723+4]..[160,5723+17])
+          Ppat_var "file_argument" (toplevel/byte/topmain.ml[160,5723+4]..[160,5723+17])
+        expression (toplevel/byte/topmain.ml[160,5723+18]..[182,6753+7]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (toplevel/byte/topmain.ml[160,5723+18]..[160,5723+22])
+            Ppat_var "name" (toplevel/byte/topmain.ml[160,5723+18]..[160,5723+22])
+          expression (toplevel/byte/topmain.ml[161,5748+2]..[182,6753+7])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (toplevel/byte/topmain.ml[161,5748+6]..[161,5748+9])
+                  Ppat_var "ppf" (toplevel/byte/topmain.ml[161,5748+6]..[161,5748+9])
+                expression (toplevel/byte/topmain.ml[161,5748+12]..[161,5748+32])
+                  Pexp_ident "Format.err_formatter" (toplevel/byte/topmain.ml[161,5748+12]..[161,5748+32])
+            ]
+            expression (toplevel/byte/topmain.ml[162,5784+2]..[182,6753+7])
+              Pexp_ifthenelse
+              expression (toplevel/byte/topmain.ml[162,5784+5]..[162,5784+75])
+                Pexp_apply
+                expression (toplevel/byte/topmain.ml[162,5784+39]..[162,5784+41])
+                  Pexp_ident "||" (toplevel/byte/topmain.ml[162,5784+39]..[162,5784+41])
+                [
+                  <arg>
+                  Nolabel
+                    expression (toplevel/byte/topmain.ml[162,5784+5]..[162,5784+38])
+                      Pexp_apply
+                      expression (toplevel/byte/topmain.ml[162,5784+5]..[162,5784+26])
+                        Pexp_ident "Filename.check_suffix" (toplevel/byte/topmain.ml[162,5784+5]..[162,5784+26])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[162,5784+27]..[162,5784+31])
+                            Pexp_ident "name" (toplevel/byte/topmain.ml[162,5784+27]..[162,5784+31])
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[162,5784+32]..[162,5784+38])
+                            Pexp_constant PConst_string(".cmo",(toplevel/byte/topmain.ml[162,5784+33]..[162,5784+37]),None)
+                      ]
+                  <arg>
+                  Nolabel
+                    expression (toplevel/byte/topmain.ml[162,5784+42]..[162,5784+75])
+                      Pexp_apply
+                      expression (toplevel/byte/topmain.ml[162,5784+42]..[162,5784+63])
+                        Pexp_ident "Filename.check_suffix" (toplevel/byte/topmain.ml[162,5784+42]..[162,5784+63])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[162,5784+64]..[162,5784+68])
+                            Pexp_ident "name" (toplevel/byte/topmain.ml[162,5784+64]..[162,5784+68])
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[162,5784+69]..[162,5784+75])
+                            Pexp_constant PConst_string(".cma",(toplevel/byte/topmain.ml[162,5784+70]..[162,5784+74]),None)
+                      ]
+                ]
+              expression (toplevel/byte/topmain.ml[163,5860+7]..[163,5860+50])
+                Pexp_apply
+                expression (toplevel/byte/topmain.ml[163,5860+23]..[163,5860+25])
+                  Pexp_ident ":=" (toplevel/byte/topmain.ml[163,5860+23]..[163,5860+25])
+                [
+                  <arg>
+                  Nolabel
+                    expression (toplevel/byte/topmain.ml[163,5860+7]..[163,5860+22])
+                      Pexp_ident "preload_objects" (toplevel/byte/topmain.ml[163,5860+7]..[163,5860+22])
+                  <arg>
+                  Nolabel
+                    expression (toplevel/byte/topmain.ml[163,5860+26]..[163,5860+50])
+                      Pexp_construct "::" (toplevel/byte/topmain.ml[163,5860+31]..[163,5860+33])
+                      Some
+                        expression (toplevel/byte/topmain.ml[163,5860+26]..[163,5860+50]) ghost
+                          Pexp_tuple
+                          [
+                            expression (toplevel/byte/topmain.ml[163,5860+26]..[163,5860+30])
+                              Pexp_ident "name" (toplevel/byte/topmain.ml[163,5860+26]..[163,5860+30])
+                            expression (toplevel/byte/topmain.ml[163,5860+34]..[163,5860+50])
+                              Pexp_apply
+                              expression (toplevel/byte/topmain.ml[163,5860+34]..[163,5860+35])
+                                Pexp_ident "!" (toplevel/byte/topmain.ml[163,5860+34]..[163,5860+35])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/byte/topmain.ml[163,5860+35]..[163,5860+50])
+                                    Pexp_ident "preload_objects" (toplevel/byte/topmain.ml[163,5860+35]..[163,5860+50])
+                              ]
+                          ]
+                ]
+              Some
+                expression (toplevel/byte/topmain.ml[164,5911+7]..[182,6753+7])
+                  Pexp_ifthenelse
+                  expression (toplevel/byte/topmain.ml[164,5911+10]..[164,5911+30])
+                    Pexp_apply
+                    expression (toplevel/byte/topmain.ml[164,5911+10]..[164,5911+21])
+                      Pexp_ident "is_expanded" (toplevel/byte/topmain.ml[164,5911+10]..[164,5911+21])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[164,5911+22]..[164,5911+30])
+                          Pexp_apply
+                          expression (toplevel/byte/topmain.ml[164,5911+22]..[164,5911+23])
+                            Pexp_ident "!" (toplevel/byte/topmain.ml[164,5911+22]..[164,5911+23])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (toplevel/byte/topmain.ml[164,5911+23]..[164,5911+30])
+                                Pexp_ident "current" (toplevel/byte/topmain.ml[164,5911+23]..[164,5911+30])
+                          ]
+                    ]
+                  expression (toplevel/byte/topmain.ml[164,5911+36]..[173,6388+5])
+                    Pexp_sequence
+                    expression (toplevel/byte/topmain.ml[169,6144+4]..[171,6304+43])
+                      Pexp_apply
+                      expression (toplevel/byte/topmain.ml[169,6144+4]..[169,6144+18])
+                        Pexp_ident "Printf.eprintf" (toplevel/byte/topmain.ml[169,6144+4]..[169,6144+18])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[169,6144+19]..[171,6304+38])
+                            Pexp_constant PConst_string("For implementation reasons, the toplevel does not support having script files (here %S) inside expanded arguments passed through the -args{,0} command-line option.\n",(toplevel/byte/topmain.ml[169,6144+20]..[171,6304+37]),None)
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[171,6304+39]..[171,6304+43])
+                            Pexp_ident "name" (toplevel/byte/topmain.ml[171,6304+39]..[171,6304+43])
+                      ]
+                    expression (toplevel/byte/topmain.ml[172,6349+4]..[172,6349+38])
+                      Pexp_apply
+                      expression (toplevel/byte/topmain.ml[172,6349+4]..[172,6349+9])
+                        Pexp_ident "raise" (toplevel/byte/topmain.ml[172,6349+4]..[172,6349+9])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[172,6349+10]..[172,6349+38])
+                            Pexp_construct "Compenv.Exit_with_status" (toplevel/byte/topmain.ml[172,6349+11]..[172,6349+35])
+                            Some
+                              expression (toplevel/byte/topmain.ml[172,6349+36]..[172,6349+37])
+                                Pexp_constant PConst_int (2,None)
+                      ]
+                  Some
+                    expression (toplevel/byte/topmain.ml[173,6388+11]..[182,6753+7])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (toplevel/byte/topmain.ml[174,6405+10]..[174,6405+17])
+                            Ppat_var "newargs" (toplevel/byte/topmain.ml[174,6405+10]..[174,6405+17])
+                          expression (toplevel/byte/topmain.ml[174,6405+20]..[175,6450+61])
+                            Pexp_apply
+                            expression (toplevel/byte/topmain.ml[174,6405+20]..[174,6405+29])
+                              Pexp_ident "Array.sub" (toplevel/byte/topmain.ml[174,6405+20]..[174,6405+29])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (toplevel/byte/topmain.ml[174,6405+30]..[174,6405+35])
+                                  Pexp_apply
+                                  expression (toplevel/byte/topmain.ml[174,6405+30]..[174,6405+31])
+                                    Pexp_ident "!" (toplevel/byte/topmain.ml[174,6405+30]..[174,6405+31])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/byte/topmain.ml[174,6405+31]..[174,6405+35])
+                                        Pexp_ident "argv" (toplevel/byte/topmain.ml[174,6405+31]..[174,6405+35])
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (toplevel/byte/topmain.ml[174,6405+36]..[174,6405+44])
+                                  Pexp_apply
+                                  expression (toplevel/byte/topmain.ml[174,6405+36]..[174,6405+37])
+                                    Pexp_ident "!" (toplevel/byte/topmain.ml[174,6405+36]..[174,6405+37])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/byte/topmain.ml[174,6405+37]..[174,6405+44])
+                                        Pexp_ident "current" (toplevel/byte/topmain.ml[174,6405+37]..[174,6405+44])
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (toplevel/byte/topmain.ml[175,6450+30]..[175,6450+61])
+                                  Pexp_apply
+                                  expression (toplevel/byte/topmain.ml[175,6450+50]..[175,6450+51])
+                                    Pexp_ident "-" (toplevel/byte/topmain.ml[175,6450+50]..[175,6450+51])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/byte/topmain.ml[175,6450+31]..[175,6450+49])
+                                        Pexp_apply
+                                        expression (toplevel/byte/topmain.ml[175,6450+31]..[175,6450+43])
+                                          Pexp_ident "Array.length" (toplevel/byte/topmain.ml[175,6450+31]..[175,6450+43])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (toplevel/byte/topmain.ml[175,6450+44]..[175,6450+49])
+                                              Pexp_apply
+                                              expression (toplevel/byte/topmain.ml[175,6450+44]..[175,6450+45])
+                                                Pexp_ident "!" (toplevel/byte/topmain.ml[175,6450+44]..[175,6450+45])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (toplevel/byte/topmain.ml[175,6450+45]..[175,6450+49])
+                                                    Pexp_ident "argv" (toplevel/byte/topmain.ml[175,6450+45]..[175,6450+49])
+                                              ]
+                                        ]
+                                    <arg>
+                                    Nolabel
+                                      expression (toplevel/byte/topmain.ml[175,6450+52]..[175,6450+60])
+                                        Pexp_apply
+                                        expression (toplevel/byte/topmain.ml[175,6450+52]..[175,6450+53])
+                                          Pexp_ident "!" (toplevel/byte/topmain.ml[175,6450+52]..[175,6450+53])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (toplevel/byte/topmain.ml[175,6450+53]..[175,6450+60])
+                                              Pexp_ident "current" (toplevel/byte/topmain.ml[175,6450+53]..[175,6450+60])
+                                        ]
+                                  ]
+                            ]
+                      ]
+                      expression (toplevel/byte/topmain.ml[177,6521+6]..[181,6707+45])
+                        Pexp_sequence
+                        expression (toplevel/byte/topmain.ml[177,6521+6]..[177,6521+37])
+                          Pexp_apply
+                          expression (toplevel/byte/topmain.ml[177,6521+6]..[177,6521+21])
+                            Pexp_ident "Compenv.readenv" (toplevel/byte/topmain.ml[177,6521+6]..[177,6521+21])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (toplevel/byte/topmain.ml[177,6521+22]..[177,6521+25])
+                                Pexp_ident "ppf" (toplevel/byte/topmain.ml[177,6521+22]..[177,6521+25])
+                            <arg>
+                            Nolabel
+                              expression (toplevel/byte/topmain.ml[177,6521+26]..[177,6521+37])
+                                Pexp_construct "Before_link" (toplevel/byte/topmain.ml[177,6521+26]..[177,6521+37])
+                                None
+                          ]
+                        expression (toplevel/byte/topmain.ml[178,6560+6]..[181,6707+45])
+                          Pexp_sequence
+                          expression (toplevel/byte/topmain.ml[178,6560+6]..[178,6560+39])
+                            Pexp_apply
+                            expression (toplevel/byte/topmain.ml[178,6560+6]..[178,6560+36])
+                              Pexp_ident "Compmisc.read_clflags_from_env" (toplevel/byte/topmain.ml[178,6560+6]..[178,6560+36])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (toplevel/byte/topmain.ml[178,6560+37]..[178,6560+39])
+                                  Pexp_construct "()" (toplevel/byte/topmain.ml[178,6560+37]..[178,6560+39])
+                                  None
+                            ]
+                          expression (toplevel/byte/topmain.ml[179,6601+6]..[181,6707+45])
+                            Pexp_ifthenelse
+                            expression (toplevel/byte/topmain.ml[179,6601+9]..[179,6601+59])
+                              Pexp_apply
+                              expression (toplevel/byte/topmain.ml[179,6601+21]..[179,6601+23])
+                                Pexp_ident "&&" (toplevel/byte/topmain.ml[179,6601+21]..[179,6601+23])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/byte/topmain.ml[179,6601+9]..[179,6601+20])
+                                    Pexp_apply
+                                    expression (toplevel/byte/topmain.ml[179,6601+9]..[179,6601+16])
+                                      Pexp_ident "prepare" (toplevel/byte/topmain.ml[179,6601+9]..[179,6601+16])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (toplevel/byte/topmain.ml[179,6601+17]..[179,6601+20])
+                                          Pexp_ident "ppf" (toplevel/byte/topmain.ml[179,6601+17]..[179,6601+20])
+                                    ]
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/byte/topmain.ml[179,6601+24]..[179,6601+59])
+                                    Pexp_apply
+                                    expression (toplevel/byte/topmain.ml[179,6601+24]..[179,6601+42])
+                                      Pexp_ident "Toploop.run_script" (toplevel/byte/topmain.ml[179,6601+24]..[179,6601+42])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (toplevel/byte/topmain.ml[179,6601+43]..[179,6601+46])
+                                          Pexp_ident "ppf" (toplevel/byte/topmain.ml[179,6601+43]..[179,6601+46])
+                                      <arg>
+                                      Nolabel
+                                        expression (toplevel/byte/topmain.ml[179,6601+47]..[179,6601+51])
+                                          Pexp_ident "name" (toplevel/byte/topmain.ml[179,6601+47]..[179,6601+51])
+                                      <arg>
+                                      Nolabel
+                                        expression (toplevel/byte/topmain.ml[179,6601+52]..[179,6601+59])
+                                          Pexp_ident "newargs" (toplevel/byte/topmain.ml[179,6601+52]..[179,6601+59])
+                                    ]
+                              ]
+                            expression (toplevel/byte/topmain.ml[180,6661+11]..[180,6661+45])
+                              Pexp_apply
+                              expression (toplevel/byte/topmain.ml[180,6661+11]..[180,6661+16])
+                                Pexp_ident "raise" (toplevel/byte/topmain.ml[180,6661+11]..[180,6661+16])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/byte/topmain.ml[180,6661+17]..[180,6661+45])
+                                    Pexp_construct "Compenv.Exit_with_status" (toplevel/byte/topmain.ml[180,6661+18]..[180,6661+42])
+                                    Some
+                                      expression (toplevel/byte/topmain.ml[180,6661+43]..[180,6661+44])
+                                        Pexp_constant PConst_int (0,None)
+                              ]
+                            Some
+                              expression (toplevel/byte/topmain.ml[181,6707+11]..[181,6707+45])
+                                Pexp_apply
+                                expression (toplevel/byte/topmain.ml[181,6707+11]..[181,6707+16])
+                                  Pexp_ident "raise" (toplevel/byte/topmain.ml[181,6707+11]..[181,6707+16])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (toplevel/byte/topmain.ml[181,6707+17]..[181,6707+45])
+                                      Pexp_construct "Compenv.Exit_with_status" (toplevel/byte/topmain.ml[181,6707+18]..[181,6707+42])
+                                      Some
+                                        expression (toplevel/byte/topmain.ml[181,6707+43]..[181,6707+44])
+                                          Pexp_constant PConst_int (2,None)
+                                ]
+    ]
+  structure_item (toplevel/byte/topmain.ml[185,6763+0]..[189,6874+5])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[185,6763+4]..[185,6763+15])
+          Ppat_var "wrap_expand" (toplevel/byte/topmain.ml[185,6763+4]..[185,6763+15])
+        expression (toplevel/byte/topmain.ml[185,6763+16]..[189,6874+5]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (toplevel/byte/topmain.ml[185,6763+16]..[185,6763+17])
+            Ppat_var "f" (toplevel/byte/topmain.ml[185,6763+16]..[185,6763+17])
+          expression (toplevel/byte/topmain.ml[185,6763+18]..[189,6874+5]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (toplevel/byte/topmain.ml[185,6763+18]..[185,6763+19])
+              Ppat_var "s" (toplevel/byte/topmain.ml[185,6763+18]..[185,6763+19])
+            expression (toplevel/byte/topmain.ml[186,6785+2]..[189,6874+5])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (toplevel/byte/topmain.ml[186,6785+6]..[186,6785+11])
+                    Ppat_var "start" (toplevel/byte/topmain.ml[186,6785+6]..[186,6785+11])
+                  expression (toplevel/byte/topmain.ml[186,6785+14]..[186,6785+22])
+                    Pexp_apply
+                    expression (toplevel/byte/topmain.ml[186,6785+14]..[186,6785+15])
+                      Pexp_ident "!" (toplevel/byte/topmain.ml[186,6785+14]..[186,6785+15])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[186,6785+15]..[186,6785+22])
+                          Pexp_ident "current" (toplevel/byte/topmain.ml[186,6785+15]..[186,6785+22])
+                    ]
+              ]
+              expression (toplevel/byte/topmain.ml[187,6811+2]..[189,6874+5])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (toplevel/byte/topmain.ml[187,6811+6]..[187,6811+9])
+                      Ppat_var "arr" (toplevel/byte/topmain.ml[187,6811+6]..[187,6811+9])
+                    expression (toplevel/byte/topmain.ml[187,6811+12]..[187,6811+15])
+                      Pexp_apply
+                      expression (toplevel/byte/topmain.ml[187,6811+12]..[187,6811+13])
+                        Pexp_ident "f" (toplevel/byte/topmain.ml[187,6811+12]..[187,6811+13])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[187,6811+14]..[187,6811+15])
+                            Pexp_ident "s" (toplevel/byte/topmain.ml[187,6811+14]..[187,6811+15])
+                      ]
+                ]
+                expression (toplevel/byte/topmain.ml[188,6830+2]..[189,6874+5])
+                  Pexp_sequence
+                  expression (toplevel/byte/topmain.ml[188,6830+2]..[188,6830+42])
+                    Pexp_apply
+                    expression (toplevel/byte/topmain.ml[188,6830+2]..[188,6830+17])
+                      Pexp_ident "expand_position" (toplevel/byte/topmain.ml[188,6830+2]..[188,6830+17])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[188,6830+18]..[188,6830+23])
+                          Pexp_ident "start" (toplevel/byte/topmain.ml[188,6830+18]..[188,6830+23])
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[188,6830+24]..[188,6830+42])
+                          Pexp_apply
+                          expression (toplevel/byte/topmain.ml[188,6830+25]..[188,6830+37])
+                            Pexp_ident "Array.length" (toplevel/byte/topmain.ml[188,6830+25]..[188,6830+37])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (toplevel/byte/topmain.ml[188,6830+38]..[188,6830+41])
+                                Pexp_ident "arr" (toplevel/byte/topmain.ml[188,6830+38]..[188,6830+41])
+                          ]
+                    ]
+                  expression (toplevel/byte/topmain.ml[189,6874+2]..[189,6874+5])
+                    Pexp_ident "arr" (toplevel/byte/topmain.ml[189,6874+2]..[189,6874+5])
+    ]
+  structure_item (toplevel/byte/topmain.ml[191,6881+0]..[197,7134+4])
+    Pstr_module
+    "Options" (toplevel/byte/topmain.ml[191,6881+7]..[191,6881+14])
+      module_expr (toplevel/byte/topmain.ml[191,6881+17]..[197,7134+4])
+        Pmod_apply
+        module_expr (toplevel/byte/topmain.ml[191,6881+17]..[191,6881+47])
+          Pmod_ident "Main_args.Make_bytetop_options" (toplevel/byte/topmain.ml[191,6881+17]..[191,6881+47])
+        module_expr (toplevel/byte/topmain.ml[191,6881+49]..[197,7134+3])
+          Pmod_structure
+          [
+            structure_item (toplevel/byte/topmain.ml[192,6937+4]..[192,6937+37])
+              Pstr_include              module_expr (toplevel/byte/topmain.ml[192,6937+12]..[192,6937+37])
+                Pmod_ident "Main_args.Default.Topmain" (toplevel/byte/topmain.ml[192,6937+12]..[192,6937+37])
+            structure_item (toplevel/byte/topmain.ml[193,6975+4]..[193,6975+36])
+              Pstr_value Nonrec
+              [
+                <def>
+                  pattern (toplevel/byte/topmain.ml[193,6975+8]..[193,6975+14])
+                    Ppat_var "_stdin" (toplevel/byte/topmain.ml[193,6975+8]..[193,6975+14])
+                  expression (toplevel/byte/topmain.ml[193,6975+15]..[193,6975+36]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (toplevel/byte/topmain.ml[193,6975+15]..[193,6975+17])
+                      Ppat_construct "()" (toplevel/byte/topmain.ml[193,6975+15]..[193,6975+17])
+                      None
+                    expression (toplevel/byte/topmain.ml[193,6975+20]..[193,6975+36])
+                      Pexp_apply
+                      expression (toplevel/byte/topmain.ml[193,6975+20]..[193,6975+33])
+                        Pexp_ident "file_argument" (toplevel/byte/topmain.ml[193,6975+20]..[193,6975+33])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[193,6975+34]..[193,6975+36])
+                            Pexp_constant PConst_string("",(toplevel/byte/topmain.ml[193,6975+35]..[193,6975+35]),None)
+                      ]
+              ]
+            structure_item (toplevel/byte/topmain.ml[194,7012+4]..[194,7012+40])
+              Pstr_value Nonrec
+              [
+                <def>
+                  pattern (toplevel/byte/topmain.ml[194,7012+8]..[194,7012+13])
+                    Ppat_var "_args" (toplevel/byte/topmain.ml[194,7012+8]..[194,7012+13])
+                  expression (toplevel/byte/topmain.ml[194,7012+16]..[194,7012+40])
+                    Pexp_apply
+                    expression (toplevel/byte/topmain.ml[194,7012+16]..[194,7012+27])
+                      Pexp_ident "wrap_expand" (toplevel/byte/topmain.ml[194,7012+16]..[194,7012+27])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[194,7012+28]..[194,7012+40])
+                          Pexp_ident "Arg.read_arg" (toplevel/byte/topmain.ml[194,7012+28]..[194,7012+40])
+                    ]
+              ]
+            structure_item (toplevel/byte/topmain.ml[195,7053+4]..[195,7053+42])
+              Pstr_value Nonrec
+              [
+                <def>
+                  pattern (toplevel/byte/topmain.ml[195,7053+8]..[195,7053+14])
+                    Ppat_var "_args0" (toplevel/byte/topmain.ml[195,7053+8]..[195,7053+14])
+                  expression (toplevel/byte/topmain.ml[195,7053+17]..[195,7053+42])
+                    Pexp_apply
+                    expression (toplevel/byte/topmain.ml[195,7053+17]..[195,7053+28])
+                      Pexp_ident "wrap_expand" (toplevel/byte/topmain.ml[195,7053+17]..[195,7053+28])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[195,7053+29]..[195,7053+42])
+                          Pexp_ident "Arg.read_arg0" (toplevel/byte/topmain.ml[195,7053+29]..[195,7053+42])
+                    ]
+              ]
+            structure_item (toplevel/byte/topmain.ml[196,7096+4]..[196,7096+37])
+              Pstr_value Nonrec
+              [
+                <def>
+                  pattern (toplevel/byte/topmain.ml[196,7096+8]..[196,7096+17])
+                    Ppat_var "anonymous" (toplevel/byte/topmain.ml[196,7096+8]..[196,7096+17])
+                  expression (toplevel/byte/topmain.ml[196,7096+18]..[196,7096+37]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (toplevel/byte/topmain.ml[196,7096+18]..[196,7096+19])
+                      Ppat_var "s" (toplevel/byte/topmain.ml[196,7096+18]..[196,7096+19])
+                    expression (toplevel/byte/topmain.ml[196,7096+22]..[196,7096+37])
+                      Pexp_apply
+                      expression (toplevel/byte/topmain.ml[196,7096+22]..[196,7096+35])
+                        Pexp_ident "file_argument" (toplevel/byte/topmain.ml[196,7096+22]..[196,7096+35])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[196,7096+36]..[196,7096+37])
+                            Pexp_ident "s" (toplevel/byte/topmain.ml[196,7096+36]..[196,7096+37])
+                      ]
+              ]
+          ]
+  structure_item (toplevel/byte/topmain.ml[199,7140+0]..[205,7294+75])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[199,7140+4]..[199,7140+6])
+          Ppat_construct "()" (toplevel/byte/topmain.ml[199,7140+4]..[199,7140+6])
+          None
+        expression (toplevel/byte/topmain.ml[200,7149+2]..[205,7294+75])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (toplevel/byte/topmain.ml[200,7149+6]..[200,7149+17])
+                Ppat_var "extra_paths" (toplevel/byte/topmain.ml[200,7149+6]..[200,7149+17])
+              expression (toplevel/byte/topmain.ml[201,7169+4]..[203,7251+37])
+                Pexp_match
+                expression (toplevel/byte/topmain.ml[201,7169+10]..[201,7169+44])
+                  Pexp_apply
+                  expression (toplevel/byte/topmain.ml[201,7169+10]..[201,7169+20])
+                    Pexp_ident "Sys.getenv" (toplevel/byte/topmain.ml[201,7169+10]..[201,7169+20])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (toplevel/byte/topmain.ml[201,7169+21]..[201,7169+44])
+                        Pexp_constant PConst_string("OCAMLTOP_INCLUDE_PATH",(toplevel/byte/topmain.ml[201,7169+22]..[201,7169+43]),None)
+                  ]
+                [
+                  <case>
+                    pattern (toplevel/byte/topmain.ml[202,7219+6]..[202,7219+25])
+                      Ppat_exception
+                      pattern (toplevel/byte/topmain.ml[202,7219+16]..[202,7219+25])
+                        Ppat_construct "Not_found" (toplevel/byte/topmain.ml[202,7219+16]..[202,7219+25])
+                        None
+                    expression (toplevel/byte/topmain.ml[202,7219+29]..[202,7219+31])
+                      Pexp_construct "[]" (toplevel/byte/topmain.ml[202,7219+29]..[202,7219+31])
+                      None
+                  <case>
+                    pattern (toplevel/byte/topmain.ml[203,7251+6]..[203,7251+7])
+                      Ppat_var "s" (toplevel/byte/topmain.ml[203,7251+6]..[203,7251+7])
+                    expression (toplevel/byte/topmain.ml[203,7251+11]..[203,7251+37])
+                      Pexp_apply
+                      expression (toplevel/byte/topmain.ml[203,7251+11]..[203,7251+35])
+                        Pexp_ident "Misc.split_path_contents" (toplevel/byte/topmain.ml[203,7251+11]..[203,7251+35])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[203,7251+36]..[203,7251+37])
+                            Pexp_ident "s" (toplevel/byte/topmain.ml[203,7251+36]..[203,7251+37])
+                      ]
+                ]
+          ]
+          expression (toplevel/byte/topmain.ml[205,7294+2]..[205,7294+75])
+            Pexp_apply
+            expression (toplevel/byte/topmain.ml[205,7294+23]..[205,7294+25])
+              Pexp_ident ":=" (toplevel/byte/topmain.ml[205,7294+23]..[205,7294+25])
+            [
+              <arg>
+              Nolabel
+                expression (toplevel/byte/topmain.ml[205,7294+2]..[205,7294+22])
+                  Pexp_ident "Clflags.include_dirs" (toplevel/byte/topmain.ml[205,7294+2]..[205,7294+22])
+              <arg>
+              Nolabel
+                expression (toplevel/byte/topmain.ml[205,7294+26]..[205,7294+75])
+                  Pexp_apply
+                  expression (toplevel/byte/topmain.ml[205,7294+26]..[205,7294+41])
+                    Pexp_ident "List.rev_append" (toplevel/byte/topmain.ml[205,7294+26]..[205,7294+41])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (toplevel/byte/topmain.ml[205,7294+42]..[205,7294+53])
+                        Pexp_ident "extra_paths" (toplevel/byte/topmain.ml[205,7294+42]..[205,7294+53])
+                    <arg>
+                    Nolabel
+                      expression (toplevel/byte/topmain.ml[205,7294+54]..[205,7294+75])
+                        Pexp_apply
+                        expression (toplevel/byte/topmain.ml[205,7294+54]..[205,7294+55])
+                          Pexp_ident "!" (toplevel/byte/topmain.ml[205,7294+54]..[205,7294+55])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (toplevel/byte/topmain.ml[205,7294+55]..[205,7294+75])
+                              Pexp_ident "Clflags.include_dirs" (toplevel/byte/topmain.ml[205,7294+55]..[205,7294+75])
+                        ]
+                  ]
+            ]
+    ]
+  structure_item (toplevel/byte/topmain.ml[207,7371+0]..[217,7753+35])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[207,7371+4]..[207,7371+8])
+          Ppat_var "main" (toplevel/byte/topmain.ml[207,7371+4]..[207,7371+8])
+        expression (toplevel/byte/topmain.ml[207,7371+9]..[217,7753+35]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (toplevel/byte/topmain.ml[207,7371+9]..[207,7371+11])
+            Ppat_construct "()" (toplevel/byte/topmain.ml[207,7371+9]..[207,7371+11])
+            None
+          expression (toplevel/byte/topmain.ml[208,7385+2]..[217,7753+35])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (toplevel/byte/topmain.ml[208,7385+6]..[208,7385+9])
+                  Ppat_var "ppf" (toplevel/byte/topmain.ml[208,7385+6]..[208,7385+9])
+                expression (toplevel/byte/topmain.ml[208,7385+12]..[208,7385+32])
+                  Pexp_ident "Format.err_formatter" (toplevel/byte/topmain.ml[208,7385+12]..[208,7385+32])
+            ]
+            expression (toplevel/byte/topmain.ml[209,7421+2]..[217,7753+35])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (toplevel/byte/topmain.ml[209,7421+6]..[209,7421+13])
+                    Ppat_var "program" (toplevel/byte/topmain.ml[209,7421+6]..[209,7421+13])
+                  expression (toplevel/byte/topmain.ml[209,7421+16]..[209,7421+23])
+                    Pexp_constant PConst_string("ocaml",(toplevel/byte/topmain.ml[209,7421+17]..[209,7421+22]),None)
+              ]
+              expression (toplevel/byte/topmain.ml[210,7448+2]..[217,7753+35])
+                Pexp_sequence
+                expression (toplevel/byte/topmain.ml[210,7448+2]..[210,7448+33])
+                  Pexp_apply
+                  expression (toplevel/byte/topmain.ml[210,7448+2]..[210,7448+17])
+                    Pexp_ident "Compenv.readenv" (toplevel/byte/topmain.ml[210,7448+2]..[210,7448+17])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (toplevel/byte/topmain.ml[210,7448+18]..[210,7448+21])
+                        Pexp_ident "ppf" (toplevel/byte/topmain.ml[210,7448+18]..[210,7448+21])
+                    <arg>
+                    Nolabel
+                      expression (toplevel/byte/topmain.ml[210,7448+22]..[210,7448+33])
+                        Pexp_construct "Before_args" (toplevel/byte/topmain.ml[210,7448+22]..[210,7448+33])
+                        None
+                  ]
+                expression (toplevel/byte/topmain.ml[211,7483+2]..[217,7753+35])
+                  Pexp_sequence
+                  expression (toplevel/byte/topmain.ml[211,7483+2]..[211,7483+44])
+                    Pexp_apply
+                    expression (toplevel/byte/topmain.ml[211,7483+2]..[211,7483+23])
+                      Pexp_ident "Clflags.add_arguments" (toplevel/byte/topmain.ml[211,7483+2]..[211,7483+23])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[211,7483+24]..[211,7483+31])
+                          Pexp_ident "__LOC__" (toplevel/byte/topmain.ml[211,7483+24]..[211,7483+31])
+                      <arg>
+                      Nolabel
+                        expression (toplevel/byte/topmain.ml[211,7483+32]..[211,7483+44])
+                          Pexp_ident "Options.list" (toplevel/byte/topmain.ml[211,7483+32]..[211,7483+44])
+                    ]
+                  expression (toplevel/byte/topmain.ml[212,7529+2]..[217,7753+35])
+                    Pexp_sequence
+                    expression (toplevel/byte/topmain.ml[212,7529+2]..[212,7529+61])
+                      Pexp_apply
+                      expression (toplevel/byte/topmain.ml[212,7529+2]..[212,7529+25])
+                        Pexp_ident "Compenv.parse_arguments" (toplevel/byte/topmain.ml[212,7529+2]..[212,7529+25])
+                      [
+                        <arg>
+                        Labelled "current"
+                          expression (toplevel/byte/topmain.ml[212,7529+27]..[212,7529+34])
+                            Pexp_ident "current" (toplevel/byte/topmain.ml[212,7529+27]..[212,7529+34])
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[212,7529+35]..[212,7529+39])
+                            Pexp_ident "argv" (toplevel/byte/topmain.ml[212,7529+35]..[212,7529+39])
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[212,7529+40]..[212,7529+53])
+                            Pexp_ident "file_argument" (toplevel/byte/topmain.ml[212,7529+40]..[212,7529+53])
+                        <arg>
+                        Nolabel
+                          expression (toplevel/byte/topmain.ml[212,7529+54]..[212,7529+61])
+                            Pexp_ident "program" (toplevel/byte/topmain.ml[212,7529+54]..[212,7529+61])
+                      ]
+                    expression (toplevel/byte/topmain.ml[213,7592+2]..[217,7753+35])
+                      Pexp_sequence
+                      expression (toplevel/byte/topmain.ml[213,7592+2]..[213,7592+33])
+                        Pexp_apply
+                        expression (toplevel/byte/topmain.ml[213,7592+2]..[213,7592+17])
+                          Pexp_ident "Compenv.readenv" (toplevel/byte/topmain.ml[213,7592+2]..[213,7592+17])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (toplevel/byte/topmain.ml[213,7592+18]..[213,7592+21])
+                              Pexp_ident "ppf" (toplevel/byte/topmain.ml[213,7592+18]..[213,7592+21])
+                          <arg>
+                          Nolabel
+                            expression (toplevel/byte/topmain.ml[213,7592+22]..[213,7592+33])
+                              Pexp_construct "Before_link" (toplevel/byte/topmain.ml[213,7592+22]..[213,7592+33])
+                              None
+                        ]
+                      expression (toplevel/byte/topmain.ml[214,7627+2]..[217,7753+35])
+                        Pexp_sequence
+                        expression (toplevel/byte/topmain.ml[214,7627+2]..[214,7627+35])
+                          Pexp_apply
+                          expression (toplevel/byte/topmain.ml[214,7627+2]..[214,7627+32])
+                            Pexp_ident "Compmisc.read_clflags_from_env" (toplevel/byte/topmain.ml[214,7627+2]..[214,7627+32])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (toplevel/byte/topmain.ml[214,7627+33]..[214,7627+35])
+                                Pexp_construct "()" (toplevel/byte/topmain.ml[214,7627+33]..[214,7627+35])
+                                None
+                          ]
+                        expression (toplevel/byte/topmain.ml[215,7664+2]..[217,7753+35])
+                          Pexp_sequence
+                          expression (toplevel/byte/topmain.ml[215,7664+2]..[215,7664+62])
+                            Pexp_ifthenelse
+                            expression (toplevel/byte/topmain.ml[215,7664+5]..[215,7664+22])
+                              Pexp_apply
+                              expression (toplevel/byte/topmain.ml[215,7664+5]..[215,7664+8])
+                                Pexp_ident "not" (toplevel/byte/topmain.ml[215,7664+5]..[215,7664+8])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/byte/topmain.ml[215,7664+9]..[215,7664+22])
+                                    Pexp_apply
+                                    expression (toplevel/byte/topmain.ml[215,7664+10]..[215,7664+17])
+                                      Pexp_ident "prepare" (toplevel/byte/topmain.ml[215,7664+10]..[215,7664+17])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (toplevel/byte/topmain.ml[215,7664+18]..[215,7664+21])
+                                          Pexp_ident "ppf" (toplevel/byte/topmain.ml[215,7664+18]..[215,7664+21])
+                                    ]
+                              ]
+                            expression (toplevel/byte/topmain.ml[215,7664+28]..[215,7664+62])
+                              Pexp_apply
+                              expression (toplevel/byte/topmain.ml[215,7664+28]..[215,7664+33])
+                                Pexp_ident "raise" (toplevel/byte/topmain.ml[215,7664+28]..[215,7664+33])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/byte/topmain.ml[215,7664+34]..[215,7664+62])
+                                    Pexp_construct "Compenv.Exit_with_status" (toplevel/byte/topmain.ml[215,7664+35]..[215,7664+59])
+                                    Some
+                                      expression (toplevel/byte/topmain.ml[215,7664+60]..[215,7664+61])
+                                        Pexp_constant PConst_int (2,None)
+                              ]
+                            None
+                          expression (toplevel/byte/topmain.ml[216,7728+2]..[217,7753+35])
+                            Pexp_sequence
+                            expression (toplevel/byte/topmain.ml[216,7728+2]..[216,7728+23])
+                              Pexp_apply
+                              expression (toplevel/byte/topmain.ml[216,7728+2]..[216,7728+20])
+                                Pexp_ident "Compmisc.init_path" (toplevel/byte/topmain.ml[216,7728+2]..[216,7728+20])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/byte/topmain.ml[216,7728+21]..[216,7728+23])
+                                    Pexp_construct "()" (toplevel/byte/topmain.ml[216,7728+21]..[216,7728+23])
+                                    None
+                              ]
+                            expression (toplevel/byte/topmain.ml[217,7753+2]..[217,7753+35])
+                              Pexp_apply
+                              expression (toplevel/byte/topmain.ml[217,7753+2]..[217,7753+14])
+                                Pexp_ident "Toploop.loop" (toplevel/byte/topmain.ml[217,7753+2]..[217,7753+14])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (toplevel/byte/topmain.ml[217,7753+15]..[217,7753+35])
+                                    Pexp_ident "Format.std_formatter" (toplevel/byte/topmain.ml[217,7753+15]..[217,7753+35])
+                              ]
+    ]
+  structure_item (toplevel/byte/topmain.ml[219,7790+0]..[222,7871+11])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (toplevel/byte/topmain.ml[219,7790+4]..[219,7790+8])
+          Ppat_var "main" (toplevel/byte/topmain.ml[219,7790+4]..[219,7790+8])
+        expression (toplevel/byte/topmain.ml[219,7790+9]..[222,7871+11]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (toplevel/byte/topmain.ml[219,7790+9]..[219,7790+11])
+            Ppat_construct "()" (toplevel/byte/topmain.ml[219,7790+9]..[219,7790+11])
+            None
+          expression (toplevel/byte/topmain.ml[220,7804+2]..[222,7871+11])
+            Pexp_match
+            expression (toplevel/byte/topmain.ml[220,7804+8]..[220,7804+15])
+              Pexp_apply
+              expression (toplevel/byte/topmain.ml[220,7804+8]..[220,7804+12])
+                Pexp_ident "main" (toplevel/byte/topmain.ml[220,7804+8]..[220,7804+12])
+              [
+                <arg>
+                Nolabel
+                  expression (toplevel/byte/topmain.ml[220,7804+13]..[220,7804+15])
+                    Pexp_construct "()" (toplevel/byte/topmain.ml[220,7804+13]..[220,7804+15])
+                    None
+              ]
+            [
+              <case>
+                pattern (toplevel/byte/topmain.ml[221,7825+4]..[221,7825+40])
+                  Ppat_exception
+                  pattern (toplevel/byte/topmain.ml[221,7825+14]..[221,7825+40])
+                    Ppat_construct "Compenv.Exit_with_status" (toplevel/byte/topmain.ml[221,7825+14]..[221,7825+38])
+                    Some
+                      []
+                      pattern (toplevel/byte/topmain.ml[221,7825+39]..[221,7825+40])
+                        Ppat_var "n" (toplevel/byte/topmain.ml[221,7825+39]..[221,7825+40])
+                expression (toplevel/byte/topmain.ml[221,7825+44]..[221,7825+45])
+                  Pexp_ident "n" (toplevel/byte/topmain.ml[221,7825+44]..[221,7825+45])
+              <case>
+                pattern (toplevel/byte/topmain.ml[222,7871+4]..[222,7871+6])
+                  Ppat_construct "()" (toplevel/byte/topmain.ml[222,7871+4]..[222,7871+6])
+                  None
+                expression (toplevel/byte/topmain.ml[222,7871+10]..[222,7871+11])
+                  Pexp_constant PConst_int (0,None)
+            ]
+    ]
+]
+
