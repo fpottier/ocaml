@@ -27,8 +27,6 @@
 *.png binary
 *.tfm binary
 
-/boot/menhir/parser.ml* -diff
-
 # configure is a shell-script; the linguist-generated attribute suppresses
 # changes being displayed by default in pull requests.
 /configure text eol=lf -diff linguist-generated
