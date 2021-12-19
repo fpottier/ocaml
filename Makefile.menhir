@@ -80,7 +80,7 @@ MENHIRFLAGS := \
   --fixed-exception \
   --strategy simplified \
 
-LEVEL := baseline
+LEVEL := represent
 EXTRA := $(shell cat $(HOME)/tex/menhir-papers/new-code-backend/calc/$(LEVEL).flags)
 
 ## promote-menhir
