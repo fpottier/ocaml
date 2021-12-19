@@ -80,11 +80,14 @@ MENHIRFLAGS := \
   --fixed-exception \
   --strategy simplified \
 
+LEVEL := baseline
+EXTRA := $(shell cat $(HOME)/tex/menhir-papers/new-code-backend/calc/$(LEVEL).flags)
+
 ## promote-menhir
 
 .PHONY: promote-menhir
 promote-menhir: parsing/parser.mly
-	$(MENHIR) $(MENHIRFLAGS) parsing/parser.mly
+	$(MENHIR) $(MENHIRFLAGS) $(EXTRA) parsing/parser.mly
 	@ for f in $(addprefix parser.,ml mli) ; do \
 	  cp -f \
 	    parsing/$$f \
