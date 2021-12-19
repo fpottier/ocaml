@@ -87,7 +87,7 @@ EXTRA := $(shell cat $(HOME)/tex/menhir-papers/new-code-backend/calc/$(LEVEL).fl
 
 .PHONY: promote-menhir
 promote-menhir: parsing/parser.mly
-	$(MENHIR) $(MENHIRFLAGS) $(EXTRA) parsing/parser.mly
+	$(MENHIR) $(MENHIRFLAGS) $(EXTRA) --profiling /tmp/$(LEVEL).csv parsing/parser.mly
 	@ for f in $(addprefix parser.,ml mli) ; do \
 	  cp -f \
 	    parsing/$$f \
